@@ -1,63 +1,63 @@
 {
   "aggregates": {
-    "entity_count": 204,
+    "entity_count": 210,
     "field_status_counts": {
-      "None": 2022,
-      "derived": 180,
+      "None": 2079,
+      "derived": 186,
       "disputed": 6,
       "unverified": 25,
-      "verified": 1847
+      "verified": 1904
     },
     "source_tier_counts": {
-      "A": 1282,
+      "A": 1306,
       "B": 436,
-      "C": 137,
-      "derived": 180
+      "C": 170,
+      "derived": 186
     },
     "spec_fill_rate": {
       "blue_uas": {
-        "present": 31,
-        "total": 204
+        "present": 32,
+        "total": 210
       },
       "encryption": {
         "present": 3,
-        "total": 204
+        "total": 210
       },
       "endurance_min": {
-        "present": 97,
-        "total": 204
+        "present": 101,
+        "total": 210
       },
       "gps_denied_capable": {
         "present": 11,
-        "total": 204
+        "total": 210
       },
       "max_link_km": {
         "present": 46,
-        "total": 204
+        "total": 210
       },
       "max_payload_kg": {
-        "present": 68,
-        "total": 204
+        "present": 70,
+        "total": 210
       },
       "max_range_km": {
-        "present": 51,
-        "total": 204
+        "present": 54,
+        "total": 210
       },
       "max_speed_ms": {
-        "present": 75,
-        "total": 204
+        "present": 78,
+        "total": 210
       },
       "mtow_kg": {
-        "present": 103,
-        "total": 204
+        "present": 108,
+        "total": 210
       },
       "ndaa_compliant": {
-        "present": 32,
-        "total": 204
+        "present": 33,
+        "total": 210
       },
       "service_ceiling_m": {
-        "present": 37,
-        "total": 204
+        "present": 39,
+        "total": 210
       }
     },
     "spec_range": {
@@ -8715,6 +8715,224 @@
         "value": null
       },
       "slug": "uav-avic-wing-loong-ii-wing-loong-ii",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:baykar:akinci:akinci",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 1440
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "Baykar Akinci"
+      },
+      "family_id": "uav:baykar:akinci",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "Baykar"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "Turkey"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 1350
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 5000
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 129
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": "Baykar Akinci"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_Akinci"
+          }
+        ],
+        "status": "verified",
+        "value": 12192
+      },
+      "slug": "uav-baykar-akinci-akinci",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -19994,6 +20212,196 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:fortem-technologies:dronehunter-f700:dronehunter-f700",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "Fortem Technologies DroneHunter F700"
+      },
+      "family_id": "uav:fortem-technologies:dronehunter-f700",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "Fortem Technologies"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "counter_uas"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": 5
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": 18
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://fortemtech.com/products/dronehunter-f700/"
+          }
+        ],
+        "status": "verified",
+        "value": "Fortem Technologies DroneHunter F700"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-22",
             "tier": "A",
             "url": "https://www.army-technology.com/projects/dronehunter-counter-unmanned-aerial-system-c-uas/"
@@ -23530,6 +23938,189 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:iflight:nazgul-evoque-f5:nazgul-evoque-f5",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "iFlight Nazgul Evoque F5"
+      },
+      "family_id": "uav:iflight:nazgul-evoque-f5",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "iFlight"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "fpv"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": 0.445
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.iflight.com/en-Evoque-F5-V3.html"
+          }
+        ],
+        "status": "verified",
+        "value": "iFlight Nazgul Evoque F5"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "B",
         "sources": [
           {
@@ -23717,6 +24308,210 @@
         "value": null
       },
       "slug": "uav-iflight-nazgul5-v3-nazgul5-v3",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:insitu:scaneagle:scaneagle",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": 1200
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "Insitu ScanEagle"
+      },
+      "family_id": "uav:insitu:scaneagle",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "Insitu"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": 41
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": "Insitu ScanEagle"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Boeing_Insitu_MQ-27_ScanEagle"
+          }
+        ],
+        "status": "verified",
+        "value": 5944
+      },
+      "slug": "uav-insitu-scaneagle-scaneagle",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -34620,6 +35415,203 @@
     },
     {
       "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": true
+      },
+      "canonical_id": "uav:teal:golden-eagle:golden-eagle",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": 50
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "Teal Golden Eagle"
+      },
+      "family_id": "uav:teal:golden-eagle",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "Teal"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "public_safety"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": "Teal Golden Eagle"
+      },
+      "ndaa_compliant": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://tealdrones.com/"
+          }
+        ],
+        "status": "verified",
+        "value": true
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-teal-golden-eagle-golden-eagle",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
         "confidence": null,
         "source_tier": null,
         "status": null,
@@ -39785,6 +40777,217 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:zala-aero:lancet:lancet",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": 40
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "ZALA Aero Lancet"
+      },
+      "family_id": "uav:zala-aero:lancet",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "ZALA Aero"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "Russia"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "loitering_munition"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": 3
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": 40
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": 31
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": 12
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/ZALA_Lancet"
+          }
+        ],
+        "status": "verified",
+        "value": "ZALA Aero Lancet"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "competitor_military_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-zala-aero-lancet-lancet",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "A",
         "sources": [
           {
@@ -40609,5 +41812,5 @@
     }
   },
   "schema": "site-data/1",
-  "source_registry_sha256": "92f772c997a47a6bff0b79a3b5a6cb63529b9484ce79bfe6d469ed9719ad3595"
+  "source_registry_sha256": "e182644cdd6797e4c3c09341b71d4cf32d2ad7724428660231233608c07039ea"
 }
