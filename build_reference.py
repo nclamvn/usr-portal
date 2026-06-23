@@ -104,10 +104,15 @@ def row_dataset(e):
     }
 
 
+# 7 numeric specs — the "record-fullness" pip strip (TIP-P04, reuses the coverage primitive at row scale)
+PIP_SPECS = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km",
+             "max_link_km", "max_speed_ms", "service_ceiling_m"]
+
+
 def render_row(e, labels):
     """A light INDEX row linking to its detail page — NOT the rich detail card (that lives in
-    build_detail). Keeps maker/model/country/segment/class + compliance chips; carries data-*
-    so the client-side facet/search/sort works directly on rows."""
+    build_detail). Keeps maker/model/country/segment/class + compliance chips + a 7-pip
+    record-fullness strip; carries data-* so client-side facet/search/sort works on rows."""
     maker, model = maker_model(e)
     country = e["manufacturer_country"].get("value") or "—"
     seg = friendly("segment", e["market_segment"].get("value"), labels)
@@ -118,6 +123,10 @@ def render_row(e, labels):
         flags += '<span class="chip" data-status="verified" data-audit="chip">Blue UAS</span>'
     if d["ndaa"]:
         flags += '<span class="chip" data-status="verified" data-audit="chip">NDAA</span>'
+    # record-fullness pips — filled iff that numeric spec has a value (honest-null at list scale)
+    present = sum(1 for k in PIP_SPECS if e[k].get("value") is not None)
+    pips = "".join('<i class="on"></i>' if e[k].get("value") is not None else '<i></i>' for k in PIP_SPECS)
+    pip_strip = f'<span class="ri-pips" title="{present}/7 spec" aria-label="{present}/7 spec có số">{pips}</span>'
     return (
         f'<a class="row-item reveal" href="entity/{esc(e["slug"])}.html" data-audit="row" '
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
@@ -125,6 +134,7 @@ def render_row(e, labels):
         f'<span class="ri-glyph">{glyph_svg(e.get("frame_glyph", "unknown"))}</span>'
         f'<span class="ri-name"><b>{esc(maker)}</b> <span class="ri-model">{esc(model)}</span></span>'
         f'<span class="ri-meta mono">{esc(country)} · {seg} · {pclass}</span>'
+        f'{pip_strip}'
         f'<span class="ri-flags">{flags}</span></a>')
 
 

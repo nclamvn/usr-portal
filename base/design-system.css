@@ -160,7 +160,7 @@ small, .small { font-size: .82rem; }
 /* light INDEX rows — the list primitive (rich detail lives at entity/<slug>.html).
    shared by reference.html and the home preview. */
 .index-list { border-top: 1px solid var(--hair); }
-.row-item { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1rem; padding: .6rem .4rem; border-bottom: 1px solid var(--hair); text-decoration: none; color: inherit; }
+.row-item { display: grid; grid-template-columns: auto 1fr auto auto auto; align-items: center; gap: 1rem; padding: .6rem .4rem; border-bottom: 1px solid var(--hair); text-decoration: none; color: inherit; }
 .row-item:hover { background: var(--panel); }
 .row-item .ri-glyph { display: flex; align-items: center; }
 .row-item .ri-name { font-size: .95rem; }
@@ -168,7 +168,11 @@ small, .small { font-size: .82rem; }
 .row-item .ri-model { color: var(--brass); }
 .row-item .ri-meta { font-size: .72rem; color: var(--muted); }
 .row-item .ri-flags { display: flex; gap: .3rem; white-space: nowrap; }
-@media (max-width: 640px) { .row-item { grid-template-columns: auto 1fr; gap: .15rem 1rem; align-items: center; } .row-item .ri-meta, .row-item .ri-flags { grid-column: 2; } }
+/* record-fullness pips (TIP-P04) — 7 numeric specs; filled = value present (honest-null at list scale) */
+.ri-pips { display: flex; gap: 2px; align-items: center; }
+.ri-pips i { width: 6px; height: 11px; background: var(--hair); border-radius: 1px; }
+.ri-pips i.on { background: var(--bp); }
+@media (max-width: 640px) { .row-item { grid-template-columns: auto 1fr; gap: .15rem 1rem; align-items: center; } .row-item .ri-meta, .row-item .ri-flags, .row-item .ri-pips { grid-column: 2; } }
 
 /* frame glyphs (TIP-P02) — schematic of the AIRFRAME TYPE, not a model render */
 .glyph-svg { display: block; }
