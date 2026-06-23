@@ -256,6 +256,7 @@ def render_analysis_page(article, site, glossary):
   </aside>
 </div>
 
+<div class="srcs"><div class="regdiv"><b class="lab">Nguồn</b><span class="ln"></span></div></div>
 {sources_apparatus(a)}
 
 <div class="author"><span class="av"></span>

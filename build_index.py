@@ -298,23 +298,32 @@ def main():
 </section>
 
 <main class="wrap">
+  <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Tin tức")}</b><span class="ln"></span></div>
   <div class="block">
 {news_html}
   </div>
 
+  <div class="regdiv"><b class="lab">{bilingual("02 · Analysis", "02 · Phân tích")}</b><span class="ln"></span></div>
   <div class="block">
-    <div class="sechead"><div><span class="eyebrow">Phân tích</span>
-      <h2>Chuyên sâu — đọc dạng long-form</h2></div>
-      <a class="ncta" href="analysis/{esc(arts[0]["slug"])}.html"><span>Tất cả phân tích</span><span class="ico">{ARROW}</span></a></div>
+    <div class="sechead"><div><span class="eyebrow">{bilingual("Analysis", "Phân tích")}</span>
+      <h2 class="h2">{bilingual("In depth — long-form", "Chuyên sâu — đọc dạng long-form")}</h2></div>
+      <a class="ncta" href="analysis/{esc(arts[0]["slug"])}.html"><span>{bilingual("All analysis", "Tất cả phân tích")}</span><span class="ico">{ARROW}</span></a></div>
 {feat_html}
   </div>
+</main>
 
-  <div class="block">
-    <div class="section-h">{bilingual("Record status", "Tình trạng bản ghi")}
-      <span class="count mono" data-audit="count" style="color:var(--brass)">{n}</span></div>
-    {masthead}
-  </div>
+<!-- light/dark rhythm — record-status as a full-bleed dark plate band (TIP-P01) -->
+<section class="sec plate" data-audit="plate"><div class="wrap">
+  <span class="eyebrow">{bilingual("Record", "Hồ sơ")}</span>
+  <h2 class="h2">{bilingual("Record status", "Tình trạng bản ghi")}</h2>
+  <p class="sub">{bilingual(
+    f"Every figure computed live from {n} entities — nothing hand-typed.",
+    f"Mọi con số tính sống từ {n} thực thể — không gõ tay.")}</p>
+  {masthead}
+</div></section>
 
+<main class="wrap">
+  <div class="regdiv"><b class="lab">{bilingual("03 · Browse", "03 · Tra cứu")}</b><span class="ln"></span></div>
   <div class="block">
     <a class="cta" href="reference.html" data-audit="browse">{bilingual(
       f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a>

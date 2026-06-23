@@ -196,6 +196,34 @@ small, .small { font-size: .82rem; }
 .rank-row.top .rib { background: var(--brass); }
 @media (max-width: 640px) { .rank-cols { grid-template-columns: 1fr; } .stat-cell { flex-basis: 5.5rem; padding: .1rem .7rem; } }
 
+/* Đợt 1 (TIP-P01) — section rhythm: registration divider + light/dark plate band.
+   Presentation only; uses canonical tokens; no new variables. */
+.sec { padding: 60px 0; }
+.sec.plate { background: var(--card-bg); color: var(--card-ink); }
+.sec.plate .eyebrow { color: var(--bp); }
+.sec.plate .h2 { color: var(--card-ink); }
+.sec.plate .sub { color: var(--card-soft); }
+.sec.plate .regdiv .ln { background: var(--card-hair); }
+.sec.plate .regdiv .lab { color: var(--card-faint); }
+/* the masthead must read on the dark plate: drop its cream panel, recolour figures to card tokens */
+.sec.plate .masthead { background: transparent; border: 0; padding: 0; }
+.sec.plate .statfig { color: var(--card-ink); }
+.sec.plate .cap, .sec.plate .rank-h, .sec.plate .rank-row .rl { color: var(--card-soft); }
+.sec.plate .rank-row .rn { color: var(--card-faint); }
+.sec.plate .rank-cols, .sec.plate .stat-cell { border-color: var(--card-hair); }
+.sec.plate .rank-row .rib { background: var(--card-hair); }
+.sec.plate .rank-row.top .rib { background: var(--bp); }
+.h2 { font-family: var(--font-head); font-weight: 600; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.04; letter-spacing: -.018em; margin: 14px 0 0; }
+.sub { font-size: 15px; color: var(--muted); max-width: 60ch; margin-top: 14px; }
+/* registration divider — corner-bracket line + mono label, replaces flat hairlines */
+.regdiv { display: flex; align-items: center; gap: 16px; margin: 38px 0 22px; }
+.regdiv .lab { font-family: var(--font-mono); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.regdiv .ln { flex: 1; height: 1px; background: var(--hair-strong); position: relative; }
+.regdiv .ln::before, .regdiv .ln::after { content: ""; position: absolute; width: 9px; height: 9px; border: 1.4px solid var(--brass); top: -4px; }
+.regdiv .ln::before { left: 0; border-right: none; border-bottom: none; }
+.regdiv .ln::after { right: 0; border-left: none; border-top: none; }
+@media (max-width: 640px) { .regdiv .lab { font-size: 9px; } .sec { padding: 44px 0; } }
+
 /* motion — draw-in + reveal, calm */
 .reveal { opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal.is-in { opacity: 1; transform: none; }

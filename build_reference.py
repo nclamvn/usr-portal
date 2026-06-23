@@ -212,6 +212,7 @@ def main():
       <div class="stat">{summary}</div>
     </div>
   </div>
+  <div class="regdiv"><b class="lab">{bilingual("Index · " + str(len(ents)), "Mục lục · " + str(len(ents)))}</b><span class="ln"></span></div>
   {facets}
   <div class="index-list">
 {rows}
