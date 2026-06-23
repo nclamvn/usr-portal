@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 202,
-  "variant_count": 213,
+  "family_count": 211,
+  "variant_count": 222,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -19339,6 +19339,933 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:general-atomics:mq-1-predator",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "General Atomics",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "General Atomics MQ-1 Predator",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics MQ-1 Predator",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:northrop-grumman:rq-4-global-hawk",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Northrop Grumman",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Northrop Grumman RQ-4 Global Hawk",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman RQ-4 Global Hawk",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:iai:heron",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "IAI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "IAI Heron",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Heron",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:casc:ch-4",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "CASC",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "CASC CH-4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:hesa:shahed-136",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "HESA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "HESA Shahed-136",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Shahed-136",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "loitering_munition",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "loitering_munition",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:inspire-2",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Inspire 2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Inspire 2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "cinema",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "cinema",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:xag:p100",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "XAG",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XAG",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "XAG P100",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XAG P100",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "multirotor",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "multirotor",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "agriculture",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "agriculture",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:microdrones:md4-1000",
+      "kind": "family",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Microdrones",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Microdrones",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Germany",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Germany",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Microdrones md4-1000",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Microdrones md4-1000",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "surveying",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "surveying",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:anduril:roadrunner-m",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Anduril",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Anduril Roadrunner-M",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Roadrunner-M",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "counter_uas",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "counter_uas",
               "note": "market role"
             }
           ],
@@ -46266,6 +47193,1198 @@
               "tier": "derived",
               "retrieved": "2026-06-22",
               "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:general-atomics:mq-1-predator:mq-1-predator",
+      "family_id": "uav:general-atomics:mq-1-predator",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:general-atomics:mq-1-predator:mq-1-predator",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:general-atomics:mq-1-predator:mq-1-predator",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "General Atomics MQ-1 Predator",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics MQ-1 Predator",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1020,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1020,
+              "note": "2250 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1440,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1440,
+              "note": "~24 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7620,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7620,
+              "note": "25000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 60,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1_Predator",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 60,
+              "note": "135 mph"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:northrop-grumman:rq-4-global-hawk:rq-4-global-hawk",
+      "family_id": "uav:northrop-grumman:rq-4-global-hawk",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:northrop-grumman:rq-4-global-hawk:rq-4-global-hawk",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:northrop-grumman:rq-4-global-hawk:rq-4-global-hawk",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Northrop Grumman RQ-4 Global Hawk",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman RQ-4 Global Hawk",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 14628,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 14628,
+              "note": "32250 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1361,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1361,
+              "note": "3000 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 175,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 175,
+              "note": "340 kn max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 18000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 18000,
+              "note": "60000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_RQ-4_Global_Hawk",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1800,
+              "note": ">30 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:iai:heron:heron",
+      "family_id": "uav:iai:heron",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:iai:heron:heron",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:iai:heron:heron",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "IAI Heron",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Heron",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1150,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1150,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 250,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 250,
+              "note": "550 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 58,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 58,
+              "note": "207 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 3120,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3120,
+              "note": "52 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 10000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 10000,
+              "note": "32800 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:casc:ch-4:ch-4",
+      "family_id": "uav:casc:ch-4",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:casc:ch-4:ch-4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:casc:ch-4:ch-4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "CASC CH-4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1330,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1330,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 345,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 345,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1800,
+              "note": "30 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7620,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7620,
+              "note": "25000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 65,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 65,
+              "note": "235 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 2000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1843",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2000,
+              "note": "operational"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:hesa:shahed-136:shahed-136",
+      "family_id": "uav:hesa:shahed-136",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:hesa:shahed-136:shahed-136",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:hesa:shahed-136:shahed-136",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "HESA Shahed-136",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Shahed-136",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 200,
+              "note": "~200 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 40,
+              "note": "warhead 30-50 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 51,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 51,
+              "note": "185 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 2500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2500,
+              "note": "up to (variant-dependent)"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "loitering_munition",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "loitering_munition",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:inspire-2:inspire-2",
+      "family_id": "uav:dji:inspire-2",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:inspire-2:inspire-2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:inspire-2:inspire-2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Inspire 2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Inspire 2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 4.25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4.25,
+              "note": "max takeoff w/ cam"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 26,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 26,
+              "note": "94 km/h sport"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 27,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-2/info",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 27,
+              "note": "X4S"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "cinema",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "cinema",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:xag:p100:p100",
+      "family_id": "uav:xag:p100",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:xag:p100:p100",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:xag:p100:p100",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "XAG P100",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XAG P100",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 50,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 50,
+              "note": "rated load 110 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 13.8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/p100",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 13.8,
+              "note": "max flight"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "agriculture",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "agriculture",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:microdrones:md4-1000:md4-1000",
+      "family_id": "uav:microdrones:md4-1000",
+      "kind": "variant",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:microdrones:md4-1000:md4-1000",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:microdrones:md4-1000:md4-1000",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Microdrones md4-1000",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Microdrones md4-1000",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 2.65,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2.65,
+              "note": "~2650 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1.2,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.2,
+              "note": "2.7 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 45,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 45,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6,
+              "note": "cruise"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 2000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.microdrones.com/en/integrated-systems/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2000,
+              "note": "ASL"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "surveying",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "surveying",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:anduril:roadrunner-m:roadrunner-m",
+      "family_id": "uav:anduril:roadrunner-m",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:anduril:roadrunner-m:roadrunner-m",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:anduril:roadrunner-m:roadrunner-m",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Anduril Roadrunner-M",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Roadrunner-M",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.anduril.com/roadrunner",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "counter_uas",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "counter_uas",
               "note": "L2 from collected product_line (A) via controlled map -> high"
             }
           ],
