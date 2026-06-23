@@ -22,8 +22,9 @@ python3 build_detail.py
 echo "[4/8] newsroom + analysis pillar (TIP-007)"
 python3 build_news.py
 python3 build_analysis.py
-echo "[5/8] index home — composes hero + newsroom + analysis (TIP-004)"
+echo "[5/8] index home (TIP-004) + single-file bundle export (TIP-008)"
 python3 build_index.py
+python3 build_bundle.py
 echo "[6/8] content integrity (verify_content — 4-questions · entity-tags · tier-A · figures trace registry)"
 python3 verify_content.py
 echo "[7a/8] i18n completeness"
