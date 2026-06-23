@@ -1,63 +1,63 @@
 {
   "aggregates": {
-    "entity_count": 200,
+    "entity_count": 204,
     "field_status_counts": {
-      "None": 1983,
-      "derived": 176,
+      "None": 2022,
+      "derived": 180,
       "disputed": 6,
       "unverified": 25,
-      "verified": 1810
+      "verified": 1847
     },
     "source_tier_counts": {
-      "A": 1273,
+      "A": 1282,
       "B": 436,
-      "C": 109,
-      "derived": 176
+      "C": 137,
+      "derived": 180
     },
     "spec_fill_rate": {
       "blue_uas": {
         "present": 31,
-        "total": 200
+        "total": 204
       },
       "encryption": {
         "present": 3,
-        "total": 200
+        "total": 204
       },
       "endurance_min": {
-        "present": 95,
-        "total": 200
+        "present": 97,
+        "total": 204
       },
       "gps_denied_capable": {
         "present": 11,
-        "total": 200
+        "total": 204
       },
       "max_link_km": {
         "present": 46,
-        "total": 200
+        "total": 204
       },
       "max_payload_kg": {
-        "present": 64,
-        "total": 200
+        "present": 68,
+        "total": 204
       },
       "max_range_km": {
-        "present": 48,
-        "total": 200
+        "present": 51,
+        "total": 204
       },
       "max_speed_ms": {
-        "present": 72,
-        "total": 200
+        "present": 75,
+        "total": 204
       },
       "mtow_kg": {
-        "present": 102,
-        "total": 200
+        "present": 103,
+        "total": 204
       },
       "ndaa_compliant": {
         "present": 32,
-        "total": 200
+        "total": 204
       },
       "service_ceiling_m": {
         "present": 37,
-        "total": 200
+        "total": 204
       }
     },
     "spec_range": {
@@ -71,7 +71,7 @@
       },
       "max_payload_kg": {
         "max": 2700,
-        "min": 1.4
+        "min": 1.1
       },
       "max_range_km": {
         "max": 5666,
@@ -4947,6 +4947,196 @@
         "value": null
       },
       "slug": "uav-anduril-anvil-anvil",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:antwork:tr9:tr9",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "Antwork TR9"
+      },
+      "family_id": "uav:antwork:tr9",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "Antwork"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": 5
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.a2zdronedelivery.com/antwork-technology"
+          }
+        ],
+        "status": "verified",
+        "value": "Antwork TR9"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-antwork-tr9-tr9",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -26586,6 +26776,210 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:manna-aero:air-delivery:air-delivery",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "Manna Aero Air Delivery"
+      },
+      "family_id": "uav:manna-aero:air-delivery",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "Manna Aero"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "Ireland"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": 4
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": 3.4
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": 22
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.suasnews.com/2026/02/not-your-hobby-drone-the-advanced-technology-behind-manna-aero-air-delivery/"
+          }
+        ],
+        "status": "verified",
+        "value": 23
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.manna.aero/faq"
+          }
+        ],
+        "status": "verified",
+        "value": "Manna Aero Air Delivery"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-manna-aero-air-delivery-air-delivery",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-23",
             "tier": "A",
             "url": "https://www.manna.aero"
@@ -26995,6 +27389,210 @@
         "value": null
       },
       "slug": "uav-matternet-m2-m2",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:meituan:delivery-drone:delivery-drone",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": 45
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "Meituan Delivery Drone"
+      },
+      "family_id": "uav:meituan:delivery-drone",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "Meituan"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": 2.5
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": 23
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.scmp.com/tech/big-tech/article/3287411/meituan-aims-launch-drone-deliveries-hong-kongs-low-altitude-economy"
+          }
+        ],
+        "status": "verified",
+        "value": "Meituan Delivery Drone"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-meituan-delivery-drone-delivery-drone",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -37027,6 +37625,203 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:wing:delivery-drone:delivery-drone",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": 25
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Wing Delivery Drone"
+      },
+      "family_id": "uav:wing:delivery-drone",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Wing"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": 1.1
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": 29
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.engadget.com/alphabets-wing-shows-off-a-larger-delivery-drone-with-a-bigger-payload-capacity-163148392.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Wing Delivery Drone"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-wing-delivery-drone-delivery-drone",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "A",
         "sources": [
           {
@@ -39814,5 +40609,5 @@
     }
   },
   "schema": "site-data/1",
-  "source_registry_sha256": "bee627162338fece5bf095466cebb3f7c80dd1fbe9eef49b1737550be13efb54"
+  "source_registry_sha256": "92f772c997a47a6bff0b79a3b5a6cb63529b9484ce79bfe6d469ed9719ad3595"
 }
