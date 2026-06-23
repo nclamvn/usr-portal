@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uncrewed Systems Review — In the field (probe)</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F2EF; --panel:#FFFFFF;
+  --ink:#1A1A1C; --ink-soft:#42434A; --muted:#6A6B72; --faint:#9A9BA1;
+  --hair:#E2E0DB; --hair-strong:#D2CFC8;
+  --brass:#9B6B1C; --brass-bright:#B5832B;
+  --card:#15171B; --card-ink:#ECEAE4; --card-soft:#A9ABB0; --card-faint:#6E7177; --card-hair:#2A2D33;
+  --bp:#D8A24A; --bp-soft:#C9C7C0; --bp-faint:#3A3D44;
+  --wm:rgba(26,26,28,.045);
+  --serif:'Source Serif 4',Georgia,serif;
+  --sans:'Be Vietnam Pro',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --maxw:1200px;
+}
+[data-theme="dark"]{
+  --bg:#0E1013; --panel:#15181C;
+  --ink:#ECEDEF; --ink-soft:#C4C6CB; --muted:#9096A0; --faint:#6A707A;
+  --hair:#23272E; --hair-strong:#2E333B;
+  --brass:#D2A24C; --brass-bright:#DEB05C;
+  --card:#181B20; --card-ink:#ECEDEF; --card-soft:#A9ADB4; --card-faint:#717682; --card-hair:#2C313A;
+  --bp:#DEB05C; --bp-soft:#9AA0AA; --bp-faint:#3A4049;
+  --wm:rgba(255,255,255,.035);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.62;
+  transition:background .4s ease,color .4s ease;overflow-x:hidden}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--brass-bright);color:#fff}
+.js .rv{opacity:0;transform:translateY(14px)}
+.rv.in{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+
+.bar{border-bottom:1px solid var(--hair)}
+.bar .wrap{display:flex;align-items:center;height:64px;gap:20px}
+.wm-name{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.wm-name small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;margin-top:2px;font-weight:400}
+.ctl{margin-left:auto;display:flex;gap:8px}
+.tg{font-family:var(--mono);font-size:11px;border:1px solid var(--hair-strong);background:transparent;color:var(--ink-soft);
+  height:34px;padding:0 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:border-color .2s,color .2s;border-radius:999px}
+.tg:hover{border-color:var(--brass-bright);color:var(--ink)}
+.tg:focus-visible{outline:2px solid var(--brass-bright);outline-offset:2px}
+.tg .s{opacity:.4}.tg .s.on{opacity:1;color:var(--brass)}
+
+.field{position:relative;padding:84px 0 96px;overflow:hidden}
+.field .wrap{position:relative;z-index:2;display:grid;grid-template-columns:0.92fr 1.18fr;gap:60px;align-items:center}
+.watermark{position:absolute;left:-180px;bottom:-160px;width:920px;z-index:1;pointer-events:none}
+.watermark svg{width:100%;height:auto;display:block}
+.wm-stroke{fill:none;stroke:var(--wm);stroke-width:1.4}
+
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;
+  display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--brass-bright)}
+.lead-h{font-family:var(--serif);font-weight:600;font-size:clamp(34px,4.4vw,52px);line-height:1.04;letter-spacing:-.018em;margin:20px 0 0}
+.lead-p{font-size:17px;color:var(--ink-soft);max-width:40ch;margin-top:20px}
+.cta{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink);border:1px solid var(--hair-strong);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}
+.cta:hover{border-color:var(--brass-bright);gap:18px}
+.cta .ico{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#fff;display:grid;place-items:center;flex:0 0 auto}
+.cta .ico::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid color-mix(in srgb,var(--ink) 22%,transparent)}
+.ico .ar{width:15px;height:15px;display:block}
+[data-theme="dark"] .cta .ico{color:#15171B}
+
+.card{position:relative;background:var(--card);color:var(--card-ink);border-radius:14px;overflow:hidden;
+  box-shadow:0 30px 60px -28px rgba(0,0,0,.45),0 2px 0 rgba(0,0,0,.04)}
+[data-theme="dark"] .card{border:1px solid var(--card-hair);box-shadow:0 30px 70px -34px rgba(0,0,0,.7)}
+.card .reg{position:absolute;width:16px;height:16px;border:1.5px solid var(--bp);opacity:.55;z-index:3}
+.card .reg.tl{top:14px;left:14px;border-right:none;border-bottom:none}
+.card .reg.tr{top:14px;right:14px;border-left:none;border-bottom:none}
+.card .reg.bl{bottom:14px;left:14px;border-right:none;border-top:none}
+.card .reg.br{bottom:14px;right:14px;border-left:none;border-top:none}
+.bp-stage{position:relative;padding:26px 26px 8px;background:radial-gradient(120% 90% at 70% 10%, rgba(216,162,74,.06), transparent 60%);}
+.bp-stage svg{width:100%;height:auto;display:block}
+.bp-grid{stroke:var(--card-hair);stroke-width:1}
+.bp-disc{fill:none;stroke:var(--bp);stroke-width:1;opacity:.28}
+.bp-blade{stroke:var(--bp);stroke-width:1;opacity:.22}
+.bp-arm{fill:none;stroke:var(--bp);stroke-width:2.4;stroke-linecap:round}
+.bp-body{fill:rgba(216,162,74,.05);stroke:var(--bp);stroke-width:1.6}
+.bp-part{fill:none;stroke:var(--bp);stroke-width:1.4}
+.bp-mark{stroke:var(--bp-soft);stroke-width:1}
+.bp-dim{stroke:var(--bp-soft);stroke-width:1;fill:var(--bp-soft)}
+.bp-dlabel{fill:var(--card-soft);font-family:var(--mono);font-size:11px;letter-spacing:.08em}
+.bp-lead{stroke:var(--card-faint);stroke-width:1}
+.bp-call{fill:var(--card-soft);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+.bp-callk{fill:var(--bp);font-family:var(--mono);font-size:11px;letter-spacing:.1em}
+.js [data-draw]{stroke-dasharray:var(--len);stroke-dashoffset:var(--len)}
+.card.in [data-draw]{animation:draw 1.5s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bp-fade{opacity:0}
+.card.in .bp-fade{animation:bpf .8s ease forwards .9s}
+@keyframes bpf{to{opacity:1}}
+
+
+.card-body{padding:6px 34px 34px;position:relative}
+.ghost{font-family:var(--serif);font-weight:400;font-size:74px;line-height:.8;color:transparent;-webkit-text-stroke:1px var(--card-faint);
+  letter-spacing:-.02em;display:block;margin-bottom:6px}
+.card .keb{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bp);margin-bottom:12px}
+.card h3{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.5vw,28px);line-height:1.14;letter-spacing:-.012em;color:var(--card-ink)}
+.card p{font-size:15.5px;color:var(--card-soft);max-width:52ch;margin-top:14px}
+.card .foot{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;padding-top:18px;border-top:1px solid var(--card-hair)}
+.card .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--card-faint);text-transform:uppercase}
+.card .meta b{color:var(--bp);font-weight:500}
+.readmore{display:inline-flex;align-items:center;gap:11px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--card-ink)}
+.readmore .ico{width:28px;height:28px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}
+.readmore:hover .ico{transform:translateX(4px)}
+
+@media (max-width:900px){
+  .field .wrap{grid-template-columns:1fr;gap:40px}
+  .watermark{width:680px;left:-220px;bottom:-120px;opacity:.7}
+  .lead-p{max-width:48ch}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .js .rv{opacity:1!important;transform:none!important}
+  .js [data-draw]{stroke-dashoffset:0!important}
+  .bp-fade{opacity:1!important}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="wm-name">Uncrewed Systems Review<small data-i18n="kick">In the field</small></span>
+    <div class="ctl">
+      <button class="tg" id="langBtn" aria-label="Switch language"><span class="s on" data-en>EN</span><span aria-hidden="true">/</span><span class="s" data-vn>VN</span></button>
+      <button class="tg" id="themeBtn" aria-label="Switch theme"><span id="ti">◗</span><span id="tl" data-i18n="t_light">Light</span></button>
+    </div>
+  </div>
+</header>
+
+<section class="field">
+  <div class="watermark" aria-hidden="true">
+    <svg viewBox="0 0 760 400">
+      <g class="wm-stroke">
+        <circle cx="170" cy="110" r="92"/><circle cx="590" cy="110" r="92"/>
+        <circle cx="170" cy="300" r="92"/><circle cx="590" cy="300" r="92"/>
+        <rect x="320" y="160" width="120" height="90" rx="20"/>
+        <line x1="248" y1="170" x2="332" y2="196"/><line x1="512" y1="170" x2="428" y2="196"/>
+        <line x1="248" y1="240" x2="332" y2="214"/><line x1="512" y1="240" x2="428" y2="214"/>
+        <circle cx="380" cy="205" r="30"/><circle cx="380" cy="205" r="13"/>
+        <line x1="78" y1="205" x2="682" y2="205"/><line x1="380" y1="10" x2="380" y2="395"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div class="rv in">
+      <span class="eyebrow" data-i18n="eb">In the field</span>
+      <h2 class="lead-h" data-i18n="lh">Uncrewed systems, seen clearly.</h2>
+      <p class="lead-p" data-i18n="lp">How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.</p>
+      <a class="cta" href="#"><span data-i18n="cta">All field files</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+
+    <article class="card rv" id="card">
+      <span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span>
+
+      <div class="bp-stage">
+        <svg viewBox="0 0 760 392" id="bp">
+          <!-- prop discs -->
+          <circle class="bp-disc" cx="230" cy="118" r="70" data-draw></circle>
+          <circle class="bp-disc" cx="530" cy="118" r="70" data-draw></circle>
+          <circle class="bp-disc" cx="230" cy="300" r="70" data-draw></circle>
+          <circle class="bp-disc" cx="530" cy="300" r="70" data-draw></circle>
+          <g class="bp-blade">
+            <line x1="174" y1="118" x2="286" y2="118"></line><line x1="474" y1="118" x2="586" y2="118"></line>
+            <line x1="174" y1="300" x2="286" y2="300"></line><line x1="474" y1="300" x2="586" y2="300"></line>
+          </g>
+          <path class="bp-arm" d="M300 168 L230 118" data-draw></path>
+          <path class="bp-arm" d="M460 168 L530 118" data-draw></path>
+          <path class="bp-arm" d="M300 250 L230 300" data-draw></path>
+          <path class="bp-arm" d="M460 250 L530 300" data-draw></path>
+          <circle class="bp-part" cx="230" cy="118" r="13"></circle><circle class="bp-part" cx="530" cy="118" r="13"></circle>
+          <circle class="bp-part" cx="230" cy="300" r="13"></circle><circle class="bp-part" cx="530" cy="300" r="13"></circle>
+          <rect class="bp-body" x="315" y="166" width="130" height="86" rx="20" data-draw></rect>
+          <!-- center cross -->
+          <line class="bp-mark" x1="372" y1="209" x2="388" y2="209"></line><line class="bp-mark" x1="380" y1="201" x2="380" y2="217"></line>
+          <!-- gnss puck -->
+          <circle class="bp-part" cx="380" cy="150" r="8"></circle>
+          <!-- gimbal -->
+          <circle class="bp-part" cx="380" cy="284" r="22"></circle><circle class="bp-part" cx="380" cy="284" r="10"></circle>
+          <!-- callouts: each leader runs in a clear channel, crossing no disc or body -->
+          <g class="bp-fade">
+            <line class="bp-lead" x1="380" y1="142" x2="380" y2="54"></line>
+            <text class="bp-callk" x="380" y="44" text-anchor="middle">GNSS / RTK</text>
+            <line class="bp-lead" x1="380" y1="306" x2="380" y2="324"></line>
+            <text class="bp-call" x="380" y="338" text-anchor="middle">EO / IR gimbal</text>
+            <line class="bp-lead" x1="445" y1="200" x2="600" y2="200"></line>
+            <text class="bp-call" x="754" y="204" text-anchor="end">Encrypted datalink</text>
+            <line class="bp-lead" x1="315" y1="200" x2="160" y2="200"></line>
+            <text class="bp-callk" x="154" y="204" text-anchor="end">NDAA-compliant</text>
+          </g>
+          <!-- dimension, below the discs -->
+          <g class="bp-fade">
+            <line class="bp-dim" x1="160" y1="384" x2="600" y2="384"></line>
+            <line class="bp-dim" x1="160" y1="377" x2="160" y2="391"></line><line class="bp-dim" x1="600" y1="377" x2="600" y2="391"></line>
+            <path class="bp-dim" d="M160 384 l8 -4 v8 z"></path><path class="bp-dim" d="M600 384 l-8 -4 v8 z"></path>
+            <text class="bp-dlabel" x="380" y="380" text-anchor="middle">1 050 mm</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <span class="ghost">01</span>
+        <div class="keb" data-i18n="c_keb">Procurement</div>
+        <h3 data-i18n="c_h">How verified data guides a UAV purchase</h3>
+        <p data-i18n="c_p">Before a buyer commits, every figure on the page can be traced back to its source — endurance, payload, compliance — instead of trusting a vendor's brochure. The decision rests on checked evidence, not a claim.</p>
+        <div class="foot">
+          <span class="meta" data-i18n="c_m">Reference desk &middot; Evidence: <b>High</b></span>
+          <a class="readmore" href="#"><span data-i18n="read">Read the file</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+const I18N={
+  kick:{en:"In the field",vn:"Trên thực địa"},
+  t_light:{en:"Light",vn:"Sáng"},t_dark:{en:"Dark",vn:"Tối"},
+  eb:{en:"In the field",vn:"Trên thực địa"},
+  lh:{en:"Uncrewed systems, seen clearly.",vn:"Hệ thống không người lái, nhìn cho rõ."},
+  lp:{en:"How verified data changes a real decision \u2014 explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.",vn:"Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay."},
+  cta:{en:"All field files",vn:"Tất cả hồ sơ thực địa"},
+  c_keb:{en:"Procurement",vn:"Mua sắm"},
+  c_h:{en:"How verified data guides a UAV purchase",vn:"Dữ liệu kiểm chứng dẫn dắt một quyết định mua UAV"},
+  c_p:{en:"Before a buyer commits, every figure on the page can be traced back to its source \u2014 endurance, payload, compliance \u2014 instead of trusting a vendor's brochure. The decision rests on checked evidence, not a claim.",vn:"Trước khi người mua chốt, mọi con số trên trang đều truy được về nguồn của nó, từ thời gian bay, tải trọng tới mức tuân thủ, thay vì tin vào tờ rơi của nhà bán. Quyết định dựa trên bằng chứng đã kiểm, không phải một lời khẳng định."},
+  c_m:{en:"Reference desk &middot; Evidence: <b>High</b>",vn:"Ban tham chiếu &middot; Bằng chứng: <b>Cao</b>"},
+  read:{en:"Read the file",vn:"Đọc hồ sơ"}
+};
+let lang="en",theme="light";
+function setLang(l){
+  lang=l;document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.getAttribute("data-i18n");if(!I18N[k])return;
+    if(I18N[k][l].indexOf("<")>-1||I18N[k][l].indexOf("&")>-1)el.innerHTML=I18N[k][l];else el.textContent=I18N[k][l];});
+  document.querySelector("[data-en]").classList.toggle("on",l==="en");
+  document.querySelector("[data-vn]").classList.toggle("on",l==="vn");
+  document.getElementById("tl").textContent=I18N[theme==="light"?"t_light":"t_dark"][l];
+}
+function setTheme(t){theme=t;document.documentElement.setAttribute("data-theme",t);
+  document.getElementById("ti").textContent=t==="light"?"\u25D7":"\u25D0";
+  document.getElementById("tl").textContent=I18N[t==="light"?"t_light":"t_dark"][lang];}
+document.getElementById("langBtn").addEventListener("click",function(){setLang(lang==="en"?"vn":"en")});
+document.getElementById("themeBtn").addEventListener("click",function(){setTheme(theme==="light"?"dark":"light")});
+
+document.querySelectorAll("[data-draw]").forEach(function(el){try{var L=el.getTotalLength();el.style.setProperty("--len",Math.ceil(L));}catch(e){el.style.setProperty("--len","1200");}});
+
+if("IntersectionObserver" in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.2});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in");});}
+
+setTheme("light");setLang("en");
+</script>
+</body>
+</html>

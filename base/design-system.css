@@ -1,0 +1,208 @@
+/* TIP-001 — Design-system base.
+   Tokens reused from the approved portal-in-action language (Blueprint DESIGN SYSTEM).
+   No CSS framework. No new fonts (Source Serif 4 / Be Vietnam Pro / IBM Plex Mono only). */
+
+:root {
+  /* warm-neutral light — RECONCILED to portal-in-action.html (STEP 0) */
+  --bg: #F3F2EF;
+  --panel: #FFFFFF;
+  --ink: #1A1A1C;
+  --ink-soft: #42434A;
+  --muted: #6A6B72;
+  --faint: #9A9BA1;
+  --hair: #E2E0DB;
+  --hair-strong: #D2CFC8;
+  --card-bg: #15171B;          /* high-contrast In-Action card */
+  --card-ink: #ECEAE4;
+  --card-soft: #A9ABB0;
+  --card-hair: #2A2D33;
+  --card-faint: #6E7177;
+  --brass: #9B6B1C;
+  --brass-bright: #B5832B;
+  --bp: #D8A24A;               /* blueprint line — amber (was inverted; fixed STEP 0/TIP-004) */
+  --bp-soft: #C9C7C0;
+  --bp-faint: #3A3D44;
+  --alert: #A8392C;            /* semantic only: disputed / alert */
+  --radius: 4px;
+  --reg: 14px;                 /* registration-corner size */
+  --font-head: "Source Serif 4", Georgia, serif;
+  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --ease: cubic-bezier(.22,.61,.36,1);
+  /* aliases — reconcile portal-in-action / newsroom-specimen token names to the shared sheet
+     so specimen-derived CSS resolves unchanged (values are identical; only names differed). */
+  --serif: var(--font-head);
+  --sans: var(--font-body);
+  --mono: var(--font-mono);
+  --card: var(--card-bg);
+  --maxw: 1200px;
+  --wm: rgba(26,26,28,.045);
+}
+:root[data-theme="dark"] {
+  /* cockpit dark — byte-exact from portal-in-action.html (STEP 0/TIP-004) */
+  --bg: #0E1013;
+  --panel: #15181C;
+  --ink: #ECEDEF;
+  --ink-soft: #C4C6CB;
+  --muted: #9096A0;
+  --faint: #6A707A;
+  --hair: #23272E;
+  --hair-strong: #2E333B;
+  --brass: #D2A24C;
+  --brass-bright: #DEB05C;
+  --card-bg: #181B20;
+  --card-ink: #ECEDEF;
+  --card-soft: #A9ADB4;
+  --card-faint: #717682;
+  --card-hair: #2C313A;
+  --bp: #DEB05C;
+  --bp-soft: #9AA0AA;
+  --bp-faint: #3A4049;
+  --wm: rgba(255,255,255,.035);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+/* links inherit ink (minimalist black/grey) — never UA blue/underline; accents are opt-in (brass).
+   Matches portal-in-action.html; its absence here let editorial headline links fall back to blue. */
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; }
+h1 { font-size: clamp(2rem, 1.4rem + 2.6vw, 3.3rem); }
+h2 { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2rem); }
+.mono, .chip, .data { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+small, .small { font-size: .82rem; }
+
+/* registration corners — signature frame */
+.reg-frame { position: relative; }
+.reg-frame::before, .reg-frame::after,
+.reg-frame > .reg-tr, .reg-frame > .reg-bl {
+  content: ""; position: absolute; width: var(--reg); height: var(--reg);
+  border: 1.5px solid var(--brass); pointer-events: none;
+}
+.reg-frame::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.reg-frame::after  { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.reg-frame > .reg-tr { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.reg-frame > .reg-bl { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+
+/* In-Action card — high contrast */
+.in-action {
+  background: var(--card-bg); color: var(--card-ink);
+  border-radius: var(--radius); padding: 1.6rem 1.5rem;
+  display: grid; gap: .75rem;
+}
+.in-action h3 { color: #fff; margin: 0; }
+.in-action .lede { color: #C7C4BC; margin: 0; }
+
+/* buttons + canonical arrow */
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-body); font-weight: 500; font-size: .95rem;
+  padding: .6rem .95rem; border-radius: var(--radius);
+  background: var(--brass); color: #fff; border: 0; cursor: pointer;
+  transition: background .2s var(--ease);
+}
+.btn:hover { background: var(--brass-bright); }
+.btn:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
+.btn .arrow { width: 1.05em; height: 1.05em; flex: 0 0 auto; }
+.btn .arrow [data-shaft], .btn .arrow [data-chevron] { stroke: currentColor; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+/* evidence chips — small, quiet, provenance-forward (NOT a HUD meter row) */
+.chip {
+  display: inline-flex; align-items: center; gap: .35em;
+  font-size: .72rem; padding: .12em .5em; border-radius: 999px;
+  border: 1px solid var(--hair); color: var(--ink-soft); background: transparent;
+}
+.chip[data-status="verified"] { border-color: var(--brass); color: var(--brass); }
+.chip[data-status="derived"]  { border-style: dashed; }
+.chip[data-status="unverified"] { opacity: .6; }
+.chip[data-status="disputed"] { border-color: var(--alert); color: var(--alert); }
+.chip .tier { font-weight: 600; }
+
+/* facet toolbar — toggle-group (.tg), search, sort, live-count.
+   brass is used ONLY for the active/pressed state; at rest everything is mono + hairline. */
+.facets { border: 1px solid var(--hair); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1.3rem 0 1.6rem; display: grid; gap: .7rem; }
+.facet-row { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
+.facet-row .lbl { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); flex: 0 0 6.2rem; }
+.facet-tools { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+/* .tg — CANONICAL toggle pill, from portal-in-action.html (the design-system-of-record).
+   Top-bar lang/theme use the segmented .s/.s.on; facets add the [aria-pressed] modifier and
+   a .tg-n count. One base, two uses — never redefined per page. */
+.tg { font-family: var(--font-mono); font-size: 11px; height: 34px; padding: 0 12px; border: 1px solid var(--hair-strong); border-radius: 999px; background: transparent; color: var(--ink-soft); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: border-color .2s var(--ease), color .2s var(--ease); }
+.tg:hover { border-color: var(--brass-bright); color: var(--ink); }
+.tg:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
+.tg .s { opacity: .4; }
+.tg .s.on { opacity: 1; color: var(--brass); }
+.tg[aria-pressed="true"] { border-color: var(--brass); color: var(--brass); }
+.tg-n { color: var(--faint); font-size: .9em; margin-left: .15em; }
+.tg[aria-pressed="true"] .tg-n { color: var(--brass-bright); }
+.reg-search { font-family: var(--font-mono); font-size: .8rem; background: transparent; border: 0; border-bottom: 1px solid var(--hair-strong); color: var(--ink); padding: .35rem .1rem; min-width: 13rem; flex: 1 1 13rem; }
+.reg-search::placeholder { color: var(--faint); }
+.reg-search:focus { outline: none; border-bottom-color: var(--brass); }
+.reg-count { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); white-space: nowrap; }
+.reg-count b { color: var(--brass); font-weight: 600; }
+.card.hidden, .row-item.hidden { display: none; }
+/* desktop: facets always open, native disclosure summary hidden */
+@media (min-width: 641px) {
+  .facets > summary { display: none; }
+  .facets > .facet-row, .facets > .facet-tools { display: flex !important; }
+}
+/* mobile: collapse facets behind a "Filter" disclosure (no desktop toolbar crammed at 380px) */
+@media (max-width: 640px) {
+  .facets { padding: .7rem .85rem; }
+  .facets > summary { display: block; font-family: var(--font-mono); font-size: .72rem; color: var(--brass); cursor: pointer; list-style: none; }
+  .facets > summary::-webkit-details-marker { display: none; }
+}
+
+/* light INDEX rows — the list primitive (rich detail lives at entity/<slug>.html).
+   shared by reference.html and the home preview. */
+.index-list { border-top: 1px solid var(--hair); }
+.row-item { display: grid; grid-template-columns: 1fr auto auto; align-items: baseline; gap: 1rem; padding: .7rem .4rem; border-bottom: 1px solid var(--hair); text-decoration: none; color: inherit; }
+.row-item:hover { background: var(--panel); }
+.row-item .ri-name { font-size: .95rem; }
+.row-item .ri-name b { font-family: var(--font-head); font-weight: 600; color: var(--ink); }
+.row-item .ri-model { color: var(--brass); }
+.row-item .ri-meta { font-size: .72rem; color: var(--muted); }
+.row-item .ri-flags { display: flex; gap: .3rem; white-space: nowrap; }
+@media (max-width: 640px) { .row-item { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* record-status masthead — almanac, not dashboard. ghost-serif numerals + mono captions,
+   hairline-separated; ranked mono lists with a single-tone ribbon and ONE brass beat (the #1 row).
+   No pie charts, no colour-coding. */
+.masthead { background: var(--panel); border: 1px solid var(--hair); border-radius: var(--radius); padding: 1.6rem 1.5rem; margin-bottom: 1rem; }
+.stat-strip { display: flex; flex-wrap: wrap; }
+.stat-cell { flex: 1 1 7rem; padding: .1rem 1.2rem; border-left: 1px solid var(--hair); }
+.stat-cell:first-child { border-left: 0; padding-left: 0; }
+/* masthead figure — SOLID serif on cream. Distinct from the dark-card .card .ghost numeral
+   (whose -webkit-text-stroke uses --card-faint, a dark-card-only token). */
+.statfig { display: block; font-family: var(--font-head); font-weight: 600; font-size: clamp(2rem, 1.4rem + 2.4vw, 3.2rem); line-height: 1; letter-spacing: -.02em; color: var(--ink); }
+.cap { display: block; font-size: .64rem; letter-spacing: .04em; color: var(--muted); margin-top: .4rem; }
+.rank-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2.4rem; margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--hair); }
+.rank-h { font-size: .64rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-bottom: .55rem; }
+.rank-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: .5rem; padding: .2rem 0; }
+.rank-row .rl { font-size: .82rem; color: var(--ink-soft); }
+.rank-row .rn { font-size: .72rem; color: var(--muted); }
+.rank-row .rib { grid-column: 1 / -1; height: 2px; width: var(--w, 0); background: var(--hair-strong); }
+.rank-row.top .rib { background: var(--brass); }
+@media (max-width: 640px) { .rank-cols { grid-template-columns: 1fr; } .stat-cell { flex-basis: 5.5rem; padding: .1rem .7rem; } }
+
+/* motion — draw-in + reveal, calm */
+.reveal { opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+.reveal.is-in { opacity: 1; transform: none; }
+[data-draw] { stroke-dasharray: var(--len, 1); stroke-dashoffset: var(--len, 1); transition: stroke-dashoffset 1.1s var(--ease); }
+[data-draw].is-in { stroke-dashoffset: 0; }
+
+/* reduced-motion: kill all animation, content stays fully visible (AC) */
+@media (prefers-reduced-motion: reduce) {
+  *, .reveal, [data-draw] { transition: none !important; animation: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  [data-draw] { stroke-dashoffset: 0 !important; }
+}
+
+/* i18n: show the active language, hide the other */
+[data-lang-en], [data-lang-vn] { display: none; }
+:root[data-lang="en"] [data-lang-en] { display: revert; }
+:root[data-lang="vn"] [data-lang-vn] { display: revert; }

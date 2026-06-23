@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uncrewed Systems Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base/design-system.css">
+<link rel="stylesheet" href="base/newsroom.css">
+<style>
+  /* home layout in the approved idiom (components reuse the shared design system) */
+  .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+  .bar{border-bottom:1px solid var(--hair)}
+  .bar .wrap{display:flex;align-items:center;height:64px;gap:20px}
+  .wm-name{font-family:var(--font-head);font-weight:600;font-size:18px;letter-spacing:-.01em}
+  .wm-name small{display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;margin-top:2px;font-weight:400}
+  .ctl{margin-left:auto;display:flex;gap:8px}
+  :root[data-lang="en"] .tg .s-en{opacity:1;color:var(--brass)}
+  :root[data-lang="vn"] .tg .s-vn{opacity:1;color:var(--brass)}
+  /* hero */
+  .field{position:relative;padding:84px 0 90px;overflow:hidden}
+  .field .wrap{position:relative;z-index:2;display:grid;grid-template-columns:.92fr 1.18fr;gap:60px;align-items:center}
+  .watermark{position:absolute;left:-180px;bottom:-160px;width:920px;z-index:1;pointer-events:none}
+  .watermark svg{width:100%;height:auto;display:block}
+  .wm-stroke{fill:none;stroke:var(--wm,rgba(26,26,28,.045));stroke-width:1.4}
+  .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--brass-bright)}
+  .lead-h{font-family:var(--font-head);font-weight:600;font-size:clamp(34px,4.4vw,52px);line-height:1.04;letter-spacing:-.018em;margin:20px 0 0}
+  .lead-p{font-size:17px;color:var(--ink-soft);max-width:42ch;margin-top:20px}
+  .cta{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border:1px solid var(--hair-strong);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}
+  .cta:hover{border-color:var(--brass-bright);gap:18px}
+  .cta .ico{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#fff;display:grid;place-items:center;flex:0 0 auto}
+  .cta .ar{width:15px;height:15px;display:block}
+  [data-theme="dark"] .cta .ico{color:#15171B}
+  /* field-file card (dark blueprint card) */
+  .card{position:relative;background:var(--card-bg);color:var(--card-ink);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.45)}
+  [data-theme="dark"] .card{border:1px solid var(--card-hair)}
+  .card .reg{position:absolute;width:16px;height:16px;border:1.5px solid var(--bp);opacity:.55;z-index:3}
+  .card .reg.tl{top:14px;left:14px;border-right:none;border-bottom:none}
+  .card .reg.tr{top:14px;right:14px;border-left:none;border-bottom:none}
+  .card .reg.bl{bottom:14px;left:14px;border-right:none;border-top:none}
+  .card .reg.br{bottom:14px;right:14px;border-left:none;border-top:none}
+  .bp-stage{position:relative;padding:26px 26px 8px;background:radial-gradient(120% 90% at 70% 10%,rgba(216,162,74,.06),transparent 60%)}
+  .bp-stage svg{width:100%;height:auto;display:block}
+  .bp-disc{fill:none;stroke:var(--bp);stroke-width:1;opacity:.28}
+  .bp-blade line{stroke:var(--bp);stroke-width:1;opacity:.22}
+  .bp-arm{fill:none;stroke:var(--bp);stroke-width:2.4;stroke-linecap:round}
+  .bp-body{fill:rgba(216,162,74,.05);stroke:var(--bp);stroke-width:1.6}
+  .bp-part{fill:none;stroke:var(--bp);stroke-width:1.4}
+  .bp-mark{stroke:var(--bp-soft);stroke-width:1}
+  .card-body{padding:6px 34px 34px;position:relative}
+  .card .ghost{font-family:var(--font-head);font-weight:400;font-size:74px;line-height:.8;color:transparent;-webkit-text-stroke:1px var(--card-faint);letter-spacing:-.02em;display:block;margin-bottom:6px}
+  .card .keb{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bp);margin-bottom:12px}
+  .card h3{font-family:var(--font-head);font-weight:600;font-size:clamp(22px,2.5vw,28px);line-height:1.14;letter-spacing:-.012em;color:var(--card-ink);margin:0}
+  .card .ffmodel{color:var(--bp)}
+  .card p{font-size:15.5px;color:var(--card-soft);max-width:52ch;margin-top:14px}
+  .card .foot{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;padding-top:18px;border-top:1px solid var(--card-hair)}
+  .card .meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--card-faint);text-transform:uppercase}
+  .card .meta b{color:var(--bp);font-weight:500}
+  .readmore{display:inline-flex;align-items:center;gap:11px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--card-ink)}
+  .readmore .ico{width:28px;height:28px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}
+  .readmore .ar{width:14px;height:14px;display:block}
+  .readmore:hover .ico{transform:translateX(4px)}
+  /* content sections below the hero */
+  .section-h{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin:0 0 1.1rem;display:flex;gap:.6rem;align-items:center}
+  .section-h::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .block{margin:46px 0}
+  .field-files{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:900px){
+    .field .wrap{grid-template-columns:1fr;gap:40px}
+    .watermark{width:680px;left:-220px;bottom:-120px;opacity:.7}
+    .field-files{grid-template-columns:1fr}
+    .wrap{padding:0 20px}
+  }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="wm-name">Uncrewed Systems Review<small><span data-lang-en>In the field</span><span data-lang-vn>Trên thực địa</span></small></span>
+    <div class="ctl">
+      <button class="tg" id="lang" aria-label="Language"><span class="s s-en">EN</span><span aria-hidden="true">/</span><span class="s s-vn">VN</span></button>
+      <button class="tg" id="theme" aria-label="Theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
+    </div>
+  </div>
+</header>
+
+<section class="field" data-audit="hero">
+  <div class="watermark" aria-hidden="true"><svg viewBox="0 0 760 400"><g class="wm-stroke"><circle cx="170" cy="110" r="92"/><circle cx="590" cy="110" r="92"/><circle cx="170" cy="300" r="92"/><circle cx="590" cy="300" r="92"/><rect x="320" y="160" width="120" height="90" rx="20"/><line x1="248" y1="170" x2="332" y2="196"/><line x1="512" y1="170" x2="428" y2="196"/><line x1="248" y1="240" x2="332" y2="214"/><line x1="512" y1="240" x2="428" y2="214"/><circle cx="380" cy="205" r="30"/><circle cx="380" cy="205" r="13"/><line x1="78" y1="205" x2="682" y2="205"/><line x1="380" y1="10" x2="380" y2="395"/></g></svg></div>
+  <div class="wrap">
+    <div class="reveal is-in">
+      <span class="eyebrow" data-audit="eyebrow"><span data-lang-en>In the field</span><span data-lang-vn>Trên thực địa</span></span>
+      <h1 class="lead-h" data-audit="lead"><span data-lang-en>Uncrewed systems, seen clearly.</span><span data-lang-vn>Hệ thống không người lái, nhìn cho rõ.</span></h1>
+      <p class="lead-p"><span data-lang-en>How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.</span><span data-lang-vn>Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.</span></p>
+      <a class="cta" href="reference.html" data-audit="cta"><span data-lang-en>All field files</span><span data-lang-vn>Tất cả hồ sơ</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <article class="card reveal" data-audit="ffcard"><span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span><div class="bp-stage"><svg viewBox="0 0 760 392" aria-hidden="true"><circle class="bp-disc" cx="230" cy="118" r="70" data-draw></circle><circle class="bp-disc" cx="530" cy="118" r="70" data-draw></circle><circle class="bp-disc" cx="230" cy="300" r="70" data-draw></circle><circle class="bp-disc" cx="530" cy="300" r="70" data-draw></circle><g class="bp-blade"><line x1="174" y1="118" x2="286" y2="118"></line><line x1="474" y1="118" x2="586" y2="118"></line><line x1="174" y1="300" x2="286" y2="300"></line><line x1="474" y1="300" x2="586" y2="300"></line></g><path class="bp-arm" d="M300 168 L230 118" data-draw></path><path class="bp-arm" d="M460 168 L530 118" data-draw></path><path class="bp-arm" d="M300 250 L230 300" data-draw></path><path class="bp-arm" d="M460 250 L530 300" data-draw></path><circle class="bp-part" cx="230" cy="118" r="13"></circle><circle class="bp-part" cx="530" cy="118" r="13"></circle><circle class="bp-part" cx="230" cy="300" r="13"></circle><circle class="bp-part" cx="530" cy="300" r="13"></circle><rect class="bp-body" x="315" y="166" width="130" height="86" rx="20" data-draw></rect><line class="bp-mark" x1="372" y1="209" x2="388" y2="209"></line><line class="bp-mark" x1="380" y1="201" x2="380" y2="217"></line><circle class="bp-part" cx="380" cy="150" r="8"></circle><circle class="bp-part" cx="380" cy="284" r="22"></circle><circle class="bp-part" cx="380" cy="284" r="10"></circle></svg></div><div class="card-body"><span class="ghost">01</span><div class="keb"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span></div><h3 data-audit="ff-title">DJI <span class="ffmodel">Mavic 3E</span></h3><p><span data-lang-en>Enterprise system, China. 17 fields verified to source.</span><span data-lang-vn>Hệ doanh nghiệp, China. 17 field đã kiểm tới nguồn.</span></p><div class="foot"><span class="meta"><span data-lang-en>Evidence</span><span data-lang-vn>Bằng chứng</span> · <b>A</b></span><a class="readmore" href="entity/uav-dji-mavic-3-enterprise-3e.html" data-audit="ff-read"><span data-lang-en>Read the file</span><span data-lang-vn>Đọc hồ sơ</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div></div></article>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="block">
+<div class="sechead"><div><span class="eyebrow">Tin tức</span><h2>Trang nhất, có thứ bậc</h2><p class="sub">Một lead rõ, một tầng hai cân nhắc. Recency sống ở rail “Mới nhất”, không phải logic tổ chức.</p></div><div class="nfacets" role="group" aria-label="Lọc theo chuyên mục"><button class="tg" aria-pressed="true">Tất cả</button><button class="tg" aria-pressed="false">Chính sách</button><button class="tg" aria-pressed="false">Thị trường</button><button class="tg" aria-pressed="false">Công nghệ</button><button class="tg" aria-pressed="false">Quốc phòng</button><button class="tg" aria-pressed="false">Doanh nghiệp</button><button class="tg" aria-pressed="false">Quốc tế</button></div></div><div class="nr-grid"><article class="lead" data-audit="lead"><div class="plate"><span class="reg tl"></span><span class="reg br"></span><span class="pk">Ảnh · nguồn · bản quyền — lưu ở Media Library</span></div><div class="kicker"><span>Quốc phòng</span><span class="dtag">▦ Dữ liệu</span></div><h3><a href="./news/chuan-tuan-thu-dinh-hinh-chuoi-cung-ung.html">Vì sao chuẩn tuân thủ định hình lại chuỗi cung ứng UAV khu vực</a></h3><p class="dek">Khi danh mục linh kiện &#x27;sạch&#x27; thu hẹp, lợi thế dịch từ giá sang khả năng truy nguyên, và các hãng nội địa đứng trước một lựa chọn cấu trúc.</p><div class="chips"><span class="echip"><i>CN</i> NDAA</span><span class="echip"><i>CN</i> Blue UAS</span><a class="echip" href="./entity/uav-aerovironment-rq-20-puma-rq-20b.html"><i>MẪU</i> AeroVironment RQ-20B Puma AE</a><span class="echip"><i>QG</i> Hoa Kỳ</span></div><div class="meta-row"><span class="byline"><b>Lê An</b> · Quốc phòng<span class="dot"></span> 14/3</span><span class="byline">5 phút đọc</span></div></article><div><div class="seclist"><div class="it"><span class="kicker">Thị trường</span><h4><a href="./news/uav-nong-nghiep-diem-nghen-hau-mai.html">UAV nông nghiệp: dữ liệu cho thấy điểm nghẽn nằm ở khâu hậu mãi</a></h4><div class="row"><div class="chips"><span class="echip"><i>CN</i> Phun ly tâm</span><span class="echip"><i>QG</i> Việt Nam</span></div><span class="byline">13/3</span></div></div><div class="it"><span class="kicker">Công nghệ</span><h4><a href="./news/rtk-bai-toan-dinh-vi-gay-nhieu.html">RTK và bài toán định vị khi tín hiệu vệ tinh bị gây nhiễu</a></h4><div class="row"><div class="chips"><span class="echip"><i>CN</i> RTK</span><span class="echip"><i>CN</i> GNSS</span></div><span class="byline">13/3</span></div></div><div class="it"><span class="kicker">Doanh nghiệp</span><h4><a href="./news/hang-noi-dia-mo-rong-canh-co-dinh.html">Một hãng nội địa mở rộng dòng cánh cố định cho nhiệm vụ tầm xa</a></h4><div class="row"><div class="chips"><span class="echip"><i>CN</i> BVLOS</span><span class="echip"><i>QG</i> Việt Nam</span></div><span class="byline">12/3</span></div></div></div><div class="latest"><div class="lh">Mới nhất</div><a href="./news/khung-phap-ly-bvlos-tham-van.html"><span class="t">12/3</span>Khung pháp lý bay ngoài đường ngắm bước vào tham vấn</a></div></div></div>
+  </div>
+
+  <div class="block">
+    <div class="sechead"><div><span class="eyebrow">Phân tích</span>
+      <h2>Chuyên sâu — đọc dạng long-form</h2></div>
+      <a class="ncta" href="analysis/truy-nguyen-loi-the-uav.html"><span>Tất cả phân tích</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+<article class="feat" data-audit="feat"><span class="reg tl"></span><span class="reg tr"></span><span class="reg bl"></span><span class="reg br"></span><div class="txt"><span class="ghost">01</span><span class="kicker">Phân tích · Thị trường</span><h3><a href="analysis/truy-nguyen-loi-the-uav.html" style="color:inherit">Truy nguyên trở thành lợi thế cạnh tranh trong ngành UAV như thế nào</a></h3><p>Khi danh mục linh kiện &#x27;sạch&#x27; thu hẹp dưới sức ép tuân thủ, lợi thế của một nền tảng UAV dịch từ bảng thông số sang khả năng chứng minh xuất xứ từng bộ phận.</p><a class="readmore" href="analysis/truy-nguyen-loi-the-uav.html"><span>Đọc bài</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:14px;height:14px"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div><div class="side"><div class="q"><span class="n">Đang diễn ra</span><span class="a">Quy định tuân thủ (NDAA, Blue UAS) thu hẹp danh mục linh kiện được chấp nhận cho thị trường B2G, đẩy chi phí truy nguyên lên.</span></div><div class="q"><span class="n">Có ý nghĩa gì</span><span class="a">Lợi thế cạnh tranh dịch khỏi thông số kỹ thuật thuần tuý sang năng lực chứng minh nguồn gốc, một biến số mới trong quyết định mua.</span></div><div class="q"><span class="n">Nên làm gì tiếp</span><span class="a">Hãng nội địa nên lập hồ sơ truy nguyên cấp linh kiện sớm; bên mua nên đưa truy nguyên vào tiêu chí đấu thầu, không chỉ giá và tải trọng.</span></div><div class="q"><span class="n">Dữ liệu chứng minh</span><span class="a">Khảo sát 200 hệ thống trong registry; độ phủ trường nguồn theo nhóm linh kiện cho thấy nơi yếu nhất trùng nơi quy định khắt khe nhất.</span></div></div></article>
+  </div>
+
+  <div class="block">
+    <div class="section-h"><span data-lang-en>Record status</span><span data-lang-vn>Tình trạng bản ghi</span>
+      <span class="count mono" data-audit="count" style="color:var(--brass)">200</span></div>
+    <div class="masthead reg-frame" data-audit="masthead"><span class="reg-tr"></span><span class="reg-bl"></span><div class="stat-strip"><div class="stat-cell"><span class="statfig">200</span><span class="cap mono"><span data-lang-en>systems</span><span data-lang-vn>hệ thống</span></span></div><div class="stat-cell"><span class="statfig">24</span><span class="cap mono"><span data-lang-en>Blue UAS</span><span data-lang-vn>Blue UAS</span></span></div><div class="stat-cell"><span class="statfig">25</span><span class="cap mono"><span data-lang-en>NDAA compliant</span><span data-lang-vn>tuân thủ NDAA</span></span></div><div class="stat-cell"><span class="statfig">6</span><span class="cap mono"><span data-lang-en>disputed fields</span><span data-lang-vn>field tranh chấp</span></span></div><div class="stat-cell"><span class="statfig">25%</span><span class="cap mono"><span data-lang-en>spec coverage</span><span data-lang-vn>độ phủ spec</span></span></div></div><div class="rank-cols"><div class="rank"><div class="rank-h mono"><span data-lang-en>By segment</span><span data-lang-vn>Theo phân khúc</span></div><div class="rank-row top"><span class="rl"><span data-lang-en>Military · tactical</span><span data-lang-vn>Quân sự · chiến thuật</span></span><span class="rn mono">42</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span></span><span class="rn mono">34</span><i class="rib" style="--w:81%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span></span><span class="rn mono">22</span><i class="rib" style="--w:52%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Defense · government</span><span data-lang-vn>Quốc phòng · chính phủ</span></span><span class="rn mono">17</span><i class="rib" style="--w:40%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Agriculture</span><span data-lang-vn>Nông nghiệp</span></span><span class="rn mono">13</span><i class="rib" style="--w:31%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Passenger air taxi</span><span data-lang-vn>Taxi bay</span></span><span class="rn mono">10</span><i class="rib" style="--w:24%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span></span><span class="rn mono">9</span><i class="rib" style="--w:21%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Surveying &amp; mapping</span><span data-lang-vn>Khảo sát · lập bản đồ</span></span><span class="rn mono">7</span><i class="rib" style="--w:17%"></i></div></div><div class="rank"><div class="rank-h mono"><span data-lang-en>By country</span><span data-lang-vn>Theo quốc gia</span></div><div class="rank-row top"><span class="rl">China</span><span class="rn mono">66</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl">USA</span><span class="rn mono">58</span><i class="rib" style="--w:88%"></i></div><div class="rank-row"><span class="rl">US</span><span class="rn mono">23</span><i class="rib" style="--w:35%"></i></div><div class="rank-row"><span class="rl">Israel</span><span class="rn mono">10</span><i class="rib" style="--w:15%"></i></div><div class="rank-row"><span class="rl">Germany</span><span class="rn mono">7</span><i class="rib" style="--w:11%"></i></div><div class="rank-row"><span class="rl">France</span><span class="rn mono">6</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Turkey</span><span class="rn mono">6</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Switzerland</span><span class="rn mono">4</span><i class="rib" style="--w:6%"></i></div></div></div></div>
+  </div>
+
+  <div class="block">
+    <a class="cta" href="reference.html" data-audit="browse"><span data-lang-en>Browse &amp; filter all 200 systems</span><span data-lang-vn>Duyệt &amp; lọc toàn bộ 200 hệ thống</span><span class="ico"><svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+  </div>
+</main>
+
+<script src="base/base.js"></script>
+<script>
+  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initI18n(document.getElementById("lang"));
+  USRBase.initDraw();
+  USRBase.initReveal();
+  document.documentElement.dataset.audit = "ready";
+</script>
+</body>
+</html>

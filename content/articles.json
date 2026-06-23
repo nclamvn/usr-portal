@@ -1,0 +1,117 @@
+{
+  "schema": "content/1",
+  "note": "SAMPLE editorial content (sample:true => banner). Prose is placeholder; figures pull REAL numbers from the registry; entity_tags point to real entities; sources are shaped [name·type·tier] — no fabricated news, no quotes attributed to real people.",
+  "articles": [
+    {
+      "slug": "truy-nguyen-loi-the-uav",
+      "type": "analysis",
+      "section": "market",
+      "sample": true,
+      "title": "Truy nguyên trở thành lợi thế cạnh tranh trong ngành UAV như thế nào",
+      "dek": "Khi danh mục linh kiện 'sạch' thu hẹp dưới sức ép tuân thủ, lợi thế của một nền tảng UAV dịch từ bảng thông số sang khả năng chứng minh xuất xứ từng bộ phận.",
+      "date": "14/3",
+      "author": {"name": "Lê An", "role": "Biên tập viên Phân tích", "bio": "Tên và tiểu sử là chữ mẫu. Khối tác giả gắn với hồ sơ Author (schema.org) để tự sinh trang tác giả và liên kết các bài cùng người viết."},
+      "reading_min": 8,
+      "entity_tags": [
+        {"type": "technology", "label": "NDAA"},
+        {"type": "technology", "label": "Blue UAS"},
+        {"type": "technology", "label": "RTK"},
+        {"type": "technology", "label": "GNSS"},
+        {"type": "aircraft", "label": "AeroVironment RQ-20B Puma AE", "slug": "uav-aerovironment-rq-20-puma-rq-20b"},
+        {"type": "country", "label": "Hoa Kỳ"},
+        {"type": "country", "label": "Việt Nam"}
+      ],
+      "glossary": ["RTK", "BVLOS", "Blue UAS"],
+      "four_questions": {
+        "happening": "Quy định tuân thủ (NDAA, Blue UAS) thu hẹp danh mục linh kiện được chấp nhận cho thị trường B2G, đẩy chi phí truy nguyên lên.",
+        "meaning": "Lợi thế cạnh tranh dịch khỏi thông số kỹ thuật thuần tuý sang năng lực chứng minh nguồn gốc, một biến số mới trong quyết định mua.",
+        "todo": "Hãng nội địa nên lập hồ sơ truy nguyên cấp linh kiện sớm; bên mua nên đưa truy nguyên vào tiêu chí đấu thầu, không chỉ giá và tải trọng.",
+        "data": "Khảo sát 200 hệ thống trong registry; độ phủ trường nguồn theo nhóm linh kiện cho thấy nơi yếu nhất trùng nơi quy định khắt khe nhất."
+      },
+      "body": [
+        {"p": "Trong một thị trường mà bảng thông số từng quyết định người thắng, câu hỏi đắt giá nhất giờ không còn là nền tảng bay xa bao nhiêu, mà là mỗi bộ phận trên nó đến từ đâu. Đó là dịch chuyển âm thầm nhưng định hình lại cả chuỗi cung ứng UAV khu vực.", "dropcap": true},
+        {"p": "Sức ép đến từ quy định. Khi các khung tuân thủ như NDAA và danh mục Blue UAS thu hẹp tập linh kiện được chấp nhận cho thị trường chính phủ, một mẫu drone tốt về kỹ thuật vẫn có thể bị loại nếu không chứng minh được xuất xứ. Bài toán chuyển từ 'bay được không' sang 'truy được không'."},
+        {"h2": "Khi danh mục 'sạch' thu hẹp", "n": "01"},
+        {"p": "Linh kiện định vị và truyền dẫn là nơi sức ép dồn về rõ nhất. Một hệ thống dùng RTK để đạt độ chính xác cấp centimet vẫn phải trả lời nguồn gốc mô-đun thu, và đó là nơi nhiều hồ sơ đứt mạch. Khoảng trống truy nguyên, chứ không phải khoảng trống năng lực, mới là thứ loại ứng viên."},
+        {"fig": "fig1"},
+        {"p": "Đọc theo nhóm, điểm yếu lộ ra: nơi truy nguyên thấp nhất lại trùng với nơi quy định khắt khe nhất. Đó là lý do một con số thấp về độ phủ không phải lỗi dữ liệu, nó là bản đồ của việc cần làm tiếp."},
+        {"pq": {"text": "Lợi thế không còn nằm ở chỗ một nền tảng làm được gì, mà ở chỗ nhà sản xuất chứng minh được điều đó đến đâu.", "src": "Luận điểm phân tích · nội dung mẫu"}},
+        {"h2": "Truy nguyên như một biến số mua", "n": "02"},
+        {"p": "Với bên mua thuộc khối chính phủ, truy nguyên đang trở thành tiêu chí ngang hàng giá và tải trọng. Một hồ sơ minh bạch cấp linh kiện rút ngắn vòng thẩm định và giảm rủi ro bị loại muộn. Đặt cạnh nhau, hai mẫu cùng thông số nhưng khác độ truy nguyên không còn là hai lựa chọn ngang giá."},
+        {"p": "Hệ quả với hãng nội địa khá thẳng: đầu tư vào hồ sơ xuất xứ sớm rẻ hơn nhiều so với dựng lại nó dưới sức ép đấu thầu. Đây là chỗ một nền tảng dữ liệu có cấu trúc, nơi mỗi số truy về nguồn và tier, chuyển từ tiện ích biên tập thành công cụ ra quyết định."}
+      ],
+      "figures": [
+        {"id": "fig1", "kind": "spec_fill_rate", "caption": "Độ phủ trường nguồn theo nhóm thông số (toàn registry)", "unit": "%"}
+      ],
+      "sources": [
+        {"text": "<em>Tên tài liệu/cơ quan</em> — loại văn bản, năm. Mô tả ngắn vai trò của nguồn trong bài.", "tier": "A"},
+        {"text": "<em>Tên báo/tạp chí</em> — bài đưa tin, 12/3. Dùng cho bối cảnh, không cho số liệu lõi.", "tier": "B"},
+        {"text": "Trao đổi nền (background) với bên trong ngành, cần đối chiếu chéo trước khi khẳng định.", "tier": "C"}
+      ],
+      "related": ["chuan-eccn-giay-phep-xuat-khau", "do-phu-nguon-diem-khoi-dau"]
+    },
+
+    {
+      "slug": "chuan-tuan-thu-dinh-hinh-chuoi-cung-ung",
+      "type": "news", "section": "defense", "sample": true,
+      "title": "Vì sao chuẩn tuân thủ định hình lại chuỗi cung ứng UAV khu vực",
+      "dek": "Khi danh mục linh kiện 'sạch' thu hẹp, lợi thế dịch từ giá sang khả năng truy nguyên, và các hãng nội địa đứng trước một lựa chọn cấu trúc.",
+      "lead": "Danh mục linh kiện đạt chuẩn thu hẹp đang đẩy lợi thế cạnh tranh từ giá sang năng lực chứng minh nguồn gốc.",
+      "date": "14/3", "author": {"name": "Lê An", "role": "Phân tích"}, "reading_min": 5,
+      "data_marker": true,
+      "entity_tags": [
+        {"type": "technology", "label": "NDAA"}, {"type": "technology", "label": "Blue UAS"},
+        {"type": "aircraft", "label": "AeroVironment RQ-20B Puma AE", "slug": "uav-aerovironment-rq-20-puma-rq-20b"},
+        {"type": "country", "label": "Hoa Kỳ"}
+      ],
+      "glossary": ["NDAA", "Blue UAS"],
+      "body": [
+        {"p": "Khi các khung tuân thủ thu hẹp tập linh kiện được chấp nhận cho thị trường chính phủ, một mẫu drone tốt về kỹ thuật vẫn có thể bị loại nếu không chứng minh được xuất xứ."},
+        {"p": "Áp lực dồn rõ nhất ở nhóm định vị và truyền dẫn, nơi nhiều hồ sơ truy nguyên đứt mạch."}
+      ]
+    },
+    {
+      "slug": "uav-nong-nghiep-diem-nghen-hau-mai",
+      "type": "news", "section": "market", "sample": true,
+      "title": "UAV nông nghiệp: dữ liệu cho thấy điểm nghẽn nằm ở khâu hậu mãi",
+      "dek": "Không phải thông số phun, mà mạng lưới bảo trì mới là biến số quyết định vòng đời thiết bị.",
+      "lead": "Điểm nghẽn của UAV nông nghiệp nằm ở khâu hậu mãi và bảo trì, không phải ở thông số phun.",
+      "date": "13/3", "author": {"name": "Lê An", "role": "Thị trường"}, "reading_min": 4,
+      "entity_tags": [{"type": "technology", "label": "Phun ly tâm"}, {"type": "country", "label": "Việt Nam"}],
+      "body": [{"p": "Khảo sát nhóm thiết bị phun cho thấy chênh lệch lớn nằm ở khả năng cung ứng phụ tùng và thời gian phục hồi sau hỏng hóc."}]
+    },
+    {
+      "slug": "rtk-bai-toan-dinh-vi-gay-nhieu",
+      "type": "news", "section": "tech", "sample": true,
+      "title": "RTK và bài toán định vị khi tín hiệu vệ tinh bị gây nhiễu",
+      "dek": "Định vị cấp centimet mất giá trị nếu lớp nền vệ tinh không được bảo vệ.",
+      "lead": "Định vị RTK cấp centimet mất giá trị khi tín hiệu GNSS nền bị gây nhiễu.",
+      "date": "13/3", "author": {"name": "Lê An", "role": "Công nghệ"}, "reading_min": 6,
+      "entity_tags": [{"type": "technology", "label": "RTK"}, {"type": "technology", "label": "GNSS"}],
+      "glossary": ["RTK", "GNSS"],
+      "body": [{"p": "Khi lớp nền GNSS bị gây nhiễu, độ chính xác RTK suy giảm nhanh, đặt ra yêu cầu về định vị dự phòng cho nhiệm vụ ngoài đường ngắm."}]
+    },
+    {
+      "slug": "hang-noi-dia-mo-rong-canh-co-dinh",
+      "type": "news", "section": "business", "sample": true,
+      "title": "Một hãng nội địa mở rộng dòng cánh cố định cho nhiệm vụ tầm xa",
+      "dek": "Bước đi nhắm vào khoảng trống BVLOS trong khảo sát hạ tầng tuyến dài.",
+      "lead": "Một hãng nội địa mở rộng dòng cánh cố định, nhắm khoảng trống nhiệm vụ tầm xa.",
+      "date": "12/3", "author": {"name": "Lê An", "role": "Doanh nghiệp"}, "reading_min": 4,
+      "entity_tags": [{"type": "technology", "label": "BVLOS"}, {"type": "country", "label": "Việt Nam"}],
+      "glossary": ["BVLOS"],
+      "body": [{"p": "Dòng cánh cố định mới được định vị cho khảo sát tuyến dài, nơi đa số nền tảng đa rotor hụt hơi về tầm bay."}]
+    },
+    {
+      "slug": "khung-phap-ly-bvlos-tham-van",
+      "type": "news", "section": "policy", "sample": true,
+      "title": "Khung pháp lý bay ngoài đường ngắm bước vào tham vấn",
+      "dek": "Dự thảo mở giai đoạn lấy ý kiến, định hình điều kiện vận hành BVLOS thương mại.",
+      "lead": "Khung pháp lý cho bay ngoài đường ngắm bước vào giai đoạn tham vấn công khai.",
+      "date": "12/3", "author": {"name": "Lê An", "role": "Chính sách"}, "reading_min": 3,
+      "entity_tags": [{"type": "technology", "label": "BVLOS"}],
+      "glossary": ["BVLOS"],
+      "body": [{"p": "Giai đoạn tham vấn sẽ định hình điều kiện cấp phép và yêu cầu an toàn cho vận hành BVLOS thương mại."}]
+    }
+  ]
+}

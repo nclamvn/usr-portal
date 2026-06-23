@@ -1,0 +1,8 @@
+# python
+__pycache__/
+*.pyc
+# macOS
+.DS_Store
+# transient server logs (live outside the tree, listed for safety)
+/tmp/
+*.log

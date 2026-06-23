@@ -1,0 +1,10 @@
+{
+  "schema": "glossary/1",
+  "terms": {
+    "RTK": {"vn": "Định vị vệ tinh thời gian thực, độ chính xác cấp centimet.", "en": "Real-Time Kinematic — centimetre-grade real-time satellite positioning."},
+    "BVLOS": {"vn": "Bay ngoài đường ngắm trực tiếp của người điều khiển.", "en": "Beyond Visual Line of Sight operation."},
+    "Blue UAS": {"vn": "Danh mục UAV được Bộ Quốc phòng Hoa Kỳ thẩm định.", "en": "US DoD-vetted list of approved UAS."},
+    "NDAA": {"vn": "Khung tuân thủ hạn chế linh kiện theo Đạo luật Quốc phòng Hoa Kỳ.", "en": "US National Defense Authorization Act component-compliance framework."},
+    "GNSS": {"vn": "Hệ thống vệ tinh định vị toàn cầu.", "en": "Global Navigation Satellite System."}
+  }
+}
