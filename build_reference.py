@@ -6,6 +6,7 @@ is already null in site-data). Totals come from site-data.aggregates (CONSTRAINT
 never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 """
 import json, html, pathlib
+from glyphs import glyph_svg
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -121,6 +122,7 @@ def render_row(e, labels):
         f'<a class="row-item reveal" href="entity/{esc(e["slug"])}.html" data-audit="row" '
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
         f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}">'
+        f'<span class="ri-glyph">{glyph_svg(e.get("frame_glyph", "unknown"))}</span>'
         f'<span class="ri-name"><b>{esc(maker)}</b> <span class="ri-model">{esc(model)}</span></span>'
         f'<span class="ri-meta mono">{esc(country)} · {seg} · {pclass}</span>'
         f'<span class="ri-flags">{flags}</span></a>')

@@ -13,6 +13,7 @@ in the card body and links to the entity's citable detail page. Bilingual, light
 """
 import json, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
+from glyphs import glyph_svg
 from build_news import news_front
 from build_analysis import analysis_feature
 
@@ -156,6 +157,8 @@ def field_file_card(e, n, labels, groups, big):
         + f'<div class="card-body">'
           f'<span class="ghost">{n:02d}</span>'
           f'<div class="keb">{seg}</div>'
+          f'<div class="ff-cfg">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}'
+          f'<span>{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>'
           f'<h3 data-audit="ff-title">{esc(maker)} <span class="ffmodel">{esc(model)}</span></h3>'
           f'<p>{bilingual(desc_en, desc_vn)}</p>'
           f'<div class="foot">'
@@ -249,6 +252,7 @@ def main():
   .card .keb{{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bp);margin-bottom:12px}}
   .card h3{{font-family:var(--font-head);font-weight:600;font-size:clamp(22px,2.5vw,28px);line-height:1.14;letter-spacing:-.012em;color:var(--card-ink);margin:0}}
   .card .ffmodel{{color:var(--bp)}}
+  .card .ff-cfg{{display:flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--card-faint);margin:4px 0 10px}}
   .card p{{font-size:15.5px;color:var(--card-soft);max-width:52ch;margin-top:14px}}
   .card .foot{{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;padding-top:18px;border-top:1px solid var(--card-hair)}}
   .card .meta{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--card-faint);text-transform:uppercase}}

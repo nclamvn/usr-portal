@@ -89,6 +89,16 @@ LABELS = {
 
 TIER_RANK = {"A": 0, "B": 1, "C": 2}
 
+# DECISION D-1 — explicit, TOTAL airframe_type -> frame_glyph map. Unknown/unmapped -> "unknown".
+# 'multirotor' is generic (no rotor count) -> "multirotor"; NEVER quad/hexa/octo (would invent count).
+# fixed-wing/fixed_wing normalised to "fixed" ONLY here (the raw airframe_type is left untouched).
+AIRFRAME_GLYPH = {
+    "quadcopter": "quad", "hexacopter": "hexa", "octocopter": "octo",
+    "multirotor": "multirotor",
+    "fixed-wing": "fixed", "fixed_wing": "fixed",
+    "vtol_fixedwing": "vtol", "helicopter": "heli", "ducted-fan": "ducted",
+}
+
 
 def best_source_tier(cell):
     """Best (A>B>C) source tier on a cell, or the raw tier (e.g. 'derived'), or None."""
@@ -142,6 +152,8 @@ def build(master):
                "family_id": v["family_id"], "provenance_class": v.get("provenance_class")}
         for f in DISPLAY_FIELDS + SPEC_FIELDS:
             ent[f] = field_obj(eff.get(f))
+        # derived (L2) frame glyph — suy ra từ airframe_type, total map, honest "unknown" fallback
+        ent["frame_glyph"] = AIRFRAME_GLYPH.get(ent["airframe_type"].get("value")) or "unknown"
         entities.append(ent)
     entities.sort(key=lambda e: e["canonical_id"])  # deterministic order -> idempotent
 

@@ -109,6 +109,7 @@
         "value": "A2Z Drone Delivery RDSX Pelican"
       },
       "family_id": "uav:a2z-drone-delivery:rdsx-pelican",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -326,6 +327,7 @@
         "value": "Acecore Neo"
       },
       "family_id": "uav:acecore:neo",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -515,6 +517,7 @@
         "value": "Acecore Zoe"
       },
       "family_id": "uav:acecore:zoe",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -697,6 +700,7 @@
         "value": "ACSL ACSL-PF2"
       },
       "family_id": "uav:acsl:acsl-pf2",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -872,6 +876,7 @@
         "value": "Aeronautics Orbiter 4"
       },
       "family_id": "uav:aeronautics:orbiter-4",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1054,6 +1059,7 @@
         "value": "Aerovel Flexrotor"
       },
       "family_id": "uav:aerovel:flexrotor",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1257,6 +1263,7 @@
         "value": "AeroVironment JUMP 20"
       },
       "family_id": "uav:aerovironment:jump-20",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1425,6 +1432,7 @@
         "value": "AeroVironment P550"
       },
       "family_id": "uav:aerovironment:p550",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1600,6 +1608,7 @@
         "value": "AeroVironment Red Dragon"
       },
       "family_id": "uav:aerovironment:red-dragon",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1782,6 +1791,7 @@
         "value": "RQ-11 Raven"
       },
       "family_id": "uav:aerovironment:rq-11-raven",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -1992,6 +2002,7 @@
         "value": "RQ-12 Wasp"
       },
       "family_id": "uav:aerovironment:rq-12-wasp",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -2195,6 +2206,7 @@
         "value": "RQ-20 Puma"
       },
       "family_id": "uav:aerovironment:rq-20-puma",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -2391,6 +2403,7 @@
         "value": "RQ-20 Puma"
       },
       "family_id": "uav:aerovironment:rq-20-puma",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -2622,6 +2635,7 @@
         "value": "Switchblade 300"
       },
       "family_id": "uav:aerovironment:switchblade-300",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -2832,6 +2846,7 @@
         "value": "Switchblade 300"
       },
       "family_id": "uav:aerovironment:switchblade-300",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -3070,6 +3085,7 @@
         "value": "AeroVironment Switchblade 600"
       },
       "family_id": "uav:aerovironment:switchblade-600",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -3245,6 +3261,7 @@
         "value": "AgEagle eBee VISION"
       },
       "family_id": "uav:ageagle:ebee-vision",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -3420,6 +3437,7 @@
         "value": "AgEagle eBee X"
       },
       "family_id": "uav:ageagle:ebee-x",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -3602,6 +3620,7 @@
         "value": "eBee"
       },
       "family_id": "uav:ageagle:ebee",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -3798,6 +3817,7 @@
         "value": "Airbus VSR700"
       },
       "family_id": "uav:airbus:vsr700",
+      "frame_glyph": "heli",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -4015,6 +4035,7 @@
         "value": "Amazon Prime Air MK30"
       },
       "family_id": "uav:amazon-prime-air:mk30",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -4218,6 +4239,7 @@
         "value": "Anduril Industries Altius 600"
       },
       "family_id": "uav:anduril-industries:altius-600",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -4386,6 +4408,7 @@
         "value": "Anduril Industries Bolt-M"
       },
       "family_id": "uav:anduril-industries:bolt-m",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -4561,6 +4584,7 @@
         "value": "Anduril Industries Ghost-X"
       },
       "family_id": "uav:anduril-industries:ghost-x",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -4743,6 +4767,7 @@
         "value": "Anduril Anvil"
       },
       "family_id": "uav:anduril:anvil",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -4946,6 +4971,7 @@
         "value": "Archer Aviation Midnight"
       },
       "family_id": "uav:archer-aviation:midnight",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -5163,6 +5189,7 @@
         "value": "Spirit"
       },
       "family_id": "uav:ascent-aerosystems:spirit",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -5345,6 +5372,7 @@
         "value": "Asylon DroneSentry"
       },
       "family_id": "uav:asylon:dronesentry",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -5513,6 +5541,7 @@
         "value": "Autel Robotics Alpha"
       },
       "family_id": "uav:autel-robotics:alpha",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -5681,6 +5710,7 @@
         "value": "Autel Robotics Dragonfish"
       },
       "family_id": "uav:autel-robotics:dragonfish",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -5863,6 +5893,7 @@
         "value": "Autel Robotics EVO II Pro V3"
       },
       "family_id": "uav:autel-robotics:evo-ii-pro-v3",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -6098,6 +6129,7 @@
         "value": "EVO II"
       },
       "family_id": "uav:autel-robotics:evo-ii",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -6315,6 +6347,7 @@
         "value": "EVO II"
       },
       "family_id": "uav:autel-robotics:evo-ii",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -6553,6 +6586,7 @@
         "value": "EVO II"
       },
       "family_id": "uav:autel-robotics:evo-ii",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -6770,6 +6804,7 @@
         "value": "EVO II"
       },
       "family_id": "uav:autel-robotics:evo-ii",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -7001,6 +7036,7 @@
         "value": "Autel Robotics EVO Lite+"
       },
       "family_id": "uav:autel-robotics:evo-lite",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -7204,6 +7240,7 @@
         "value": "Autel Robotics EVO Nano+"
       },
       "family_id": "uav:autel-robotics:evo-nano",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -7414,6 +7451,7 @@
         "value": "Autel Robotics Titan"
       },
       "family_id": "uav:autel-robotics:titan",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -7603,6 +7641,7 @@
         "value": "Autel EVO Max 4T"
       },
       "family_id": "uav:autel:evo-max-4t",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -7778,6 +7817,7 @@
         "value": "EVO Nano"
       },
       "family_id": "uav:autel:evo-nano",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -7974,6 +8014,7 @@
         "value": "AVIC Wing Loong 10"
       },
       "family_id": "uav:avic:wing-loong-10",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -8163,6 +8204,7 @@
         "value": "AVIC Wing Loong I"
       },
       "family_id": "uav:avic:wing-loong-i",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -8331,6 +8373,7 @@
         "value": "AVIC Wing Loong II"
       },
       "family_id": "uav:avic:wing-loong-ii",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -8499,6 +8542,7 @@
         "value": "Baykar Bayraktar Akinci"
       },
       "family_id": "uav:baykar:bayraktar-akinci",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -8667,6 +8711,7 @@
         "value": "Baykar Bayraktar TB2"
       },
       "family_id": "uav:baykar:bayraktar-tb2",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -8835,6 +8880,7 @@
         "value": "Baykar Bayraktar TB3"
       },
       "family_id": "uav:baykar:bayraktar-tb3",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -9017,6 +9063,7 @@
         "value": "Baykar Kizilelma"
       },
       "family_id": "uav:baykar:kizilelma",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -9220,6 +9267,7 @@
         "value": "Beta Technologies Alia-250"
       },
       "family_id": "uav:beta-technologies:alia-250",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -9430,6 +9478,7 @@
         "value": "BetaFPV Pavo Pico"
       },
       "family_id": "uav:betafpv:pavo-pico",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -9626,6 +9675,7 @@
         "value": "Boeing Insitu Integrator"
       },
       "family_id": "uav:boeing-insitu:integrator",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -9836,6 +9886,7 @@
         "value": "Boeing Insitu RQ-21 Blackjack"
       },
       "family_id": "uav:boeing-insitu:rq-21-blackjack",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10004,6 +10055,7 @@
         "value": "Boeing Insitu ScanEagle"
       },
       "family_id": "uav:boeing-insitu:scaneagle",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10186,6 +10238,7 @@
         "value": "LEMUR"
       },
       "family_id": "uav:brinc:lemur",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10368,6 +10421,7 @@
         "value": "BRINC Responder"
       },
       "family_id": "uav:brinc:responder",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10536,6 +10590,7 @@
         "value": "CASC CH-4 Rainbow"
       },
       "family_id": "uav:casc:ch-4-rainbow",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10704,6 +10759,7 @@
         "value": "CASC CH-5 Rainbow"
       },
       "family_id": "uav:casc:ch-5-rainbow",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -10886,6 +10942,7 @@
         "value": "Censys Technologies Sentaero"
       },
       "family_id": "uav:censys-technologies:sentaero",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -11096,6 +11153,7 @@
         "value": "Cleo Robotics Dronut X1"
       },
       "family_id": "uav:cleo-robotics:dronut-x1",
+      "frame_glyph": "ducted",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -11306,6 +11364,7 @@
         "value": "Delair DT26"
       },
       "family_id": "uav:delair:dt26",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -11527,6 +11586,7 @@
         "value": "Delair UX11"
       },
       "family_id": "uav:delair:ux11",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -11716,6 +11776,7 @@
         "value": "DJI Agras T25"
       },
       "family_id": "uav:dji:agras-t25",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -11898,6 +11959,7 @@
         "value": "DJI Agras T40"
       },
       "family_id": "uav:dji:agras-t40",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -12094,6 +12156,7 @@
         "value": "Agras T50"
       },
       "family_id": "uav:dji:agras-t50",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -12283,6 +12346,7 @@
         "value": "DJI Agras T70P"
       },
       "family_id": "uav:dji:agras-t70p",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -12486,6 +12550,7 @@
         "value": "DJI Air 3"
       },
       "family_id": "uav:dji:air-3",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -12682,6 +12747,7 @@
         "value": "Air 3S"
       },
       "family_id": "uav:dji:air-3s",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -12864,6 +12930,7 @@
         "value": "Avata 2"
       },
       "family_id": "uav:dji:avata-2",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13060,6 +13127,7 @@
         "value": "DJI DJI FPV"
       },
       "family_id": "uav:dji:dji-fpv",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13263,6 +13331,7 @@
         "value": "DJI Flip"
       },
       "family_id": "uav:dji:flip",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13445,6 +13514,7 @@
         "value": "DJI FlyCart 30"
       },
       "family_id": "uav:dji:flycart-30",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13613,6 +13683,7 @@
         "value": "DJI Inspire 3"
       },
       "family_id": "uav:dji:inspire-3",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13781,6 +13852,7 @@
         "value": "DJI Matrice 30T"
       },
       "family_id": "uav:dji:matrice-30t",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -13963,6 +14035,7 @@
         "value": "DJI Matrice 350 RTK"
       },
       "family_id": "uav:dji:matrice-350-rtk",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -14166,6 +14239,7 @@
         "value": "DJI Matrice 400"
       },
       "family_id": "uav:dji:matrice-400",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -14362,6 +14436,7 @@
         "value": "DJI Matrice 4D"
       },
       "family_id": "uav:dji:matrice-4d",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -14537,6 +14612,7 @@
         "value": "DJI Matrice 4E"
       },
       "family_id": "uav:dji:matrice-4e",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -14719,6 +14795,7 @@
         "value": "DJI Mavic 3 Classic"
       },
       "family_id": "uav:dji:mavic-3-classic",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -14929,6 +15006,7 @@
         "value": "Mavic 3 Enterprise"
       },
       "family_id": "uav:dji:mavic-3-enterprise",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -15174,6 +15252,7 @@
         "value": "Mavic 3 Enterprise"
       },
       "family_id": "uav:dji:mavic-3-enterprise",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -15391,6 +15470,7 @@
         "value": "Mavic 3 Enterprise"
       },
       "family_id": "uav:dji:mavic-3-enterprise",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -15629,6 +15709,7 @@
         "value": "Mavic 3 Pro"
       },
       "family_id": "uav:dji:mavic-3-pro",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -15804,6 +15885,7 @@
         "value": "DJI Mavic 4 Pro"
       },
       "family_id": "uav:dji:mavic-4-pro",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -15986,6 +16068,7 @@
         "value": "DJI Mini 3 Pro"
       },
       "family_id": "uav:dji:mini-3-pro",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -16189,6 +16272,7 @@
         "value": "Mini 4 Pro"
       },
       "family_id": "uav:dji:mini-4-pro",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -16385,6 +16469,7 @@
         "value": "DJI Mini 4K"
       },
       "family_id": "uav:dji:mini-4k",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -16588,6 +16673,7 @@
         "value": "DJI Mini 5 Pro"
       },
       "family_id": "uav:dji:mini-5-pro",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -16784,6 +16870,7 @@
         "value": "Neo"
       },
       "family_id": "uav:dji:neo",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -16966,6 +17053,7 @@
         "value": "Falcon"
       },
       "family_id": "uav:easy-aerial:falcon",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -17162,6 +17250,7 @@
         "value": "Edge Autonomy Penguin C"
       },
       "family_id": "uav:edge-autonomy:penguin-c",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -17358,6 +17447,7 @@
         "value": "Edge Autonomy VXE30 Stalker"
       },
       "family_id": "uav:edge-autonomy:vxe30-stalker",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -17540,6 +17630,7 @@
         "value": "EFT Z50"
       },
       "family_id": "uav:eft:z50",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -17743,6 +17834,7 @@
         "value": "EHang EH216-S"
       },
       "family_id": "uav:ehang:eh216-s",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -17939,6 +18031,7 @@
         "value": "EHang VT-35"
       },
       "family_id": "uav:ehang:vt-35",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -18142,6 +18235,7 @@
         "value": "Elbit Systems Hermes 450"
       },
       "family_id": "uav:elbit-systems:hermes-450",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -18324,6 +18418,7 @@
         "value": "Elbit Systems Skylark 3"
       },
       "family_id": "uav:elbit-systems:skylark-3",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -18552,6 +18647,7 @@
         "value": "Elbit Hermes 900"
       },
       "family_id": "uav:elbit:hermes-900",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -18741,6 +18837,7 @@
         "value": "Eve Air Mobility Eve"
       },
       "family_id": "uav:eve-air-mobility:eve",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -18951,6 +19048,7 @@
         "value": "FlightWave Edge 130"
       },
       "family_id": "uav:flightwave:edge-130",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -19154,6 +19252,7 @@
         "value": "Flock Safety Aerodome"
       },
       "family_id": "uav:flock-safety:aerodome",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -19343,6 +19442,7 @@
         "value": "Flyability Elios 3"
       },
       "family_id": "uav:flyability:elios-3",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -19518,6 +19618,7 @@
         "value": "Flytrex Sky2"
       },
       "family_id": "uav:flytrex:sky2",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -19714,6 +19815,7 @@
         "value": "Fortem DroneHunter F700"
       },
       "family_id": "uav:fortem:dronehunter-f700",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -19903,6 +20005,7 @@
         "value": "Alta"
       },
       "family_id": "uav:freefly-systems:alta",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -20106,6 +20209,7 @@
         "value": "Astro"
       },
       "family_id": "uav:freefly-systems:astro",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -20302,6 +20406,7 @@
         "value": "Freefly Alta 8 Pro"
       },
       "family_id": "uav:freefly:alta-8-pro",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -20505,6 +20610,7 @@
         "value": "General Atomics MQ-1C Gray Eagle"
       },
       "family_id": "uav:general-atomics:mq-1c-gray-eagle",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -20715,6 +20821,7 @@
         "value": "General Atomics MQ-20 Avenger"
       },
       "family_id": "uav:general-atomics:mq-20-avenger",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -20911,6 +21018,7 @@
         "value": "General Atomics MQ-9 Reaper"
       },
       "family_id": "uav:general-atomics:mq-9-reaper",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -21093,6 +21201,7 @@
         "value": "GEPRC Cinebot30"
       },
       "family_id": "uav:geprc:cinebot30",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -21282,6 +21391,7 @@
         "value": "Guardian Agriculture SC1"
       },
       "family_id": "uav:guardian-agriculture:sc1",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -21471,6 +21581,7 @@
         "value": "HESA Shahed-136 / Geran-2"
       },
       "family_id": "uav:hesa:shahed-136-geran-2",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -21646,6 +21757,7 @@
         "value": "Heven AeroTech Z1"
       },
       "family_id": "uav:heven-aerotech:z1",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -21835,6 +21947,7 @@
         "value": "Holy Stone HS720"
       },
       "family_id": "uav:holy-stone:hs720",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -22031,6 +22144,7 @@
         "value": "Hongdu GJ-11 Sharp Sword"
       },
       "family_id": "uav:hongdu:gj-11-sharp-sword",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -22234,6 +22348,7 @@
         "value": "Hubsan Zino Mini Pro"
       },
       "family_id": "uav:hubsan:zino-mini-pro",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -22430,6 +22545,7 @@
         "value": "Hylio AG-130"
       },
       "family_id": "uav:hylio:ag-130",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -22633,6 +22749,7 @@
         "value": "Hylio AG-272"
       },
       "family_id": "uav:hylio:ag-272",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -22836,6 +22953,7 @@
         "value": "IAI Harop"
       },
       "family_id": "uav:iai:harop",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -23039,6 +23157,7 @@
         "value": "ideaForge SWITCH"
       },
       "family_id": "uav:ideaforge:switch",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -23242,6 +23361,7 @@
         "value": "iFlight Nazgul5 V3"
       },
       "family_id": "uav:iflight:nazgul5-v3",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -23438,6 +23558,7 @@
         "value": "IF1200"
       },
       "family_id": "uav:inspired-flight:if1200",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -23627,6 +23748,7 @@
         "value": "Inspired Flight IF800 Tomcat"
       },
       "family_id": "uav:inspired-flight:if800",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -23809,6 +23931,7 @@
         "value": "Israel Aerospace Industries Heron TP"
       },
       "family_id": "uav:israel-aerospace-industries:heron-tp",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -24012,6 +24135,7 @@
         "value": "Israel Aerospace Industries Heron"
       },
       "family_id": "uav:israel-aerospace-industries:heron",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -24194,6 +24318,7 @@
         "value": "Israel Aerospace Industries Searcher Mk III"
       },
       "family_id": "uav:israel-aerospace-industries:searcher-mk-iii",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -24397,6 +24522,7 @@
         "value": "Joby Aviation S4"
       },
       "family_id": "uav:joby-aviation:s4",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -24621,6 +24747,7 @@
         "value": "JOUAV CW-15"
       },
       "family_id": "uav:jouav:cw-15",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -24803,6 +24930,7 @@
         "value": "Korean Air KUS-FS"
       },
       "family_id": "uav:korean-air:kus-fs",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -25006,6 +25134,7 @@
         "value": "Kratos XQ-58 Valkyrie"
       },
       "family_id": "uav:kratos:xq-58-valkyrie",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -25223,6 +25352,7 @@
         "value": "Kronshtadt Orion"
       },
       "family_id": "uav:kronshtadt:orion",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -25433,6 +25563,7 @@
         "value": "L3Harris FVR-90"
       },
       "family_id": "uav:l3harris:fvr-90",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -25643,6 +25774,7 @@
         "value": "Leonardo Falco Xplorer"
       },
       "family_id": "uav:leonardo:falco-xplorer",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -25832,6 +25964,7 @@
         "value": "Lilium Jet"
       },
       "family_id": "uav:lilium:jet",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -26056,6 +26189,7 @@
         "value": "Lockheed Martin Indago 4"
       },
       "family_id": "uav:lockheed-martin:indago-4",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -26266,6 +26400,7 @@
         "value": "Lockheed Martin Stalker VXE"
       },
       "family_id": "uav:lockheed-martin:stalker-vxe",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -26462,6 +26597,7 @@
         "value": "Manna Aero Manna"
       },
       "family_id": "uav:manna-aero:manna",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -26679,6 +26815,7 @@
         "value": "Matternet M2"
       },
       "family_id": "uav:matternet:m2",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -26889,6 +27026,7 @@
         "value": "Microdrones mdLiDAR 3000"
       },
       "family_id": "uav:microdrones:mdlidar-3000",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -27085,6 +27223,7 @@
         "value": "Vision FPV"
       },
       "family_id": "uav:modalai:vision-fpv",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -27288,6 +27427,7 @@
         "value": "Vision FPV"
       },
       "family_id": "uav:modalai:vision-fpv",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -27477,6 +27617,7 @@
         "value": "Neros Archer"
       },
       "family_id": "uav:neros:archer",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -27659,6 +27800,7 @@
         "value": "Northrop Grumman MQ-8C Fire Scout"
       },
       "family_id": "uav:northrop-grumman:mq-8c-fire-scout",
+      "frame_glyph": "heli",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -27876,6 +28018,7 @@
         "value": "ANAFI"
       },
       "family_id": "uav:parrot:anafi",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "none",
         "source_tier": null,
@@ -28079,6 +28222,7 @@
         "value": "ANAFI"
       },
       "family_id": "uav:parrot:anafi",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "none",
         "source_tier": null,
@@ -28289,6 +28433,7 @@
         "value": "Percepto Air Max"
       },
       "family_id": "uav:percepto:air-max",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -28471,6 +28616,7 @@
         "value": "C100"
       },
       "family_id": "uav:performance-drone-works:c100",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -28667,6 +28813,7 @@
         "value": "Potensic Atom 2"
       },
       "family_id": "uav:potensic:atom-2",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -28870,6 +29017,7 @@
         "value": "PowerVision PowerEgg X"
       },
       "family_id": "uav:powervision:poweregg-x",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -29066,6 +29214,7 @@
         "value": "Pyka Pelican 2"
       },
       "family_id": "uav:pyka:pelican-2",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -29269,6 +29418,7 @@
         "value": "Pyka Pelican"
       },
       "family_id": "uav:pyka:pelican",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -29479,6 +29629,7 @@
         "value": "Qods Aviation Mohajer-6"
       },
       "family_id": "uav:qods-aviation:mohajer-6",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -29682,6 +29833,7 @@
         "value": "Quantum Systems Reliant"
       },
       "family_id": "uav:quantum-systems:reliant",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -29885,6 +30037,7 @@
         "value": "Quantum Systems Trinity Pro"
       },
       "family_id": "uav:quantum-systems:trinity-pro",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -30116,6 +30269,7 @@
         "value": "Vector AI"
       },
       "family_id": "uav:quantum:vector",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -30312,6 +30466,7 @@
         "value": "Raytheon Coyote Block 2"
       },
       "family_id": "uav:raytheon:coyote-block-2",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -30501,6 +30656,7 @@
         "value": "Red Cat Black Widow"
       },
       "family_id": "uav:red-cat:black-widow",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -30683,6 +30839,7 @@
         "value": "Safran Patroller"
       },
       "family_id": "uav:safran:patroller",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -30886,6 +31043,7 @@
         "value": "Schiebel Camcopter S-100"
       },
       "family_id": "uav:schiebel:camcopter-s-100",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -31068,6 +31226,7 @@
         "value": "senseFly eBee X"
       },
       "family_id": "uav:sensefly:ebee-x",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -31257,6 +31416,7 @@
         "value": "Shield AI V-BAT 128"
       },
       "family_id": "uav:shield-ai:v-bat-128",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -31425,6 +31585,7 @@
         "value": "Shield AI V-BAT"
       },
       "family_id": "uav:shield-ai:v-bat",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -31625,6 +31786,7 @@
         "value": "X10"
       },
       "family_id": "uav:skydio:x10",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -31877,6 +32039,7 @@
         "value": "X10"
       },
       "family_id": "uav:skydio:x10",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": "high",
         "source_tier": "A",
@@ -32094,6 +32257,7 @@
         "value": "Skydio X2D"
       },
       "family_id": "uav:skydio:x2d",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -32283,6 +32447,7 @@
         "value": "Skyfront Perimeter 8"
       },
       "family_id": "uav:skyfront:perimeter-8",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -32493,6 +32658,7 @@
         "value": "Airpeak S1"
       },
       "family_id": "uav:sony:airpeak-s1",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -32661,6 +32827,7 @@
         "value": "Special Technology Center Orlan-10"
       },
       "family_id": "uav:special-technology-center:orlan-10",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -32836,6 +33003,7 @@
         "value": "Swoop Aero Kite"
       },
       "family_id": "uav:swoop-aero:kite",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -33046,6 +33214,7 @@
         "value": "TAI Aksungur"
       },
       "family_id": "uav:tai:aksungur",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -33256,6 +33425,7 @@
         "value": "TAI Anka"
       },
       "family_id": "uav:tai:anka",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -33480,6 +33650,7 @@
         "value": "Teal Drones Golden Eagle"
       },
       "family_id": "uav:teal-drones:golden-eagle",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -33676,6 +33847,7 @@
         "value": "Teal"
       },
       "family_id": "uav:teal-drones:teal",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -33858,6 +34030,7 @@
         "value": "Teledyne FLIR Black Hornet 4"
       },
       "family_id": "uav:teledyne-flir:black-hornet-4",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -34040,6 +34213,7 @@
         "value": "Teledyne FLIR SIRAS"
       },
       "family_id": "uav:teledyne-flir:siras",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -34243,6 +34417,7 @@
         "value": "SkyRanger"
       },
       "family_id": "uav:teledyne-flir:skyranger",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -34425,6 +34600,7 @@
         "value": "Textron Systems Aerosonde"
       },
       "family_id": "uav:textron-systems:aerosonde",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -34607,6 +34783,7 @@
         "value": "Threod Systems EOS C"
       },
       "family_id": "uav:threod-systems:eos-c",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -34817,6 +34994,7 @@
         "value": "Topxgun FP600"
       },
       "family_id": "uav:topxgun:fp600",
+      "frame_glyph": "octo",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -35013,6 +35191,7 @@
         "value": "UMS Skeldar V-200"
       },
       "family_id": "uav:ums-skeldar:v-200",
+      "frame_glyph": "heli",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -35237,6 +35416,7 @@
         "value": "UVision Hero-120"
       },
       "family_id": "uav:uvision:hero-120",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -35433,6 +35613,7 @@
         "value": "Vantage Robotics Vesper"
       },
       "family_id": "uav:vantage-robotics:vesper",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -35615,6 +35796,7 @@
         "value": "Vertical Aerospace VX4"
       },
       "family_id": "uav:vertical-aerospace:vx4",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -35825,6 +36007,7 @@
         "value": "Volocopter VoloCity"
       },
       "family_id": "uav:volocopter:volocity",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -36042,6 +36225,7 @@
         "value": "Walkera Vitus 320"
       },
       "family_id": "uav:walkera:vitus-320",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -36238,6 +36422,7 @@
         "value": "Watts Innovations PRISM Sky"
       },
       "family_id": "uav:watts-innovations:prism-sky",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -36434,6 +36619,7 @@
         "value": "WB Group Warmate"
       },
       "family_id": "uav:wb-group:warmate",
+      "frame_glyph": "fixed",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -36644,6 +36830,7 @@
         "value": "Wing Delivery Aircraft"
       },
       "family_id": "uav:wing:delivery-aircraft",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -36861,6 +37048,7 @@
         "value": "Wingcopter 198"
       },
       "family_id": "uav:wingcopter:w198",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -37064,6 +37252,7 @@
         "value": "WingtraOne"
       },
       "family_id": "uav:wingtra:wingtraone",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -37274,6 +37463,7 @@
         "value": "Wisk Aero Generation 6"
       },
       "family_id": "uav:wisk-aero:generation-6",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -37477,6 +37667,7 @@
         "value": "XAG P100 Pro"
       },
       "family_id": "uav:xag:p100-pro",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -37673,6 +37864,7 @@
         "value": "XAG V40"
       },
       "family_id": "uav:xag:v40",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -37869,6 +38061,7 @@
         "value": "XAG V50"
       },
       "family_id": "uav:xag:v50",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -38065,6 +38258,7 @@
         "value": "Xiaomi (FIMI) X8 SE"
       },
       "family_id": "uav:xiaomi-fimi:x8-se",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -38261,6 +38455,7 @@
         "value": "Yuneec H520E"
       },
       "family_id": "uav:yuneec:h520e",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -38443,6 +38638,7 @@
         "value": "Yuneec Typhoon H3"
       },
       "family_id": "uav:yuneec:typhoon-h3",
+      "frame_glyph": "hexa",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -38632,6 +38828,7 @@
         "value": "ZALA Aero Lancet-3"
       },
       "family_id": "uav:zala-aero:lancet-3",
+      "frame_glyph": "unknown",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -38814,6 +39011,7 @@
         "value": "Zero Zero Robotics HoverAir X1 Pro"
       },
       "family_id": "uav:zero-zero-robotics:hoverair-x1-pro",
+      "frame_glyph": "multirotor",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -39024,6 +39222,7 @@
         "value": "Zero Zero Robotics HoverAir X1 ProMax"
       },
       "family_id": "uav:zero-zero-robotics:hoverair-x1-promax",
+      "frame_glyph": "quad",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,
@@ -39220,6 +39419,7 @@
         "value": "Zipline P2"
       },
       "family_id": "uav:zipline:p2",
+      "frame_glyph": "vtol",
       "gps_denied_capable": {
         "confidence": null,
         "source_tier": null,

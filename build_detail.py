@@ -8,6 +8,7 @@ Reuses the shared design system + the chip()/friendly() renderers from build_ref
 """
 import json, pathlib, shutil
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
+from glyphs import glyph_svg
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -73,6 +74,8 @@ DETAIL_CSS = """
   .sources .tierbadge{display:inline-block;border:1px solid var(--brass);color:var(--brass);border-radius:3px;font-size:.85em;padding:0 .32em;margin-right:.45em;font-weight:600}
   .sources a{color:inherit}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
+  .dglyph{display:flex;align-items:center;gap:18px;margin:1rem 0 .2rem}
+  .dglyph-lab{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 """
 
 
@@ -101,6 +104,8 @@ def detail_fragment(e, labels):
     <h1 data-audit="dtitle">{esc(maker)} <span class="model">{esc(model)}</span></h1>
     <div class="meta mono">{esc(country)} · {seg} · {pclass}</div>
   </header>
+  <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg")}
+    <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>
   <div class="dsec-h">{bilingual("Identity", "Định danh")}</div>
   <div class="drows">{ident}</div>
   <div class="dsec-h">{bilingual("Specifications", "Thông số")}</div>

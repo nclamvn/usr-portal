@@ -88,6 +88,21 @@ def main():
             if norm!=live:
                 fails.append("AGGREGATE field_status_counts stored=%s != live %s"%(norm,live))
 
+    # --- TIP-P02: frame_glyph audit (fail-loud) — total mapping + no rotor-count fabrication ---
+    import collections as _c
+    GLYPHS={"quad","hexa","octo","multirotor","fixed","vtol","heli","ducted","unknown"}
+    dist=_c.Counter()
+    for e in ents:
+        fg=e.get("frame_glyph"); dist[fg]+=1
+        if fg not in GLYPHS:
+            fails.append("FRAME_GLYPH invalid/empty: %s -> %r"%(cid_of(e),fg))
+        at=(e.get("airframe_type") or {}).get("value")
+        if at=="multirotor" and fg!="multirotor":
+            fails.append("FRAME_GLYPH LEAK: multirotor -> %s (must stay 'multirotor', no rotor count)"%fg)
+        if at=="octocopter" and fg!="octo":
+            fails.append("FRAME_GLYPH: octocopter -> %s (expect octo)"%fg)
+    print("frame_glyph distribution:", dict(sorted(dist.items(), key=lambda kv:(-kv[1],str(kv[0])))), "| sum=%d"%sum(dist.values()))
+
     print("entities checked: %d | field-cells checked: %d | real expected: %d"%(len(ents),checked_fields,real_count))
     if fails:
         print("\nAUDIT FAIL (%d):"%len(fails))

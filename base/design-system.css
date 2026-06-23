@@ -160,14 +160,26 @@ small, .small { font-size: .82rem; }
 /* light INDEX rows — the list primitive (rich detail lives at entity/<slug>.html).
    shared by reference.html and the home preview. */
 .index-list { border-top: 1px solid var(--hair); }
-.row-item { display: grid; grid-template-columns: 1fr auto auto; align-items: baseline; gap: 1rem; padding: .7rem .4rem; border-bottom: 1px solid var(--hair); text-decoration: none; color: inherit; }
+.row-item { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1rem; padding: .6rem .4rem; border-bottom: 1px solid var(--hair); text-decoration: none; color: inherit; }
 .row-item:hover { background: var(--panel); }
+.row-item .ri-glyph { display: flex; align-items: center; }
 .row-item .ri-name { font-size: .95rem; }
 .row-item .ri-name b { font-family: var(--font-head); font-weight: 600; color: var(--ink); }
 .row-item .ri-model { color: var(--brass); }
 .row-item .ri-meta { font-size: .72rem; color: var(--muted); }
 .row-item .ri-flags { display: flex; gap: .3rem; white-space: nowrap; }
-@media (max-width: 640px) { .row-item { grid-template-columns: 1fr; gap: .25rem; } }
+@media (max-width: 640px) { .row-item { grid-template-columns: auto 1fr; gap: .15rem 1rem; align-items: center; } .row-item .ri-meta, .row-item .ri-flags { grid-column: 2; } }
+
+/* frame glyphs (TIP-P02) — schematic of the AIRFRAME TYPE, not a model render */
+.glyph-svg { display: block; }
+.glyph-sm { width: 30px; height: 30px; flex: 0 0 30px; }
+.glyph-md { width: 52px; height: 52px; }
+.glyph-lg { width: 200px; height: 200px; max-width: 60vw; }
+.bp-line { fill: none; stroke: var(--bp); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.bp-disc { fill: none; stroke: var(--bp); stroke-width: 1.2; opacity: .85; }
+.bp-faintl { fill: none; stroke: var(--card-faint); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.glyph-unknown .bp-faintl { stroke: var(--faint); }
+.glyph-unknown text { fill: var(--faint); }
 
 /* record-status masthead — almanac, not dashboard. ghost-serif numerals + mono captions,
    hairline-separated; ranked mono lists with a single-tone ribbon and ONE brass beat (the #1 row).
@@ -192,7 +204,7 @@ small, .small { font-size: .82rem; }
 /* Đợt 1 (TIP-P01) — section rhythm: registration divider + light/dark plate band.
    Presentation only; uses canonical tokens; no new variables. */
 .sec { padding: 60px 0; }
-.sec.plate { background: var(--card-bg); color: var(--card-ink); }
+.sec.plate { background: var(--card-bg); color: var(--card-ink); border-top: 1px solid var(--card-hair); border-bottom: 1px solid var(--card-hair); }
 .sec.plate .eyebrow { color: var(--bp); }
 .sec.plate .h2 { color: var(--card-ink); }
 .sec.plate .sub { color: var(--card-soft); }
