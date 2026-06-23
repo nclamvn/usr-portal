@@ -16,6 +16,25 @@ OUTDIR = ROOT / "entity"
 
 IDENTITY = ["manufacturer", "manufacturer_country", "family", "variant",
             "airframe_type", "propulsion", "market_segment", "live_status"]
+# numeric specs get a log-scaled micro-track; units for the always-on label
+NUMERIC_SPEC = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km",
+                "max_link_km", "max_speed_ms", "service_ceiling_m"]
+UNIT = {"mtow_kg": "kg", "max_payload_kg": "kg", "endurance_min": "min", "max_range_km": "km",
+        "max_link_km": "km", "max_speed_ms": "m/s", "service_ceiling_m": "m"}
+
+
+def log_pos(v, lo, hi):
+    """Position % on a log10 min–max scale (D-2: linear would crush the low end into a lie)."""
+    import math
+    lo = max(lo, 1e-9)
+    if hi <= lo or v <= 0:
+        return 50.0
+    p = (math.log10(v) - math.log10(lo)) / (math.log10(hi) - math.log10(lo)) * 100
+    return max(2.0, min(98.0, p))
+
+
+def _num(v):
+    return ("%g" % v)
 
 
 def srcrefs(fo, ledger):
@@ -40,14 +59,39 @@ def srcrefs(fo, ledger):
     return out
 
 
-def field_row(e, field, labels, ledger):
+def field_row(e, field, labels, ledger, ranges=None):
     fo = e[field]
     lab = labels["field"].get(field, {"en": field, "vn": field})
     disp, ch = chip(fo, labels)
     if field == "market_segment" and fo.get("value"):
         disp = friendly("segment", fo.get("value"), labels)   # friendly enum, not the raw key
     sup = "".join(f'<sup><a href="#s{n}">{n}</a></sup>' for n in srcrefs(fo, ledger))
-    return (f'<div class="drow"><span class="k">{bilingual(lab["en"], lab["vn"])}</span>'
+    klabel = f'<span class="k">{bilingual(lab["en"], lab["vn"])}</span>'
+
+    # micro-track for numeric specs (log scale; honest-null = dashed rail, no tick)
+    if ranges is not None and field in NUMERIC_SPEC:
+        rng = ranges.get(field)
+        v = fo.get("value")
+        if isinstance(v, (int, float)) and not isinstance(v, bool) and rng:
+            pos = log_pos(v, rng["min"], rng["max"])
+            rail = f'<span class="rail"><i class="tick" style="left:{pos:.0f}%"></i></span>'
+            vlab = f'{esc(_num(v))} {esc(UNIT.get(field, ""))}'
+        elif fo.get("status") == "disputed":
+            cl = [c.get("claimed_value") for c in (fo.get("claims") or [])
+                  if isinstance(c.get("claimed_value"), (int, float)) and not isinstance(c.get("claimed_value"), bool)]
+            if cl and rng:
+                a, b = log_pos(min(cl), rng["min"], rng["max"]), log_pos(max(cl), rng["min"], rng["max"])
+                rail = f'<span class="rail"><span class="rng" style="left:{a:.0f}%;width:{max(b-a,1):.0f}%"></span></span>'
+            else:
+                rail = '<span class="rail null"></span>'
+            vlab = " / ".join(esc(_num(c)) for c in cl) + " " + esc(UNIT.get(field, ""))
+        else:  # null / unverified — honest-null, no tick
+            rail, vlab = '<span class="rail null"></span>', '—'
+        return (f'<div class="drow spec">{klabel}'
+                f'<div class="vt"><div class="track">{rail}</div>'
+                f'<span class="v" data-audit="dval">{vlab}{sup}</span></div>{ch}</div>')
+
+    return (f'<div class="drow">{klabel}'
             f'<span class="v" data-audit="dval">{disp}{sup}</span>{ch}</div>')
 
 
@@ -65,6 +109,7 @@ DETAIL_CSS = """
   .dsec-h::after{content:"";flex:1;height:1px;background:var(--hair)}
   .drows{display:grid;gap:0}
   .drow{display:grid;grid-template-columns:13rem 1fr auto;align-items:baseline;gap:.7rem;font-size:.85rem;padding:.42rem 0;border-bottom:1px solid var(--hair)}
+  .drow.spec{align-items:center}
   .drow .k{color:var(--ink-soft)}
   .drow .v{font-family:var(--font-mono);color:var(--ink);font-variant-numeric:tabular-nums}
   .drow .v sup a{color:var(--brass);text-decoration:none;font-size:.72em;padding:0 .12em}
@@ -79,7 +124,7 @@ DETAIL_CSS = """
 """
 
 
-def detail_fragment(e, labels):
+def detail_fragment(e, labels, ranges=None, draw=False):
     """Inner detail content (header + identity + specs + sources + note) — NO page chrome.
     Reused verbatim by the standalone page and the single-file bundle, so honest-null / disputed /
     tier rendering can never drift between the two."""
@@ -92,7 +137,7 @@ def detail_fragment(e, labels):
     ident = "".join(field_row(e, f, labels, ledger) for f in IDENTITY)
     ident += (f'<div class="drow"><span class="k">{bilingual("Class", "Lớp")}</span>'
               f'<span class="v">{pclass}</span><span></span></div>')
-    specs = "".join(field_row(e, f, labels, ledger) for f in SPEC_FIELDS)
+    specs = "".join(field_row(e, f, labels, ledger, ranges) for f in SPEC_FIELDS)
     foot = "".join(
         f'<li id="s{m["num"]}"><span class="tierbadge">{esc(m["tier"] or "—")}</span>'
         f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a></li>'
@@ -104,7 +149,7 @@ def detail_fragment(e, labels):
     <h1 data-audit="dtitle">{esc(maker)} <span class="model">{esc(model)}</span></h1>
     <div class="meta mono">{esc(country)} · {seg} · {pclass}</div>
   </header>
-  <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg")}
+  <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg", draw=draw)}
     <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>
   <div class="dsec-h">{bilingual("Identity", "Định danh")}</div>
   <div class="drows">{ident}</div>
@@ -119,7 +164,7 @@ def detail_fragment(e, labels):
     "Field chưa kiểm chứng hoặc thiếu hiển thị null — không bịa. Field tranh chấp giữ cả hai giá trị.")}</p>"""
 
 
-def render_detail(e, labels):
+def render_detail(e, labels, ranges=None):
     maker = e["manufacturer"].get("value") or "—"
     model = e["name"].get("value") or "—"
     return f"""<!DOCTYPE html>
@@ -140,13 +185,15 @@ def render_detail(e, labels):
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
     </div>
   </div>
-  {detail_fragment(e, labels)}
+  {detail_fragment(e, labels, ranges, draw=True)}
 </main>
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));
   USRBase.initI18n(document.getElementById("lang"));
   USRBase.mountArrows();
+  USRBase.initDraw();
+  USRBase.initReveal();
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
@@ -158,11 +205,12 @@ def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
     ents = site["entities"]
+    ranges = site["aggregates"].get("spec_range", {})
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)          # clean regen — no stale slugs linger
     OUTDIR.mkdir(parents=True)
     for e in ents:
-        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels))
+        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges))
     print(f"entity/: {len(ents)} detail pages written")
 
 

@@ -103,6 +103,25 @@ def main():
             fails.append("FRAME_GLYPH: octocopter -> %s (expect octo)"%fg)
     print("frame_glyph distribution:", dict(sorted(dist.items(), key=lambda kv:(-kv[1],str(kv[0])))), "| sum=%d"%sum(dist.values()))
 
+    # --- TIP-P03: spec_range must be LIVE (== recompute, not hardcoded) + coverage consistency ---
+    spec=S["field_groups"]["spec"]; rng=S["aggregates"].get("spec_range",{})
+    recomp={}
+    for e in ents:
+        for f in spec:
+            v=(e.get(f) or {}).get("value")
+            if isinstance(v,(int,float)) and not isinstance(v,bool):
+                r=recomp.setdefault(f,[v,v]); r[0]=min(r[0],v); r[1]=max(r[1],v)
+    for f,(lo,hi) in recomp.items():
+        sr=rng.get(f)
+        if not sr or sr.get("min")!=lo or sr.get("max")!=hi:
+            fails.append("SPEC_RANGE %s stored=%s != live min=%s max=%s (hardcoded?)"%(f,sr,lo,hi))
+    fillagg=S["aggregates"]["spec_fill_rate"]
+    present=sum(d["present"] for d in fillagg.values()); tot=sum(d["total"] for d in fillagg.values())
+    rp=sum(1 for e in ents for f in spec if (e.get(f) or {}).get("value") is not None)
+    if rp!=present:
+        fails.append("COVERAGE present recompute %d != aggregate %d"%(rp,present))
+    print("spec_range fields: %d | coverage matrix present/total: %d/%d (%d%%)"%(len(rng),present,tot,round(100*present/tot) if tot else 0))
+
     print("entities checked: %d | field-cells checked: %d | real expected: %d"%(len(ents),checked_fields,real_count))
     if fails:
         print("\nAUDIT FAIL (%d):"%len(fails))

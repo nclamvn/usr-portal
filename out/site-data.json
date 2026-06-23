@@ -59,6 +59,36 @@
         "present": 37,
         "total": 200
       }
+    },
+    "spec_range": {
+      "endurance_min": {
+        "max": 1980,
+        "min": 4
+      },
+      "max_link_km": {
+        "max": 200,
+        "min": 0.9
+      },
+      "max_payload_kg": {
+        "max": 2700,
+        "min": 1.4
+      },
+      "max_range_km": {
+        "max": 5666,
+        "min": 3.2
+      },
+      "max_speed_ms": {
+        "max": 306,
+        "min": 4
+      },
+      "mtow_kg": {
+        "max": 8500,
+        "min": 0.073
+      },
+      "service_ceiling_m": {
+        "max": 15240,
+        "min": 1524
+      }
     }
   },
   "entities": [

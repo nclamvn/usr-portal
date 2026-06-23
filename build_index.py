@@ -168,6 +168,23 @@ def field_file_card(e, n, labels, groups, big):
           f'</div></div></article>')
 
 
+def coverage_matrix(site):
+    """Real per-cell coverage (11 specs × N entities). Filled = field has a value; sparse is shown,
+    not hidden — rigor as evidence. % per row is the live aggregate (== auditor coverage)."""
+    ents = site["entities"]
+    spec = site["field_groups"]["spec"]
+    total = len(ents)
+    rows = ""
+    for fkey in spec:
+        cells = "".join('<i class="on"></i>' if e[fkey].get("value") is not None else '<i></i>' for e in ents)
+        present = sum(1 for e in ents if e[fkey].get("value") is not None)
+        lab = site["labels"]["field"].get(fkey, {"en": fkey, "vn": fkey})
+        rows += (f'<div class="cov-row"><span class="cl">{bilingual(lab["en"], lab["vn"])}</span>'
+                 f'<span class="cov-cells">{cells}</span>'
+                 f'<span class="cn">{round(100*present/total)}% · {present}/{total}</span></div>')
+    return f'<div class="cov" data-audit="cov">{rows}</div>'
+
+
 def pick_featured(ents, groups, k=3):
     """Deterministic: best-documented entities (most populated fields), tie-break canonical_id.
     At most one per family_id so the showcase is diverse (not two sibling variants)."""
@@ -324,6 +341,8 @@ def main():
     f"Every figure computed live from {n} entities — nothing hand-typed.",
     f"Mọi con số tính sống từ {n} thực thể — không gõ tay.")}</p>
   {masthead}
+  <div class="regdiv"><b class="lab">{bilingual("Spec coverage · per cell", "Độ phủ spec · từng ô")}</b><span class="ln"></span></div>
+  {coverage_matrix(site)}
 </div></section>
 
 <main class="wrap">

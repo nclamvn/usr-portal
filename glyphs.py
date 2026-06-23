@@ -9,7 +9,7 @@ Zero-fab rule baked in: a glyph commits ONLY to what the data asserts.
     NO discrete rotor arms/discs. (Mapping multirotor->quad would invent a 4-rotor claim — forbidden.)
   - unknown / unmapped -> neutral dashed ring + '?', never a guessed frame.
 """
-import math
+import math, re
 
 ALLOWED = {"quad", "hexa", "octo", "multirotor", "fixed", "vtol", "heli", "ducted", "unknown"}
 
@@ -66,9 +66,14 @@ def _inner(kind):
             '<text x="50" y="58" text-anchor="middle" font-family="IBM Plex Mono" font-size="22">?</text>')
 
 
-def glyph_svg(kind, size="glyph-sm"):
-    """Return an inline <svg> for the frame kind at a size class (glyph-sm|md|lg). Unmapped -> unknown."""
+def glyph_svg(kind, size="glyph-sm", draw=False):
+    """Inline <svg> for the frame kind at a size class. draw=True marks strokes [data-draw] so the
+    large detail glyph self-draws (the page must run initDraw+initReveal; no-JS/.reduced-motion ->
+    solid via the .js gate). Unmapped -> unknown."""
     k = kind if kind in ALLOWED else "unknown"
+    inner = _inner(k)
+    if draw:
+        inner = re.sub(r'<(line|circle|path)\b', r'<\1 data-draw', inner)   # not <text>
     extra = " glyph-unknown" if k == "unknown" else ""
     return (f'<svg class="glyph-svg {size}{extra}" viewBox="0 0 100 100" '
-            f'aria-hidden="true" data-glyph="{k}">{_inner(k)}</svg>')
+            f'aria-hidden="true" data-glyph="{k}">{inner}</svg>')

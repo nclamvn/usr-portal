@@ -101,8 +101,12 @@ function detailExpr(theme, lang) {
     const sources=document.querySelectorAll('.sources li[id^="s"]').length;
     const tiers=document.querySelectorAll('.sources .tierbadge').length;
     const nullChips=document.querySelectorAll('.chip[data-status="absent"], .chip[data-status="unverified"]').length;
+    const specRows=document.querySelectorAll('.drow.spec').length;
+    const ticks=document.querySelectorAll('.drow.spec .tick').length;
+    const nullRails=document.querySelectorAll('.drow.spec .rail.null').length;
+    const rngs=document.querySelectorAll('.drow.spec .rng').length;
     const hits=USRBase.designerAudit(document);
-    return { sources, tiers, nullChips, hits };
+    return { sources, tiers, nullChips, specRows, ticks, nullRails, rngs, hits };
   })()`;
 }
 
@@ -184,10 +188,12 @@ async function main() {
       await sleep(900);
       for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
         const dr = await evalOnPage(send, detailExpr(theme, lang));
-        const ok = dr.hits.length === 0 && dr.sources > 0 && dr.tiers > 0 && dr.nullChips > 0;
+        // micro-track two-way: every numeric-spec row is EXACTLY one of tick | null-rail | range
+        const trackOk = dr.specRows > 0 && (dr.ticks + dr.nullRails + dr.rngs) === dr.specRows;
+        const ok = dr.hits.length === 0 && dr.sources > 0 && dr.tiers > 0 && dr.nullChips > 0 && trackOk;
         if (!ok) failures++;
         console.log(`  ${ok ? "PASS" : "FAIL"}  /entity/${slug}  [${theme}/${lang}]  overlaps=${dr.hits.length}  ` +
-          `sources=${dr.sources}  tiers=${dr.tiers}  honest-null-kept=${dr.nullChips}`);
+          `sources=${dr.sources}  honest-null=${dr.nullChips}  tracks=${dr.ticks}tick/${dr.nullRails}null/${dr.rngs}rng of ${dr.specRows}`);
       }
     } else { failures++; console.log("  FAIL  detail page: could not resolve a slug"); }
 

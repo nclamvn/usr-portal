@@ -159,7 +159,7 @@ def build(master):
 
     # CONSTRAINT 8: aggregates computed live, counting field-cells exactly as the
     # auditor does (every {value,status} child, status stringified incl. None).
-    status_counts, tier_counts, fill = {}, {}, {}
+    status_counts, tier_counts, fill, ranges = {}, {}, {}, {}
     for e in entities:
         for f in DISPLAY_FIELDS + SPEC_FIELDS:
             fo = e[f]
@@ -171,8 +171,14 @@ def build(master):
             if f in SPEC_FIELDS:
                 fill.setdefault(f, {"present": 0, "total": 0})
                 fill[f]["total"] += 1
-                if fo["value"] is not None:
+                v = fo["value"]
+                if v is not None:
                     fill[f]["present"] += 1
+                # spec_range: live min/max over numeric values (TIP-P03 — micro-track log scale)
+                if isinstance(v, (int, float)) and not isinstance(v, bool):
+                    r = ranges.setdefault(f, {"min": v, "max": v})
+                    r["min"] = min(r["min"], v)
+                    r["max"] = max(r["max"], v)
     return {
         "schema": "site-data/1",
         "source_registry_sha256": hashlib.sha256(
@@ -184,6 +190,7 @@ def build(master):
             "field_status_counts": status_counts,
             "source_tier_counts": tier_counts,
             "spec_fill_rate": fill,
+            "spec_range": ranges,
         },
         "entities": entities,
     }

@@ -73,8 +73,9 @@ def main():
     facets = inline_links(render_facets(ents, labels))
     rows = inline_links("\n".join(render_row(e, labels) for e in ents))
     masthead = render_masthead(f, labels)
+    ranges = site["aggregates"].get("spec_range", {})
     frags = "\n".join(
-        f'<div id="d-{esc(e["slug"])}">{inline_links(detail_fragment(e, labels))}</div>'
+        f'<div id="d-{esc(e["slug"])}">{inline_links(detail_fragment(e, labels, ranges))}</div>'
         for e in ents)
     analysis = next((a for a in arts if a["type"] == "analysis"), None)
     lf = inline_links(long_form(analysis, site, glossary)) if analysis else ""

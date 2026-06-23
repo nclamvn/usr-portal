@@ -232,8 +232,31 @@ small, .small { font-size: .82rem; }
 /* motion — draw-in + reveal, calm */
 .reveal { opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal.is-in { opacity: 1; transform: none; }
-[data-draw] { stroke-dasharray: var(--len, 1); stroke-dashoffset: var(--len, 1); transition: stroke-dashoffset 1.1s var(--ease); }
-[data-draw].is-in { stroke-dashoffset: 0; }
+/* draw-in styling applies ONLY with JS (.js on <html>) — no-JS renders strokes solid, never dotted */
+:root.js [data-draw] { stroke-dasharray: var(--len, 1); stroke-dashoffset: var(--len, 1); transition: stroke-dashoffset 1.1s var(--ease); }
+:root.js [data-draw].is-in { stroke-dashoffset: 0; }
+
+/* micro-track (TIP-P03) — log-scaled position of a number on its live min–max; honest-null visible */
+.vt { display: flex; align-items: center; gap: 12px; }
+.vt .track { flex: 1; min-width: 70px; }
+.vt .v { white-space: nowrap; }
+.track .rail { position: relative; display: block; height: 2px; background: var(--hair-strong); border-radius: 2px; }
+.track .rail.null { background: transparent; height: 0; border-top: 1px dashed var(--hair-strong); }
+.track .tick { position: absolute; top: 50%; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); transform: translate(-50%, -50%); }
+.track .rng { position: absolute; top: 50%; height: 2px; background: var(--bp); opacity: .55; transform: translateY(-50%); }
+
+/* coverage matrix (TIP-P03) — real per-cell fill, sparse-is-a-feature */
+.cov { display: grid; gap: 6px 12px; margin-top: 6px; }
+.cov-row { display: grid; grid-template-columns: 7.5rem 1fr auto; align-items: center; gap: 12px; }
+.cov-row .cl { font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; color: var(--muted); text-transform: uppercase; }
+.cov-row .cn { font-family: var(--font-mono); font-size: 10px; color: var(--faint); white-space: nowrap; }
+.cov-cells { display: flex; gap: 1px; height: 12px; }
+.cov-cells i { flex: 1; background: var(--hair); }
+.cov-cells i.on { background: var(--bp); }
+.sec.plate .cov-row .cl { color: var(--card-soft); }
+.sec.plate .cov-row .cn { color: var(--card-faint); }
+.sec.plate .cov-cells i { background: var(--card-hair); }
+.sec.plate .cov-cells i.on { background: var(--bp); }
 
 /* reduced-motion: kill all animation, content stays fully visible (AC) */
 @media (prefers-reduced-motion: reduce) {

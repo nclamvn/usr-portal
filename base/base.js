@@ -3,6 +3,8 @@
    No framework. Browser-only (getBBox / getBoundingClientRect). */
 (function (root) {
   "use strict";
+  // mark JS active so draw-in styling applies ONLY with JS — no-JS renders strokes solid (no dotting)
+  try { root.document.documentElement.classList.add("js"); } catch (e) {}
 
   /* Canonical arrow: SVG shaft + chevron. NEVER a unicode arrow glyph. */
   var ARROW_NS = "http://www.w3.org/2000/svg";
