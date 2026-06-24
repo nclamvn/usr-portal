@@ -258,6 +258,14 @@ async function main() {
         if (!ok) failures++;
         console.log(`  ${ok ? "PASS" : "FAIL"}  /compare?uav=2  [${theme}/${lang}]  overlaps=${r.hits.length}  cols=${cols}  tracks=${tracks}`);
       }
+      // empty-state usability: suggestions render on load (not a blank screen) + typing filters
+      await send("Page.navigate", { url: BASE + "/compare.html" });
+      await sleep(800);
+      const sug = await evalOnPage(send, `document.querySelectorAll('#results button').length`);
+      const filtered = await evalOnPage(send, `(function(){var q=document.getElementById('q');q.value='puma';q.dispatchEvent(new Event('input'));return document.querySelectorAll('#results button').length;})()`);
+      const sok = sug > 0 && filtered > 0;
+      if (!sok) failures++;
+      console.log(`  ${sok ? "PASS" : "FAIL"}  /compare  [suggestions]  on-load=${sug}  typed'puma'=${filtered}`);
     } catch (e) { failures++; console.log("  FAIL  compare page: " + e.message); }
 
     // SEARCH page (?q=dji) — multi-type hits, overlap-clean, filter latency (P2.1)

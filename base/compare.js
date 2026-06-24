@@ -31,19 +31,41 @@
     return t ? t.innerHTML : "";
   }
 
+  // suggestions when the box is empty/focused — one system from each largest manufacturer, so the
+  // screen is never blank and the user has recognizable starting points to click.
+  function suggestions() {
+    var count = {};
+    D.uavs.forEach(function (u) { count[u.maker] = (count[u.maker] || 0) + 1; });
+    var makers = Object.keys(count).sort(function (a, b) { return count[b] - count[a]; });
+    var out = [];
+    makers.forEach(function (m) {
+      if (out.length >= 10) return;
+      for (var i = 0; i < D.uavs.length; i++) {
+        if (D.uavs[i].maker === m && sel.indexOf(D.uavs[i].slug) < 0) { out.push(D.uavs[i]); break; }
+      }
+    });
+    return out;
+  }
+
   function renderResults() {
     var query = (q.value || "").trim().toLowerCase();
-    if (!query) { results.hidden = true; results.innerHTML = ""; return; }
-    var hits = D.uavs.filter(function (u) {
-      return (u.name + " " + u.maker).toLowerCase().indexOf(query) >= 0;
-    }).slice(0, 40);
-    results.innerHTML = hits.map(function (u) {
+    var hits, head;
+    if (!query) {
+      hits = suggestions();
+      head = '<div class="rhint">' + bi("Suggestions — or type a model / manufacturer",
+        "Gợi ý — hoặc gõ tên mẫu / hãng") + '</div>';
+    } else {
+      hits = D.uavs.filter(function (u) { return (u.name + " " + u.maker).toLowerCase().indexOf(query) >= 0; }).slice(0, 40);
+      head = "";
+    }
+    results.innerHTML = head + hits.map(function (u) {
       var dis = sel.indexOf(u.slug) >= 0 || sel.length >= MAX;
       return '<button data-slug="' + esc(u.slug) + '"' + (dis ? " disabled" : "") + '>' +
         esc(u.name) + ' <span class="mk">' + esc(u.maker) + '</span></button>';
     }).join("");
-    results.hidden = hits.length === 0;
+    results.hidden = !hits.length;
   }
+  q.addEventListener("focus", renderResults);
 
   function renderChips() {
     chips.innerHTML = sel.map(function (s) {
