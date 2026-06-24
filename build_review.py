@@ -111,9 +111,7 @@ def render(rv, labels):
   </div>
   <h1>{bilingual("Capability review", "Đánh giá năng lực")}</h1>
   <div class="lead">{bilingual("Spec-derived, ranked. No editorial judgement.", "Suy từ thông số, xếp hạng. Không phán đoán biên tập.")}</div>
-  <div class="method">{bilingual(
-    "<b>Method:</b> each dimension scores a system by the log-scaled position of its spec within the registry's range (0–100) — the same scale as the micro-track. <b>Total</b> = mean of scored dimensions. A spec without a value is <b>honest-null</b> (—), not zero: a system is never penalised for data we don't have. 'Scored N/6' shows how complete the evidence is, so sparse-but-high is distinguishable.",
-    "<b>Phương pháp:</b> mỗi chiều chấm một hệ thống theo vị trí log của thông số trong dải dữ liệu (0–100) — cùng thang micro-track. <b>Tổng</b> = trung bình các chiều có điểm. Thông số không có giá trị là <b>honest-null</b> (—), không phải 0: không hệ thống nào bị phạt vì dữ liệu ta chưa có. 'Chấm N/6' cho thấy độ đầy bằng chứng, để phân biệt thưa-nhưng-cao.")}</div>
+  <div class="method"><span data-lang-en><b>Method:</b> each dimension scores a system by the log-scaled position of its spec within the registry's range (0–100) — the same scale as the micro-track. <b>Total</b> = mean of scored dimensions. A spec without a value is <b>honest-null</b> (—), not zero: a system is never penalised for data we don't have. 'Scored N/6' shows how complete the evidence is, so sparse-but-high is distinguishable.</span><span data-lang-vn><b>Phương pháp:</b> mỗi chiều chấm một hệ thống theo vị trí log của thông số trong dải dữ liệu (0–100) — cùng thang micro-track. <b>Tổng</b> = trung bình các chiều có điểm. Thông số không có giá trị là <b>honest-null</b> (—), không phải 0: không hệ thống nào bị phạt vì dữ liệu ta chưa có. 'Chấm N/6' cho thấy độ đầy bằng chứng, để phân biệt thưa-nhưng-cao.</span></div>
   <table class="rv"><thead><tr><th>#</th><th>{bilingual("System", "Hệ thống")}</th>{dim_th}<th>{bilingual("Total", "Tổng")}</th><th>{bilingual("Scored", "Chấm")}</th></tr></thead>
   <tbody>{rows}</tbody></table>
 </main>
