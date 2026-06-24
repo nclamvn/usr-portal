@@ -36,6 +36,11 @@
       "founder":      {"value": "Paul B. MacCready Jr.", "source": "en.wikipedia.org/wiki/AeroVironment", "tier": "B"},
       "stock":        {"value": "NASDAQ: AVAV", "source": "finance.yahoo.com", "tier": "B"},
       "contact_email": null, "contact_phone": null
+    },
+    "real-time-robotics": {
+      "website":      {"value": "https://rtrobotics.com", "source": "official domain (RtR primary)", "tier": "A"},
+      "legal_name": null, "founded_year": null, "hq_country": null, "hq_city": null,
+      "hq_address": null, "founder": null, "contact_email": null, "contact_phone": null
     }
   }
 }
