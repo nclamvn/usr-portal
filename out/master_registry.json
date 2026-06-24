@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 255,
-  "variant_count": 266,
+  "family_count": 266,
+  "variant_count": 277,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -24798,6 +24798,1139 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:st-engineering:skyblade-360",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "ST Engineering",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ST Engineering",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Singapore",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Singapore",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "ST Engineering Skyblade 360",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ST Engineering Skyblade 360",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:ptdi:elang-hitam",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "PTDI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "PTDI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Indonesia",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Indonesia",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "PTDI Elang Hitam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "PTDI Elang Hitam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:rv-connex:sky-scout",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "RV Connex",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "RV Connex",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Thailand",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Thailand",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "RV Connex Sky Scout",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "RV Connex Sky Scout",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:airbus:zephyr",
+      "kind": "family",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Airbus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Airbus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "United Kingdom",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "United Kingdom",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Airbus Zephyr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Airbus Zephyr",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:iai:heron-tp",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "IAI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "IAI Heron TP",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Heron TP",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:northrop-grumman:mq-4c-triton",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Northrop Grumman",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Northrop Grumman MQ-4C Triton",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman MQ-4C Triton",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:thales:spy-ranger",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Thales",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Thales",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "France",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "France",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Thales Spy Ranger",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Thales Spy Ranger",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:iai:bird-eye-650d",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "IAI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "IAI Bird-Eye 650D",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Bird-Eye 650D",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:potensic:atom",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Potensic",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Potensic",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Potensic Atom",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Potensic Atom",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "consumer",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "consumer",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:yuneec:mantis-q",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Yuneec",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Yuneec Mantis Q",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec Mantis Q",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "consumer",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "consumer",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dronamics:black-swan",
+      "kind": "family",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Dronamics",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Dronamics",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Bulgaria",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Bulgaria",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Dronamics Black Swan",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Dronamics Black Swan",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "delivery",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "delivery",
               "note": "market role"
             }
           ],
@@ -58901,6 +60034,1550 @@
               "tier": "derived",
               "retrieved": "2026-06-22",
               "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:st-engineering:skyblade-360:skyblade-360",
+      "family_id": "uav:st-engineering:skyblade-360",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:st-engineering:skyblade-360:skyblade-360",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:st-engineering:skyblade-360:skyblade-360",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "ST Engineering Skyblade 360",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ST Engineering Skyblade 360",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 9,
+              "note": "9 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 360,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 360,
+              "note": "6 h fuel cell"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ST_Aerospace_Skyblade",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 15,
+              "note": "15 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:ptdi:elang-hitam:elang-hitam",
+      "family_id": "uav:ptdi:elang-hitam",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:ptdi:elang-hitam:elang-hitam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:ptdi:elang-hitam:elang-hitam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "PTDI Elang Hitam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "PTDI Elang Hitam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1300,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 300,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1800,
+              "note": "~30 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 65,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 65,
+              "note": "235 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7315,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7315,
+              "note": "24000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 250,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.indonesian-aerospace.com/en/media/news/detail/1511/spesifikasi-dan-teknologi-drone-elang-hitam-ptdi",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 250,
+              "note": "LOS radius"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:rv-connex:sky-scout:sky-scout",
+      "family_id": "uav:rv-connex:sky-scout",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:rv-connex:sky-scout:sky-scout",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:rv-connex:sky-scout:sky-scout",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "RV Connex Sky Scout",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "RV Connex Sky Scout",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 16,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 16,
+              "note": "baseline"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 720,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 720,
+              "note": "12 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "58 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4572,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.rvconnex.com/storage/document/capabilities/sky-scout-en.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4572,
+              "note": "15000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:airbus:zephyr:zephyr",
+      "family_id": "uav:airbus:zephyr",
+      "kind": "variant",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:airbus:zephyr:zephyr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:airbus:zephyr:zephyr",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Airbus Zephyr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Airbus Zephyr",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 75,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 75,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5,
+              "note": "11 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 23200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airbus.com/en/products-services/defence/uas/zephyr",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 23200,
+              "note": "76100 ft stratosphere"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:iai:heron-tp:heron-tp",
+      "family_id": "uav:iai:heron-tp",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:iai:heron-tp:heron-tp",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:iai:heron-tp:heron-tp",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "IAI Heron TP",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Heron TP",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 5670,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5670,
+              "note": "Eitan"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2700,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2700,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1800,
+              "note": ">30 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 13716,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 13716,
+              "note": "45000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 113,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Eitan",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 113,
+              "note": "407 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:northrop-grumman:mq-4c-triton:mq-4c-triton",
+      "family_id": "uav:northrop-grumman:mq-4c-triton",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:northrop-grumman:mq-4c-triton:mq-4c-triton",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:northrop-grumman:mq-4c-triton:mq-4c-triton",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Northrop Grumman MQ-4C Triton",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman MQ-4C Triton",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 14628,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 14628,
+              "note": "32250 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1452,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1452,
+              "note": "3200 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 169,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 169,
+              "note": "610 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 16800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 16800,
+              "note": "55000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1440,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1440,
+              "note": "24+ h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 13700,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_MQ-4C_Triton",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 13700,
+              "note": "7400 nmi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:thales:spy-ranger:spy-ranger",
+      "family_id": "uav:thales:spy-ranger",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:thales:spy-ranger:spy-ranger",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:thales:spy-ranger:spy-ranger",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Thales Spy Ranger",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Thales Spy Ranger",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 14,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 14,
+              "note": "14 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1.2,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.2,
+              "note": "gimbal"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 180,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 180,
+              "note": "3 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "30 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.thalesgroup.com/en/markets/defence-and-security/land-forces/augmented-soldier/soldier-optronics/spyranger-mini-uav",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 25,
+              "note": "90 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:iai:bird-eye-650d:bird-eye-650d",
+      "family_id": "uav:iai:bird-eye-650d",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:iai:bird-eye-650d:bird-eye-650d",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:iai:bird-eye-650d:bird-eye-650d",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "IAI Bird-Eye 650D",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Bird-Eye 650D",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "gross"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 5.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5.5,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 900,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 900,
+              "note": ">15 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 150,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 150,
+              "note": "150 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 41,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 41,
+              "note": "80 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4572,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/bird-eye-650d-small-tactical-unmanned-aerial-system-stuas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4572,
+              "note": "15000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:potensic:atom:atom",
+      "family_id": "uav:potensic:atom",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:potensic:atom:atom",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:potensic:atom:atom",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Potensic Atom",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Potensic Atom",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.249,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.249,
+              "note": "<249 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 32,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 32,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.potensic.com/atom-specs.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6,
+              "note": "transmission"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "consumer",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "consumer",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:yuneec:mantis-q:mantis-q",
+      "family_id": "uav:yuneec:mantis-q",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:yuneec:mantis-q:mantis-q",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:yuneec:mantis-q:mantis-q",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Yuneec Mantis Q",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec Mantis Q",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.48,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.48,
+              "note": "480 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 33,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 33,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 20,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.kayako.com/en-us/article/46-specs-mantis-q",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 20,
+              "note": "44.7 mph"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "consumer",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "consumer",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dronamics:black-swan:black-swan",
+      "family_id": "uav:dronamics:black-swan",
+      "kind": "variant",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dronamics:black-swan:black-swan",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dronamics:black-swan:black-swan",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Dronamics Black Swan",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Dronamics Black Swan",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 350,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 350,
+              "note": "770 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 2500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2500,
+              "note": "1550 mi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 56,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dronamics.com/theblackswan",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 56,
+              "note": "200 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "delivery",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "delivery",
               "note": "L2 from collected product_line (A) via controlled map -> high"
             }
           ],
