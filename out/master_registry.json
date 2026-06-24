@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 225,
-  "variant_count": 236,
+  "family_count": 239,
+  "variant_count": 250,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -21708,6 +21708,1448 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "loitering_munition",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:general-atomics:mq-9b-skyguardian",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "General Atomics",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "General Atomics MQ-9B SkyGuardian",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics MQ-9B SkyGuardian",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:boeing:mq-25-stingray",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Boeing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Boeing MQ-25 Stingray",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing MQ-25 Stingray",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:northrop-grumman:x-47b",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Northrop Grumman",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Northrop Grumman X-47B",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman X-47B",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:tai:anka-3",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "TAI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "TAI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Turkey",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Turkey",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "TAI Anka-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "TAI Anka-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:textron:aerosonde",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Textron",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Textron Aerosonde",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron Aerosonde",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:mini-3",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Mini 3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Mini 3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "consumer",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "consumer",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:air-2s",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Air 2S",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Air 2S",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "consumer",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "consumer",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:phantom-4-rtk",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Phantom 4 RTK",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Phantom 4 RTK",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "surveying",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "surveying",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:yuneec:typhoon-h-plus",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Yuneec",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Yuneec Typhoon H Plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec Typhoon H Plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "hexacopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "hexacopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "consumer",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "consumer",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:agras-t30",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Agras T30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Agras T30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "multirotor",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "multirotor",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "agriculture",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "agriculture",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:uvision:hero-30",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "UVision",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UVision",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "UVision Hero-30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UVision Hero-30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "loitering_munition",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "loitering_munition",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:dji:mavic-3-thermal",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "DJI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "DJI Mavic 3 Thermal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Mavic 3 Thermal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "enterprise",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "enterprise",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:quantum-systems:trinity-f90-plus",
+      "kind": "family",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Quantum Systems",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Quantum Systems",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Germany",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Germany",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Quantum Systems Trinity F90 Plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Quantum Systems Trinity F90 Plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "surveying",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "surveying",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:anduril:ghost-4",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Anduril",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Anduril Ghost 4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Ghost 4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "helicopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "helicopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
               "note": "market role"
             }
           ],
@@ -51635,6 +53077,1878 @@
               "tier": "derived",
               "retrieved": "2026-06-22",
               "claimed_value": "loitering_munition",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:general-atomics:mq-9b-skyguardian:mq-9b-skyguardian",
+      "family_id": "uav:general-atomics:mq-9b-skyguardian",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:general-atomics:mq-9b-skyguardian:mq-9b-skyguardian",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:general-atomics:mq-9b-skyguardian:mq-9b-skyguardian",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "General Atomics MQ-9B SkyGuardian",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics MQ-9B SkyGuardian",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 2400,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2400,
+              "note": "40+ h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 12000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12000,
+              "note": "40000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 108,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9b-skyguardian",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 108,
+              "note": "390 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:boeing:mq-25-stingray:mq-25-stingray",
+      "family_id": "uav:boeing:mq-25-stingray",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:boeing:mq-25-stingray:mq-25-stingray",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:boeing:mq-25-stingray:mq-25-stingray",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Boeing MQ-25 Stingray",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing MQ-25 Stingray",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 6800,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6800,
+              "note": "fuel offload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 930,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-25_Stingray",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 930,
+              "note": "500 nmi to receivers"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:northrop-grumman:x-47b:x-47b",
+      "family_id": "uav:northrop-grumman:x-47b",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:northrop-grumman:x-47b:x-47b",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:northrop-grumman:x-47b:x-47b",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Northrop Grumman X-47B",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Northrop Grumman X-47B",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 20185,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 20185,
+              "note": "44501 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2000,
+              "note": "4500 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 12192,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12192,
+              "note": "40000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 3900,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Northrop_Grumman_X-47B",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3900,
+              "note": ">2100 nmi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:tai:anka-3:anka-3",
+      "family_id": "uav:tai:anka-3",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:tai:anka-3:anka-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:tai:anka-3:anka-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "TAI Anka-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "TAI Anka-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 6500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6500,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1200,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 219,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 219,
+              "note": "425 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 600,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 600,
+              "note": "10 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 12192,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/TAI_Anka-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12192,
+              "note": "40000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:textron:aerosonde:aerosonde",
+      "family_id": "uav:textron:aerosonde",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:textron:aerosonde:aerosonde",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:textron:aerosonde:aerosonde",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Textron Aerosonde",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron Aerosonde",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 32,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 32,
+              "note": "Mk4.7"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 960,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 960,
+              "note": "16 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 140,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 140,
+              "note": "140 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 33,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 33,
+              "note": "65 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4572,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.textronsystems.com/products/aerosonde-uas",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4572,
+              "note": "15000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:mini-3:mini-3",
+      "family_id": "uav:dji:mini-3",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:mini-3:mini-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:mini-3:mini-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Mini 3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Mini 3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.248,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.248,
+              "note": "<249 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 16,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 16,
+              "note": "max horiz"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 38,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 38,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 10,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 10,
+              "note": "FCC"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "consumer",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "consumer",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:air-2s:air-2s",
+      "family_id": "uav:dji:air-2s",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:air-2s:air-2s",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:air-2s:air-2s",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Air 2S",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Air 2S",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.595,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.595,
+              "note": "595 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 19,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 19,
+              "note": "42 mph"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 31,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 31,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 12,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/support/product/air-2s",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12,
+              "note": "O3 FCC"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "consumer",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "consumer",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:phantom-4-rtk:phantom-4-rtk",
+      "family_id": "uav:dji:phantom-4-rtk",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:phantom-4-rtk:phantom-4-rtk",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:phantom-4-rtk:phantom-4-rtk",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Phantom 4 RTK",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Phantom 4 RTK",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.391,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.391,
+              "note": "1391 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 16,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 16,
+              "note": "58 km/h A-mode"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/phantom-4-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6000,
+              "note": "ASL"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "surveying",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "surveying",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:yuneec:typhoon-h-plus:typhoon-h-plus",
+      "family_id": "uav:yuneec:typhoon-h-plus",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:yuneec:typhoon-h-plus:typhoon-h-plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:yuneec:typhoon-h-plus:typhoon-h-plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Yuneec Typhoon H Plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Yuneec Typhoon H Plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.9,
+              "note": "~1.9 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 25,
+              "note": "per charge"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 20,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 20,
+              "note": "72 km/h sport"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 1.6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://yuneec.online/typhoon-h-plus/info/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.6,
+              "note": "range"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "consumer",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "consumer",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:agras-t30:agras-t30",
+      "family_id": "uav:dji:agras-t30",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:agras-t30:agras-t30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:agras-t30:agras-t30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Agras T30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Agras T30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 66.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 66.5,
+              "note": "spray, sea level"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "30 L tank"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "agriculture",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "agriculture",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:uvision:hero-30:hero-30",
+      "family_id": "uav:uvision:hero-30",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:uvision:hero-30:hero-30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:uvision:hero-30:hero-30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "UVision Hero-30",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UVision Hero-30",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 7.8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7.8,
+              "note": "system"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 0.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.5,
+              "note": "warhead"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 20,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 20,
+              "note": "up to (variant)"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 30,
+              "note": "loiter"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 51,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://uvisionuav.com/loitering-munitions/hero-30/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 51,
+              "note": "100 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "loitering_munition",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "loitering_munition",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:dji:mavic-3-thermal:mavic-3-thermal",
+      "family_id": "uav:dji:mavic-3-thermal",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:dji:mavic-3-thermal:mavic-3-thermal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:dji:mavic-3-thermal:mavic-3-thermal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "DJI Mavic 3 Thermal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "DJI Mavic 3 Thermal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.05,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.05,
+              "note": "1050 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 45,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 45,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 21,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 21,
+              "note": "sport"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:quantum-systems:trinity-f90-plus:trinity-f90-plus",
+      "family_id": "uav:quantum-systems:trinity-f90-plus",
+      "kind": "variant",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:quantum-systems:trinity-f90-plus:trinity-f90-plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:quantum-systems:trinity-f90-plus:trinity-f90-plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Quantum Systems Trinity F90 Plus",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Quantum Systems Trinity F90 Plus",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 5.0,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5.0,
+              "note": "5-5.5 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 0.7,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.7,
+              "note": "700 g"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 90,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 90,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 17,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 17,
+              "note": "cruise"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "coverage"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://quantum-systems.com/trinity-f90/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4500,
+              "note": "MSL"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "surveying",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "surveying",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:anduril:ghost-4:ghost-4",
+      "family_id": "uav:anduril:ghost-4",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:anduril:ghost-4:ghost-4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:anduril:ghost-4:ghost-4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Anduril Ghost 4",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Ghost 4",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 16.8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 16.8,
+              "note": "37 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": ">100 min"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 27,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 27,
+              "note": "96 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 161,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/ghost-4-vtol-suas/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 161,
+              "note": "~100 mi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
               "note": "L2 from collected product_line (A) via controlled map -> high"
             }
           ],
