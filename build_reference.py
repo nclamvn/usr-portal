@@ -194,7 +194,13 @@ def main():
     facets = render_facets(ents, labels)
     rows = "\n".join(render_row(e, labels) for e in ents)
     fsc = agg["field_status_counts"]
-    summary = " · ".join(f'{esc(k)} {esc(v)}' for k, v in sorted(fsc.items()))
+    # friendly, trust-ordered status breakdown — NEVER raw status keys (e.g. "None" -> honest-null)
+    SLAB = {"verified": ("verified", "đã kiểm"), "derived": ("derived", "suy ra"),
+            "disputed": ("disputed", "tranh chấp"), "unverified": ("unverified", "chưa kiểm"),
+            "None": ("honest-null", "null trung thực")}
+    summary = "".join(
+        f'<span class="sc"><b>{fsc[k]:,}</b> {bilingual(*SLAB[k])}</span>'
+        for k in ("verified", "derived", "disputed", "unverified", "None") if fsc.get(k))
     doc = f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -204,25 +210,33 @@ def main():
 <link rel="stylesheet" href="base/design-system.css">
 <style>
   .wrap{{max-width:1180px;margin:0 auto;padding:2.2rem 1.4rem}}
-  .topline{{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:1rem;margin-bottom:1.6rem}}
-  .count{{font-family:var(--font-mono);color:var(--brass);font-weight:600}}
-  .stat{{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}}
+  .topline{{display:flex;justify-content:space-between;align-items:flex-start;gap:1.4rem 2.5rem;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:1.3rem;margin-bottom:1.6rem}}
+  .tl-left{{flex:1 1 320px}}
+  .tl-left h1{{margin:0 0 .35rem}}
+  .lead{{color:var(--muted);margin:0;max-width:56ch;font-size:.9rem;line-height:1.5}}
+  .tl-right{{display:flex;flex-direction:column;align-items:flex-end;gap:.6rem;text-align:right}}
+  .count{{font-family:var(--font-mono);color:var(--brass);font-weight:600;font-size:1.05rem}}
+  .stat{{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.2rem .7rem;max-width:30ch}}
+  .stat .sc b{{color:var(--ink-soft);font-weight:600}}
+  .actions{{font-family:var(--font-mono);font-size:.78rem}}
+  .actions a{{color:var(--brass);text-decoration:none}}
+  .actions a:hover{{text-decoration:underline}}
   /* index rows are styled in the shared design system (.index-list / .row-item) */
 </style>
 </head>
 <body>
 <main class="wrap">
   <div class="topline">
-    <div>
+    <div class="tl-left">
       <h1>{bilingual("Reference", "Tham chiếu")}</h1>
-      <p style="color:var(--muted);margin:.3rem 0 0">{bilingual(
+      <p class="lead">{bilingual(
         "Every value traces to its source. Sparse spec fields are expected — null is honest, never invented.",
         "Mọi giá trị truy về nguồn. Field spec thưa là bình thường — null là trung thực, không bịa.")}</p>
     </div>
-    <div style="text-align:right">
+    <div class="tl-right">
       <div class="count" data-audit="count">{len(ents)} {bilingual("entities", "thực thể")}</div>
       <div class="stat">{summary}</div>
-      <div style="margin-top:.4rem"><a href="search.html" style="font-family:var(--font-mono);font-size:.78rem;color:var(--brass);text-decoration:none">{bilingual("Search →", "Tìm kiếm →")}</a> · <a href="compare.html" style="font-family:var(--font-mono);font-size:.78rem;color:var(--brass);text-decoration:none">{bilingual("Compare 2–4 →", "So sánh 2–4 →")}</a></div>
+      <div class="actions"><a href="search.html">{bilingual("Search →", "Tìm kiếm →")}</a> · <a href="compare.html">{bilingual("Compare 2–4 →", "So sánh 2–4 →")}</a></div>
     </div>
   </div>
   <div class="regdiv"><b class="lab">{bilingual("Index · " + str(len(ents)), "Mục lục · " + str(len(ents)))}</b><span class="ln"></span></div>

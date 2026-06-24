@@ -7,23 +7,31 @@
 <link rel="stylesheet" href="base/design-system.css">
 <style>
   .wrap{max-width:1180px;margin:0 auto;padding:2.2rem 1.4rem}
-  .topline{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:1rem;margin-bottom:1.6rem}
-  .count{font-family:var(--font-mono);color:var(--brass);font-weight:600}
-  .stat{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}
+  .topline{display:flex;justify-content:space-between;align-items:flex-start;gap:1.4rem 2.5rem;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:1.3rem;margin-bottom:1.6rem}
+  .tl-left{flex:1 1 320px}
+  .tl-left h1{margin:0 0 .35rem}
+  .lead{color:var(--muted);margin:0;max-width:56ch;font-size:.9rem;line-height:1.5}
+  .tl-right{display:flex;flex-direction:column;align-items:flex-end;gap:.6rem;text-align:right}
+  .count{font-family:var(--font-mono);color:var(--brass);font-weight:600;font-size:1.05rem}
+  .stat{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.2rem .7rem;max-width:30ch}
+  .stat .sc b{color:var(--ink-soft);font-weight:600}
+  .actions{font-family:var(--font-mono);font-size:.78rem}
+  .actions a{color:var(--brass);text-decoration:none}
+  .actions a:hover{text-decoration:underline}
   /* index rows are styled in the shared design system (.index-list / .row-item) */
 </style>
 </head>
 <body>
 <main class="wrap">
   <div class="topline">
-    <div>
+    <div class="tl-left">
       <h1><span data-lang-en>Reference</span><span data-lang-vn>Tham chiếu</span></h1>
-      <p style="color:var(--muted);margin:.3rem 0 0"><span data-lang-en>Every value traces to its source. Sparse spec fields are expected — null is honest, never invented.</span><span data-lang-vn>Mọi giá trị truy về nguồn. Field spec thưa là bình thường — null là trung thực, không bịa.</span></p>
+      <p class="lead"><span data-lang-en>Every value traces to its source. Sparse spec fields are expected — null is honest, never invented.</span><span data-lang-vn>Mọi giá trị truy về nguồn. Field spec thưa là bình thường — null là trung thực, không bịa.</span></p>
     </div>
-    <div style="text-align:right">
+    <div class="tl-right">
       <div class="count" data-audit="count">302 <span data-lang-en>entities</span><span data-lang-vn>thực thể</span></div>
-      <div class="stat">None 2903 · derived 267 · disputed 6 · unverified 37 · verified 2827</div>
-      <div style="margin-top:.4rem"><a href="search.html" style="font-family:var(--font-mono);font-size:.78rem;color:var(--brass);text-decoration:none"><span data-lang-en>Search →</span><span data-lang-vn>Tìm kiếm →</span></a> · <a href="compare.html" style="font-family:var(--font-mono);font-size:.78rem;color:var(--brass);text-decoration:none"><span data-lang-en>Compare 2–4 →</span><span data-lang-vn>So sánh 2–4 →</span></a></div>
+      <div class="stat"><span class="sc"><b>2,827</b> <span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span><span class="sc"><b>267</b> <span data-lang-en>derived</span><span data-lang-vn>suy ra</span></span><span class="sc"><b>6</b> <span data-lang-en>disputed</span><span data-lang-vn>tranh chấp</span></span><span class="sc"><b>37</b> <span data-lang-en>unverified</span><span data-lang-vn>chưa kiểm</span></span><span class="sc"><b>2,903</b> <span data-lang-en>honest-null</span><span data-lang-vn>null trung thực</span></span></div>
+      <div class="actions"><a href="search.html"><span data-lang-en>Search →</span><span data-lang-vn>Tìm kiếm →</span></a> · <a href="compare.html"><span data-lang-en>Compare 2–4 →</span><span data-lang-vn>So sánh 2–4 →</span></a></div>
     </div>
   </div>
   <div class="regdiv"><b class="lab"><span data-lang-en>Index · 302</span><span data-lang-vn>Mục lục · 302</span></b><span class="ln"></span></div>
