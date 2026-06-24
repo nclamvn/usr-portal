@@ -10,6 +10,7 @@ import json, pathlib, shutil, re
 from build_reference import friendly, bilingual, esc
 from canon import canonical_slug, canonical_name
 from nav import nav
+from header import header
 from seo import meta, collection_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -55,14 +56,8 @@ def page(kind, title_html, meta_html, sections, path, plain_title, count):
 <style>{TAX_CSS}</style>
 </head>
 <body>
+{header("../")}
 <main class="twrap">
-  <div class="topbar">
-    {nav("../")}
-    <div class="ctrl">
-      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
   <header class="thead"><h1>{title_html}</h1><div class="meta">{meta_html}</div></header>
   {body}
   <p class="note">{bilingual(

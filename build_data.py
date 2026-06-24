@@ -9,6 +9,7 @@ import json, pathlib
 from build_reference import friendly, bilingual, esc
 from canon import canon_country, canonical_slug, canonical_name
 from nav import nav
+from header import header
 from seo import meta as seo_meta, collection_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -153,11 +154,8 @@ def render(ov):
 <style>{DATA_CSS}</style>
 </head>
 <body>
+{header("", "data")}
 <main class="dwrap">
-  <div class="topbar">{nav("", "data")}
-    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-  </div>
   <section class="head">
     <span class="eyebrow">{bilingual("Data Overview", "Tổng quan dữ liệu")}</span>
     <h1>{bilingual("The whole registry, measured by its own data.", "Toàn cảnh đăng ký, đo bằng chính dữ liệu.")}</h1>

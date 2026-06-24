@@ -15,6 +15,7 @@ import json, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
 from glyphs import glyph_svg
 from nav import nav
+from header import header
 from seo import meta as seo_meta
 from build_news import news_front
 from build_analysis import analysis_feature
@@ -296,16 +297,7 @@ def main():
 </head>
 <body>
 
-<header class="bar">
-  <div class="wrap">
-    <span class="wm-name">Uncrewed Systems Review<small>{bilingual("In the field", "Trên thực địa")}</small></span>
-    {nav("", "home")}
-    <div class="ctl">
-      <button class="tg" id="lang" aria-label="Language"><span class="s s-en">EN</span><span aria-hidden="true">/</span><span class="s s-vn">VN</span></button>
-      <button class="tg" id="theme" aria-label="Theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
-</header>
+{header("", "home")}
 
 <section class="field" data-audit="hero">
   <div class="watermark" aria-hidden="true">{WATERMARK}</div>

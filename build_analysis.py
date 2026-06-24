@@ -12,6 +12,7 @@ Zero-fabrication: no invented news, no quotes attributed to real people; entity-
 entities that exist in the registry.
 """
 import json, pathlib, shutil, re, html
+from header import header
 from build_reference import esc
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -231,13 +232,7 @@ def render_analysis_page(article, site, glossary):
 <body>
 <div class="prog" id="prog"></div>
 {banner}
-<header class="nbar"><div class="wrap">
-  <a class="wm-name" href="../index.html">Uncrewed Systems Review<small>Vietnam UAV Intelligence</small></a>
-  {NAV}
-  <div class="nctl"><button class="tg" id="theme" aria-label="Theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-</div></header>
-
-<div class="wrap">{crumb}</div>
+{header("../")}
 
 <header class="lf-head">
   <div class="kicker"><span>Phân tích · {esc(SECTION.get(a["section"], ""))}</span>{dtag}</div>
@@ -280,7 +275,7 @@ def render_analysis_page(article, site, glossary):
 
 <script src="../base/base.js"></script>
 <script>
-  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));
   var prog=document.getElementById('prog');
   function up(){{var h=document.documentElement,sc=h.scrollTop||document.body.scrollTop,mx=h.scrollHeight-h.clientHeight;prog.style.width=(mx>0?sc/mx*100:0)+'%';}}
   addEventListener('scroll',up,{{passive:true}});up();

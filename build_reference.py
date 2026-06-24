@@ -8,6 +8,7 @@ never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 import json, html, pathlib
 from glyphs import glyph_svg
 from nav import nav
+from header import header
 from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -228,8 +229,8 @@ def main():
 </style>
 </head>
 <body>
+{header("", "reference")}
 <main class="wrap">
-  <div style="margin-bottom:1.2rem">{nav("", "reference")}</div>
   <div class="topline">
     <div class="tl-left">
       <h1>{bilingual("Reference", "Tham chiếu")}</h1>

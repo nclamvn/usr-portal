@@ -271,6 +271,16 @@ small, .small { font-size: .82rem; }
   [data-draw] { stroke-dashoffset: 0 !important; }
 }
 
+/* GLOBAL HEADER (header.py) — locked, byte-identical on every surface. Fixed height; no per-surface
+   override (verify_header enforces). Wordmark left · breadcrumb center · lang/theme right. */
+.gbar { border-bottom: 1px solid var(--hair); background: var(--bg); }
+.gbar-in { max-width: 1180px; margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
+.gbar-wm { font-family: var(--font-head); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); text-decoration: none; flex: 0 0 auto; }
+.gbar-in .crumb { flex: 1 1 auto; }
+.gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
+.gbar-tg { background: transparent; color: var(--ink-soft); border: 1px solid var(--hair-strong); border-radius: 999px; height: 30px; padding: 0 .7rem; font-family: var(--font-mono); font-size: .72rem; cursor: pointer; }
+.gbar-tg:hover { border-color: var(--brass-bright); color: var(--ink); }
+
 /* global nav breadcrumb (nav.py) — present on every surface so Home is never a dead end */
 .crumb { font-family: var(--font-mono); font-size: .74rem; display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
 .crumb a { color: var(--brass); text-decoration: none; }

@@ -10,6 +10,7 @@ import json, pathlib, re, shutil, html
 import yaml
 from build_reference import bilingual, esc
 from nav import nav
+from header import header
 from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -125,11 +126,8 @@ def render(fm, body, site, glossary):
 <style>{NR_CSS}</style>
 </head>
 <body>
+{header("../")}
 <main class="nwrap">
-  <div class="topbar">{nav("../")}
-    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-  </div>
   <header class="nh"><div class="kind">{bilingual(kl_en, kl_vn)}</div><h1>{esc(fm["title"])}</h1>
     <div class="by">{esc(fm.get("author", "Ban Dữ liệu USR"))} · {esc(str(fm.get("date", "")))} · {bilingual("data desk", "ban dữ liệu")}</div>
     {chips}</header>
@@ -185,11 +183,8 @@ def render_index(arts):
 </style>
 </head>
 <body>
+{header("", "newsroom")}
 <main class="nwrap">
-  <div class="topbar">{nav("", "newsroom")}
-    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-  </div>
   <header class="nh"><div class="kind">{bilingual("Newsroom", "Bài viết")}</div>
     <h1>{bilingual("Objective coverage over the registry", "Bài viết khách quan trên bản đăng ký")}</h1>
     <div class="by">{bilingual("Data notes, explainers, profiles and reports — every figure traces to the registry.", "Ghi chú dữ liệu, giải thích, hồ sơ và báo cáo — mọi con số truy về registry.")}</div></header>

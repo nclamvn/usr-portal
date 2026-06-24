@@ -9,6 +9,7 @@ each article is a node of the entity graph.
 """
 import json, pathlib, shutil
 from build_reference import esc
+from header import header
 from build_analysis import (echip, autolink, link_map, SECTION, ARROW, SPEC_BANNER, NAV,
                             related_rail, sources_apparatus, load)
 
@@ -97,13 +98,7 @@ def render_news_page(a, site, glossary):
 </head>
 <body>
 {banner}
-<header class="nbar"><div class="wrap">
-  <a class="wm-name" href="../index.html">Uncrewed Systems Review<small>Vietnam UAV Intelligence</small></a>
-  {NAV}
-  <div class="nctl"><button class="tg" id="theme" aria-label="Theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-</div></header>
-
-<div class="wrap">{crumb}</div>
+{header("../")}
 
 <header class="lf-head">
   <div class="kicker"><span>Tin tức · {esc(SECTION.get(a["section"],""))}</span>{dtag}</div>
@@ -134,7 +129,7 @@ def render_news_page(a, site, glossary):
 
 <script src="../base/base.js"></script>
 <script>
-  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));
   document.documentElement.dataset.audit="ready";
 </script>
 </body>

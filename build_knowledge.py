@@ -8,6 +8,7 @@ list. Reuses design-system + bilingual. verify_knowledge proves the term<->page 
 import json, pathlib, shutil, re
 from build_reference import bilingual, esc
 from nav import nav
+from header import header
 from seo import meta, definedterm_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -61,11 +62,8 @@ def shell(title_plain, head_extra, body):
 <style>{KN_CSS}</style>
 </head>
 <body>
+{header("../")}
 <main class="kwrap">
-  <div class="topbar">{nav("../", "knowledge")}
-    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-  </div>
   {body}
 </main>
 <script src="../base/base.js"></script>
@@ -120,11 +118,8 @@ def index_page(terms):
 <style>{KN_CSS}</style>
 </head>
 <body>
+{header("", "knowledge")}
 <main class="kwrap">
-  <div class="topbar">{nav("", "knowledge")}
-    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
-  </div>
   <header class="khead"><span class="eyebrow">{bilingual("Knowledge", "Thuật ngữ")}</span><h1>{bilingual("Glossary", "Thuật ngữ")}</h1></header>
   <ul class="kidx">{items}</ul>
 </main>

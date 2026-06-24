@@ -10,6 +10,7 @@ import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from glyphs import glyph_svg
 from nav import nav
+from header import header
 from seo import meta, product_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -197,14 +198,8 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
 <style>{DETAIL_CSS}</style>
 </head>
 <body>
+{header("../")}
 <main class="dwrap">
-  <div class="topbar">
-    {nav("../")}
-    <div class="ctrl">
-      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
   {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks)}
 </main>
 <script src="../base/base.js"></script>

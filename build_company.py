@@ -12,6 +12,7 @@ Design-system-of-record only — no new aesthetic. Bilingual (en/vn) throughout.
 import json, pathlib, shutil
 from build_reference import friendly, bilingual, esc
 from nav import nav
+from header import header
 from seo import meta, org_ld
 from build_newsroom import articles_for
 
@@ -121,14 +122,8 @@ def render_company(c, labels, uav_name):
 <style>{COMPANY_CSS}</style>
 </head>
 <body>
+{header("../")}
 <main class="cwrap">
-  <div class="topbar">
-    {nav("../")}
-    <div class="ctrl">
-      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
   <header class="chead">
     <h1>{esc(name)}</h1>
     <div class="meta">{bilingual("Manufacturer", "Nhà sản xuất")} · {esc(hq_txt) if hq_txt else bilingual("HQ unverified", "trụ sở chưa rõ")}</div>

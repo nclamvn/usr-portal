@@ -7,6 +7,7 @@ no missing and that every hit's url resolves. Reuses the Compare pattern (data-a
 import json, pathlib, re
 from build_reference import friendly, bilingual, esc
 from nav import nav
+from header import header
 from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -104,14 +105,8 @@ def render_page():
 <style>{SEARCH_CSS}</style>
 </head>
 <body>
+{header("", "search")}
 <main class="swrap">
-  <div class="topbar">
-    {nav("", "search")}
-    <div class="ctrl">
-      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
   <h1>{bilingual("Search", "Tìm kiếm")}</h1>
   <input id="q" type="search" autocomplete="off" aria-label="search"
      placeholder="{esc('Systems, manufacturers, countries, segments…')}">

@@ -9,6 +9,7 @@ from build_detail import NUMERIC_SPEC, UNIT
 from build_reference import friendly, bilingual, esc
 from glyphs import glyph_svg
 from nav import nav
+from header import header
 from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -107,14 +108,8 @@ def render_page(site):
 <style>{COMPARE_CSS}</style>
 </head>
 <body>
+{header("", "compare")}
 <main class="cmpwrap">
-  <div class="topbar">
-    {nav("", "compare")}
-    <div class="ctrl">
-      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
-      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
-    </div>
-  </div>
   <h1>{bilingual("Compare", "So sánh")}</h1>
   <div class="lead">{bilingual("Pick 2–4 systems for a side-by-side, source-cited comparison.",
                                 "Chọn 2–4 hệ thống để so sánh song song, có dẫn nguồn.")}</div>
