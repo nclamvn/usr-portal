@@ -311,6 +311,20 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  knowledge page: " + e.message); }
 
+    // REVIEW (/review) — spec-derived ranked table + honest-null dims, overlap-clean (P3.2)
+    try {
+      await send("Page.navigate", { url: BASE + "/review.html" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const rows = await evalOnPage(send, `document.querySelectorAll('table.rv tbody tr').length`);
+        const nulls = await evalOnPage(send, `document.querySelectorAll('.dim.null').length`);
+        const ok = r.hits.length === 0 && rows > 0 && nulls > 0;  // honest-null dims must be visible
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /review  [${theme}/${lang}]  overlaps=${r.hits.length}  rows=${rows}  null-dims=${nulls}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  review page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -354,7 +368,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 2 knowledge + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 2 knowledge + 2 review + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

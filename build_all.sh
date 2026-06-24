@@ -48,6 +48,11 @@ DSHA1=$(shasum -a256 out/data-overview.json | cut -d' ' -f1)
 python3 build_data.py >/dev/null
 DSHA2=$(shasum -a256 out/data-overview.json | cut -d' ' -f1)
 [ "$DSHA1" = "$DSHA2" ] && echo "      data-overview idempotent OK" || { echo "      DATA IDEMPOTENT FAIL"; exit 2; }
+python3 build_review.py
+RSHA1=$(shasum -a256 out/review-data.json | cut -d' ' -f1)
+python3 build_review.py >/dev/null
+RSHA2=$(shasum -a256 out/review-data.json | cut -d' ' -f1)
+[ "$RSHA1" = "$RSHA2" ] && echo "      review-data idempotent OK" || { echo "      REVIEW IDEMPOTENT FAIL"; exit 2; }
 python3 build_sitemap.py
 MSHA1=$(shasum -a256 sitemap.xml | cut -d' ' -f1)
 python3 build_sitemap.py >/dev/null
@@ -77,6 +82,8 @@ python3 verify_seo.py
 python3 teeth_p22.py
 python3 verify_knowledge.py
 python3 teeth_p31.py
+python3 verify_review.py
+python3 teeth_p32.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 

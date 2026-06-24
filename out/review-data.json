@@ -1,0 +1,4895 @@
+{
+  "dims": [
+    {
+      "en": "Payload",
+      "key": "max_payload_kg",
+      "vn": "Tải trọng"
+    },
+    {
+      "en": "Endurance",
+      "key": "endurance_min",
+      "vn": "Thời gian bay"
+    },
+    {
+      "en": "Range",
+      "key": "max_range_km",
+      "vn": "Tầm bay"
+    },
+    {
+      "en": "Datalink",
+      "key": "max_link_km",
+      "vn": "Datalink"
+    },
+    {
+      "en": "Speed",
+      "key": "max_speed_ms",
+      "vn": "Tốc độ"
+    },
+    {
+      "en": "Ceiling",
+      "key": "service_ceiling_m",
+      "vn": "Trần bay"
+    }
+  ],
+  "schema": "review-data/1",
+  "spec_range": {
+    "endurance_min": {
+      "max": 3600,
+      "min": 4
+    },
+    "max_link_km": {
+      "max": 200,
+      "min": 0.9
+    },
+    "max_payload_kg": {
+      "max": 6800,
+      "min": 0.27
+    },
+    "max_range_km": {
+      "max": 13700,
+      "min": 3.2
+    },
+    "max_speed_ms": {
+      "max": 306,
+      "min": 4
+    },
+    "service_ceiling_m": {
+      "max": 23200,
+      "min": 457
+    }
+  },
+  "uavs": [
+    {
+      "maker": "Sukhoi",
+      "name": "Sukhoi S-70 Okhotnik",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 91,
+        "max_range_km": 90,
+        "max_speed_ms": 98,
+        "service_ceiling_m": 94
+      },
+      "slug": "uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
+      "total": 93
+    },
+    {
+      "maker": "Northrop Grumman",
+      "name": "Northrop Grumman MQ-4C Triton",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 85,
+        "max_range_km": 98,
+        "max_speed_ms": 86,
+        "service_ceiling_m": 92
+      },
+      "slug": "uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
+      "total": 90
+    },
+    {
+      "maker": "Hongdu",
+      "name": "Hongdu GJ-11 Sharp Sword",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 88,
+        "max_range_km": 85,
+        "max_speed_ms": 98,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hongdu-gj-11-sharp-sword-gj-11-sharp-sword",
+      "total": 90
+    },
+    {
+      "maker": "Northrop Grumman",
+      "name": "Northrop Grumman RQ-4 Global Hawk",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 84,
+        "max_range_km": null,
+        "max_speed_ms": 87,
+        "service_ceiling_m": 94
+      },
+      "slug": "uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
+      "total": 89
+    },
+    {
+      "maker": "Anduril",
+      "name": "Anduril Fury",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 89
+      },
+      "slug": "uav-anduril-fury-fury",
+      "total": 89
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-20 Avenger",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 84,
+        "max_link_km": null,
+        "max_payload_kg": 84,
+        "max_range_km": null,
+        "max_speed_ms": 91,
+        "service_ceiling_m": 89
+      },
+      "slug": "uav-general-atomics-mq-20-avenger-mq-20-avenger",
+      "total": 87
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-7",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 80,
+        "max_link_km": null,
+        "max_payload_kg": 88,
+        "max_range_km": null,
+        "max_speed_ms": 96,
+        "service_ceiling_m": 85
+      },
+      "slug": "uav-casc-ch-7-ch-7",
+      "total": 87
+    },
+    {
+      "maker": "Northrop Grumman",
+      "name": "Northrop Grumman X-47B",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 88,
+        "max_range_km": 85,
+        "max_speed_ms": null,
+        "service_ceiling_m": 84
+      },
+      "slug": "uav-northrop-grumman-x-47b-x-47b",
+      "total": 86
+    },
+    {
+      "maker": "Kratos",
+      "name": "Kratos XQ-58 Valkyrie",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 68,
+        "max_range_km": 89,
+        "max_speed_ms": 98,
+        "service_ceiling_m": 87
+      },
+      "slug": "uav-kratos-xq-58-valkyrie-xq-58-valkyrie",
+      "total": 86
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Heron TP",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 91,
+        "max_range_km": null,
+        "max_speed_ms": 77,
+        "service_ceiling_m": 87
+      },
+      "slug": "uav-iai-heron-tp-heron-tp",
+      "total": 86
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-5",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 98,
+        "max_link_km": null,
+        "max_payload_kg": 81,
+        "max_range_km": 96,
+        "max_speed_ms": 81,
+        "service_ceiling_m": 76
+      },
+      "slug": "uav-casc-ch-5-ch-5",
+      "total": 86
+    },
+    {
+      "maker": "Baykar",
+      "name": "Baykar Akinci",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 84,
+        "max_range_km": 88,
+        "max_speed_ms": 80,
+        "service_ceiling_m": 84
+      },
+      "slug": "uav-baykar-akinci-akinci",
+      "total": 85
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-9B SkyGuardian",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 94,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 76,
+        "service_ceiling_m": 83
+      },
+      "slug": "uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
+      "total": 84
+    },
+    {
+      "maker": "Boeing",
+      "name": "Boeing MQ-28 Ghost Bat",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 84,
+        "max_speed_ms": null,
+        "service_ceiling_m": 84
+      },
+      "slug": "uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat",
+      "total": 84
+    },
+    {
+      "maker": "TAI",
+      "name": "TAI Anka-3",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 74,
+        "max_link_km": null,
+        "max_payload_kg": 83,
+        "max_range_km": null,
+        "max_speed_ms": 92,
+        "service_ceiling_m": 84
+      },
+      "slug": "uav-tai-anka-3-anka-3",
+      "total": 83
+    },
+    {
+      "maker": "Israel Aerospace Industries",
+      "name": "Israel Aerospace Industries Heron TP",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 91,
+        "max_range_km": 69,
+        "max_speed_ms": 77,
+        "service_ceiling_m": 87
+      },
+      "slug": "uav-israel-aerospace-industries-heron-tp-heron-tp",
+      "total": 83
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics Mojave",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 88,
+        "max_link_km": null,
+        "max_payload_kg": 86,
+        "max_range_km": 87,
+        "max_speed_ms": 71,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-general-atomics-mojave-mojave",
+      "total": 83
+    },
+    {
+      "maker": "Boeing",
+      "name": "Boeing MQ-25 Stingray",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 98,
+        "max_range_km": 68,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-boeing-mq-25-stingray-mq-25-stingray",
+      "total": 83
+    },
+    {
+      "maker": "Sabrewing",
+      "name": "Sabrewing Rhaegal",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 90,
+        "max_range_km": 76,
+        "max_speed_ms": 79,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-sabrewing-rhaegal-rhaegal",
+      "total": 82
+    },
+    {
+      "maker": "Baykar",
+      "name": "Baykar Kizilelma",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 56,
+        "max_link_km": null,
+        "max_payload_kg": 85,
+        "max_range_km": null,
+        "max_speed_ms": 98,
+        "service_ceiling_m": 87
+      },
+      "slug": "uav-baykar-kizilelma-kizilelma",
+      "total": 82
+    },
+    {
+      "maker": "AVIC",
+      "name": "AVIC Wing Loong 10",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 84,
+        "max_link_km": null,
+        "max_payload_kg": 72,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 89
+      },
+      "slug": "uav-avic-wing-loong-10-wing-loong-10",
+      "total": 82
+    },
+    {
+      "maker": "Safran",
+      "name": "Safran Patroller",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": 98,
+        "max_payload_kg": 67,
+        "max_range_km": null,
+        "max_speed_ms": 71,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-safran-patroller-patroller",
+      "total": 78
+    },
+    {
+      "maker": "Leonardo",
+      "name": "Leonardo Falco Xplorer",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 76
+      },
+      "slug": "uav-leonardo-falco-xplorer-falco-xplorer",
+      "total": 78
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Karrar",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 67,
+        "max_range_km": 69,
+        "max_speed_ms": 95,
+        "service_ceiling_m": 83
+      },
+      "slug": "uav-hesa-karrar-karrar",
+      "total": 78
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-1C Gray Eagle",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": 87,
+        "max_speed_ms": 71,
+        "service_ceiling_m": 75
+      },
+      "slug": "uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
+      "total": 78
+    },
+    {
+      "maker": "Korean Air",
+      "name": "Korean Air KUS-FS",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 60,
+        "max_speed_ms": 74,
+        "service_ceiling_m": 87
+      },
+      "slug": "uav-korean-air-kus-fs-rq-105k",
+      "total": 77
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Heron",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 98,
+        "max_link_km": null,
+        "max_payload_kg": 67,
+        "max_range_km": null,
+        "max_speed_ms": 62,
+        "service_ceiling_m": 79
+      },
+      "slug": "uav-iai-heron-heron",
+      "total": 76
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics Gray Eagle",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": null,
+        "max_speed_ms": 71,
+        "service_ceiling_m": 75
+      },
+      "slug": "uav-general-atomics-gray-eagle-gray-eagle",
+      "total": 76
+    },
+    {
+      "maker": "Elbit Systems",
+      "name": "Elbit Hermes 900 Kochav",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 76
+      },
+      "slug": "uav-elbit-hermes-900-kochav",
+      "total": 76
+    },
+    {
+      "maker": "TAI",
+      "name": "TAI Anka",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": null,
+        "max_speed_ms": 62,
+        "service_ceiling_m": 76
+      },
+      "slug": "uav-tai-anka-anka",
+      "total": 75
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Kaman-22",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 69,
+        "max_range_km": 82,
+        "max_speed_ms": 62,
+        "service_ceiling_m": 73
+      },
+      "slug": "uav-hesa-kaman-22-kaman-22",
+      "total": 75
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-4",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": 77,
+        "max_speed_ms": 64,
+        "service_ceiling_m": 72
+      },
+      "slug": "uav-casc-ch-4-ch-4",
+      "total": 75
+    },
+    {
+      "maker": "TAI",
+      "name": "TAI Aksungur",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 78,
+        "max_range_km": null,
+        "max_speed_ms": 58,
+        "service_ceiling_m": 84
+      },
+      "slug": "uav-tai-aksungur-aksungur",
+      "total": 74
+    },
+    {
+      "maker": "Israel Aerospace Industries",
+      "name": "IAI Harop",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": 98,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-iai-harop-harop",
+      "total": 74
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-1 Predator",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 62,
+        "service_ceiling_m": 72
+      },
+      "slug": "uav-general-atomics-mq-1-predator-mq-1-predator",
+      "total": 74
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Shahed-129",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 72,
+        "max_range_km": 75,
+        "max_speed_ms": 58,
+        "service_ceiling_m": 71
+      },
+      "slug": "uav-hesa-shahed-129-shahed-129",
+      "total": 73
+    },
+    {
+      "maker": "CAIG",
+      "name": "CAIG Wing Loong I",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 84,
+        "max_link_km": null,
+        "max_payload_kg": 65,
+        "max_range_km": 85,
+        "max_speed_ms": 68,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-caig-wing-loong-i-wing-loong-i",
+      "total": 73
+    },
+    {
+      "maker": "Viettel",
+      "name": "Viettel VU-MALE",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 69,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-viettel-vu-male-vu-male",
+      "total": 72
+    },
+    {
+      "maker": "Anduril",
+      "name": "Anduril Anvil",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 72,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-anvil-anvil",
+      "total": 72
+    },
+    {
+      "maker": "Kronshtadt",
+      "name": "Kronshtadt Orion",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 65,
+        "max_range_km": 73,
+        "max_speed_ms": 61,
+        "service_ceiling_m": 71
+      },
+      "slug": "uav-kronshtadt-orion-orion",
+      "total": 71
+    },
+    {
+      "maker": "Dronamics",
+      "name": "Dronamics Black Swan",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": 80,
+        "max_speed_ms": 61,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dronamics-black-swan-black-swan",
+      "total": 71
+    },
+    {
+      "maker": "Aerovel",
+      "name": "Aerovel Flexrotor",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 91,
+        "max_link_km": 91,
+        "max_payload_kg": 33,
+        "max_range_km": 82,
+        "max_speed_ms": 58,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovel-flexrotor-flexrotor",
+      "total": 71
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-3",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 56,
+        "max_range_km": 79,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-casc-ch-3-ch-3",
+      "total": 70
+    },
+    {
+      "maker": "PTDI",
+      "name": "PTDI Elang Hitam",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 90,
+        "max_link_km": null,
+        "max_payload_kg": 69,
+        "max_range_km": 52,
+        "max_speed_ms": 64,
+        "service_ceiling_m": 71
+      },
+      "slug": "uav-ptdi-elang-hitam-elang-hitam",
+      "total": 69
+    },
+    {
+      "maker": "Insitu",
+      "name": "Insitu ScanEagle",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 84,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 54,
+        "service_ceiling_m": 65
+      },
+      "slug": "uav-insitu-scaneagle-scaneagle",
+      "total": 68
+    },
+    {
+      "maker": "UZGA",
+      "name": "UZGA Forpost-R",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 82,
+        "max_link_km": null,
+        "max_payload_kg": 58,
+        "max_range_km": null,
+        "max_speed_ms": 58,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-uzga-forpost-r-forpost-r",
+      "total": 66
+    },
+    {
+      "maker": "Qods Aviation",
+      "name": "Qods Aviation Mohajer-6",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 62,
+        "max_range_km": null,
+        "max_speed_ms": 61,
+        "service_ceiling_m": 63
+      },
+      "slug": "uav-qods-aviation-mohajer-6-mohajer-6",
+      "total": 66
+    },
+    {
+      "maker": "JOUAV",
+      "name": "JOUAV CW-25",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": 98,
+        "max_payload_kg": 31,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 69
+      },
+      "slug": "uav-jouav-cw-25-cw-25",
+      "total": 66
+    },
+    {
+      "maker": "Israel Aerospace Industries",
+      "name": "Israel Aerospace Industries Searcher Mk III",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 82,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 54,
+        "max_speed_ms": 61,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
+      "total": 66
+    },
+    {
+      "maker": "Beta Technologies",
+      "name": "Beta Technologies Alia-250",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 77,
+        "max_range_km": 59,
+        "max_speed_ms": 63,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-beta-technologies-alia-250-alia-250",
+      "total": 66
+    },
+    {
+      "maker": "Airbus",
+      "name": "Airbus VSR700",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 70,
+        "max_link_km": null,
+        "max_payload_kg": 67,
+        "max_range_km": null,
+        "max_speed_ms": 59,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-airbus-vsr700-vsr700",
+      "total": 66
+    },
+    {
+      "maker": "Northrop Grumman",
+      "name": "Northrop Grumman MQ-8C Fire Scout",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 70,
+        "max_range_km": 53,
+        "max_speed_ms": 66,
+        "service_ceiling_m": 60
+      },
+      "slug": "uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
+      "total": 65
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Searcher Mk II",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 84,
+        "max_link_km": null,
+        "max_payload_kg": 58,
+        "max_range_km": 54,
+        "max_speed_ms": 60,
+        "service_ceiling_m": 70
+      },
+      "slug": "uav-iai-searcher-mk-ii-searcher-mk-ii",
+      "total": 65
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Puma LE",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 65,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-rq-20-puma-le",
+      "total": 65
+    },
+    {
+      "maker": "Qods",
+      "name": "Qods Mohajer-6",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 62,
+        "max_range_km": 60,
+        "max_speed_ms": 61,
+        "service_ceiling_m": 63
+      },
+      "slug": "uav-qods-mohajer-6-mohajer-6",
+      "total": 64
+    },
+    {
+      "maker": "Airbus",
+      "name": "Airbus Zephyr",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 29,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 98
+      },
+      "slug": "uav-airbus-zephyr-zephyr",
+      "total": 64
+    },
+    {
+      "maker": "Lockheed Martin",
+      "name": "Lockheed Martin Stalker VXE",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 70,
+        "max_link_km": 96,
+        "max_payload_kg": 22,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-lockheed-martin-stalker-vxe-stalker-vxe",
+      "total": 63
+    },
+    {
+      "maker": "Joby Aviation",
+      "name": "Joby Aviation S4",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 73,
+        "max_range_km": 47,
+        "max_speed_ms": 72,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-joby-aviation-s4-s4",
+      "total": 63
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Shahed-136",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 49,
+        "max_range_km": 80,
+        "max_speed_ms": 59,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hesa-shahed-136-shahed-136",
+      "total": 63
+    },
+    {
+      "maker": "Vertical Aerospace",
+      "name": "Vertical Aerospace VX4",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 73,
+        "max_range_km": 47,
+        "max_speed_ms": 65,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-vertical-aerospace-vx4-vx4",
+      "total": 62
+    },
+    {
+      "maker": "Lilium",
+      "name": "Lilium Jet",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 78,
+        "max_range_km": 52,
+        "max_speed_ms": 68,
+        "service_ceiling_m": 48
+      },
+      "slug": "uav-lilium-jet-jet",
+      "total": 62
+    },
+    {
+      "maker": "Archer Aviation",
+      "name": "Archer Aviation Midnight",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 73,
+        "max_range_km": 47,
+        "max_speed_ms": 65,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-archer-aviation-midnight-midnight",
+      "total": 62
+    },
+    {
+      "maker": "Aeronautics",
+      "name": "Aeronautics Aerostar",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 49,
+        "max_range_km": null,
+        "max_speed_ms": 59,
+        "service_ceiling_m": 63
+      },
+      "slug": "uav-aeronautics-aerostar-aerostar",
+      "total": 62
+    },
+    {
+      "maker": "Pyka",
+      "name": "Pyka Pelican",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 69,
+        "max_range_km": null,
+        "max_speed_ms": 53,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-pyka-pelican-pelican",
+      "total": 61
+    },
+    {
+      "maker": "AutoFlight",
+      "name": "AutoFlight Prosperity I",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 71,
+        "max_range_km": 52,
+        "max_speed_ms": 61,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autoflight-prosperity-i-prosperity-i",
+      "total": 61
+    },
+    {
+      "maker": "Wisk Aero",
+      "name": "Wisk Aero Generation 6",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 72,
+        "max_range_km": 46,
+        "max_speed_ms": 63,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-wisk-aero-generation-6-generation-6",
+      "total": 60
+    },
+    {
+      "maker": "Pyka",
+      "name": "Pyka Pelican 2",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 69,
+        "max_range_km": null,
+        "max_speed_ms": 51,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-pyka-pelican-2-pelican-2",
+      "total": 60
+    },
+    {
+      "maker": "EHang",
+      "name": "EHang VT-35",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 65,
+        "max_range_km": 49,
+        "max_speed_ms": 62,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ehang-vt-35-vt-35",
+      "total": 59
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO II Pro RTK V3",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-autel-robotics-evo-ii-pro-rtk",
+      "total": 59
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO II Dual 640T RTK V3",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-autel-robotics-evo-ii-dual-640t-rtk",
+      "total": 59
+    },
+    {
+      "maker": "Textron",
+      "name": "Textron RQ-7 Shadow",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": 50,
+        "max_range_km": null,
+        "max_speed_ms": 56,
+        "service_ceiling_m": 60
+      },
+      "slug": "uav-textron-rq-7-shadow-rq-7-shadow",
+      "total": 58
+    },
+    {
+      "maker": "Textron",
+      "name": "Textron Aerosonde",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 81,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 45,
+        "max_speed_ms": 49,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-textron-aerosonde-aerosonde",
+      "total": 58
+    },
+    {
+      "maker": "Eve Air Mobility",
+      "name": "Eve Air Mobility Eve",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 73,
+        "max_range_km": 41,
+        "max_speed_ms": 61,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-eve-air-mobility-eve-eve",
+      "total": 58
+    },
+    {
+      "maker": "Threod Systems",
+      "name": "Threod Systems EOS C",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 56,
+        "max_link_km": 74,
+        "max_payload_kg": null,
+        "max_range_km": 49,
+        "max_speed_ms": 46,
+        "service_ceiling_m": 58
+      },
+      "slug": "uav-threod-systems-eos-c-eos-c",
+      "total": 57
+    },
+    {
+      "maker": "Guardian Agriculture",
+      "name": "Guardian Agriculture SC1",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 57,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-guardian-agriculture-sc1-sc1",
+      "total": 57
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment RQ-11B Raven",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 57
+      },
+      "slug": "uav-aerovironment-rq-11-raven-rq-11b",
+      "total": 57
+    },
+    {
+      "maker": "JOUAV",
+      "name": "JOUAV CW-15",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 56,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-jouav-cw-15-cw15",
+      "total": 56
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Ababil-3",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 63,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 41,
+        "max_speed_ms": 61,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-hesa-ababil-3-ababil-3",
+      "total": 56
+    },
+    {
+      "maker": "Elbit",
+      "name": "Elbit Hermes 90",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 80,
+        "max_link_km": null,
+        "max_payload_kg": 45,
+        "max_range_km": 41,
+        "max_speed_ms": null,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-elbit-hermes-90-hermes-90",
+      "total": 56
+    },
+    {
+      "maker": "Censys Technologies",
+      "name": "Censys Technologies Sentaero",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 50,
+        "max_link_km": 94,
+        "max_payload_kg": null,
+        "max_range_km": 46,
+        "max_speed_ms": 35,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-censys-technologies-sentaero-sentaero",
+      "total": 56
+    },
+    {
+      "maker": "Boeing Insitu",
+      "name": "Boeing Insitu Integrator",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 81,
+        "max_link_km": null,
+        "max_payload_kg": 41,
+        "max_range_km": 41,
+        "max_speed_ms": 53,
+        "service_ceiling_m": 65
+      },
+      "slug": "uav-boeing-insitu-integrator-integrator",
+      "total": 56
+    },
+    {
+      "maker": "RV Connex",
+      "name": "RV Connex Sky Scout",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 40,
+        "max_range_km": null,
+        "max_speed_ms": 46,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-rv-connex-sky-scout-sky-scout",
+      "total": 55
+    },
+    {
+      "maker": "Hylio",
+      "name": "Hylio AG-272",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 55,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hylio-ag-272-ag-272",
+      "total": 55
+    },
+    {
+      "maker": "Elroy Air",
+      "name": "Elroy Air Chaparral",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 61,
+        "max_range_km": 60,
+        "max_speed_ms": 44,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-elroy-air-chaparral-chaparral",
+      "total": 55
+    },
+    {
+      "maker": "Wingcopter",
+      "name": "Wingcopter 198",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-wingcopter-w198-198",
+      "total": 54
+    },
+    {
+      "maker": "Volocopter",
+      "name": "Volocopter VoloRegion",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 41,
+        "max_speed_ms": 66,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-volocopter-voloregion-voloregion",
+      "total": 54
+    },
+    {
+      "maker": "L3Harris",
+      "name": "L3Harris FVR-90",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 76,
+        "max_link_km": null,
+        "max_payload_kg": 36,
+        "max_range_km": 72,
+        "max_speed_ms": null,
+        "service_ceiling_m": 31
+      },
+      "slug": "uav-l3harris-fvr-90-fvr-90",
+      "total": 54
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Bird-Eye 650D",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 80,
+        "max_link_km": null,
+        "max_payload_kg": 30,
+        "max_range_km": 46,
+        "max_speed_ms": 54,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-iai-bird-eye-650d-bird-eye-650d",
+      "total": 54
+    },
+    {
+      "maker": "Edge Autonomy",
+      "name": "Edge Autonomy Penguin C",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 87,
+        "max_link_km": null,
+        "max_payload_kg": 28,
+        "max_range_km": 48,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-edge-autonomy-penguin-c-penguin-c",
+      "total": 54
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T70P",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 54,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t70p-agras-t70p",
+      "total": 54
+    },
+    {
+      "maker": "Topxgun",
+      "name": "Topxgun FP600",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 53,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-topxgun-fp600-fp600",
+      "total": 53
+    },
+    {
+      "maker": "UMS Skeldar",
+      "name": "UMS Skeldar V-200",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": 49,
+        "max_range_km": 49,
+        "max_speed_ms": 52,
+        "service_ceiling_m": 42
+      },
+      "slug": "uav-ums-skeldar-v-200-v-200",
+      "total": 52
+    },
+    {
+      "maker": "ideaForge",
+      "name": "ideaForge SWITCH UAV",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 50,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 55
+      },
+      "slug": "uav-ideaforge-switch-switch",
+      "total": 52
+    },
+    {
+      "maker": "Doroni",
+      "name": "Doroni H1-X",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": null,
+        "max_payload_kg": 66,
+        "max_range_km": 47,
+        "max_speed_ms": 60,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-doroni-h1-x-h1-x",
+      "total": 52
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3 Pro",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-3-pro-mavic-3-pro",
+      "total": 52
+    },
+    {
+      "maker": "Quantum Systems",
+      "name": "Quantum Systems Vector AI",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 50,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-quantum-vector-vector-ai",
+      "total": 51
+    },
+    {
+      "maker": "Supernal",
+      "name": "Supernal S-A2",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 41,
+        "max_speed_ms": 60,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-supernal-s-a2-s-a2",
+      "total": 50
+    },
+    {
+      "maker": "Elbit Systems",
+      "name": "Elbit Systems Skylark",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": 36,
+        "max_range_km": 41,
+        "max_speed_ms": null,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-elbit-systems-skylark-skylark",
+      "total": 50
+    },
+    {
+      "maker": "Elbit Systems",
+      "name": "Elbit Systems Skylark 3",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": 36,
+        "max_range_km": 41,
+        "max_speed_ms": null,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-elbit-systems-skylark-3-skylark-3",
+      "total": 50
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 4D",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 38,
+        "max_link_km": 62,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-matrice-4d-matrice-4d",
+      "total": 50
+    },
+    {
+      "maker": "Wingtra",
+      "name": "Wingtra WingtraOne GEN II",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 40,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-wingtra-wingtraone-gen-ii",
+      "total": 49
+    },
+    {
+      "maker": "Skyfront",
+      "name": "Skyfront Perimeter 8",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 63,
+        "max_link_km": null,
+        "max_payload_kg": 36,
+        "max_range_km": 48,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skyfront-perimeter-8-perimeter-8",
+      "total": 49
+    },
+    {
+      "maker": "Quantum Systems",
+      "name": "Quantum Systems Reliant",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 74,
+        "max_link_km": null,
+        "max_payload_kg": 24,
+        "max_range_km": 47,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-quantum-systems-reliant-reliant",
+      "total": 48
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Panther",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": 34,
+        "max_range_km": 35,
+        "max_speed_ms": 51,
+        "service_ceiling_m": 48
+      },
+      "slug": "uav-iai-panther-panther",
+      "total": 47
+    },
+    {
+      "maker": "IAI",
+      "name": "IAI Mini Harpy",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 40,
+        "max_link_km": null,
+        "max_payload_kg": 32,
+        "max_range_km": 41,
+        "max_speed_ms": 75,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-iai-mini-harpy-mini-harpy",
+      "total": 47
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 400",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 40,
+        "max_link_km": 70,
+        "max_payload_kg": 31,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-matrice-400-matrice-400",
+      "total": 47
+    },
+    {
+      "maker": "Delair",
+      "name": "Delair DT26",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 52,
+        "max_link_km": 65,
+        "max_payload_kg": 24,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-delair-dt26-dt26",
+      "total": 47
+    },
+    {
+      "maker": "XPeng AeroHT",
+      "name": "XPeng AeroHT X2",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 32,
+        "max_link_km": null,
+        "max_payload_kg": 65,
+        "max_range_km": 38,
+        "max_speed_ms": 51,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xpeng-aeroht-x2-x2",
+      "total": 46
+    },
+    {
+      "maker": "Volocopter",
+      "name": "Volocopter VoloCity",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 65,
+        "max_range_km": 29,
+        "max_speed_ms": 45,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-volocopter-volocity-volocity",
+      "total": 46
+    },
+    {
+      "maker": "Qods",
+      "name": "Qods Mohajer-2",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 33,
+        "max_speed_ms": 56,
+        "service_ceiling_m": 51
+      },
+      "slug": "uav-qods-mohajer-2-mohajer-2",
+      "total": 46
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Air 3",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": 57,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-air-3-air-3",
+      "total": 46
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T30",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 46,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t30-agras-t30",
+      "total": 46
+    },
+    {
+      "maker": "Anduril",
+      "name": "Anduril Ghost 4",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 47,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 47,
+        "max_speed_ms": 44,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-ghost-4-ghost-4",
+      "total": 46
+    },
+    {
+      "maker": "Autel",
+      "name": "Autel EVO Nano",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-evo-nano-evo-nano",
+      "total": 45
+    },
+    {
+      "maker": "Quantum Systems",
+      "name": "Quantum Systems Trinity Pro",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": 39,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 33,
+        "service_ceiling_m": 60
+      },
+      "slug": "uav-quantum-systems-trinity-pro-trinity-pro",
+      "total": 44
+    },
+    {
+      "maker": "Pivotal",
+      "name": "Pivotal Helix",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 58,
+        "max_range_km": 28,
+        "max_speed_ms": 45,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-pivotal-helix-helix",
+      "total": 44
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 4 Pro",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 31,
+        "max_link_km": 57,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-4-pro-mini-4-pro",
+      "total": 44
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3T",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": 28,
+        "max_speed_ms": 38,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-dji-mavic-3-enterprise-3t",
+      "total": 44
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3E",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": 28,
+        "max_speed_ms": 38,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-dji-mavic-3-enterprise-3e",
+      "total": 44
+    },
+    {
+      "maker": "Airbus",
+      "name": "Airbus CityAirbus NextGen",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 38,
+        "max_speed_ms": 49,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
+      "total": 44
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Puma 3 AE",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 53,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 35,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-puma-3-ae-puma-3-ae",
+      "total": 44
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Phantom 4 RTK",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-dji-phantom-4-rtk-phantom-4-rtk",
+      "total": 43
+    },
+    {
+      "maker": "ZALA Aero",
+      "name": "ZALA Aero 421-16E",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 60,
+        "max_link_km": null,
+        "max_payload_kg": 17,
+        "max_range_km": 33,
+        "max_speed_ms": 47,
+        "service_ceiling_m": 53
+      },
+      "slug": "uav-zala-aero-421-16e-421-16e",
+      "total": 42
+    },
+    {
+      "maker": "XAG",
+      "name": "XAG V50",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 42,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xag-v50-v50",
+      "total": 42
+    },
+    {
+      "maker": "Viettel",
+      "name": "Viettel VU-R70",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 62,
+        "max_link_km": null,
+        "max_payload_kg": 22,
+        "max_range_km": 37,
+        "max_speed_ms": 49,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-viettel-vu-r70-vu-r70",
+      "total": 42
+    },
+    {
+      "maker": "ST Engineering",
+      "name": "ST Engineering Skyblade 360",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 66,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 18,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-st-engineering-skyblade-360-skyblade-360",
+      "total": 42
+    },
+    {
+      "maker": "EHang Holdings",
+      "name": "EHang EH216-S",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": 66,
+        "max_range_km": 29,
+        "max_speed_ms": null,
+        "service_ceiling_m": 48
+      },
+      "slug": "uav-ehang-eh216-s-eh216s",
+      "total": 42
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 5 Pro",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 32,
+        "max_link_km": 57,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 36,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-5-pro-mini-5-pro",
+      "total": 42
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3 Classic",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 38,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-3-classic-mavic-3-classic",
+      "total": 42
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics EVO II Pro V3",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": 25,
+        "max_speed_ms": 37,
+        "service_ceiling_m": 69
+      },
+      "slug": "uav-autel-robotics-evo-ii-pro-v3-evo-ii-pro-v3",
+      "total": 42
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Switchblade 300 Block 20",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 27,
+        "max_speed_ms": 56,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-aerovironment-switchblade-300-block-20",
+      "total": 42
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment RQ-20B Puma AE",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 56,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": 22,
+        "max_speed_ms": 40,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-rq-20-puma-rq-20b",
+      "total": 42
+    },
+    {
+      "maker": "XAG",
+      "name": "XAG P100 Pro",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 52,
+        "max_range_km": null,
+        "max_speed_ms": 29,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xag-p100-pro-p100pro",
+      "total": 40
+    },
+    {
+      "maker": "XAG",
+      "name": "XAG P100",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 52,
+        "max_range_km": null,
+        "max_speed_ms": 29,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xag-p100-p100",
+      "total": 40
+    },
+    {
+      "maker": "Swoop Aero",
+      "name": "Swoop Aero Kite",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 24,
+        "max_range_km": 48,
+        "max_speed_ms": 49,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-swoop-aero-kite-kite",
+      "total": 40
+    },
+    {
+      "maker": "senseFly",
+      "name": "senseFly eBee X",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 34,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-sensefly-ebee-x-ebee-x",
+      "total": 40
+    },
+    {
+      "maker": "Real-time Robotics",
+      "name": "Real-time Robotics HERA",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 39,
+        "max_link_km": null,
+        "max_payload_kg": 40,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-real-time-robotics-hera-hera",
+      "total": 40
+    },
+    {
+      "maker": "Flock Safety",
+      "name": "Flock Safety Aerodome",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 44,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-flock-safety-aerodome-aerodome",
+      "total": 40
+    },
+    {
+      "maker": "FlightWave",
+      "name": "FlightWave Edge 130",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 40,
+        "max_link_km": 40,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-flightwave-edge-130-edge-130",
+      "total": 40
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 350 RTK",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 39,
+        "max_link_km": 57,
+        "max_payload_kg": 23,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-matrice-350-rtk-m350",
+      "total": 40
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Flip",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 49,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-flip-flip",
+      "total": 40
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics Titan",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 41,
+        "max_link_km": null,
+        "max_payload_kg": 36,
+        "max_range_km": null,
+        "max_speed_ms": 42,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-titan-titan",
+      "total": 40
+    },
+    {
+      "maker": "ENICS",
+      "name": "ENICS Eleron-3",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": 8,
+        "max_range_km": 35,
+        "max_speed_ms": 51,
+        "service_ceiling_m": 55
+      },
+      "slug": "uav-enics-eleron-3-eleron-3",
+      "total": 39
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics EVO Lite Plus",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 48,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 35,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-lite-plus-evo-lite-plus",
+      "total": 39
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics EVO Lite+",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 48,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 35,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-lite-evo-lite",
+      "total": 39
+    },
+    {
+      "maker": "EFT",
+      "name": "EFT Z50",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": 52,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-eft-z50-z50",
+      "total": 38
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Avata 2",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 26,
+        "max_link_km": 49,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-avata-2-avata-2",
+      "total": 38
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Air 2S",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 48,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 36,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-air-2s-air-2s",
+      "total": 38
+    },
+    {
+      "maker": "Teal",
+      "name": "Teal Golden Eagle",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 37,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teal-golden-eagle-golden-eagle",
+      "total": 37
+    },
+    {
+      "maker": "Skydio",
+      "name": "Skydio X10D",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-x10-x10d",
+      "total": 37
+    },
+    {
+      "maker": "Skydio",
+      "name": "Skydio X10",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-x10-x10",
+      "total": 37
+    },
+    {
+      "maker": "Quantum Systems",
+      "name": "Quantum Systems Trinity F90 Plus",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": 9,
+        "max_range_km": 41,
+        "max_speed_ms": 33,
+        "service_ceiling_m": 58
+      },
+      "slug": "uav-quantum-systems-trinity-f90-plus-trinity-f90-plus",
+      "total": 37
+    },
+    {
+      "maker": "Hubsan",
+      "name": "Hubsan Zino Mini Pro",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hubsan-zino-mini-pro-zino-mini-pro",
+      "total": 37
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 3 Pro",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 31,
+        "max_link_km": 48,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-3-pro-mini-3-pro",
+      "total": 37
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 3",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 33,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-3-mini-3",
+      "total": 37
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3 Thermal",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 38,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-3-thermal-mavic-3-thermal",
+      "total": 37
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 2 Pro",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-2-pro-mavic-2-pro",
+      "total": 37
+    },
+    {
+      "maker": "Teledyne FLIR",
+      "name": "Teledyne FLIR SIRAS",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 43,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 35,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teledyne-flir-siras-siras",
+      "total": 36
+    },
+    {
+      "maker": "Potensic",
+      "name": "Potensic Atom 2",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 31,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-potensic-atom-2-atom-2",
+      "total": 36
+    },
+    {
+      "maker": "Hylio",
+      "name": "Hylio AG-130",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 48,
+        "max_range_km": null,
+        "max_speed_ms": 23,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hylio-ag-130-ag-130",
+      "total": 36
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 4K",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-4k-mini-4k",
+      "total": 36
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mini 2",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mini-2-mini-2",
+      "total": 36
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Inspire 2",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 28,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 43,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-inspire-2-inspire-2",
+      "total": 36
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Air 3S",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-air-3s-air-3s",
+      "total": 36
+    },
+    {
+      "maker": "Xiaomi (FIMI)",
+      "name": "Xiaomi (FIMI) X8 SE",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 32,
+        "max_link_km": 40,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xiaomi-fimi-x8-se-x8-se",
+      "total": 35
+    },
+    {
+      "maker": "Thales",
+      "name": "Thales Spy Ranger",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 56,
+        "max_link_km": null,
+        "max_payload_kg": 15,
+        "max_range_km": 27,
+        "max_speed_ms": 42,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-thales-spy-ranger-spy-ranger",
+      "total": 35
+    },
+    {
+      "maker": "Raytheon",
+      "name": "Raytheon Coyote Block 2",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 2,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 18,
+        "max_speed_ms": 86,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-raytheon-coyote-block-2-coyote-block-2",
+      "total": 35
+    },
+    {
+      "maker": "Lockheed Martin",
+      "name": "Lockheed Martin Indago 4",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 39,
+        "max_link_km": 44,
+        "max_payload_kg": 21,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-lockheed-martin-indago-4-indago-4",
+      "total": 35
+    },
+    {
+      "maker": "Freefly Systems",
+      "name": "Freefly Alta X",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 35,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-freefly-systems-alta-x",
+      "total": 35
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics EVO Nano Plus",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 29,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 30,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-nano-plus-evo-nano-plus",
+      "total": 35
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO II Pro Enterprise",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 35,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-ii-pro-enterprise",
+      "total": 35
+    },
+    {
+      "maker": "A2Z Drone Delivery",
+      "name": "A2Z Drone Delivery RDSX Pelican",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 32,
+        "max_range_km": 33,
+        "max_speed_ms": 40,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
+      "total": 35
+    },
+    {
+      "maker": "Zipline",
+      "name": "Zipline Platform 2",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 25,
+        "max_range_km": 30,
+        "max_speed_ms": 47,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zipline-platform-2-platform-2",
+      "total": 34
+    },
+    {
+      "maker": "ZALA Aero",
+      "name": "ZALA Aero Lancet",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": null,
+        "max_payload_kg": 24,
+        "max_range_km": 30,
+        "max_speed_ms": 47,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zala-aero-lancet-lancet",
+      "total": 34
+    },
+    {
+      "maker": "Yuneec",
+      "name": "Yuneec Mantis Q",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 31,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-yuneec-mantis-q-mantis-q",
+      "total": 34
+    },
+    {
+      "maker": "UVision",
+      "name": "UVision Hero-120",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 40,
+        "max_link_km": null,
+        "max_payload_kg": 28,
+        "max_range_km": 35,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-uvision-hero-120-hero-120",
+      "total": 34
+    },
+    {
+      "maker": "Delair",
+      "name": "Delair UX11",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 34,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-delair-ux11-ux11",
+      "total": 34
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics EVO Nano+",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 29,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 27,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-nano-evo-nano",
+      "total": 34
+    },
+    {
+      "maker": "PowerVision",
+      "name": "PowerVision PowerEgg X",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 35,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 35,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-powervision-poweregg-x-poweregg-x",
+      "total": 33
+    },
+    {
+      "maker": "Potensic",
+      "name": "Potensic Atom",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 31,
+        "max_link_km": 35,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-potensic-atom-atom",
+      "total": 33
+    },
+    {
+      "maker": "Skydio",
+      "name": "Skydio Skydio 2 Plus",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 28,
+        "max_link_km": 35,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-skydio-2-plus-skydio-2-plus",
+      "total": 32
+    },
+    {
+      "maker": "Acecore",
+      "name": "Acecore Zoe",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": 29,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-acecore-zoe-zoe",
+      "total": 32
+    },
+    {
+      "maker": "WB Group",
+      "name": "WB Group Warmate",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 42,
+        "max_link_km": null,
+        "max_payload_kg": 16,
+        "max_range_km": 27,
+        "max_speed_ms": 39,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-wb-group-warmate-warmate",
+      "total": 31
+    },
+    {
+      "maker": "MARSS",
+      "name": "MARSS Interceptor-MR",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 13,
+        "max_range_km": 5,
+        "max_speed_ms": 69,
+        "service_ceiling_m": 38
+      },
+      "slug": "uav-marss-interceptor-mr-interceptor-mr",
+      "total": 31
+    },
+    {
+      "maker": "Acecore",
+      "name": "Acecore Neo",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": null,
+        "max_payload_kg": 35,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-acecore-neo-neo",
+      "total": 31
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T20P",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": 42,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t20p-agras-t20p",
+      "total": 30
+    },
+    {
+      "maker": "Wing",
+      "name": "Wing Delivery Drone",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": null,
+        "max_payload_kg": 14,
+        "max_range_km": null,
+        "max_speed_ms": 46,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-wing-delivery-drone-delivery-drone",
+      "total": 29
+    },
+    {
+      "maker": "Wing",
+      "name": "Wing Delivery Aircraft",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": null,
+        "max_payload_kg": 21,
+        "max_range_km": 21,
+        "max_speed_ms": 46,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-wing-delivery-aircraft-delivery-aircraft",
+      "total": 29
+    },
+    {
+      "maker": "UVision",
+      "name": "UVision Hero-30",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": null,
+        "max_payload_kg": 6,
+        "max_range_km": 22,
+        "max_speed_ms": 59,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-uvision-hero-30-hero-30",
+      "total": 29
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI DJI FPV",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 20,
+        "max_speed_ms": 44,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-dji-fpv-dji-fpv",
+      "total": 29
+    },
+    {
+      "maker": "Watts Innovations",
+      "name": "Watts Innovations PRISM Sky",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": 21,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-watts-innovations-prism-sky-prism-sky",
+      "total": 28
+    },
+    {
+      "maker": "Walkera",
+      "name": "Walkera Vitus 320",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 29,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-walkera-vitus-320-vitus-320",
+      "total": 28
+    },
+    {
+      "maker": "Parrot",
+      "name": "Parrot ANAFI USA",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 28,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-parrot-anafi-usa",
+      "total": 28
+    },
+    {
+      "maker": "Meituan",
+      "name": "Meituan Delivery Drone",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": 22,
+        "max_range_km": 14,
+        "max_speed_ms": 40,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-meituan-delivery-drone-delivery-drone",
+      "total": 28
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T40",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 8,
+        "max_link_km": null,
+        "max_payload_kg": 49,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t40-agras-t40",
+      "total": 28
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T10",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 23,
+        "max_link_km": null,
+        "max_payload_kg": 33,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t10-agras-t10",
+      "total": 28
+    },
+    {
+      "maker": "BRINC",
+      "name": "BRINC Lemur S",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": 49,
+        "max_payload_kg": 5,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-brinc-lemur-s-lemur-s",
+      "total": 28
+    },
+    {
+      "maker": "Freefly",
+      "name": "Freefly Alta 8 Pro",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": 35,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-freefly-alta-8-pro-alta-8-pro",
+      "total": 27
+    },
+    {
+      "maker": "Freefly",
+      "name": "Freefly Alta 8",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": 35,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-freefly-alta-8-alta-8",
+      "total": 27
+    },
+    {
+      "maker": "Yuneec",
+      "name": "Yuneec Typhoon H3",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": 15,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-yuneec-typhoon-h3-typhoon-h3",
+      "total": 26
+    },
+    {
+      "maker": "Teal Drones",
+      "name": "Teal Drones Golden Eagle",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 37,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 2,
+        "max_speed_ms": 39,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teal-drones-golden-eagle-golden-eagle",
+      "total": 26
+    },
+    {
+      "maker": "STM",
+      "name": "STM Kargu",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": null,
+        "max_payload_kg": 2,
+        "max_range_km": 14,
+        "max_speed_ms": 37,
+        "service_ceiling_m": 48
+      },
+      "slug": "uav-stm-kargu-kargu",
+      "total": 26
+    },
+    {
+      "maker": "Matternet",
+      "name": "Matternet M2",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": null,
+        "max_payload_kg": 20,
+        "max_range_km": 22,
+        "max_speed_ms": 32,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-matternet-m2-m2",
+      "total": 26
+    },
+    {
+      "maker": "Antwork",
+      "name": "Antwork TR9",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 29,
+        "max_range_km": 22,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-antwork-tr9-tr9",
+      "total": 26
+    },
+    {
+      "maker": "Amazon Prime Air",
+      "name": "Amazon Prime Air MK30",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": 21,
+        "max_range_km": 16,
+        "max_speed_ms": 46,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-amazon-prime-air-mk30-mk30",
+      "total": 26
+    },
+    {
+      "maker": "Yuneec",
+      "name": "Yuneec Typhoon H Plus",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": 11,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-yuneec-typhoon-h-plus-typhoon-h-plus",
+      "total": 25
+    },
+    {
+      "maker": "XAG",
+      "name": "XAG V40",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 18,
+        "max_link_km": null,
+        "max_payload_kg": 40,
+        "max_range_km": null,
+        "max_speed_ms": 16,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xag-v40-v40",
+      "total": 25
+    },
+    {
+      "maker": "Sony",
+      "name": "Sony Airpeak S1",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 25,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-sony-airpeak-s1-s1",
+      "total": 25
+    },
+    {
+      "maker": "Microdrones",
+      "name": "Microdrones mdLiDAR 3000",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-microdrones-mdlidar-3000-mdlidar-3000",
+      "total": 24
+    },
+    {
+      "maker": "Microdrones",
+      "name": "Microdrones md4-1000",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": null,
+        "max_payload_kg": 15,
+        "max_range_km": null,
+        "max_speed_ms": 9,
+        "service_ceiling_m": 38
+      },
+      "slug": "uav-microdrones-md4-1000-md4-1000",
+      "total": 24
+    },
+    {
+      "maker": "Jetson",
+      "name": "Jetson One",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 24,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 45,
+        "service_ceiling_m": 2
+      },
+      "slug": "uav-jetson-one-one",
+      "total": 24
+    },
+    {
+      "maker": "Manna Aero",
+      "name": "Manna Aero Manna",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 27,
+        "max_range_km": 2,
+        "max_speed_ms": 39,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-manna-aero-manna-manna",
+      "total": 23
+    },
+    {
+      "maker": "Manna Aero",
+      "name": "Manna Aero Air Delivery",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 27,
+        "max_range_km": 2,
+        "max_speed_ms": 39,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-manna-aero-air-delivery-air-delivery",
+      "total": 23
+    },
+    {
+      "maker": "Walkera",
+      "name": "Walkera Vitus",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 27,
+        "max_link_km": 9,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 29,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-walkera-vitus-vitus",
+      "total": 22
+    },
+    {
+      "maker": "Holy Stone",
+      "name": "Holy Stone HS720",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 28,
+        "max_link_km": 2,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 36,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-holy-stone-hs720-hs720",
+      "total": 22
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Avata",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 22,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-avata-avata",
+      "total": 22
+    },
+    {
+      "maker": "Flytrex",
+      "name": "Flytrex Sky2",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 27,
+        "max_range_km": 8,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-flytrex-sky2-sky2",
+      "total": 18
+    },
+    {
+      "maker": "STM",
+      "name": "STM Alpagu",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": 2,
+        "max_range_km": 11,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-stm-alpagu-alpagu",
+      "total": 17
+    },
+    {
+      "maker": "Flyability",
+      "name": "Flyability Elios 3",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 17,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-flyability-elios-3-elios-3",
+      "total": 17
+    },
+    {
+      "maker": "Zero Zero Robotics",
+      "name": "Zero Zero Robotics HoverAir X1 ProMax",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 20,
+        "max_link_km": 2,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 25,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax",
+      "total": 16
+    },
+    {
+      "maker": "Zero Zero Robotics",
+      "name": "Zero Zero Robotics HoverAir X1 Pro",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 20,
+        "max_link_km": 2,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 25,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zero-zero-robotics-hoverair-x1-pro-hoverair-x1-pro",
+      "total": 16
+    },
+    {
+      "maker": "GEPRC",
+      "name": "GEPRC Cinebot30",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 16,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-geprc-cinebot30-cinebot30",
+      "total": 16
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Switchblade 300 Block 10C",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 19,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 14,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-switchblade-300-block-10c",
+      "total": 16
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T50",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 15,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t50-t50",
+      "total": 15
+    },
+    {
+      "maker": "iFlight",
+      "name": "iFlight Nazgul5 V3",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 9,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-iflight-nazgul5-v3-nazgul5-v3",
+      "total": 9
+    },
+    {
+      "maker": "Cleo Robotics",
+      "name": "Cleo Robotics Dronut X1",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 16,
+        "max_link_km": 2,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 2,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-cleo-robotics-dronut-x1-dronut-x1",
+      "total": 7
+    },
+    {
+      "maker": "Fortem Technologies",
+      "name": "Fortem Technologies DroneHunter F700",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 5,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
+      "total": 5
+    },
+    {
+      "maker": "BetaFPV",
+      "name": "BetaFPV Pavo Pico",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 2,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-betafpv-pavo-pico-pavo-pico",
+      "total": 2
+    },
+    {
+      "maker": "Zipline",
+      "name": "Zipline P2 Zip",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zipline-p2-p2",
+      "total": null
+    },
+    {
+      "maker": "ZALA Aero",
+      "name": "ZALA Aero Lancet-3",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-zala-aero-lancet-3-lancet-3",
+      "total": null
+    },
+    {
+      "maker": "Yuneec",
+      "name": "Yuneec H520E",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-yuneec-h520e-h520e",
+      "total": null
+    },
+    {
+      "maker": "Vantage Robotics",
+      "name": "Vantage Robotics Vesper",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-vantage-robotics-vesper-vesper",
+      "total": null
+    },
+    {
+      "maker": "Textron Systems",
+      "name": "Textron Systems Aerosonde",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-textron-systems-aerosonde-aerosonde",
+      "total": null
+    },
+    {
+      "maker": "Teledyne FLIR",
+      "name": "Teledyne FLIR SkyRanger R70",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teledyne-flir-skyranger-r70",
+      "total": null
+    },
+    {
+      "maker": "Teledyne FLIR",
+      "name": "Teledyne FLIR Black Hornet 4",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teledyne-flir-black-hornet-4-black-hornet-4",
+      "total": null
+    },
+    {
+      "maker": "Teal Drones",
+      "name": "Teal 2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-teal-drones-teal-2",
+      "total": null
+    },
+    {
+      "maker": "Special Technology Center",
+      "name": "Special Technology Center Orlan-10",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-special-technology-center-orlan-10-orlan-10",
+      "total": null
+    },
+    {
+      "maker": "Skydio",
+      "name": "Skydio X2D",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-x2d-x2d",
+      "total": null
+    },
+    {
+      "maker": "Shield AI",
+      "name": "Shield AI V-BAT",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-shield-ai-v-bat-v-bat",
+      "total": null
+    },
+    {
+      "maker": "Shield AI",
+      "name": "Shield AI V-BAT 128",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-shield-ai-v-bat-128-v-bat-128",
+      "total": null
+    },
+    {
+      "maker": "Schiebel",
+      "name": "Schiebel Camcopter S-100",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-schiebel-camcopter-s-100-camcopter-s-100",
+      "total": null
+    },
+    {
+      "maker": "Red Cat",
+      "name": "Red Cat Black Widow",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-red-cat-black-widow-black-widow",
+      "total": null
+    },
+    {
+      "maker": "Real-time Robotics",
+      "name": "Real-time Robotics Vega",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-real-time-robotics-vega-vega",
+      "total": null
+    },
+    {
+      "maker": "Real-time Robotics",
+      "name": "Real-time Robotics HERA Plus",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-real-time-robotics-hera-hera-plus",
+      "total": null
+    },
+    {
+      "maker": "Performance Drone Works",
+      "name": "PDW C100",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-performance-drone-works-c100-c100",
+      "total": null
+    },
+    {
+      "maker": "Percepto",
+      "name": "Percepto Air Max",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-percepto-air-max-air-max",
+      "total": null
+    },
+    {
+      "maker": "Parrot",
+      "name": "Parrot ANAFI Ai",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-parrot-anafi-ai",
+      "total": null
+    },
+    {
+      "maker": "Neros",
+      "name": "Neros Archer",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-neros-archer-archer",
+      "total": null
+    },
+    {
+      "maker": "ModalAI",
+      "name": "ModalAI Stinger Vision FPV",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-modalai-vision-fpv-stinger",
+      "total": null
+    },
+    {
+      "maker": "ModalAI",
+      "name": "ModalAI Seeker Vision FPV",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-modalai-vision-fpv-seeker",
+      "total": null
+    },
+    {
+      "maker": "Israel Aerospace Industries",
+      "name": "Israel Aerospace Industries Heron",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-israel-aerospace-industries-heron-heron",
+      "total": null
+    },
+    {
+      "maker": "Inspired Flight",
+      "name": "Inspired Flight IF800 Tomcat",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-inspired-flight-if800-tomcat",
+      "total": null
+    },
+    {
+      "maker": "Inspired Flight",
+      "name": "Inspired Flight IF1200A",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-inspired-flight-if1200-a",
+      "total": null
+    },
+    {
+      "maker": "iFlight",
+      "name": "iFlight Nazgul Evoque F5",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
+      "total": null
+    },
+    {
+      "maker": "Heven AeroTech",
+      "name": "Heven AeroTech Z1",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-heven-aerotech-z1-z1",
+      "total": null
+    },
+    {
+      "maker": "HESA",
+      "name": "HESA Shahed-136 / Geran-2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
+      "total": null
+    },
+    {
+      "maker": "GEPRC",
+      "name": "GEPRC Mark5",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-geprc-mark5-mark5",
+      "total": null
+    },
+    {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-9 Reaper",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-general-atomics-mq-9-reaper-mq-9-reaper",
+      "total": null
+    },
+    {
+      "maker": "Freefly Systems",
+      "name": "Freefly Astro",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-freefly-systems-astro-astro",
+      "total": null
+    },
+    {
+      "maker": "Fortem Technologies",
+      "name": "Fortem DroneHunter F700",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-fortem-dronehunter-f700-f700",
+      "total": null
+    },
+    {
+      "maker": "Elbit Systems",
+      "name": "Elbit Systems Hermes 450",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-elbit-systems-hermes-450-hermes-450",
+      "total": null
+    },
+    {
+      "maker": "Edge Autonomy",
+      "name": "Edge Autonomy VXE30 Stalker",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
+      "total": null
+    },
+    {
+      "maker": "Easy Aerial",
+      "name": "Easy Aerial Falcon",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-easy-aerial-falcon-falcon",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Neo",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-neo-neo",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 4 Pro",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-4-pro-mavic-4-pro",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Mavic 3M",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-mavic-3-enterprise-3m",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 4E",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-matrice-4e-matrice-4e",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 30T",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-matrice-30t-matrice-30t",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Inspire 3",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-inspire-3-inspire-3",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI FlyCart 30",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-flycart-30-flycart-30",
+      "total": null
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Agras T25",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-agras-t25-agras-t25",
+      "total": null
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-5 Rainbow",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-casc-ch-5-rainbow-ch-5-rainbow",
+      "total": null
+    },
+    {
+      "maker": "CASC",
+      "name": "CASC CH-4 Rainbow",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-casc-ch-4-rainbow-ch-4-rainbow",
+      "total": null
+    },
+    {
+      "maker": "BRINC",
+      "name": "BRINC Responder",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-brinc-responder-responder",
+      "total": null
+    },
+    {
+      "maker": "BRINC",
+      "name": "BRINC LEMUR 2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-brinc-lemur-2",
+      "total": null
+    },
+    {
+      "maker": "Boeing Insitu",
+      "name": "Boeing Insitu ScanEagle",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-boeing-insitu-scaneagle-scaneagle",
+      "total": null
+    },
+    {
+      "maker": "Boeing Insitu",
+      "name": "Boeing Insitu RQ-21 Blackjack",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
+      "total": null
+    },
+    {
+      "maker": "Baykar",
+      "name": "Baykar Bayraktar TB3",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-baykar-bayraktar-tb3-bayraktar-tb3",
+      "total": null
+    },
+    {
+      "maker": "Baykar",
+      "name": "Baykar Bayraktar TB2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-baykar-bayraktar-tb2-bayraktar-tb2",
+      "total": null
+    },
+    {
+      "maker": "Baykar",
+      "name": "Baykar Bayraktar Akinci",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-baykar-bayraktar-akinci-bayraktar-akinci",
+      "total": null
+    },
+    {
+      "maker": "AVIC",
+      "name": "AVIC Wing Loong II",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-avic-wing-loong-ii-wing-loong-ii",
+      "total": null
+    },
+    {
+      "maker": "AVIC",
+      "name": "AVIC Wing Loong I",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-avic-wing-loong-i-wing-loong-i",
+      "total": null
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO II Dual 640T Enterprise",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-evo-ii-dual-640t-enterprise",
+      "total": null
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics Dragonfish",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-dragonfish-dragonfish",
+      "total": null
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics Alpha",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-alpha-alpha",
+      "total": null
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO Max 4T V2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-evo-max-4t-v2",
+      "total": null
+    },
+    {
+      "maker": "Asylon",
+      "name": "Asylon DroneSentry",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-asylon-dronesentry-dronesentry",
+      "total": null
+    },
+    {
+      "maker": "Ascent AeroSystems",
+      "name": "Ascent Spirit",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ascent-aerosystems-spirit-spirit",
+      "total": null
+    },
+    {
+      "maker": "Anduril",
+      "name": "Anduril Roadrunner-M",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-roadrunner-m-roadrunner-m",
+      "total": null
+    },
+    {
+      "maker": "Anduril Industries",
+      "name": "Anduril Industries Ghost-X",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-industries-ghost-x-ghost-x",
+      "total": null
+    },
+    {
+      "maker": "Anduril Industries",
+      "name": "Anduril Industries Bolt-M",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-industries-bolt-m-bolt-m",
+      "total": null
+    },
+    {
+      "maker": "Anduril Industries",
+      "name": "Anduril Industries Altius 600",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-anduril-industries-altius-600-altius-600",
+      "total": null
+    },
+    {
+      "maker": "AgEagle",
+      "name": "AgEagle eBee X",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ageagle-ebee-x-ebee-x",
+      "total": null
+    },
+    {
+      "maker": "AgEagle",
+      "name": "AgEagle eBee VISION",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ageagle-ebee-vision-ebee-vision",
+      "total": null
+    },
+    {
+      "maker": "AgEagle",
+      "name": "AgEagle eBee TAC",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ageagle-ebee-tac",
+      "total": null
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Switchblade 600",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-switchblade-600-switchblade-600",
+      "total": null
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment RQ-12A Wasp IV",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-rq-12-wasp-rq-12a",
+      "total": null
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Red Dragon",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-red-dragon-red-dragon",
+      "total": null
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment P550",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-p550-p550",
+      "total": null
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment JUMP 20",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-jump-20-jump-20",
+      "total": null
+    },
+    {
+      "maker": "Aeronautics",
+      "name": "Aeronautics Orbiter 4",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aeronautics-orbiter-4-orbiter-4",
+      "total": null
+    },
+    {
+      "maker": "ACSL",
+      "name": "ACSL ACSL-PF2",
+      "of": 6,
+      "scored": 0,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-acsl-acsl-pf2-acsl-pf2",
+      "total": null
+    }
+  ]
+}
