@@ -1,0 +1,19 @@
+{
+  "schema": "companies/1",
+  "_note": "Golden records — sourced company attributes loaded onto derived company entities by slug. Each field is {value,source,tier(A/B/C)} | {disputed:[>=2 claims]} | omitted (-> honest-null). Country uses the canonical EN vocabulary (matches uav.country). DJI reconciled to English by the architect.",
+  "records": {
+    "dji": {
+      "legal_name": {"value": "SZ DJI Technology Co., Ltd. (Shenzhen Dajiang Innovations)", "source": "en.wikipedia.org/wiki/DJI", "tier": "B"},
+      "founded_year": {"value": 2006, "source": "linkedin.com/company/dji", "tier": "A"},
+      "hq_country": {"value": "China", "source": "linkedin.com/company/dji", "tier": "A"},
+      "hq_city": {"value": "Shenzhen (Nanshan), Guangdong", "source": "linkedin.com/company/dji", "tier": "A"},
+      "hq_address": {"disputed": [
+        {"value": "DJI Sky City, No. 55 Xianyuan Road, Nanshan, Shenzhen", "source": "en.wikipedia.org/wiki/DJI_Sky_City + pitchbook.com", "tier": "B", "note": "current global HQ, completed 12/2022"},
+        {"value": "14F West Wing, Skyworth Semiconductor Building, Nanshan, Shenzhen 518057", "source": "salestools.io", "tier": "C"},
+        {"value": "No. 53 Xianyuan Road, Xili, Shenzhen 518055", "source": "globaldata.com", "tier": "C"}
+      ]},
+      "website": {"value": "https://www.dji.com", "source": "official domain", "tier": "A"},
+      "founder": {"value": "Frank Wang (Wang Tao)", "source": "en.wikipedia.org/wiki/DJI", "tier": "B"}
+    }
+  }
+}

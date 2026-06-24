@@ -43,6 +43,12 @@ c = copy.deepcopy(base)
 first_company(c)["hq_address"] = {"disputed": [{"value": "A St", "source": "x", "tier": "B"}]}
 rc, out = run(c); results.append(("c · company disputed drop", rc == 2 and "DISPUTED_CLAIM_DROP" in out, rc))
 
+# (d) remove a company entity -> its UAVs can't resolve their canonical company -> ALIAS_ORPHAN (P1.2)
+d = copy.deepcopy(base)
+victim = first_company(d)["slug"]
+d["entities"] = [e for e in d["entities"] if not (e.get("entity_type") == "company" and e.get("slug") == victim)]
+rc, out = run(d); results.append(("d · alias orphan (missing company)", rc == 2 and "ALIAS_ORPHAN" in out, rc))
+
 # restore — the unmutated file must still PASS
 rc, out = run(base); results.append(("restore · clean file passes", rc == 0, rc))
 

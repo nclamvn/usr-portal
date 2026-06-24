@@ -216,10 +216,11 @@ def main():
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)          # clean regen — no stale slugs linger
     OUTDIR.mkdir(parents=True)
+    from canon import canonical_slug, canonical_name
     for e in ents:
         mfr = (e.get("manufacturer") or {}).get("value")
-        cslug = re.sub(r"[^a-z0-9]+", "-", (mfr or "").lower()).strip("-")
-        company = {"slug": cslug, "name": mfr} if mfr and cslug in company_slugs else None
+        cslug = canonical_slug(mfr)                      # alias-merged canonical company
+        company = {"slug": cslug, "name": canonical_name(mfr)} if mfr and cslug in company_slugs else None
         (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges, company=company))
     print(f"entity/: {len(ents)} detail pages written")
 

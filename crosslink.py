@@ -14,6 +14,7 @@ at P0 — no fabricated relations; they get edges once taxonomy/knowledge nodes 
 """
 import json, pathlib, re
 from collections import Counter
+from canon import canonical_slug
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -27,10 +28,11 @@ def val(e, f): return (e.get(f) or {}).get("value")
 
 
 def manufacturer_target(value, company_slugs):
-    """P1 RE-POINT SEAM. If a company entity exists for this manufacturer, the edge points at the
-    company node; otherwise at the taxonomy node. The dangling-gate logic ('dst must resolve to a
-    real node') is identical either way — P1 promotion only flips the TARGET key, never the gate."""
-    s = slugify(value)
+    """RE-POINT SEAM (now live, alias-aware). The manufacturer edge points at the CANONICAL company
+    node (alias-merged, e.g. 'Anduril Industries' -> entity:company:anduril); falls back to the
+    taxonomy node only if no company exists. The dangling-gate logic ('dst must resolve to a real
+    node') is identical either way — promotion/alias only flips the TARGET key, never the gate."""
+    s = canonical_slug(value)
     if s in company_slugs:
         return "entity:company:%s" % s
     return "tax:manufacturer:%s" % value

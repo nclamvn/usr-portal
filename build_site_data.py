@@ -13,10 +13,13 @@ GLOBAL CONSTRAINTS honoured:
   8 totals computed live — `aggregates` recomputed here from the data, not hardcoded.
 """
 import json, hashlib, pathlib, re
+from canon import canonical_name, canonical_slug, canon_country
 
 ROOT = pathlib.Path(__file__).resolve().parent
 MASTER = ROOT / "out" / "master_registry.json"
 OUT = ROOT / "out" / "site-data.json"
+# P1.2 — golden records (sourced company attributes), loaded onto derived company entities by slug.
+COMPANY_RECORDS = json.loads((ROOT / "content" / "companies.json").read_bytes()).get("records", {})
 
 DISPLAY_FIELDS = ["manufacturer", "manufacturer_country", "family", "name",
                   "variant", "airframe_type", "propulsion", "market_segment",
@@ -148,21 +151,22 @@ def _cslug(s):
 
 
 def derive_companies(uav_entities):
-    """Promote each distinct manufacturer to a company entity. EVERYTHING here is DERIVED live from
-    the UAV data (zero new sourcing): the rollup is a view, not a claim. Sourced attributes are
-    declared but honest-null until a golden record is loaded (P1.2). Deterministic (sorted)."""
+    """Promote manufacturers to company entities. Grouping is by the CANONICAL slug (alias-merged,
+    e.g. {Anduril, Anduril Industries} -> anduril), so same-legal-entity strings fuse. The rollup is
+    a LIVE view over the UAV data (zero new sourcing). Sourced attributes are loaded from golden
+    records (content/companies.json) by slug; anything absent stays honest-null. Deterministic."""
     import collections
     groups = {}
     for e in uav_entities:
         mfr = (e.get("manufacturer") or {}).get("value")
         if not mfr:
             continue
-        g = groups.setdefault(_cslug(mfr), {
-            "names": set(), "uav_slugs": [], "countries": collections.Counter(),
+        cslug = canonical_slug(mfr)
+        g = groups.setdefault(cslug, {
+            "name": canonical_name(mfr), "uav_slugs": [], "countries": collections.Counter(),
             "segments": collections.Counter(), "blue": 0, "ndaa": 0})
-        g["names"].add(mfr)
         g["uav_slugs"].append(e["slug"])
-        c = (e.get("manufacturer_country") or {}).get("value")
+        c = (e.get("manufacturer_country") or {}).get("value")   # already canon-normalized upstream
         if c:
             g["countries"][c] += 1
         s = (e.get("market_segment") or {}).get("value")
@@ -175,15 +179,16 @@ def derive_companies(uav_entities):
     companies = []
     for cslug in sorted(groups):
         g = groups[cslug]
-        ent = {"entity_type": "company", "slug": cslug, "name": sorted(g["names"])[0],
+        ent = {"entity_type": "company", "slug": cslug, "name": g["name"],
                "rollup": {  # live view over real UAV data — never a sourced claim
                    "uav_count": len(g["uav_slugs"]),
                    "uav_slugs": sorted(g["uav_slugs"]),
                    "countries": dict(sorted(g["countries"].items())),
                    "segments": dict(sorted(g["segments"].items())),
                    "blue_uas_count": g["blue"], "ndaa_count": g["ndaa"]}}
-        for a in COMPANY_SOURCED:       # declared schema, honest-null until P1.2
-            ent[a] = None
+        record = COMPANY_RECORDS.get(cslug, {})   # golden record (sourced) | {} -> all honest-null
+        for a in COMPANY_SOURCED:
+            ent[a] = record.get(a)                # {value,source,tier} | {disputed:[…]} | None
         companies.append(ent)
     return companies
 
@@ -205,6 +210,11 @@ def build(master):
             ent[f] = field_obj(eff.get(f))
         # derived (L2) frame glyph — suy ra từ airframe_type, total map, honest "unknown" fallback
         ent["frame_glyph"] = AIRFRAME_GLYPH.get(ent["airframe_type"].get("value")) or "unknown"
+        # P1.2 — country canonicalization (declared hygiene map, single EN vocabulary). The auditor
+        # canon-compares both sides, so this is a transform on the surfaced value, not fabrication.
+        cc = ent["manufacturer_country"].get("value")
+        if cc is not None:
+            ent["manufacturer_country"]["value"] = canon_country(cc)
         entities.append(ent)
     entities.sort(key=lambda e: e["canonical_id"])  # deterministic order -> idempotent
 

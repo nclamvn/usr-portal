@@ -3,6 +3,7 @@
 # live master_registry.json. Does NOT trust the adapter. Fail-loud (exit 2).
 # Usage: python3 verify_site_data.py <master_registry.json> <site-data.json>
 import json, sys, collections
+from canon import canon_country, canonical_slug, ALIAS
 
 SHOW_STATUSES = {"verified","derived","disputed","inherited"}  # may carry a value
 NULL_STATUSES = {"unverified", None, "absent", "none"}          # MUST be null on site
@@ -103,7 +104,10 @@ def main():
                 mst=mcell.get("status"); mval=mcell.get("value")
                 if mst in NULL_STATUSES and val is not None:
                     fails.append('LEAK: %s.%s is %s in registry but site shows value=%r'%(cid,fname,mst,val))
-                if val is not None and mst in SHOW_STATUSES and val!=mval:
+                # value fidelity — country is canon-compared (P1.2 hygiene normalize is allowed,
+                # but ONLY the declared canonical map; any other divergence is still INVENTED).
+                sval, smval = (canon_country(val), canon_country(mval)) if fname=="manufacturer_country" else (val, mval)
+                if val is not None and mst in SHOW_STATUSES and sval!=smval:
                     fails.append('INVENTED: %s.%s site=%r != registry=%r'%(cid,fname,val,mval))
                 # 3b) REVERSE invariant #10: master-disputed field must stay disputed + keep every claim
                 if mst=="disputed":
@@ -111,9 +115,22 @@ def main():
                         fails.append('DISPUTED_CLAIM_DROP: %s.%s registry keeps %d claims, site keeps %d'
                                      %(cid,fname,len(claim_values(mcell)),len(claim_values(fc))))
 
-    # 3c) COMPANY entities (P1.1) — rollup two-way (derived == live) + sourced-attr shape
+    # 3b2) ALIAS integrity (P1.2) — every uav's CANONICAL company slug must resolve to a company
+    # entity (0 orphan), and every alias key must be a real manufacturer (no dead/typo alias).
+    company_slugs={e.get("slug") for e in ents if etype(e)=="company"}
+    mfr_set={(e.get("manufacturer") or {}).get("value") for e in uav_ents}
+    for e in uav_ents:
+        mfr=(e.get("manufacturer") or {}).get("value")
+        if mfr and canonical_slug(mfr) not in company_slugs:
+            fails.append("ALIAS_ORPHAN: uav %s -> company %r has no entity"%(cid_of(e),canonical_slug(mfr)))
+    for k in ALIAS:
+        if k not in mfr_set:
+            fails.append("ALIAS_ORPHAN: alias key %r is not a manufacturer in the registry"%k)
+
+    # 3c) COMPANY entities (P1.1) — rollup two-way (derived == live) + sourced-attr shape.
+    # rollup uav_count is keyed by the CANONICAL slug (alias-merged), matching derive_companies.
     uav_by_mslug=collections.Counter(
-        cslug((e.get("manufacturer") or {}).get("value"))
+        canonical_slug((e.get("manufacturer") or {}).get("value"))
         for e in uav_ents if (e.get("manufacturer") or {}).get("value"))
     for e in ents:
         if etype(e)!="company": continue

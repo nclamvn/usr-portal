@@ -1,13 +1,13 @@
 {
   "schema": "graph/1",
   "stats": {
-    "nodes": 498,
+    "nodes": 494,
     "edges": 882,
     "by_node": {
       "article": 6,
-      "entity:company": 142,
+      "entity:company": 140,
       "entity:uav": 302,
-      "tax:country": 30,
+      "tax:country": 28,
       "tax:segment": 13,
       "term": 5
     },
@@ -36,7 +36,6 @@
     "entity:company:airbus",
     "entity:company:amazon-prime-air",
     "entity:company:anduril",
-    "entity:company:anduril-industries",
     "entity:company:antwork",
     "entity:company:archer-aviation",
     "entity:company:ascent-aerosystems",
@@ -90,7 +89,6 @@
     "entity:company:iflight",
     "entity:company:insitu",
     "entity:company:inspired-flight",
-    "entity:company:israel-aerospace-industries",
     "entity:company:jetson",
     "entity:company:joby-aviation",
     "entity:company:jouav",
@@ -495,10 +493,8 @@
     "tax:country:Switzerland",
     "tax:country:Thailand",
     "tax:country:Turkey",
-    "tax:country:UK",
-    "tax:country:US",
-    "tax:country:USA",
     "tax:country:United Kingdom",
+    "tax:country:United States",
     "tax:country:Vietnam",
     "tax:segment:agriculture",
     "tax:segment:cinema",
@@ -582,7 +578,7 @@
     ],
     [
       "entity:uav:uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -662,7 +658,7 @@
     ],
     [
       "entity:uav:uav-aerovel-flexrotor-flexrotor",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -677,7 +673,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-jump-20-jump-20",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -692,7 +688,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-p550-p550",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -707,7 +703,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-puma-3-ae-puma-3-ae",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -722,7 +718,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-red-dragon-red-dragon",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -737,7 +733,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-11-raven-rq-11b",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -752,7 +748,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-12-wasp-rq-12a",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -767,7 +763,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-le",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -782,7 +778,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-rq-20b",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -797,7 +793,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-10c",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -812,7 +808,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-20",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -827,7 +823,7 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-600-switchblade-600",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -842,7 +838,7 @@
     ],
     [
       "entity:uav:uav-ageagle-ebee-tac",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -857,7 +853,7 @@
     ],
     [
       "entity:uav:uav-ageagle-ebee-vision-ebee-vision",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -927,7 +923,7 @@
     ],
     [
       "entity:uav:uav-amazon-prime-air-mk30-mk30",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -942,7 +938,7 @@
     ],
     [
       "entity:uav:uav-anduril-anvil-anvil",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -957,7 +953,7 @@
     ],
     [
       "entity:uav:uav-anduril-fury-fury",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -972,7 +968,7 @@
     ],
     [
       "entity:uav:uav-anduril-ghost-4-ghost-4",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -982,12 +978,12 @@
     ],
     [
       "entity:uav:uav-anduril-industries-altius-600-altius-600",
-      "entity:company:anduril-industries",
+      "entity:company:anduril",
       "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-industries-altius-600-altius-600",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -997,12 +993,12 @@
     ],
     [
       "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
-      "entity:company:anduril-industries",
+      "entity:company:anduril",
       "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1012,12 +1008,12 @@
     ],
     [
       "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
-      "entity:company:anduril-industries",
+      "entity:company:anduril",
       "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1032,7 +1028,7 @@
     ],
     [
       "entity:uav:uav-anduril-roadrunner-m-roadrunner-m",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1062,7 +1058,7 @@
     ],
     [
       "entity:uav:uav-archer-aviation-midnight-midnight",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1077,7 +1073,7 @@
     ],
     [
       "entity:uav:uav-ascent-aerosystems-spirit-spirit",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1092,7 +1088,7 @@
     ],
     [
       "entity:uav:uav-asylon-dronesentry-dronesentry",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1427,7 +1423,7 @@
     ],
     [
       "entity:uav:uav-beta-technologies-alia-250-alia-250",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1457,7 +1453,7 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-integrator-integrator",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1472,7 +1468,7 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1487,7 +1483,7 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-scaneagle-scaneagle",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1502,7 +1498,7 @@
     ],
     [
       "entity:uav:uav-boeing-mq-25-stingray-mq-25-stingray",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1532,7 +1528,7 @@
     ],
     [
       "entity:uav:uav-brinc-lemur-2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1547,7 +1543,7 @@
     ],
     [
       "entity:uav:uav-brinc-lemur-s-lemur-s",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1562,7 +1558,7 @@
     ],
     [
       "entity:uav:uav-brinc-responder-responder",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1682,7 +1678,7 @@
     ],
     [
       "entity:uav:uav-censys-technologies-sentaero-sentaero",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -1697,7 +1693,7 @@
     ],
     [
       "entity:uav:uav-cleo-robotics-dronut-x1-dronut-x1",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2297,7 +2293,7 @@
     ],
     [
       "entity:uav:uav-doroni-h1-x-h1-x",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2322,7 +2318,7 @@
     ],
     [
       "entity:uav:uav-easy-aerial-falcon-falcon",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2337,7 +2333,7 @@
     ],
     [
       "entity:uav:uav-edge-autonomy-penguin-c-penguin-c",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2352,7 +2348,7 @@
     ],
     [
       "entity:uav:uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2487,7 +2483,7 @@
     ],
     [
       "entity:uav:uav-elroy-air-chaparral-chaparral",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2532,7 +2528,7 @@
     ],
     [
       "entity:uav:uav-flightwave-edge-130-edge-130",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2547,7 +2543,7 @@
     ],
     [
       "entity:uav:uav-flock-safety-aerodome-aerodome",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2572,7 +2568,7 @@
     ],
     [
       "entity:uav:uav-flytrex-sky2-sky2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2587,7 +2583,7 @@
     ],
     [
       "entity:uav:uav-fortem-dronehunter-f700-f700",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2602,7 +2598,7 @@
     ],
     [
       "entity:uav:uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2617,7 +2613,7 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-alta-8",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2632,7 +2628,7 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-pro-alta-8-pro",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2647,7 +2643,7 @@
     ],
     [
       "entity:uav:uav-freefly-systems-alta-x",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2662,7 +2658,7 @@
     ],
     [
       "entity:uav:uav-freefly-systems-astro-astro",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2677,7 +2673,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-gray-eagle-gray-eagle",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2692,7 +2688,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mojave-mojave",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2707,7 +2703,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-1-predator-mq-1-predator",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2722,7 +2718,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2732,7 +2728,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-20-avenger-mq-20-avenger",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2742,7 +2738,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-9-reaper-mq-9-reaper",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2757,7 +2753,7 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2802,7 +2798,7 @@
     ],
     [
       "entity:uav:uav-guardian-agriculture-sc1-sc1",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2907,7 +2903,7 @@
     ],
     [
       "entity:uav:uav-heven-aerotech-z1-z1",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2962,7 +2958,7 @@
     ],
     [
       "entity:uav:uav-hylio-ag-130-ag-130",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -2977,7 +2973,7 @@
     ],
     [
       "entity:uav:uav-hylio-ag-272-ag-272",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3002,7 +2998,7 @@
     ],
     [
       "entity:uav:uav-iai-harop-harop",
-      "entity:company:israel-aerospace-industries",
+      "entity:company:iai",
       "manufacturer"
     ],
     [
@@ -3142,7 +3138,7 @@
     ],
     [
       "entity:uav:uav-insitu-scaneagle-scaneagle",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3157,7 +3153,7 @@
     ],
     [
       "entity:uav:uav-inspired-flight-if1200-a",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3172,7 +3168,7 @@
     ],
     [
       "entity:uav:uav-inspired-flight-if800-tomcat",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3182,7 +3178,7 @@
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-heron",
-      "entity:company:israel-aerospace-industries",
+      "entity:company:iai",
       "manufacturer"
     ],
     [
@@ -3197,7 +3193,7 @@
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-tp-heron-tp",
-      "entity:company:israel-aerospace-industries",
+      "entity:company:iai",
       "manufacturer"
     ],
     [
@@ -3207,7 +3203,7 @@
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
-      "entity:company:israel-aerospace-industries",
+      "entity:company:iai",
       "manufacturer"
     ],
     [
@@ -3237,7 +3233,7 @@
     ],
     [
       "entity:uav:uav-joby-aviation-s4-s4",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3297,7 +3293,7 @@
     ],
     [
       "entity:uav:uav-kratos-xq-58-valkyrie-xq-58-valkyrie",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3317,7 +3313,7 @@
     ],
     [
       "entity:uav:uav-l3harris-fvr-90-fvr-90",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3357,7 +3353,7 @@
     ],
     [
       "entity:uav:uav-lockheed-martin-indago-4-indago-4",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3372,7 +3368,7 @@
     ],
     [
       "entity:uav:uav-lockheed-martin-stalker-vxe-stalker-vxe",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3432,7 +3428,7 @@
     ],
     [
       "entity:uav:uav-matternet-m2-m2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3492,7 +3488,7 @@
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-seeker",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3507,7 +3503,7 @@
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-stinger",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3522,7 +3518,7 @@
     ],
     [
       "entity:uav:uav-neros-archer-archer",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3537,7 +3533,7 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3552,7 +3548,7 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3567,7 +3563,7 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3582,7 +3578,7 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-x-47b-x-47b",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3632,7 +3628,7 @@
     ],
     [
       "entity:uav:uav-performance-drone-works-c100-c100",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3647,7 +3643,7 @@
     ],
     [
       "entity:uav:uav-pivotal-helix-helix",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3717,7 +3713,7 @@
     ],
     [
       "entity:uav:uav-pyka-pelican-2-pelican-2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3732,7 +3728,7 @@
     ],
     [
       "entity:uav:uav-pyka-pelican-pelican",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3847,7 +3843,7 @@
     ],
     [
       "entity:uav:uav-raytheon-coyote-block-2-coyote-block-2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3902,7 +3898,7 @@
     ],
     [
       "entity:uav:uav-red-cat-black-widow-black-widow",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3932,7 +3928,7 @@
     ],
     [
       "entity:uav:uav-sabrewing-rhaegal-rhaegal",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -3987,7 +3983,7 @@
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-128-v-bat-128",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4002,7 +3998,7 @@
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-v-bat",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4017,7 +4013,7 @@
     ],
     [
       "entity:uav:uav-skydio-skydio-2-plus-skydio-2-plus",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4027,7 +4023,7 @@
     ],
     [
       "entity:uav:uav-skydio-x10-x10",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4042,7 +4038,7 @@
     ],
     [
       "entity:uav:uav-skydio-x10-x10d",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4057,7 +4053,7 @@
     ],
     [
       "entity:uav:uav-skydio-x2d-x2d",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4072,7 +4068,7 @@
     ],
     [
       "entity:uav:uav-skyfront-perimeter-8-perimeter-8",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4177,7 +4173,7 @@
     ],
     [
       "entity:uav:uav-supernal-s-a2-s-a2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4237,7 +4233,7 @@
     ],
     [
       "entity:uav:uav-teal-drones-golden-eagle-golden-eagle",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4247,7 +4243,7 @@
     ],
     [
       "entity:uav:uav-teal-drones-teal-2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4262,7 +4258,7 @@
     ],
     [
       "entity:uav:uav-teal-golden-eagle-golden-eagle",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4277,7 +4273,7 @@
     ],
     [
       "entity:uav:uav-teledyne-flir-black-hornet-4-black-hornet-4",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4292,7 +4288,7 @@
     ],
     [
       "entity:uav:uav-teledyne-flir-siras-siras",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4307,7 +4303,7 @@
     ],
     [
       "entity:uav:uav-teledyne-flir-skyranger-r70",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4322,7 +4318,7 @@
     ],
     [
       "entity:uav:uav-textron-aerosonde-aerosonde",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4337,7 +4333,7 @@
     ],
     [
       "entity:uav:uav-textron-rq-7-shadow-rq-7-shadow",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4352,7 +4348,7 @@
     ],
     [
       "entity:uav:uav-textron-systems-aerosonde-aerosonde",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4472,7 +4468,7 @@
     ],
     [
       "entity:uav:uav-vantage-robotics-vesper-vesper",
-      "tax:country:US",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4487,7 +4483,7 @@
     ],
     [
       "entity:uav:uav-vertical-aerospace-vx4-vx4",
-      "tax:country:UK",
+      "tax:country:United Kingdom",
       "country"
     ],
     [
@@ -4587,7 +4583,7 @@
     ],
     [
       "entity:uav:uav-watts-innovations-prism-sky-prism-sky",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4612,7 +4608,7 @@
     ],
     [
       "entity:uav:uav-wing-delivery-aircraft-delivery-aircraft",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4627,7 +4623,7 @@
     ],
     [
       "entity:uav:uav-wing-delivery-drone-delivery-drone",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4672,7 +4668,7 @@
     ],
     [
       "entity:uav:uav-wisk-aero-generation-6-generation-6",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4907,7 +4903,7 @@
     ],
     [
       "entity:uav:uav-zipline-p2-p2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [
@@ -4922,7 +4918,7 @@
     ],
     [
       "entity:uav:uav-zipline-platform-2-platform-2",
-      "tax:country:USA",
+      "tax:country:United States",
       "country"
     ],
     [

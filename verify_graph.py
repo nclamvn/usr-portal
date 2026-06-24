@@ -6,6 +6,7 @@ articles), then checks graph.json against them:
   · GRAPH_STALE   — graph.json nodes/edges != live re-derivation (hardcoded or out of date).
 Fail-loud exit 2. Usage: python3 verify_graph.py [graph.json]  (default out/graph.json)."""
 import json, sys, pathlib, re
+from canon import canonical_slug
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -28,7 +29,7 @@ def derive(site, arts, terms):
     nodes, edges = set(), set()
 
     def mtgt(v):
-        s = slugify(v)
+        s = canonical_slug(v)
         return ("entity:company:%s" % s) if s in cslug else ("tax:manufacturer:%s" % v)
 
     for e in uavs:
