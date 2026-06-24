@@ -48,6 +48,14 @@ def figure_bars(kind, site):
                 continue
             bars.append((SPEC_SHORT.get(f, f), round(100 * d["present"] / d["total"])))
         return bars, "UAV Registry — aggregates.spec_fill_rate"
+    if kind == "country_share":
+        from collections import Counter
+        uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
+        tot = len(uavs) or 1
+        c = Counter((e.get("manufacturer_country") or {}).get("value") for e in uavs
+                    if (e.get("manufacturer_country") or {}).get("value"))
+        bars = [(name, round(100 * n / tot)) for name, n in c.most_common(6)]
+        return bars, "UAV Registry — manufacturer_country share"
     raise ValueError(f"unknown figure kind: {kind}")
 
 

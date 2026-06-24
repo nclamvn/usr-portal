@@ -1,10 +1,10 @@
 {
   "schema": "graph/1",
   "stats": {
-    "nodes": 494,
-    "edges": 882,
+    "nodes": 495,
+    "edges": 888,
     "by_node": {
-      "article": 6,
+      "article": 7,
       "entity:company": 140,
       "entity:uav": 302,
       "tax:country": 28,
@@ -13,16 +13,17 @@
     },
     "by_edge": {
       "country": 302,
-      "glossary": 9,
+      "glossary": 11,
       "manufacturer": 302,
       "segment": 267,
-      "tag": 2
+      "tag": 6
     }
   },
   "nodes": [
     "article:chuan-tuan-thu-dinh-hinh-chuoi-cung-ung",
     "article:hang-noi-dia-mo-rong-canh-co-dinh",
     "article:khung-phap-ly-bvlos-tham-van",
+    "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
     "article:rtk-bai-toan-dinh-vi-gay-nhieu",
     "article:truy-nguyen-loi-the-uav",
     "article:uav-nong-nghiep-diem-nghen-hau-mai",
@@ -539,6 +540,36 @@
     [
       "article:khung-phap-ly-bvlos-tham-van",
       "term:BVLOS",
+      "glossary"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "entity:uav:uav-dji-agras-t40-agras-t40",
+      "tag"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "entity:uav:uav-dji-flycart-30-flycart-30",
+      "tag"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "entity:uav:uav-real-time-robotics-hera-hera",
+      "tag"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "entity:uav:uav-viettel-vu-male-vu-male",
+      "tag"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "term:BVLOS",
+      "glossary"
+    ],
+    [
+      "article:kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
+      "term:Blue UAS",
       "glossary"
     ],
     [
