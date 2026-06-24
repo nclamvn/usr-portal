@@ -29,6 +29,26 @@ def canonical(h):
     return h
 
 
+def css_override_fails():
+    """The header CSS (.gbar/.crumb) lives ONLY in design-system.css. Any OTHER stylesheet or inline
+    <style> that restyles it makes the header render differently per surface — a markup-identical but
+    visually-drifted header (the newsroom.css .crumb uppercase bug, 2026-06-24). Forbid it."""
+    fails = []
+    HEADER_SEL = re.compile(r'(^|[\s,}])(\.gbar\b|\.crumb\b)')
+    def strip_comments(c): return re.sub(r"/\*.*?\*/", "", c, flags=re.S)
+    for css in (ROOT / "base").glob("*.css"):
+        if css.name == "design-system.css":
+            continue
+        if HEADER_SEL.search(strip_comments(css.read_text())):
+            fails.append("HEADER_CSS_OVERRIDE: %s restyles .gbar/.crumb (header CSS belongs to design-system.css only)" % css.name)
+    # inline <style> in any built page
+    for p in PAGES:
+        for m in re.finditer(r"<style>(.*?)</style>", (ROOT / p).read_text(), re.S):
+            if HEADER_SEL.search(strip_comments(m.group(1))):
+                fails.append("HEADER_CSS_OVERRIDE: %s has inline .gbar/.crumb rule" % p); break
+    return fails
+
+
 def main():
     files = [pathlib.Path(sys.argv[1])] if len(sys.argv) > 1 else [ROOT / p for p in PAGES]
     forms = {}
@@ -45,6 +65,8 @@ def main():
         variants = sorted(forms.items(), key=lambda kv: -len(kv[1]))
         fails.append("HEADER_DRIFT: %d distinct header forms (should be 1). Outlier example: %s"
                      % (len(forms), variants[-1][1][:2]))
+    if len(files) > 1:                      # full-corpus run also guards against CSS override
+        fails += css_override_fails()
     print("header: %d page(s) checked · %d distinct canonical form(s)" % (len(files), len(forms)))
     if fails:
         print("\nHEADER GATE FAIL:")

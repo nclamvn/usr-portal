@@ -8,9 +8,9 @@ def _bi(en, vn):
     return f'<span data-lang-en>{en}</span><span data-lang-vn>{vn}</span>'
 
 
-# (key, file, en, vn) — USR is home; the rest are the main D surfaces.
+# (key, file, en, vn) — the breadcrumb surfaces. "home" is NOT here: the wordmark (header.py) is the
+# single home link, so a "USR" nav item would be a confusing second link to the same place.
 ITEMS = [
-    ("home", "index.html", "USR", "USR"),
     ("reference", "reference.html", "Reference", "Tham chiếu"),
     ("search", "search.html", "Search", "Tìm kiếm"),
     ("compare", "compare.html", "Compare", "So sánh"),
