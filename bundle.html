@@ -10,6 +10,8 @@
    No CSS framework. No new fonts (Source Serif 4 / Be Vietnam Pro / IBM Plex Mono only). */
 
 :root {
+  --w-wide: 1180px;  /* tables/grids/dashboards — equals header width */
+  --w-read: 760px;   /* prose/single-record reading column */
   /* warm-neutral light — RECONCILED to portal-in-action.html (STEP 0) */
   --bg: #F3F2EF;
   --panel: #FFFFFF;
@@ -281,7 +283,7 @@ small, .small { font-size: .82rem; }
 /* GLOBAL HEADER (header.py) — locked, byte-identical on every surface. Fixed height; no per-surface
    override (verify_header enforces). Wordmark left · breadcrumb center · lang/theme right. */
 .gbar { border-bottom: 1px solid var(--hair); background: var(--bg); }
-.gbar-in { max-width: 1180px; margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
+.gbar-in { max-width: var(--w-wide); margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
 .gbar-wm { font-family: var(--font-head); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); text-decoration: none; flex: 0 0 auto; }
 .gbar-in .crumb { flex: 1 1 auto; }
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
@@ -487,7 +489,8 @@ small, .small { font-size: .82rem; }
 .nfoot .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;max-width:var(--maxw);margin:0 auto;padding:0 32px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
 
 
-  .dwrap{max-width:820px;margin:0 auto;padding:1.6rem 1.4rem 3rem}
+  .dwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
+  .dwrap>*{max-width:var(--w-read)}
   .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.4rem}
   .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none;cursor:pointer}
   .ctrl{display:flex;gap:.5rem}
@@ -513,7 +516,7 @@ small, .small { font-size: .82rem; }
   .dglyph-lab{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 
 
-  .bwrap{max-width:1200px;margin:0 auto;padding:0 32px}
+  .bwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
   .bsec{padding:44px 0;border-top:1px solid var(--hair)}
   .bsec > h2{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:-.015em;margin-bottom:6px}
   .bsec > .sub{color:var(--muted);font-size:14px;margin-bottom:24px}

@@ -196,7 +196,7 @@ def render(ov):
 
 
 DATA_CSS = """
-  .dwrap{max-width:1160px;margin:0 auto;padding:1.2rem 1.4rem 3rem}
+  .dwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
   .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
   .ctrl{display:flex;gap:.5rem}
   .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}

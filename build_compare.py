@@ -56,7 +56,7 @@ def build_data(site):
 
 
 COMPARE_CSS = """
-  .cmpwrap{max-width:1100px;margin:0 auto;padding:1.4rem 1.2rem 3rem}
+  .cmpwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
   .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
   .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none}
   .ctrl{display:flex;gap:.5rem}

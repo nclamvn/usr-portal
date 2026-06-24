@@ -213,7 +213,7 @@ def main():
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <style>
-  .wrap{{max-width:1180px;margin:0 auto;padding:2.2rem 1.4rem}}
+  .wrap{{max-width:var(--w-wide);margin:0 auto;padding:2.2rem 1.4rem}}
   .topline{{display:flex;justify-content:space-between;align-items:flex-start;gap:1.4rem 2.5rem;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:1.3rem;margin-bottom:1.6rem}}
   .tl-left{{flex:1 1 320px}}
   .tl-left h1{{margin:0 0 .35rem}}

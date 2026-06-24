@@ -229,7 +229,7 @@ def main():
 <link rel="stylesheet" href="base/newsroom.css">
 <style>
   /* home layout in the approved idiom (components reuse the shared design system) */
-  .wrap{{max-width:1200px;margin:0 auto;padding:0 32px}}
+  .wrap{{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}}
   .bar{{border-bottom:1px solid var(--hair)}}
   .bar .wrap{{display:flex;align-items:center;height:64px;gap:20px}}
   .wm-name{{font-family:var(--font-head);font-weight:600;font-size:18px;letter-spacing:-.01em}}

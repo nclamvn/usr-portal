@@ -46,6 +46,13 @@ def css_override_fails():
         for m in re.finditer(r"<style>(.*?)</style>", (ROOT / p).read_text(), re.S):
             if HEADER_SEL.search(strip_comments(m.group(1))):
                 fails.append("HEADER_CSS_OVERRIDE: %s has inline .gbar/.crumb rule" % p); break
+    # WIDTH_RAW_PX: the main content wrap must use a width TOKEN (--w-wide/--w-read), never a raw px,
+    # so "every subsite a different width" can't return. Scan each builder's wrap rule.
+    import pathlib as _pl
+    WRAP = re.compile(r'\.[a-z]*wrap\{max-width:(\d+)px')
+    for bf in ROOT.glob("build_*.py"):
+        for m in WRAP.finditer(bf.read_text()):
+            fails.append("WIDTH_RAW_PX: %s wrap uses raw %spx (use var(--w-wide)/var(--w-read))" % (bf.name, m.group(1)))
     return fails
 
 

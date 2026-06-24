@@ -37,7 +37,8 @@ SOURCED_EXTRA = [  # company-specific — rendered only when present
 ]
 
 COMPANY_CSS = """
-  .cwrap{max-width:820px;margin:0 auto;padding:1.6rem 1.4rem 3rem}
+  .cwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
+  .cwrap>*{max-width:var(--w-read)}
   .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.4rem}
   .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none;cursor:pointer}
   .ctrl{display:flex;gap:.5rem}

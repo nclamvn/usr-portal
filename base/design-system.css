@@ -3,6 +3,8 @@
    No CSS framework. No new fonts (Source Serif 4 / Be Vietnam Pro / IBM Plex Mono only). */
 
 :root {
+  --w-wide: 1180px;  /* tables/grids/dashboards — equals header width */
+  --w-read: 760px;   /* prose/single-record reading column */
   /* warm-neutral light — RECONCILED to portal-in-action.html (STEP 0) */
   --bg: #F3F2EF;
   --panel: #FFFFFF;
@@ -274,7 +276,7 @@ small, .small { font-size: .82rem; }
 /* GLOBAL HEADER (header.py) — locked, byte-identical on every surface. Fixed height; no per-surface
    override (verify_header enforces). Wordmark left · breadcrumb center · lang/theme right. */
 .gbar { border-bottom: 1px solid var(--hair); background: var(--bg); }
-.gbar-in { max-width: 1180px; margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
+.gbar-in { max-width: var(--w-wide); margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
 .gbar-wm { font-family: var(--font-head); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); text-decoration: none; flex: 0 0 auto; }
 .gbar-in .crumb { flex: 1 1 auto; }
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }

@@ -92,7 +92,7 @@ def main():
     lf = inline_links(long_form(analysis, site, glossary)) if analysis else ""
 
     bundle_css = """
-  .bwrap{max-width:1200px;margin:0 auto;padding:0 32px}
+  .bwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
   .bsec{padding:44px 0;border-top:1px solid var(--hair)}
   .bsec > h2{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,30px);letter-spacing:-.015em;margin-bottom:6px}
   .bsec > .sub{color:var(--muted);font-size:14px;margin-bottom:24px}

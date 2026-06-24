@@ -64,7 +64,8 @@ TYPE_LABEL = {"data-note": ("Data note", "Ghi chú dữ liệu"), "explainer": (
               "data-report": ("Data report", "Báo cáo dữ liệu")}
 
 NR_CSS = """
-  .nwrap{max-width:720px;margin:0 auto;padding:1.2rem 1.4rem 3.5rem}
+  .nwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3.5rem}
+  .nwrap>*{max-width:var(--w-read)}
   .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
   .ctrl{display:flex;gap:.5rem}
   .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
