@@ -30,8 +30,13 @@ python3 build_taxonomy.py
 echo "[4/8] newsroom + analysis pillar (TIP-007)"
 python3 build_news.py
 python3 build_analysis.py
-echo "[5/8] index home (TIP-004) + single-file bundle export (TIP-008)"
+echo "[5/8] index home (TIP-004) + compare (TIP-P1.3) + single-file bundle export (TIP-008)"
 python3 build_index.py
+python3 build_compare.py
+CSHA1=$(shasum -a256 out/compare-data.json | cut -d' ' -f1)
+python3 build_compare.py >/dev/null
+CSHA2=$(shasum -a256 out/compare-data.json | cut -d' ' -f1)
+[ "$CSHA1" = "$CSHA2" ] && echo "      compare-data idempotent OK" || { echo "      COMPARE IDEMPOTENT FAIL"; exit 2; }
 python3 build_bundle.py
 echo "[6/8] content integrity (verify_content — 4-questions · entity-tags · tier-A · figures trace registry)"
 python3 verify_content.py
@@ -46,6 +51,8 @@ python3 verify_graph.py
 python3 teeth_p02.py
 python3 verify_taxonomy.py
 python3 teeth_p14.py
+python3 verify_compare.py
+python3 teeth_p13.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 

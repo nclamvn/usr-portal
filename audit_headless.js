@@ -244,6 +244,22 @@ async function main() {
       }
     }
 
+    // COMPARE page (?uav=a,b) — table renders side-by-side, overlap-clean (P1.3)
+    try {
+      const sd = await (await fetch(BASE + "/out/compare-data.json")).json();
+      const two = sd.uavs.slice(0, 2).map(u => u.slug).join(",");
+      await send("Page.navigate", { url: BASE + "/compare.html?uav=" + two });
+      await sleep(1000);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const cols = await evalOnPage(send, `document.querySelectorAll('table.cmp thead th').length`);
+        const tracks = await evalOnPage(send, `document.querySelectorAll('.cmpcell .track').length`);
+        const ok = r.hits.length === 0 && cols >= 3 && tracks > 0;  // 1 label col + 2 uav cols
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /compare?uav=2  [${theme}/${lang}]  overlaps=${r.hits.length}  cols=${cols}  tracks=${tracks}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  compare page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -287,7 +303,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

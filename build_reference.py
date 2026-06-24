@@ -222,6 +222,7 @@ def main():
     <div style="text-align:right">
       <div class="count" data-audit="count">{len(ents)} {bilingual("entities", "thực thể")}</div>
       <div class="stat">{summary}</div>
+      <div style="margin-top:.4rem"><a href="compare.html" style="font-family:var(--font-mono);font-size:.78rem;color:var(--brass);text-decoration:none">{bilingual("Compare 2–4 →", "So sánh 2–4 →")}</a></div>
     </div>
   </div>
   <div class="regdiv"><b class="lab">{bilingual("Index · " + str(len(ents)), "Mục lục · " + str(len(ents)))}</b><span class="ln"></span></div>
