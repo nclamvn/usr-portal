@@ -244,8 +244,10 @@ small, .small { font-size: .82rem; }
 .vt { display: flex; align-items: center; gap: 12px; }
 .vt .track { flex: 1; min-width: 70px; }
 .vt .v { white-space: nowrap; }
-.track .rail { position: relative; display: block; height: 2px; background: var(--hair-strong); border-radius: 2px; }
-.track .rail.null { background: transparent; height: 0; border-top: 1px dashed var(--hair-strong); }
+/* micro-track bar — class .trk, NOT .rail: newsroom has a bare `.rail` (sidebar) and the
+   bundle inlines both sheets, so .rail would leak border-top/padding/margin onto each track. */
+.track .trk { position: relative; display: block; height: 2px; background: var(--hair-strong); border-radius: 2px; }
+.track .trk.null { background: transparent; height: 0; border-top: 1px dashed var(--hair-strong); }
 .track .tick { position: absolute; top: 50%; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); transform: translate(-50%, -50%); }
 .track .rng { position: absolute; top: 50%; height: 2px; background: var(--bp); opacity: .55; transform: translateY(-50%); }
 

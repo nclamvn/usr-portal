@@ -74,19 +74,19 @@ def field_row(e, field, labels, ledger, ranges=None):
         v = fo.get("value")
         if isinstance(v, (int, float)) and not isinstance(v, bool) and rng:
             pos = log_pos(v, rng["min"], rng["max"])
-            rail = f'<span class="rail"><i class="tick" style="left:{pos:.0f}%"></i></span>'
+            rail = f'<span class="trk"><i class="tick" style="left:{pos:.0f}%"></i></span>'
             vlab = f'{esc(_num(v))} {esc(UNIT.get(field, ""))}'
         elif fo.get("status") == "disputed":
             cl = [c.get("claimed_value") for c in (fo.get("claims") or [])
                   if isinstance(c.get("claimed_value"), (int, float)) and not isinstance(c.get("claimed_value"), bool)]
             if cl and rng:
                 a, b = log_pos(min(cl), rng["min"], rng["max"]), log_pos(max(cl), rng["min"], rng["max"])
-                rail = f'<span class="rail"><span class="rng" style="left:{a:.0f}%;width:{max(b-a,1):.0f}%"></span></span>'
+                rail = f'<span class="trk"><span class="rng" style="left:{a:.0f}%;width:{max(b-a,1):.0f}%"></span></span>'
             else:
-                rail = '<span class="rail null"></span>'
+                rail = '<span class="trk null"></span>'
             vlab = " / ".join(esc(_num(c)) for c in cl) + " " + esc(UNIT.get(field, ""))
         else:  # null / unverified — honest-null, no tick
-            rail, vlab = '<span class="rail null"></span>', '—'
+            rail, vlab = '<span class="trk null"></span>', '—'
         return (f'<div class="drow spec">{klabel}'
                 f'<div class="vt"><div class="track">{rail}</div>'
                 f'<span class="v" data-audit="dval">{vlab}{sup}</span></div>{ch}</div>')

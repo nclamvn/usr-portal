@@ -66,14 +66,19 @@ def main():
     glossary = json.loads(GLOSS.read_bytes())
     f = live_facts(site)
 
+    newsroom_css = (ROOT / "base" / "newsroom.css").read_text()
     css = (ROOT / "base" / "design-system.css").read_text() + "\n" \
-        + (ROOT / "base" / "newsroom.css").read_text() + "\n" + DETAIL_CSS
-    # TEETH: the bundle inlines newsroom.css next to the detail spec rows (`.drow.spec`).
-    # A bare `.spec{...repeating-linear-gradient...}` rule would paint a hatch over every spec
-    # row (regression seen 2026-06-24 — the specimen banner was misnamed `.spec`). Fail loud.
-    if re.search(r"\.spec\s*\{[^}]*repeating-linear-gradient", css):
-        raise SystemExit("BUNDLE GATE: a `.spec{}` rule sets a hatch — it will cover detail "
-                         "spec rows. Rename the specimen banner (use `.smpl`), not `.spec`.")
+        + newsroom_css + "\n" + DETAIL_CSS
+    # TEETH: the bundle inlines newsroom.css next to the detail spec rows / micro-tracks. If
+    # newsroom reuses a DETAIL-OWNED class name, its rule bleeds onto those elements in the bundle
+    # (two regressions on 2026-06-24: `.spec` hatch covered rows; `.rail` border/padding shifted
+    # tracks). Detail owns these class names — newsroom must never name them. Fail loud.
+    DETAIL_OWNED = ("spec", "trk", "track", "vt", "drow", "drows", "tick", "rng")
+    nr_nocomments = re.sub(r"/\*.*?\*/", "", newsroom_css, flags=re.S)  # ignore explanatory comments
+    leaked = [c for c in DETAIL_OWNED if re.search(rf"\.{c}\b", nr_nocomments)]
+    if leaked:
+        raise SystemExit(f"BUNDLE GATE: newsroom.css names detail-owned class(es) {leaked} — in the "
+                         f"bundle they collide with spec rows/micro-tracks. Rename the newsroom rule.")
     js = (ROOT / "base" / "base.js").read_text()
 
     facets = inline_links(render_facets(ents, labels))

@@ -103,7 +103,7 @@ function detailExpr(theme, lang) {
     const nullChips=document.querySelectorAll('.chip[data-status="absent"], .chip[data-status="unverified"]').length;
     const specRows=document.querySelectorAll('.drow.spec').length;
     const ticks=document.querySelectorAll('.drow.spec .tick').length;
-    const nullRails=document.querySelectorAll('.drow.spec .rail.null').length;
+    const nullRails=document.querySelectorAll('.drow.spec .trk.null').length;
     const rngs=document.querySelectorAll('.drow.spec .rng').length;
     const hits=USRBase.designerAudit(document);
     return { sources, tiers, nullChips, specRows, ticks, nullRails, rngs, hits };
