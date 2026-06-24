@@ -5,7 +5,7 @@ import re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent
 fails = []
-names = ["index.html", "reference.html", "compare.html", "search.html", "data.html", "knowledge.html", "review.html", "base/demo.html"]
+names = ["index.html", "reference.html", "compare.html", "search.html", "data.html", "knowledge.html", "review.html", "news.html", "base/demo.html"]
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("analysis/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("news/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("company/*.html"))

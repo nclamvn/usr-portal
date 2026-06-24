@@ -13,6 +13,7 @@ import json, pathlib, shutil
 from build_reference import friendly, bilingual, esc
 from nav import nav
 from seo import meta, org_ld
+from build_newsroom import articles_for
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -102,6 +103,12 @@ def render_company(c, labels, uav_name):
     rows = [sourced_row(k, en, vn, c.get(k)) for k, en, vn in SOURCED_BASE]
     rows += [sourced_row(k, en, vn, c[k]) for k, en, vn in SOURCED_EXTRA if k in c]  # extras only when present
     sourced = "".join(rows)
+    # E->D cross-link: newsroom articles that tag this company surface here automatically
+    arts = articles_for("company:" + c["slug"])
+    rel = ""
+    if arts:
+        items = "".join(f'<li><a href="../news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></li>' for fm in arts)
+        rel = f'<div class="csec-h">{bilingual("Coverage", "Bài viết liên quan")}</div><ul class="fleet">{items}</ul>'
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -139,6 +146,7 @@ def render_company(c, labels, uav_name):
 
   <div class="csec-h">{bilingual("Company profile (sourced)", "Hồ sơ công ty (có nguồn)")}</div>
   {sourced}
+  {rel}
 
   <p class="note">{bilingual(
     "Fleet figures are derived live from the UAV registry. Profile attributes carry a source and "

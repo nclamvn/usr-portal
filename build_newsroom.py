@@ -143,17 +143,74 @@ def render(fm, body, site, glossary):
 """
 
 
+def load_articles():
+    """[(fm, body)] for every newsroom .md, newest first. Shared with the index + entity cross-link."""
+    out = []
+    for f in sorted(SRC.glob("*.md")):
+        fm, body = parse(f.read_text())
+        fm.setdefault("slug", f.stem)
+        out.append((fm, body))
+    out.sort(key=lambda x: str(x[0].get("date", "")), reverse=True)
+    return out
+
+
+def articles_for(tag):
+    """Newsroom article metas (newest first) whose entity_tags include `tag` (e.g. 'company:dji')."""
+    return [fm for fm, _ in load_articles() if tag in (fm.get("entity_tags") or [])]
+
+
+def render_index(arts):
+    items = ""
+    for fm, _ in arts:
+        kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
+        items += (f'<li><a href="news/{esc(fm["slug"])}.html"><span class="kind">{bilingual(kl_en, kl_vn)}</span>'
+                  f'<span class="t">{esc(fm["title"])}</span>'
+                  f'<span class="dt">{esc(str(fm.get("date", "")))}</span></a></li>')
+    return f"""<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsroom — USR</title>
+{seo_meta("Newsroom — USR", "Objective, sourced articles over the registry: data notes, explainers, profiles and reports.", "news.html")}
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base/design-system.css">
+<style>{NR_CSS}
+  .nidx{{list-style:none;margin:1.4rem 0 0;padding:0}}
+  .nidx li{{border-bottom:1px solid var(--hair)}}
+  .nidx a{{display:grid;grid-template-columns:7.5rem 1fr auto;gap:1rem;align-items:baseline;padding:.9rem 0;text-decoration:none;color:inherit}}
+  .nidx a:hover .t{{color:var(--brass)}}
+  .nidx .kind{{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}}
+  .nidx .t{{font-family:var(--font-head);font-weight:600;font-size:1.02rem;line-height:1.25}}
+  .nidx .dt{{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}}
+</style>
+</head>
+<body>
+<main class="nwrap">
+  <div class="topbar">{nav("", "newsroom")}
+    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
+    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
+  </div>
+  <header class="nh"><div class="kind">{bilingual("Newsroom", "Bài viết")}</div>
+    <h1>{bilingual("Objective coverage over the registry", "Bài viết khách quan trên bản đăng ký")}</h1>
+    <div class="by">{bilingual("Data notes, explainers, profiles and reports — every figure traces to the registry.", "Ghi chú dữ liệu, giải thích, hồ sơ và báo cáo — mọi con số truy về registry.")}</div></header>
+  <ul class="nidx">{items}</ul>
+</main>
+<script src="base/base.js"></script>
+<script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
+</body>
+</html>
+"""
+
+
 def main():
     site = json.loads(SITE.read_bytes())
     glossary = json.loads(GLOSS.read_bytes())
     OUTDIR.mkdir(parents=True, exist_ok=True)
-    n = 0
-    for f in sorted(SRC.glob("*.md")):
-        fm, body = parse(f.read_text())
-        fm.setdefault("slug", f.stem)
+    arts = load_articles()
+    for fm, body in arts:
         (OUTDIR / f'{fm["slug"]}.html').write_text(render(fm, body, site, glossary))
-        n += 1
-    print(f"newsroom: {n} objective articles rendered to news/")
+    (ROOT / "news.html").write_text(render_index(arts))
+    print(f"newsroom: {len(arts)} objective articles + index (news.html)")
 
 
 if __name__ == "__main__":

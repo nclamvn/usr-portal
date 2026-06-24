@@ -17,6 +17,7 @@ ITEMS = [
     ("data", "data.html", "Data", "Dữ liệu"),
     ("knowledge", "knowledge.html", "Knowledge", "Thuật ngữ"),
     ("review", "review.html", "Review", "Đánh giá"),
+    ("newsroom", "news.html", "Newsroom", "Bài viết"),
 ]
 
 
