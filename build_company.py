@@ -11,6 +11,7 @@ Design-system-of-record only — no new aesthetic. Bilingual (en/vn) throughout.
 """
 import json, pathlib, shutil
 from build_reference import friendly, bilingual, esc
+from footer import footer
 from nav import nav
 from header import header
 from seo import meta, org_ld
@@ -152,6 +153,7 @@ def render_company(c, labels, uav_name):
     "(A nhà sản xuất · B thứ cấp uy tín · C danh bạ) hoặc hiển thị null tới khi có nguồn — "
     "không bịa. Thuộc tính tranh chấp giữ mọi claim.")}</p>
 </main>
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));

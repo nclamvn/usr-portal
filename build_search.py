@@ -6,6 +6,7 @@ no missing and that every hit's url resolves. Reuses the Compare pattern (data-a
 """
 import json, pathlib, re
 from build_reference import friendly, bilingual, esc
+from footer import footer
 from nav import nav
 from header import header
 from seo import meta as seo_meta
@@ -115,6 +116,7 @@ def render_page():
   <noscript><p class="empty">{bilingual("Search needs JavaScript. Browse on the",
     "Tìm kiếm cần JavaScript. Xem ở trang")} <a href="reference.html">{bilingual("reference","tra cứu")}</a>.</p></noscript>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script src="base/search.js"></script>
 <script>

@@ -7,6 +7,7 @@ never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 """
 import json, html, pathlib
 from glyphs import glyph_svg
+from footer import footer
 from nav import nav
 from header import header
 from seo import meta as seo_meta
@@ -250,6 +251,7 @@ def main():
 {rows}
   </div>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script>
   USRBase.mountArrows(); USRBase.initReveal();

@@ -6,6 +6,7 @@ drift). Reuses the existing micro-track (log), glyph, tier-badge and honest-null
 """
 import json, pathlib
 from build_detail import NUMERIC_SPEC, UNIT
+from footer import footer
 from build_reference import friendly, bilingual, esc
 from glyphs import glyph_svg
 from nav import nav
@@ -122,6 +123,7 @@ def render_page(site):
     "So sánh cần JavaScript. Xem hệ thống ở trang")} <a href="reference.html">{bilingual("reference","tra cứu")}</a>.</p></noscript>
   {templates}
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script src="base/compare.js"></script>
 <script>

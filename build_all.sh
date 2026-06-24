@@ -91,6 +91,8 @@ echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 python3 verify_header.py
 python3 teeth_ux1.py
+python3 verify_footer.py
+python3 teeth_footer.py
 
 echo "[7b/8] reduced-motion + focus (static)"
 grep -q "prefers-reduced-motion" base/design-system.css \

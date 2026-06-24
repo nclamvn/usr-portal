@@ -8,6 +8,7 @@ truth: review-data.json is a live projection of site-data (verify_review proves 
 """
 import json, pathlib
 from build_detail import log_pos
+from footer import footer
 from build_reference import bilingual, esc
 from nav import nav
 from header import header
@@ -113,6 +114,7 @@ def render(rv, labels):
   <table class="rv"><thead><tr><th>#</th><th>{bilingual("System", "Hệ thống")}</th>{dim_th}<th>{bilingual("Total", "Tổng")}</th><th>{bilingual("Scored", "Chấm")}</th></tr></thead>
   <tbody>{rows}</tbody></table>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>

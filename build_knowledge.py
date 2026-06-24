@@ -7,6 +7,7 @@ list. Reuses design-system + bilingual. verify_knowledge proves the term<->page 
 """
 import json, pathlib, shutil, re
 from build_reference import bilingual, esc
+from footer import footer
 from nav import nav
 from header import header
 from seo import meta, definedterm_ld
@@ -67,6 +68,7 @@ def shell(title_plain, head_extra, body):
 <main class="kwrap">
   {body}
 </main>
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>
@@ -124,6 +126,7 @@ def index_page(terms):
   <header class="khead"><span class="eyebrow">{bilingual("Knowledge", "Thuật ngữ")}</span><h1>{bilingual("Glossary", "Thuật ngữ")}</h1></header>
   <ul class="kidx">{items}</ul>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>

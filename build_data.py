@@ -7,6 +7,7 @@ re-derives independently (OVERVIEW_DRIFT). Reuses design-system + the P03 covera
 """
 import json, pathlib
 from build_reference import friendly, bilingual, esc
+from footer import footer
 from canon import canon_country, canonical_slug, canonical_name
 from nav import nav
 from header import header
@@ -185,9 +186,8 @@ def render(ov):
     <div class="cap">{bilingual("spec coverage across the set — the empty parts are visible too", "độ phủ spec toàn tập — thấy được cả phần còn trống")}</div></div>
     <div class="spectrum">{cov_html}</div></div>
 
-  <p class="foot mono">{bilingual("Live aggregate · honest-null shown · zero-fabrication · pure SVG/CSS",
-                                   "Aggregate sống · honest-null hiện · zero-fabrication · SVG/CSS thuần")}</p>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>

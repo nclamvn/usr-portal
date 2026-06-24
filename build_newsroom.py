@@ -9,6 +9,7 @@ body auto-link to /knowledge. Opinion/analysis are NOT here — they require a h
 import json, pathlib, re, shutil, html
 import yaml
 from build_reference import bilingual, esc
+from footer import footer
 from nav import nav
 from header import header
 from seo import meta as seo_meta
@@ -135,6 +136,7 @@ def render(fm, body, site, glossary):
   <div class="nbody">{body_html}</div>
   <div class="srcs"><h3>{bilingual("Sources", "Nguồn")}</h3><ul>{srcs}</ul></div>
 </main>
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>
@@ -191,6 +193,7 @@ def render_index(arts):
     <div class="by">{bilingual("Data notes, explainers, profiles and reports — every figure traces to the registry.", "Ghi chú dữ liệu, giải thích, hồ sơ và báo cáo — mọi con số truy về registry.")}</div></header>
   <ul class="nidx">{items}</ul>
 </main>
+{footer("")}
 <script src="base/base.js"></script>
 <script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
 </body>

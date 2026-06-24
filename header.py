@@ -16,7 +16,7 @@ def header(prefix="", current=None):
     home = f"{prefix}index.html"
     return (
         '<header class="gbar"><div class="gbar-in">'
-        f'<a class="gbar-wm" href="{home}" aria-label="Drone Review — home">'
+        f'<a class="gbar-wm" href="{home}" aria-label="Drone Review, home">'
         f'<img class="brandmark" src="{prefix}base/brand-shield.png" alt="Drone Review" width="34" height="34"></a>'
         f'{nav(prefix, current)}'
         '<div class="gbar-ctl">'

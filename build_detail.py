@@ -8,6 +8,7 @@ Reuses the shared design system + the chip()/friendly() renderers from build_ref
 """
 import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
+from footer import footer
 from glyphs import glyph_svg
 from nav import nav
 from header import header
@@ -203,6 +204,7 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
 <main class="dwrap">
   {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks)}
 </main>
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));

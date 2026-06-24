@@ -8,6 +8,7 @@ Design-system-of-record only; bilingual (en/vn).
 """
 import json, pathlib, shutil, re
 from build_reference import friendly, bilingual, esc
+from footer import footer
 from canon import canonical_slug, canonical_name
 from nav import nav
 from header import header
@@ -65,6 +66,7 @@ def page(kind, title_html, meta_html, sections, path, plain_title, count):
     "A live index over the registry — every entry links to its full record. Counts are computed at build time.",
     "Chỉ mục sống trên registry — mỗi mục liên kết tới hồ sơ đầy đủ. Số đếm tính lúc build.")}</p>
 </main>
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));

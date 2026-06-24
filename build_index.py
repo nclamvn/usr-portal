@@ -13,6 +13,7 @@ in the card body and links to the entity's citable detail page. Bilingual, light
 """
 import json, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
+from footer import footer
 from glyphs import glyph_svg
 from nav import nav
 from header import header
@@ -433,6 +434,7 @@ def main():
   </div>
 </main>
 
+{footer("")}
 <script src="base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));

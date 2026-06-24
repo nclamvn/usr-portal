@@ -9,6 +9,7 @@ each article is a node of the entity graph.
 """
 import json, pathlib, shutil
 from build_reference import esc
+from footer import footer
 from header import header
 from build_analysis import (echip, autolink, link_map, SECTION, ARROW, SPEC_BANNER, NAV,
                             related_rail, sources_apparatus, load)
@@ -122,11 +123,7 @@ def render_news_page(a, site, glossary):
 
 {sources_apparatus(a)}
 
-<footer class="nfoot"><div class="wrap">
-  <span>Uncrewed Systems Review · bản dựng giao diện</span>
-  <span>Tuân chuẩn: Quy tắc biên tập · PRD · Memo</span>
-</div></footer>
-
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));

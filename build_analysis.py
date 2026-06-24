@@ -13,6 +13,7 @@ entities that exist in the registry.
 """
 import json, pathlib, shutil, re, html
 from header import header
+from footer import footer
 from build_reference import esc
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -268,11 +269,7 @@ def render_analysis_page(article, site, glossary):
   <div><div class="nm">{esc(au.get("name",""))}</div><div class="bio">{esc(au.get("bio","Tiểu sử là chữ mẫu."))}</div></div>
 </div>
 
-<footer class="nfoot"><div class="wrap">
-  <span>Uncrewed Systems Review · bản dựng giao diện</span>
-  <span>Tuân chuẩn: Quy tắc biên tập · PRD · Memo</span>
-</div></footer>
-
+{footer("../")}
 <script src="../base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));
