@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 266,
-  "variant_count": 277,
+  "family_count": 279,
+  "variant_count": 290,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -25931,6 +25931,1345 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "delivery",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:boeing:mq-28-ghost-bat",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Boeing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Australia",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Australia",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Boeing MQ-28 Ghost Bat",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing MQ-28 Ghost Bat",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:anduril:fury",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Anduril",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Anduril Fury",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Fury",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:general-atomics:mojave",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "General Atomics",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "General Atomics Mojave",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics Mojave",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:textron:rq-7-shadow",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Textron",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Textron RQ-7 Shadow",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron RQ-7 Shadow",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:casc:ch-3",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "CASC",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "CASC CH-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:qods:mohajer-6",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Qods",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Qods Mohajer-6",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods Mohajer-6",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:hesa:ababil-3",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "HESA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "HESA Ababil-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Ababil-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:sabrewing:rhaegal",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Sabrewing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Sabrewing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Sabrewing Rhaegal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Sabrewing Rhaegal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "delivery",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "delivery",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:jouav:cw-25",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "JOUAV",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "JOUAV",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "JOUAV CW-25",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "JOUAV CW-25",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "surveying",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "surveying",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:volocopter:voloregion",
+      "kind": "family",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Volocopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Volocopter",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Germany",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Germany",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Volocopter VoloRegion",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Volocopter VoloRegion",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "passenger_uam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "passenger_uam",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:autoflight:prosperity-i",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "AutoFlight",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "AutoFlight",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "AutoFlight Prosperity I",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "AutoFlight Prosperity I",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "passenger_uam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "passenger_uam",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:xpeng-aeroht:x2",
+      "kind": "family",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "XPeng AeroHT",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XPeng AeroHT",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "XPeng AeroHT X2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XPeng AeroHT X2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "multirotor",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "multirotor",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "passenger_uam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "passenger_uam",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:pivotal:helix",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Pivotal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Pivotal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Pivotal Helix",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Pivotal Helix",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "passenger_uam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "passenger_uam",
               "note": "market role"
             }
           ],
@@ -61582,6 +62921,1678 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:boeing:mq-28-ghost-bat:mq-28-ghost-bat",
+      "family_id": "uav:boeing:mq-28-ghost-bat",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:boeing:mq-28-ghost-bat:mq-28-ghost-bat",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:boeing:mq-28-ghost-bat:mq-28-ghost-bat",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Boeing MQ-28 Ghost Bat",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Boeing MQ-28 Ghost Bat",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 3700,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3700,
+              "note": "operational"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 12192,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Boeing_MQ-28_Ghost_Bat",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12192,
+              "note": "40000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:anduril:fury:fury",
+      "family_id": "uav:anduril:fury",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:anduril:fury:fury",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:anduril:fury:fury",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Anduril Fury",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Anduril Fury",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 2270,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2270,
+              "note": "5000 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 15200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Anduril_YFQ-44",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 15200,
+              "note": "50000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:general-atomics:mojave:mojave",
+      "family_id": "uav:general-atomics:mojave",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:general-atomics:mojave:mojave",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:general-atomics:mojave:mojave",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "General Atomics Mojave",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "General Atomics Mojave",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 3175,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3175,
+              "note": "7000 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1633,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1633,
+              "note": "3600 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1620,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1620,
+              "note": "27 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 86,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 86,
+              "note": "167 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 4630,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mojave",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4630,
+              "note": "ferry"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:textron:rq-7-shadow:rq-7-shadow",
+      "family_id": "uav:textron:rq-7-shadow",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:textron:rq-7-shadow:rq-7-shadow",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:textron:rq-7-shadow:rq-7-shadow",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Textron RQ-7 Shadow",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Textron RQ-7 Shadow",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 340,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 340,
+              "note": "750 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 45,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 45,
+              "note": "RQ-7B"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 360,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 360,
+              "note": "RQ-7B 6 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4900,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4900,
+              "note": "16000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 46,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/AAI_RQ-7_Shadow",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 46,
+              "note": "90 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:casc:ch-3:ch-3",
+      "family_id": "uav:casc:ch-3",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:casc:ch-3:ch-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:casc:ch-3:ch-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "CASC CH-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 80,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 80,
+              "note": "max"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 720,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 720,
+              "note": "12 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 2400,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1378",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2400,
+              "note": "2400 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:qods:mohajer-6:mohajer-6",
+      "family_id": "uav:qods:mohajer-6",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:qods:mohajer-6:mohajer-6",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:qods:mohajer-6:mohajer-6",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Qods Mohajer-6",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods Mohajer-6",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 670,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 670,
+              "note": "600-670 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 150,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 150,
+              "note": "100-150 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 56,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 56,
+              "note": "200 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 720,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 720,
+              "note": "12 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 5500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5500,
+              "note": "18000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Qods_Mohajer-6",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 500,
+              "note": "GCS 200-500 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:hesa:ababil-3:ababil-3",
+      "family_id": "uav:hesa:ababil-3",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:hesa:ababil-3:ababil-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:hesa:ababil-3:ababil-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "HESA Ababil-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Ababil-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 83,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 83,
+              "note": "183 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 300,
+              "note": "4-5 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "100 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 56,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 56,
+              "note": "200 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 5000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Ababil",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5000,
+              "note": "16400 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:sabrewing:rhaegal:rhaegal",
+      "family_id": "uav:sabrewing:rhaegal",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:sabrewing:rhaegal:rhaegal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:sabrewing:rhaegal:rhaegal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Sabrewing Rhaegal",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Sabrewing Rhaegal",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2455,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2455,
+              "note": "VTOL 5400 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 1850,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1850,
+              "note": "1000 nm"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 124,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Sabrewing_Rhaegal",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 124,
+              "note": "445 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "delivery",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "delivery",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:jouav:cw-25:cw-25",
+      "family_id": "uav:jouav:cw-25",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:jouav:cw-25:cw-25",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:jouav:cw-25:cw-25",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "JOUAV CW-25",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "JOUAV CW-25",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6,
+              "note": "6 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 360,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 360,
+              "note": "6 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7000,
+              "note": "max flight ceiling"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.jouav.com/products/cw-25.html",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 200,
+              "note": "data link"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "surveying",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "surveying",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:volocopter:voloregion:voloregion",
+      "family_id": "uav:volocopter:voloregion",
+      "kind": "variant",
+      "provenance_class": "commercial_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:volocopter:voloregion:voloregion",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:volocopter:voloregion:voloregion",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Volocopter VoloRegion",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Volocopter VoloRegion",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "100 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 69,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.volocopter.com/en/solutions/voloregion",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 69,
+              "note": "250 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:autoflight:prosperity-i:prosperity-i",
+      "family_id": "uav:autoflight:prosperity-i",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:autoflight:prosperity-i:prosperity-i",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:autoflight:prosperity-i:prosperity-i",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "AutoFlight Prosperity I",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "AutoFlight Prosperity I",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1500,
+              "note": "3307 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 350,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 350,
+              "note": "772 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 250,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 250,
+              "note": "155 mi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 56,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://autoflight.com/assets/uploads/files/autoflight-prosperity-i-specs-062023.pdf",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 56,
+              "note": "200 km/h cruise"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:xpeng-aeroht:x2:x2",
+      "family_id": "uav:xpeng-aeroht:x2",
+      "kind": "variant",
+      "provenance_class": "commercial_covered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:xpeng-aeroht:x2:x2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:xpeng-aeroht:x2:x2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "XPeng AeroHT X2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "XPeng AeroHT X2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 760,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 760,
+              "note": "1675 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 200,
+              "note": "440 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 36,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 36,
+              "note": "130 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 35,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 35,
+              "note": "flight time"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 75,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://evtol.news/xpeng-voyager-x2",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 75,
+              "note": "75 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:pivotal:helix:helix",
+      "family_id": "uav:pivotal:helix",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:pivotal:helix:helix",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:pivotal:helix:helix",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Pivotal Helix",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Pivotal Helix",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 258,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 258,
+              "note": "568 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "220 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 28,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 28,
+              "note": "101 km/h cruise"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 32,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.pivotal.aero/helix/specs",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 32,
+              "note": "20+ mi"
+            }
+          ],
+          "last_verified": "2026-06-24",
           "inherited_from": null
         }
       }
