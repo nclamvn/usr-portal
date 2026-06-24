@@ -10,11 +10,10 @@ NULL_STATUSES = {"unverified", None, "absent", "none"}          # MUST be null o
 def load(p): return json.load(open(p))
 
 def master_cells(m):
-    # map canonical_id -> {field: cell}; real variants only (exclude own_product)
+    # map canonical_id -> {field: cell}; ALL variants now public (own_product surfaced as "RtR product")
     fam={f["family_id"]:f for f in m["families"]}
     out={}
     for v in m["variants"]:
-        if v.get("provenance_class")=="own_product": continue
         cid=v.get("canonical_id") or (v.get("cells",{}).get("canonical_id",{}) or {}).get("value")
         cells=dict(v.get("cells",{}))
         f=fam.get(v["family_id"],{})
@@ -40,14 +39,10 @@ def main():
     ents=site_entities(S)
     fails=[]; checked_fields=0
 
-    real_count=sum(1 for v in M["variants"] if v.get("provenance_class")!="own_product")
-    # 1) entity count + no own_product
+    real_count=len(M["variants"])   # all variants public now (incl. RtR own_product, labelled)
+    # 1) entity count == all variants
     if len(ents)!=real_count:
-        fails.append("ENTITY COUNT: site-data %d != real entities %d"%(len(ents),real_count))
-    for e in ents:
-        pc = e.get("provenance_class") or (e.get("provenance_class",{}) or {})
-        if (isinstance(pc,dict) and pc.get("value")=="own_product") or pc=="own_product":
-            fails.append("OWN_PRODUCT leaked into site-data: %s"%e.get("canonical_id"))
+        fails.append("ENTITY COUNT: site-data %d != variants %d"%(len(ents),real_count))
 
     # join by canonical_id
     def cid_of(e):

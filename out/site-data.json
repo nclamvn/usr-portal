@@ -1,63 +1,63 @@
 {
   "aggregates": {
-    "entity_count": 263,
+    "entity_count": 266,
     "field_status_counts": {
-      "None": 2568,
-      "derived": 234,
+      "None": 2592,
+      "derived": 236,
       "disputed": 6,
-      "unverified": 25,
-      "verified": 2427
+      "unverified": 37,
+      "verified": 2449
     },
     "source_tier_counts": {
-      "A": 1613,
-      "B": 436,
-      "C": 386,
-      "derived": 234
+      "A": 1637,
+      "B": 439,
+      "C": 390,
+      "derived": 236
     },
     "spec_fill_rate": {
       "blue_uas": {
         "present": 32,
-        "total": 263
+        "total": 266
       },
       "encryption": {
         "present": 3,
-        "total": 263
+        "total": 266
       },
       "endurance_min": {
-        "present": 141,
-        "total": 263
+        "present": 142,
+        "total": 266
       },
       "gps_denied_capable": {
         "present": 11,
-        "total": 263
+        "total": 266
       },
       "max_link_km": {
         "present": 56,
-        "total": 263
+        "total": 266
       },
       "max_payload_kg": {
-        "present": 99,
-        "total": 263
+        "present": 100,
+        "total": 266
       },
       "max_range_km": {
         "present": 77,
-        "total": 263
+        "total": 266
       },
       "max_speed_ms": {
         "present": 118,
-        "total": 263
+        "total": 266
       },
       "mtow_kg": {
         "present": 151,
-        "total": 263
+        "total": 266
       },
       "ndaa_compliant": {
         "present": 33,
-        "total": 263
+        "total": 266
       },
       "service_ceiling_m": {
         "present": 59,
-        "total": 263
+        "total": 266
       }
     },
     "spec_range": {
@@ -39920,6 +39920,618 @@
     },
     {
       "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": "none",
+        "source_tier": null,
+        "status": "unverified",
+        "value": null
+      },
+      "canonical_id": "uav:real-time-robotics:hera:hera",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 56
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "HERA"
+      },
+      "family_id": "uav:real-time-robotics:hera",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://en.wikipedia.org/wiki/AeroVironment_RQ-20_Puma"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "B",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "B",
+            "url": "https://ctgroupvietnam.com/en/ct-uav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Vietnam"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 15
+      },
+      "max_range_km": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics HERA"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "own_product",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-real-time-robotics-hera-hera",
+      "variant": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "HERA"
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": "none",
+        "source_tier": null,
+        "status": "unverified",
+        "value": null
+      },
+      "canonical_id": "uav:real-time-robotics:hera:hera-plus",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "HERA"
+      },
+      "family_id": "uav:real-time-robotics:hera",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://en.wikipedia.org/wiki/AeroVironment_RQ-20_Puma"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "B",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "B",
+            "url": "https://ctgroupvietnam.com/en/ct-uav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Vietnam"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics HERA Plus"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "own_product",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-real-time-robotics-hera-hera-plus",
+      "variant": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "HERA Plus"
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "blue_uas": {
+        "confidence": "none",
+        "source_tier": null,
+        "status": "unverified",
+        "value": null
+      },
+      "canonical_id": "uav:real-time-robotics:vega:vega",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "Vega"
+      },
+      "family_id": "uav:real-time-robotics:vega",
+      "frame_glyph": "unknown",
+      "gps_denied_capable": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://en.wikipedia.org/wiki/AeroVironment_RQ-20_Puma"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "B",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "B",
+            "url": "https://ctgroupvietnam.com/en/ct-uav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Vietnam"
+      },
+      "market_segment": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "none",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "RtR-internal"
+          }
+        ],
+        "status": "unverified",
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "Real-time Robotics Vega"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "own_product",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-real-time-robotics-vega-vega",
+      "variant": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "A",
+            "url": "https://www.diu.mil/blue-uas-cleared-list"
+          }
+        ],
+        "status": "verified",
+        "value": "Vega"
+      }
+    },
+    {
+      "airframe_type": {
         "confidence": null,
         "source_tier": null,
         "status": null,
@@ -52540,5 +53152,5 @@
     }
   },
   "schema": "site-data/1",
-  "source_registry_sha256": "e5d6186b417b7814de3791d335ec40bc84a3f48ad0c6168bb89f2326c004e667"
+  "source_registry_sha256": "c9fb955ea0f58835c71aed34cb900d5bbe0836564617752ef0028f9feabde92f"
 }

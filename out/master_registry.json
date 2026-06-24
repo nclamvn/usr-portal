@@ -29798,19 +29798,19 @@
           "inherited_from": null
         },
         "endurance_min": {
-          "value": null,
-          "status": "unverified",
-          "confidence": "none",
+          "value": 56,
+          "status": "verified",
+          "confidence": "high",
           "sources": [
             {
-              "url": "RtR-internal",
-              "tier": "A",
-              "retrieved": "2026-06-22",
-              "claimed_value": null,
-              "note": "A-source available internally; pending RtR entry"
+              "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 56,
+              "note": "no payload"
             }
           ],
-          "last_verified": null,
+          "last_verified": "2026-06-24",
           "inherited_from": null
         },
         "max_range_km": {
@@ -29843,6 +29843,86 @@
             }
           ],
           "last_verified": null,
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Vietnam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ctgroupvietnam.com/en/ct-uav/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Vietnam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": "four rotor-wings"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ctgroupvietnam.com/en/ct-uav/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role · multi-sensor"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 15,
+              "note": "33 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
           "inherited_from": null
         }
       },
@@ -29948,6 +30028,70 @@
           ],
           "last_verified": null,
           "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Vietnam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ctgroupvietnam.com/en/ct-uav/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Vietnam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "quadcopter",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.armadainternational.com/2022/06/hera-backpacked-multi-sensor-quadcopter/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "quadcopter",
+              "note": "Hera variant"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ctgroupvietnam.com/en/ct-uav/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
         }
       },
       "provenance_class": "own_product"
@@ -30051,6 +30195,22 @@
             }
           ],
           "last_verified": null,
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Vietnam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ctgroupvietnam.com/en/ct-uav/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Vietnam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
           "inherited_from": null
         }
       },

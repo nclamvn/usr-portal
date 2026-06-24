@@ -141,8 +141,7 @@ def build(master):
     fam_by_id = {f["family_id"]: f for f in master["families"]}
     entities = []
     for v in master["variants"]:
-        if v.get("provenance_class") == "own_product":
-            continue  # scaffolds (pending internal) are not public reference entities
+        # own_product (RtR) is surfaced too — labelled "RtR product / Sản phẩm RtR" (provenance-forward)
         fam_cells = fam_by_id.get(v["family_id"], {}).get("cells", {})
         eff = {**fam_cells, **v.get("cells", {})}  # variant overrides family
         # Flat shape: each field-cell is a DIRECT child of the entity, keyed canonical_id.
