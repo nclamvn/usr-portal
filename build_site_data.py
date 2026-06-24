@@ -140,10 +140,8 @@ def field_obj(cell):
     return obj
 
 
-# P1.1 — sourced company attributes. Loaded with provenance in P1.2 (golden records);
-# until then every one is honest-null. Shape when loaded: {value,source,tier} | {disputed:[…]} | null.
-COMPANY_SOURCED = ["legal_name", "founded_year", "hq_country", "hq_city", "hq_address",
-                   "website", "founder", "contact_email", "contact_phone"]
+# sourced company attribute lists live in canon.py (shared with the auditor + company page).
+from canon import COMPANY_SOURCED_BASE, COMPANY_SOURCED_EXTRA
 
 
 def _cslug(s):
@@ -187,8 +185,11 @@ def derive_companies(uav_entities):
                    "segments": dict(sorted(g["segments"].items())),
                    "blue_uas_count": g["blue"], "ndaa_count": g["ndaa"]}}
         record = COMPANY_RECORDS.get(cslug, {})   # golden record (sourced) | {} -> all honest-null
-        for a in COMPANY_SOURCED:
+        for a in COMPANY_SOURCED_BASE:            # always present (honest-null if absent — rigor visible)
             ent[a] = record.get(a)                # {value,source,tier} | {disputed:[…]} | None
+        for a in COMPANY_SOURCED_EXTRA:           # company-specific — only when the record carries it
+            if a in record:
+                ent[a] = record[a]
         companies.append(ent)
     return companies
 

@@ -13,6 +13,13 @@ ALIAS = json.loads((_ROOT / "content" / "company_aliases.json").read_bytes()).ge
 COUNTRY_CANON = {"US": "United States", "USA": "United States", "United States": "United States",
                  "UK": "United Kingdom", "United Kingdom": "United Kingdom"}
 
+# company sourced attributes. BASE = always shown (honest-null "—" if absent — rigor visible).
+# EXTRA = company-specific, rendered ONLY when present (avoids "Parent —" noise on 138 pages).
+COMPANY_SOURCED_BASE = ["legal_name", "founded_year", "hq_country", "hq_city", "hq_address",
+                        "website", "founder", "contact_email", "contact_phone"]
+COMPANY_SOURCED_EXTRA = ["parent_company", "stock"]
+COMPANY_SOURCED_ALL = COMPANY_SOURCED_BASE + COMPANY_SOURCED_EXTRA
+
 
 def canonical_name(mfr):
     """Manufacturer string -> canonical company display name (alias-merged)."""

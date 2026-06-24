@@ -16,7 +16,7 @@ ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
 OUTDIR = ROOT / "company"
 
-SOURCED = [  # (key, en, vn) — order shown on the page
+SOURCED_BASE = [  # (key, en, vn) — always shown (honest-null "—" if absent)
     ("legal_name", "Legal name", "Tên pháp lý"),
     ("founded_year", "Founded", "Năm thành lập"),
     ("hq_country", "HQ country", "Quốc gia trụ sở"),
@@ -26,6 +26,10 @@ SOURCED = [  # (key, en, vn) — order shown on the page
     ("founder", "Founder", "Người sáng lập"),
     ("contact_email", "Email", "Email"),
     ("contact_phone", "Phone", "Điện thoại"),
+]
+SOURCED_EXTRA = [  # company-specific — rendered only when present
+    ("parent_company", "Parent company", "Công ty mẹ"),
+    ("stock", "Stock", "Mã cổ phiếu"),
 ]
 
 COMPANY_CSS = """
@@ -93,7 +97,9 @@ def render_company(c, labels, uav_name):
                         for k, v in roll.get("segments", {}).items())
     fleet = "".join(f'<li><a href="../entity/{esc(s)}.html">{esc(uav_name.get(s, s))}</a></li>'
                     for s in roll.get("uav_slugs", []))
-    sourced = "".join(sourced_row(k, en, vn, c.get(k)) for k, en, vn in SOURCED)
+    rows = [sourced_row(k, en, vn, c.get(k)) for k, en, vn in SOURCED_BASE]
+    rows += [sourced_row(k, en, vn, c[k]) for k, en, vn in SOURCED_EXTRA if k in c]  # extras only when present
+    sourced = "".join(rows)
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>

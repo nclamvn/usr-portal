@@ -60797,12 +60797,36 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
-      "founder": null,
-      "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "founded_year": {
+        "source": "linkedin.com/company/aerovironment",
+        "tier": "A",
+        "value": 1971
+      },
+      "founder": {
+        "source": "en.wikipedia.org/wiki/AeroVironment",
+        "tier": "B",
+        "value": "Paul B. MacCready Jr."
+      },
+      "hq_address": {
+        "source": "linkedin.com/company/aerovironment",
+        "tier": "A",
+        "value": "241 18th St S, Arlington, Virginia 22202"
+      },
+      "hq_city": {
+        "source": "linkedin.com/company/aerovironment",
+        "tier": "A",
+        "value": "Arlington, Virginia"
+      },
+      "hq_country": {
+        "source": "linkedin.com/company/aerovironment",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/AeroVironment",
+        "tier": "B",
+        "value": "AeroVironment, Inc."
+      },
       "name": "AeroVironment",
       "rollup": {
         "blue_uas_count": 1,
@@ -60831,7 +60855,16 @@
         ]
       },
       "slug": "aerovironment",
-      "website": null
+      "stock": {
+        "source": "finance.yahoo.com",
+        "tier": "B",
+        "value": "NASDAQ: AVAV"
+      },
+      "website": {
+        "source": "official domain",
+        "tier": "A",
+        "value": "https://www.avinc.com"
+      }
     },
     {
       "contact_email": null,
@@ -61076,13 +61109,38 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "autelrobotics.com/about-us",
+        "tier": "A",
+        "value": 2014
+      },
       "founder": null,
-      "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_address": {
+        "source": "cbinsights.com",
+        "tier": "C",
+        "value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen"
+      },
+      "hq_city": {
+        "source": "autelrobotics.com",
+        "tier": "A",
+        "value": "Shenzhen (Nanshan), Guangdong"
+      },
+      "hq_country": {
+        "source": "autelrobotics.com",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Autel_Robotics",
+        "tier": "B",
+        "value": "Autel Robotics Co., Ltd."
+      },
       "name": "Autel",
+      "parent_company": {
+        "source": "en.wikipedia.org/wiki/Autel_Robotics",
+        "tier": "B",
+        "value": "Autel Intelligent Technology (AIT)"
+      },
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
@@ -61098,7 +61156,11 @@
         ]
       },
       "slug": "autel",
-      "website": null
+      "website": {
+        "source": "official domain",
+        "tier": "A",
+        "value": "https://www.autelrobotics.com"
+      }
     },
     {
       "contact_email": null,
@@ -61542,13 +61604,13 @@
       "hq_address": {
         "disputed": [
           {
-            "note": "current global HQ, completed 12/2022",
+            "note": "trụ sở toàn cầu hiện tại, hoàn thành 12/2022",
             "source": "en.wikipedia.org/wiki/DJI_Sky_City + pitchbook.com",
             "tier": "B",
             "value": "DJI Sky City, No. 55 Xianyuan Road, Nanshan, Shenzhen"
           },
           {
-            "source": "salestools.io",
+            "source": "salestools.io / directories",
             "tier": "C",
             "value": "14F West Wing, Skyworth Semiconductor Building, Nanshan, Shenzhen 518057"
           },

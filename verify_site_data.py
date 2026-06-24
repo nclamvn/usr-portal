@@ -3,7 +3,7 @@
 # live master_registry.json. Does NOT trust the adapter. Fail-loud (exit 2).
 # Usage: python3 verify_site_data.py <master_registry.json> <site-data.json>
 import json, sys, collections
-from canon import canon_country, canonical_slug, ALIAS
+from canon import canon_country, canonical_slug, ALIAS, COMPANY_SOURCED_ALL
 
 SHOW_STATUSES = {"verified","derived","disputed","inherited"}  # may carry a value
 NULL_STATUSES = {"unverified", None, "absent", "none"}          # MUST be null on site
@@ -38,10 +38,9 @@ def field_cells(entity):
 ENTITY_TYPES = {"uav", "company", "technology"}
 REQUIRED_KEYS = {"uav": ["canonical_id"], "company": ["slug", "name"], "technology": ["slug", "term"]}
 
-# P1.1 — company sourced attributes. When present each MUST be honest-null, a sourced cell
+# company sourced attributes (shared list). When present each MUST be honest-null, a sourced cell
 # {value,source,tier(A/B/C)}, or a disputed set {disputed:[≥2 claims]} — never a bare value.
-COMPANY_SOURCED = ["legal_name", "founded_year", "hq_country", "hq_city", "hq_address",
-                   "website", "founder", "contact_email", "contact_phone"]
+COMPANY_SOURCED = COMPANY_SOURCED_ALL
 TIERS = {"A", "B", "C"}
 
 def cslug(s):
