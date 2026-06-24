@@ -5,12 +5,13 @@ import re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent
 fails = []
-names = ["index.html", "reference.html", "compare.html", "search.html", "data.html", "base/demo.html"]
+names = ["index.html", "reference.html", "compare.html", "search.html", "data.html", "knowledge.html", "base/demo.html"]
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("analysis/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("news/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("company/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("country/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("segment/*.html"))
+names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("knowledge/*.html"))
 for name in names:
     p = ROOT / name
     if not p.exists():

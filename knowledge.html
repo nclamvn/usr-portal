@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge — USR</title>
+<link rel="canonical" href="https://nclamvn.github.io/usr-portal/knowledge.html"><meta property="og:title" content="Knowledge — USR"><meta property="og:description" content="Reference definitions for UAV terms and standards."><meta property="og:type" content="website"><meta property="og:url" content="https://nclamvn.github.io/usr-portal/knowledge.html"><meta name="description" content="Reference definitions for UAV terms and standards.">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base/design-system.css">
+<style>
+  .kwrap{max-width:760px;margin:0 auto;padding:1.2rem 1.4rem 3rem}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
+  .ctrl{display:flex;gap:.5rem}
+  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
+  .khead{border-bottom:1px solid var(--hair);padding-bottom:1rem;margin-bottom:.4rem}
+  .khead .eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+  .khead h1{margin:.3rem 0 0;font-family:var(--font-head)}
+  .def{font-size:1.05rem;line-height:1.6;color:var(--ink);margin:1.1rem 0 .2rem;max-width:62ch}
+  .ksec-h{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:1.9rem 0 .7rem;display:flex;gap:.6rem;align-items:center}
+  .ksec-h::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .klist{list-style:none;margin:.3rem 0 0;padding:0}
+  .klist li{font-size:.86rem;padding:.22rem 0;border-bottom:1px solid var(--hair)}
+  .klist a{color:inherit;text-decoration:none}
+  .klist a:hover{color:var(--brass)}
+  .klist .tag{font-family:var(--font-mono);font-size:.7rem;color:var(--muted);margin-left:.4rem}
+  .kidx{list-style:none;margin:0;padding:0}
+  .kidx li{padding:.7rem 0;border-bottom:1px solid var(--hair)}
+  .kidx a{font-family:var(--font-head);font-weight:600;font-size:1.05rem;color:inherit;text-decoration:none}
+  .kidx a:hover{color:var(--brass)}
+  .kidx .d{display:block;font-size:.82rem;color:var(--muted);margin-top:.2rem;max-width:64ch}
+  .note{font-size:.72rem;color:var(--muted);margin-top:1.6rem}
+</style>
+</head>
+<body>
+<main class="kwrap">
+  <div class="topbar"><nav class="crumb"><a href="index.html" class="wm"><span data-lang-en>USR</span><span data-lang-vn>USR</span></a><span class="sep">·</span><a href="reference.html"><span data-lang-en>Reference</span><span data-lang-vn>Tham chiếu</span></a><span class="sep">·</span><a href="search.html"><span data-lang-en>Search</span><span data-lang-vn>Tìm kiếm</span></a><span class="sep">·</span><a href="compare.html"><span data-lang-en>Compare</span><span data-lang-vn>So sánh</span></a><span class="sep">·</span><a href="data.html"><span data-lang-en>Data</span><span data-lang-vn>Dữ liệu</span></a><span class="sep">·</span><span class="cur"><span data-lang-en>Knowledge</span><span data-lang-vn>Thuật ngữ</span></span></nav>
+    <div class="ctrl"><button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
+    <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button></div>
+  </div>
+  <header class="khead"><span class="eyebrow"><span data-lang-en>Knowledge</span><span data-lang-vn>Thuật ngữ</span></span><h1><span data-lang-en>Glossary</span><span data-lang-vn>Thuật ngữ</span></h1></header>
+  <ul class="kidx"><li><a href="knowledge/bvlos.html">BVLOS</a><span class="d"><span data-lang-en>Beyond Visual Line of Sight operation.</span><span data-lang-vn>Bay ngoài đường ngắm trực tiếp của người điều khiển.</span></span></li><li><a href="knowledge/blue-uas.html">Blue UAS</a><span class="d"><span data-lang-en>US DoD-vetted list of approved UAS.</span><span data-lang-vn>Danh mục UAV được Bộ Quốc phòng Hoa Kỳ thẩm định.</span></span></li><li><a href="knowledge/gnss.html">GNSS</a><span class="d"><span data-lang-en>Global Navigation Satellite System.</span><span data-lang-vn>Hệ thống vệ tinh định vị toàn cầu.</span></span></li><li><a href="knowledge/ndaa.html">NDAA</a><span class="d"><span data-lang-en>US National Defense Authorization Act component-compliance framework.</span><span data-lang-vn>Khung tuân thủ hạn chế linh kiện theo Đạo luật Quốc phòng Hoa Kỳ.</span></span></li><li><a href="knowledge/rtk.html">RTK</a><span class="d"><span data-lang-en>Real-Time Kinematic — centimetre-grade real-time satellite positioning.</span><span data-lang-vn>Định vị vệ tinh thời gian thực, độ chính xác cấp centimet.</span></span></li></ul>
+</main>
+<script src="base/base.js"></script>
+<script>USRBase.initTheme(document.getElementById("theme"));USRBase.initI18n(document.getElementById("lang"));</script>
+</body>
+</html>

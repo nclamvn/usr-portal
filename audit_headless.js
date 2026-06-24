@@ -296,6 +296,21 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  data page: " + e.message); }
 
+    // KNOWLEDGE term page (knowledge/<slug>) — definition + related, overlap-clean (P3.1)
+    try {
+      const g = await (await fetch(BASE + "/content/glossary.json")).json();
+      const kslug = Object.keys(g.terms)[0].toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+      await send("Page.navigate", { url: BASE + "/knowledge/" + kslug + ".html" });
+      await sleep(700);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const hasDef = await evalOnPage(send, `!!document.querySelector('.def')`);
+        const ok = r.hits.length === 0 && hasDef;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /knowledge/${kslug}  [${theme}/${lang}]  overlaps=${r.hits.length}  def=${hasDef}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  knowledge page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -339,7 +354,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 2 knowledge + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

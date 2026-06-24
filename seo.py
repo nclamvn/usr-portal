@@ -78,3 +78,9 @@ def org_ld(c, path):
 def collection_ld(name, path, n):
     return _ld({"@context": "https://schema.org", "@type": "CollectionPage",
                 "name": name, "url": BASE + "/" + path, "numberOfItems": n})
+
+
+def definedterm_ld(term, definition, path):
+    """DefinedTerm JSON-LD for a knowledge entry — term + its real definition (no fabrication)."""
+    return _ld({"@context": "https://schema.org", "@type": "DefinedTerm", "name": term,
+                "description": definition, "url": BASE + "/" + path})

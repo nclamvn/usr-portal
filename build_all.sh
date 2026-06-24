@@ -27,9 +27,10 @@ python3 build_reference.py
 python3 build_detail.py
 python3 build_company.py
 python3 build_taxonomy.py
-echo "[4/8] newsroom + analysis pillar (TIP-007)"
+echo "[4/8] newsroom + analysis pillar (TIP-007) + knowledge (TIP-P3.1)"
 python3 build_news.py
 python3 build_analysis.py
+python3 build_knowledge.py
 echo "[5/8] index home (TIP-004) + compare (TIP-P1.3) + single-file bundle export (TIP-008)"
 python3 build_index.py
 python3 build_compare.py
@@ -74,6 +75,8 @@ python3 verify_data.py
 python3 teeth_p23.py
 python3 verify_seo.py
 python3 teeth_p22.py
+python3 verify_knowledge.py
+python3 teeth_p31.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 

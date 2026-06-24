@@ -87,11 +87,13 @@ def link_map(article, glossary, base=".."):
         lab = tg["label"]
         if tg.get("slug"):
             m[lab] = f'<a class="eref" href="{base}/entity/{esc(tg["slug"])}.html">{esc(lab)}</a>'
+    import re as _re
     for term in article.get("glossary", []):
         if term in m:
             continue
         d = glossary["terms"].get(term, {}).get("vn", "")
-        m[term] = f'<span class="kref" title="{esc(d)}">{esc(term)}</span>'
+        kslug = _re.sub(r"[^a-z0-9]+", "-", term.lower()).strip("-")
+        m[term] = f'<a class="kref" href="{base}/knowledge/{kslug}.html" title="{esc(d)}">{esc(term)}</a>'
     for tg in article.get("entity_tags", []):
         lab = tg["label"]
         if lab not in m:
