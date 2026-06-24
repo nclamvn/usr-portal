@@ -14,6 +14,7 @@ ITEMS = [
     ("reference", "reference.html", "Reference", "Tham chiếu"),
     ("search", "search.html", "Search", "Tìm kiếm"),
     ("compare", "compare.html", "Compare", "So sánh"),
+    ("data", "data.html", "Data", "Dữ liệu"),
 ]
 
 

@@ -282,6 +282,20 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  search page: " + e.message); }
 
+    // DATA overview (/data) — live distributions + coverage, overlap-clean (P2.3)
+    try {
+      await send("Page.navigate", { url: BASE + "/data.html" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const bars = await evalOnPage(send, `document.querySelectorAll('.brow').length`);
+        const cov = await evalOnPage(send, `document.querySelectorAll('.colstrip').length`);
+        const ok = r.hits.length === 0 && bars > 0 && cov === 11;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /data  [${theme}/${lang}]  overlaps=${r.hits.length}  bars=${bars}  coverage-cols=${cov}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  data page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -325,7 +339,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

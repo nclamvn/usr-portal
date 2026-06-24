@@ -1,0 +1,313 @@
+{
+  "country": [
+    {
+      "n": "United States",
+      "slug": "united-states",
+      "v": 108
+    },
+    {
+      "n": "China",
+      "slug": "china",
+      "v": 96
+    },
+    {
+      "n": "Israel",
+      "slug": "israel",
+      "v": 20
+    },
+    {
+      "n": "Turkey",
+      "slug": "turkey",
+      "v": 10
+    },
+    {
+      "n": "Germany",
+      "slug": "germany",
+      "v": 10
+    },
+    {
+      "n": "Iran",
+      "slug": "iran",
+      "v": 9
+    },
+    {
+      "n": "France",
+      "slug": "france",
+      "v": 8
+    },
+    {
+      "n": "Russia",
+      "slug": "russia",
+      "v": 8
+    },
+    {
+      "n": "Vietnam",
+      "slug": "vietnam",
+      "v": 5
+    },
+    {
+      "n": "Switzerland",
+      "slug": "switzerland",
+      "v": 4
+    },
+    {
+      "n": "Netherlands",
+      "slug": "netherlands",
+      "v": 2
+    },
+    {
+      "n": "Japan",
+      "slug": "japan",
+      "v": 2
+    },
+    {
+      "n": "16 nước khác",
+      "n_en": "16 countries",
+      "other": true,
+      "v": 20
+    }
+  ],
+  "coverage": [
+    {
+      "key": "mtow_kg",
+      "pct": 59,
+      "present": 179,
+      "total": 302
+    },
+    {
+      "key": "max_payload_kg",
+      "pct": 42,
+      "present": 128,
+      "total": 302
+    },
+    {
+      "key": "endurance_min",
+      "pct": 56,
+      "present": 169,
+      "total": 302
+    },
+    {
+      "key": "max_range_km",
+      "pct": 34,
+      "present": 103,
+      "total": 302
+    },
+    {
+      "key": "max_link_km",
+      "pct": 19,
+      "present": 58,
+      "total": 302
+    },
+    {
+      "key": "max_speed_ms",
+      "pct": 48,
+      "present": 146,
+      "total": 302
+    },
+    {
+      "key": "service_ceiling_m",
+      "pct": 27,
+      "present": 82,
+      "total": 302
+    },
+    {
+      "key": "encryption",
+      "pct": 1,
+      "present": 3,
+      "total": 302
+    },
+    {
+      "key": "blue_uas",
+      "pct": 11,
+      "present": 32,
+      "total": 302
+    },
+    {
+      "key": "ndaa_compliant",
+      "pct": 11,
+      "present": 33,
+      "total": 302
+    },
+    {
+      "key": "gps_denied_capable",
+      "pct": 4,
+      "present": 11,
+      "total": 302
+    }
+  ],
+  "maker": [
+    {
+      "n": "DJI",
+      "slug": "dji",
+      "v": 38
+    },
+    {
+      "n": "Autel Robotics",
+      "slug": "autel-robotics",
+      "v": 13
+    },
+    {
+      "n": "AeroVironment",
+      "slug": "aerovironment",
+      "v": 11
+    },
+    {
+      "n": "IAI",
+      "slug": "iai",
+      "v": 10
+    },
+    {
+      "n": "Anduril",
+      "slug": "anduril",
+      "v": 7
+    },
+    {
+      "n": "General Atomics",
+      "slug": "general-atomics",
+      "v": 7
+    },
+    {
+      "n": "CASC",
+      "slug": "casc",
+      "v": 6
+    },
+    {
+      "n": "HESA",
+      "slug": "hesa",
+      "v": 6
+    },
+    {
+      "n": "Baykar",
+      "slug": "baykar",
+      "v": 5
+    },
+    {
+      "n": "Elbit Systems",
+      "slug": "elbit-systems",
+      "v": 4
+    },
+    {
+      "n": "Northrop Grumman",
+      "slug": "northrop-grumman",
+      "v": 4
+    },
+    {
+      "n": "Quantum Systems",
+      "slug": "quantum-systems",
+      "v": 4
+    },
+    {
+      "n": "128 hãng khác",
+      "n_en": "128 makers",
+      "other": true,
+      "v": 187
+    }
+  ],
+  "schema": "data-overview/1",
+  "segment": [
+    {
+      "n": "Quân sự · chiến thuật",
+      "n_en": "Military · tactical",
+      "slug": "military-tactical",
+      "v": 91
+    },
+    {
+      "n": "Doanh nghiệp",
+      "n_en": "Enterprise",
+      "slug": "enterprise",
+      "v": 34
+    },
+    {
+      "n": "Tiêu dùng",
+      "n_en": "Consumer",
+      "slug": "consumer",
+      "v": 32
+    },
+    {
+      "n": "Giao hàng",
+      "n_en": "Delivery",
+      "slug": "delivery",
+      "v": 17
+    },
+    {
+      "n": "Quốc phòng · chính phủ",
+      "n_en": "Defense · government",
+      "slug": "defense-government",
+      "v": 17
+    },
+    {
+      "n": "Nông nghiệp",
+      "n_en": "Agriculture",
+      "slug": "agriculture",
+      "v": 17
+    },
+    {
+      "n": "Đạn tuần kích",
+      "n_en": "Loitering munition",
+      "slug": "loitering-munition",
+      "v": 11
+    },
+    {
+      "n": "Khảo sát · lập bản đồ",
+      "n_en": "Surveying & mapping",
+      "slug": "surveying",
+      "v": 11
+    },
+    {
+      "n": "Taxi bay",
+      "n_en": "Passenger air taxi",
+      "slug": "passenger-uam",
+      "v": 10
+    },
+    {
+      "n": "An toàn công cộng",
+      "n_en": "Public safety",
+      "slug": "public-safety",
+      "v": 8
+    },
+    {
+      "n": "FPV",
+      "n_en": "FPV",
+      "slug": "fpv",
+      "v": 8
+    },
+    {
+      "n": "Chống UAV",
+      "n_en": "Counter-UAS",
+      "slug": "counter-uas",
+      "v": 6
+    },
+    {
+      "n": "Điện ảnh",
+      "n_en": "Cinema",
+      "slug": "cinema",
+      "v": 5
+    },
+    {
+      "n": "Chưa phân loại",
+      "n_en": "Unclassified",
+      "null": true,
+      "v": 35
+    }
+  ],
+  "standards": [
+    {
+      "key": "blue_uas",
+      "total": 302,
+      "yes": 25
+    },
+    {
+      "key": "ndaa_compliant",
+      "total": 302,
+      "yes": 26
+    }
+  ],
+  "totals": {
+    "company": 140,
+    "country": 28,
+    "coverage_pct": 28,
+    "disputed": 6,
+    "segment": 13,
+    "uav": 302
+  }
+}
