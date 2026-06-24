@@ -18,8 +18,7 @@ from glyphs import glyph_svg
 from nav import nav
 from header import header
 from seo import meta as seo_meta
-from build_news import news_front
-from build_analysis import analysis_feature
+from build_newsroom import load_articles, TYPE_LABEL
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -86,12 +85,25 @@ def stat_ribbon(f, labels):
         return (f'<span class="sr-cell"><b class="sr-n" data-countup style="min-width:{len(s)}ch">{esc(s)}</b>'
                 f'<span class="sr-k mono">{bilingual(en, vn)}</span></span>')
     return ('<div class="statribbon" data-audit="ribbon">'
-            + cell(f["entities"], "systems", "hệ thống")
             + cell(countries, "countries", "quốc gia")
             + cell(f'{f["coverage"]}%', "coverage", "độ phủ")
             + f'<span class="sr-cell sr-live"><span class="live-dot"></span>'
             f'<span class="sr-k mono">{bilingual("live", "trực tiếp")}</span></span>'
             + '</div>')
+
+
+def real_newsroom_block(prefix="."):
+    """Home Newsroom — the REAL, published factual articles (content/newsroom), newest-first. Never
+    the sample drafts in articles.json and never an opinion without a human author: the public home
+    shows only published, AI-authorable factual pieces. Each links to its /news/<slug> page."""
+    cards = ""
+    for fm, _ in load_articles():
+        kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
+        cards += (f'<a class="nr-card reveal" href="{prefix}/news/{esc(fm["slug"])}.html">'
+                  f'<span class="nr-kind">{bilingual(kl_en, kl_vn)}</span>'
+                  f'<span class="nr-t">{esc(fm["title"])}</span>'
+                  f'<span class="nr-go">{bilingual("Read", "Đọc")}{ARROW}</span></a>')
+    return f'<div class="nr-grid2">{cards}</div>'
 
 
 def ranked_list(rank, kind, labels, top_n):
@@ -261,9 +273,7 @@ def main():
     hero_caption = (f'<a class="readmore hero-cap" href="entity/{esc(feat["slug"])}.html" data-audit="herofile">'
                     f'<span>{bilingual("Featured field file", "Hồ sơ tiêu biểu")} · {esc(feat_mk)} {esc(feat_md)}</span>'
                     f'<span class="ico">{ARROW}</span></a>')
-    arts = json.loads(ARTS.read_bytes())["articles"]
-    news_html = news_front(arts, base=".")          # Part A — newsroom front
-    feat_html = analysis_feature(arts, site)         # Part B — analysis feature teaser
+    newsroom_block = real_newsroom_block(".")        # REAL factual articles only (no samples/opinion)
     masthead = render_masthead(f, labels)
 
     doc = f"""<!DOCTYPE html>
@@ -296,10 +306,24 @@ def main():
   .eyebrow::before{{content:"";width:22px;height:1px;background:var(--brass-bright)}}
   .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 0}}
   .lead-p{{font-size:17px;color:var(--ink-soft);max-width:54ch;margin-top:18px}}
-  /* dark inset blueprint panel — the signature draw-in centrepiece */
-  .hero-bp{{position:relative;background:var(--card-bg);border-radius:16px;padding:18px 26px 10px;box-shadow:0 36px 70px -34px rgba(0,0,0,.5);overflow:hidden}}
-  [data-theme="dark"] .hero-bp{{border:1px solid var(--card-hair)}}
-  .hero-bp .reg-tr,.hero-bp::before,.hero-bp::after,.hero-bp .reg-bl{{border-color:var(--bp)!important;opacity:.6}}
+  /* hero number — the verified-count as the opening punch (live, count-up) */
+  .hero-num{{display:flex;align-items:baseline;gap:14px;margin-top:26px;flex-wrap:wrap}}
+  .hero-num .hn-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(52px,8vw,88px);line-height:.92;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block}}
+  .hero-num .hn-k{{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);max-width:18ch;line-height:1.5}}
+  /* dark blueprint console — graded depth (not flat black) + grain + scan-line + vignette */
+  .hero-bp{{position:relative;border-radius:16px;padding:18px 26px 10px;overflow:hidden;
+    background:radial-gradient(130% 120% at 50% -10%, #20242b 0%, var(--card-bg) 55%, #0c0d10 100%);
+    box-shadow:0 40px 80px -34px rgba(0,0,0,.6), inset 0 0 120px 10px rgba(0,0,0,.45);
+    border:1px solid var(--card-hair)}}
+  .hero-bp .reg-tr,.hero-bp::before,.hero-bp::after,.hero-bp .reg-bl{{border-color:var(--bp)!important;opacity:.7}}
+  .hero-grain{{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.06;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}}
+  .hero-scan{{position:absolute;left:0;right:0;top:0;height:34%;pointer-events:none;z-index:1;
+    background:linear-gradient(180deg,transparent,rgba(216,162,74,.10),transparent);animation:heroscan 7s linear infinite}}
+  @keyframes heroscan{{0%{{transform:translateY(-40%)}}100%{{transform:translateY(340%)}}}}
+  .hero-bp .bp-stage{{position:relative;z-index:2}}
+  .hero-bp .hero-bp-foot{{position:relative;z-index:2}}
+  @media (prefers-reduced-motion:reduce){{.hero-scan{{animation:none;opacity:0}}}}
   .hero-foot{{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}}
   /* live stat-ribbon (every number from live_facts — zero-fab) */
   .statribbon{{display:flex;align-items:baseline;gap:34px;flex-wrap:wrap}}
@@ -364,12 +388,19 @@ def main():
   .section-h{{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin:0 0 1.1rem;display:flex;gap:.6rem;align-items:center}}
   .section-h::after{{content:"";flex:1;height:1px;background:var(--hair)}}
   .block{{margin:46px 0}}
-  .field-files{{display:grid;grid-template-columns:1fr 1fr;gap:24px}}
+  /* home newsroom — real factual article cards */
+  .nr-grid2{{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}}
+  .nr-card{{display:flex;flex-direction:column;gap:.5rem;border:1px solid var(--hair);border-radius:12px;padding:1.2rem 1.3rem;text-decoration:none;color:inherit;transition:border-color .2s var(--ease),transform .2s var(--ease)}}
+  .nr-card:hover{{border-color:var(--brass);transform:translateY(-2px)}}
+  .nr-kind{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}}
+  .nr-t{{font-family:var(--font-head);font-weight:600;font-size:1.08rem;line-height:1.25;color:var(--ink)}}
+  .nr-go{{margin-top:auto;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:8px}}
+  .nr-go .ar{{width:13px;height:13px}}
+  @media (max-width:760px){{.nr-grid2{{grid-template-columns:1fr}}}}
   @media (max-width:900px){{
     .field{{padding:48px 0 48px}}
     .hero-foot{{align-items:flex-start;gap:20px}}
     .statribbon{{gap:24px}}
-    .field-files{{grid-template-columns:1fr}}
     .wrap{{padding:0 20px}}
   }}
 </style>
@@ -386,9 +417,12 @@ def main():
       <p class="lead-p">{bilingual(
         "How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.",
         "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.")}</p>
+      <div class="hero-num"><b class="hn-n" data-countup style="min-width:{len(str(n))}ch">{n}</b>
+        <span class="hn-k">{bilingual("verified UAV systems on record", "hệ thống UAV đã kiểm chứng trong hồ sơ")}</span></div>
     </div>
     <div class="hero-bp reg-frame reveal" data-audit="herobp">
       <span class="reg-tr"></span><span class="reg-bl"></span>
+      <span class="hero-grain" aria-hidden="true"></span><span class="hero-scan" aria-hidden="true"></span>
       {hero_blueprint}
       <div class="hero-bp-foot">{hero_caption}</div>
     </div>
@@ -400,17 +434,10 @@ def main():
 </section>
 
 <main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Tin tức")}</b><span class="ln"></span></div>
+  <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Bài viết")}</b><span class="ln"></span>
+    <a class="ncta" href="news.html"><span>{bilingual("All articles", "Tất cả bài")}</span><span class="ico">{ARROW}</span></a></div>
   <div class="block">
-{news_html}
-  </div>
-
-  <div class="regdiv"><b class="lab">{bilingual("02 · Analysis", "02 · Phân tích")}</b><span class="ln"></span></div>
-  <div class="block">
-    <div class="sechead"><div><span class="eyebrow">{bilingual("Analysis", "Phân tích")}</span>
-      <h2 class="h2">{bilingual("In depth — long-form", "Chuyên sâu — đọc dạng long-form")}</h2></div>
-      <a class="ncta" href="analysis/{esc(arts[0]["slug"])}.html"><span>{bilingual("All analysis", "Tất cả phân tích")}</span><span class="ico">{ARROW}</span></a></div>
-{feat_html}
+{newsroom_block}
   </div>
 </main>
 
@@ -427,7 +454,7 @@ def main():
 </div></section>
 
 <main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("03 · Browse", "03 · Tra cứu")}</b><span class="ln"></span></div>
+  <div class="regdiv"><b class="lab">{bilingual("02 · Browse", "02 · Tra cứu")}</b><span class="ln"></span></div>
   <div class="block">
     <a class="cta" href="reference.html" data-audit="browse">{bilingual(
       f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a>

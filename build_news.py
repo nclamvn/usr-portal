@@ -44,8 +44,6 @@ def news_front(arts, base="."):
     dtag = '<span class="dtag">▦ Dữ liệu</span>' if lead.get("data_marker") else ""
     lead_html = (
         '<article class="lead" data-audit="lead">'
-        '<div class="plate"><span class="reg tl"></span><span class="reg br"></span>'
-        '<span class="pk">Ảnh · nguồn · bản quyền — lưu ở Media Library</span></div>'
         f'<div class="kicker"><span>{esc(SECTION[lead["section"]])}</span>{dtag}</div>'
         f'<h3><a href="{base}/news/{esc(lead["slug"])}.html">{esc(lead["title"])}</a></h3>'
         f'<p class="dek">{esc(lead["dek"])}</p>'

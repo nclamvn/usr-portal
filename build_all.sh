@@ -93,6 +93,8 @@ python3 verify_header.py
 python3 teeth_ux1.py
 python3 verify_footer.py
 python3 teeth_footer.py
+python3 verify_home.py
+python3 teeth_home.py
 
 echo "[7b/8] reduced-motion + focus (static)"
 grep -q "prefers-reduced-motion" base/design-system.css \
