@@ -12,6 +12,7 @@ Design-system-of-record only — no new aesthetic. Bilingual (en/vn) throughout.
 import json, pathlib, shutil
 from build_reference import friendly, bilingual, esc
 from nav import nav
+from seo import meta, org_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -106,6 +107,8 @@ def render_company(c, labels, uav_name):
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(name)} — USR</title>
+{meta(f"{esc(name)} — USR", f"{esc(name)}: fleet rollup and sourced company profile.", f'company/{c["slug"]}.html')}
+{org_ld(c, f'company/{c["slug"]}.html')}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{COMPANY_CSS}</style>

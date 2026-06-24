@@ -10,6 +10,7 @@ import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from glyphs import glyph_svg
 from nav import nav
+from seo import meta, product_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -189,6 +190,8 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(maker)} {esc(model)} — USR</title>
+{meta(f"{esc(maker)} {esc(model)} — USR", f"{esc(maker)} {esc(model)}: specifications traced to cited sources and tiers.", f'entity/{e["slug"]}.html')}
+{product_ld(e, f'entity/{e["slug"]}.html')}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{DETAIL_CSS}</style>

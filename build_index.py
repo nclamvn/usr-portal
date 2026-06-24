@@ -15,6 +15,7 @@ import json, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
 from glyphs import glyph_svg
 from nav import nav
+from seo import meta as seo_meta
 from build_news import news_front
 from build_analysis import analysis_feature
 
@@ -221,6 +222,7 @@ def main():
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uncrewed Systems Review</title>
+{seo_meta("Uncrewed Systems Review", "Entity-centric UAV intelligence: 302 systems with cited sources, tiers and honest-null.", "index.html")}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <link rel="stylesheet" href="base/newsroom.css">

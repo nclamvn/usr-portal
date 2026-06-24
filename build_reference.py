@@ -8,6 +8,7 @@ never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 import json, html, pathlib
 from glyphs import glyph_svg
 from nav import nav
+from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -207,6 +208,7 @@ def main():
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>USR — Reference</title>
+{seo_meta("USR — Reference", "Every UAV in the registry, with sources and tiers. Sparse fields shown as honest-null.", "reference.html")}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <style>

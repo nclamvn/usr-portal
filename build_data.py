@@ -9,6 +9,7 @@ import json, pathlib
 from build_reference import friendly, bilingual, esc
 from canon import canon_country, canonical_slug, canonical_name
 from nav import nav
+from seo import meta as seo_meta, collection_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -146,6 +147,7 @@ def render(ov):
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data overview — USR</title>
+{seo_meta("Data overview — USR", "Live distributions by country, manufacturer, purpose and standard, with coverage.", "data.html")}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <style>{DATA_CSS}</style>

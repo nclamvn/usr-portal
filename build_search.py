@@ -7,6 +7,7 @@ no missing and that every hit's url resolves. Reuses the Compare pattern (data-a
 import json, pathlib, re
 from build_reference import friendly, bilingual, esc
 from nav import nav
+from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -97,6 +98,7 @@ def render_page():
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Search — USR</title>
+{seo_meta("Search — USR", "Search systems, manufacturers, countries and segments across the registry.", "search.html")}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <style>{SEARCH_CSS}</style>

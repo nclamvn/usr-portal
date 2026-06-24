@@ -10,6 +10,7 @@ import json, pathlib, shutil, re
 from build_reference import friendly, bilingual, esc
 from canon import canonical_slug, canonical_name
 from nav import nav
+from seo import meta, collection_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -38,7 +39,7 @@ TAX_CSS = """
 """
 
 
-def page(kind, title_html, meta_html, sections):
+def page(kind, title_html, meta_html, sections, path, plain_title, count):
     body = "".join(
         f'<div class="tsec-h">{h}</div><ul class="tlist">{items}</ul>'
         for h, items in sections)
@@ -47,6 +48,8 @@ def page(kind, title_html, meta_html, sections):
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title_html} — USR</title>
+{meta(f"{plain_title} — USR", f"{plain_title}: {count} systems in the registry.", path)}
+{collection_ld(plain_title, path, count)}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{TAX_CSS}</style>
@@ -109,11 +112,12 @@ def main():
                             for s in sorted(g["uavs"]))
         co_items = "".join(f'<li><a href="../company/{esc(cs)}.html">{esc(cn)}</a></li>'
                            for cs, cn in sorted(g["companies"]))
-        meta = (f'{len(g["uavs"])} ' + bilingual("systems", "hệ thống")
-                + f' · {len(g["companies"])} ' + bilingual("manufacturers", "nhà sản xuất"))
-        html = page("country", esc(c), meta, [
+        meta_line = (f'{len(g["uavs"])} ' + bilingual("systems", "hệ thống")
+                     + f' · {len(g["companies"])} ' + bilingual("manufacturers", "nhà sản xuất"))
+        html = page("country", esc(c), meta_line, [
             (bilingual("Systems", "Hệ thống"), uav_items),
-            (bilingual("Manufacturers", "Nhà sản xuất"), co_items)])
+            (bilingual("Manufacturers", "Nhà sản xuất"), co_items)],
+            f"country/{tslug(c)}.html", c, len(g["uavs"]))
         (ROOT / "country" / f"{tslug(c)}.html").write_text(html)
         nco += 1
 
@@ -122,8 +126,10 @@ def main():
         uav_items = "".join(f'<li><a href="../entity/{esc(x)}.html">{esc(uav_name[x])}</a></li>'
                             for x in sorted(slugs))
         title = friendly("segment", s, labels)
-        meta = f'{len(slugs)} ' + bilingual("systems", "hệ thống")
-        html = page("segment", title, meta, [(bilingual("Systems", "Hệ thống"), uav_items)])
+        plain = labels["segment"].get(s, {}).get("en", s)
+        meta_line = f'{len(slugs)} ' + bilingual("systems", "hệ thống")
+        html = page("segment", title, meta_line, [(bilingual("Systems", "Hệ thống"), uav_items)],
+                    f"segment/{tslug(s)}.html", plain, len(slugs))
         (ROOT / "segment" / f"{tslug(s)}.html").write_text(html)
         nse += 1
 
