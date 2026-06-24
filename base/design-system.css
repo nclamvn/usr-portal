@@ -279,10 +279,9 @@ small, .small { font-size: .82rem; }
    override (verify_header enforces). Wordmark left · breadcrumb center · lang/theme right. */
 .gbar { border-bottom: 1px solid var(--hair); background: var(--bg); }
 .gbar-in { max-width: var(--w-wide); margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
-.gbar-wm { font-family: var(--font-head); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--ink); text-decoration: none; flex: 0 0 auto; display: inline-flex; align-items: center; gap: .5rem; }
-.gbar-wm .brandmark { height: 26px; width: auto; display: block; flex: 0 0 auto; color: var(--ink); }
-.gbar-wm .brandtxt { white-space: nowrap; }
-@media (max-width: 560px) { .gbar-wm .brandtxt { display: none; } }  /* shield only on narrow screens */
+.gbar-wm { flex: 0 0 auto; display: inline-flex; align-items: center; line-height: 0; }
+.gbar-wm .brandmark { height: 38px; width: auto; display: block; }
+:root[data-theme="dark"] .gbar-wm .brandmark { filter: invert(1); }  /* black art -> white on dark */
 .gbar-in .crumb { flex: 1 1 auto; }
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
 .gbar-tg { background: transparent; color: var(--ink-soft); border: 1px solid var(--hair-strong); border-radius: 999px; height: 30px; padding: 0 .7rem; font-family: var(--font-mono); font-size: .72rem; cursor: pointer; }
