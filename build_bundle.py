@@ -61,7 +61,7 @@ def long_form(a, site, glossary):
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     arts = json.loads(ARTS.read_bytes())["articles"]
     glossary = json.loads(GLOSS.read_bytes())
     f = live_facts(site)

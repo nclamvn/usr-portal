@@ -204,7 +204,7 @@ def render_detail(e, labels, ranges=None):
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV detail pages only
     ranges = site["aggregates"].get("spec_range", {})
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)          # clean regen — no stale slugs linger

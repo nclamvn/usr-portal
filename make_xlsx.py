@@ -60,7 +60,8 @@ def style_header(ws, ncols):
 
 def main():
     site = json.loads(SITE.read_bytes())
-    ents = sorted(site["entities"], key=lambda e: e["slug"])
+    ents = sorted((e for e in site["entities"] if e.get("entity_type", "uav") == "uav"),
+                  key=lambda e: e["slug"])  # schema/2: UAV rows only
     all_fields = site["field_groups"]["display"] + site["field_groups"]["spec"]
     wb = Workbook()
 

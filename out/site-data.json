@@ -125,6 +125,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -343,6 +344,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -533,6 +535,7 @@
         "status": "verified",
         "value": 47
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -716,6 +719,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -906,6 +910,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -1103,6 +1108,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -1286,6 +1292,7 @@
         "status": "verified",
         "value": 1980
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -1490,6 +1497,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -1659,6 +1667,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -1842,6 +1851,7 @@
         "status": "verified",
         "value": 150
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -2032,6 +2042,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -2215,6 +2226,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -2426,6 +2438,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -2630,6 +2643,7 @@
         "status": "verified",
         "value": 330
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -2827,6 +2841,7 @@
         "status": "verified",
         "value": 180
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -3059,6 +3074,7 @@
         "status": "verified",
         "value": 15
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -3270,6 +3286,7 @@
         "status": "verified",
         "value": 20
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -3509,6 +3526,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -3685,6 +3703,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -3861,6 +3880,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -4044,6 +4064,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -4234,6 +4255,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -4424,6 +4446,7 @@
         "status": "verified",
         "value": 480
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -4635,6 +4658,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -4839,6 +4863,7 @@
         "status": "verified",
         "value": 15
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -5043,6 +5068,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -5212,6 +5238,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -5388,6 +5415,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -5571,6 +5599,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -5775,6 +5804,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -5972,6 +6002,7 @@
         "status": "verified",
         "value": 100
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -6169,6 +6200,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -6345,6 +6377,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -6535,6 +6568,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -6753,6 +6787,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -6936,6 +6971,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -7105,6 +7141,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -7274,6 +7311,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -7457,6 +7495,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -7693,6 +7732,7 @@
         "status": "disputed",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -7911,6 +7951,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -8150,6 +8191,7 @@
         "status": "verified",
         "value": 42
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -8368,6 +8410,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -8600,6 +8643,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -8804,6 +8848,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -9008,6 +9053,7 @@
         "status": "verified",
         "value": 28
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -9212,6 +9258,7 @@
         "status": "verified",
         "value": 28
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -9423,6 +9470,7 @@
         "status": "verified",
         "value": 65
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -9613,6 +9661,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -9789,6 +9838,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -9979,6 +10029,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -10183,6 +10234,7 @@
         "status": "verified",
         "value": 1200
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -10373,6 +10425,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -10542,6 +10595,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -10725,6 +10779,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -10929,6 +10984,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -11098,6 +11154,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -11267,6 +11324,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -11450,6 +11508,7 @@
         "status": "verified",
         "value": 180
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -11654,6 +11713,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -11865,6 +11925,7 @@
         "status": "verified",
         "value": 4
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -12062,6 +12123,7 @@
         "status": "verified",
         "value": 960
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -12273,6 +12335,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -12442,6 +12505,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -12618,6 +12682,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -12808,6 +12873,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -13005,6 +13071,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -13202,6 +13269,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -13385,6 +13453,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -13568,6 +13637,7 @@
         "status": "verified",
         "value": 1200
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -13786,6 +13856,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -13969,6 +14040,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -14152,6 +14224,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -14356,6 +14429,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -14539,6 +14613,7 @@
         "status": "verified",
         "value": 3600
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -14757,6 +14832,7 @@
         "status": "verified",
         "value": 900
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -14968,6 +15044,7 @@
         "status": "verified",
         "value": 120
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -15179,6 +15256,7 @@
         "status": "verified",
         "value": 12
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -15390,6 +15468,7 @@
         "status": "verified",
         "value": 135
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -15612,6 +15691,7 @@
         "status": "disputed",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -15816,6 +15896,7 @@
         "status": "verified",
         "value": 19
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -16013,6 +16094,7 @@
         "status": "verified",
         "value": 14.5
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -16196,6 +16278,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -16372,6 +16455,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -16569,6 +16653,7 @@
         "status": "verified",
         "value": 7
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -16766,6 +16851,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -16956,6 +17042,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -17160,6 +17247,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -17364,6 +17452,7 @@
         "status": "verified",
         "value": 46
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -17561,6 +17650,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -17744,6 +17834,7 @@
         "status": "verified",
         "value": 23
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -17941,6 +18032,7 @@
         "status": "verified",
         "value": 18
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -18131,6 +18223,7 @@
         "status": "verified",
         "value": 20
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -18335,6 +18428,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -18518,6 +18612,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -18701,6 +18796,7 @@
         "status": "verified",
         "value": 27
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -18884,6 +18980,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -19053,6 +19150,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -19236,6 +19334,7 @@
         "status": "verified",
         "value": 55
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -19440,6 +19539,7 @@
         "status": "verified",
         "value": 59
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -19637,6 +19737,7 @@
         "status": "verified",
         "value": 54
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -19813,6 +19914,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -19996,6 +20098,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -20200,6 +20303,7 @@
         "status": "verified",
         "value": 46
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -20411,6 +20515,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -20657,6 +20762,7 @@
         "status": "unverified",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -20875,6 +20981,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -21114,6 +21221,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -21304,6 +21412,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -21480,6 +21589,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -21663,6 +21773,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -21867,6 +21978,7 @@
         "status": "verified",
         "value": 34
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -22071,6 +22183,7 @@
         "status": "verified",
         "value": 38
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -22275,6 +22388,7 @@
         "status": "verified",
         "value": 34
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -22472,6 +22586,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -22676,6 +22791,7 @@
         "status": "verified",
         "value": 36
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -22873,6 +22989,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -23056,6 +23173,7 @@
         "status": "verified",
         "value": 30
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -23260,6 +23378,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -23457,6 +23576,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -23661,6 +23781,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -23858,6 +23979,7 @@
         "status": "verified",
         "value": 1530
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -24055,6 +24177,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -24238,6 +24361,7 @@
         "status": "verified",
         "value": 20
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -24442,6 +24566,7 @@
         "status": "verified",
         "value": 21
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -24639,6 +24764,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -24843,6 +24969,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -25026,6 +25153,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -25237,6 +25365,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -25466,6 +25595,7 @@
         "status": "disputed",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -25663,6 +25793,7 @@
         "status": "verified",
         "value": 900
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -25867,6 +25998,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -26071,6 +26203,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -26282,6 +26415,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -26493,6 +26627,7 @@
         "status": "verified",
         "value": 60
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -26697,6 +26832,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -26887,6 +27023,7 @@
         "status": "verified",
         "value": 12.5
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -27063,6 +27200,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -27260,6 +27398,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -27450,6 +27589,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -27640,6 +27780,7 @@
         "status": "verified",
         "value": 42
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -27844,6 +27985,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -28041,6 +28183,7 @@
         "status": "verified",
         "value": 15
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -28245,6 +28388,7 @@
         "status": "verified",
         "value": 15
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -28442,6 +28586,7 @@
         "status": "verified",
         "value": 1500
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -28653,6 +28798,7 @@
         "status": "verified",
         "value": 1620
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -28864,6 +29010,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -29068,6 +29215,7 @@
         "status": "verified",
         "value": 1500
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -29279,6 +29427,7 @@
         "status": "verified",
         "value": 1200
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -29476,6 +29625,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -29659,6 +29809,7 @@
         "status": "verified",
         "value": 2400
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -29856,6 +30007,7 @@
         "status": "verified",
         "value": 12
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -30046,6 +30198,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -30229,6 +30382,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -30433,6 +30587,7 @@
         "status": "verified",
         "value": 300
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -30644,6 +30799,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -30855,6 +31011,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -31073,6 +31230,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -31277,6 +31435,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -31453,6 +31612,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -31657,6 +31817,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -31847,6 +32008,7 @@
         "status": "verified",
         "value": 26
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -32044,6 +32206,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -32248,6 +32411,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -32445,6 +32609,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -32649,6 +32814,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -32853,6 +33019,7 @@
         "status": "verified",
         "value": 900
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -33071,6 +33238,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -33275,6 +33443,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -33486,6 +33655,7 @@
         "status": "verified",
         "value": 3120
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -33697,6 +33867,7 @@
         "status": "verified",
         "value": 60
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -33908,6 +34079,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -34126,6 +34298,7 @@
         "status": "verified",
         "value": 1200
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -34344,6 +34517,7 @@
         "status": "verified",
         "value": 120
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -34541,6 +34715,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -34731,6 +34906,7 @@
         "status": "verified",
         "value": 7.5
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -34928,6 +35104,7 @@
         "status": "verified",
         "value": 1200
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -35132,6 +35309,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -35322,6 +35500,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -35505,6 +35684,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -35709,6 +35889,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -35892,6 +36073,7 @@
         "status": "verified",
         "value": 1080
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -36103,6 +36285,7 @@
         "status": "verified",
         "value": 20
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -36293,6 +36476,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -36518,6 +36702,7 @@
         "status": "verified",
         "value": 180
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -36701,6 +36886,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -36905,6 +37091,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -37109,6 +37296,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -37327,6 +37515,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -37538,6 +37727,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -37749,6 +37939,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -37939,6 +38130,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -38164,6 +38356,7 @@
         "status": "verified",
         "value": 58
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -38375,6 +38568,7 @@
         "status": "verified",
         "value": 480
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -38572,6 +38766,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -38776,6 +38971,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -38987,6 +39183,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -39205,6 +39402,7 @@
         "status": "verified",
         "value": 30
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -39416,6 +39614,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -39620,6 +39819,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -39831,6 +40031,7 @@
         "status": "verified",
         "value": 20
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -40028,6 +40229,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -40232,6 +40434,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -40422,6 +40625,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -40605,6 +40809,7 @@
         "status": "verified",
         "value": 1440
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -40823,6 +41028,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -41048,6 +41254,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -41252,6 +41459,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -41456,6 +41664,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -41660,6 +41869,7 @@
         "status": "unverified",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -41871,6 +42081,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -42054,6 +42265,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -42244,6 +42456,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -42448,6 +42661,7 @@
         "status": "verified",
         "value": 32
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -42652,6 +42866,7 @@
         "status": "verified",
         "value": 32
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -42849,6 +43064,7 @@
         "status": "verified",
         "value": 30
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -43053,6 +43269,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -43264,6 +43481,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -43468,6 +43686,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -43679,6 +43898,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -43883,6 +44103,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -44087,6 +44308,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -44305,6 +44527,7 @@
         "status": "verified",
         "value": 600
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -44509,6 +44732,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -44727,6 +44951,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -44959,6 +45184,7 @@
         "status": "verified",
         "value": 120
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -45156,6 +45382,7 @@
         "status": "verified",
         "value": 4
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -45360,6 +45587,7 @@
         "status": "verified",
         "value": 56
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -45578,6 +45806,7 @@
         "status": "unverified",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -45775,6 +46004,7 @@
         "status": "unverified",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -45958,6 +46188,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -46141,6 +46372,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -46338,6 +46570,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -46542,6 +46775,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -46746,6 +46980,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -46929,6 +47164,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -47119,6 +47355,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -47288,6 +47525,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -47471,6 +47709,7 @@
         "status": "verified",
         "value": 27
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -47686,6 +47925,7 @@
         "status": "disputed",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -47939,6 +48179,7 @@
         "status": "disputed",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -48157,6 +48398,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -48347,6 +48589,7 @@
         "status": "verified",
         "value": 300
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -48558,6 +48801,7 @@
         "status": "verified",
         "value": 22
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -48727,6 +48971,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -48910,6 +49155,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -49107,6 +49353,7 @@
         "status": "verified",
         "value": 15
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -49318,6 +49565,7 @@
         "status": "verified",
         "value": 30
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -49529,6 +49777,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -49740,6 +49989,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -49923,6 +50173,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -50134,6 +50385,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -50345,6 +50597,7 @@
         "status": "verified",
         "value": 600
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -50556,6 +50809,7 @@
         "status": "verified",
         "value": 1800
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -50781,6 +51035,7 @@
         "status": "verified",
         "value": 50
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -50978,6 +51233,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -51182,6 +51438,7 @@
         "status": "verified",
         "value": 50
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -51358,6 +51615,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -51541,6 +51799,7 @@
         "status": "verified",
         "value": 31
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -51745,6 +52004,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -51928,6 +52188,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -52111,6 +52372,7 @@
         "status": "verified",
         "value": 960
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -52322,6 +52584,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -52533,6 +52796,7 @@
         "status": "verified",
         "value": 180
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -52744,6 +53008,7 @@
         "status": "verified",
         "value": 180
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -52955,6 +53220,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -53152,6 +53418,7 @@
         "status": "verified",
         "value": 360
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -53377,6 +53644,7 @@
         "status": "verified",
         "value": 60
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -53581,6 +53849,7 @@
         "status": "verified",
         "value": 30
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -53792,6 +54061,7 @@
         "status": "verified",
         "value": 1080
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -53996,6 +54266,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -54179,6 +54450,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -54397,6 +54669,7 @@
         "status": "verified",
         "value": 720
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -54587,6 +54860,7 @@
         "status": "verified",
         "value": 270
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -54791,6 +55065,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -55002,6 +55277,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -55192,6 +55468,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -55389,6 +55666,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -55593,6 +55871,7 @@
         "status": "verified",
         "value": 45
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -55790,6 +56069,7 @@
         "status": "verified",
         "value": 70
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -56001,6 +56281,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -56219,6 +56500,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -56416,6 +56698,7 @@
         "status": "verified",
         "value": 90
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -56620,6 +56903,7 @@
         "status": "verified",
         "value": 59
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -56831,6 +57115,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -57035,6 +57320,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -57225,6 +57511,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -57422,6 +57709,7 @@
         "status": "verified",
         "value": 13.5
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -57619,6 +57907,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -57816,6 +58105,7 @@
         "status": "verified",
         "value": 35
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -58020,6 +58310,7 @@
         "status": "verified",
         "value": 35
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -58217,6 +58508,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -58400,6 +58692,7 @@
         "status": "verified",
         "value": 33
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -58597,6 +58890,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -58801,6 +59095,7 @@
         "status": "verified",
         "value": 25
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -59005,6 +59300,7 @@
         "status": "verified",
         "value": 240
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -59209,6 +59505,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "B",
@@ -59392,6 +59689,7 @@
         "status": "verified",
         "value": 40
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -59603,6 +59901,7 @@
         "status": "verified",
         "value": 16
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -59814,6 +60113,7 @@
         "status": "verified",
         "value": 16
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -60011,6 +60311,7 @@
         "status": "unverified",
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "A",
@@ -60187,6 +60488,7 @@
         "status": null,
         "value": null
       },
+      "entity_type": "uav",
       "family": {
         "confidence": "high",
         "source_tier": "C",
@@ -60351,6 +60653,11 @@
         "value": null
       }
     }
+  ],
+  "entity_types": [
+    "uav",
+    "company",
+    "technology"
   ],
   "field_groups": {
     "display": [
@@ -60586,6 +60893,7 @@
       }
     }
   },
-  "schema": "site-data/1",
+  "schema": "site-data/2",
+  "schema_version": 2,
   "source_registry_sha256": "dd192d1b06bd47c6c0c80f71ae83dd4269c0e61defb2589f9847868c3500c998"
 }

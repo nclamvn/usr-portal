@@ -13,8 +13,11 @@ python3 build_site_data.py >/dev/null
 SHA2=$(shasum -a256 out/site-data.json | cut -d' ' -f1)
 [ "$SHA1" = "$SHA2" ] && echo "      idempotent OK ($SHA1)" || { echo "      IDEMPOTENT FAIL"; exit 2; }
 
-echo "[2/8] data integrity (verify_site_data — honest-null + aggregates-live)"
+echo "[2/8] data integrity (verify_site_data — schema/2 type-aware · honest-null · aggregates-live)"
 python3 verify_site_data.py out/master_registry.json out/site-data.json
+
+echo "[2b/8] schema/2 teeth (entity_type · per-type required · invariant #10 disputed-keep-all)"
+python3 teeth_p0.py
 
 echo "[3/8] reference index rows (TIP-003) + detail pages (TIP-006)"
 python3 build_reference.py

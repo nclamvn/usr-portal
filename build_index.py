@@ -39,7 +39,7 @@ WATERMARK = ('<svg viewBox="0 0 760 400"><g class="wm-stroke">'
 
 def live_facts(site):
     """Real, live figures computed from site-data — never hardcoded (CONSTRAINT 8)."""
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     agg = site["aggregates"]
     def count(pred): return sum(1 for e in ents if pred(e))
     def tally(getter):
@@ -171,7 +171,7 @@ def field_file_card(e, n, labels, groups, big):
 def coverage_matrix(site):
     """Real per-cell coverage (11 specs × N entities). Filled = field has a value; sparse is shown,
     not hidden — rigor as evidence. % per row is the live aggregate (== auditor coverage)."""
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     spec = site["field_groups"]["spec"]
     total = len(ents)
     rows = ""
@@ -204,7 +204,7 @@ def pick_featured(ents, groups, k=3):
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     groups = site["field_groups"]["display"] + site["field_groups"]["spec"]
     f = live_facts(site)
     n = f["entities"]

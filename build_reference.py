@@ -189,7 +189,7 @@ def render_facets(ents, labels):
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
-    ents = site["entities"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     agg = site["aggregates"]                       # totals read LIVE — never hardcoded
     facets = render_facets(ents, labels)
     rows = "\n".join(render_row(e, labels) for e in ents)

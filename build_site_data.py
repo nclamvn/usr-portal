@@ -147,6 +147,7 @@ def build(master):
         # Flat shape: each field-cell is a DIRECT child of the entity, keyed canonical_id.
         # (Matches the independent auditor's contract; UI groups via field_groups below.)
         ent = {"canonical_id": v["canonical_id"],
+               "entity_type": "uav",  # schema/2 discriminator — P0: every record is a UAV (backward-compat)
                "slug": re.sub(r"[^a-z0-9]+", "-", v["canonical_id"].lower()).strip("-"),
                "family_id": v["family_id"], "provenance_class": v.get("provenance_class")}
         for f in DISPLAY_FIELDS + SPEC_FIELDS:
@@ -158,8 +159,12 @@ def build(master):
 
     # CONSTRAINT 8: aggregates computed live, counting field-cells exactly as the
     # auditor does (every {value,status} child, status stringified incl. None).
+    # schema/2: aggregates describe the UAV dataset (the "302" headline metrics), so they are
+    # scoped to entity_type=="uav". At P0 every entity is uav, so this is a no-op on the bytes;
+    # it stays correct once P1 adds company/technology entities to the same entities[] array.
+    uav_ents = [e for e in entities if e.get("entity_type") == "uav"]
     status_counts, tier_counts, fill, ranges = {}, {}, {}, {}
-    for e in entities:
+    for e in uav_ents:
         for f in DISPLAY_FIELDS + SPEC_FIELDS:
             fo = e[f]
             key = str(fo["status"])
@@ -179,13 +184,15 @@ def build(master):
                     r["min"] = min(r["min"], v)
                     r["max"] = max(r["max"], v)
     return {
-        "schema": "site-data/1",
+        "schema": "site-data/2",
+        "schema_version": 2,
+        "entity_types": ["uav", "company", "technology"],  # contract: the discriminator's domain
         "source_registry_sha256": hashlib.sha256(
             json.dumps(master, sort_keys=True, ensure_ascii=False).encode()).hexdigest(),
         "labels": LABELS,
         "field_groups": {"display": DISPLAY_FIELDS, "spec": SPEC_FIELDS},
-        "aggregates": {  # live — recomputed every build
-            "entity_count": len(entities),
+        "aggregates": {  # live — recomputed every build; UAV-scoped (schema/2)
+            "entity_count": len(uav_ents),
             "field_status_counts": status_counts,
             "source_tier_counts": tier_counts,
             "spec_fill_rate": fill,
