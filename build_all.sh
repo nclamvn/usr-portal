@@ -19,9 +19,13 @@ python3 verify_site_data.py out/master_registry.json out/site-data.json
 echo "[2b/8] schema/2 teeth (entity_type · per-type required · invariant #10 disputed-keep-all)"
 python3 teeth_p0.py
 
-echo "[3/8] reference index rows (TIP-003) + detail pages (TIP-006)"
+echo "[2c/8] company teeth (P1.1 — rollup two-way · sourced-attr shape · #10 on company)"
+python3 teeth_p11.py
+
+echo "[3/8] reference index rows (TIP-003) + detail pages (TIP-006) + company pages (TIP-P1.1)"
 python3 build_reference.py
 python3 build_detail.py
+python3 build_company.py
 echo "[4/8] newsroom + analysis pillar (TIP-007)"
 python3 build_news.py
 python3 build_analysis.py

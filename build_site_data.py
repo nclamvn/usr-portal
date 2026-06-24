@@ -137,6 +137,57 @@ def field_obj(cell):
     return obj
 
 
+# P1.1 — sourced company attributes. Loaded with provenance in P1.2 (golden records);
+# until then every one is honest-null. Shape when loaded: {value,source,tier} | {disputed:[…]} | null.
+COMPANY_SOURCED = ["legal_name", "founded_year", "hq_country", "hq_city", "hq_address",
+                   "website", "founder", "contact_email", "contact_phone"]
+
+
+def _cslug(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
+
+
+def derive_companies(uav_entities):
+    """Promote each distinct manufacturer to a company entity. EVERYTHING here is DERIVED live from
+    the UAV data (zero new sourcing): the rollup is a view, not a claim. Sourced attributes are
+    declared but honest-null until a golden record is loaded (P1.2). Deterministic (sorted)."""
+    import collections
+    groups = {}
+    for e in uav_entities:
+        mfr = (e.get("manufacturer") or {}).get("value")
+        if not mfr:
+            continue
+        g = groups.setdefault(_cslug(mfr), {
+            "names": set(), "uav_slugs": [], "countries": collections.Counter(),
+            "segments": collections.Counter(), "blue": 0, "ndaa": 0})
+        g["names"].add(mfr)
+        g["uav_slugs"].append(e["slug"])
+        c = (e.get("manufacturer_country") or {}).get("value")
+        if c:
+            g["countries"][c] += 1
+        s = (e.get("market_segment") or {}).get("value")
+        if s:
+            g["segments"][s] += 1
+        if (e.get("blue_uas") or {}).get("value"):
+            g["blue"] += 1
+        if (e.get("ndaa_compliant") or {}).get("value"):
+            g["ndaa"] += 1
+    companies = []
+    for cslug in sorted(groups):
+        g = groups[cslug]
+        ent = {"entity_type": "company", "slug": cslug, "name": sorted(g["names"])[0],
+               "rollup": {  # live view over real UAV data — never a sourced claim
+                   "uav_count": len(g["uav_slugs"]),
+                   "uav_slugs": sorted(g["uav_slugs"]),
+                   "countries": dict(sorted(g["countries"].items())),
+                   "segments": dict(sorted(g["segments"].items())),
+                   "blue_uas_count": g["blue"], "ndaa_count": g["ndaa"]}}
+        for a in COMPANY_SOURCED:       # declared schema, honest-null until P1.2
+            ent[a] = None
+        companies.append(ent)
+    return companies
+
+
 def build(master):
     fam_by_id = {f["family_id"]: f for f in master["families"]}
     entities = []
@@ -183,6 +234,11 @@ def build(master):
                     r = ranges.setdefault(f, {"min": v, "max": v})
                     r["min"] = min(r["min"], v)
                     r["max"] = max(r["max"], v)
+    # P1.1 — promote manufacturers to company entities (derived view; appended AFTER the
+    # UAV-scoped aggregates above, so the "302" headline metrics are untouched). UAV entities keep
+    # their exact prior order (sorted by canonical_id) -> reference/index/bundle stay byte-stable.
+    companies = derive_companies(uav_ents)
+    all_entities = entities + companies
     return {
         "schema": "site-data/2",
         "schema_version": 2,
@@ -198,7 +254,7 @@ def build(master):
             "spec_fill_rate": fill,
             "spec_range": ranges,
         },
-        "entities": entities,
+        "entities": all_entities,
     }
 
 
@@ -207,7 +263,8 @@ def main():
     site = build(master)
     # sort_keys -> stable; LABELS bool keys (True/False) need string coercion for JSON
     OUT.write_text(json.dumps(site, sort_keys=True, ensure_ascii=False, indent=2) + "\n")
-    print(f"site-data.json: {site['aggregates']['entity_count']} entities | "
+    nco = sum(1 for e in site["entities"] if e.get("entity_type") == "company")
+    print(f"site-data.json: {site['aggregates']['entity_count']} uav + {nco} company (derived) | "
           f"status {site['aggregates']['field_status_counts']}")
 
 

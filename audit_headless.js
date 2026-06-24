@@ -127,6 +127,22 @@ function pageAuditExpr(theme, lang) {
   })()`;
 }
 
+// COMPANY page (P1.1): overlap sweep + assert derived rollup (fleet links) + honest-null sourced rows.
+function companyExpr(theme, lang) {
+  return `(async () => {
+    const h=document.documentElement;
+    h.setAttribute('data-theme', ${JSON.stringify(theme)});
+    h.setAttribute('data-lang', ${JSON.stringify(lang)});
+    if (document.fonts && document.fonts.ready) await document.fonts.ready;
+    window.scrollTo(0, document.body.scrollHeight);
+    await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+    const fleet=document.querySelectorAll('.fleet a').length;
+    const nulls=document.querySelectorAll('.crow .v.null').length;
+    const hits=USRBase.designerAudit(document);
+    return { fleet, nulls, hits };
+  })()`;
+}
+
 async function main() {
   fs.rmSync("/tmp/cdp-profile", { recursive: true, force: true });
   const chrome = spawn(CHROME, ["--headless=new", `--remote-debugging-port=${PORT}`,
@@ -182,7 +198,8 @@ async function main() {
 
     // DETAIL page (entity/<slug>.html) — overlap + provenance apparatus + honest-null.
     let slug = "";
-    try { const sd = await (await fetch(BASE + "/out/site-data.json")).json(); slug = sd.entities[0].slug; } catch (e) {}
+    try { const sd = await (await fetch(BASE + "/out/site-data.json")).json();
+      slug = (sd.entities.find(e => (e.entity_type || "uav") === "uav") || {}).slug; } catch (e) {}
     if (slug) {
       await send("Page.navigate", { url: BASE + "/entity/" + slug + ".html" });
       await sleep(900);
@@ -196,6 +213,23 @@ async function main() {
           `sources=${dr.sources}  honest-null=${dr.nullChips}  tracks=${dr.ticks}tick/${dr.nullRails}null/${dr.rngs}rng of ${dr.specRows}`);
       }
     } else { failures++; console.log("  FAIL  detail page: could not resolve a slug"); }
+
+    // COMPANY page (company/<slug>.html) — overlap + derived rollup + honest-null sourced (P1.1)
+    let cslug = "";
+    try { const sd = await (await fetch(BASE + "/out/site-data.json")).json();
+      const co = sd.entities.filter(e => e.entity_type === "company")
+        .sort((a, b) => (b.rollup && b.rollup.uav_count || 0) - (a.rollup && a.rollup.uav_count || 0))[0];
+      cslug = co ? co.slug : ""; } catch (e) {}
+    if (cslug) {
+      await send("Page.navigate", { url: BASE + "/company/" + cslug + ".html" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const ok = r.hits.length === 0 && r.fleet > 0 && r.nulls > 0;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /company/${cslug}  [${theme}/${lang}]  overlaps=${r.hits.length}  fleet=${r.fleet}  honest-null=${r.nulls}`);
+      }
+    } else { failures++; console.log("  FAIL  company page: could not resolve a slug"); }
 
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
@@ -240,7 +274,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

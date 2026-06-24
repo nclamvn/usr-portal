@@ -60652,6 +60652,4148 @@
         "status": null,
         "value": null
       }
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "A2Z Drone Delivery",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican"
+        ]
+      },
+      "slug": "a2z-drone-delivery",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Acecore",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Netherlands": 2
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-acecore-neo-neo",
+          "uav-acecore-zoe-zoe"
+        ]
+      },
+      "slug": "acecore",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ACSL",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "Japan": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-acsl-acsl-pf2-acsl-pf2"
+        ]
+      },
+      "slug": "acsl",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Aeronautics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-aeronautics-aerostar-aerostar",
+          "uav-aeronautics-orbiter-4-orbiter-4"
+        ]
+      },
+      "slug": "aeronautics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Aerovel",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-aerovel-flexrotor-flexrotor"
+        ]
+      },
+      "slug": "aerovel",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "AeroVironment",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 4,
+          "USA": 7
+        },
+        "ndaa_count": 3,
+        "segments": {
+          "enterprise": 4,
+          "loitering_munition": 2,
+          "military_tactical": 5
+        },
+        "uav_count": 11,
+        "uav_slugs": [
+          "uav-aerovironment-jump-20-jump-20",
+          "uav-aerovironment-p550-p550",
+          "uav-aerovironment-puma-3-ae-puma-3-ae",
+          "uav-aerovironment-red-dragon-red-dragon",
+          "uav-aerovironment-rq-11-raven-rq-11b",
+          "uav-aerovironment-rq-12-wasp-rq-12a",
+          "uav-aerovironment-rq-20-puma-le",
+          "uav-aerovironment-rq-20-puma-rq-20b",
+          "uav-aerovironment-switchblade-300-block-10c",
+          "uav-aerovironment-switchblade-300-block-20",
+          "uav-aerovironment-switchblade-600-switchblade-600"
+        ]
+      },
+      "slug": "aerovironment",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "AgEagle",
+      "rollup": {
+        "blue_uas_count": 2,
+        "countries": {
+          "Switzerland": 1,
+          "US": 1,
+          "USA": 1
+        },
+        "ndaa_count": 2,
+        "segments": {
+          "defense_government": 2,
+          "enterprise": 1
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-ageagle-ebee-tac",
+          "uav-ageagle-ebee-vision-ebee-vision",
+          "uav-ageagle-ebee-x-ebee-x"
+        ]
+      },
+      "slug": "ageagle",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Airbus",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "France": 2,
+          "United Kingdom": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
+          "uav-airbus-vsr700-vsr700",
+          "uav-airbus-zephyr-zephyr"
+        ]
+      },
+      "slug": "airbus",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Amazon Prime Air",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-amazon-prime-air-mk30-mk30"
+        ]
+      },
+      "slug": "amazon-prime-air",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Anduril",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "counter_uas": 2,
+          "military_tactical": 2
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-anduril-anvil-anvil",
+          "uav-anduril-fury-fury",
+          "uav-anduril-ghost-4-ghost-4",
+          "uav-anduril-roadrunner-m-roadrunner-m"
+        ]
+      },
+      "slug": "anduril",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Anduril Industries",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 3
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "enterprise": 3
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-anduril-industries-altius-600-altius-600",
+          "uav-anduril-industries-bolt-m-bolt-m",
+          "uav-anduril-industries-ghost-x-ghost-x"
+        ]
+      },
+      "slug": "anduril-industries",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Antwork",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-antwork-tr9-tr9"
+        ]
+      },
+      "slug": "antwork",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Archer Aviation",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-archer-aviation-midnight-midnight"
+        ]
+      },
+      "slug": "archer-aviation",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Ascent AeroSystems",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ascent-aerosystems-spirit-spirit"
+        ]
+      },
+      "slug": "ascent-aerosystems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Asylon",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "enterprise": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-asylon-dronesentry-dronesentry"
+        ]
+      },
+      "slug": "asylon",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Autel",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-autel-evo-nano-evo-nano"
+        ]
+      },
+      "slug": "autel",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Autel Robotics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 13
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 4,
+          "enterprise": 6,
+          "public_safety": 1
+        },
+        "uav_count": 13,
+        "uav_slugs": [
+          "uav-autel-evo-max-4t-v2",
+          "uav-autel-robotics-alpha-alpha",
+          "uav-autel-robotics-dragonfish-dragonfish",
+          "uav-autel-robotics-evo-ii-dual-640t-enterprise",
+          "uav-autel-robotics-evo-ii-dual-640t-rtk",
+          "uav-autel-robotics-evo-ii-pro-enterprise",
+          "uav-autel-robotics-evo-ii-pro-rtk",
+          "uav-autel-robotics-evo-ii-pro-v3-evo-ii-pro-v3",
+          "uav-autel-robotics-evo-lite-evo-lite",
+          "uav-autel-robotics-evo-lite-plus-evo-lite-plus",
+          "uav-autel-robotics-evo-nano-evo-nano",
+          "uav-autel-robotics-evo-nano-plus-evo-nano-plus",
+          "uav-autel-robotics-titan-titan"
+        ]
+      },
+      "slug": "autel-robotics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "AutoFlight",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-autoflight-prosperity-i-prosperity-i"
+        ]
+      },
+      "slug": "autoflight",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "AVIC",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 3
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-avic-wing-loong-10-wing-loong-10",
+          "uav-avic-wing-loong-i-wing-loong-i",
+          "uav-avic-wing-loong-ii-wing-loong-ii"
+        ]
+      },
+      "slug": "avic",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Baykar",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Turkey": 5
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 4
+        },
+        "uav_count": 5,
+        "uav_slugs": [
+          "uav-baykar-akinci-akinci",
+          "uav-baykar-bayraktar-akinci-bayraktar-akinci",
+          "uav-baykar-bayraktar-tb2-bayraktar-tb2",
+          "uav-baykar-bayraktar-tb3-bayraktar-tb3",
+          "uav-baykar-kizilelma-kizilelma"
+        ]
+      },
+      "slug": "baykar",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Beta Technologies",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-beta-technologies-alia-250-alia-250"
+        ]
+      },
+      "slug": "beta-technologies",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "BetaFPV",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "fpv": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-betafpv-pavo-pico-pavo-pico"
+        ]
+      },
+      "slug": "betafpv",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Boeing",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Australia": 1,
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-boeing-mq-25-stingray-mq-25-stingray",
+          "uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat"
+        ]
+      },
+      "slug": "boeing",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Boeing Insitu",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 2,
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 3
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-boeing-insitu-integrator-integrator",
+          "uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
+          "uav-boeing-insitu-scaneagle-scaneagle"
+        ]
+      },
+      "slug": "boeing-insitu",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "BRINC",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 1,
+          "USA": 2
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1,
+          "enterprise": 1,
+          "public_safety": 1
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-brinc-lemur-2",
+          "uav-brinc-lemur-s-lemur-s",
+          "uav-brinc-responder-responder"
+        ]
+      },
+      "slug": "brinc",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "CAIG",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-caig-wing-loong-i-wing-loong-i"
+        ]
+      },
+      "slug": "caig",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "CASC",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 6
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 6
+        },
+        "uav_count": 6,
+        "uav_slugs": [
+          "uav-casc-ch-3-ch-3",
+          "uav-casc-ch-4-ch-4",
+          "uav-casc-ch-4-rainbow-ch-4-rainbow",
+          "uav-casc-ch-5-ch-5",
+          "uav-casc-ch-5-rainbow-ch-5-rainbow",
+          "uav-casc-ch-7-ch-7"
+        ]
+      },
+      "slug": "casc",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Censys Technologies",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "surveying": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-censys-technologies-sentaero-sentaero"
+        ]
+      },
+      "slug": "censys-technologies",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Cleo Robotics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "public_safety": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-cleo-robotics-dronut-x1-dronut-x1"
+        ]
+      },
+      "slug": "cleo-robotics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Delair",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "France": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1,
+          "surveying": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-delair-dt26-dt26",
+          "uav-delair-ux11-ux11"
+        ]
+      },
+      "slug": "delair",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "DJI",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 38
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 6,
+          "cinema": 1,
+          "consumer": 14,
+          "enterprise": 10,
+          "fpv": 3,
+          "surveying": 1
+        },
+        "uav_count": 38,
+        "uav_slugs": [
+          "uav-dji-agras-t10-agras-t10",
+          "uav-dji-agras-t20p-agras-t20p",
+          "uav-dji-agras-t25-agras-t25",
+          "uav-dji-agras-t30-agras-t30",
+          "uav-dji-agras-t40-agras-t40",
+          "uav-dji-agras-t50-t50",
+          "uav-dji-agras-t70p-agras-t70p",
+          "uav-dji-air-2s-air-2s",
+          "uav-dji-air-3-air-3",
+          "uav-dji-air-3s-air-3s",
+          "uav-dji-avata-2-avata-2",
+          "uav-dji-avata-avata",
+          "uav-dji-dji-fpv-dji-fpv",
+          "uav-dji-flip-flip",
+          "uav-dji-flycart-30-flycart-30",
+          "uav-dji-inspire-2-inspire-2",
+          "uav-dji-inspire-3-inspire-3",
+          "uav-dji-matrice-30t-matrice-30t",
+          "uav-dji-matrice-350-rtk-m350",
+          "uav-dji-matrice-400-matrice-400",
+          "uav-dji-matrice-4d-matrice-4d",
+          "uav-dji-matrice-4e-matrice-4e",
+          "uav-dji-mavic-2-pro-mavic-2-pro",
+          "uav-dji-mavic-3-classic-mavic-3-classic",
+          "uav-dji-mavic-3-enterprise-3e",
+          "uav-dji-mavic-3-enterprise-3m",
+          "uav-dji-mavic-3-enterprise-3t",
+          "uav-dji-mavic-3-pro-mavic-3-pro",
+          "uav-dji-mavic-3-thermal-mavic-3-thermal",
+          "uav-dji-mavic-4-pro-mavic-4-pro",
+          "uav-dji-mini-2-mini-2",
+          "uav-dji-mini-3-mini-3",
+          "uav-dji-mini-3-pro-mini-3-pro",
+          "uav-dji-mini-4-pro-mini-4-pro",
+          "uav-dji-mini-4k-mini-4k",
+          "uav-dji-mini-5-pro-mini-5-pro",
+          "uav-dji-neo-neo",
+          "uav-dji-phantom-4-rtk-phantom-4-rtk"
+        ]
+      },
+      "slug": "dji",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Doroni",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-doroni-h1-x-h1-x"
+        ]
+      },
+      "slug": "doroni",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Dronamics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Bulgaria": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-dronamics-black-swan-black-swan"
+        ]
+      },
+      "slug": "dronamics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Easy Aerial",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-easy-aerial-falcon-falcon"
+        ]
+      },
+      "slug": "easy-aerial",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Edge Autonomy",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1,
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "enterprise": 1,
+          "military_tactical": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-edge-autonomy-penguin-c-penguin-c",
+          "uav-edge-autonomy-vxe30-stalker-vxe30-stalker"
+        ]
+      },
+      "slug": "edge-autonomy",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "EFT",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-eft-z50-z50"
+        ]
+      },
+      "slug": "eft",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "EHang",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ehang-vt-35-vt-35"
+        ]
+      },
+      "slug": "ehang",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "EHang Holdings",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ehang-eh216-s-eh216s"
+        ]
+      },
+      "slug": "ehang-holdings",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Elbit",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-elbit-hermes-90-hermes-90"
+        ]
+      },
+      "slug": "elbit",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Elbit Systems",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 4
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-elbit-hermes-900-kochav",
+          "uav-elbit-systems-hermes-450-hermes-450",
+          "uav-elbit-systems-skylark-3-skylark-3",
+          "uav-elbit-systems-skylark-skylark"
+        ]
+      },
+      "slug": "elbit-systems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Elroy Air",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-elroy-air-chaparral-chaparral"
+        ]
+      },
+      "slug": "elroy-air",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ENICS",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-enics-eleron-3-eleron-3"
+        ]
+      },
+      "slug": "enics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Eve Air Mobility",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Brazil": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-eve-air-mobility-eve-eve"
+        ]
+      },
+      "slug": "eve-air-mobility",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "FlightWave",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-flightwave-edge-130-edge-130"
+        ]
+      },
+      "slug": "flightwave",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Flock Safety",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "public_safety": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-flock-safety-aerodome-aerodome"
+        ]
+      },
+      "slug": "flock-safety",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Flyability",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Switzerland": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-flyability-elios-3-elios-3"
+        ]
+      },
+      "slug": "flyability",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Flytrex",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-flytrex-sky2-sky2"
+        ]
+      },
+      "slug": "flytrex",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Fortem Technologies",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "counter_uas": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-fortem-dronehunter-f700-f700",
+          "uav-fortem-technologies-dronehunter-f700-dronehunter-f700"
+        ]
+      },
+      "slug": "fortem-technologies",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Freefly",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "cinema": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-freefly-alta-8-alta-8",
+          "uav-freefly-alta-8-pro-alta-8-pro"
+        ]
+      },
+      "slug": "freefly",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Freefly Systems",
+      "rollup": {
+        "blue_uas_count": 2,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 2,
+        "segments": {
+          "cinema": 1,
+          "defense_government": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-freefly-systems-alta-x",
+          "uav-freefly-systems-astro-astro"
+        ]
+      },
+      "slug": "freefly-systems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "General Atomics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1,
+          "USA": 6
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 5
+        },
+        "uav_count": 7,
+        "uav_slugs": [
+          "uav-general-atomics-gray-eagle-gray-eagle",
+          "uav-general-atomics-mojave-mojave",
+          "uav-general-atomics-mq-1-predator-mq-1-predator",
+          "uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
+          "uav-general-atomics-mq-20-avenger-mq-20-avenger",
+          "uav-general-atomics-mq-9-reaper-mq-9-reaper",
+          "uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian"
+        ]
+      },
+      "slug": "general-atomics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "GEPRC",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "fpv": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-geprc-cinebot30-cinebot30",
+          "uav-geprc-mark5-mark5"
+        ]
+      },
+      "slug": "geprc",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Guardian Agriculture",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-guardian-agriculture-sc1-sc1"
+        ]
+      },
+      "slug": "guardian-agriculture",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "HESA",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Iran": 6
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 1,
+          "military_tactical": 5
+        },
+        "uav_count": 6,
+        "uav_slugs": [
+          "uav-hesa-ababil-3-ababil-3",
+          "uav-hesa-kaman-22-kaman-22",
+          "uav-hesa-karrar-karrar",
+          "uav-hesa-shahed-129-shahed-129",
+          "uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
+          "uav-hesa-shahed-136-shahed-136"
+        ]
+      },
+      "slug": "hesa",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Heven AeroTech",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-heven-aerotech-z1-z1"
+        ]
+      },
+      "slug": "heven-aerotech",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Holy Stone",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-holy-stone-hs720-hs720"
+        ]
+      },
+      "slug": "holy-stone",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Hongdu",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-hongdu-gj-11-sharp-sword-gj-11-sharp-sword"
+        ]
+      },
+      "slug": "hongdu",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Hubsan",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-hubsan-zino-mini-pro-zino-mini-pro"
+        ]
+      },
+      "slug": "hubsan",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Hylio",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-hylio-ag-130-ag-130",
+          "uav-hylio-ag-272-ag-272"
+        ]
+      },
+      "slug": "hylio",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "IAI",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 6
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 1,
+          "military_tactical": 5
+        },
+        "uav_count": 6,
+        "uav_slugs": [
+          "uav-iai-bird-eye-650d-bird-eye-650d",
+          "uav-iai-heron-heron",
+          "uav-iai-heron-tp-heron-tp",
+          "uav-iai-mini-harpy-mini-harpy",
+          "uav-iai-panther-panther",
+          "uav-iai-searcher-mk-ii-searcher-mk-ii"
+        ]
+      },
+      "slug": "iai",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ideaForge",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "India": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ideaforge-switch-switch"
+        ]
+      },
+      "slug": "ideaforge",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "iFlight",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "fpv": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
+          "uav-iflight-nazgul5-v3-nazgul5-v3"
+        ]
+      },
+      "slug": "iflight",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Insitu",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-insitu-scaneagle-scaneagle"
+        ]
+      },
+      "slug": "insitu",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Inspired Flight",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1,
+          "enterprise": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-inspired-flight-if1200-a",
+          "uav-inspired-flight-if800-tomcat"
+        ]
+      },
+      "slug": "inspired-flight",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Israel Aerospace Industries",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 1,
+          "military_tactical": 2
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-iai-harop-harop",
+          "uav-israel-aerospace-industries-heron-heron",
+          "uav-israel-aerospace-industries-heron-tp-heron-tp",
+          "uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii"
+        ]
+      },
+      "slug": "israel-aerospace-industries",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Jetson",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Sweden": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-jetson-one-one"
+        ]
+      },
+      "slug": "jetson",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Joby Aviation",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-joby-aviation-s4-s4"
+        ]
+      },
+      "slug": "joby-aviation",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "JOUAV",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "surveying": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-jouav-cw-15-cw15",
+          "uav-jouav-cw-25-cw-25"
+        ]
+      },
+      "slug": "jouav",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Korean Air",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "South Korea": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-korean-air-kus-fs-rq-105k"
+        ]
+      },
+      "slug": "korean-air",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Kratos",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-kratos-xq-58-valkyrie-xq-58-valkyrie"
+        ]
+      },
+      "slug": "kratos",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Kronshtadt",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-kronshtadt-orion-orion"
+        ]
+      },
+      "slug": "kronshtadt",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "L3Harris",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-l3harris-fvr-90-fvr-90"
+        ]
+      },
+      "slug": "l3harris",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Leonardo",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Italy": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-leonardo-falco-xplorer-falco-xplorer"
+        ]
+      },
+      "slug": "leonardo",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Lilium",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Germany": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-lilium-jet-jet"
+        ]
+      },
+      "slug": "lilium",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Lockheed Martin",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1,
+          "public_safety": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-lockheed-martin-indago-4-indago-4",
+          "uav-lockheed-martin-stalker-vxe-stalker-vxe"
+        ]
+      },
+      "slug": "lockheed-martin",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Manna Aero",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Ireland": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-manna-aero-air-delivery-air-delivery",
+          "uav-manna-aero-manna-manna"
+        ]
+      },
+      "slug": "manna-aero",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "MARSS",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Monaco": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "counter_uas": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-marss-interceptor-mr-interceptor-mr"
+        ]
+      },
+      "slug": "marss",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Matternet",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-matternet-m2-m2"
+        ]
+      },
+      "slug": "matternet",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Meituan",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-meituan-delivery-drone-delivery-drone"
+        ]
+      },
+      "slug": "meituan",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Microdrones",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Germany": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "surveying": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-microdrones-md4-1000-md4-1000",
+          "uav-microdrones-mdlidar-3000-mdlidar-3000"
+        ]
+      },
+      "slug": "microdrones",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ModalAI",
+      "rollup": {
+        "blue_uas_count": 2,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 2,
+        "segments": {
+          "defense_government": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-modalai-vision-fpv-seeker",
+          "uav-modalai-vision-fpv-stinger"
+        ]
+      },
+      "slug": "modalai",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Neros",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "enterprise": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-neros-archer-archer"
+        ]
+      },
+      "slug": "neros",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Northrop Grumman",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 4
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
+          "uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
+          "uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
+          "uav-northrop-grumman-x-47b-x-47b"
+        ]
+      },
+      "slug": "northrop-grumman",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Parrot",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "France": 2
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-parrot-anafi-ai",
+          "uav-parrot-anafi-usa"
+        ]
+      },
+      "slug": "parrot",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Percepto",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-percepto-air-max-air-max"
+        ]
+      },
+      "slug": "percepto",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Performance Drone Works",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-performance-drone-works-c100-c100"
+        ]
+      },
+      "slug": "performance-drone-works",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Pivotal",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-pivotal-helix-helix"
+        ]
+      },
+      "slug": "pivotal",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Potensic",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-potensic-atom-2-atom-2",
+          "uav-potensic-atom-atom"
+        ]
+      },
+      "slug": "potensic",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "PowerVision",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-powervision-poweregg-x-poweregg-x"
+        ]
+      },
+      "slug": "powervision",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "PTDI",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Indonesia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ptdi-elang-hitam-elang-hitam"
+        ]
+      },
+      "slug": "ptdi",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Pyka",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-pyka-pelican-2-pelican-2",
+          "uav-pyka-pelican-pelican"
+        ]
+      },
+      "slug": "pyka",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Qods",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Iran": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-qods-mohajer-2-mohajer-2",
+          "uav-qods-mohajer-6-mohajer-6"
+        ]
+      },
+      "slug": "qods",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Qods Aviation",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Iran": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-qods-aviation-mohajer-6-mohajer-6"
+        ]
+      },
+      "slug": "qods-aviation",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Quantum Systems",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "Germany": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2,
+          "surveying": 2
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-quantum-systems-reliant-reliant",
+          "uav-quantum-systems-trinity-f90-plus-trinity-f90-plus",
+          "uav-quantum-systems-trinity-pro-trinity-pro",
+          "uav-quantum-vector-vector-ai"
+        ]
+      },
+      "slug": "quantum-systems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Raytheon",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "counter_uas": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-raytheon-coyote-block-2-coyote-block-2"
+        ]
+      },
+      "slug": "raytheon",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Real-time Robotics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Vietnam": 3
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-real-time-robotics-hera-hera",
+          "uav-real-time-robotics-hera-hera-plus",
+          "uav-real-time-robotics-vega-vega"
+        ]
+      },
+      "slug": "real-time-robotics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Red Cat",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "enterprise": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-red-cat-black-widow-black-widow"
+        ]
+      },
+      "slug": "red-cat",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "RV Connex",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Thailand": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-rv-connex-sky-scout-sky-scout"
+        ]
+      },
+      "slug": "rv-connex",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Sabrewing",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-sabrewing-rhaegal-rhaegal"
+        ]
+      },
+      "slug": "sabrewing",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Safran",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "France": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-safran-patroller-patroller"
+        ]
+      },
+      "slug": "safran",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Schiebel",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Austria": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-schiebel-camcopter-s-100-camcopter-s-100"
+        ]
+      },
+      "slug": "schiebel",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "senseFly",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Switzerland": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "surveying": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-sensefly-ebee-x-ebee-x"
+        ]
+      },
+      "slug": "sensefly",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Shield AI",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "enterprise": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-shield-ai-v-bat-128-v-bat-128",
+          "uav-shield-ai-v-bat-v-bat"
+        ]
+      },
+      "slug": "shield-ai",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Skydio",
+      "rollup": {
+        "blue_uas_count": 2,
+        "countries": {
+          "US": 1,
+          "USA": 3
+        },
+        "ndaa_count": 2,
+        "segments": {
+          "defense_government": 1,
+          "enterprise": 2
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-skydio-skydio-2-plus-skydio-2-plus",
+          "uav-skydio-x10-x10",
+          "uav-skydio-x10-x10d",
+          "uav-skydio-x2d-x2d"
+        ]
+      },
+      "slug": "skydio",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Skyfront",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-skyfront-perimeter-8-perimeter-8"
+        ]
+      },
+      "slug": "skyfront",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Sony",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Japan": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "cinema": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-sony-airpeak-s1-s1"
+        ]
+      },
+      "slug": "sony",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Special Technology Center",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-special-technology-center-orlan-10-orlan-10"
+        ]
+      },
+      "slug": "special-technology-center",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ST Engineering",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Singapore": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-st-engineering-skyblade-360-skyblade-360"
+        ]
+      },
+      "slug": "st-engineering",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "STM",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Turkey": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-stm-alpagu-alpagu",
+          "uav-stm-kargu-kargu"
+        ]
+      },
+      "slug": "stm",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Sukhoi",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-sukhoi-s-70-okhotnik-s-70-okhotnik"
+        ]
+      },
+      "slug": "sukhoi",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Supernal",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-supernal-s-a2-s-a2"
+        ]
+      },
+      "slug": "supernal",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Swoop Aero",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Australia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-swoop-aero-kite-kite"
+        ]
+      },
+      "slug": "swoop-aero",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "TAI",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Turkey": 3
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-tai-aksungur-aksungur",
+          "uav-tai-anka-3-anka-3",
+          "uav-tai-anka-anka"
+        ]
+      },
+      "slug": "tai",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Teal",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "public_safety": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-teal-golden-eagle-golden-eagle"
+        ]
+      },
+      "slug": "teal",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Teal Drones",
+      "rollup": {
+        "blue_uas_count": 2,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 2,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-teal-drones-golden-eagle-golden-eagle",
+          "uav-teal-drones-teal-2"
+        ]
+      },
+      "slug": "teal-drones",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Teledyne FLIR",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 1,
+          "USA": 2
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1,
+          "military_tactical": 1,
+          "public_safety": 1
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-teledyne-flir-black-hornet-4-black-hornet-4",
+          "uav-teledyne-flir-siras-siras",
+          "uav-teledyne-flir-skyranger-r70"
+        ]
+      },
+      "slug": "teledyne-flir",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Textron",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-textron-aerosonde-aerosonde",
+          "uav-textron-rq-7-shadow-rq-7-shadow"
+        ]
+      },
+      "slug": "textron",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Textron Systems",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-textron-systems-aerosonde-aerosonde"
+        ]
+      },
+      "slug": "textron-systems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Thales",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "France": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-thales-spy-ranger-spy-ranger"
+        ]
+      },
+      "slug": "thales",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Threod Systems",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Estonia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-threod-systems-eos-c-eos-c"
+        ]
+      },
+      "slug": "threod-systems",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Topxgun",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-topxgun-fp600-fp600"
+        ]
+      },
+      "slug": "topxgun",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "UMS Skeldar",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Sweden": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-ums-skeldar-v-200-v-200"
+        ]
+      },
+      "slug": "ums-skeldar",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "UVision",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Israel": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-uvision-hero-120-hero-120",
+          "uav-uvision-hero-30-hero-30"
+        ]
+      },
+      "slug": "uvision",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "UZGA",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-uzga-forpost-r-forpost-r"
+        ]
+      },
+      "slug": "uzga",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Vantage Robotics",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "US": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "defense_government": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-vantage-robotics-vesper-vesper"
+        ]
+      },
+      "slug": "vantage-robotics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Vertical Aerospace",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "UK": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-vertical-aerospace-vx4-vx4"
+        ]
+      },
+      "slug": "vertical-aerospace",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Viettel",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Vietnam": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "military_tactical": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-viettel-vu-male-vu-male",
+          "uav-viettel-vu-r70-vu-r70"
+        ]
+      },
+      "slug": "viettel",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Volocopter",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Germany": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-volocopter-volocity-volocity",
+          "uav-volocopter-voloregion-voloregion"
+        ]
+      },
+      "slug": "volocopter",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Walkera",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-walkera-vitus-320-vitus-320",
+          "uav-walkera-vitus-vitus"
+        ]
+      },
+      "slug": "walkera",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Watts Innovations",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-watts-innovations-prism-sky-prism-sky"
+        ]
+      },
+      "slug": "watts-innovations",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "WB Group",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Poland": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-wb-group-warmate-warmate"
+        ]
+      },
+      "slug": "wb-group",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Wing",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-wing-delivery-aircraft-delivery-aircraft",
+          "uav-wing-delivery-drone-delivery-drone"
+        ]
+      },
+      "slug": "wing",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Wingcopter",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Germany": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-wingcopter-w198-198"
+        ]
+      },
+      "slug": "wingcopter",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Wingtra",
+      "rollup": {
+        "blue_uas_count": 1,
+        "countries": {
+          "Switzerland": 1
+        },
+        "ndaa_count": 1,
+        "segments": {
+          "surveying": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-wingtra-wingtraone-gen-ii"
+        ]
+      },
+      "slug": "wingtra",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Wisk Aero",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "passenger_uam": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-wisk-aero-generation-6-generation-6"
+        ]
+      },
+      "slug": "wisk-aero",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "XAG",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "agriculture": 4
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-xag-p100-p100",
+          "uav-xag-p100-pro-p100pro",
+          "uav-xag-v40-v40",
+          "uav-xag-v50-v50"
+        ]
+      },
+      "slug": "xag",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Xiaomi (FIMI)",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 1
+        },
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-xiaomi-fimi-x8-se-x8-se"
+        ]
+      },
+      "slug": "xiaomi-fimi",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "XPeng AeroHT",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 1
+        },
+        "ndaa_count": 0,
+        "segments": {},
+        "uav_count": 1,
+        "uav_slugs": [
+          "uav-xpeng-aeroht-x2-x2"
+        ]
+      },
+      "slug": "xpeng-aeroht",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Yuneec",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 4
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 3,
+          "public_safety": 1
+        },
+        "uav_count": 4,
+        "uav_slugs": [
+          "uav-yuneec-h520e-h520e",
+          "uav-yuneec-mantis-q-mantis-q",
+          "uav-yuneec-typhoon-h-plus-typhoon-h-plus",
+          "uav-yuneec-typhoon-h3-typhoon-h3"
+        ]
+      },
+      "slug": "yuneec",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "ZALA Aero",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "Russia": 3
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "loitering_munition": 1,
+          "military_tactical": 2
+        },
+        "uav_count": 3,
+        "uav_slugs": [
+          "uav-zala-aero-421-16e-421-16e",
+          "uav-zala-aero-lancet-3-lancet-3",
+          "uav-zala-aero-lancet-lancet"
+        ]
+      },
+      "slug": "zala-aero",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Zero Zero Robotics",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "China": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "consumer": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-zero-zero-robotics-hoverair-x1-pro-hoverair-x1-pro",
+          "uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax"
+        ]
+      },
+      "slug": "zero-zero-robotics",
+      "website": null
+    },
+    {
+      "contact_email": null,
+      "contact_phone": null,
+      "entity_type": "company",
+      "founded_year": null,
+      "founder": null,
+      "hq_address": null,
+      "hq_city": null,
+      "hq_country": null,
+      "legal_name": null,
+      "name": "Zipline",
+      "rollup": {
+        "blue_uas_count": 0,
+        "countries": {
+          "USA": 2
+        },
+        "ndaa_count": 0,
+        "segments": {
+          "delivery": 2
+        },
+        "uav_count": 2,
+        "uav_slugs": [
+          "uav-zipline-p2-p2",
+          "uav-zipline-platform-2-platform-2"
+        ]
+      },
+      "slug": "zipline",
+      "website": null
     }
   ],
   "entity_types": [

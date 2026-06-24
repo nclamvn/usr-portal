@@ -37,6 +37,16 @@ def field_cells(entity):
 ENTITY_TYPES = {"uav", "company", "technology"}
 REQUIRED_KEYS = {"uav": ["canonical_id"], "company": ["slug", "name"], "technology": ["slug", "term"]}
 
+# P1.1 — company sourced attributes. When present each MUST be honest-null, a sourced cell
+# {value,source,tier(A/B/C)}, or a disputed set {disputed:[≥2 claims]} — never a bare value.
+COMPANY_SOURCED = ["legal_name", "founded_year", "hq_country", "hq_city", "hq_address",
+                   "website", "founder", "contact_email", "contact_phone"]
+TIERS = {"A", "B", "C"}
+
+def cslug(s):
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
+
 def etype(e):
     # absent entity_type -> "uav" (backward-compat with any site-data/1 reader/producer)
     return e.get("entity_type", "uav")
@@ -100,6 +110,36 @@ def main():
                     if not (st=="disputed" or fc.get("disputed")) or len(claim_values(fc))<len(claim_values(mcell)):
                         fails.append('DISPUTED_CLAIM_DROP: %s.%s registry keeps %d claims, site keeps %d'
                                      %(cid,fname,len(claim_values(mcell)),len(claim_values(fc))))
+
+    # 3c) COMPANY entities (P1.1) — rollup two-way (derived == live) + sourced-attr shape
+    uav_by_mslug=collections.Counter(
+        cslug((e.get("manufacturer") or {}).get("value"))
+        for e in uav_ents if (e.get("manufacturer") or {}).get("value"))
+    for e in ents:
+        if etype(e)!="company": continue
+        slug=e.get("slug")
+        roll=e.get("rollup") or {}
+        live=uav_by_mslug.get(slug,0)
+        if roll.get("uav_count")!=live:                       # rollup must match live UAV data
+            fails.append("ROLLUP: company %s uav_count=%r != live %d (derived must be live)"%(slug,roll.get("uav_count"),live))
+        if sorted(roll.get("uav_slugs") or [])!=(roll.get("uav_slugs") or []):
+            fails.append("ROLLUP: company %s uav_slugs not sorted (non-idempotent)"%slug)
+        for a in COMPANY_SOURCED:                             # sourced-attr shape (no bare values)
+            if a not in e: continue
+            v=e[a]
+            if v is None: continue                            # honest-null OK
+            if isinstance(v,dict) and "disputed" in v:        # invariant #10 on company attrs
+                claims=[c for c in (v.get("disputed") or []) if c.get("value") is not None]
+                if len(claims)<2:
+                    fails.append("DISPUTED_CLAIM_DROP: company %s.%s disputed keeps %d claim(s) (>=2)"%(slug,a,len(claims)))
+                for c in (v.get("disputed") or []):
+                    if not c.get("source") or c.get("tier") not in TIERS:
+                        fails.append("SOURCED_ATTR: company %s.%s claim missing source/tier"%(slug,a))
+            elif isinstance(v,dict) and "value" in v:         # sourced cell — must carry source+tier
+                if not v.get("source") or v.get("tier") not in TIERS:
+                    fails.append("SOURCED_ATTR: company %s.%s has value but no source/tier (bare value forbidden)"%(slug,a))
+            else:
+                fails.append("SOURCED_ATTR: company %s.%s invalid shape (%s)"%(slug,a,type(v).__name__))
 
     # 4) aggregates computed-live (CONSTRAINT 8) — UAV-scoped (schema/2)
     agg = S.get("aggregates") if isinstance(S,dict) else None

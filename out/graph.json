@@ -5,9 +5,9 @@
     "edges": 882,
     "by_node": {
       "article": 6,
+      "entity:company": 142,
       "entity:uav": 302,
       "tax:country": 30,
-      "tax:manufacturer": 142,
       "tax:segment": 13,
       "term": 5
     },
@@ -26,6 +26,148 @@
     "article:rtk-bai-toan-dinh-vi-gay-nhieu",
     "article:truy-nguyen-loi-the-uav",
     "article:uav-nong-nghiep-diem-nghen-hau-mai",
+    "entity:company:a2z-drone-delivery",
+    "entity:company:acecore",
+    "entity:company:acsl",
+    "entity:company:aeronautics",
+    "entity:company:aerovel",
+    "entity:company:aerovironment",
+    "entity:company:ageagle",
+    "entity:company:airbus",
+    "entity:company:amazon-prime-air",
+    "entity:company:anduril",
+    "entity:company:anduril-industries",
+    "entity:company:antwork",
+    "entity:company:archer-aviation",
+    "entity:company:ascent-aerosystems",
+    "entity:company:asylon",
+    "entity:company:autel",
+    "entity:company:autel-robotics",
+    "entity:company:autoflight",
+    "entity:company:avic",
+    "entity:company:baykar",
+    "entity:company:beta-technologies",
+    "entity:company:betafpv",
+    "entity:company:boeing",
+    "entity:company:boeing-insitu",
+    "entity:company:brinc",
+    "entity:company:caig",
+    "entity:company:casc",
+    "entity:company:censys-technologies",
+    "entity:company:cleo-robotics",
+    "entity:company:delair",
+    "entity:company:dji",
+    "entity:company:doroni",
+    "entity:company:dronamics",
+    "entity:company:easy-aerial",
+    "entity:company:edge-autonomy",
+    "entity:company:eft",
+    "entity:company:ehang",
+    "entity:company:ehang-holdings",
+    "entity:company:elbit",
+    "entity:company:elbit-systems",
+    "entity:company:elroy-air",
+    "entity:company:enics",
+    "entity:company:eve-air-mobility",
+    "entity:company:flightwave",
+    "entity:company:flock-safety",
+    "entity:company:flyability",
+    "entity:company:flytrex",
+    "entity:company:fortem-technologies",
+    "entity:company:freefly",
+    "entity:company:freefly-systems",
+    "entity:company:general-atomics",
+    "entity:company:geprc",
+    "entity:company:guardian-agriculture",
+    "entity:company:hesa",
+    "entity:company:heven-aerotech",
+    "entity:company:holy-stone",
+    "entity:company:hongdu",
+    "entity:company:hubsan",
+    "entity:company:hylio",
+    "entity:company:iai",
+    "entity:company:ideaforge",
+    "entity:company:iflight",
+    "entity:company:insitu",
+    "entity:company:inspired-flight",
+    "entity:company:israel-aerospace-industries",
+    "entity:company:jetson",
+    "entity:company:joby-aviation",
+    "entity:company:jouav",
+    "entity:company:korean-air",
+    "entity:company:kratos",
+    "entity:company:kronshtadt",
+    "entity:company:l3harris",
+    "entity:company:leonardo",
+    "entity:company:lilium",
+    "entity:company:lockheed-martin",
+    "entity:company:manna-aero",
+    "entity:company:marss",
+    "entity:company:matternet",
+    "entity:company:meituan",
+    "entity:company:microdrones",
+    "entity:company:modalai",
+    "entity:company:neros",
+    "entity:company:northrop-grumman",
+    "entity:company:parrot",
+    "entity:company:percepto",
+    "entity:company:performance-drone-works",
+    "entity:company:pivotal",
+    "entity:company:potensic",
+    "entity:company:powervision",
+    "entity:company:ptdi",
+    "entity:company:pyka",
+    "entity:company:qods",
+    "entity:company:qods-aviation",
+    "entity:company:quantum-systems",
+    "entity:company:raytheon",
+    "entity:company:real-time-robotics",
+    "entity:company:red-cat",
+    "entity:company:rv-connex",
+    "entity:company:sabrewing",
+    "entity:company:safran",
+    "entity:company:schiebel",
+    "entity:company:sensefly",
+    "entity:company:shield-ai",
+    "entity:company:skydio",
+    "entity:company:skyfront",
+    "entity:company:sony",
+    "entity:company:special-technology-center",
+    "entity:company:st-engineering",
+    "entity:company:stm",
+    "entity:company:sukhoi",
+    "entity:company:supernal",
+    "entity:company:swoop-aero",
+    "entity:company:tai",
+    "entity:company:teal",
+    "entity:company:teal-drones",
+    "entity:company:teledyne-flir",
+    "entity:company:textron",
+    "entity:company:textron-systems",
+    "entity:company:thales",
+    "entity:company:threod-systems",
+    "entity:company:topxgun",
+    "entity:company:ums-skeldar",
+    "entity:company:uvision",
+    "entity:company:uzga",
+    "entity:company:vantage-robotics",
+    "entity:company:vertical-aerospace",
+    "entity:company:viettel",
+    "entity:company:volocopter",
+    "entity:company:walkera",
+    "entity:company:watts-innovations",
+    "entity:company:wb-group",
+    "entity:company:wing",
+    "entity:company:wingcopter",
+    "entity:company:wingtra",
+    "entity:company:wisk-aero",
+    "entity:company:xag",
+    "entity:company:xiaomi-fimi",
+    "entity:company:xpeng-aeroht",
+    "entity:company:yuneec",
+    "entity:company:zala-aero",
+    "entity:company:zero-zero-robotics",
+    "entity:company:zipline",
     "entity:uav:uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
     "entity:uav:uav-acecore-neo-neo",
     "entity:uav:uav-acecore-zoe-zoe",
@@ -358,148 +500,6 @@
     "tax:country:USA",
     "tax:country:United Kingdom",
     "tax:country:Vietnam",
-    "tax:manufacturer:A2Z Drone Delivery",
-    "tax:manufacturer:ACSL",
-    "tax:manufacturer:AVIC",
-    "tax:manufacturer:Acecore",
-    "tax:manufacturer:AeroVironment",
-    "tax:manufacturer:Aeronautics",
-    "tax:manufacturer:Aerovel",
-    "tax:manufacturer:AgEagle",
-    "tax:manufacturer:Airbus",
-    "tax:manufacturer:Amazon Prime Air",
-    "tax:manufacturer:Anduril",
-    "tax:manufacturer:Anduril Industries",
-    "tax:manufacturer:Antwork",
-    "tax:manufacturer:Archer Aviation",
-    "tax:manufacturer:Ascent AeroSystems",
-    "tax:manufacturer:Asylon",
-    "tax:manufacturer:Autel",
-    "tax:manufacturer:Autel Robotics",
-    "tax:manufacturer:AutoFlight",
-    "tax:manufacturer:BRINC",
-    "tax:manufacturer:Baykar",
-    "tax:manufacturer:Beta Technologies",
-    "tax:manufacturer:BetaFPV",
-    "tax:manufacturer:Boeing",
-    "tax:manufacturer:Boeing Insitu",
-    "tax:manufacturer:CAIG",
-    "tax:manufacturer:CASC",
-    "tax:manufacturer:Censys Technologies",
-    "tax:manufacturer:Cleo Robotics",
-    "tax:manufacturer:DJI",
-    "tax:manufacturer:Delair",
-    "tax:manufacturer:Doroni",
-    "tax:manufacturer:Dronamics",
-    "tax:manufacturer:EFT",
-    "tax:manufacturer:EHang",
-    "tax:manufacturer:EHang Holdings",
-    "tax:manufacturer:ENICS",
-    "tax:manufacturer:Easy Aerial",
-    "tax:manufacturer:Edge Autonomy",
-    "tax:manufacturer:Elbit",
-    "tax:manufacturer:Elbit Systems",
-    "tax:manufacturer:Elroy Air",
-    "tax:manufacturer:Eve Air Mobility",
-    "tax:manufacturer:FlightWave",
-    "tax:manufacturer:Flock Safety",
-    "tax:manufacturer:Flyability",
-    "tax:manufacturer:Flytrex",
-    "tax:manufacturer:Fortem Technologies",
-    "tax:manufacturer:Freefly",
-    "tax:manufacturer:Freefly Systems",
-    "tax:manufacturer:GEPRC",
-    "tax:manufacturer:General Atomics",
-    "tax:manufacturer:Guardian Agriculture",
-    "tax:manufacturer:HESA",
-    "tax:manufacturer:Heven AeroTech",
-    "tax:manufacturer:Holy Stone",
-    "tax:manufacturer:Hongdu",
-    "tax:manufacturer:Hubsan",
-    "tax:manufacturer:Hylio",
-    "tax:manufacturer:IAI",
-    "tax:manufacturer:Insitu",
-    "tax:manufacturer:Inspired Flight",
-    "tax:manufacturer:Israel Aerospace Industries",
-    "tax:manufacturer:JOUAV",
-    "tax:manufacturer:Jetson",
-    "tax:manufacturer:Joby Aviation",
-    "tax:manufacturer:Korean Air",
-    "tax:manufacturer:Kratos",
-    "tax:manufacturer:Kronshtadt",
-    "tax:manufacturer:L3Harris",
-    "tax:manufacturer:Leonardo",
-    "tax:manufacturer:Lilium",
-    "tax:manufacturer:Lockheed Martin",
-    "tax:manufacturer:MARSS",
-    "tax:manufacturer:Manna Aero",
-    "tax:manufacturer:Matternet",
-    "tax:manufacturer:Meituan",
-    "tax:manufacturer:Microdrones",
-    "tax:manufacturer:ModalAI",
-    "tax:manufacturer:Neros",
-    "tax:manufacturer:Northrop Grumman",
-    "tax:manufacturer:PTDI",
-    "tax:manufacturer:Parrot",
-    "tax:manufacturer:Percepto",
-    "tax:manufacturer:Performance Drone Works",
-    "tax:manufacturer:Pivotal",
-    "tax:manufacturer:Potensic",
-    "tax:manufacturer:PowerVision",
-    "tax:manufacturer:Pyka",
-    "tax:manufacturer:Qods",
-    "tax:manufacturer:Qods Aviation",
-    "tax:manufacturer:Quantum Systems",
-    "tax:manufacturer:RV Connex",
-    "tax:manufacturer:Raytheon",
-    "tax:manufacturer:Real-time Robotics",
-    "tax:manufacturer:Red Cat",
-    "tax:manufacturer:ST Engineering",
-    "tax:manufacturer:STM",
-    "tax:manufacturer:Sabrewing",
-    "tax:manufacturer:Safran",
-    "tax:manufacturer:Schiebel",
-    "tax:manufacturer:Shield AI",
-    "tax:manufacturer:Skydio",
-    "tax:manufacturer:Skyfront",
-    "tax:manufacturer:Sony",
-    "tax:manufacturer:Special Technology Center",
-    "tax:manufacturer:Sukhoi",
-    "tax:manufacturer:Supernal",
-    "tax:manufacturer:Swoop Aero",
-    "tax:manufacturer:TAI",
-    "tax:manufacturer:Teal",
-    "tax:manufacturer:Teal Drones",
-    "tax:manufacturer:Teledyne FLIR",
-    "tax:manufacturer:Textron",
-    "tax:manufacturer:Textron Systems",
-    "tax:manufacturer:Thales",
-    "tax:manufacturer:Threod Systems",
-    "tax:manufacturer:Topxgun",
-    "tax:manufacturer:UMS Skeldar",
-    "tax:manufacturer:UVision",
-    "tax:manufacturer:UZGA",
-    "tax:manufacturer:Vantage Robotics",
-    "tax:manufacturer:Vertical Aerospace",
-    "tax:manufacturer:Viettel",
-    "tax:manufacturer:Volocopter",
-    "tax:manufacturer:WB Group",
-    "tax:manufacturer:Walkera",
-    "tax:manufacturer:Watts Innovations",
-    "tax:manufacturer:Wing",
-    "tax:manufacturer:Wingcopter",
-    "tax:manufacturer:Wingtra",
-    "tax:manufacturer:Wisk Aero",
-    "tax:manufacturer:XAG",
-    "tax:manufacturer:XPeng AeroHT",
-    "tax:manufacturer:Xiaomi (FIMI)",
-    "tax:manufacturer:Yuneec",
-    "tax:manufacturer:ZALA Aero",
-    "tax:manufacturer:Zero Zero Robotics",
-    "tax:manufacturer:Zipline",
-    "tax:manufacturer:iFlight",
-    "tax:manufacturer:ideaForge",
-    "tax:manufacturer:senseFly",
     "tax:segment:agriculture",
     "tax:segment:cinema",
     "tax:segment:consumer",
@@ -577,13 +577,13 @@
     ],
     [
       "entity:uav:uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
-      "tax:country:USA",
-      "country"
+      "entity:company:a2z-drone-delivery",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
-      "tax:manufacturer:A2Z Drone Delivery",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican",
@@ -592,12 +592,17 @@
     ],
     [
       "entity:uav:uav-acecore-neo-neo",
+      "entity:company:acecore",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-acecore-neo-neo",
       "tax:country:Netherlands",
       "country"
     ],
     [
-      "entity:uav:uav-acecore-neo-neo",
-      "tax:manufacturer:Acecore",
+      "entity:uav:uav-acecore-zoe-zoe",
+      "entity:company:acecore",
       "manufacturer"
     ],
     [
@@ -606,8 +611,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-acecore-zoe-zoe",
-      "tax:manufacturer:Acecore",
+      "entity:uav:uav-acsl-acsl-pf2-acsl-pf2",
+      "entity:company:acsl",
       "manufacturer"
     ],
     [
@@ -617,13 +622,13 @@
     ],
     [
       "entity:uav:uav-acsl-acsl-pf2-acsl-pf2",
-      "tax:manufacturer:ACSL",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-acsl-acsl-pf2-acsl-pf2",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-aeronautics-aerostar-aerostar",
+      "entity:company:aeronautics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aeronautics-aerostar-aerostar",
@@ -632,13 +637,13 @@
     ],
     [
       "entity:uav:uav-aeronautics-aerostar-aerostar",
-      "tax:manufacturer:Aeronautics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-aeronautics-aerostar-aerostar",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-aeronautics-orbiter-4-orbiter-4",
+      "entity:company:aeronautics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aeronautics-orbiter-4-orbiter-4",
@@ -647,13 +652,13 @@
     ],
     [
       "entity:uav:uav-aeronautics-orbiter-4-orbiter-4",
-      "tax:manufacturer:Aeronautics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-aeronautics-orbiter-4-orbiter-4",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-aerovel-flexrotor-flexrotor",
+      "entity:company:aerovel",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovel-flexrotor-flexrotor",
@@ -662,23 +667,18 @@
     ],
     [
       "entity:uav:uav-aerovel-flexrotor-flexrotor",
-      "tax:manufacturer:Aerovel",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-aerovel-flexrotor-flexrotor",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-aerovironment-jump-20-jump-20",
-      "tax:country:US",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-jump-20-jump-20",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-jump-20-jump-20",
@@ -687,18 +687,23 @@
     ],
     [
       "entity:uav:uav-aerovironment-p550-p550",
+      "entity:company:aerovironment",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-aerovironment-p550-p550",
       "tax:country:US",
       "country"
     ],
     [
       "entity:uav:uav-aerovironment-p550-p550",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-aerovironment-p550-p550",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-aerovironment-puma-3-ae-puma-3-ae",
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-puma-3-ae-puma-3-ae",
@@ -707,23 +712,18 @@
     ],
     [
       "entity:uav:uav-aerovironment-puma-3-ae-puma-3-ae",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-aerovironment-puma-3-ae-puma-3-ae",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-aerovironment-red-dragon-red-dragon",
-      "tax:country:US",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-red-dragon-red-dragon",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-red-dragon-red-dragon",
@@ -732,13 +732,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-11-raven-rq-11b",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-rq-11-raven-rq-11b",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-rq-11-raven-rq-11b",
@@ -747,13 +747,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-12-wasp-rq-12a",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-rq-12-wasp-rq-12a",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-rq-12-wasp-rq-12a",
@@ -762,13 +762,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-le",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-le",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-le",
@@ -777,13 +777,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-rq-20b",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-rq-20b",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-rq-20-puma-rq-20b",
@@ -792,13 +792,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-10c",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-10c",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-10c",
@@ -807,13 +807,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-20",
-      "tax:country:USA",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-20",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-300-block-20",
@@ -822,13 +822,13 @@
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-600-switchblade-600",
-      "tax:country:US",
-      "country"
+      "entity:company:aerovironment",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-600-switchblade-600",
-      "tax:manufacturer:AeroVironment",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-aerovironment-switchblade-600-switchblade-600",
@@ -837,18 +837,23 @@
     ],
     [
       "entity:uav:uav-ageagle-ebee-tac",
+      "entity:company:ageagle",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-ageagle-ebee-tac",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-ageagle-ebee-tac",
-      "tax:manufacturer:AgEagle",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-ageagle-ebee-tac",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-ageagle-ebee-vision-ebee-vision",
+      "entity:company:ageagle",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ageagle-ebee-vision-ebee-vision",
@@ -857,13 +862,13 @@
     ],
     [
       "entity:uav:uav-ageagle-ebee-vision-ebee-vision",
-      "tax:manufacturer:AgEagle",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-ageagle-ebee-vision-ebee-vision",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-ageagle-ebee-x-ebee-x",
+      "entity:company:ageagle",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ageagle-ebee-x-ebee-x",
@@ -872,38 +877,38 @@
     ],
     [
       "entity:uav:uav-ageagle-ebee-x-ebee-x",
-      "tax:manufacturer:AgEagle",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-ageagle-ebee-x-ebee-x",
       "tax:segment:enterprise",
       "segment"
     ],
     [
       "entity:uav:uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
-      "tax:country:France",
-      "country"
+      "entity:company:airbus",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
-      "tax:manufacturer:Airbus",
+      "tax:country:France",
+      "country"
+    ],
+    [
+      "entity:uav:uav-airbus-vsr700-vsr700",
+      "entity:company:airbus",
       "manufacturer"
     ],
     [
       "entity:uav:uav-airbus-vsr700-vsr700",
       "tax:country:France",
       "country"
-    ],
-    [
-      "entity:uav:uav-airbus-vsr700-vsr700",
-      "tax:manufacturer:Airbus",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-airbus-vsr700-vsr700",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-airbus-zephyr-zephyr",
+      "entity:company:airbus",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-airbus-zephyr-zephyr",
@@ -912,23 +917,18 @@
     ],
     [
       "entity:uav:uav-airbus-zephyr-zephyr",
-      "tax:manufacturer:Airbus",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-airbus-zephyr-zephyr",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-amazon-prime-air-mk30-mk30",
-      "tax:country:USA",
-      "country"
+      "entity:company:amazon-prime-air",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-amazon-prime-air-mk30-mk30",
-      "tax:manufacturer:Amazon Prime Air",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-amazon-prime-air-mk30-mk30",
@@ -937,13 +937,13 @@
     ],
     [
       "entity:uav:uav-anduril-anvil-anvil",
-      "tax:country:USA",
-      "country"
+      "entity:company:anduril",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-anvil-anvil",
-      "tax:manufacturer:Anduril",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-anduril-anvil-anvil",
@@ -952,13 +952,13 @@
     ],
     [
       "entity:uav:uav-anduril-fury-fury",
-      "tax:country:USA",
-      "country"
+      "entity:company:anduril",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-fury-fury",
-      "tax:manufacturer:Anduril",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-anduril-fury-fury",
@@ -967,13 +967,13 @@
     ],
     [
       "entity:uav:uav-anduril-ghost-4-ghost-4",
-      "tax:country:USA",
-      "country"
+      "entity:company:anduril",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-ghost-4-ghost-4",
-      "tax:manufacturer:Anduril",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-anduril-ghost-4-ghost-4",
@@ -982,18 +982,23 @@
     ],
     [
       "entity:uav:uav-anduril-industries-altius-600-altius-600",
+      "entity:company:anduril-industries",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-anduril-industries-altius-600-altius-600",
       "tax:country:US",
       "country"
     ],
     [
       "entity:uav:uav-anduril-industries-altius-600-altius-600",
-      "tax:manufacturer:Anduril Industries",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-anduril-industries-altius-600-altius-600",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
+      "entity:company:anduril-industries",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
@@ -1002,13 +1007,13 @@
     ],
     [
       "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
-      "tax:manufacturer:Anduril Industries",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-anduril-industries-bolt-m-bolt-m",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
+      "entity:company:anduril-industries",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
@@ -1017,28 +1022,28 @@
     ],
     [
       "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
-      "tax:manufacturer:Anduril Industries",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-anduril-industries-ghost-x-ghost-x",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-anduril-roadrunner-m-roadrunner-m",
+      "entity:company:anduril",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-roadrunner-m-roadrunner-m",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-anduril-roadrunner-m-roadrunner-m",
-      "tax:manufacturer:Anduril",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-anduril-roadrunner-m-roadrunner-m",
       "tax:segment:counter_uas",
       "segment"
+    ],
+    [
+      "entity:uav:uav-antwork-tr9-tr9",
+      "entity:company:antwork",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-antwork-tr9-tr9",
@@ -1047,23 +1052,18 @@
     ],
     [
       "entity:uav:uav-antwork-tr9-tr9",
-      "tax:manufacturer:Antwork",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-antwork-tr9-tr9",
       "tax:segment:delivery",
       "segment"
     ],
     [
       "entity:uav:uav-archer-aviation-midnight-midnight",
-      "tax:country:USA",
-      "country"
+      "entity:company:archer-aviation",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-archer-aviation-midnight-midnight",
-      "tax:manufacturer:Archer Aviation",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-archer-aviation-midnight-midnight",
@@ -1072,13 +1072,13 @@
     ],
     [
       "entity:uav:uav-ascent-aerosystems-spirit-spirit",
-      "tax:country:USA",
-      "country"
+      "entity:company:ascent-aerosystems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ascent-aerosystems-spirit-spirit",
-      "tax:manufacturer:Ascent AeroSystems",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-ascent-aerosystems-spirit-spirit",
@@ -1087,13 +1087,13 @@
     ],
     [
       "entity:uav:uav-asylon-dronesentry-dronesentry",
-      "tax:country:US",
-      "country"
+      "entity:company:asylon",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-asylon-dronesentry-dronesentry",
-      "tax:manufacturer:Asylon",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-asylon-dronesentry-dronesentry",
@@ -1102,13 +1102,13 @@
     ],
     [
       "entity:uav:uav-autel-evo-max-4t-v2",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-evo-max-4t-v2",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-evo-max-4t-v2",
@@ -1117,13 +1117,13 @@
     ],
     [
       "entity:uav:uav-autel-evo-nano-evo-nano",
-      "tax:country:China",
-      "country"
+      "entity:company:autel",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-evo-nano-evo-nano",
-      "tax:manufacturer:Autel",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-evo-nano-evo-nano",
@@ -1132,13 +1132,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-alpha-alpha",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-alpha-alpha",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-alpha-alpha",
@@ -1147,13 +1147,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-dragonfish-dragonfish",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-dragonfish-dragonfish",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-dragonfish-dragonfish",
@@ -1162,13 +1162,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-enterprise",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-enterprise",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-enterprise",
@@ -1177,13 +1177,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-rtk",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-rtk",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-dual-640t-rtk",
@@ -1192,13 +1192,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-enterprise",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-enterprise",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-enterprise",
@@ -1207,13 +1207,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-rtk",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-rtk",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-rtk",
@@ -1222,23 +1222,23 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-v3-evo-ii-pro-v3",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-ii-pro-v3-evo-ii-pro-v3",
-      "tax:manufacturer:Autel Robotics",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-autel-robotics-evo-lite-evo-lite",
+      "entity:company:autel-robotics",
       "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-lite-evo-lite",
       "tax:country:China",
       "country"
-    ],
-    [
-      "entity:uav:uav-autel-robotics-evo-lite-evo-lite",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-lite-evo-lite",
@@ -1247,13 +1247,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-lite-plus-evo-lite-plus",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-lite-plus-evo-lite-plus",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-lite-plus-evo-lite-plus",
@@ -1262,13 +1262,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-evo-nano",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-evo-nano",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-evo-nano",
@@ -1277,13 +1277,13 @@
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-plus-evo-nano-plus",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-plus-evo-nano-plus",
-      "tax:manufacturer:Autel Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-autel-robotics-evo-nano-plus-evo-nano-plus",
@@ -1292,12 +1292,17 @@
     ],
     [
       "entity:uav:uav-autel-robotics-titan-titan",
-      "tax:country:China",
-      "country"
+      "entity:company:autel-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-autel-robotics-titan-titan",
-      "tax:manufacturer:Autel Robotics",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-autoflight-prosperity-i-prosperity-i",
+      "entity:company:autoflight",
       "manufacturer"
     ],
     [
@@ -1306,8 +1311,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-autoflight-prosperity-i-prosperity-i",
-      "tax:manufacturer:AutoFlight",
+      "entity:uav:uav-avic-wing-loong-10-wing-loong-10",
+      "entity:company:avic",
       "manufacturer"
     ],
     [
@@ -1316,8 +1321,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-avic-wing-loong-10-wing-loong-10",
-      "tax:manufacturer:AVIC",
+      "entity:uav:uav-avic-wing-loong-i-wing-loong-i",
+      "entity:company:avic",
       "manufacturer"
     ],
     [
@@ -1327,13 +1332,13 @@
     ],
     [
       "entity:uav:uav-avic-wing-loong-i-wing-loong-i",
-      "tax:manufacturer:AVIC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-avic-wing-loong-i-wing-loong-i",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-avic-wing-loong-ii-wing-loong-ii",
+      "entity:company:avic",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-avic-wing-loong-ii-wing-loong-ii",
@@ -1342,13 +1347,13 @@
     ],
     [
       "entity:uav:uav-avic-wing-loong-ii-wing-loong-ii",
-      "tax:manufacturer:AVIC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-avic-wing-loong-ii-wing-loong-ii",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-baykar-akinci-akinci",
+      "entity:company:baykar",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-baykar-akinci-akinci",
@@ -1357,23 +1362,18 @@
     ],
     [
       "entity:uav:uav-baykar-akinci-akinci",
-      "tax:manufacturer:Baykar",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-baykar-akinci-akinci",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-akinci-bayraktar-akinci",
-      "tax:country:Turkey",
-      "country"
+      "entity:company:baykar",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-akinci-bayraktar-akinci",
-      "tax:manufacturer:Baykar",
-      "manufacturer"
+      "tax:country:Turkey",
+      "country"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-akinci-bayraktar-akinci",
@@ -1382,13 +1382,13 @@
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb2-bayraktar-tb2",
-      "tax:country:Turkey",
-      "country"
+      "entity:company:baykar",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb2-bayraktar-tb2",
-      "tax:manufacturer:Baykar",
-      "manufacturer"
+      "tax:country:Turkey",
+      "country"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb2-bayraktar-tb2",
@@ -1397,13 +1397,13 @@
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb3-bayraktar-tb3",
-      "tax:country:Turkey",
-      "country"
+      "entity:company:baykar",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb3-bayraktar-tb3",
-      "tax:manufacturer:Baykar",
-      "manufacturer"
+      "tax:country:Turkey",
+      "country"
     ],
     [
       "entity:uav:uav-baykar-bayraktar-tb3-bayraktar-tb3",
@@ -1412,23 +1412,23 @@
     ],
     [
       "entity:uav:uav-baykar-kizilelma-kizilelma",
+      "entity:company:baykar",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-baykar-kizilelma-kizilelma",
       "tax:country:Turkey",
       "country"
     ],
     [
-      "entity:uav:uav-baykar-kizilelma-kizilelma",
-      "tax:manufacturer:Baykar",
+      "entity:uav:uav-beta-technologies-alia-250-alia-250",
+      "entity:company:beta-technologies",
       "manufacturer"
     ],
     [
       "entity:uav:uav-beta-technologies-alia-250-alia-250",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-beta-technologies-alia-250-alia-250",
-      "tax:manufacturer:Beta Technologies",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-beta-technologies-alia-250-alia-250",
@@ -1437,13 +1437,13 @@
     ],
     [
       "entity:uav:uav-betafpv-pavo-pico-pavo-pico",
-      "tax:country:China",
-      "country"
+      "entity:company:betafpv",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-betafpv-pavo-pico-pavo-pico",
-      "tax:manufacturer:BetaFPV",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-betafpv-pavo-pico-pavo-pico",
@@ -1452,18 +1452,23 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-integrator-integrator",
+      "entity:company:boeing-insitu",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-boeing-insitu-integrator-integrator",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-boeing-insitu-integrator-integrator",
-      "tax:manufacturer:Boeing Insitu",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-boeing-insitu-integrator-integrator",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
+      "entity:company:boeing-insitu",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
@@ -1472,13 +1477,13 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
-      "tax:manufacturer:Boeing Insitu",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-boeing-insitu-scaneagle-scaneagle",
+      "entity:company:boeing-insitu",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-boeing-insitu-scaneagle-scaneagle",
@@ -1487,13 +1492,13 @@
     ],
     [
       "entity:uav:uav-boeing-insitu-scaneagle-scaneagle",
-      "tax:manufacturer:Boeing Insitu",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-boeing-insitu-scaneagle-scaneagle",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-boeing-mq-25-stingray-mq-25-stingray",
+      "entity:company:boeing",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-boeing-mq-25-stingray-mq-25-stingray",
@@ -1502,13 +1507,13 @@
     ],
     [
       "entity:uav:uav-boeing-mq-25-stingray-mq-25-stingray",
-      "tax:manufacturer:Boeing",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-boeing-mq-25-stingray-mq-25-stingray",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat",
+      "entity:company:boeing",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat",
@@ -1517,23 +1522,18 @@
     ],
     [
       "entity:uav:uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat",
-      "tax:manufacturer:Boeing",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-boeing-mq-28-ghost-bat-mq-28-ghost-bat",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-brinc-lemur-2",
-      "tax:country:USA",
-      "country"
+      "entity:company:brinc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-brinc-lemur-2",
-      "tax:manufacturer:BRINC",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-brinc-lemur-2",
@@ -1542,18 +1542,23 @@
     ],
     [
       "entity:uav:uav-brinc-lemur-s-lemur-s",
+      "entity:company:brinc",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-brinc-lemur-s-lemur-s",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-brinc-lemur-s-lemur-s",
-      "tax:manufacturer:BRINC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-brinc-lemur-s-lemur-s",
       "tax:segment:public_safety",
       "segment"
+    ],
+    [
+      "entity:uav:uav-brinc-responder-responder",
+      "entity:company:brinc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-brinc-responder-responder",
@@ -1562,28 +1567,28 @@
     ],
     [
       "entity:uav:uav-brinc-responder-responder",
-      "tax:manufacturer:BRINC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-brinc-responder-responder",
       "tax:segment:enterprise",
       "segment"
     ],
     [
       "entity:uav:uav-caig-wing-loong-i-wing-loong-i",
+      "entity:company:caig",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-caig-wing-loong-i-wing-loong-i",
       "tax:country:China",
       "country"
     ],
     [
       "entity:uav:uav-caig-wing-loong-i-wing-loong-i",
-      "tax:manufacturer:CAIG",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-caig-wing-loong-i-wing-loong-i",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-3-ch-3",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-3-ch-3",
@@ -1592,13 +1597,13 @@
     ],
     [
       "entity:uav:uav-casc-ch-3-ch-3",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-3-ch-3",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-4-ch-4",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-4-ch-4",
@@ -1607,13 +1612,13 @@
     ],
     [
       "entity:uav:uav-casc-ch-4-ch-4",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-4-ch-4",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-4-rainbow-ch-4-rainbow",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-4-rainbow-ch-4-rainbow",
@@ -1622,13 +1627,13 @@
     ],
     [
       "entity:uav:uav-casc-ch-4-rainbow-ch-4-rainbow",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-4-rainbow-ch-4-rainbow",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-5-ch-5",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-5-ch-5",
@@ -1637,13 +1642,13 @@
     ],
     [
       "entity:uav:uav-casc-ch-5-ch-5",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-5-ch-5",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-5-rainbow-ch-5-rainbow",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-5-rainbow-ch-5-rainbow",
@@ -1652,13 +1657,13 @@
     ],
     [
       "entity:uav:uav-casc-ch-5-rainbow-ch-5-rainbow",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-5-rainbow-ch-5-rainbow",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-casc-ch-7-ch-7",
+      "entity:company:casc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-casc-ch-7-ch-7",
@@ -1667,23 +1672,18 @@
     ],
     [
       "entity:uav:uav-casc-ch-7-ch-7",
-      "tax:manufacturer:CASC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-casc-ch-7-ch-7",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-censys-technologies-sentaero-sentaero",
+      "entity:company:censys-technologies",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-censys-technologies-sentaero-sentaero",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-censys-technologies-sentaero-sentaero",
-      "tax:manufacturer:Censys Technologies",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-censys-technologies-sentaero-sentaero",
@@ -1692,13 +1692,13 @@
     ],
     [
       "entity:uav:uav-cleo-robotics-dronut-x1-dronut-x1",
-      "tax:country:USA",
-      "country"
+      "entity:company:cleo-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-cleo-robotics-dronut-x1-dronut-x1",
-      "tax:manufacturer:Cleo Robotics",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-cleo-robotics-dronut-x1-dronut-x1",
@@ -1707,13 +1707,13 @@
     ],
     [
       "entity:uav:uav-delair-dt26-dt26",
-      "tax:country:France",
-      "country"
+      "entity:company:delair",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-delair-dt26-dt26",
-      "tax:manufacturer:Delair",
-      "manufacturer"
+      "tax:country:France",
+      "country"
     ],
     [
       "entity:uav:uav-delair-dt26-dt26",
@@ -1722,13 +1722,13 @@
     ],
     [
       "entity:uav:uav-delair-ux11-ux11",
-      "tax:country:France",
-      "country"
+      "entity:company:delair",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-delair-ux11-ux11",
-      "tax:manufacturer:Delair",
-      "manufacturer"
+      "tax:country:France",
+      "country"
     ],
     [
       "entity:uav:uav-delair-ux11-ux11",
@@ -1737,13 +1737,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t10-agras-t10",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t10-agras-t10",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t10-agras-t10",
@@ -1752,13 +1752,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t20p-agras-t20p",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t20p-agras-t20p",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t20p-agras-t20p",
@@ -1767,13 +1767,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t25-agras-t25",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t25-agras-t25",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t25-agras-t25",
@@ -1782,13 +1782,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t30-agras-t30",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t30-agras-t30",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t30-agras-t30",
@@ -1797,13 +1797,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t40-agras-t40",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t40-agras-t40",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t40-agras-t40",
@@ -1812,13 +1812,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t50-t50",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t50-t50",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t50-t50",
@@ -1827,13 +1827,13 @@
     ],
     [
       "entity:uav:uav-dji-agras-t70p-agras-t70p",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-agras-t70p-agras-t70p",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-agras-t70p-agras-t70p",
@@ -1842,13 +1842,13 @@
     ],
     [
       "entity:uav:uav-dji-air-2s-air-2s",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-air-2s-air-2s",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-air-2s-air-2s",
@@ -1857,13 +1857,13 @@
     ],
     [
       "entity:uav:uav-dji-air-3-air-3",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-air-3-air-3",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-air-3-air-3",
@@ -1872,13 +1872,13 @@
     ],
     [
       "entity:uav:uav-dji-air-3s-air-3s",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-air-3s-air-3s",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-air-3s-air-3s",
@@ -1887,13 +1887,13 @@
     ],
     [
       "entity:uav:uav-dji-avata-2-avata-2",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-avata-2-avata-2",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-avata-2-avata-2",
@@ -1902,13 +1902,13 @@
     ],
     [
       "entity:uav:uav-dji-avata-avata",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-avata-avata",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-avata-avata",
@@ -1917,13 +1917,13 @@
     ],
     [
       "entity:uav:uav-dji-dji-fpv-dji-fpv",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-dji-fpv-dji-fpv",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-dji-fpv-dji-fpv",
@@ -1932,13 +1932,13 @@
     ],
     [
       "entity:uav:uav-dji-flip-flip",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-flip-flip",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-flip-flip",
@@ -1947,13 +1947,13 @@
     ],
     [
       "entity:uav:uav-dji-flycart-30-flycart-30",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-flycart-30-flycart-30",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-flycart-30-flycart-30",
@@ -1962,13 +1962,13 @@
     ],
     [
       "entity:uav:uav-dji-inspire-2-inspire-2",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-inspire-2-inspire-2",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-inspire-2-inspire-2",
@@ -1977,13 +1977,13 @@
     ],
     [
       "entity:uav:uav-dji-inspire-3-inspire-3",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-inspire-3-inspire-3",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-inspire-3-inspire-3",
@@ -1992,13 +1992,13 @@
     ],
     [
       "entity:uav:uav-dji-matrice-30t-matrice-30t",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-matrice-30t-matrice-30t",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-matrice-30t-matrice-30t",
@@ -2007,13 +2007,13 @@
     ],
     [
       "entity:uav:uav-dji-matrice-350-rtk-m350",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-matrice-350-rtk-m350",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-matrice-350-rtk-m350",
@@ -2022,12 +2022,17 @@
     ],
     [
       "entity:uav:uav-dji-matrice-400-matrice-400",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-matrice-400-matrice-400",
-      "tax:manufacturer:DJI",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-dji-matrice-4d-matrice-4d",
+      "entity:company:dji",
       "manufacturer"
     ],
     [
@@ -2036,19 +2041,14 @@
       "country"
     ],
     [
-      "entity:uav:uav-dji-matrice-4d-matrice-4d",
-      "tax:manufacturer:DJI",
+      "entity:uav:uav-dji-matrice-4e-matrice-4e",
+      "entity:company:dji",
       "manufacturer"
     ],
     [
       "entity:uav:uav-dji-matrice-4e-matrice-4e",
       "tax:country:China",
       "country"
-    ],
-    [
-      "entity:uav:uav-dji-matrice-4e-matrice-4e",
-      "tax:manufacturer:DJI",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-matrice-4e-matrice-4e",
@@ -2057,13 +2057,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-2-pro-mavic-2-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-2-pro-mavic-2-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-2-pro-mavic-2-pro",
@@ -2072,13 +2072,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-classic-mavic-3-classic",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-classic-mavic-3-classic",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-3-classic-mavic-3-classic",
@@ -2087,13 +2087,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3e",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3e",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3e",
@@ -2102,13 +2102,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3m",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3m",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3m",
@@ -2117,13 +2117,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3t",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3t",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-3-enterprise-3t",
@@ -2132,13 +2132,13 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-pro-mavic-3-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-pro-mavic-3-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mavic-3-pro-mavic-3-pro",
@@ -2147,23 +2147,23 @@
     ],
     [
       "entity:uav:uav-dji-mavic-3-thermal-mavic-3-thermal",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-3-thermal-mavic-3-thermal",
-      "tax:manufacturer:DJI",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-dji-mavic-4-pro-mavic-4-pro",
+      "entity:company:dji",
       "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-4-pro-mavic-4-pro",
       "tax:country:China",
       "country"
-    ],
-    [
-      "entity:uav:uav-dji-mavic-4-pro-mavic-4-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mavic-4-pro-mavic-4-pro",
@@ -2172,13 +2172,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-2-mini-2",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-2-mini-2",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-2-mini-2",
@@ -2187,13 +2187,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-3-mini-3",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-3-mini-3",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-3-mini-3",
@@ -2202,13 +2202,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-3-pro-mini-3-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-3-pro-mini-3-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-3-pro-mini-3-pro",
@@ -2217,13 +2217,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-4-pro-mini-4-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-4-pro-mini-4-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-4-pro-mini-4-pro",
@@ -2232,13 +2232,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-4k-mini-4k",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-4k-mini-4k",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-4k-mini-4k",
@@ -2247,13 +2247,13 @@
     ],
     [
       "entity:uav:uav-dji-mini-5-pro-mini-5-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-mini-5-pro-mini-5-pro",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-mini-5-pro-mini-5-pro",
@@ -2262,13 +2262,13 @@
     ],
     [
       "entity:uav:uav-dji-neo-neo",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-neo-neo",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-neo-neo",
@@ -2277,13 +2277,13 @@
     ],
     [
       "entity:uav:uav-dji-phantom-4-rtk-phantom-4-rtk",
-      "tax:country:China",
-      "country"
+      "entity:company:dji",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-dji-phantom-4-rtk-phantom-4-rtk",
-      "tax:manufacturer:DJI",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-dji-phantom-4-rtk-phantom-4-rtk",
@@ -2292,12 +2292,17 @@
     ],
     [
       "entity:uav:uav-doroni-h1-x-h1-x",
+      "entity:company:doroni",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-doroni-h1-x-h1-x",
       "tax:country:USA",
       "country"
     ],
     [
-      "entity:uav:uav-doroni-h1-x-h1-x",
-      "tax:manufacturer:Doroni",
+      "entity:uav:uav-dronamics-black-swan-black-swan",
+      "entity:company:dronamics",
       "manufacturer"
     ],
     [
@@ -2307,23 +2312,18 @@
     ],
     [
       "entity:uav:uav-dronamics-black-swan-black-swan",
-      "tax:manufacturer:Dronamics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-dronamics-black-swan-black-swan",
       "tax:segment:delivery",
       "segment"
     ],
     [
       "entity:uav:uav-easy-aerial-falcon-falcon",
-      "tax:country:USA",
-      "country"
+      "entity:company:easy-aerial",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-easy-aerial-falcon-falcon",
-      "tax:manufacturer:Easy Aerial",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-easy-aerial-falcon-falcon",
@@ -2332,18 +2332,23 @@
     ],
     [
       "entity:uav:uav-edge-autonomy-penguin-c-penguin-c",
+      "entity:company:edge-autonomy",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-edge-autonomy-penguin-c-penguin-c",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-edge-autonomy-penguin-c-penguin-c",
-      "tax:manufacturer:Edge Autonomy",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-edge-autonomy-penguin-c-penguin-c",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
+      "entity:company:edge-autonomy",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
@@ -2352,23 +2357,18 @@
     ],
     [
       "entity:uav:uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
-      "tax:manufacturer:Edge Autonomy",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-edge-autonomy-vxe30-stalker-vxe30-stalker",
       "tax:segment:enterprise",
       "segment"
     ],
     [
       "entity:uav:uav-eft-z50-z50",
-      "tax:country:China",
-      "country"
+      "entity:company:eft",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-eft-z50-z50",
-      "tax:manufacturer:EFT",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-eft-z50-z50",
@@ -2377,13 +2377,13 @@
     ],
     [
       "entity:uav:uav-ehang-eh216-s-eh216s",
-      "tax:country:China",
-      "country"
+      "entity:company:ehang-holdings",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ehang-eh216-s-eh216s",
-      "tax:manufacturer:EHang Holdings",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-ehang-eh216-s-eh216s",
@@ -2392,13 +2392,13 @@
     ],
     [
       "entity:uav:uav-ehang-vt-35-vt-35",
-      "tax:country:China",
-      "country"
+      "entity:company:ehang",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ehang-vt-35-vt-35",
-      "tax:manufacturer:EHang",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-ehang-vt-35-vt-35",
@@ -2407,18 +2407,23 @@
     ],
     [
       "entity:uav:uav-elbit-hermes-90-hermes-90",
+      "entity:company:elbit",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-elbit-hermes-90-hermes-90",
       "tax:country:Israel",
       "country"
     ],
     [
       "entity:uav:uav-elbit-hermes-90-hermes-90",
-      "tax:manufacturer:Elbit",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elbit-hermes-90-hermes-90",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-elbit-hermes-900-kochav",
+      "entity:company:elbit-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-elbit-hermes-900-kochav",
@@ -2427,13 +2432,13 @@
     ],
     [
       "entity:uav:uav-elbit-hermes-900-kochav",
-      "tax:manufacturer:Elbit Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elbit-hermes-900-kochav",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-elbit-systems-hermes-450-hermes-450",
+      "entity:company:elbit-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-elbit-systems-hermes-450-hermes-450",
@@ -2442,13 +2447,13 @@
     ],
     [
       "entity:uav:uav-elbit-systems-hermes-450-hermes-450",
-      "tax:manufacturer:Elbit Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elbit-systems-hermes-450-hermes-450",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-elbit-systems-skylark-3-skylark-3",
+      "entity:company:elbit-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-elbit-systems-skylark-3-skylark-3",
@@ -2457,13 +2462,13 @@
     ],
     [
       "entity:uav:uav-elbit-systems-skylark-3-skylark-3",
-      "tax:manufacturer:Elbit Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elbit-systems-skylark-3-skylark-3",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-elbit-systems-skylark-skylark",
+      "entity:company:elbit-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-elbit-systems-skylark-skylark",
@@ -2472,13 +2477,13 @@
     ],
     [
       "entity:uav:uav-elbit-systems-skylark-skylark",
-      "tax:manufacturer:Elbit Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elbit-systems-skylark-skylark",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-elroy-air-chaparral-chaparral",
+      "entity:company:elroy-air",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-elroy-air-chaparral-chaparral",
@@ -2487,13 +2492,13 @@
     ],
     [
       "entity:uav:uav-elroy-air-chaparral-chaparral",
-      "tax:manufacturer:Elroy Air",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-elroy-air-chaparral-chaparral",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-enics-eleron-3-eleron-3",
+      "entity:company:enics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-enics-eleron-3-eleron-3",
@@ -2502,13 +2507,13 @@
     ],
     [
       "entity:uav:uav-enics-eleron-3-eleron-3",
-      "tax:manufacturer:ENICS",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-enics-eleron-3-eleron-3",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-eve-air-mobility-eve-eve",
+      "entity:company:eve-air-mobility",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-eve-air-mobility-eve-eve",
@@ -2517,23 +2522,18 @@
     ],
     [
       "entity:uav:uav-eve-air-mobility-eve-eve",
-      "tax:manufacturer:Eve Air Mobility",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-eve-air-mobility-eve-eve",
       "tax:segment:passenger_uam",
       "segment"
     ],
     [
       "entity:uav:uav-flightwave-edge-130-edge-130",
-      "tax:country:USA",
-      "country"
+      "entity:company:flightwave",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-flightwave-edge-130-edge-130",
-      "tax:manufacturer:FlightWave",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-flightwave-edge-130-edge-130",
@@ -2542,13 +2542,13 @@
     ],
     [
       "entity:uav:uav-flock-safety-aerodome-aerodome",
-      "tax:country:USA",
-      "country"
+      "entity:company:flock-safety",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-flock-safety-aerodome-aerodome",
-      "tax:manufacturer:Flock Safety",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-flock-safety-aerodome-aerodome",
@@ -2557,23 +2557,23 @@
     ],
     [
       "entity:uav:uav-flyability-elios-3-elios-3",
+      "entity:company:flyability",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-flyability-elios-3-elios-3",
       "tax:country:Switzerland",
       "country"
     ],
     [
-      "entity:uav:uav-flyability-elios-3-elios-3",
-      "tax:manufacturer:Flyability",
+      "entity:uav:uav-flytrex-sky2-sky2",
+      "entity:company:flytrex",
       "manufacturer"
     ],
     [
       "entity:uav:uav-flytrex-sky2-sky2",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-flytrex-sky2-sky2",
-      "tax:manufacturer:Flytrex",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-flytrex-sky2-sky2",
@@ -2582,13 +2582,13 @@
     ],
     [
       "entity:uav:uav-fortem-dronehunter-f700-f700",
-      "tax:country:USA",
-      "country"
+      "entity:company:fortem-technologies",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-fortem-dronehunter-f700-f700",
-      "tax:manufacturer:Fortem Technologies",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-fortem-dronehunter-f700-f700",
@@ -2597,13 +2597,13 @@
     ],
     [
       "entity:uav:uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
-      "tax:country:USA",
-      "country"
+      "entity:company:fortem-technologies",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
-      "tax:manufacturer:Fortem Technologies",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-fortem-technologies-dronehunter-f700-dronehunter-f700",
@@ -2612,13 +2612,13 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-alta-8",
-      "tax:country:USA",
-      "country"
+      "entity:company:freefly",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-freefly-alta-8-alta-8",
-      "tax:manufacturer:Freefly",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-freefly-alta-8-alta-8",
@@ -2627,13 +2627,13 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-pro-alta-8-pro",
-      "tax:country:USA",
-      "country"
+      "entity:company:freefly",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-freefly-alta-8-pro-alta-8-pro",
-      "tax:manufacturer:Freefly",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-freefly-alta-8-pro-alta-8-pro",
@@ -2642,13 +2642,13 @@
     ],
     [
       "entity:uav:uav-freefly-systems-alta-x",
-      "tax:country:USA",
-      "country"
+      "entity:company:freefly-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-freefly-systems-alta-x",
-      "tax:manufacturer:Freefly Systems",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-freefly-systems-alta-x",
@@ -2657,13 +2657,13 @@
     ],
     [
       "entity:uav:uav-freefly-systems-astro-astro",
-      "tax:country:USA",
-      "country"
+      "entity:company:freefly-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-freefly-systems-astro-astro",
-      "tax:manufacturer:Freefly Systems",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-freefly-systems-astro-astro",
@@ -2672,13 +2672,13 @@
     ],
     [
       "entity:uav:uav-general-atomics-gray-eagle-gray-eagle",
-      "tax:country:USA",
-      "country"
+      "entity:company:general-atomics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-general-atomics-gray-eagle-gray-eagle",
-      "tax:manufacturer:General Atomics",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-general-atomics-gray-eagle-gray-eagle",
@@ -2687,13 +2687,13 @@
     ],
     [
       "entity:uav:uav-general-atomics-mojave-mojave",
-      "tax:country:USA",
-      "country"
+      "entity:company:general-atomics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-general-atomics-mojave-mojave",
-      "tax:manufacturer:General Atomics",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-general-atomics-mojave-mojave",
@@ -2702,13 +2702,13 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-1-predator-mq-1-predator",
-      "tax:country:USA",
-      "country"
+      "entity:company:general-atomics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-general-atomics-mq-1-predator-mq-1-predator",
-      "tax:manufacturer:General Atomics",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-general-atomics-mq-1-predator-mq-1-predator",
@@ -2717,12 +2717,17 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
+      "entity:company:general-atomics",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
       "tax:country:USA",
       "country"
     ],
     [
-      "entity:uav:uav-general-atomics-mq-1c-gray-eagle-mq-1c-gray-eagle",
-      "tax:manufacturer:General Atomics",
+      "entity:uav:uav-general-atomics-mq-20-avenger-mq-20-avenger",
+      "entity:company:general-atomics",
       "manufacturer"
     ],
     [
@@ -2731,8 +2736,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-general-atomics-mq-20-avenger-mq-20-avenger",
-      "tax:manufacturer:General Atomics",
+      "entity:uav:uav-general-atomics-mq-9-reaper-mq-9-reaper",
+      "entity:company:general-atomics",
       "manufacturer"
     ],
     [
@@ -2742,13 +2747,13 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-9-reaper-mq-9-reaper",
-      "tax:manufacturer:General Atomics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-general-atomics-mq-9-reaper-mq-9-reaper",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
+      "entity:company:general-atomics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
@@ -2757,23 +2762,18 @@
     ],
     [
       "entity:uav:uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
-      "tax:manufacturer:General Atomics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-general-atomics-mq-9b-skyguardian-mq-9b-skyguardian",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-geprc-cinebot30-cinebot30",
-      "tax:country:China",
-      "country"
+      "entity:company:geprc",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-geprc-cinebot30-cinebot30",
-      "tax:manufacturer:GEPRC",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-geprc-cinebot30-cinebot30",
@@ -2782,28 +2782,28 @@
     ],
     [
       "entity:uav:uav-geprc-mark5-mark5",
+      "entity:company:geprc",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-geprc-mark5-mark5",
       "tax:country:China",
       "country"
     ],
     [
       "entity:uav:uav-geprc-mark5-mark5",
-      "tax:manufacturer:GEPRC",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-geprc-mark5-mark5",
       "tax:segment:fpv",
       "segment"
+    ],
+    [
+      "entity:uav:uav-guardian-agriculture-sc1-sc1",
+      "entity:company:guardian-agriculture",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-guardian-agriculture-sc1-sc1",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-guardian-agriculture-sc1-sc1",
-      "tax:manufacturer:Guardian Agriculture",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-guardian-agriculture-sc1-sc1",
@@ -2812,13 +2812,13 @@
     ],
     [
       "entity:uav:uav-hesa-ababil-3-ababil-3",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-ababil-3-ababil-3",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-ababil-3-ababil-3",
@@ -2827,13 +2827,13 @@
     ],
     [
       "entity:uav:uav-hesa-kaman-22-kaman-22",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-kaman-22-kaman-22",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-kaman-22-kaman-22",
@@ -2842,13 +2842,13 @@
     ],
     [
       "entity:uav:uav-hesa-karrar-karrar",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-karrar-karrar",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-karrar-karrar",
@@ -2857,13 +2857,13 @@
     ],
     [
       "entity:uav:uav-hesa-shahed-129-shahed-129",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-shahed-129-shahed-129",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-shahed-129-shahed-129",
@@ -2872,13 +2872,13 @@
     ],
     [
       "entity:uav:uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
@@ -2887,18 +2887,23 @@
     ],
     [
       "entity:uav:uav-hesa-shahed-136-shahed-136",
-      "tax:country:Iran",
-      "country"
+      "entity:company:hesa",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hesa-shahed-136-shahed-136",
-      "tax:manufacturer:HESA",
-      "manufacturer"
+      "tax:country:Iran",
+      "country"
     ],
     [
       "entity:uav:uav-hesa-shahed-136-shahed-136",
       "tax:segment:loitering_munition",
       "segment"
+    ],
+    [
+      "entity:uav:uav-heven-aerotech-z1-z1",
+      "entity:company:heven-aerotech",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-heven-aerotech-z1-z1",
@@ -2907,23 +2912,18 @@
     ],
     [
       "entity:uav:uav-heven-aerotech-z1-z1",
-      "tax:manufacturer:Heven AeroTech",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-heven-aerotech-z1-z1",
       "tax:segment:defense_government",
       "segment"
     ],
     [
       "entity:uav:uav-holy-stone-hs720-hs720",
-      "tax:country:China",
-      "country"
+      "entity:company:holy-stone",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-holy-stone-hs720-hs720",
-      "tax:manufacturer:Holy Stone",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-holy-stone-hs720-hs720",
@@ -2932,23 +2932,23 @@
     ],
     [
       "entity:uav:uav-hongdu-gj-11-sharp-sword-gj-11-sharp-sword",
-      "tax:country:China",
-      "country"
+      "entity:company:hongdu",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hongdu-gj-11-sharp-sword-gj-11-sharp-sword",
-      "tax:manufacturer:Hongdu",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-hubsan-zino-mini-pro-zino-mini-pro",
+      "entity:company:hubsan",
       "manufacturer"
     ],
     [
       "entity:uav:uav-hubsan-zino-mini-pro-zino-mini-pro",
       "tax:country:China",
       "country"
-    ],
-    [
-      "entity:uav:uav-hubsan-zino-mini-pro-zino-mini-pro",
-      "tax:manufacturer:Hubsan",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-hubsan-zino-mini-pro-zino-mini-pro",
@@ -2957,13 +2957,13 @@
     ],
     [
       "entity:uav:uav-hylio-ag-130-ag-130",
-      "tax:country:USA",
-      "country"
+      "entity:company:hylio",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hylio-ag-130-ag-130",
-      "tax:manufacturer:Hylio",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-hylio-ag-130-ag-130",
@@ -2972,13 +2972,13 @@
     ],
     [
       "entity:uav:uav-hylio-ag-272-ag-272",
-      "tax:country:USA",
-      "country"
+      "entity:company:hylio",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-hylio-ag-272-ag-272",
-      "tax:manufacturer:Hylio",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-hylio-ag-272-ag-272",
@@ -2987,13 +2987,13 @@
     ],
     [
       "entity:uav:uav-iai-bird-eye-650d-bird-eye-650d",
-      "tax:country:Israel",
-      "country"
+      "entity:company:iai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-bird-eye-650d-bird-eye-650d",
-      "tax:manufacturer:IAI",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-bird-eye-650d-bird-eye-650d",
@@ -3002,13 +3002,13 @@
     ],
     [
       "entity:uav:uav-iai-harop-harop",
-      "tax:country:Israel",
-      "country"
+      "entity:company:israel-aerospace-industries",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-harop-harop",
-      "tax:manufacturer:Israel Aerospace Industries",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-harop-harop",
@@ -3017,13 +3017,13 @@
     ],
     [
       "entity:uav:uav-iai-heron-heron",
-      "tax:country:Israel",
-      "country"
+      "entity:company:iai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-heron-heron",
-      "tax:manufacturer:IAI",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-heron-heron",
@@ -3032,13 +3032,13 @@
     ],
     [
       "entity:uav:uav-iai-heron-tp-heron-tp",
-      "tax:country:Israel",
-      "country"
+      "entity:company:iai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-heron-tp-heron-tp",
-      "tax:manufacturer:IAI",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-heron-tp-heron-tp",
@@ -3047,13 +3047,13 @@
     ],
     [
       "entity:uav:uav-iai-mini-harpy-mini-harpy",
-      "tax:country:Israel",
-      "country"
+      "entity:company:iai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-mini-harpy-mini-harpy",
-      "tax:manufacturer:IAI",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-mini-harpy-mini-harpy",
@@ -3062,13 +3062,13 @@
     ],
     [
       "entity:uav:uav-iai-panther-panther",
-      "tax:country:Israel",
-      "country"
+      "entity:company:iai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iai-panther-panther",
-      "tax:manufacturer:IAI",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-iai-panther-panther",
@@ -3077,18 +3077,23 @@
     ],
     [
       "entity:uav:uav-iai-searcher-mk-ii-searcher-mk-ii",
+      "entity:company:iai",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-iai-searcher-mk-ii-searcher-mk-ii",
       "tax:country:Israel",
       "country"
     ],
     [
       "entity:uav:uav-iai-searcher-mk-ii-searcher-mk-ii",
-      "tax:manufacturer:IAI",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-iai-searcher-mk-ii-searcher-mk-ii",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-ideaforge-switch-switch",
+      "entity:company:ideaforge",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ideaforge-switch-switch",
@@ -3097,13 +3102,13 @@
     ],
     [
       "entity:uav:uav-ideaforge-switch-switch",
-      "tax:manufacturer:ideaForge",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-ideaforge-switch-switch",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
+      "entity:company:iflight",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
@@ -3112,13 +3117,13 @@
     ],
     [
       "entity:uav:uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
-      "tax:manufacturer:iFlight",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-iflight-nazgul-evoque-f5-nazgul-evoque-f5",
       "tax:segment:fpv",
       "segment"
+    ],
+    [
+      "entity:uav:uav-iflight-nazgul5-v3-nazgul5-v3",
+      "entity:company:iflight",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-iflight-nazgul5-v3-nazgul5-v3",
@@ -3127,23 +3132,18 @@
     ],
     [
       "entity:uav:uav-iflight-nazgul5-v3-nazgul5-v3",
-      "tax:manufacturer:iFlight",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-iflight-nazgul5-v3-nazgul5-v3",
       "tax:segment:fpv",
       "segment"
     ],
     [
       "entity:uav:uav-insitu-scaneagle-scaneagle",
-      "tax:country:USA",
-      "country"
+      "entity:company:insitu",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-insitu-scaneagle-scaneagle",
-      "tax:manufacturer:Insitu",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-insitu-scaneagle-scaneagle",
@@ -3152,13 +3152,13 @@
     ],
     [
       "entity:uav:uav-inspired-flight-if1200-a",
-      "tax:country:USA",
-      "country"
+      "entity:company:inspired-flight",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-inspired-flight-if1200-a",
-      "tax:manufacturer:Inspired Flight",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-inspired-flight-if1200-a",
@@ -3167,13 +3167,13 @@
     ],
     [
       "entity:uav:uav-inspired-flight-if800-tomcat",
-      "tax:country:USA",
-      "country"
+      "entity:company:inspired-flight",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-inspired-flight-if800-tomcat",
-      "tax:manufacturer:Inspired Flight",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-inspired-flight-if800-tomcat",
@@ -3182,13 +3182,13 @@
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-heron",
-      "tax:country:Israel",
-      "country"
+      "entity:company:israel-aerospace-industries",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-heron",
-      "tax:manufacturer:Israel Aerospace Industries",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-heron",
@@ -3197,28 +3197,33 @@
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-tp-heron-tp",
-      "tax:country:Israel",
-      "country"
+      "entity:company:israel-aerospace-industries",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-heron-tp-heron-tp",
-      "tax:manufacturer:Israel Aerospace Industries",
+      "tax:country:Israel",
+      "country"
+    ],
+    [
+      "entity:uav:uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
+      "entity:company:israel-aerospace-industries",
       "manufacturer"
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
       "tax:country:Israel",
       "country"
-    ],
-    [
-      "entity:uav:uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
-      "tax:manufacturer:Israel Aerospace Industries",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-jetson-one-one",
+      "entity:company:jetson",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-jetson-one-one",
@@ -3226,8 +3231,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-jetson-one-one",
-      "tax:manufacturer:Jetson",
+      "entity:uav:uav-joby-aviation-s4-s4",
+      "entity:company:joby-aviation",
       "manufacturer"
     ],
     [
@@ -3237,23 +3242,18 @@
     ],
     [
       "entity:uav:uav-joby-aviation-s4-s4",
-      "tax:manufacturer:Joby Aviation",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-joby-aviation-s4-s4",
       "tax:segment:passenger_uam",
       "segment"
     ],
     [
       "entity:uav:uav-jouav-cw-15-cw15",
-      "tax:country:China",
-      "country"
+      "entity:company:jouav",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-jouav-cw-15-cw15",
-      "tax:manufacturer:JOUAV",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-jouav-cw-15-cw15",
@@ -3262,18 +3262,23 @@
     ],
     [
       "entity:uav:uav-jouav-cw-25-cw-25",
+      "entity:company:jouav",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-jouav-cw-25-cw-25",
       "tax:country:China",
       "country"
     ],
     [
       "entity:uav:uav-jouav-cw-25-cw-25",
-      "tax:manufacturer:JOUAV",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-jouav-cw-25-cw-25",
       "tax:segment:surveying",
       "segment"
+    ],
+    [
+      "entity:uav:uav-korean-air-kus-fs-rq-105k",
+      "entity:company:korean-air",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-korean-air-kus-fs-rq-105k",
@@ -3282,13 +3287,13 @@
     ],
     [
       "entity:uav:uav-korean-air-kus-fs-rq-105k",
-      "tax:manufacturer:Korean Air",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-korean-air-kus-fs-rq-105k",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-kratos-xq-58-valkyrie-xq-58-valkyrie",
+      "entity:company:kratos",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-kratos-xq-58-valkyrie-xq-58-valkyrie",
@@ -3296,8 +3301,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-kratos-xq-58-valkyrie-xq-58-valkyrie",
-      "tax:manufacturer:Kratos",
+      "entity:uav:uav-kronshtadt-orion-orion",
+      "entity:company:kronshtadt",
       "manufacturer"
     ],
     [
@@ -3306,8 +3311,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-kronshtadt-orion-orion",
-      "tax:manufacturer:Kronshtadt",
+      "entity:uav:uav-l3harris-fvr-90-fvr-90",
+      "entity:company:l3harris",
       "manufacturer"
     ],
     [
@@ -3317,13 +3322,13 @@
     ],
     [
       "entity:uav:uav-l3harris-fvr-90-fvr-90",
-      "tax:manufacturer:L3Harris",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-l3harris-fvr-90-fvr-90",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-leonardo-falco-xplorer-falco-xplorer",
+      "entity:company:leonardo",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-leonardo-falco-xplorer-falco-xplorer",
@@ -3331,19 +3336,14 @@
       "country"
     ],
     [
-      "entity:uav:uav-leonardo-falco-xplorer-falco-xplorer",
-      "tax:manufacturer:Leonardo",
+      "entity:uav:uav-lilium-jet-jet",
+      "entity:company:lilium",
       "manufacturer"
     ],
     [
       "entity:uav:uav-lilium-jet-jet",
       "tax:country:Germany",
       "country"
-    ],
-    [
-      "entity:uav:uav-lilium-jet-jet",
-      "tax:manufacturer:Lilium",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-lilium-jet-jet",
@@ -3352,13 +3352,13 @@
     ],
     [
       "entity:uav:uav-lockheed-martin-indago-4-indago-4",
-      "tax:country:USA",
-      "country"
+      "entity:company:lockheed-martin",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-lockheed-martin-indago-4-indago-4",
-      "tax:manufacturer:Lockheed Martin",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-lockheed-martin-indago-4-indago-4",
@@ -3367,13 +3367,13 @@
     ],
     [
       "entity:uav:uav-lockheed-martin-stalker-vxe-stalker-vxe",
-      "tax:country:USA",
-      "country"
+      "entity:company:lockheed-martin",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-lockheed-martin-stalker-vxe-stalker-vxe",
-      "tax:manufacturer:Lockheed Martin",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-lockheed-martin-stalker-vxe-stalker-vxe",
@@ -3382,13 +3382,13 @@
     ],
     [
       "entity:uav:uav-manna-aero-air-delivery-air-delivery",
-      "tax:country:Ireland",
-      "country"
+      "entity:company:manna-aero",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-manna-aero-air-delivery-air-delivery",
-      "tax:manufacturer:Manna Aero",
-      "manufacturer"
+      "tax:country:Ireland",
+      "country"
     ],
     [
       "entity:uav:uav-manna-aero-air-delivery-air-delivery",
@@ -3397,18 +3397,23 @@
     ],
     [
       "entity:uav:uav-manna-aero-manna-manna",
+      "entity:company:manna-aero",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-manna-aero-manna-manna",
       "tax:country:Ireland",
       "country"
     ],
     [
       "entity:uav:uav-manna-aero-manna-manna",
-      "tax:manufacturer:Manna Aero",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-manna-aero-manna-manna",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-marss-interceptor-mr-interceptor-mr",
+      "entity:company:marss",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-marss-interceptor-mr-interceptor-mr",
@@ -3417,13 +3422,13 @@
     ],
     [
       "entity:uav:uav-marss-interceptor-mr-interceptor-mr",
-      "tax:manufacturer:MARSS",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-marss-interceptor-mr-interceptor-mr",
       "tax:segment:counter_uas",
       "segment"
+    ],
+    [
+      "entity:uav:uav-matternet-m2-m2",
+      "entity:company:matternet",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-matternet-m2-m2",
@@ -3432,13 +3437,13 @@
     ],
     [
       "entity:uav:uav-matternet-m2-m2",
-      "tax:manufacturer:Matternet",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-matternet-m2-m2",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-meituan-delivery-drone-delivery-drone",
+      "entity:company:meituan",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-meituan-delivery-drone-delivery-drone",
@@ -3447,23 +3452,18 @@
     ],
     [
       "entity:uav:uav-meituan-delivery-drone-delivery-drone",
-      "tax:manufacturer:Meituan",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-meituan-delivery-drone-delivery-drone",
       "tax:segment:delivery",
       "segment"
     ],
     [
       "entity:uav:uav-microdrones-md4-1000-md4-1000",
-      "tax:country:Germany",
-      "country"
+      "entity:company:microdrones",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-microdrones-md4-1000-md4-1000",
-      "tax:manufacturer:Microdrones",
-      "manufacturer"
+      "tax:country:Germany",
+      "country"
     ],
     [
       "entity:uav:uav-microdrones-md4-1000-md4-1000",
@@ -3472,13 +3472,13 @@
     ],
     [
       "entity:uav:uav-microdrones-mdlidar-3000-mdlidar-3000",
-      "tax:country:Germany",
-      "country"
+      "entity:company:microdrones",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-microdrones-mdlidar-3000-mdlidar-3000",
-      "tax:manufacturer:Microdrones",
-      "manufacturer"
+      "tax:country:Germany",
+      "country"
     ],
     [
       "entity:uav:uav-microdrones-mdlidar-3000-mdlidar-3000",
@@ -3487,13 +3487,13 @@
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-seeker",
-      "tax:country:USA",
-      "country"
+      "entity:company:modalai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-seeker",
-      "tax:manufacturer:ModalAI",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-seeker",
@@ -3502,18 +3502,23 @@
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-stinger",
+      "entity:company:modalai",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-modalai-vision-fpv-stinger",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-modalai-vision-fpv-stinger",
-      "tax:manufacturer:ModalAI",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-modalai-vision-fpv-stinger",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-neros-archer-archer",
+      "entity:company:neros",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-neros-archer-archer",
@@ -3522,23 +3527,18 @@
     ],
     [
       "entity:uav:uav-neros-archer-archer",
-      "tax:manufacturer:Neros",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-neros-archer-archer",
       "tax:segment:enterprise",
       "segment"
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
-      "tax:country:USA",
-      "country"
+      "entity:company:northrop-grumman",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
-      "tax:manufacturer:Northrop Grumman",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
@@ -3547,13 +3547,13 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
-      "tax:country:USA",
-      "country"
+      "entity:company:northrop-grumman",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
-      "tax:manufacturer:Northrop Grumman",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-northrop-grumman-mq-8c-fire-scout-mq-8c-fire-scout",
@@ -3562,13 +3562,13 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
-      "tax:country:USA",
-      "country"
+      "entity:company:northrop-grumman",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
-      "tax:manufacturer:Northrop Grumman",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-northrop-grumman-rq-4-global-hawk-rq-4-global-hawk",
@@ -3577,13 +3577,13 @@
     ],
     [
       "entity:uav:uav-northrop-grumman-x-47b-x-47b",
-      "tax:country:USA",
-      "country"
+      "entity:company:northrop-grumman",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-northrop-grumman-x-47b-x-47b",
-      "tax:manufacturer:Northrop Grumman",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-northrop-grumman-x-47b-x-47b",
@@ -3592,28 +3592,33 @@
     ],
     [
       "entity:uav:uav-parrot-anafi-ai",
-      "tax:country:France",
-      "country"
+      "entity:company:parrot",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-parrot-anafi-ai",
-      "tax:manufacturer:Parrot",
+      "tax:country:France",
+      "country"
+    ],
+    [
+      "entity:uav:uav-parrot-anafi-usa",
+      "entity:company:parrot",
       "manufacturer"
     ],
     [
       "entity:uav:uav-parrot-anafi-usa",
       "tax:country:France",
       "country"
-    ],
-    [
-      "entity:uav:uav-parrot-anafi-usa",
-      "tax:manufacturer:Parrot",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-parrot-anafi-usa",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-percepto-air-max-air-max",
+      "entity:company:percepto",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-percepto-air-max-air-max",
@@ -3621,19 +3626,14 @@
       "country"
     ],
     [
-      "entity:uav:uav-percepto-air-max-air-max",
-      "tax:manufacturer:Percepto",
+      "entity:uav:uav-performance-drone-works-c100-c100",
+      "entity:company:performance-drone-works",
       "manufacturer"
     ],
     [
       "entity:uav:uav-performance-drone-works-c100-c100",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-performance-drone-works-c100-c100",
-      "tax:manufacturer:Performance Drone Works",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-performance-drone-works-c100-c100",
@@ -3642,12 +3642,17 @@
     ],
     [
       "entity:uav:uav-pivotal-helix-helix",
+      "entity:company:pivotal",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-pivotal-helix-helix",
       "tax:country:USA",
       "country"
     ],
     [
-      "entity:uav:uav-pivotal-helix-helix",
-      "tax:manufacturer:Pivotal",
+      "entity:uav:uav-potensic-atom-2-atom-2",
+      "entity:company:potensic",
       "manufacturer"
     ],
     [
@@ -3657,13 +3662,13 @@
     ],
     [
       "entity:uav:uav-potensic-atom-2-atom-2",
-      "tax:manufacturer:Potensic",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-potensic-atom-2-atom-2",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-potensic-atom-atom",
+      "entity:company:potensic",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-potensic-atom-atom",
@@ -3672,13 +3677,13 @@
     ],
     [
       "entity:uav:uav-potensic-atom-atom",
-      "tax:manufacturer:Potensic",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-potensic-atom-atom",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-powervision-poweregg-x-poweregg-x",
+      "entity:company:powervision",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-powervision-poweregg-x-poweregg-x",
@@ -3687,13 +3692,13 @@
     ],
     [
       "entity:uav:uav-powervision-poweregg-x-poweregg-x",
-      "tax:manufacturer:PowerVision",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-powervision-poweregg-x-poweregg-x",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-ptdi-elang-hitam-elang-hitam",
+      "entity:company:ptdi",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ptdi-elang-hitam-elang-hitam",
@@ -3702,23 +3707,18 @@
     ],
     [
       "entity:uav:uav-ptdi-elang-hitam-elang-hitam",
-      "tax:manufacturer:PTDI",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-ptdi-elang-hitam-elang-hitam",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-pyka-pelican-2-pelican-2",
-      "tax:country:USA",
-      "country"
+      "entity:company:pyka",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-pyka-pelican-2-pelican-2",
-      "tax:manufacturer:Pyka",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-pyka-pelican-2-pelican-2",
@@ -3727,13 +3727,13 @@
     ],
     [
       "entity:uav:uav-pyka-pelican-pelican",
-      "tax:country:USA",
-      "country"
+      "entity:company:pyka",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-pyka-pelican-pelican",
-      "tax:manufacturer:Pyka",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-pyka-pelican-pelican",
@@ -3742,12 +3742,17 @@
     ],
     [
       "entity:uav:uav-qods-aviation-mohajer-6-mohajer-6",
-      "tax:country:Iran",
-      "country"
+      "entity:company:qods-aviation",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-qods-aviation-mohajer-6-mohajer-6",
-      "tax:manufacturer:Qods Aviation",
+      "tax:country:Iran",
+      "country"
+    ],
+    [
+      "entity:uav:uav-qods-mohajer-2-mohajer-2",
+      "entity:company:qods",
       "manufacturer"
     ],
     [
@@ -3757,13 +3762,13 @@
     ],
     [
       "entity:uav:uav-qods-mohajer-2-mohajer-2",
-      "tax:manufacturer:Qods",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-qods-mohajer-2-mohajer-2",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-qods-mohajer-6-mohajer-6",
+      "entity:company:qods",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-qods-mohajer-6-mohajer-6",
@@ -3772,13 +3777,13 @@
     ],
     [
       "entity:uav:uav-qods-mohajer-6-mohajer-6",
-      "tax:manufacturer:Qods",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-qods-mohajer-6-mohajer-6",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-quantum-systems-reliant-reliant",
+      "entity:company:quantum-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-quantum-systems-reliant-reliant",
@@ -3787,23 +3792,18 @@
     ],
     [
       "entity:uav:uav-quantum-systems-reliant-reliant",
-      "tax:manufacturer:Quantum Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-quantum-systems-reliant-reliant",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-f90-plus-trinity-f90-plus",
-      "tax:country:Germany",
-      "country"
+      "entity:company:quantum-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-f90-plus-trinity-f90-plus",
-      "tax:manufacturer:Quantum Systems",
-      "manufacturer"
+      "tax:country:Germany",
+      "country"
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-f90-plus-trinity-f90-plus",
@@ -3812,13 +3812,13 @@
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-pro-trinity-pro",
-      "tax:country:Germany",
-      "country"
+      "entity:company:quantum-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-pro-trinity-pro",
-      "tax:manufacturer:Quantum Systems",
-      "manufacturer"
+      "tax:country:Germany",
+      "country"
     ],
     [
       "entity:uav:uav-quantum-systems-trinity-pro-trinity-pro",
@@ -3827,28 +3827,28 @@
     ],
     [
       "entity:uav:uav-quantum-vector-vector-ai",
+      "entity:company:quantum-systems",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-quantum-vector-vector-ai",
       "tax:country:Germany",
       "country"
     ],
     [
       "entity:uav:uav-quantum-vector-vector-ai",
-      "tax:manufacturer:Quantum Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-quantum-vector-vector-ai",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-raytheon-coyote-block-2-coyote-block-2",
+      "entity:company:raytheon",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-raytheon-coyote-block-2-coyote-block-2",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-raytheon-coyote-block-2-coyote-block-2",
-      "tax:manufacturer:Raytheon",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-raytheon-coyote-block-2-coyote-block-2",
@@ -3857,13 +3857,13 @@
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera",
-      "tax:country:Vietnam",
-      "country"
+      "entity:company:real-time-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera",
-      "tax:manufacturer:Real-time Robotics",
-      "manufacturer"
+      "tax:country:Vietnam",
+      "country"
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera",
@@ -3872,13 +3872,13 @@
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera-plus",
-      "tax:country:Vietnam",
-      "country"
+      "entity:company:real-time-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera-plus",
-      "tax:manufacturer:Real-time Robotics",
-      "manufacturer"
+      "tax:country:Vietnam",
+      "country"
     ],
     [
       "entity:uav:uav-real-time-robotics-hera-hera-plus",
@@ -3887,12 +3887,17 @@
     ],
     [
       "entity:uav:uav-real-time-robotics-vega-vega",
+      "entity:company:real-time-robotics",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-real-time-robotics-vega-vega",
       "tax:country:Vietnam",
       "country"
     ],
     [
-      "entity:uav:uav-real-time-robotics-vega-vega",
-      "tax:manufacturer:Real-time Robotics",
+      "entity:uav:uav-red-cat-black-widow-black-widow",
+      "entity:company:red-cat",
       "manufacturer"
     ],
     [
@@ -3902,13 +3907,13 @@
     ],
     [
       "entity:uav:uav-red-cat-black-widow-black-widow",
-      "tax:manufacturer:Red Cat",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-red-cat-black-widow-black-widow",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-rv-connex-sky-scout-sky-scout",
+      "entity:company:rv-connex",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-rv-connex-sky-scout-sky-scout",
@@ -3917,13 +3922,13 @@
     ],
     [
       "entity:uav:uav-rv-connex-sky-scout-sky-scout",
-      "tax:manufacturer:RV Connex",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-rv-connex-sky-scout-sky-scout",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-sabrewing-rhaegal-rhaegal",
+      "entity:company:sabrewing",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-sabrewing-rhaegal-rhaegal",
@@ -3932,13 +3937,13 @@
     ],
     [
       "entity:uav:uav-sabrewing-rhaegal-rhaegal",
-      "tax:manufacturer:Sabrewing",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-sabrewing-rhaegal-rhaegal",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-safran-patroller-patroller",
+      "entity:company:safran",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-safran-patroller-patroller",
@@ -3946,8 +3951,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-safran-patroller-patroller",
-      "tax:manufacturer:Safran",
+      "entity:uav:uav-schiebel-camcopter-s-100-camcopter-s-100",
+      "entity:company:schiebel",
       "manufacturer"
     ],
     [
@@ -3957,13 +3962,13 @@
     ],
     [
       "entity:uav:uav-schiebel-camcopter-s-100-camcopter-s-100",
-      "tax:manufacturer:Schiebel",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-schiebel-camcopter-s-100-camcopter-s-100",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-sensefly-ebee-x-ebee-x",
+      "entity:company:sensefly",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-sensefly-ebee-x-ebee-x",
@@ -3972,23 +3977,18 @@
     ],
     [
       "entity:uav:uav-sensefly-ebee-x-ebee-x",
-      "tax:manufacturer:senseFly",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-sensefly-ebee-x-ebee-x",
       "tax:segment:surveying",
       "segment"
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-128-v-bat-128",
-      "tax:country:US",
-      "country"
+      "entity:company:shield-ai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-128-v-bat-128",
-      "tax:manufacturer:Shield AI",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-128-v-bat-128",
@@ -3997,13 +3997,13 @@
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-v-bat",
-      "tax:country:US",
-      "country"
+      "entity:company:shield-ai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-v-bat",
-      "tax:manufacturer:Shield AI",
-      "manufacturer"
+      "tax:country:US",
+      "country"
     ],
     [
       "entity:uav:uav-shield-ai-v-bat-v-bat",
@@ -4012,12 +4012,17 @@
     ],
     [
       "entity:uav:uav-skydio-skydio-2-plus-skydio-2-plus",
-      "tax:country:USA",
-      "country"
+      "entity:company:skydio",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-skydio-skydio-2-plus-skydio-2-plus",
-      "tax:manufacturer:Skydio",
+      "tax:country:USA",
+      "country"
+    ],
+    [
+      "entity:uav:uav-skydio-x10-x10",
+      "entity:company:skydio",
       "manufacturer"
     ],
     [
@@ -4027,13 +4032,13 @@
     ],
     [
       "entity:uav:uav-skydio-x10-x10",
-      "tax:manufacturer:Skydio",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-skydio-x10-x10",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-skydio-x10-x10d",
+      "entity:company:skydio",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-skydio-x10-x10d",
@@ -4042,23 +4047,18 @@
     ],
     [
       "entity:uav:uav-skydio-x10-x10d",
-      "tax:manufacturer:Skydio",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-skydio-x10-x10d",
       "tax:segment:enterprise",
       "segment"
+    ],
+    [
+      "entity:uav:uav-skydio-x2d-x2d",
+      "entity:company:skydio",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-skydio-x2d-x2d",
       "tax:country:US",
       "country"
-    ],
-    [
-      "entity:uav:uav-skydio-x2d-x2d",
-      "tax:manufacturer:Skydio",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-skydio-x2d-x2d",
@@ -4067,18 +4067,23 @@
     ],
     [
       "entity:uav:uav-skyfront-perimeter-8-perimeter-8",
+      "entity:company:skyfront",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-skyfront-perimeter-8-perimeter-8",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-skyfront-perimeter-8-perimeter-8",
-      "tax:manufacturer:Skyfront",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-skyfront-perimeter-8-perimeter-8",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-sony-airpeak-s1-s1",
+      "entity:company:sony",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-sony-airpeak-s1-s1",
@@ -4087,13 +4092,13 @@
     ],
     [
       "entity:uav:uav-sony-airpeak-s1-s1",
-      "tax:manufacturer:Sony",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-sony-airpeak-s1-s1",
       "tax:segment:cinema",
       "segment"
+    ],
+    [
+      "entity:uav:uav-special-technology-center-orlan-10-orlan-10",
+      "entity:company:special-technology-center",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-special-technology-center-orlan-10-orlan-10",
@@ -4102,13 +4107,13 @@
     ],
     [
       "entity:uav:uav-special-technology-center-orlan-10-orlan-10",
-      "tax:manufacturer:Special Technology Center",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-special-technology-center-orlan-10-orlan-10",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-st-engineering-skyblade-360-skyblade-360",
+      "entity:company:st-engineering",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-st-engineering-skyblade-360-skyblade-360",
@@ -4117,23 +4122,18 @@
     ],
     [
       "entity:uav:uav-st-engineering-skyblade-360-skyblade-360",
-      "tax:manufacturer:ST Engineering",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-st-engineering-skyblade-360-skyblade-360",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-stm-alpagu-alpagu",
-      "tax:country:Turkey",
-      "country"
+      "entity:company:stm",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-stm-alpagu-alpagu",
-      "tax:manufacturer:STM",
-      "manufacturer"
+      "tax:country:Turkey",
+      "country"
     ],
     [
       "entity:uav:uav-stm-alpagu-alpagu",
@@ -4142,18 +4142,23 @@
     ],
     [
       "entity:uav:uav-stm-kargu-kargu",
+      "entity:company:stm",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-stm-kargu-kargu",
       "tax:country:Turkey",
       "country"
     ],
     [
       "entity:uav:uav-stm-kargu-kargu",
-      "tax:manufacturer:STM",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-stm-kargu-kargu",
       "tax:segment:loitering_munition",
       "segment"
+    ],
+    [
+      "entity:uav:uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
+      "entity:company:sukhoi",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
@@ -4162,13 +4167,13 @@
     ],
     [
       "entity:uav:uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
-      "tax:manufacturer:Sukhoi",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-supernal-s-a2-s-a2",
+      "entity:company:supernal",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-supernal-s-a2-s-a2",
@@ -4176,8 +4181,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-supernal-s-a2-s-a2",
-      "tax:manufacturer:Supernal",
+      "entity:uav:uav-swoop-aero-kite-kite",
+      "entity:company:swoop-aero",
       "manufacturer"
     ],
     [
@@ -4187,22 +4192,22 @@
     ],
     [
       "entity:uav:uav-swoop-aero-kite-kite",
-      "tax:manufacturer:Swoop Aero",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-swoop-aero-kite-kite",
       "tax:segment:delivery",
       "segment"
     ],
     [
       "entity:uav:uav-tai-aksungur-aksungur",
-      "tax:country:Turkey",
-      "country"
+      "entity:company:tai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-tai-aksungur-aksungur",
-      "tax:manufacturer:TAI",
+      "tax:country:Turkey",
+      "country"
+    ],
+    [
+      "entity:uav:uav-tai-anka-3-anka-3",
+      "entity:company:tai",
       "manufacturer"
     ],
     [
@@ -4212,13 +4217,13 @@
     ],
     [
       "entity:uav:uav-tai-anka-3-anka-3",
-      "tax:manufacturer:TAI",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-tai-anka-3-anka-3",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-tai-anka-anka",
+      "entity:company:tai",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-tai-anka-anka",
@@ -4226,8 +4231,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-tai-anka-anka",
-      "tax:manufacturer:TAI",
+      "entity:uav:uav-teal-drones-golden-eagle-golden-eagle",
+      "entity:company:teal-drones",
       "manufacturer"
     ],
     [
@@ -4236,19 +4241,14 @@
       "country"
     ],
     [
-      "entity:uav:uav-teal-drones-golden-eagle-golden-eagle",
-      "tax:manufacturer:Teal Drones",
+      "entity:uav:uav-teal-drones-teal-2",
+      "entity:company:teal-drones",
       "manufacturer"
     ],
     [
       "entity:uav:uav-teal-drones-teal-2",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-teal-drones-teal-2",
-      "tax:manufacturer:Teal Drones",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-teal-drones-teal-2",
@@ -4257,18 +4257,23 @@
     ],
     [
       "entity:uav:uav-teal-golden-eagle-golden-eagle",
+      "entity:company:teal",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-teal-golden-eagle-golden-eagle",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-teal-golden-eagle-golden-eagle",
-      "tax:manufacturer:Teal",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-teal-golden-eagle-golden-eagle",
       "tax:segment:public_safety",
       "segment"
+    ],
+    [
+      "entity:uav:uav-teledyne-flir-black-hornet-4-black-hornet-4",
+      "entity:company:teledyne-flir",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-teledyne-flir-black-hornet-4-black-hornet-4",
@@ -4277,23 +4282,18 @@
     ],
     [
       "entity:uav:uav-teledyne-flir-black-hornet-4-black-hornet-4",
-      "tax:manufacturer:Teledyne FLIR",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-teledyne-flir-black-hornet-4-black-hornet-4",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-teledyne-flir-siras-siras",
-      "tax:country:USA",
-      "country"
+      "entity:company:teledyne-flir",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-teledyne-flir-siras-siras",
-      "tax:manufacturer:Teledyne FLIR",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-teledyne-flir-siras-siras",
@@ -4302,13 +4302,13 @@
     ],
     [
       "entity:uav:uav-teledyne-flir-skyranger-r70",
-      "tax:country:USA",
-      "country"
+      "entity:company:teledyne-flir",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-teledyne-flir-skyranger-r70",
-      "tax:manufacturer:Teledyne FLIR",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-teledyne-flir-skyranger-r70",
@@ -4317,13 +4317,13 @@
     ],
     [
       "entity:uav:uav-textron-aerosonde-aerosonde",
-      "tax:country:USA",
-      "country"
+      "entity:company:textron",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-textron-aerosonde-aerosonde",
-      "tax:manufacturer:Textron",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-textron-aerosonde-aerosonde",
@@ -4332,18 +4332,23 @@
     ],
     [
       "entity:uav:uav-textron-rq-7-shadow-rq-7-shadow",
+      "entity:company:textron",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-textron-rq-7-shadow-rq-7-shadow",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-textron-rq-7-shadow-rq-7-shadow",
-      "tax:manufacturer:Textron",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-textron-rq-7-shadow-rq-7-shadow",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-textron-systems-aerosonde-aerosonde",
+      "entity:company:textron-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-textron-systems-aerosonde-aerosonde",
@@ -4352,13 +4357,13 @@
     ],
     [
       "entity:uav:uav-textron-systems-aerosonde-aerosonde",
-      "tax:manufacturer:Textron Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-textron-systems-aerosonde-aerosonde",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-thales-spy-ranger-spy-ranger",
+      "entity:company:thales",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-thales-spy-ranger-spy-ranger",
@@ -4367,13 +4372,13 @@
     ],
     [
       "entity:uav:uav-thales-spy-ranger-spy-ranger",
-      "tax:manufacturer:Thales",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-thales-spy-ranger-spy-ranger",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-threod-systems-eos-c-eos-c",
+      "entity:company:threod-systems",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-threod-systems-eos-c-eos-c",
@@ -4382,23 +4387,18 @@
     ],
     [
       "entity:uav:uav-threod-systems-eos-c-eos-c",
-      "tax:manufacturer:Threod Systems",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-threod-systems-eos-c-eos-c",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-topxgun-fp600-fp600",
-      "tax:country:China",
-      "country"
+      "entity:company:topxgun",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-topxgun-fp600-fp600",
-      "tax:manufacturer:Topxgun",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-topxgun-fp600-fp600",
@@ -4407,13 +4407,13 @@
     ],
     [
       "entity:uav:uav-ums-skeldar-v-200-v-200",
-      "tax:country:Sweden",
-      "country"
+      "entity:company:ums-skeldar",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-ums-skeldar-v-200-v-200",
-      "tax:manufacturer:UMS Skeldar",
-      "manufacturer"
+      "tax:country:Sweden",
+      "country"
     ],
     [
       "entity:uav:uav-ums-skeldar-v-200-v-200",
@@ -4422,13 +4422,13 @@
     ],
     [
       "entity:uav:uav-uvision-hero-120-hero-120",
-      "tax:country:Israel",
-      "country"
+      "entity:company:uvision",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-uvision-hero-120-hero-120",
-      "tax:manufacturer:UVision",
-      "manufacturer"
+      "tax:country:Israel",
+      "country"
     ],
     [
       "entity:uav:uav-uvision-hero-120-hero-120",
@@ -4437,18 +4437,23 @@
     ],
     [
       "entity:uav:uav-uvision-hero-30-hero-30",
+      "entity:company:uvision",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-uvision-hero-30-hero-30",
       "tax:country:Israel",
       "country"
     ],
     [
       "entity:uav:uav-uvision-hero-30-hero-30",
-      "tax:manufacturer:UVision",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-uvision-hero-30-hero-30",
       "tax:segment:loitering_munition",
       "segment"
+    ],
+    [
+      "entity:uav:uav-uzga-forpost-r-forpost-r",
+      "entity:company:uzga",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-uzga-forpost-r-forpost-r",
@@ -4457,13 +4462,13 @@
     ],
     [
       "entity:uav:uav-uzga-forpost-r-forpost-r",
-      "tax:manufacturer:UZGA",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-uzga-forpost-r-forpost-r",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-vantage-robotics-vesper-vesper",
+      "entity:company:vantage-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-vantage-robotics-vesper-vesper",
@@ -4472,13 +4477,13 @@
     ],
     [
       "entity:uav:uav-vantage-robotics-vesper-vesper",
-      "tax:manufacturer:Vantage Robotics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-vantage-robotics-vesper-vesper",
       "tax:segment:defense_government",
       "segment"
+    ],
+    [
+      "entity:uav:uav-vertical-aerospace-vx4-vx4",
+      "entity:company:vertical-aerospace",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-vertical-aerospace-vx4-vx4",
@@ -4487,13 +4492,13 @@
     ],
     [
       "entity:uav:uav-vertical-aerospace-vx4-vx4",
-      "tax:manufacturer:Vertical Aerospace",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-vertical-aerospace-vx4-vx4",
       "tax:segment:passenger_uam",
       "segment"
+    ],
+    [
+      "entity:uav:uav-viettel-vu-male-vu-male",
+      "entity:company:viettel",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-viettel-vu-male-vu-male",
@@ -4502,13 +4507,13 @@
     ],
     [
       "entity:uav:uav-viettel-vu-male-vu-male",
-      "tax:manufacturer:Viettel",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-viettel-vu-male-vu-male",
       "tax:segment:military_tactical",
       "segment"
+    ],
+    [
+      "entity:uav:uav-viettel-vu-r70-vu-r70",
+      "entity:company:viettel",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-viettel-vu-r70-vu-r70",
@@ -4517,23 +4522,18 @@
     ],
     [
       "entity:uav:uav-viettel-vu-r70-vu-r70",
-      "tax:manufacturer:Viettel",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-viettel-vu-r70-vu-r70",
       "tax:segment:military_tactical",
       "segment"
     ],
     [
       "entity:uav:uav-volocopter-volocity-volocity",
-      "tax:country:Germany",
-      "country"
+      "entity:company:volocopter",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-volocopter-volocity-volocity",
-      "tax:manufacturer:Volocopter",
-      "manufacturer"
+      "tax:country:Germany",
+      "country"
     ],
     [
       "entity:uav:uav-volocopter-volocity-volocity",
@@ -4542,12 +4542,17 @@
     ],
     [
       "entity:uav:uav-volocopter-voloregion-voloregion",
+      "entity:company:volocopter",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-volocopter-voloregion-voloregion",
       "tax:country:Germany",
       "country"
     ],
     [
-      "entity:uav:uav-volocopter-voloregion-voloregion",
-      "tax:manufacturer:Volocopter",
+      "entity:uav:uav-walkera-vitus-320-vitus-320",
+      "entity:company:walkera",
       "manufacturer"
     ],
     [
@@ -4557,13 +4562,13 @@
     ],
     [
       "entity:uav:uav-walkera-vitus-320-vitus-320",
-      "tax:manufacturer:Walkera",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-walkera-vitus-320-vitus-320",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-walkera-vitus-vitus",
+      "entity:company:walkera",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-walkera-vitus-vitus",
@@ -4572,13 +4577,13 @@
     ],
     [
       "entity:uav:uav-walkera-vitus-vitus",
-      "tax:manufacturer:Walkera",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-walkera-vitus-vitus",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-watts-innovations-prism-sky-prism-sky",
+      "entity:company:watts-innovations",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-watts-innovations-prism-sky-prism-sky",
@@ -4586,8 +4591,8 @@
       "country"
     ],
     [
-      "entity:uav:uav-watts-innovations-prism-sky-prism-sky",
-      "tax:manufacturer:Watts Innovations",
+      "entity:uav:uav-wb-group-warmate-warmate",
+      "entity:company:wb-group",
       "manufacturer"
     ],
     [
@@ -4597,23 +4602,18 @@
     ],
     [
       "entity:uav:uav-wb-group-warmate-warmate",
-      "tax:manufacturer:WB Group",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-wb-group-warmate-warmate",
       "tax:segment:loitering_munition",
       "segment"
     ],
     [
       "entity:uav:uav-wing-delivery-aircraft-delivery-aircraft",
-      "tax:country:USA",
-      "country"
+      "entity:company:wing",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-wing-delivery-aircraft-delivery-aircraft",
-      "tax:manufacturer:Wing",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-wing-delivery-aircraft-delivery-aircraft",
@@ -4622,18 +4622,23 @@
     ],
     [
       "entity:uav:uav-wing-delivery-drone-delivery-drone",
+      "entity:company:wing",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-wing-delivery-drone-delivery-drone",
       "tax:country:USA",
       "country"
     ],
     [
       "entity:uav:uav-wing-delivery-drone-delivery-drone",
-      "tax:manufacturer:Wing",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-wing-delivery-drone-delivery-drone",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-wingcopter-w198-198",
+      "entity:company:wingcopter",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-wingcopter-w198-198",
@@ -4642,13 +4647,13 @@
     ],
     [
       "entity:uav:uav-wingcopter-w198-198",
-      "tax:manufacturer:Wingcopter",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-wingcopter-w198-198",
       "tax:segment:delivery",
       "segment"
+    ],
+    [
+      "entity:uav:uav-wingtra-wingtraone-gen-ii",
+      "entity:company:wingtra",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-wingtra-wingtraone-gen-ii",
@@ -4657,23 +4662,18 @@
     ],
     [
       "entity:uav:uav-wingtra-wingtraone-gen-ii",
-      "tax:manufacturer:Wingtra",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-wingtra-wingtraone-gen-ii",
       "tax:segment:surveying",
       "segment"
     ],
     [
       "entity:uav:uav-wisk-aero-generation-6-generation-6",
-      "tax:country:USA",
-      "country"
+      "entity:company:wisk-aero",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-wisk-aero-generation-6-generation-6",
-      "tax:manufacturer:Wisk Aero",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-wisk-aero-generation-6-generation-6",
@@ -4682,13 +4682,13 @@
     ],
     [
       "entity:uav:uav-xag-p100-p100",
-      "tax:country:China",
-      "country"
+      "entity:company:xag",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xag-p100-p100",
-      "tax:manufacturer:XAG",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-xag-p100-p100",
@@ -4697,13 +4697,13 @@
     ],
     [
       "entity:uav:uav-xag-p100-pro-p100pro",
-      "tax:country:China",
-      "country"
+      "entity:company:xag",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xag-p100-pro-p100pro",
-      "tax:manufacturer:XAG",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-xag-p100-pro-p100pro",
@@ -4712,13 +4712,13 @@
     ],
     [
       "entity:uav:uav-xag-v40-v40",
-      "tax:country:China",
-      "country"
+      "entity:company:xag",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xag-v40-v40",
-      "tax:manufacturer:XAG",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-xag-v40-v40",
@@ -4727,13 +4727,13 @@
     ],
     [
       "entity:uav:uav-xag-v50-v50",
-      "tax:country:China",
-      "country"
+      "entity:company:xag",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xag-v50-v50",
-      "tax:manufacturer:XAG",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-xag-v50-v50",
@@ -4742,13 +4742,13 @@
     ],
     [
       "entity:uav:uav-xiaomi-fimi-x8-se-x8-se",
-      "tax:country:China",
-      "country"
+      "entity:company:xiaomi-fimi",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xiaomi-fimi-x8-se-x8-se",
-      "tax:manufacturer:Xiaomi (FIMI)",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-xiaomi-fimi-x8-se-x8-se",
@@ -4757,23 +4757,23 @@
     ],
     [
       "entity:uav:uav-xpeng-aeroht-x2-x2",
-      "tax:country:China",
-      "country"
+      "entity:company:xpeng-aeroht",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-xpeng-aeroht-x2-x2",
-      "tax:manufacturer:XPeng AeroHT",
+      "tax:country:China",
+      "country"
+    ],
+    [
+      "entity:uav:uav-yuneec-h520e-h520e",
+      "entity:company:yuneec",
       "manufacturer"
     ],
     [
       "entity:uav:uav-yuneec-h520e-h520e",
       "tax:country:China",
       "country"
-    ],
-    [
-      "entity:uav:uav-yuneec-h520e-h520e",
-      "tax:manufacturer:Yuneec",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-yuneec-h520e-h520e",
@@ -4782,18 +4782,23 @@
     ],
     [
       "entity:uav:uav-yuneec-mantis-q-mantis-q",
+      "entity:company:yuneec",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-yuneec-mantis-q-mantis-q",
       "tax:country:China",
       "country"
     ],
     [
       "entity:uav:uav-yuneec-mantis-q-mantis-q",
-      "tax:manufacturer:Yuneec",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-yuneec-mantis-q-mantis-q",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-yuneec-typhoon-h-plus-typhoon-h-plus",
+      "entity:company:yuneec",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-yuneec-typhoon-h-plus-typhoon-h-plus",
@@ -4802,13 +4807,13 @@
     ],
     [
       "entity:uav:uav-yuneec-typhoon-h-plus-typhoon-h-plus",
-      "tax:manufacturer:Yuneec",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-yuneec-typhoon-h-plus-typhoon-h-plus",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-yuneec-typhoon-h3-typhoon-h3",
+      "entity:company:yuneec",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-yuneec-typhoon-h3-typhoon-h3",
@@ -4817,23 +4822,18 @@
     ],
     [
       "entity:uav:uav-yuneec-typhoon-h3-typhoon-h3",
-      "tax:manufacturer:Yuneec",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-yuneec-typhoon-h3-typhoon-h3",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-zala-aero-421-16e-421-16e",
+      "entity:company:zala-aero",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zala-aero-421-16e-421-16e",
       "tax:country:Russia",
       "country"
-    ],
-    [
-      "entity:uav:uav-zala-aero-421-16e-421-16e",
-      "tax:manufacturer:ZALA Aero",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-zala-aero-421-16e-421-16e",
@@ -4842,13 +4842,13 @@
     ],
     [
       "entity:uav:uav-zala-aero-lancet-3-lancet-3",
-      "tax:country:Russia",
-      "country"
+      "entity:company:zala-aero",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zala-aero-lancet-3-lancet-3",
-      "tax:manufacturer:ZALA Aero",
-      "manufacturer"
+      "tax:country:Russia",
+      "country"
     ],
     [
       "entity:uav:uav-zala-aero-lancet-3-lancet-3",
@@ -4857,13 +4857,13 @@
     ],
     [
       "entity:uav:uav-zala-aero-lancet-lancet",
-      "tax:country:Russia",
-      "country"
+      "entity:company:zala-aero",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zala-aero-lancet-lancet",
-      "tax:manufacturer:ZALA Aero",
-      "manufacturer"
+      "tax:country:Russia",
+      "country"
     ],
     [
       "entity:uav:uav-zala-aero-lancet-lancet",
@@ -4872,13 +4872,13 @@
     ],
     [
       "entity:uav:uav-zero-zero-robotics-hoverair-x1-pro-hoverair-x1-pro",
-      "tax:country:China",
-      "country"
+      "entity:company:zero-zero-robotics",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zero-zero-robotics-hoverair-x1-pro-hoverair-x1-pro",
-      "tax:manufacturer:Zero Zero Robotics",
-      "manufacturer"
+      "tax:country:China",
+      "country"
     ],
     [
       "entity:uav:uav-zero-zero-robotics-hoverair-x1-pro-hoverair-x1-pro",
@@ -4887,28 +4887,28 @@
     ],
     [
       "entity:uav:uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax",
+      "entity:company:zero-zero-robotics",
+      "manufacturer"
+    ],
+    [
+      "entity:uav:uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax",
       "tax:country:China",
       "country"
     ],
     [
       "entity:uav:uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax",
-      "tax:manufacturer:Zero Zero Robotics",
-      "manufacturer"
-    ],
-    [
-      "entity:uav:uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax",
       "tax:segment:consumer",
       "segment"
+    ],
+    [
+      "entity:uav:uav-zipline-p2-p2",
+      "entity:company:zipline",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zipline-p2-p2",
       "tax:country:USA",
       "country"
-    ],
-    [
-      "entity:uav:uav-zipline-p2-p2",
-      "tax:manufacturer:Zipline",
-      "manufacturer"
     ],
     [
       "entity:uav:uav-zipline-p2-p2",
@@ -4917,13 +4917,13 @@
     ],
     [
       "entity:uav:uav-zipline-platform-2-platform-2",
-      "tax:country:USA",
-      "country"
+      "entity:company:zipline",
+      "manufacturer"
     ],
     [
       "entity:uav:uav-zipline-platform-2-platform-2",
-      "tax:manufacturer:Zipline",
-      "manufacturer"
+      "tax:country:USA",
+      "country"
     ],
     [
       "entity:uav:uav-zipline-platform-2-platform-2",

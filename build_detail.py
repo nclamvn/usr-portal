@@ -6,7 +6,7 @@ Every number carries a footnote to its real source URL + tier (A/B/C) — the pr
 visible. Honest-null renders "— / unverified", never hidden. Disputed keeps BOTH claimed values.
 Reuses the shared design system + the chip()/friendly() renderers from build_reference. N-agnostic.
 """
-import json, pathlib, shutil
+import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from glyphs import glyph_svg
 
@@ -124,10 +124,11 @@ DETAIL_CSS = """
 """
 
 
-def detail_fragment(e, labels, ranges=None, draw=False):
+def detail_fragment(e, labels, ranges=None, draw=False, company=None):
     """Inner detail content (header + identity + specs + sources + note) — NO page chrome.
     Reused verbatim by the standalone page and the single-file bundle, so honest-null / disputed /
-    tier rendering can never drift between the two."""
+    tier rendering can never drift between the two. `company` (slug+name) adds a manufacturer-profile
+    link on the standalone page only; the bundle passes None (offline single-file) -> byte-stable."""
     ledger = {}
     maker = e["manufacturer"].get("value") or "—"
     model = e["name"].get("value") or "—"
@@ -144,13 +145,18 @@ def detail_fragment(e, labels, ranges=None, draw=False):
         for url, m in ledger.items())
     if not foot:
         foot = f'<li class="nosrc">{bilingual("No source on record yet.", "Chưa có nguồn ghi nhận.")}</li>'
+    # company link — standalone page only; empty string when absent so the bundle (company=None)
+    # stays byte-identical (the link is appended right after the dglyph </div>, no stray line).
+    clink = ('\n  <div class="dcompany"><a class="back" href="../company/%s.html">%s · %s &rarr;</a></div>'
+             % (esc(company["slug"]), bilingual("Manufacturer profile", "Hồ sơ nhà sản xuất"),
+                esc(company["name"]))) if company else ""
     return f"""<header class="dhead reg-frame" data-audit="dhead">
     <span class="reg-tr"></span><span class="reg-bl"></span>
     <h1 data-audit="dtitle">{esc(maker)} <span class="model">{esc(model)}</span></h1>
     <div class="meta mono">{esc(country)} · {seg} · {pclass}</div>
   </header>
   <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg", draw=draw)}
-    <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>
+    <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>{clink}
   <div class="dsec-h">{bilingual("Identity", "Định danh")}</div>
   <div class="drows">{ident}</div>
   <div class="dsec-h">{bilingual("Specifications", "Thông số")}</div>
@@ -164,7 +170,7 @@ def detail_fragment(e, labels, ranges=None, draw=False):
     "Field chưa kiểm chứng hoặc thiếu hiển thị null — không bịa. Field tranh chấp giữ cả hai giá trị.")}</p>"""
 
 
-def render_detail(e, labels, ranges=None):
+def render_detail(e, labels, ranges=None, company=None):
     maker = e["manufacturer"].get("value") or "—"
     model = e["name"].get("value") or "—"
     return f"""<!DOCTYPE html>
@@ -185,7 +191,7 @@ def render_detail(e, labels, ranges=None):
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
     </div>
   </div>
-  {detail_fragment(e, labels, ranges, draw=True)}
+  {detail_fragment(e, labels, ranges, draw=True, company=company)}
 </main>
 <script src="../base/base.js"></script>
 <script>
@@ -205,12 +211,16 @@ def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
     ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV detail pages only
+    company_slugs = {e["slug"] for e in site["entities"] if e.get("entity_type") == "company"}
     ranges = site["aggregates"].get("spec_range", {})
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)          # clean regen — no stale slugs linger
     OUTDIR.mkdir(parents=True)
     for e in ents:
-        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges))
+        mfr = (e.get("manufacturer") or {}).get("value")
+        cslug = re.sub(r"[^a-z0-9]+", "-", (mfr or "").lower()).strip("-")
+        company = {"slug": cslug, "name": mfr} if mfr and cslug in company_slugs else None
+        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges, company=company))
     print(f"entity/: {len(ents)} detail pages written")
 
 
