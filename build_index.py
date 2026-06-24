@@ -298,54 +298,52 @@ def main():
   /* faint blueprint grid (graph-paper) behind cream sections — premium hi-tech texture */
   body{{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:30px 30px;background-position:center top}}
   .sec.plate{{background-image:none}}
-  /* hero — single column: head -> dark inset blueprint -> live ribbon + CTA */
-  .field{{position:relative;padding:72px 0 64px;overflow:hidden}}
-  .field .wrap{{position:relative;z-index:2;display:flex;flex-direction:column;gap:40px;align-items:stretch}}
-  .hero-head{{max-width:62ch}}
+  /* HERO — full-bleed dark cockpit band (re-skin): text+302 left · large blueprint right */
+  .field.hero-dark{{position:relative;overflow:hidden;padding:70px 0 78px;color:var(--card-ink);
+    background:radial-gradient(150% 130% at 22% -20%, #20242c 0%, var(--card-bg) 52%, #090a0d 100%);
+    border-bottom:1px solid var(--card-hair)}}
+  .field.hero-dark .wrap{{position:relative;z-index:2}}
+  .hero-grid{{display:grid;grid-template-columns:1fr 1.04fr;gap:52px;align-items:center}}
+  @media (max-width:960px){{.hero-grid{{grid-template-columns:1fr;gap:34px}}}}
+  .hero-col-l{{max-width:58ch}}
   .eyebrow{{font-family:var(--font-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}}
   .eyebrow::before{{content:"";width:22px;height:1px;background:var(--brass-bright)}}
-  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 0}}
-  .lead-p{{font-size:17px;color:var(--ink-soft);max-width:54ch;margin-top:18px}}
-  /* hero number — the verified-count as the opening punch (live, count-up) */
-  .hero-num{{display:flex;align-items:baseline;gap:14px;margin-top:26px;flex-wrap:wrap}}
-  .hero-num .hn-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(52px,8vw,88px);line-height:.92;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block}}
-  .hero-num .hn-k{{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);max-width:18ch;line-height:1.5}}
-  /* dark blueprint console — graded depth (not flat black) + grain + scan-line + vignette */
-  .hero-bp{{position:relative;border-radius:16px;padding:18px 26px 10px;overflow:hidden;
-    background:radial-gradient(130% 120% at 50% -10%, #20242b 0%, var(--card-bg) 55%, #0c0d10 100%);
-    box-shadow:0 40px 80px -34px rgba(0,0,0,.6), inset 0 0 120px 10px rgba(0,0,0,.45);
-    border:1px solid var(--card-hair)}}
-  .hero-bp .reg-tr,.hero-bp::before,.hero-bp::after,.hero-bp .reg-bl{{border-color:var(--bp)!important;opacity:.7}}
-  .hero-grain{{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.06;mix-blend-mode:overlay;
+  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(42px,6vw,76px);line-height:1.0;letter-spacing:-.025em;margin:18px 0 0;color:var(--card-ink)}}
+  .lead-p{{font-size:17px;color:var(--card-soft);max-width:50ch;margin-top:18px}}
+  /* hero number — the verified-count, the opening punch (live, count-up) */
+  .hero-num{{display:flex;align-items:baseline;gap:16px;margin-top:30px;flex-wrap:wrap}}
+  .hero-num .hn-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(64px,9vw,108px);line-height:.9;letter-spacing:-.035em;color:var(--card-ink);font-variant-numeric:tabular-nums;display:inline-block}}
+  .hero-num .hn-k{{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--card-faint);max-width:18ch;line-height:1.5}}
+  /* band texture — grain + scan (reduced-motion safe) */
+  .hero-dark .hero-grain{{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.05;mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}}
-  .hero-scan{{position:absolute;left:0;right:0;top:0;height:34%;pointer-events:none;z-index:1;
-    background:linear-gradient(180deg,transparent,rgba(216,162,74,.10),transparent);animation:heroscan 7s linear infinite}}
-  @keyframes heroscan{{0%{{transform:translateY(-40%)}}100%{{transform:translateY(340%)}}}}
-  .hero-bp .bp-stage{{position:relative;z-index:2}}
-  .hero-bp .hero-bp-foot{{position:relative;z-index:2}}
+  .hero-dark .hero-scan{{position:absolute;left:0;right:0;top:0;height:30%;pointer-events:none;z-index:1;
+    background:linear-gradient(180deg,transparent,rgba(216,162,74,.08),transparent);animation:heroscan 8s linear infinite}}
+  @keyframes heroscan{{0%{{transform:translateY(-40%)}}100%{{transform:translateY(360%)}}}}
   @media (prefers-reduced-motion:reduce){{.hero-scan{{animation:none;opacity:0}}}}
-  .hero-foot{{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}}
-  /* live stat-ribbon (every number from live_facts — zero-fab) */
-  .statribbon{{display:flex;align-items:baseline;gap:34px;flex-wrap:wrap}}
-  .sr-cell{{display:inline-flex;flex-direction:column;gap:4px}}
-  .sr-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block;text-align:left}}
-  .sr-k{{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}}
-  .sr-live{{flex-direction:row;align-items:center;gap:8px;align-self:center}}
-  .live-dot{{width:8px;height:8px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 0 var(--brass);animation:livepulse 2.4s var(--ease) infinite}}
-  .sr-live .sr-k{{color:var(--brass)}}
-  @keyframes livepulse{{0%{{box-shadow:0 0 0 0 rgba(155,107,28,.5)}}70%{{box-shadow:0 0 0 7px rgba(155,107,28,0)}}100%{{box-shadow:0 0 0 0 rgba(155,107,28,0)}}}}
-  .cta{{display:inline-flex;align-items:center;gap:14px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border:1px solid var(--hair-strong);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}}
-  .cta:hover{{border-color:var(--brass-bright);gap:18px}}
-  .cta .ico{{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#fff;display:grid;place-items:center;flex:0 0 auto}}
-  .cta .ar{{width:15px;height:15px;display:block}}
-  [data-theme="dark"] .cta .ico{{color:#15171B}}
-  /* blueprint callouts + dimension (approved portal-in-action treatment) */
-  .hero-bp-foot{{border-top:1px solid var(--card-hair);margin-top:6px;padding-top:14px;display:flex;justify-content:flex-end}}
+  /* right column — large blueprint on the band (reg-frame brass accent, no card chrome) */
+  .hero-col-r{{position:relative;padding:8px 10px}}
+  .hero-col-r .reg-tr,.hero-col-r::before,.hero-col-r::after,.hero-col-r .reg-bl{{border-color:var(--bp)!important;opacity:.55}}
+  .bp-stage--hero{{padding:0;background:radial-gradient(120% 90% at 50% 30%,rgba(216,162,74,.06),transparent 64%)}}
+  .bp-stage--hero svg{{max-height:440px}}
+  .hero-bp-foot{{border-top:1px solid var(--card-hair);margin-top:8px;padding-top:14px;display:flex;justify-content:flex-end}}
   .hero-bp-foot .hero-cap{{color:var(--card-ink)}}
   .hero-bp-foot .hero-cap .ico{{width:26px;height:26px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}}
   .hero-bp-foot .hero-cap:hover .ico{{transform:translateX(4px)}}
-  .bp-stage--hero{{padding:8px 0 0;background:radial-gradient(120% 80% at 50% 0%,rgba(216,162,74,.07),transparent 62%)}}
-  .bp-stage--hero svg{{max-height:360px}}
+  /* live stat-ribbon + CTA (on dark) */
+  .hero-foot{{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:34px}}
+  .statribbon{{display:flex;align-items:baseline;gap:30px;flex-wrap:wrap}}
+  .sr-cell{{display:inline-flex;flex-direction:column;gap:4px}}
+  .sr-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(24px,2.6vw,32px);line-height:1;letter-spacing:-.02em;color:var(--card-ink);font-variant-numeric:tabular-nums;display:inline-block;text-align:left}}
+  .sr-k{{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--card-faint)}}
+  .sr-live{{flex-direction:row;align-items:center;gap:8px;align-self:center}}
+  .live-dot{{width:8px;height:8px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 0 var(--brass);animation:livepulse 2.4s var(--ease) infinite}}
+  .sr-live .sr-k{{color:var(--brass)}}
+  @keyframes livepulse{{0%{{box-shadow:0 0 0 0 rgba(216,162,74,.5)}}70%{{box-shadow:0 0 0 7px rgba(216,162,74,0)}}100%{{box-shadow:0 0 0 0 rgba(216,162,74,0)}}}}
+  .cta{{display:inline-flex;align-items:center;gap:14px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--card-ink);border:1px solid var(--card-hair);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}}
+  .cta:hover{{border-color:var(--brass-bright);gap:18px}}
+  .cta .ico{{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#15171B;display:grid;place-items:center;flex:0 0 auto}}
+  .cta .ar{{width:15px;height:15px;display:block}}
   .bp-lead{{stroke:var(--card-faint);stroke-width:1}}
   .bp-call{{fill:var(--card-soft);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
   .bp-callk{{fill:var(--bp);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
@@ -409,9 +407,10 @@ def main():
 
 {header("", "home")}
 
-<section class="field" data-audit="hero">
-  <div class="wrap">
-    <div class="hero-head reveal is-in">
+<section class="field hero-dark" data-audit="hero">
+  <span class="hero-grain" aria-hidden="true"></span><span class="hero-scan" aria-hidden="true"></span>
+  <div class="wrap hero-grid">
+    <div class="hero-col-l reveal is-in">
       <span class="eyebrow" data-audit="eyebrow">{bilingual("In the field", "Trên thực địa")}</span>
       <h1 class="lead-h" data-audit="lead">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>
       <p class="lead-p">{bilingual(
@@ -419,16 +418,15 @@ def main():
         "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.")}</p>
       <div class="hero-num"><b class="hn-n" data-countup style="min-width:{len(str(n))}ch">{n}</b>
         <span class="hn-k">{bilingual("verified UAV systems on record", "hệ thống UAV đã kiểm chứng trong hồ sơ")}</span></div>
+      <div class="hero-foot">
+        {ribbon_html}
+        <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="ico">{ARROW}</span></a>
+      </div>
     </div>
-    <div class="hero-bp reg-frame reveal" data-audit="herobp">
+    <div class="hero-col-r reg-frame reveal" data-audit="herobp">
       <span class="reg-tr"></span><span class="reg-bl"></span>
-      <span class="hero-grain" aria-hidden="true"></span><span class="hero-scan" aria-hidden="true"></span>
       {hero_blueprint}
       <div class="hero-bp-foot">{hero_caption}</div>
-    </div>
-    <div class="hero-foot reveal is-in">
-      {ribbon_html}
-      <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="ico">{ARROW}</span></a>
     </div>
   </div>
 </section>
