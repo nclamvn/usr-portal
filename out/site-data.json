@@ -1,68 +1,68 @@
 {
   "aggregates": {
-    "entity_count": 219,
+    "entity_count": 233,
     "field_status_counts": {
-      "None": 2162,
-      "derived": 195,
+      "None": 2294,
+      "derived": 207,
       "disputed": 6,
       "unverified": 25,
-      "verified": 1992
+      "verified": 2128
     },
     "source_tier_counts": {
-      "A": 1340,
+      "A": 1414,
       "B": 436,
-      "C": 224,
-      "derived": 195
+      "C": 286,
+      "derived": 207
     },
     "spec_fill_rate": {
       "blue_uas": {
         "present": 32,
-        "total": 219
+        "total": 233
       },
       "encryption": {
         "present": 3,
-        "total": 219
+        "total": 233
       },
       "endurance_min": {
-        "present": 107,
-        "total": 219
+        "present": 116,
+        "total": 233
       },
       "gps_denied_capable": {
         "present": 11,
-        "total": 219
+        "total": 233
       },
       "max_link_km": {
-        "present": 46,
-        "total": 219
+        "present": 49,
+        "total": 233
       },
       "max_payload_kg": {
-        "present": 76,
-        "total": 219
+        "present": 84,
+        "total": 233
       },
       "max_range_km": {
-        "present": 56,
-        "total": 219
+        "present": 62,
+        "total": 233
       },
       "max_speed_ms": {
-        "present": 86,
-        "total": 219
+        "present": 96,
+        "total": 233
       },
       "mtow_kg": {
-        "present": 115,
-        "total": 219
+        "present": 127,
+        "total": 233
       },
       "ndaa_compliant": {
         "present": 33,
-        "total": 219
+        "total": 233
       },
       "service_ceiling_m": {
-        "present": 44,
-        "total": 219
+        "present": 48,
+        "total": 233
       }
     },
     "spec_range": {
       "endurance_min": {
-        "max": 3120,
+        "max": 3600,
         "min": 4
       },
       "max_link_km": {
@@ -70,11 +70,11 @@
         "min": 0.9
       },
       "max_payload_kg": {
-        "max": 2700,
-        "min": 1.1
+        "max": 2800,
+        "min": 1
       },
       "max_range_km": {
-        "max": 5666,
+        "max": 10000,
         "min": 3.2
       },
       "max_speed_ms": {
@@ -82,7 +82,7 @@
         "min": 4
       },
       "mtow_kg": {
-        "max": 14628,
+        "max": 25000,
         "min": 0.073
       },
       "service_ceiling_m": {
@@ -7384,6 +7384,210 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:autel-robotics:evo-lite-plus:evo-lite-plus",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": 40
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics EVO Lite Plus"
+      },
+      "family_id": "uav:autel-robotics:evo-lite-plus",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "consumer"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": 12
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": 18
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": 0.835
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics EVO Lite Plus"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-autel-robotics-evo-lite-plus-evo-lite-plus",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-23",
             "tier": "A",
             "url": "https://shop.autelrobotics.com/pages/evo-lite-series-specifications-aircraft"
@@ -7575,6 +7779,210 @@
         "value": null
       },
       "slug": "uav-autel-robotics-evo-lite-evo-lite",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:autel-robotics:evo-nano-plus:evo-nano-plus",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": 28
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics EVO Nano Plus"
+      },
+      "family_id": "uav:autel-robotics:evo-nano-plus",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "consumer"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": 15
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": 0.249
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-nano-sereoes-specifications-aircraft-1"
+          }
+        ],
+        "status": "verified",
+        "value": "Autel Robotics EVO Nano Plus"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-autel-robotics-evo-nano-plus-evo-nano-plus",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -11723,6 +12131,224 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:casc:ch-5:ch-5",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 3600
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "CASC CH-5"
+      },
+      "family_id": "uav:casc:ch-5",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "CASC"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 1000
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 10000
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 133
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 3300
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": "CASC CH-5"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "competitor_military_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1927"
+          }
+        ],
+        "status": "verified",
+        "value": 9000
+      },
+      "slug": "uav-casc-ch-5-ch-5",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "A",
         "sources": [
           {
@@ -12561,6 +13187,203 @@
         "value": null
       },
       "slug": "uav-delair-ux11-ux11",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:dji:agras-t20p:agras-t20p",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 14.5
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Agras T20P"
+      },
+      "family_id": "uav:dji:agras-t20p",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "agriculture"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 52
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t20p/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Agras T20P"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-dji-agras-t20p-agras-t20p",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -13898,6 +14721,196 @@
         "value": null
       },
       "slug": "uav-dji-avata-2-avata-2",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:dji:avata:avata",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": 18
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Avata"
+      },
+      "family_id": "uav:dji:avata",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "fpv"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": 0.346
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/avata"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Avata"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-dji-avata-avata",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -21778,6 +22791,414 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "octocopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:freefly:alta-8:alta-8",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": 15
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "Freefly Alta 8"
+      },
+      "family_id": "uav:freefly:alta-8",
+      "frame_glyph": "octo",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "Freefly"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "cinema"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": 9.1
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": 18.1
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://freeflysystems.com/knowledge-base/what-is-the-payload-capability-of-the-alta-8"
+          }
+        ],
+        "status": "verified",
+        "value": "Freefly Alta 8"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-freefly-alta-8-alta-8",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:general-atomics:gray-eagle:gray-eagle",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": 1500
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "General Atomics Gray Eagle"
+      },
+      "family_id": "uav:general-atomics:gray-eagle",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "General Atomics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": 360
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": 86
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": 1633
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": "General Atomics Gray Eagle"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/General_Atomics_MQ-1C_Gray_Eagle"
+          }
+        ],
+        "status": "verified",
+        "value": 8839
+      },
+      "slug": "uav-general-atomics-gray-eagle-gray-eagle",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "C",
         "sources": [
           {
@@ -22760,6 +24181,189 @@
         "value": null
       },
       "slug": "uav-geprc-cinebot30-cinebot30",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:geprc:mark5:mark5",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "GEPRC Mark5"
+      },
+      "family_id": "uav:geprc:mark5",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "GEPRC"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "fpv"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": 0.392
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://geprc.com/product/geprc-mark5-analog-freestyle-fpv-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "GEPRC Mark5"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-geprc-mark5-mark5",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -24934,6 +26538,217 @@
         "value": 10000
       },
       "slug": "uav-iai-heron-heron",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:iai:mini-harpy:mini-harpy",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": 60
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI Mini Harpy"
+      },
+      "family_id": "uav:iai:mini-harpy",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "Israel"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "loitering_munition"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": 7
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": 100
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": 103
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": 45
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.iai.co.il/p/mini-harpy"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI Mini Harpy"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-iai-mini-harpy-mini-harpy",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -29183,6 +30998,217 @@
         "value": null
       },
       "slug": "uav-manna-aero-manna-manna",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "ducted-fan"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:marss:interceptor-mr:interceptor-mr",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "MARSS Interceptor-MR"
+      },
+      "family_id": "uav:marss:interceptor-mr",
+      "frame_glyph": "ducted",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "MARSS"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "Monaco"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "counter_uas"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": 1
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": 5
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": 80
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": 8
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": "MARSS Interceptor-MR"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://marss.com/products/interceptor-mr/"
+          }
+        ],
+        "status": "verified",
+        "value": 2000
+      },
+      "slug": "uav-marss-interceptor-mr-interceptor-mr",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -34775,6 +36801,203 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:skydio:skydio-2-plus:skydio-2-plus",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": 27
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "Skydio Skydio 2 Plus"
+      },
+      "family_id": "uav:skydio:skydio-2-plus",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "Skydio"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": 6
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": 16
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": 0.8
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://support.skydio.com/hc/en-us/articles/5338292379803"
+          }
+        ],
+        "status": "verified",
+        "value": "Skydio Skydio 2 Plus"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-skydio-skydio-2-plus-skydio-2-plus",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-22",
             "tier": "A",
             "url": "manufacturer_spec"
@@ -36004,6 +38227,400 @@
         "value": null
       },
       "slug": "uav-special-technology-center-orlan-10-orlan-10",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:sukhoi:s-70-okhotnik:s-70-okhotnik",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "Sukhoi S-70 Okhotnik"
+      },
+      "family_id": "uav:sukhoi:s-70-okhotnik",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "Sukhoi"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "Russia"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": 2800
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": 278
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": 25000
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": "Sukhoi S-70 Okhotnik"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "competitor_military_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://en.wikipedia.org/wiki/Sukhoi_S-70_Okhotnik-B"
+          }
+        ],
+        "status": "verified",
+        "value": 18000
+      },
+      "slug": "uav-sukhoi-s-70-okhotnik-s-70-okhotnik",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:supernal:s-a2:s-a2",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "Supernal S-A2"
+      },
+      "family_id": "uav:supernal:s-a2",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "Supernal"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": 96
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": 54
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.supernal.aero/"
+          }
+        ],
+        "status": "verified",
+        "value": "Supernal S-A2"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-supernal-s-a2-s-a2",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -43397,6 +46014,203 @@
         "status": null,
         "value": null
       }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:zipline:platform-2:platform-2",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Zipline Platform 2"
+      },
+      "family_id": "uav:zipline:platform-2",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Zipline"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": 3.5
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": 38.6
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": 31
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.cnbc.com/2023/03/15/zipline-unveils-p2-delivery-drones-that-dock-and-recharge-autonomously.html"
+          }
+        ],
+        "status": "verified",
+        "value": "Zipline Platform 2"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-zipline-platform-2-platform-2",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
     }
   ],
   "field_groups": {
@@ -43634,5 +46448,5 @@
     }
   },
   "schema": "site-data/1",
-  "source_registry_sha256": "c254e0e4c4e5da458028675f53aacd0f90156af9094569893f7a7cb592586236"
+  "source_registry_sha256": "0aeae694f2ef2107b1b8db78b582b3b07376647e4d5cae1325daacc172ef71ee"
 }
