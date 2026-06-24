@@ -297,7 +297,9 @@ small, .small { font-size: .82rem; }
 
 /* GLOBAL FOOTER (footer.py) — dark plate, 3-part + provenance bar. Shared; theme-token-driven. */
 .sfoot { margin-top: 4rem; }
-.sfoot .wrap { padding-top: 3rem; padding-bottom: 1.6rem; }
+/* self-contained container — subpages define .swrap/.cwrap not base .wrap, so the footer must set
+   its own max-width + centering + horizontal padding or it bleeds past the viewport edges. */
+.sfoot .wrap { max-width: var(--w-wide); margin: 0 auto; padding: 3rem 1.4rem 1.6rem; }
 .sfoot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 2.4rem; }
 @media (max-width: 760px) { .sfoot-grid { grid-template-columns: 1fr; gap: 2rem; } }
 .sfoot-wm { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--card-ink); }

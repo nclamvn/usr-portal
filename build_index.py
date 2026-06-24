@@ -266,7 +266,7 @@ def main():
     groups = site["field_groups"]["display"] + site["field_groups"]["spec"]
     f = live_facts(site)
     n = f["entities"]
-    hero_blueprint = blueprint_svg(callouts=True, labels=bilingual)  # signature centrepiece (decorative)
+    hero_blueprint = blueprint_svg(callouts=False)  # clean schematic (callout text overlapped at wide widths)
     ribbon_html = stat_ribbon(f, labels)                              # live authority ribbon (zero-fab)
     feat = pick_featured(ents, groups, 1)[0]                          # one REAL record anchors the hero
     feat_mk, feat_md = maker_model(feat)
