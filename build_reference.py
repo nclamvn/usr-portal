@@ -7,6 +7,7 @@ never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 """
 import json, html, pathlib
 from glyphs import glyph_svg
+from nav import nav
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -226,6 +227,7 @@ def main():
 </head>
 <body>
 <main class="wrap">
+  <div style="margin-bottom:1.2rem">{nav("", "reference")}</div>
   <div class="topline">
     <div class="tl-left">
       <h1>{bilingual("Reference", "Tham chiếu")}</h1>

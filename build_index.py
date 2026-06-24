@@ -14,6 +14,7 @@ in the card body and links to the entity's citable detail page. Bilingual, light
 import json, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
 from glyphs import glyph_svg
+from nav import nav
 from build_news import news_front
 from build_analysis import analysis_feature
 
@@ -296,6 +297,7 @@ def main():
 <header class="bar">
   <div class="wrap">
     <span class="wm-name">Uncrewed Systems Review<small>{bilingual("In the field", "Trên thực địa")}</small></span>
+    {nav("", "home")}
     <div class="ctl">
       <button class="tg" id="lang" aria-label="Language"><span class="s s-en">EN</span><span aria-hidden="true">/</span><span class="s s-vn">VN</span></button>
       <button class="tg" id="theme" aria-label="Theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>

@@ -271,6 +271,14 @@ small, .small { font-size: .82rem; }
   [data-draw] { stroke-dashoffset: 0 !important; }
 }
 
+/* global nav breadcrumb (nav.py) — present on every surface so Home is never a dead end */
+.crumb { font-family: var(--font-mono); font-size: .74rem; display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.crumb a { color: var(--brass); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+.crumb .wm { font-weight: 600; letter-spacing: .02em; }
+.crumb .cur { color: var(--muted); }
+.crumb .sep { color: var(--faint); }
+
 /* i18n: show the active language, hide the other */
 [data-lang-en], [data-lang-vn] { display: none; }
 :root[data-lang="en"] [data-lang-en] { display: revert; }

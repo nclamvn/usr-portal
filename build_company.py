@@ -11,6 +11,7 @@ Design-system-of-record only — no new aesthetic. Bilingual (en/vn) throughout.
 """
 import json, pathlib, shutil
 from build_reference import friendly, bilingual, esc
+from nav import nav
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -112,7 +113,7 @@ def render_company(c, labels, uav_name):
 <body>
 <main class="cwrap">
   <div class="topbar">
-    <a class="back" href="../reference.html">← {bilingual("Reference", "Tham chiếu")}</a>
+    {nav("../")}
     <div class="ctrl">
       <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>

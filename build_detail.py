@@ -9,6 +9,7 @@ Reuses the shared design system + the chip()/friendly() renderers from build_ref
 import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from glyphs import glyph_svg
+from nav import nav
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -195,7 +196,7 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
 <body>
 <main class="dwrap">
   <div class="topbar">
-    <a class="back" href="../reference.html">← {bilingual("Reference", "Tham chiếu")}</a>
+    {nav("../")}
     <div class="ctrl">
       <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>

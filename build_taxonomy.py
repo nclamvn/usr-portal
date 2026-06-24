@@ -9,6 +9,7 @@ Design-system-of-record only; bilingual (en/vn).
 import json, pathlib, shutil, re
 from build_reference import friendly, bilingual, esc
 from canon import canonical_slug, canonical_name
+from nav import nav
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -53,7 +54,7 @@ def page(kind, title_html, meta_html, sections):
 <body>
 <main class="twrap">
   <div class="topbar">
-    <a class="back" href="../reference.html">← {bilingual("Reference", "Tham chiếu")}</a>
+    {nav("../")}
     <div class="ctrl">
       <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
