@@ -6,3 +6,11 @@ __pycache__/
 # transient server logs (live outside the tree, listed for safety)
 /tmp/
 *.log
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.tmp
+id_rsa
