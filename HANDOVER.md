@@ -1,86 +1,72 @@
-# X-RAY — USR Portal (rtr-news) · handover, cập-nhật sau P04
+# X-RAY — USR Portal (rtr-news) · handover, cập-nhật sau **P2 (đóng đủ)**
 
-> Mục-đích: phiên Chủ thầu/Thợ mới đọc file này là tiếp được liền, không dò lại cả chuỗi.
-> Working dir: `/Users/os/RtR/rtr-news/portal`. Tất cả lệnh chạy từ đây.
+> Mục-đích: phiên Chủ thầu/Thợ mới đọc file này là tiếp được liền (P3 Editorial), không dò lại cả chuỗi.
+> Working dir: `/Users/os/RtR/rtr-news/portal`. Tất cả lệnh chạy từ đây. Verify: `./build_all.sh` → "build_all: OK".
 
 ## 1 · Vai & giao-thức
-- **Chủ thầu** (người) ra design-language/spec (TIP) + VERIFY engine-checked. **Thợ** (agent ở env có data) wire vào pipeline, trả Completion Report.
-- Kỷ-luật: **only-trust-engine** (xác bằng chạy code, không bằng lời) · **conflict → REPORT, không tự-quyết** · một-TIP-một-đợt, gates xanh mới qua đợt sau.
+- **Chủ thầu** (người) ra design-language/spec (Contract + TIP) + VERIFY engine-checked. **Thợ** (agent ở env có data) wire vào pipeline, trả Completion Report. Có lúc Chủ thầu ủy Thợ author TIP ("proceed per proposal") — gate độc-lập + VERIFY vẫn là hai nhân-chứng.
+- Kỷ-luật: **only-trust-engine** (xác bằng chạy code, không bằng lời; khung-xem-ảnh không trả hình thì xác bằng DOM/đếm, KHÔNG tự-nhận đã thấy pixel) · **conflict → REPORT, không tự-quyết** · một-TIP-một-đợt, gates xanh mới qua đợt sau · **no-pipe khi đọc exit code** · cwd persist giữa Bash call (dùng `cd` tuyệt-đối).
 
-## 2 · Bất-biến (non-negotiable, đứng vững qua mọi đợt)
-- **Zero-fabrication**: chỉ render giá-trị thật; unverified/absent → null; KHÔNG bịa số/rotor/bài.
-- **Honest-null hai-chiều**: null hiển-thị "—"/dashed/pip-rỗng ở mọi mặt; site-null ⇔ render-null (auditor canh).
-- **Disputed giữ mở**: giữ cả claim, không lặng-lẽ chọn (vd Switchblade mtow 1.6/3.6/2.3).
-- **Provenance là sản-phẩm**: mọi số truy URL nguồn + tier A/B/C.
-- **Aggregate tính SỐNG** mỗi build (GLOBAL CONSTRAINT) · **một-nguồn-sự-thật** `out/site-data.json`.
-- **Gates + teeth fail-loud · idempotent** (build 2 lần = byte-identical).
+## 2 · Bất-biến (non-negotiable, đứng vững P0→P2)
+- **Zero-fabrication**: chỉ render giá-trị thật; unverified/absent → null; KHÔNG bịa số/rotor/bài/từ-khoá. Kéo vào tận **JSON-LD** (search engine chỉ thấy số có nguồn).
+- **Honest-null hai-chiều**: null → "—"/dashed/pip-rỗng/bucket-riêng ở mọi mặt; site-null ⇔ render-null (auditor canh hai chiều). honest-null là showpiece, KHÔNG giấu.
+- **Bất-biến #10 — disputed giữ TẤT CẢ claim**, không lặng-lẽ chọn (vd Switchblade-300 mtow). Áp mọi type + cả company sourced + giữ NGOÀI structured data.
+- **Provenance là sản-phẩm**: mọi số truy URL nguồn + tier A/B/C. company sourced field = `{value,source,tier}` | `{disputed:[…]}` | honest-null; cấm value-trần-không-nguồn.
+- **Aggregate/phân-bố/index tính SỐNG** mỗi build (GLOBAL CONSTRAINT). **Một-nguồn-sự-thật** = `out/site-data.json`; mọi data-file phụ là **chiếu sống** của nó, KHÔNG nguồn thứ-hai (auditor *_DRIFT canh).
+- **E → D một chiều**: biên-tập tham-chiếu dữ-liệu; dữ-liệu KHÔNG BAO GIỜ phái-sinh từ claim bài viết.
+- **Gates + teeth fail-loud · idempotent** (mọi data-file build 2 lần = byte-identical, có gate).
 
-## 3 · Kiến-trúc dữ-liệu (một chiều)
-`out/master_registry.json` (302 entity = 299 public + 3 RtR own-product, nguồn gốc registry) → `build_site_data.py` → **`out/site-data.json`** (adapter, single source: field-cells {value,status,source_tier,sources}, labels song-ngữ, field_groups, aggregates{status_counts,tier_counts,spec_fill_rate,**spec_range**}, frame_glyph) → mọi builder đọc site-data.
+## 3 · Kiến-trúc dữ-liệu (schema/2 đa-thực-thể, một chiều)
+`wave2b/code/.../master_registry.json` (302 UAV, nguồn registry — seeds NGOÀI repo portal) → `build_site_data.py` →
+**`out/site-data.json`** (`schema:"site-data/2"`, **một-nguồn-sự-thật**):
+- `entities[]` = **302 uav + 140 company** (discriminator `entity_type`). Company **derived-first**: promote từ manufacturer, rollup SỐNG (uav_count/country/segment mix/Blue/NDAA) + sourced-attrs (4/140 có nguồn, còn lại honest-null).
+- `canon.py` = single-source **alias-map** (Anduril←Anduril Industries; IAI←Israel Aerospace Industries; Boeing/Insitu KHÔNG gộp) + **country normalize** EN ({US,USA}→United States; {UK,United Kingdom}→United Kingdom).
+- aggregates UAV-scoped (headline "302" bất-biến). `frame_glyph` derived. `company_slug`/re-point qua canon.
+
+Các data-file phụ (đều chiếu sống, sorted+idempotent, có auditor riêng):
+`out/graph.json` (494 node/882 edge) · `out/search-index.json` (483) · `out/compare-data.json` (302) · `out/data-overview.json` · `sitemap.xml` (494 url).
 
 ## 4 · Design language
-- **`base/portal-in-action.html`** = design-system-of-record cho app shell (hero/card/blueprint).
-- **`base/newsroom-specimen.html`** = record cho News/Analysis idiom.
-- **`base/visual-language-specimen.html`** (ở `/Users/os/Downloads/`, KHÔNG trong repo) = specimen P01–P03 (khung/glyph/track).
-- Token canonical ở `base/design-system.css`; alias `--serif/--sans/--mono/--card/--wm/--maxw` để specimen resolve. `.tg` base canonical (facet = `[aria-pressed]`); `.ghost` chỉ dark (`.card/.feat .ghost`); cream-figure = `.statfig`.
+- `base/portal-in-action.html` = design-system-of-record (app shell). `base/newsroom-specimen.html` = News/Analysis idiom.
+- Token canonical `base/design-system.css`; alias `--serif/--sans/--mono/--card/--wm/--maxw`. `.tg`(facet=`[aria-pressed]`); `.ghost` chỉ dark; cream-figure=`.statfig`; `.crumb` = global nav.
+- **`nav.py`** = breadcrumb dùng chung MỌI trang: **USR · Reference · Search · Compare · Data** (USR→home), depth-aware (`../`). Hết ngõ-cụt.
+- Component-CSS đặt trong từng builder (DETAIL_CSS/COMPANY_CSS/TAX_CSS/COMPARE_CSS/SEARCH_CSS/DATA_CSS). **Class collision cảnh-báo**: `.spec`/`.rail` từng đụng newsroom — đã rename `.smpl`/`.trk`; build_bundle có teeth chặn tái-diễn.
 
-## 5 · Surfaces & builder (pipeline `build_all.sh`, 8 nhóm/13 lệnh)
-1. `build_site_data.py` → site-data (+idempotent sha)
-2. `verify_site_data.py` (honest-null hai chiều · aggregates live · **frame_glyph no-leak** · **spec_range live** · coverage)
-3. `build_reference.py` (reference.html — light rows: glyph + meta + **7-pip** + chips) + `build_detail.py` (302 `entity/<slug>.html`: glyph lớn tự-vẽ + **micro-track log** + nguồn tier + honest-null + disputed range)
-4. `build_news.py` (news-front trên home + `news/<slug>`) + `build_analysis.py` (`analysis/<slug>` long-form: 4-câu-hỏi + figure-live + rail)
-5. `build_index.py` (home: bar → hero → newsroom → analysis feature → **plate tối record-status + ma-trận coverage 11×302** → browse) + `build_bundle.py` (**bundle.html** một-file)
-6. `verify_content.py` (analysis: 4Q/entity-tag/tier-A · figure trace registry · style-guide)
-7. `check_i18n.py` (en==vn) · reduced-motion/focus static check
-8. `audit_headless.js` (Chrome CDP: 8 base + hero + filtered<100ms + 2 detail + track-two-way + 3 editorial + **teeth**)
+## 5 · Surfaces & pipeline (`build_all.sh` — fail-loud, idempotent-gated)
+**Surfaces** (phục-vụ `python3 -m http.server 8011 --bind 127.0.0.1`):
+`index` · `reference` · `search` · `compare` · `data` · `bundle` (một-file offline) · `entity/`×302 · `company/`×140 · `country/`×28 · `segment/`×13 · `news/`×5 · `analysis/`×1 · `sitemap.xml`.
+**Builder**: build_site_data · build_reference · build_detail · build_company · build_taxonomy · build_news · build_analysis · build_index · build_compare · build_search · build_data · build_sitemap · build_bundle.
+**Auditor độc-lập + teeth** (mỗi cái tự-bơm-restore, fail-loud exit 2):
+verify_site_data (honest-null 2 chiều · #10 · company rollup-two-way/sourced-shape · ALIAS_ORPHAN · frame_glyph no-leak · spec_range live · `teeth_p0`+`teeth_p11`) · verify_graph (DANGLING/STALE · `teeth_p02`) · verify_taxonomy (bijection · `teeth_p14`) · verify_compare (DRIFT · `teeth_p13`) · verify_search (DRIFT/ORPHAN/MISSING · `teeth_p21`) · verify_data (OVERVIEW_DRIFT/SUM + honest-null 2 chiều · `teeth_p23`) · verify_seo (SEO_FABRICATED + sitemap bijection · `teeth_p22`) · verify_content · check_i18n (en==vn) · audit_headless.js (Chrome CDP, overlap=0 mọi surface + perf + teeth).
 
-## 6 · Staging thị-giác (ĐÓNG — P01→P04, tất cả VERIFY xanh)
-- **P01** `c30cdb1` — plate light/dark (band tối viền tách) + divider registration + hierarchy. Presentation thuần (site-data sha bất-biến).
-- **P02** `95b0fa3` — 9 frame-glyph bám `airframe_type` thật, map toàn-phần, **cấm multirotor→quad** (teeth: inject→exit 2). 200/200 glyph.
-- **P03** `83c5c74` — micro-track **log** (đáy-thang 0.073kg→tick 2%) + ma-trận coverage thật (541/2200=25%, ==aggregate) + glyph tự-vẽ (gate `:root.js`, no-JS→solid). teeth: tamper spec_range→exit 2.
-- **P04** `5f43e58` — 7-pip record-fullness/row (filled 464==numeric-present 464). Presentation thuần.
-- Quyết-định kiến-trúc giữ: **rows = light index; micro-track ở DETAIL** (không đảo index≠detail). D-1 (glyph map) + D-2 (log scale) thực-thi bằng engine.
+## 6 · Phase đã đóng
+- **P0 Móng** (`f315765` P0.1 · `b947ac8` P0.2): schema/1→/2 đa-thực-thể + discriminator (render byte-bất-biến, teeth chứng) · bất-biến #10 · `crosslink.py` graph + dangling-gate.
+- **P1 Khung D** (đóng đủ): P1.1 Company derived-first 140 (`e858988`) · P1.2 sourced loader + alias + country-normalize + **4 golden record** DJI/Autel/AeroVironment/RtR (`61cc787`/`00a3f15`/`abcc3b3`) · P1.4 Taxonomy 28+13 bijection (`63dddf2`) · P1.3 Compare 2–4 (`c591905`).
+- **P2 Lưu-thông** (đóng đủ): P2.1 Search đa-loại 483 (`d1ad2a1`) · P2.3 Data overview /data live (`f3c4f56`) · P2.2 SEO/JSON-LD/sitemap (`57035f2`).
+- **UX polish**: header reference (bỏ raw "None"→honest-null) · global nav breadcrumb (`a331a45`) · Compare gợi-ý-khi-mở (`e6a2209`).
+- *(Lịch-sử P01–P04 visual staging + data-growth 200→302 nằm trong commit cũ; vẫn còn hiệu-lực: glyph map D-1, micro-track log D-2, coverage matrix, rows=light-index/track=DETAIL.)*
 
-## 7 · Commits (full hash, oldest→newest; nhánh `main`, tree sạch)
-```
-3d48bda  portal đầy đủ (200 entity, reference/detail/home/newsroom)
-e07a929  bundle.html một-file + detail_fragment dùng chung
-5c3010d  uav-200.xlsx export từ site-data
-c30cdb1  TIP-P01 plate/divider/hierarchy
-95b0fa3  TIP-P02 frame glyphs + P01 dark-band polish
-83c5c74  TIP-P03 micro-track log + coverage matrix + glyph self-draw
-5f43e58  TIP-P04 record-fullness pip strip
-   …     (data-growth seeds 200→290; nhiều commit "data: registry N→M")
-cc61b82  surface RtR own_product + Vietnam makers (263→266)
-d00cd7d  registry 266→277 (seed_grind25 — ASEAN + ISR + breadth)
-0776210  registry 277→290 (seed_grind26 — CCA + ISR + UAM)
-  HEAD    registry 290→302 (seed_grind27+28 — ISR breadth, vượt mốc 300)
-```
-**Mốc 300 đã vượt:** 302 entity thật (299 public + 3 RtR own-product), 30 quốc-gia, zero-fabrication
-giữ nguyên (mỗi số truy URL nguồn + tier). Nguồn registry (seeds `wave2b/code/seed_grind*.py`) ngoài
-repo portal; repo này version-control **artifact build** (master copy + entity pages + site-data).
+## 7 · Commits (nhánh `main`, tree sạch — **HEAD `57035f2`, tổng 35 commit**)
+P0→P2 (mới→cũ): `57035f2`(P2.2) · `f3c4f56`(P2.3) · `e6a2209`(compare-gợi-ý) · `a331a45`(nav) · `6a5c53c`(reference-header) · `d1ad2a1`(P2.1) · `c591905`(P1.3) · `63dddf2`(P1.4) · `abcc3b3`+`00a3f15`+`61cc787`(P1.2) · `e858988`(P1.1) · `b947ac8`(P0.2) · `f315765`(P0.1). Trước đó: data-growth 200→302 + visual P01–P04 (xem `git log`).
 
 ## 8 · Deliverables @ `portal/`
-- **Web**: `index.html`, `reference.html`, `entity/*.html` (302), `analysis/*.html` (1 sample), `news/*.html` (5 sample). Phục-vụ: `python3 -m http.server 8011 --bind 127.0.0.1` → http://127.0.0.1:8011/
-- **Gửi đội**: `bundle.html` (một-file tự-chứa, 302 thật, mở từ ổ-đĩa/email) · `uav-300.xlsx` (4 sheet: UAV 302 honest-null=ô-trống · Nguồn&tier · Tranh-chấp · Tổng-sống công-thức).
-- **Code**: 12 `build_*.py`/`verify_*.py`/`glyphs.py`/`make_xlsx.py` · `base/` (css/js/specimens) · `content/` (articles.json, glossary.json — **sample seed**, người viết thay nội-dung thật).
+- **Web** (15 loại surface, xem §5) + `sitemap.xml`. **Gửi đội**: `bundle.html` (offline 302) · `uav-300.xlsx`.
+- **Data-file sống** (out/): site-data · graph · search-index · compare-data · data-overview (+ sitemap.xml ở root).
+- **Code**: ~13 `build_*` · ~10 `verify_*`/`teeth_*` · `canon.py`/`nav.py`/`seo.py`/`glyphs.py` · `base/` (css/js: base/compare/search) · `content/` (companies.json + company_aliases.json = golden record; articles.json/glossary.json = editorial sample).
 
-## 9 · Nội-dung biên-tập (quyết-định (b) đã chốt)
-News/Analysis là vỏ tuân-chuẩn + **bài seed đánh-dấu** (`sample:true` → banner "nội dung mẫu"). Figure số THẬT từ registry; văn xuôi là mẫu. Bài thật là việc người viết: sửa `content/articles.json`. Xem [[newsroom-pillar]].
+## 9 · Nội-dung biên-tập & P3 (chế-độ E — phase kế)
+News/Analysis hiện = **vỏ + 1 analysis + 5 news seed** (`sample:true` → banner mẫu; figure THẬT từ registry, văn xuôi mẫu). **P3 Editorial** dựng được *vỏ* (template News/Knowledge/Review + linter Quy-tắc biên-tập + auditor) nhưng **bài thật do người viết** — Chủ nhà/đội là nguồn. **Nút thắt KHÔNG kỹ-thuật**: cần **kế-hoạch content** (bao nhiêu bài, ai viết, chủ-đề) trước khi mở P3. KHÔNG bịa nội-dung để "đủ trang". Xem [[newsroom-pillar]] [[blueprint-usr]].
 
-## 10 · Push status
-- remote `origin = https://github.com/nclamvn/usr-portal.git` (đã set) · **CHƯA push** (no upstream).
-- Bước của Chủ thầu (Thợ không cầm token). Lệnh một-dòng (thay PAT, scope repo):
-  ```
-  curl -s -H "Authorization: token PAT" https://api.github.com/user/repos -d '{"name":"usr-portal","private":true}' >/dev/null && git push -u https://PAT@github.com/nclamvn/usr-portal.git main
-  ```
+## 10 · Push & domain (việc Chủ nhà)
+- **CHƯA push** (no upstream). 35 commit local. Đẩy: cần PAT (Thợ không cầm token):
+  `git push -u https://PAT@github.com/nclamvn/usr-portal.git main`
+- **`seo.py BASE = "https://nclamvn.github.io/usr-portal"`** = đoán (Pages mặc-định; KHÔNG có CNAME). Chủ nhà sở-hữu `rtrobotics.com` → có thể muốn custom domain (vd `usr.rtrobotics.com`). Trước khi public: xác-nhận domain → đổi `BASE` + thêm `CNAME` (1 commit). Gate độc-lập domain nên không chặn build.
 
-## 11 · Mở (chờ Chủ thầu)
-- Pip dày/nhạt, nét glyph, độ-đậm track/ma-trận trên cream+dark = **mắt Chủ thầu** (engine chỉ xác cấu-trúc/overlap, không pixel).
-- Push (#10).
+## 11 · Mở (chờ Chủ thầu/Chủ nhà)
+- Nét/độ-đậm trên cream+dark = **mắt Chủ thầu** (engine chỉ xác cấu-trúc/overlap). · Push + BASE domain (§10). · Kế-hoạch content P3 (§9). · Sourcing batch hãng (General Atomics/Baykar/IAI/CASC/HESA + mẩu RtR còn) → nạp `content/companies.json` commit nhỏ.
 
-## 12 · Cách verify lại (bất-kỳ lúc nào)
-`cd portal && ./build_all.sh` → exit 0 + "build_all: OK". Teeth có thật: tamper `out/site-data.json` (frame_glyph multirotor→quad, hoặc spec_range min) → `verify_site_data.py` exit 2; khôi-phục bằng `build_site_data.py`.
+## 12 · Verify lại (bất-kỳ lúc nào)
+`cd portal && ./build_all.sh` → exit 0 + "build_all: OK" (mọi gate + teeth + idempotent + headless overlap=0). Teeth có thật, vd: sửa một cột `out/data-overview.json` → `verify_data.py` exit 2; tamper JSON-LD value → `verify_seo.py` exit 2; khôi-phục bằng chạy lại builder.
 
 ## 13 · Bất-biến tuyệt-đối khi sửa tiếp
-KHÔNG bịa · KHÔNG hardcode aggregate/min-max/coverage · KHÔNG đổi dataset trong lớp trình-bày · KHÔNG redefine token canonical · giữ static-gen + gates + teeth + idempotent · conflict với quyết-định cũ (index≠detail…) → REPORT, không tự-quyết. Xem [[portal-design-ethos]].
+KHÔNG bịa (kể cả JSON-LD/từ-khoá) · KHÔNG hardcode aggregate/phân-bố/min-max/coverage/index · KHÔNG đẻ nguồn-dữ-liệu thứ-hai (mọi data-file chiếu site-data) · KHÔNG đổi dataset ở lớp trình-bày · KHÔNG redefine token canonical / token mới · KHÔNG tự gộp cụm country/company mơ-hồ (FLAG → Chủ thầu rule) · giữ static-gen + gates + teeth + idempotent + nav-mọi-trang · conflict với quyết-định cũ (index≠detail · E→D · derived-first · honest-null-visible) → REPORT, không tự-quyết. Xem [[portal-design-ethos]] [[blueprint-usr]].
