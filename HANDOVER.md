@@ -16,7 +16,7 @@
 - **Gates + teeth fail-loud · idempotent** (build 2 lần = byte-identical).
 
 ## 3 · Kiến-trúc dữ-liệu (một chiều)
-`out/master_registry.json` (200 real entity, nguồn gốc registry) → `build_site_data.py` → **`out/site-data.json`** (adapter, single source: field-cells {value,status,source_tier,sources}, labels song-ngữ, field_groups, aggregates{status_counts,tier_counts,spec_fill_rate,**spec_range**}, frame_glyph) → mọi builder đọc site-data.
+`out/master_registry.json` (302 entity = 299 public + 3 RtR own-product, nguồn gốc registry) → `build_site_data.py` → **`out/site-data.json`** (adapter, single source: field-cells {value,status,source_tier,sources}, labels song-ngữ, field_groups, aggregates{status_counts,tier_counts,spec_fill_rate,**spec_range**}, frame_glyph) → mọi builder đọc site-data.
 
 ## 4 · Design language
 - **`base/portal-in-action.html`** = design-system-of-record cho app shell (hero/card/blueprint).
@@ -27,9 +27,9 @@
 ## 5 · Surfaces & builder (pipeline `build_all.sh`, 8 nhóm/13 lệnh)
 1. `build_site_data.py` → site-data (+idempotent sha)
 2. `verify_site_data.py` (honest-null hai chiều · aggregates live · **frame_glyph no-leak** · **spec_range live** · coverage)
-3. `build_reference.py` (reference.html — light rows: glyph + meta + **7-pip** + chips) + `build_detail.py` (200 `entity/<slug>.html`: glyph lớn tự-vẽ + **micro-track log** + nguồn tier + honest-null + disputed range)
+3. `build_reference.py` (reference.html — light rows: glyph + meta + **7-pip** + chips) + `build_detail.py` (302 `entity/<slug>.html`: glyph lớn tự-vẽ + **micro-track log** + nguồn tier + honest-null + disputed range)
 4. `build_news.py` (news-front trên home + `news/<slug>`) + `build_analysis.py` (`analysis/<slug>` long-form: 4-câu-hỏi + figure-live + rail)
-5. `build_index.py` (home: bar → hero → newsroom → analysis feature → **plate tối record-status + ma-trận coverage 11×200** → browse) + `build_bundle.py` (**bundle.html** một-file)
+5. `build_index.py` (home: bar → hero → newsroom → analysis feature → **plate tối record-status + ma-trận coverage 11×302** → browse) + `build_bundle.py` (**bundle.html** một-file)
 6. `verify_content.py` (analysis: 4Q/entity-tag/tier-A · figure trace registry · style-guide)
 7. `check_i18n.py` (en==vn) · reduced-motion/focus static check
 8. `audit_headless.js` (Chrome CDP: 8 base + hero + filtered<100ms + 2 detail + track-two-way + 3 editorial + **teeth**)
@@ -41,7 +41,7 @@
 - **P04** `5f43e58` — 7-pip record-fullness/row (filled 464==numeric-present 464). Presentation thuần.
 - Quyết-định kiến-trúc giữ: **rows = light index; micro-track ở DETAIL** (không đảo index≠detail). D-1 (glyph map) + D-2 (log scale) thực-thi bằng engine.
 
-## 7 · Commits (full hash, oldest→newest; nhánh `main`, HEAD `5f43e58`, tree sạch)
+## 7 · Commits (full hash, oldest→newest; nhánh `main`, tree sạch)
 ```
 3d48bda  portal đầy đủ (200 entity, reference/detail/home/newsroom)
 e07a929  bundle.html một-file + detail_fragment dùng chung
@@ -50,11 +50,19 @@ c30cdb1  TIP-P01 plate/divider/hierarchy
 95b0fa3  TIP-P02 frame glyphs + P01 dark-band polish
 83c5c74  TIP-P03 micro-track log + coverage matrix + glyph self-draw
 5f43e58  TIP-P04 record-fullness pip strip
+   …     (data-growth seeds 200→290; nhiều commit "data: registry N→M")
+cc61b82  surface RtR own_product + Vietnam makers (263→266)
+d00cd7d  registry 266→277 (seed_grind25 — ASEAN + ISR + breadth)
+0776210  registry 277→290 (seed_grind26 — CCA + ISR + UAM)
+  HEAD    registry 290→302 (seed_grind27+28 — ISR breadth, vượt mốc 300)
 ```
+**Mốc 300 đã vượt:** 302 entity thật (299 public + 3 RtR own-product), 30 quốc-gia, zero-fabrication
+giữ nguyên (mỗi số truy URL nguồn + tier). Nguồn registry (seeds `wave2b/code/seed_grind*.py`) ngoài
+repo portal; repo này version-control **artifact build** (master copy + entity pages + site-data).
 
 ## 8 · Deliverables @ `portal/`
-- **Web**: `index.html`, `reference.html`, `entity/*.html` (200), `analysis/*.html` (1 sample), `news/*.html` (5 sample). Phục-vụ: `python3 -m http.server 8011 --bind 127.0.0.1` → http://127.0.0.1:8011/
-- **Gửi đội**: `bundle.html` (một-file tự-chứa, 200 thật, mở từ ổ-đĩa/email) · `uav-200.xlsx` (4 sheet: UAV 200 honest-null=ô-trống · Nguồn&tier · Tranh-chấp · Tổng-sống công-thức).
+- **Web**: `index.html`, `reference.html`, `entity/*.html` (302), `analysis/*.html` (1 sample), `news/*.html` (5 sample). Phục-vụ: `python3 -m http.server 8011 --bind 127.0.0.1` → http://127.0.0.1:8011/
+- **Gửi đội**: `bundle.html` (một-file tự-chứa, 302 thật, mở từ ổ-đĩa/email) · `uav-300.xlsx` (4 sheet: UAV 302 honest-null=ô-trống · Nguồn&tier · Tranh-chấp · Tổng-sống công-thức).
 - **Code**: 12 `build_*.py`/`verify_*.py`/`glyphs.py`/`make_xlsx.py` · `base/` (css/js/specimens) · `content/` (articles.json, glossary.json — **sample seed**, người viết thay nội-dung thật).
 
 ## 9 · Nội-dung biên-tập (quyết-định (b) đã chốt)

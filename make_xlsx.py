@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export uav-200.xlsx from out/site-data.json (the canonical REAL 200) — NOT from bundle.html
+"""Export uav-300.xlsx from out/site-data.json (the canonical REAL set, now 302) — NOT from bundle.html
 (which carries pre-rendered fragments, no #site-data JSON block). Same honest-null contract as the
 site: a field with no verified value -> EMPTY cell (never 0 / "N/A" / "–"). Disputed values are not
 collapsed into sheet 1; both claims live in the 'Tranh chấp' sheet. The 'Tổng (sống)' sheet uses
@@ -12,7 +12,7 @@ from openpyxl.styles import Font, Alignment
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
-OUT = ROOT / "uav-200.xlsx"
+OUT = ROOT / "uav-300.xlsx"
 
 # (key, header, is_top_level_string?) — column order for sheet 1
 COLS = [
@@ -132,7 +132,7 @@ def main():
     ws4.column_dimensions["B"].width = 26
 
     wb.save(OUT)
-    print(f"uav-200.xlsx: {n} entities · {nsrc} source rows · {ndisp} disputed cells/{nclaim} claims")
+    print(f"uav-300.xlsx: {n} entities · {nsrc} source rows · {ndisp} disputed cells/{nclaim} claims")
 
 
 if __name__ == "__main__":

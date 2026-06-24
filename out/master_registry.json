@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 279,
-  "variant_count": 290,
+  "family_count": 291,
+  "variant_count": 302,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -27270,6 +27270,1242 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "passenger_uam",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:zala-aero:421-16e",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "ZALA Aero",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ZALA Aero",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Russia",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Russia",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "ZALA Aero 421-16E",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ZALA Aero 421-16E",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:enics:eleron-3",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "ENICS",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ENICS",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Russia",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Russia",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "ENICS Eleron-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ENICS Eleron-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:hesa:shahed-129",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "HESA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "HESA Shahed-129",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Shahed-129",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:qods:mohajer-2",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Qods",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Qods Mohajer-2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods Mohajer-2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:casc:ch-7",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "CASC",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "CASC CH-7",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-7",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:caig:wing-loong-i",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "CAIG",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CAIG",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "China",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "China",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "CAIG Wing Loong I",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CAIG Wing Loong I",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:hesa:karrar",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "HESA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "HESA Karrar",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Karrar",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:doroni:h1-x",
+      "kind": "family",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Doroni",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Doroni",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "USA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "USA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Doroni H1-X",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Doroni H1-X",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "multirotor",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "multirotor",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "passenger_uam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "passenger_uam",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:uzga:forpost-r",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "UZGA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UZGA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Russia",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Russia",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "UZGA Forpost-R",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UZGA Forpost-R",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:iai:searcher-mk-ii",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "IAI",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "IAI Searcher Mk II",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Searcher Mk II",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:elbit:hermes-90",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Elbit",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Elbit",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Israel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Israel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Elbit Hermes 90",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Elbit Hermes 90",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:hesa:kaman-22",
+      "kind": "family",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "manufacturer": {
+          "value": "HESA",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Iran",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Iran",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "HESA Kaman-22",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Kaman-22",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": true,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
               "note": "market role"
             }
           ],
@@ -64593,6 +65829,1894 @@
             }
           ],
           "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:zala-aero:421-16e:421-16e",
+      "family_id": "uav:zala-aero:421-16e",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:zala-aero:421-16e:421-16e",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:zala-aero:421-16e:421-16e",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "ZALA Aero 421-16E",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ZALA Aero 421-16E",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 10.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 10.5,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1.5,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 240,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 240,
+              "note": "4+ h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 50,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 50,
+              "note": "50 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 31,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 31,
+              "note": "110 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 3600,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.airforce-technology.com/projects/zala-421-16e5-unmanned-aircraft-system/",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3600,
+              "note": "max alt"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:enics:eleron-3:eleron-3",
+      "family_id": "uav:enics:eleron-3",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:enics:eleron-3:eleron-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:enics:eleron-3:eleron-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "ENICS Eleron-3",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "ENICS Eleron-3",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 4.9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4.9,
+              "note": "baseline"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 0.6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 0.6,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 90,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 90,
+              "note": "90 min"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 60,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 60,
+              "note": "operational"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 36,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 36,
+              "note": "130 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/ENICS_Eleron-3",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4000,
+              "note": "13000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:hesa:shahed-129:shahed-129",
+      "family_id": "uav:hesa:shahed-129",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:hesa:shahed-129:shahed-129",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:hesa:shahed-129:shahed-129",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "HESA Shahed-129",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Shahed-129",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 990,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 990,
+              "note": "2183 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 400,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 400,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1440,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1440,
+              "note": "24 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7300,
+              "note": "23950 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 49,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 49,
+              "note": "175 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 1700,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Shahed_129",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1700,
+              "note": "combat range"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:qods:mohajer-2:mohajer-2",
+      "family_id": "uav:qods:mohajer-2",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:qods:mohajer-2:mohajer-2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:qods:mohajer-2:mohajer-2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Qods Mohajer-2",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Qods Mohajer-2",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 90,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 90,
+              "note": "1.5 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 50,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 50,
+              "note": "50 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 45,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 45,
+              "note": ">100 mph"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 3353,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1340",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3353,
+              "note": "11000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:casc:ch-7:ch-7",
+      "family_id": "uav:casc:ch-7",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:casc:ch-7:ch-7",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:casc:ch-7:ch-7",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "CASC CH-7",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CASC CH-7",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 13000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 13000,
+              "note": "10-13 t"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2000,
+              "note": "internal"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 256,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 256,
+              "note": "920 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 13000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 13000,
+              "note": "13 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 900,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=2042",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 900,
+              "note": "15 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:caig:wing-loong-i:wing-loong-i",
+      "family_id": "uav:caig:wing-loong-i",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:caig:wing-loong-i:wing-loong-i",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:caig:wing-loong-i:wing-loong-i",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "CAIG Wing Loong I",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "CAIG Wing Loong I",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1100,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 200,
+              "note": "external"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1200,
+              "note": "20 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 5000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 5000,
+              "note": "16400 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 78,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 78,
+              "note": "280 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 4000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1030",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4000,
+              "note": "4000 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:hesa:karrar:karrar",
+      "family_id": "uav:hesa:karrar",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:hesa:karrar:karrar",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:hesa:karrar:karrar",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "HESA Karrar",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Karrar",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 750,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 750,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 250,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 250,
+              "note": "weapons"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 250,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 250,
+              "note": "900 km/h jet"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 1000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1000,
+              "note": "1000 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 12000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/HESA_Karrar",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 12000,
+              "note": "up to 12 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:doroni:h1-x:h1-x",
+      "family_id": "uav:doroni:h1-x",
+      "kind": "variant",
+      "provenance_class": "commercial_us_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:doroni:h1-x:h1-x",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:doroni:h1-x:h1-x",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Doroni H1-X",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Doroni H1-X",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 839,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 839,
+              "note": "1850 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 227,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 227,
+              "note": "500 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 54,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 54,
+              "note": "193 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 40,
+              "note": "flight time"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 160,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://doroni.io/",
+              "tier": "A",
+              "retrieved": "2026-06-24",
+              "claimed_value": 160,
+              "note": "100 mi"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:uzga:forpost-r:forpost-r",
+      "family_id": "uav:uzga:forpost-r",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:uzga:forpost-r:forpost-r",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:uzga:forpost-r:forpost-r",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "UZGA Forpost-R",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "UZGA Forpost-R",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 500,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 500,
+              "note": "500 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "60-100 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1080,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1080,
+              "note": "18 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 6000,
+              "note": "6 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 50,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1486",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 50,
+              "note": "180 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:iai:searcher-mk-ii:searcher-mk-ii",
+      "family_id": "uav:iai:searcher-mk-ii",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:iai:searcher-mk-ii:searcher-mk-ii",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:iai:searcher-mk-ii:searcher-mk-ii",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "IAI Searcher Mk II",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "IAI Searcher Mk II",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 426,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 426,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1200,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1200,
+              "note": "20 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 300,
+              "note": "operating"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 55,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 55,
+              "note": "198 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7010,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/IAI_Searcher",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7010,
+              "note": "23000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:elbit:hermes-90:hermes-90",
+      "family_id": "uav:elbit:hermes-90",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:elbit:hermes-90:hermes-90",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:elbit:hermes-90:hermes-90",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Elbit Hermes 90",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Elbit Hermes 90",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 115,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 115,
+              "note": "gross"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 25,
+              "note": "55 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 900,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 900,
+              "note": "15 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 100,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 100,
+              "note": "100 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4600,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Elbit_Hermes_90",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 4600,
+              "note": "15000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:hesa:kaman-22:kaman-22",
+      "family_id": "uav:hesa:kaman-22",
+      "kind": "variant",
+      "provenance_class": "competitor_military_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:hesa:kaman-22:kaman-22",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:hesa:kaman-22:kaman-22",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "HESA Kaman-22",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "HESA Kaman-22",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1115,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1115,
+              "note": "~1115 kg"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 300,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 300,
+              "note": "660 lb"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 1440,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1440,
+              "note": "24+ h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 3000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 3000,
+              "note": "3000 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 59,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 59,
+              "note": "115 kn"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7925,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Kaman_22_(UAV)",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 7925,
+              "note": "26000 ft"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
           "inherited_from": null
         }
       }
