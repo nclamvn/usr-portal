@@ -104,6 +104,32 @@
     els.forEach(function (e) { io.observe(e); });
   }
 
+  /* initCountup — animate each [data-countup] integer from 0 to its REAL baked value (suffix like
+     '%' preserved). The final value is already in the DOM (no-JS + the overlap audit see the true
+     number); the element reserves its final width at build so the count never reflows into an
+     overlap. Honours prefers-reduced-motion (and missing rAF): jumps straight to the final value. */
+  function initCountup(rootEl) {
+    var reduce = false;
+    try { reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+    (rootEl || document).querySelectorAll("[data-countup]").forEach(function (el) {
+      var m = String(el.textContent).match(/^(\d[\d,]*)(.*)$/);
+      if (!m) return;
+      var target = parseInt(m[1].replace(/,/g, ""), 10), suffix = m[2] || "";
+      if (reduce || !window.requestAnimationFrame || target <= 0) return;  // leave the real value
+      var dur = 900, t0 = null;
+      function fmt(n) { return n.toLocaleString("en-US") + suffix; }
+      el.textContent = fmt(0);
+      function step(ts) {
+        if (t0 === null) t0 = ts;
+        var p = Math.min(1, (ts - t0) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);          // easeOutCubic
+        el.textContent = fmt(Math.round(target * eased));
+        if (p < 1) window.requestAnimationFrame(step); else el.textContent = fmt(target);
+      }
+      window.requestAnimationFrame(step);
+    });
+  }
+
   /* initRegistry — client-side facet + search + sort over BAKED cards.
      Filter never hides a card for being null/disputed — only facet/search mismatch hides it
      (honest-null & disputed stay visible in the filtered set). State round-trips through the URL
@@ -205,5 +231,5 @@
 
   root.USRBase = { arrow: arrow, mountArrows: mountArrows, designerAudit: designerAudit,
                    initTheme: initTheme, initI18n: initI18n, initReveal: initReveal,
-                   initDraw: initDraw, initRegistry: initRegistry };
+                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup };
 })(window);

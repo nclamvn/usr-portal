@@ -68,8 +68,29 @@ def live_facts(site):
 
 # ---- record-status masthead (re-idiom: solid-serif .statfig, hairline, brass one-beat) ----
 def stat_cell(value, cap_en, cap_vn):
-    return (f'<div class="stat-cell"><span class="statfig">{esc(value)}</span>'
+    # data-countup: animates 0 -> real value on load (reduced-motion safe; final value baked in DOM).
+    # ch min-width = final length keeps the box stable so the count never reflows into an overlap.
+    s = str(value)
+    return (f'<div class="stat-cell"><span class="statfig" data-countup '
+            f'style="min-width:{len(s)}ch">{esc(s)}</span>'
             f'<span class="cap mono">{bilingual(cap_en, cap_vn)}</span></div>')
+
+
+def stat_ribbon(f, labels):
+    """Live authority ribbon for the hero — every figure from live_facts (zero-fab). countries =
+    distinct manufacturer_country values; coverage = live spec fill-rate. Brass pulse on 'live'."""
+    countries = len(f["country_rank"])
+    def cell(value, en, vn):
+        s = str(value)
+        return (f'<span class="sr-cell"><b class="sr-n" data-countup style="min-width:{len(s)}ch">{esc(s)}</b>'
+                f'<span class="sr-k mono">{bilingual(en, vn)}</span></span>')
+    return ('<div class="statribbon" data-audit="ribbon">'
+            + cell(f["entities"], "systems", "hệ thống")
+            + cell(countries, "countries", "quốc gia")
+            + cell(f'{f["coverage"]}%', "coverage", "độ phủ")
+            + f'<span class="sr-cell sr-live"><span class="live-dot"></span>'
+            f'<span class="sr-k mono">{bilingual("live", "trực tiếp")}</span></span>'
+            + '</div>')
 
 
 def ranked_list(rank, kind, labels, top_n):
@@ -107,30 +128,51 @@ def render_masthead(f, labels):
 
 
 # ---- field-file cards (the hero of the data: real entities in the blueprint-card idiom) ----
-def blueprint_svg():
-    """Geometric signature illustration ONLY — no text callouts, no fabricated dimension.
-    The aircraft anatomy is decorative idiom; entity claims live in the card body, sourced."""
-    return ('<div class="bp-stage"><svg viewBox="0 0 760 392" aria-hidden="true">'
-            '<circle class="bp-disc" cx="230" cy="118" r="70" data-draw></circle>'
-            '<circle class="bp-disc" cx="530" cy="118" r="70" data-draw></circle>'
-            '<circle class="bp-disc" cx="230" cy="300" r="70" data-draw></circle>'
-            '<circle class="bp-disc" cx="530" cy="300" r="70" data-draw></circle>'
-            '<g class="bp-blade">'
-            '<line x1="174" y1="118" x2="286" y2="118"></line><line x1="474" y1="118" x2="586" y2="118"></line>'
-            '<line x1="174" y1="300" x2="286" y2="300"></line><line x1="474" y1="300" x2="586" y2="300"></line></g>'
-            '<path class="bp-arm" d="M300 168 L230 118" data-draw></path>'
-            '<path class="bp-arm" d="M460 168 L530 118" data-draw></path>'
-            '<path class="bp-arm" d="M300 250 L230 300" data-draw></path>'
-            '<path class="bp-arm" d="M460 250 L530 300" data-draw></path>'
-            '<circle class="bp-part" cx="230" cy="118" r="13"></circle><circle class="bp-part" cx="530" cy="118" r="13"></circle>'
-            '<circle class="bp-part" cx="230" cy="300" r="13"></circle><circle class="bp-part" cx="530" cy="300" r="13"></circle>'
-            '<rect class="bp-body" x="315" y="166" width="130" height="86" rx="20" data-draw></rect>'
-            '<line class="bp-mark" x1="372" y1="209" x2="388" y2="209"></line>'
-            '<line class="bp-mark" x1="380" y1="201" x2="380" y2="217"></line>'
-            '<circle class="bp-part" cx="380" cy="150" r="8"></circle>'
-            '<circle class="bp-part" cx="380" cy="284" r="22"></circle>'
-            '<circle class="bp-part" cx="380" cy="284" r="10"></circle>'
-            '</svg></div>')
+def blueprint_svg(callouts=False, labels=None):
+    """Geometric signature illustration — the approved technical-drawing idiom (portal-in-action).
+    Anatomy is decorative (zero entity claim). With callouts=True it adds the dimension arrows +
+    leader-line labels (bilingual, generic category terms — not entity data) for the hero centrepiece.
+    The labels describe the SCHEMATIC's anatomy, never a specific aircraft, so zero-fabrication holds."""
+    L = labels or (lambda en, vn: en)
+    base = (
+        '<circle class="bp-disc" cx="230" cy="118" r="70" data-draw></circle>'
+        '<circle class="bp-disc" cx="530" cy="118" r="70" data-draw></circle>'
+        '<circle class="bp-disc" cx="230" cy="300" r="70" data-draw></circle>'
+        '<circle class="bp-disc" cx="530" cy="300" r="70" data-draw></circle>'
+        '<g class="bp-blade">'
+        '<line x1="174" y1="118" x2="286" y2="118"></line><line x1="474" y1="118" x2="586" y2="118"></line>'
+        '<line x1="174" y1="300" x2="286" y2="300"></line><line x1="474" y1="300" x2="586" y2="300"></line></g>'
+        '<path class="bp-arm" d="M300 168 L230 118" data-draw></path>'
+        '<path class="bp-arm" d="M460 168 L530 118" data-draw></path>'
+        '<path class="bp-arm" d="M300 250 L230 300" data-draw></path>'
+        '<path class="bp-arm" d="M460 250 L530 300" data-draw></path>'
+        '<circle class="bp-part" cx="230" cy="118" r="13"></circle><circle class="bp-part" cx="530" cy="118" r="13"></circle>'
+        '<circle class="bp-part" cx="230" cy="300" r="13"></circle><circle class="bp-part" cx="530" cy="300" r="13"></circle>'
+        '<rect class="bp-body" x="315" y="166" width="130" height="86" rx="20" data-draw></rect>'
+        '<line class="bp-mark" x1="372" y1="209" x2="388" y2="209"></line>'
+        '<line class="bp-mark" x1="380" y1="201" x2="380" y2="217"></line>'
+        '<circle class="bp-part" cx="380" cy="150" r="8"></circle>'
+        '<circle class="bp-part" cx="380" cy="284" r="22"></circle>'
+        '<circle class="bp-part" cx="380" cy="284" r="10"></circle>')
+    if not callouts:
+        return f'<div class="bp-stage"><svg viewBox="0 0 760 392" aria-hidden="true">{base}</svg></div>'
+    call = (
+        '<g class="bp-fade">'
+        '<line class="bp-lead" x1="380" y1="142" x2="380" y2="54"></line>'
+        f'<text class="bp-callk" x="380" y="44" text-anchor="middle">{L("GNSS / RTK", "GNSS / RTK")}</text>'
+        '<line class="bp-lead" x1="380" y1="306" x2="380" y2="324"></line>'
+        f'<text class="bp-call" x="380" y="338" text-anchor="middle">{L("EO / IR gimbal", "Cảm biến EO / IR")}</text>'
+        '<line class="bp-lead" x1="445" y1="200" x2="600" y2="200"></line>'
+        f'<text class="bp-call" x="610" y="204" text-anchor="start">{L("Encrypted datalink", "Datalink mã hoá")}</text>'
+        '<line class="bp-lead" x1="315" y1="200" x2="160" y2="200"></line>'
+        f'<text class="bp-callk" x="150" y="204" text-anchor="end">{L("Provenance-traced", "Truy nguồn")}</text>'
+        '</g>'
+        '<g class="bp-fade">'
+        '<line class="bp-dim" x1="160" y1="384" x2="600" y2="384"></line>'
+        '<path class="bp-dim" d="M160 384 l9 -4 v8 z"></path><path class="bp-dim" d="M600 384 l-9 -4 v8 z"></path>'
+        f'<text class="bp-dlabel" x="380" y="380" text-anchor="middle">{L("airframe schematic", "sơ đồ khung bay")}</text>'
+        '</g>')
+    return f'<div class="bp-stage bp-stage--hero"><svg viewBox="-40 0 840 400" aria-hidden="true">{base}{call}</svg></div>'
 
 
 def evidence_tier(e, groups):
@@ -211,8 +253,13 @@ def main():
     groups = site["field_groups"]["display"] + site["field_groups"]["spec"]
     f = live_facts(site)
     n = f["entities"]
-    feat = pick_featured(ents, groups, 1)
-    hero_card = field_file_card(feat[0], 1, labels, groups, big=True)
+    hero_blueprint = blueprint_svg(callouts=True, labels=bilingual)  # signature centrepiece (decorative)
+    ribbon_html = stat_ribbon(f, labels)                              # live authority ribbon (zero-fab)
+    feat = pick_featured(ents, groups, 1)[0]                          # one REAL record anchors the hero
+    feat_mk, feat_md = maker_model(feat)
+    hero_caption = (f'<a class="readmore hero-cap" href="entity/{esc(feat["slug"])}.html" data-audit="herofile">'
+                    f'<span>{bilingual("Featured field file", "Hồ sơ tiêu biểu")} · {esc(feat_mk)} {esc(feat_md)}</span>'
+                    f'<span class="ico">{ARROW}</span></a>')
     arts = json.loads(ARTS.read_bytes())["articles"]
     news_html = news_front(arts, base=".")          # Part A — newsroom front
     feat_html = analysis_feature(arts, site)         # Part B — analysis feature teaser
@@ -237,21 +284,51 @@ def main():
   .ctl{{margin-left:auto;display:flex;gap:8px}}
   :root[data-lang="en"] .tg .s-en{{opacity:1;color:var(--brass)}}
   :root[data-lang="vn"] .tg .s-vn{{opacity:1;color:var(--brass)}}
-  /* hero */
-  .field{{position:relative;padding:84px 0 90px;overflow:hidden}}
-  .field .wrap{{position:relative;z-index:2;display:grid;grid-template-columns:.92fr 1.18fr;gap:60px;align-items:center}}
-  .watermark{{position:absolute;left:-180px;bottom:-160px;width:920px;z-index:1;pointer-events:none}}
-  .watermark svg{{width:100%;height:auto;display:block}}
-  .wm-stroke{{fill:none;stroke:var(--wm,rgba(26,26,28,.045));stroke-width:1.4}}
+  /* faint blueprint grid (graph-paper) behind cream sections — premium hi-tech texture */
+  body{{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:30px 30px;background-position:center top}}
+  .sec.plate{{background-image:none}}
+  /* hero — single column: head -> dark inset blueprint -> live ribbon + CTA */
+  .field{{position:relative;padding:72px 0 64px;overflow:hidden}}
+  .field .wrap{{position:relative;z-index:2;display:flex;flex-direction:column;gap:40px;align-items:stretch}}
+  .hero-head{{max-width:62ch}}
   .eyebrow{{font-family:var(--font-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}}
   .eyebrow::before{{content:"";width:22px;height:1px;background:var(--brass-bright)}}
-  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(34px,4.4vw,52px);line-height:1.04;letter-spacing:-.018em;margin:20px 0 0}}
-  .lead-p{{font-size:17px;color:var(--ink-soft);max-width:42ch;margin-top:20px}}
-  .cta{{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border:1px solid var(--hair-strong);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}}
+  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 0}}
+  .lead-p{{font-size:17px;color:var(--ink-soft);max-width:54ch;margin-top:18px}}
+  /* dark inset blueprint panel — the signature draw-in centrepiece */
+  .hero-bp{{position:relative;background:var(--card-bg);border-radius:16px;padding:18px 26px 10px;box-shadow:0 36px 70px -34px rgba(0,0,0,.5);overflow:hidden}}
+  [data-theme="dark"] .hero-bp{{border:1px solid var(--card-hair)}}
+  .hero-bp .reg-tr,.hero-bp::before,.hero-bp::after,.hero-bp .reg-bl{{border-color:var(--bp)!important;opacity:.6}}
+  .hero-foot{{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}}
+  /* live stat-ribbon (every number from live_facts — zero-fab) */
+  .statribbon{{display:flex;align-items:baseline;gap:34px;flex-wrap:wrap}}
+  .sr-cell{{display:inline-flex;flex-direction:column;gap:4px}}
+  .sr-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block;text-align:left}}
+  .sr-k{{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}}
+  .sr-live{{flex-direction:row;align-items:center;gap:8px;align-self:center}}
+  .live-dot{{width:8px;height:8px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 0 var(--brass);animation:livepulse 2.4s var(--ease) infinite}}
+  .sr-live .sr-k{{color:var(--brass)}}
+  @keyframes livepulse{{0%{{box-shadow:0 0 0 0 rgba(155,107,28,.5)}}70%{{box-shadow:0 0 0 7px rgba(155,107,28,0)}}100%{{box-shadow:0 0 0 0 rgba(155,107,28,0)}}}}
+  .cta{{display:inline-flex;align-items:center;gap:14px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border:1px solid var(--hair-strong);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}}
   .cta:hover{{border-color:var(--brass-bright);gap:18px}}
   .cta .ico{{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#fff;display:grid;place-items:center;flex:0 0 auto}}
   .cta .ar{{width:15px;height:15px;display:block}}
   [data-theme="dark"] .cta .ico{{color:#15171B}}
+  /* blueprint callouts + dimension (approved portal-in-action treatment) */
+  .hero-bp-foot{{border-top:1px solid var(--card-hair);margin-top:6px;padding-top:14px;display:flex;justify-content:flex-end}}
+  .hero-bp-foot .hero-cap{{color:var(--card-ink)}}
+  .hero-bp-foot .hero-cap .ico{{width:26px;height:26px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}}
+  .hero-bp-foot .hero-cap:hover .ico{{transform:translateX(4px)}}
+  .bp-stage--hero{{padding:8px 0 0;background:radial-gradient(120% 80% at 50% 0%,rgba(216,162,74,.07),transparent 62%)}}
+  .bp-stage--hero svg{{max-height:360px}}
+  .bp-lead{{stroke:var(--card-faint);stroke-width:1}}
+  .bp-call{{fill:var(--card-soft);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
+  .bp-callk{{fill:var(--bp);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
+  .bp-dim{{stroke:var(--bp-soft);stroke-width:1;fill:var(--bp-soft)}}
+  .bp-dlabel{{fill:var(--card-soft);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em}}
+  .bp-fade{{opacity:0;transition:opacity .7s var(--ease) .5s}}
+  .hero-bp.is-in .bp-fade{{opacity:1}}
+  @media (prefers-reduced-motion:reduce){{.bp-fade{{opacity:1!important}}.live-dot{{animation:none!important}}}}
   /* field-file card (dark blueprint card) */
   .card{{position:relative;background:var(--card-bg);color:var(--card-ink);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.45)}}
   [data-theme="dark"] .card{{border:1px solid var(--card-hair)}}
@@ -288,8 +365,9 @@ def main():
   .block{{margin:46px 0}}
   .field-files{{display:grid;grid-template-columns:1fr 1fr;gap:24px}}
   @media (max-width:900px){{
-    .field .wrap{{grid-template-columns:1fr;gap:40px}}
-    .watermark{{width:680px;left:-220px;bottom:-120px;opacity:.7}}
+    .field{{padding:48px 0 48px}}
+    .hero-foot{{align-items:flex-start;gap:20px}}
+    .statribbon{{gap:24px}}
     .field-files{{grid-template-columns:1fr}}
     .wrap{{padding:0 20px}}
   }}
@@ -300,17 +378,23 @@ def main():
 {header("", "home")}
 
 <section class="field" data-audit="hero">
-  <div class="watermark" aria-hidden="true">{WATERMARK}</div>
   <div class="wrap">
-    <div class="reveal is-in">
+    <div class="hero-head reveal is-in">
       <span class="eyebrow" data-audit="eyebrow">{bilingual("In the field", "Trên thực địa")}</span>
       <h1 class="lead-h" data-audit="lead">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>
       <p class="lead-p">{bilingual(
         "How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.",
         "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.")}</p>
+    </div>
+    <div class="hero-bp reg-frame reveal" data-audit="herobp">
+      <span class="reg-tr"></span><span class="reg-bl"></span>
+      {hero_blueprint}
+      <div class="hero-bp-foot">{hero_caption}</div>
+    </div>
+    <div class="hero-foot reveal is-in">
+      {ribbon_html}
       <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="ico">{ARROW}</span></a>
     </div>
-    {hero_card}
   </div>
 </section>
 
@@ -355,14 +439,15 @@ def main():
   USRBase.initI18n(document.getElementById("lang"));
   USRBase.initDraw();
   USRBase.initReveal();
+  USRBase.initCountup();
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
 </html>
 """
     OUT.write_text(doc)
-    print(f"index.html | hero={maker_model(feat[0])[0]} {maker_model(feat[0])[1]} | "
-          f"featured={[e['slug'] for e in feat]} | facts={f['entities']} entities")
+    print(f"index.html | hero=blueprint+ribbon | facts={f['entities']} entities · "
+          f"{len(f['country_rank'])} countries · {f['coverage']}% coverage")
 
 
 if __name__ == "__main__":

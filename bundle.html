@@ -46,6 +46,7 @@
   --card: var(--card-bg);
   --maxw: 1200px;
   --wm: rgba(26,26,28,.045);
+  --grid: rgba(26,26,28,.030);   /* faint blueprint graph-paper — reconciled from A-01/data specimens */
 }
 :root[data-theme="dark"] {
   /* cockpit dark — byte-exact from portal-in-action.html (STEP 0/TIP-004) */
@@ -68,6 +69,7 @@
   --bp-soft: #9AA0AA;
   --bp-faint: #3A4049;
   --wm: rgba(255,255,255,.035);
+  --grid: rgba(255,255,255,.028);
 }
 
 * { box-sizing: border-box; }
@@ -548,7 +550,7 @@ small, .small { font-size: .82rem; }
   <section class="bsec" style="border-top:0">
     <h2>Tình trạng bản ghi</h2>
     <p class="sub">Mọi con số tính sống từ 302 thực thể trong registry — không gõ tay.</p>
-    <div class="masthead reg-frame" data-audit="masthead"><span class="reg-tr"></span><span class="reg-bl"></span><div class="stat-strip"><div class="stat-cell"><span class="statfig">302</span><span class="cap mono"><span data-lang-en>systems</span><span data-lang-vn>hệ thống</span></span></div><div class="stat-cell"><span class="statfig">25</span><span class="cap mono"><span data-lang-en>Blue UAS</span><span data-lang-vn>Blue UAS</span></span></div><div class="stat-cell"><span class="statfig">26</span><span class="cap mono"><span data-lang-en>NDAA compliant</span><span data-lang-vn>tuân thủ NDAA</span></span></div><div class="stat-cell"><span class="statfig">6</span><span class="cap mono"><span data-lang-en>disputed fields</span><span data-lang-vn>field tranh chấp</span></span></div><div class="stat-cell"><span class="statfig">28%</span><span class="cap mono"><span data-lang-en>spec coverage</span><span data-lang-vn>độ phủ spec</span></span></div></div><div class="rank-cols"><div class="rank"><div class="rank-h mono"><span data-lang-en>By segment</span><span data-lang-vn>Theo phân khúc</span></div><div class="rank-row top"><span class="rl"><span data-lang-en>Military · tactical</span><span data-lang-vn>Quân sự · chiến thuật</span></span><span class="rn mono">91</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span></span><span class="rn mono">34</span><i class="rib" style="--w:37%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span></span><span class="rn mono">32</span><i class="rib" style="--w:35%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Agriculture</span><span data-lang-vn>Nông nghiệp</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Defense · government</span><span data-lang-vn>Quốc phòng · chính phủ</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Loitering munition</span><span data-lang-vn>Đạn tuần kích</span></span><span class="rn mono">11</span><i class="rib" style="--w:12%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Surveying &amp; mapping</span><span data-lang-vn>Khảo sát · lập bản đồ</span></span><span class="rn mono">11</span><i class="rib" style="--w:12%"></i></div></div><div class="rank"><div class="rank-h mono"><span data-lang-en>By country</span><span data-lang-vn>Theo quốc gia</span></div><div class="rank-row top"><span class="rl">United States</span><span class="rn mono">108</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl">China</span><span class="rn mono">96</span><i class="rib" style="--w:89%"></i></div><div class="rank-row"><span class="rl">Israel</span><span class="rn mono">20</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl">Germany</span><span class="rn mono">10</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Turkey</span><span class="rn mono">10</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Iran</span><span class="rn mono">9</span><i class="rib" style="--w:8%"></i></div><div class="rank-row"><span class="rl">France</span><span class="rn mono">8</span><i class="rib" style="--w:7%"></i></div><div class="rank-row"><span class="rl">Russia</span><span class="rn mono">8</span><i class="rib" style="--w:7%"></i></div></div></div></div>
+    <div class="masthead reg-frame" data-audit="masthead"><span class="reg-tr"></span><span class="reg-bl"></span><div class="stat-strip"><div class="stat-cell"><span class="statfig" data-countup style="min-width:3ch">302</span><span class="cap mono"><span data-lang-en>systems</span><span data-lang-vn>hệ thống</span></span></div><div class="stat-cell"><span class="statfig" data-countup style="min-width:2ch">25</span><span class="cap mono"><span data-lang-en>Blue UAS</span><span data-lang-vn>Blue UAS</span></span></div><div class="stat-cell"><span class="statfig" data-countup style="min-width:2ch">26</span><span class="cap mono"><span data-lang-en>NDAA compliant</span><span data-lang-vn>tuân thủ NDAA</span></span></div><div class="stat-cell"><span class="statfig" data-countup style="min-width:1ch">6</span><span class="cap mono"><span data-lang-en>disputed fields</span><span data-lang-vn>field tranh chấp</span></span></div><div class="stat-cell"><span class="statfig" data-countup style="min-width:3ch">28%</span><span class="cap mono"><span data-lang-en>spec coverage</span><span data-lang-vn>độ phủ spec</span></span></div></div><div class="rank-cols"><div class="rank"><div class="rank-h mono"><span data-lang-en>By segment</span><span data-lang-vn>Theo phân khúc</span></div><div class="rank-row top"><span class="rl"><span data-lang-en>Military · tactical</span><span data-lang-vn>Quân sự · chiến thuật</span></span><span class="rn mono">91</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span></span><span class="rn mono">34</span><i class="rib" style="--w:37%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span></span><span class="rn mono">32</span><i class="rib" style="--w:35%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Agriculture</span><span data-lang-vn>Nông nghiệp</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Defense · government</span><span data-lang-vn>Quốc phòng · chính phủ</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span></span><span class="rn mono">17</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Loitering munition</span><span data-lang-vn>Đạn tuần kích</span></span><span class="rn mono">11</span><i class="rib" style="--w:12%"></i></div><div class="rank-row"><span class="rl"><span data-lang-en>Surveying &amp; mapping</span><span data-lang-vn>Khảo sát · lập bản đồ</span></span><span class="rn mono">11</span><i class="rib" style="--w:12%"></i></div></div><div class="rank"><div class="rank-h mono"><span data-lang-en>By country</span><span data-lang-vn>Theo quốc gia</span></div><div class="rank-row top"><span class="rl">United States</span><span class="rn mono">108</span><i class="rib" style="--w:100%"></i></div><div class="rank-row"><span class="rl">China</span><span class="rn mono">96</span><i class="rib" style="--w:89%"></i></div><div class="rank-row"><span class="rl">Israel</span><span class="rn mono">20</span><i class="rib" style="--w:19%"></i></div><div class="rank-row"><span class="rl">Germany</span><span class="rn mono">10</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Turkey</span><span class="rn mono">10</span><i class="rib" style="--w:9%"></i></div><div class="rank-row"><span class="rl">Iran</span><span class="rn mono">9</span><i class="rib" style="--w:8%"></i></div><div class="rank-row"><span class="rl">France</span><span class="rn mono">8</span><i class="rib" style="--w:7%"></i></div><div class="rank-row"><span class="rl">Russia</span><span class="rn mono">8</span><i class="rib" style="--w:7%"></i></div></div></div></div>
   </section>
 
   <section class="bsec" id="reference">
@@ -5218,6 +5220,32 @@ small, .small { font-size: .82rem; }
     els.forEach(function (e) { io.observe(e); });
   }
 
+  /* initCountup — animate each [data-countup] integer from 0 to its REAL baked value (suffix like
+     '%' preserved). The final value is already in the DOM (no-JS + the overlap audit see the true
+     number); the element reserves its final width at build so the count never reflows into an
+     overlap. Honours prefers-reduced-motion (and missing rAF): jumps straight to the final value. */
+  function initCountup(rootEl) {
+    var reduce = false;
+    try { reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+    (rootEl || document).querySelectorAll("[data-countup]").forEach(function (el) {
+      var m = String(el.textContent).match(/^(\d[\d,]*)(.*)$/);
+      if (!m) return;
+      var target = parseInt(m[1].replace(/,/g, ""), 10), suffix = m[2] || "";
+      if (reduce || !window.requestAnimationFrame || target <= 0) return;  // leave the real value
+      var dur = 900, t0 = null;
+      function fmt(n) { return n.toLocaleString("en-US") + suffix; }
+      el.textContent = fmt(0);
+      function step(ts) {
+        if (t0 === null) t0 = ts;
+        var p = Math.min(1, (ts - t0) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);          // easeOutCubic
+        el.textContent = fmt(Math.round(target * eased));
+        if (p < 1) window.requestAnimationFrame(step); else el.textContent = fmt(target);
+      }
+      window.requestAnimationFrame(step);
+    });
+  }
+
   /* initRegistry — client-side facet + search + sort over BAKED cards.
      Filter never hides a card for being null/disputed — only facet/search mismatch hides it
      (honest-null & disputed stay visible in the filtered set). State round-trips through the URL
@@ -5319,7 +5347,7 @@ small, .small { font-size: .82rem; }
 
   root.USRBase = { arrow: arrow, mountArrows: mountArrows, designerAudit: designerAudit,
                    initTheme: initTheme, initI18n: initI18n, initReveal: initReveal,
-                   initDraw: initDraw, initRegistry: initRegistry };
+                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup };
 })(window);
 
 </script>

@@ -39,6 +39,7 @@
   --card: var(--card-bg);
   --maxw: 1200px;
   --wm: rgba(26,26,28,.045);
+  --grid: rgba(26,26,28,.030);   /* faint blueprint graph-paper — reconciled from A-01/data specimens */
 }
 :root[data-theme="dark"] {
   /* cockpit dark — byte-exact from portal-in-action.html (STEP 0/TIP-004) */
@@ -61,6 +62,7 @@
   --bp-soft: #9AA0AA;
   --bp-faint: #3A4049;
   --wm: rgba(255,255,255,.035);
+  --grid: rgba(255,255,255,.028);
 }
 
 * { box-sizing: border-box; }
