@@ -300,7 +300,7 @@
       "slug": "kinh-te-tam-thap-vn-doc-qua-dang-ky-uav",
       "type": "analysis",
       "section": "policy",
-      "sample": false,
+      "sample": true,
       "title": "Kinh tế tầm thấp Việt Nam, đọc qua một bản đăng ký UAV",
       "dek": "Cơ hội nông nghiệp, giao hàng và khảo sát là thật. Nhưng khung bay phần lớn vẫn của nước ngoài — và đó là bài toán chủ quyền, không chỉ thương mại.",
       "date": "24/6",
@@ -414,7 +414,8 @@
       ],
       "related": [
         "truy-nguyen-loi-the-uav"
-      ]
+      ],
+      "hold_reason": "opinion without human_author — held per mode-E policy (P3.3 VERIFY)"
     }
   ]
 }

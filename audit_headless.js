@@ -325,6 +325,19 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  review page: " + e.message); }
 
+    // NEWSROOM objective article (news/bai-*) — real authored content, overlap-clean (P3.3)
+    try {
+      await send("Page.navigate", { url: BASE + "/news/bai-01-data-note-phuong-phap.html" });
+      await sleep(700);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const body = await evalOnPage(send, `document.querySelectorAll('.nbody p').length`);
+        const ok = r.hits.length === 0 && body > 0;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /news/bai-01  [${theme}/${lang}]  overlaps=${r.hits.length}  paras=${body}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  newsroom page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -368,7 +381,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 2 knowledge + 2 review + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 2 data + 2 knowledge + 2 review + 2 newsroom + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

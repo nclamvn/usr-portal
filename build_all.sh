@@ -31,6 +31,7 @@ echo "[4/8] newsroom + analysis pillar (TIP-007) + knowledge (TIP-P3.1)"
 python3 build_news.py
 python3 build_analysis.py
 python3 build_knowledge.py
+python3 build_newsroom.py
 echo "[5/8] index home (TIP-004) + compare (TIP-P1.3) + single-file bundle export (TIP-008)"
 python3 build_index.py
 python3 build_compare.py
@@ -84,6 +85,8 @@ python3 verify_knowledge.py
 python3 teeth_p31.py
 python3 verify_review.py
 python3 teeth_p32.py
+python3 verify_newsroom.py
+python3 teeth_p33.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 
