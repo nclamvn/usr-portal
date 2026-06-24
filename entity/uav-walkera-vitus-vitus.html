@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walkera Walkera Vitus — USR</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../base/design-system.css">
+<style>
+  .dwrap{max-width:820px;margin:0 auto;padding:1.6rem 1.4rem 3rem}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.4rem}
+  .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none;cursor:pointer}
+  .ctrl{display:flex;gap:.5rem}
+  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
+  .dhead{border-bottom:1px solid var(--hair);padding-bottom:1rem;margin-bottom:.4rem}
+  .dhead h1{margin:0} .dhead .model{color:var(--brass)}
+  .dhead .meta{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+  .dsec-h{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:1.9rem 0 .7rem;display:flex;gap:.6rem;align-items:center}
+  .dsec-h::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .drows{display:grid;gap:0}
+  .drow{display:grid;grid-template-columns:13rem 1fr auto;align-items:baseline;gap:.7rem;font-size:.85rem;padding:.42rem 0;border-bottom:1px solid var(--hair)}
+  .drow.spec{align-items:center}
+  .drow .k{color:var(--ink-soft)}
+  .drow .v{font-family:var(--font-mono);color:var(--ink);font-variant-numeric:tabular-nums}
+  .drow .v sup a{color:var(--brass);text-decoration:none;font-size:.72em;padding:0 .12em}
+  .sources ol{margin:0;padding-left:1.5rem}
+  .sources li{font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);margin:.35rem 0;overflow-wrap:anywhere}
+  .sources li.nosrc{list-style:none;margin-left:-1.5rem;color:var(--muted)}
+  .sources .tierbadge{display:inline-block;border:1px solid var(--brass);color:var(--brass);border-radius:3px;font-size:.85em;padding:0 .32em;margin-right:.45em;font-weight:600}
+  .sources a{color:inherit}
+  .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
+  .dglyph{display:flex;align-items:center;gap:18px;margin:1rem 0 .2rem}
+  .dglyph-lab{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="dwrap">
+  <div class="topbar">
+    <a class="back" href="../reference.html">← <span data-lang-en>Reference</span><span data-lang-vn>Tham chiếu</span></a>
+    <div class="ctrl">
+      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
+      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
+    </div>
+  </div>
+  <header class="dhead reg-frame" data-audit="dhead">
+    <span class="reg-tr"></span><span class="reg-bl"></span>
+    <h1 data-audit="dtitle">Walkera <span class="model">Walkera Vitus</span></h1>
+    <div class="meta mono">China · <span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span> · <span data-lang-en>Commercial · covered</span><span data-lang-vn>Thương mại · covered</span></div>
+  </header>
+  <div class="dglyph"><svg class="glyph-svg glyph-lg" viewBox="0 0 100 100" aria-hidden="true" data-glyph="quad"><line data-draw class="bp-line" x1="50" y1="50" x2="71.2" y2="71.2"/><circle data-draw class="bp-disc" cx="71.2" cy="71.2" r="13"/><line data-draw class="bp-line" x1="50" y1="50" x2="28.8" y2="71.2"/><circle data-draw class="bp-disc" cx="28.8" cy="71.2" r="13"/><line data-draw class="bp-line" x1="50" y1="50" x2="28.8" y2="28.8"/><circle data-draw class="bp-disc" cx="28.8" cy="28.8" r="13"/><line data-draw class="bp-line" x1="50" y1="50" x2="71.2" y2="28.8"/><circle data-draw class="bp-disc" cx="71.2" cy="28.8" r="13"/><circle data-draw class="bp-line" cx="50" cy="50" r="6"/></svg>
+    <span class="dglyph-lab"><span data-lang-en>config</span><span data-lang-vn>cấu hình</span> · quadcopter</span></div>
+  <div class="dsec-h"><span data-lang-en>Identity</span><span data-lang-vn>Định danh</span></div>
+  <div class="drows"><div class="drow"><span class="k"><span data-lang-en>Manufacturer</span><span data-lang-vn>Nhà sản xuất</span></span><span class="v" data-audit="dval">Walkera<sup><a href="#s1">1</a></sup></span><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow"><span class="k"><span data-lang-en>Country</span><span data-lang-vn>Quốc gia</span></span><span class="v" data-audit="dval">China<sup><a href="#s1">1</a></sup></span><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow"><span class="k"><span data-lang-en>Family</span><span data-lang-vn>Dòng</span></span><span class="v" data-audit="dval">Walkera Vitus<sup><a href="#s1">1</a></sup></span><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow"><span class="k"><span data-lang-en>Variant</span><span data-lang-vn>Biến thể</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>Airframe</span><span data-lang-vn>Khung bay</span></span><span class="v" data-audit="dval">quadcopter<sup><a href="#s1">1</a></sup></span><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow"><span class="k"><span data-lang-en>Propulsion</span><span data-lang-vn>Động lực</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>Segment</span><span data-lang-vn>Phân khúc</span></span><span class="v" data-audit="dval"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span></span><span class="chip" data-status="derived" data-audit="chip"><span data-lang-en>derived</span><span data-lang-vn>suy ra</span></span></div><div class="drow"><span class="k"><span data-lang-en>Status</span><span data-lang-vn>Tình trạng</span></span><span class="v" data-audit="dval">in_production<sup><a href="#s1">1</a></sup></span><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow"><span class="k"><span data-lang-en>Class</span><span data-lang-vn>Lớp</span></span><span class="v"><span data-lang-en>Commercial · covered</span><span data-lang-vn>Thương mại · covered</span></span><span></span></div></div>
+  <div class="dsec-h"><span data-lang-en>Specifications</span><span data-lang-vn>Thông số</span></div>
+  <div class="drows"><div class="drow spec"><span class="k"><span data-lang-en>MTOW (kg)</span><span data-lang-vn>Khối lượng cất cánh tối đa (kg)</span></span><div class="vt"><div class="track"><span class="rail"><i class="tick" style="left:19%"></i></span></div><span class="v" data-audit="dval">0.87 kg<sup><a href="#s1">1</a></sup></span></div><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Max payload (kg)</span><span data-lang-vn>Tải tối đa (kg)</span></span><div class="vt"><div class="track"><span class="rail null"></span></div><span class="v" data-audit="dval">—</span></div><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Endurance (min)</span><span data-lang-vn>Thời gian bay (phút)</span></span><div class="vt"><div class="track"><span class="rail"><i class="tick" style="left:27%"></i></span></div><span class="v" data-audit="dval">25 min<sup><a href="#s1">1</a></sup></span></div><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Max range (km)</span><span data-lang-vn>Tầm bay (km)</span></span><div class="vt"><div class="track"><span class="rail null"></span></div><span class="v" data-audit="dval">—</span></div><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Datalink range (km)</span><span data-lang-vn>Tầm truyền (km)</span></span><div class="vt"><div class="track"><span class="rail"><i class="tick" style="left:9%"></i></span></div><span class="v" data-audit="dval">1.5 km<sup><a href="#s1">1</a></sup></span></div><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Max speed (m/s)</span><span data-lang-vn>Tốc độ tối đa (m/s)</span></span><div class="vt"><div class="track"><span class="rail"><i class="tick" style="left:29%"></i></span></div><span class="v" data-audit="dval">14 m/s<sup><a href="#s1">1</a></sup></span></div><span class="chip" data-status="verified" data-audit="chip"><span class="tier">C</span><span data-lang-en>verified</span><span data-lang-vn>đã kiểm</span></span></div><div class="drow spec"><span class="k"><span data-lang-en>Service ceiling (m)</span><span data-lang-vn>Trần bay (m)</span></span><div class="vt"><div class="track"><span class="rail null"></span></div><span class="v" data-audit="dval">—</span></div><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>Encryption</span><span data-lang-vn>Mã hoá</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>Blue UAS</span><span data-lang-vn>Blue UAS</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>NDAA compliant</span><span data-lang-vn>Tuân thủ NDAA</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div><div class="drow"><span class="k"><span data-lang-en>GPS-denied capable</span><span data-lang-vn>Bay trong môi trường mất GPS</span></span><span class="v" data-audit="dval">—</span><span class="chip" data-status="absent" data-audit="chip"><span data-lang-en>no data</span><span data-lang-vn>chưa có dữ liệu</span></span></div></div>
+  <div class="dsec-h"><span data-lang-en>Sources</span><span data-lang-vn>Nguồn</span></div>
+  <div class="sources" data-audit="sources"><ol><li id="s1"><span class="tierbadge">C</span><a href="https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/" target="_blank" rel="noopener">https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/</a></li></ol></div>
+  <p class="note"><span data-lang-en>Every value traces to a cited source and tier (A manufacturer · B official retailer · C aggregator). Unverified or absent fields are shown as null — never invented. Disputed fields keep both claimed values.</span><span data-lang-vn>Mọi giá trị truy về nguồn dẫn và tier (A nhà sản xuất · B bán lẻ chính thức · C tổng hợp). Field chưa kiểm chứng hoặc thiếu hiển thị null — không bịa. Field tranh chấp giữ cả hai giá trị.</span></p>
+</main>
+<script src="../base/base.js"></script>
+<script>
+  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initI18n(document.getElementById("lang"));
+  USRBase.mountArrows();
+  USRBase.initDraw();
+  USRBase.initReveal();
+  document.documentElement.dataset.audit = "ready";
+</script>
+</body>
+</html>

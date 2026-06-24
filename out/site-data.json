@@ -1,63 +1,63 @@
 {
   "aggregates": {
-    "entity_count": 247,
+    "entity_count": 261,
     "field_status_counts": {
-      "None": 2422,
-      "derived": 220,
+      "None": 2549,
+      "derived": 232,
       "disputed": 6,
       "unverified": 25,
-      "verified": 2267
+      "verified": 2408
     },
     "source_tier_counts": {
-      "A": 1524,
+      "A": 1613,
       "B": 436,
-      "C": 315,
-      "derived": 220
+      "C": 367,
+      "derived": 232
     },
     "spec_fill_rate": {
       "blue_uas": {
         "present": 32,
-        "total": 247
+        "total": 261
       },
       "encryption": {
         "present": 3,
-        "total": 247
+        "total": 261
       },
       "endurance_min": {
-        "present": 127,
-        "total": 247
+        "present": 139,
+        "total": 261
       },
       "gps_denied_capable": {
         "present": 11,
-        "total": 247
+        "total": 261
       },
       "max_link_km": {
-        "present": 52,
-        "total": 247
+        "present": 56,
+        "total": 261
       },
       "max_payload_kg": {
-        "present": 90,
-        "total": 247
+        "present": 98,
+        "total": 261
       },
       "max_range_km": {
-        "present": 68,
-        "total": 247
+        "present": 75,
+        "total": 261
       },
       "max_speed_ms": {
-        "present": 107,
-        "total": 247
+        "present": 117,
+        "total": 261
       },
       "mtow_kg": {
-        "present": 139,
-        "total": 247
+        "present": 150,
+        "total": 261
       },
       "ndaa_compliant": {
         "present": 33,
-        "total": 247
+        "total": 261
       },
       "service_ceiling_m": {
-        "present": 54,
-        "total": 247
+        "present": 59,
+        "total": 261
       }
     },
     "spec_range": {
@@ -71,7 +71,7 @@
       },
       "max_payload_kg": {
         "max": 6800,
-        "min": 0.5
+        "min": 0.27
       },
       "max_range_km": {
         "max": 10000,
@@ -87,7 +87,7 @@
       },
       "service_ceiling_m": {
         "max": 18000,
-        "min": 1524
+        "min": 457
       }
     }
   },
@@ -868,6 +868,217 @@
     },
     {
       "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:aeronautics:aerostar:aerostar",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": 720
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Aeronautics Aerostar"
+      },
+      "family_id": "uav:aeronautics:aerostar",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Aeronautics"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Israel"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": 40
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": 51
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": 240
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": "Aeronautics Aerostar"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airforce-technology.com/projects/aerostaruav/"
+          }
+        ],
+        "status": "verified",
+        "value": 5486
+      },
+      "slug": "uav-aeronautics-aerostar-aerostar",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
         "confidence": null,
         "source_tier": null,
         "status": null,
@@ -1584,6 +1795,203 @@
         "value": null
       },
       "slug": "uav-aerovironment-p550-p550",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:aerovironment:puma-3-ae:puma-3-ae",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": 150
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "AeroVironment Puma 3 AE"
+      },
+      "family_id": "uav:aerovironment:puma-3-ae",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "AeroVironment"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": 60
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": 6.8
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.avinc.com/solution/puma-3-ae/"
+          }
+        ],
+        "status": "verified",
+        "value": "AeroVironment Puma 3 AE"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-aerovironment-puma-3-ae-puma-3-ae",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -3791,6 +4199,189 @@
         ],
         "status": "verified",
         "value": "TAC"
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:airbus:cityairbus-nextgen:cityairbus-nextgen",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "Airbus CityAirbus NextGen"
+      },
+      "family_id": "uav:airbus:cityairbus-nextgen",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "Airbus"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "France"
+      },
+      "market_segment": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": 80
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": 33
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.airbus.com/en/innovation/energy-transition/hybrid-and-electric-flight/cityairbus-nextgen"
+          }
+        ],
+        "status": "verified",
+        "value": "Airbus CityAirbus NextGen"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
       }
     },
     {
@@ -11606,6 +12197,203 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:brinc:lemur-s:lemur-s",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": 31
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "BRINC Lemur S"
+      },
+      "family_id": "uav:brinc:lemur-s",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "BRINC"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "public_safety"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": 13
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": 0.45
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-s-drone/"
+          }
+        ],
+        "status": "verified",
+        "value": "BRINC Lemur S"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-brinc-lemur-s-lemur-s",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-22",
             "tier": "A",
             "url": "manufacturer_spec"
@@ -13581,6 +14369,203 @@
         "value": null
       },
       "slug": "uav-delair-ux11-ux11",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:dji:agras-t10:agras-t10",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 19
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Agras T10"
+      },
+      "family_id": "uav:dji:agras-t10",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "agriculture"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 8
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 26.8
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://ag.dji.com/t10/specs"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Agras T10"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-dji-agras-t10-agras-t10",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -17577,6 +18562,210 @@
         "source_tier": "A",
         "sources": [
           {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:dji:mavic-2-pro:mavic-2-pro",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": 31
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Mavic 2 Pro"
+      },
+      "family_id": "uav:dji:mavic-2-pro",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "consumer"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": 0.907
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mavic-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Mavic 2 Pro"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-dji-mavic-2-pro-mavic-2-pro",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
             "retrieved": "2026-06-23",
             "tier": "A",
             "url": "https://www.dji.com/mavic-3-classic/specs"
@@ -19027,6 +20216,210 @@
         "value": null
       },
       "slug": "uav-dji-mavic-4-pro-mavic-4-pro",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:dji:mini-2:mini-2",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": 31
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Mini 2"
+      },
+      "family_id": "uav:dji:mini-2",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "consumer"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": 16
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": 0.242
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.dji.com/support/product/mini-2"
+          }
+        ],
+        "status": "verified",
+        "value": "DJI Mini 2"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-dji-mini-2-mini-2",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -22006,6 +23399,217 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:elbit-systems:skylark:skylark",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": 360
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "Elbit Systems Skylark"
+      },
+      "family_id": "uav:elbit-systems:skylark",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "Elbit Systems"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "Israel"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": 100
+      },
+      "max_speed_ms": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": 45
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": "Elbit Systems Skylark"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.elbitsystems.com/autonomous/aerial/tactical-uas/skylark-3"
+          }
+        ],
+        "status": "verified",
+        "value": 4600
+      },
+      "slug": "uav-elbit-systems-skylark-skylark",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "B",
         "sources": [
           {
@@ -22211,6 +23815,203 @@
         "value": 9100
       },
       "slug": "uav-elbit-hermes-900-kochav",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:elroy-air:chaparral:chaparral",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "Elroy Air Chaparral"
+      },
+      "family_id": "uav:elroy-air:chaparral",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "Elroy Air"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "USA"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "delivery"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": 136
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": 500
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": 27
+      },
+      "mtow_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://elroyair.com/chaparral/aircraft/"
+          }
+        ],
+        "status": "verified",
+        "value": "Elroy Air Chaparral"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_us_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-elroy-air-chaparral-chaparral",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -28342,6 +30143,224 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "vtol_fixedwing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:iai:panther:panther",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 360
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI Panther"
+      },
+      "family_id": "uav:iai:panther",
+      "frame_glyph": "vtol",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "Israel"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "military_tactical"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 8.5
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 60
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 36
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 65
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": "IAI Panther"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.militaryfactory.com/aircraft/detail.php?aircraft_id=1093"
+          }
+        ],
+        "status": "verified",
+        "value": 3000
+      },
+      "slug": "uav-iai-panther-panther",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "B",
         "sources": [
           {
@@ -30091,6 +32110,203 @@
         "value": 6096
       },
       "slug": "uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "multirotor"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:jetson:one:one",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "Jetson One"
+      },
+      "family_id": "uav:jetson:one",
+      "frame_glyph": "multirotor",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "Jetson"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "Sweden"
+      },
+      "market_segment": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": 28
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": 115
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": "Jetson One"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://jetson.com/jetson-one"
+          }
+        ],
+        "status": "verified",
+        "value": 457
+      },
+      "slug": "uav-jetson-one-one",
       "variant": {
         "confidence": null,
         "source_tier": null,
@@ -40242,6 +42458,435 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "fixed-wing"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:stm:alpagu:alpagu",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": 15
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "STM Alpagu"
+      },
+      "family_id": "uav:stm:alpagu",
+      "frame_glyph": "fixed",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "STM"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "Turkey"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "loitering_munition"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": 0.27
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": 8
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": 1.95
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/alpagu-fixed-wing-loitering-munition-system"
+          }
+        ],
+        "status": "verified",
+        "value": "STM Alpagu"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-stm-alpagu-alpagu",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:stm:kargu:kargu",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 30
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "STM Kargu"
+      },
+      "family_id": "uav:stm:kargu",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "STM"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "Turkey"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "loitering_munition"
+      },
+      "max_link_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_payload_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 0.3
+      },
+      "max_range_km": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 10
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 20
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 7
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": "STM Kargu"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "military_noncovered_public",
+      "service_ceiling_m": {
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "A",
+            "url": "https://www.stm.com.tr/en/kargu-autonomous-tactical-multi-rotor-attack-uav"
+          }
+        ],
+        "status": "verified",
+        "value": 3000
+      },
+      "slug": "uav-stm-kargu-kargu",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "C",
         "sources": [
           {
@@ -44878,6 +47523,210 @@
     {
       "airframe_type": {
         "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "quadcopter"
+      },
+      "blue_uas": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "canonical_id": "uav:walkera:vitus:vitus",
+      "encryption": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "endurance_min": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 25
+      },
+      "family": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "Walkera Vitus"
+      },
+      "family_id": "uav:walkera:vitus",
+      "frame_glyph": "quad",
+      "gps_denied_capable": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "live_status": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "in_production"
+      },
+      "manufacturer": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "Walkera"
+      },
+      "manufacturer_country": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "China"
+      },
+      "market_segment": {
+        "confidence": "high",
+        "source_tier": "derived",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "derived",
+            "url": "taxonomy:market_segment_v4_per_variant"
+          }
+        ],
+        "status": "derived",
+        "value": "consumer"
+      },
+      "max_link_km": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 1.5
+      },
+      "max_payload_kg": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_range_km": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "max_speed_ms": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 14
+      },
+      "mtow_kg": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": 0.87
+      },
+      "name": {
+        "confidence": "high",
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-24",
+            "tier": "C",
+            "url": "https://www.192rc.com/product/original-walkera-vitus-320-5-8g-fpv-foldable-quadcopter/"
+          }
+        ],
+        "status": "verified",
+        "value": "Walkera Vitus"
+      },
+      "ndaa_compliant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "propulsion": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "provenance_class": "commercial_covered_public",
+      "service_ceiling_m": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      },
+      "slug": "uav-walkera-vitus-vitus",
+      "variant": {
+        "confidence": null,
+        "source_tier": null,
+        "status": null,
+        "value": null
+      }
+    },
+    {
+      "airframe_type": {
+        "confidence": "high",
         "source_tier": "A",
         "sources": [
           {
@@ -49290,5 +52139,5 @@
     }
   },
   "schema": "site-data/1",
-  "source_registry_sha256": "0c6ac91bfae871c7ea864e5015625a862c5e0f19e8fae9f36a41e85549df3c0c"
+  "source_registry_sha256": "ade5d020910fba74eb2d9ed5faf0e291310a2a1007d33746b647a84b7961fc6d"
 }
