@@ -186,7 +186,7 @@ def jsonld(article):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + '</script>'
 
 
-SPEC_BANNER = ('<div class="spec"><div class="in"><div class="wrap">'
+SPEC_BANNER = ('<div class="smpl"><div class="in"><div class="wrap">'
                '<span>◧ Bản dựng giao diện</span><span style="color:var(--hair-strong)">·</span>'
                '<span><b>Nội dung là chữ mẫu</b>, không phải tin thật — minh hoạ cấu trúc &amp; chuẩn biên tập</span>'
                '</div></div></div>')

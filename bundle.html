@@ -307,11 +307,12 @@ small, .small { font-size: .82rem; }
 .ico .ar{width:15px;height:15px;display:block}
 [data-theme="dark"] .ncta .ico{color:#15171B}
 
-/* ---- specimen banner (zero-fab marker) ---- */
-.spec{background:repeating-linear-gradient(45deg,var(--bp-faint),var(--bp-faint) 10px,transparent 10px,transparent 20px)}
-.spec .in{background:var(--bg);margin:0;border-bottom:1px solid var(--hair)}
-.spec .wrap{display:flex;align-items:center;gap:14px;height:38px;max-width:var(--maxw);margin:0 auto;padding:0 32px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.spec b{color:var(--brass);font-weight:500}
+/* ---- specimen banner (zero-fab marker) — class .smpl, NOT .spec:
+   .spec is a detail-page specification row (build_detail), and the bundle inlines both sheets. */
+.smpl{background:repeating-linear-gradient(45deg,var(--bp-faint),var(--bp-faint) 10px,transparent 10px,transparent 20px)}
+.smpl .in{background:var(--bg);margin:0;border-bottom:1px solid var(--hair)}
+.smpl .wrap{display:flex;align-items:center;gap:14px;height:38px;max-width:var(--maxw);margin:0 auto;padding:0 32px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.smpl b{color:var(--brass);font-weight:500}
 .partbar{background:var(--ink);color:var(--bg)}
 .partbar .wrap{display:flex;align-items:center;gap:16px;height:54px;max-width:var(--maxw);margin:0 auto;padding:0 32px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 .partbar b{color:var(--bp);font-weight:500}

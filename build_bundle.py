@@ -68,6 +68,12 @@ def main():
 
     css = (ROOT / "base" / "design-system.css").read_text() + "\n" \
         + (ROOT / "base" / "newsroom.css").read_text() + "\n" + DETAIL_CSS
+    # TEETH: the bundle inlines newsroom.css next to the detail spec rows (`.drow.spec`).
+    # A bare `.spec{...repeating-linear-gradient...}` rule would paint a hatch over every spec
+    # row (regression seen 2026-06-24 — the specimen banner was misnamed `.spec`). Fail loud.
+    if re.search(r"\.spec\s*\{[^}]*repeating-linear-gradient", css):
+        raise SystemExit("BUNDLE GATE: a `.spec{}` rule sets a hatch — it will cover detail "
+                         "spec rows. Rename the specimen banner (use `.smpl`), not `.spec`.")
     js = (ROOT / "base" / "base.js").read_text()
 
     facets = inline_links(render_facets(ents, labels))
