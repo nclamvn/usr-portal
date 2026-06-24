@@ -37,6 +37,11 @@ CSHA1=$(shasum -a256 out/compare-data.json | cut -d' ' -f1)
 python3 build_compare.py >/dev/null
 CSHA2=$(shasum -a256 out/compare-data.json | cut -d' ' -f1)
 [ "$CSHA1" = "$CSHA2" ] && echo "      compare-data idempotent OK" || { echo "      COMPARE IDEMPOTENT FAIL"; exit 2; }
+python3 build_search.py
+XSHA1=$(shasum -a256 out/search-index.json | cut -d' ' -f1)
+python3 build_search.py >/dev/null
+XSHA2=$(shasum -a256 out/search-index.json | cut -d' ' -f1)
+[ "$XSHA1" = "$XSHA2" ] && echo "      search-index idempotent OK" || { echo "      SEARCH IDEMPOTENT FAIL"; exit 2; }
 python3 build_bundle.py
 echo "[6/8] content integrity (verify_content — 4-questions · entity-tags · tier-A · figures trace registry)"
 python3 verify_content.py
@@ -53,6 +58,8 @@ python3 verify_taxonomy.py
 python3 teeth_p14.py
 python3 verify_compare.py
 python3 teeth_p13.py
+python3 verify_search.py
+python3 teeth_p21.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 

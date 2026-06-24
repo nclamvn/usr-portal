@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — USR</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base/design-system.css">
+<style>
+  .swrap{max-width:760px;margin:0 auto;padding:1.4rem 1.2rem 3rem}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
+  .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none}
+  .ctrl{display:flex;gap:.5rem}
+  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
+  h1{margin:0 0 .8rem}
+  #q{width:100%;background:transparent;border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.6rem .8rem;font-family:var(--font-body);font-size:1rem;color:var(--ink)}
+  .grp{margin-top:1.4rem}
+  .grp-h{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;display:flex;gap:.5rem;align-items:center}
+  .grp-h .n{color:var(--faint)}
+  .hit{display:flex;gap:.6rem;align-items:baseline;padding:.4rem 0;border-bottom:1px solid var(--hair)}
+  .hit a{color:inherit;text-decoration:none;font-size:.9rem}
+  .hit .sub{color:var(--muted);font-family:var(--font-mono);font-size:.74rem;margin-left:auto}
+  .badge{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--hair-strong);color:var(--muted);border-radius:3px;padding:.05rem .35rem;flex:0 0 auto}
+  .empty{color:var(--muted);font-size:.9rem;padding:1.6rem 0;text-align:center}
+</style>
+</head>
+<body>
+<main class="swrap">
+  <div class="topbar">
+    <a class="back" href="reference.html">← <span data-lang-en>Reference</span><span data-lang-vn>Tham chiếu</span></a>
+    <div class="ctrl">
+      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
+      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
+    </div>
+  </div>
+  <h1><span data-lang-en>Search</span><span data-lang-vn>Tìm kiếm</span></h1>
+  <input id="q" type="search" autocomplete="off" aria-label="search"
+     placeholder="Systems, manufacturers, countries, segments…">
+  <div id="out"></div>
+  <noscript><p class="empty"><span data-lang-en>Search needs JavaScript. Browse on the</span><span data-lang-vn>Tìm kiếm cần JavaScript. Xem ở trang</span> <a href="reference.html"><span data-lang-en>reference</span><span data-lang-vn>tra cứu</span></a>.</p></noscript>
+</main>
+<script src="base/base.js"></script>
+<script src="base/search.js"></script>
+<script>
+  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initI18n(document.getElementById("lang"));
+</script>
+</body>
+</html>

@@ -260,6 +260,20 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  compare page: " + e.message); }
 
+    // SEARCH page (?q=dji) — multi-type hits, overlap-clean, filter latency (P2.1)
+    try {
+      await send("Page.navigate", { url: BASE + "/search.html?q=dji" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const hits = await evalOnPage(send, `document.querySelectorAll('.hit a').length`);
+        const ms = await evalOnPage(send, `(function(){var q=document.getElementById('q');var t=performance.now();q.value='puma';q.dispatchEvent(new Event('input'));return performance.now()-t;})()`);
+        const ok = r.hits.length === 0 && hits > 0 && ms < 100;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /search?q  [${theme}/${lang}]  overlaps=${r.hits.length}  hits=${hits}  filter=${ms.toFixed(1)}ms`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  search page: " + e.message); }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -303,7 +317,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 2 compare + 2 search + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }
