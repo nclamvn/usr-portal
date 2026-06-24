@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austria — USR</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../base/design-system.css">
+<style>
+  .twrap{max-width:820px;margin:0 auto;padding:1.6rem 1.4rem 3rem}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.4rem}
+  .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none;cursor:pointer}
+  .ctrl{display:flex;gap:.5rem}
+  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
+  .thead{border-bottom:1px solid var(--hair);padding-bottom:1rem;margin-bottom:.4rem}
+  .thead h1{margin:0}
+  .thead .meta{font-size:.8rem;color:var(--muted);margin-top:.3rem;font-family:var(--font-mono)}
+  .tsec-h{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:1.9rem 0 .7rem;display:flex;gap:.6rem;align-items:center}
+  .tsec-h::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .tlist{list-style:none;margin:.3rem 0 0;padding:0;columns:2;column-gap:1.4rem}
+  @media(max-width:640px){.tlist{columns:1}}
+  .tlist li{font-size:.82rem;padding:.18rem 0;break-inside:avoid}
+  .tlist a{color:inherit}
+  .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
+</style>
+</head>
+<body>
+<main class="twrap">
+  <div class="topbar">
+    <a class="back" href="../reference.html">← <span data-lang-en>Reference</span><span data-lang-vn>Tham chiếu</span></a>
+    <div class="ctrl">
+      <button id="lang"><span data-lang-en>VN</span><span data-lang-vn>EN</span></button>
+      <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
+    </div>
+  </div>
+  <header class="thead"><h1>Austria</h1><div class="meta">1 <span data-lang-en>systems</span><span data-lang-vn>hệ thống</span> · 1 <span data-lang-en>manufacturers</span><span data-lang-vn>nhà sản xuất</span></div></header>
+  <div class="tsec-h"><span data-lang-en>Systems</span><span data-lang-vn>Hệ thống</span></div><ul class="tlist"><li><a href="../entity/uav-schiebel-camcopter-s-100-camcopter-s-100.html">Schiebel Camcopter S-100</a></li></ul><div class="tsec-h"><span data-lang-en>Manufacturers</span><span data-lang-vn>Nhà sản xuất</span></div><ul class="tlist"><li><a href="../company/schiebel.html">Schiebel</a></li></ul>
+  <p class="note"><span data-lang-en>A live index over the registry — every entry links to its full record. Counts are computed at build time.</span><span data-lang-vn>Chỉ mục sống trên registry — mỗi mục liên kết tới hồ sơ đầy đủ. Số đếm tính lúc build.</span></p>
+</main>
+<script src="../base/base.js"></script>
+<script>
+  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initI18n(document.getElementById("lang"));
+  document.documentElement.dataset.audit = "ready";
+</script>
+</body>
+</html>

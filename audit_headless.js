@@ -231,6 +231,19 @@ async function main() {
       }
     } else { failures++; console.log("  FAIL  company page: could not resolve a slug"); }
 
+    // TAXONOMY pages (country/<slug>, segment/<slug>) — overlap + real index links (P1.4)
+    for (const tpath of ["country/united-states", "segment/military-tactical"]) {
+      await send("Page.navigate", { url: BASE + "/" + tpath + ".html" });
+      await sleep(700);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));  // reuse: hits + fleet(=.tlist a? no)
+        const links = await evalOnPage(send, `document.querySelectorAll('.tlist a').length`);
+        const ok = r.hits.length === 0 && links > 0;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /${tpath}  [${theme}/${lang}]  overlaps=${r.hits.length}  links=${links}`);
+      }
+    }
+
     // EDITORIAL: analysis (4-questions + entity-chip) + news, overlap-clean light/dark.
     let aslug = "", nslug = "";
     try {
@@ -274,7 +287,7 @@ async function main() {
     chrome.kill("SIGKILL");
   }
 
-  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
+  console.log(`\nAUDIT: ${failures === 0 ? "clean: 8 base + hero + filtered + 2 detail + 2 company + 2 taxonomy + 3 editorial (news/analysis)" : failures + " issue(s)"} | teeth ${teethOk ? "proven" : "FAILED"}`);
   if (failures > 0 || !teethOk) process.exit(2);
   process.exit(0);
 }

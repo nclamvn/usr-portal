@@ -9,6 +9,8 @@ names = ["index.html", "reference.html", "base/demo.html"]
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("analysis/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("news/*.html"))
 names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("company/*.html"))
+names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("country/*.html"))
+names += sorted(str(p.relative_to(ROOT)) for p in ROOT.glob("segment/*.html"))
 for name in names:
     p = ROOT / name
     if not p.exists():

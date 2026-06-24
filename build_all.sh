@@ -26,6 +26,7 @@ echo "[3/8] reference index rows (TIP-003) + detail pages (TIP-006) + company pa
 python3 build_reference.py
 python3 build_detail.py
 python3 build_company.py
+python3 build_taxonomy.py
 echo "[4/8] newsroom + analysis pillar (TIP-007)"
 python3 build_news.py
 python3 build_analysis.py
@@ -43,6 +44,8 @@ GSHA2=$(shasum -a256 out/graph.json | cut -d' ' -f1)
 [ "$GSHA1" = "$GSHA2" ] && echo "      graph idempotent OK ($GSHA1)" || { echo "      GRAPH IDEMPOTENT FAIL"; exit 2; }
 python3 verify_graph.py
 python3 teeth_p02.py
+python3 verify_taxonomy.py
+python3 teeth_p14.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 

@@ -59,7 +59,11 @@ def srcrefs(fo, ledger):
     return out
 
 
-def field_row(e, field, labels, ledger, ranges=None):
+def _tslug(v):
+    return re.sub(r"[^a-z0-9]+", "-", (v or "").lower()).strip("-")
+
+
+def field_row(e, field, labels, ledger, ranges=None, taxlinks=False):
     fo = e[field]
     lab = labels["field"].get(field, {"en": field, "vn": field})
     disp, ch = chip(fo, labels)
@@ -91,6 +95,12 @@ def field_row(e, field, labels, ledger, ranges=None):
                 f'<div class="vt"><div class="track">{rail}</div>'
                 f'<span class="v" data-audit="dval">{vlab}{sup}</span></div>{ch}</div>')
 
+    # taxonomy cross-link: country / segment value -> its index page (standalone page only;
+    # the offline bundle passes taxlinks=False so its fragments carry no dead links).
+    val = fo.get("value")
+    if taxlinks and val and field in ("manufacturer_country", "market_segment"):
+        d = "country" if field == "manufacturer_country" else "segment"
+        disp = f'<a href="../{d}/{_tslug(val)}.html">{disp}</a>'
     return (f'<div class="drow">{klabel}'
             f'<span class="v" data-audit="dval">{disp}{sup}</span>{ch}</div>')
 
@@ -124,7 +134,7 @@ DETAIL_CSS = """
 """
 
 
-def detail_fragment(e, labels, ranges=None, draw=False, company=None):
+def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=False):
     """Inner detail content (header + identity + specs + sources + note) — NO page chrome.
     Reused verbatim by the standalone page and the single-file bundle, so honest-null / disputed /
     tier rendering can never drift between the two. `company` (slug+name) adds a manufacturer-profile
@@ -135,7 +145,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None):
     country = e["manufacturer_country"].get("value") or "—"
     seg = friendly("segment", e["market_segment"].get("value"), labels)
     pclass = friendly("klass", e.get("provenance_class"), labels)
-    ident = "".join(field_row(e, f, labels, ledger) for f in IDENTITY)
+    ident = "".join(field_row(e, f, labels, ledger, taxlinks=taxlinks) for f in IDENTITY)
     ident += (f'<div class="drow"><span class="k">{bilingual("Class", "Lớp")}</span>'
               f'<span class="v">{pclass}</span><span></span></div>')
     specs = "".join(field_row(e, f, labels, ledger, ranges) for f in SPEC_FIELDS)
@@ -170,7 +180,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None):
     "Field chưa kiểm chứng hoặc thiếu hiển thị null — không bịa. Field tranh chấp giữ cả hai giá trị.")}</p>"""
 
 
-def render_detail(e, labels, ranges=None, company=None):
+def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
     maker = e["manufacturer"].get("value") or "—"
     model = e["name"].get("value") or "—"
     return f"""<!DOCTYPE html>
@@ -191,7 +201,7 @@ def render_detail(e, labels, ranges=None, company=None):
       <button id="theme"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>
     </div>
   </div>
-  {detail_fragment(e, labels, ranges, draw=True, company=company)}
+  {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks)}
 </main>
 <script src="../base/base.js"></script>
 <script>
