@@ -2,8 +2,8 @@
   "schema_version": "1.1.0",
   "generated": "2026-06-22",
   "counting_unit": "variant",
-  "family_count": 253,
-  "variant_count": 264,
+  "family_count": 255,
+  "variant_count": 266,
   "families": [
     {
       "family_id": "uav:parrot:anafi",
@@ -24592,6 +24592,212 @@
               "tier": "B",
               "retrieved": "2026-06-24",
               "claimed_value": "delivery",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:viettel:vu-r70",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Viettel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Vietnam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Vietnam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Viettel VU-R70",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel VU-R70",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "vtol_fixedwing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "vtol_fixedwing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
+              "note": "market role"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "family_id": "uav:viettel:vu-male",
+      "kind": "family",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "manufacturer": {
+          "value": "Viettel",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "manufacturer_country": {
+          "value": "Vietnam",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Vietnam",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "family": {
+          "value": "Viettel VU-MALE",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel VU-MALE",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "airframe_type": {
+          "value": "fixed-wing",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "fixed-wing",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "covered_entity": {
+          "value": false,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": false,
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "product_line": {
+          "value": "isr",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "B",
+              "retrieved": "2026-06-24",
+              "claimed_value": "isr",
               "note": "market role"
             }
           ],
@@ -58279,6 +58485,262 @@
               "tier": "derived",
               "retrieved": "2026-06-22",
               "claimed_value": "delivery",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:viettel:vu-r70:vu-r70",
+      "family_id": "uav:viettel:vu-r70",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:viettel:vu-r70:vu-r70",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:viettel:vu-r70:vu-r70",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Viettel VU-R70",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel VU-R70",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 26,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 26,
+              "note": "MTOW"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 2.5,
+              "note": "payload"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 70,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 70,
+              "note": "operational radius"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 270,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 270,
+              "note": "4.5 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 33,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://vietnamnet.vn/suc-manh-uav-cua-viettel-trong-ky-nguyen-tac-chien-khong-nguoi-lai-2435014.html",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 33,
+              "note": "120 km/h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
+              "note": "L2 from collected product_line (A) via controlled map -> high"
+            }
+          ],
+          "last_verified": "2026-06-22",
+          "inherited_from": null
+        }
+      }
+    },
+    {
+      "canonical_id": "uav:viettel:vu-male:vu-male",
+      "family_id": "uav:viettel:vu-male",
+      "kind": "variant",
+      "provenance_class": "military_noncovered_public",
+      "cells": {
+        "canonical_id": {
+          "value": "uav:viettel:vu-male:vu-male",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "uav:viettel:vu-male:vu-male",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "name": {
+          "value": "Viettel VU-MALE",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "Viettel VU-MALE",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "live_status": {
+          "value": "in_production",
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": "in_production",
+              "note": ""
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 1000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 1000,
+              "note": ">1000 km"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 720,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://tuoitre.vn/viet-nam-trinh-lang-uav-bay-xa-1-000km-mang-duoc-vu-khi-tan-cong-chinh-xac-cao-20241218184258121.htm",
+              "tier": "C",
+              "retrieved": "2026-06-24",
+              "claimed_value": 720,
+              "note": "12 h"
+            }
+          ],
+          "last_verified": "2026-06-24",
+          "inherited_from": null
+        },
+        "market_segment": {
+          "value": "military_tactical",
+          "status": "derived",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "taxonomy:market_segment_v4_per_variant",
+              "tier": "derived",
+              "retrieved": "2026-06-22",
+              "claimed_value": "military_tactical",
               "note": "L2 from collected product_line (A) via controlled map -> high"
             }
           ],
