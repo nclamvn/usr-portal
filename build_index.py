@@ -40,6 +40,39 @@ WATERMARK = ('<svg viewBox="0 0 760 400"><g class="wm-stroke">'
              '</g></svg>')
 
 
+# TIP-UX2.1 hero blueprint — ported verbatim from home-v2-specimen.html (design-source).
+# GENERIC multirotor schematic (zero entity claim, "NOT TO SCALE"). root fill="none" + class line-art
+# (.l/.lf/.a/.af/.grid) flips ink<->brass by theme; leader labels sit in clear space (no overlap).
+HERO_BP = '''<svg viewBox="0 0 660 580" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bản vẽ kỹ thuật hệ thống multirotor">
+<defs>
+<pattern id="bpgrid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" class="grid"/></pattern>
+<marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0 1.5 L7.5 5 L0 8.5 Z" fill="var(--bp-line)"/></marker>
+<marker id="ar2" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 1.2 L6.5 4.5 L0 7.8 Z" fill="var(--brass)"/></marker>
+</defs>
+<rect x="20" y="20" width="620" height="540" fill="url(#bpgrid)"/>
+<rect x="20" y="20" width="620" height="540" class="lf"/>
+<path d="M20 56V20H56 M604 20H640V56 M640 524V560H604 M56 560H20V524" class="a" stroke-width="1.4"/>
+<g class="l"><line x1="290" y1="252" x2="168" y2="170"/><line x1="370" y1="252" x2="492" y2="170"/><line x1="290" y1="328" x2="168" y2="410"/><line x1="370" y1="328" x2="492" y2="410"/></g>
+<rect x="278" y="246" width="104" height="88" rx="13" class="l"/>
+<path d="M330 262V318 M302 290H358" class="lf"/>
+<circle cx="330" cy="290" r="13" class="a"/><circle cx="330" cy="290" r="3" class="af"/>
+<rect x="318" y="232" width="24" height="12" rx="3" class="l"/>
+<circle cx="330" cy="346" r="9" class="l"/><circle cx="330" cy="346" r="3.5" class="lf"/>
+<g transform="translate(168 170)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
+<g transform="translate(492 170)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
+<g transform="translate(168 410)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
+<g transform="translate(492 410)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
+<g><line x1="106" y1="170" x2="106" y2="92" class="lf"/><line x1="554" y1="170" x2="554" y2="92" class="lf"/><line x1="106" y1="100" x2="554" y2="100" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><rect x="305" y="90" width="50" height="20" fill="var(--bg)"/><text x="330" y="104" text-anchor="middle" class="acc">SPAN</text></g>
+<g><line x1="168" y1="232" x2="90" y2="232" class="lf"/><line x1="168" y1="472" x2="90" y2="472" class="lf"/><line x1="98" y1="232" x2="98" y2="472" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><rect x="84" y="342" width="28" height="20" fill="var(--bg)"/><text x="98" y="356" text-anchor="middle" class="acc" transform="rotate(-90 98 352)">DEPTH</text></g>
+<g><path d="M330 232 V162" class="a"/><circle cx="330" cy="232" r="2.4" fill="var(--brass)"/><text x="330" y="154" text-anchor="middle" class="big">GNSS · COMPASS</text><path d="M330 356 V392" class="a"/><circle cx="330" cy="356" r="2.4" fill="var(--brass)"/><text x="330" y="406" text-anchor="middle" class="big">PAYLOAD BAY</text><path d="M382 290 H548" class="a"/><circle cx="382" cy="290" r="2.4" fill="var(--brass)"/><text x="556" y="293" class="big">FLIGHT CTRL</text><path d="M534 150 L556 130" class="a"/><circle cx="534" cy="150" r="2.4" fill="var(--brass)"/><text x="560" y="127" class="big">ROTOR · Ø</text></g>
+<line x1="20" y1="512" x2="640" y2="512" class="lf"/>
+<text x="32" y="536" class="acc">USR · FIELD SCHEMATIC</text>
+<text x="32" y="550">GENERIC MULTIROTOR · NOT TO SCALE</text>
+<g transform="translate(600 538)"><circle r="15" class="l"/><path d="M0 -15V15 M-15 0H15" class="lf"/><path d="M0 -15L4 -7H-4Z" class="af"/><text x="0" y="-19" text-anchor="middle" class="acc">N</text></g>
+<text x="540" y="536" text-anchor="end">REV 02</text>
+</svg>'''
+
+
 def live_facts(site):
     """Real, live figures computed from site-data — never hardcoded (CONSTRAINT 8)."""
     ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
@@ -168,7 +201,7 @@ def blueprint_svg(callouts=False, labels=None):
         '<circle class="bp-part" cx="380" cy="284" r="22"></circle>'
         '<circle class="bp-part" cx="380" cy="284" r="10"></circle>')
     if not callouts:
-        return f'<div class="bp-stage"><svg viewBox="0 0 760 392" aria-hidden="true">{base}</svg></div>'
+        return f'<div class="bp-stage"><svg viewBox="0 0 760 392" fill="none" aria-hidden="true">{base}</svg></div>'
     call = (
         '<g class="bp-fade">'
         '<line class="bp-lead" x1="380" y1="142" x2="380" y2="54"></line>'
@@ -185,7 +218,7 @@ def blueprint_svg(callouts=False, labels=None):
         '<path class="bp-dim" d="M160 384 l9 -4 v8 z"></path><path class="bp-dim" d="M600 384 l-9 -4 v8 z"></path>'
         f'<text class="bp-dlabel" x="380" y="380" text-anchor="middle">{L("airframe schematic", "sơ đồ khung bay")}</text>'
         '</g>')
-    return f'<div class="bp-stage bp-stage--hero"><svg viewBox="-40 0 840 400" aria-hidden="true">{base}{call}</svg></div>'
+    return f'<div class="bp-stage bp-stage--hero"><svg viewBox="-40 0 840 400" fill="none" aria-hidden="true">{base}{call}</svg></div>'
 
 
 def evidence_tier(e, groups):
@@ -224,6 +257,32 @@ def field_file_card(e, n, labels, groups, big):
           f'<a class="readmore" href="entity/{esc(e["slug"])}.html" data-audit="ff-read">'
           f'{bilingual("Read the file", "Đọc hồ sơ")}<span class="ico">{ARROW}</span></a>'
           f'</div></div></article>')
+
+
+def featured_systems(ents, groups, labels):
+    """02 · Browse — a real preview of the registry: the best-documented, diverse systems (one per
+    family) as compact cards linking into their detail file. Concrete devices (not aggregates), so it
+    differs from the record-status masthead and makes the 'browse' promise tangible."""
+    cards = ""
+    for e in pick_featured(ents, groups, 6):
+        maker, model = maker_model(e)
+        seg_v = e["market_segment"].get("value")
+        seg = friendly("segment", seg_v, labels) if seg_v else bilingual("Uncrewed", "Không người lái")
+        country = e["manufacturer_country"].get("value") or "—"
+        tier = evidence_tier(e, groups)
+        badge = ""
+        if (e.get("blue_uas") or {}).get("value") is True:
+            badge = '<span class="fsys-b">Blue UAS</span>'
+        elif (e.get("ndaa_compliant") or {}).get("value") is True:
+            badge = '<span class="fsys-b">NDAA</span>'
+        cards += (
+            f'<a class="fsys reveal" href="entity/{esc(e["slug"])}.html" data-audit="fsys">'
+            f'<div class="fsys-top"><span class="fsys-g">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}</span>'
+            f'<span class="fsys-kb">{seg}</span></div>'
+            f'<b class="fsys-nm"><span class="fsys-mk">{esc(maker)}</span>{esc(model)}</b>'
+            f'<div class="fsys-ft"><span class="fsys-mt">{esc(country)} · {bilingual("Evidence", "Bằng chứng")} {esc(tier)}</span>'
+            f'{badge}<span class="fsys-go">{ARROW}</span></div></a>')
+    return f'<div class="fsys-grid">{cards}</div>'
 
 
 def coverage_matrix(site):
@@ -266,15 +325,26 @@ def main():
     groups = site["field_groups"]["display"] + site["field_groups"]["spec"]
     f = live_facts(site)
     n = f["entities"]
-    hero_blueprint = blueprint_svg(callouts=False)  # clean schematic (callout text overlapped at wide widths)
-    ribbon_html = stat_ribbon(f, labels)                              # live authority ribbon (zero-fab)
+    countries = len(f["country_rank"])               # distinct manufacturer_country (live)
+    coverage = f["coverage"]                          # live spec fill-rate %
+    hero_blueprint = HERO_BP                           # specimen ink/brass schematic (TIP-UX2.1)
     feat = pick_featured(ents, groups, 1)[0]                          # one REAL record anchors the hero
     feat_mk, feat_md = maker_model(feat)
     hero_caption = (f'<a class="readmore hero-cap" href="entity/{esc(feat["slug"])}.html" data-audit="herofile">'
-                    f'<span>{bilingual("Featured field file", "Hồ sơ tiêu biểu")} · {esc(feat_mk)} {esc(feat_md)}</span>'
-                    f'<span class="ico">{ARROW}</span></a>')
+                    f'<b>{bilingual("Featured field file", "Hồ sơ tiêu biểu")}</b> · {esc(feat_mk)} {esc(feat_md)} →</a>')
+    # live hero stats (heatm) — every figure from live_facts; matches verify_home figure-drift gate
+    heatm = (
+        '<div class="heatm">'
+        f'<div class="s"><b class="v" data-countup style="min-width:{len(str(n))}ch">{n}</b>'
+        f'<span class="k">{bilingual("Verified systems", "Hệ thống đã kiểm")}</span></div>'
+        f'<div class="s"><b class="v" data-countup style="min-width:{len(str(countries))}ch">{countries}</b>'
+        f'<span class="k">{bilingual("Countries", "Quốc gia")}</span></div>'
+        f'<div class="s"><b class="v">{coverage}%</b>'
+        f'<span class="k">{bilingual("Spec coverage", "Độ phủ spec")}</span></div>'
+        '</div>')
     newsroom_block = real_newsroom_block(".")        # REAL factual articles only (no samples/opinion)
     masthead = render_masthead(f, labels)
+    featured_html = featured_systems(ents, groups, labels)   # 02 · Browse — real systems preview
 
     doc = f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
@@ -298,60 +368,38 @@ def main():
   /* faint blueprint grid (graph-paper) behind cream sections — premium hi-tech texture */
   body{{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:30px 30px;background-position:center top}}
   .sec.plate{{background-image:none}}
-  /* HERO — full-bleed dark cockpit band (re-skin): text+302 left · large blueprint right */
-  .field.hero-dark{{position:relative;overflow:hidden;padding:70px 0 78px;color:var(--card-ink);
-    background:radial-gradient(150% 130% at 22% -20%, #20242c 0%, var(--card-bg) 52%, #090a0d 100%);
-    border-bottom:1px solid var(--card-hair)}}
-  .field.hero-dark .wrap{{position:relative;z-index:2}}
-  .hero-grid{{display:grid;grid-template-columns:1fr 1.04fr;gap:52px;align-items:center}}
-  @media (max-width:960px){{.hero-grid{{grid-template-columns:1fr;gap:34px}}}}
-  .hero-col-l{{max-width:58ch}}
-  .eyebrow{{font-family:var(--font-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}}
+  /* HERO — pure-value two-column: text+stats left · ink/brass blueprint right (TIP-UX2.1 specimen) */
+  .field.hero-pure{{position:relative;overflow:hidden}}
+  .field.hero-pure .wrap.hero-grid{{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;align-items:center;padding:58px 1.4rem 56px}}
+  @media (max-width:940px){{.field.hero-pure .wrap.hero-grid{{grid-template-columns:1fr;gap:34px;padding:40px 1.4rem}}}}
+  .hero-col-l{{max-width:52ch}}
+  .eyebrow{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}}
   .eyebrow::before{{content:"";width:22px;height:1px;background:var(--brass-bright)}}
-  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(42px,6vw,76px);line-height:1.0;letter-spacing:-.025em;margin:18px 0 0;color:var(--card-ink)}}
-  .lead-p{{font-size:17px;color:var(--card-soft);max-width:50ch;margin-top:18px}}
-  /* hero number — the verified-count, the opening punch (live, count-up) */
-  .hero-num{{display:flex;align-items:baseline;gap:16px;margin-top:30px;flex-wrap:wrap}}
-  .hero-num .hn-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(64px,9vw,108px);line-height:.9;letter-spacing:-.035em;color:var(--card-ink);font-variant-numeric:tabular-nums;display:inline-block}}
-  .hero-num .hn-k{{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--card-faint);max-width:18ch;line-height:1.5}}
-  /* band texture — grain + scan (reduced-motion safe) */
-  .hero-dark .hero-grain{{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.05;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}}
-  .hero-dark .hero-scan{{position:absolute;left:0;right:0;top:0;height:30%;pointer-events:none;z-index:1;
-    background:linear-gradient(180deg,transparent,rgba(216,162,74,.08),transparent);animation:heroscan 8s linear infinite}}
-  @keyframes heroscan{{0%{{transform:translateY(-40%)}}100%{{transform:translateY(360%)}}}}
-  @media (prefers-reduced-motion:reduce){{.hero-scan{{animation:none;opacity:0}}}}
-  /* right column — large blueprint on the band (reg-frame brass accent, no card chrome) */
-  .hero-col-r{{position:relative;padding:8px 10px}}
-  .hero-col-r .reg-tr,.hero-col-r::before,.hero-col-r::after,.hero-col-r .reg-bl{{border-color:var(--bp)!important;opacity:.55}}
-  .bp-stage--hero{{padding:0;background:radial-gradient(120% 90% at 50% 30%,rgba(216,162,74,.06),transparent 64%)}}
-  .bp-stage--hero svg{{max-height:440px}}
-  .hero-bp-foot{{border-top:1px solid var(--card-hair);margin-top:8px;padding-top:14px;display:flex;justify-content:flex-end}}
-  .hero-bp-foot .hero-cap{{color:var(--card-ink)}}
-  .hero-bp-foot .hero-cap .ico{{width:26px;height:26px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}}
-  .hero-bp-foot .hero-cap:hover .ico{{transform:translateX(4px)}}
-  /* live stat-ribbon + CTA (on dark) */
-  .hero-foot{{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:34px}}
-  .statribbon{{display:flex;align-items:baseline;gap:30px;flex-wrap:wrap}}
-  .sr-cell{{display:inline-flex;flex-direction:column;gap:4px}}
-  .sr-n{{font-family:var(--font-head);font-weight:600;font-size:clamp(24px,2.6vw,32px);line-height:1;letter-spacing:-.02em;color:var(--card-ink);font-variant-numeric:tabular-nums;display:inline-block;text-align:left}}
-  .sr-k{{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--card-faint)}}
-  .sr-live{{flex-direction:row;align-items:center;gap:8px;align-self:center}}
-  .live-dot{{width:8px;height:8px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 0 var(--brass);animation:livepulse 2.4s var(--ease) infinite}}
-  .sr-live .sr-k{{color:var(--brass)}}
-  @keyframes livepulse{{0%{{box-shadow:0 0 0 0 rgba(216,162,74,.5)}}70%{{box-shadow:0 0 0 7px rgba(216,162,74,0)}}100%{{box-shadow:0 0 0 0 rgba(216,162,74,0)}}}}
-  .cta{{display:inline-flex;align-items:center;gap:14px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--card-ink);border:1px solid var(--card-hair);border-radius:999px;padding:11px 12px 11px 22px;transition:border-color .25s,gap .25s}}
-  .cta:hover{{border-color:var(--brass-bright);gap:18px}}
-  .cta .ico{{position:relative;width:30px;height:30px;border-radius:50%;background:var(--brass);color:#15171B;display:grid;place-items:center;flex:0 0 auto}}
+  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(40px,5.6vw,68px);line-height:1.0;letter-spacing:-.022em;margin:20px 0 0;color:var(--ink)}}
+  .lead-p{{font-size:16px;color:var(--muted);max-width:46ch;margin-top:20px;line-height:1.62}}
+  /* live hero stats — verified count + countries + coverage (zero-fab, count-up) */
+  .heatm{{display:flex;gap:34px;margin-top:34px;padding-top:26px;border-top:1px solid var(--hair);flex-wrap:wrap}}
+  .heatm .s .v{{font-family:var(--font-head);font-weight:600;font-size:34px;line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block}}
+  .heatm .s .k{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px;display:block}}
+  .cta{{margin-top:32px;display:inline-flex;align-items:center;gap:13px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:500}}
+  .cta .arw{{width:38px;height:38px;border:1.5px solid var(--brass);border-radius:50%;display:grid;place-items:center;color:var(--brass);transition:background .2s,color .2s}}
+  .cta:hover .arw{{background:var(--brass);color:var(--bg)}}
   .cta .ar{{width:15px;height:15px;display:block}}
-  .bp-lead{{stroke:var(--card-faint);stroke-width:1}}
-  .bp-call{{fill:var(--card-soft);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
-  .bp-callk{{fill:var(--bp);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em}}
-  .bp-dim{{stroke:var(--bp-soft);stroke-width:1;fill:var(--bp-soft)}}
-  .bp-dlabel{{fill:var(--card-soft);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em}}
-  .bp-fade{{opacity:0;transition:opacity .7s var(--ease) .5s}}
-  .hero-bp.is-in .bp-fade{{opacity:1}}
-  @media (prefers-reduced-motion:reduce){{.bp-fade{{opacity:1!important}}.live-dot{{animation:none!important}}}}
+  /* right column — ink/brass blueprint on the page (no plate); line-art flips by theme */
+  .bpframe{{position:relative}}
+  .bpframe svg{{width:100%;max-height:480px;display:block}}
+  .bpframe svg .l{{stroke:var(--bp-line);fill:none;stroke-width:1.2}}
+  .bpframe svg .lf{{stroke:var(--bp-soft);fill:none;stroke-width:1}}
+  .bpframe svg .a{{stroke:var(--brass);fill:none;stroke-width:1.3}}
+  .bpframe svg .af{{fill:var(--brass)}}
+  .bpframe svg .grid{{stroke:var(--bp-grid);stroke-width:1;fill:none}}
+  .bpframe svg text{{font-family:var(--font-mono);fill:var(--muted);font-size:9px;letter-spacing:.08em}}
+  .bpframe svg text.acc{{fill:var(--brass)}}
+  .bpframe svg text.big{{fill:var(--ink-soft);font-size:10px}}
+  .bpcap{{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);flex-wrap:wrap}}
+  .bpcap .hero-cap{{color:var(--faint);transition:color .2s}}
+  .bpcap .hero-cap b{{color:var(--brass);font-weight:500}}
+  .bpcap .hero-cap:hover{{color:var(--ink)}}
   /* field-file card (dark blueprint card) */
   .card{{position:relative;background:var(--card-bg);color:var(--card-ink);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.45)}}
   [data-theme="dark"] .card{{border:1px solid var(--card-hair)}}
@@ -395,6 +443,24 @@ def main():
   .nr-go{{margin-top:auto;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:8px}}
   .nr-go .ar{{width:13px;height:13px}}
   @media (max-width:760px){{.nr-grid2{{grid-template-columns:1fr}}}}
+  /* 02 · Browse — featured real systems (pure-value cards, hairline grid) */
+  .browse-lead{{font-family:var(--font-head);font-size:1.05rem;color:var(--muted);max-width:54ch;margin:14px 0 0}}
+  .fsys-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:0 30px;border-top:1px solid var(--hair-strong);margin-top:22px}}
+  @media (max-width:860px){{.fsys-grid{{grid-template-columns:repeat(2,1fr)}}}}
+  @media (max-width:560px){{.fsys-grid{{grid-template-columns:1fr}}}}
+  .fsys{{display:flex;flex-direction:column;gap:12px;padding:22px 0 22px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;min-height:150px}}
+  .fsys-top{{display:flex;align-items:center;justify-content:space-between;gap:8px}}
+  .fsys-g,.fsys-g svg{{width:34px;height:34px;display:block}}
+  .fsys-kb{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-align:right}}
+  .fsys-nm{{font-family:var(--font-head);font-weight:600;font-size:18px;line-height:1.18;color:var(--ink)}}
+  .fsys-mk{{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:4px}}
+  .fsys:hover .fsys-nm{{color:var(--brass)}}
+  .fsys:hover .fsys-go{{transform:translateX(4px)}}
+  .fsys-ft{{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
+  .fsys-mt{{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--faint)}}
+  .fsys-b{{font-family:var(--font-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:3px;padding:1px 6px}}
+  .fsys-go{{margin-left:auto;color:var(--brass);transition:transform .2s var(--ease)}}
+  .fsys-go .ar{{width:15px;height:15px;display:block}}
   @media (max-width:900px){{
     .field{{padding:48px 0 48px}}
     .hero-foot{{align-items:flex-start;gap:20px}}
@@ -407,26 +473,20 @@ def main():
 
 {header("", "home")}
 
-<section class="field hero-dark" data-audit="hero">
-  <span class="hero-grain" aria-hidden="true"></span><span class="hero-scan" aria-hidden="true"></span>
+<section class="field hero-pure" data-audit="hero">
   <div class="wrap hero-grid">
     <div class="hero-col-l reveal is-in">
-      <span class="eyebrow" data-audit="eyebrow">{bilingual("In the field", "Trên thực địa")}</span>
+      <span class="eyebrow" data-audit="eyebrow">{bilingual("Field Intelligence", "Trên thực địa")}</span>
       <h1 class="lead-h" data-audit="lead">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>
       <p class="lead-p">{bilingual(
         "How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.",
         "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.")}</p>
-      <div class="hero-num"><b class="hn-n" data-countup style="min-width:{len(str(n))}ch">{n}</b>
-        <span class="hn-k">{bilingual("verified UAV systems on record", "hệ thống UAV đã kiểm chứng trong hồ sơ")}</span></div>
-      <div class="hero-foot">
-        {ribbon_html}
-        <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="ico">{ARROW}</span></a>
-      </div>
+      {heatm}
+      <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="arw">{ARROW}</span></a>
     </div>
-    <div class="hero-col-r reg-frame reveal" data-audit="herobp">
-      <span class="reg-tr"></span><span class="reg-bl"></span>
+    <div class="hero-col-r bpframe reveal" data-audit="herobp">
       {hero_blueprint}
-      <div class="hero-bp-foot">{hero_caption}</div>
+      <div class="bpcap"><span>{bilingual("Fig. 01 — multirotor config", "Hình 01 — cấu hình multirotor")}</span>{hero_caption}</div>
     </div>
   </div>
 </section>
@@ -452,11 +512,13 @@ def main():
 </div></section>
 
 <main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("02 · Browse", "02 · Tra cứu")}</b><span class="ln"></span></div>
-  <div class="block">
-    <a class="cta" href="reference.html" data-audit="browse">{bilingual(
-      f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a>
-  </div>
+  <div class="regdiv"><b class="lab">{bilingual("02 · Browse", "02 · Tra cứu")}</b><span class="ln"></span>
+    <a class="ncta" href="reference.html" data-audit="browse">{bilingual(
+      f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a></div>
+  <p class="browse-lead">{bilingual(
+    "Six of the best-documented systems, a way into the full record.",
+    "Sáu hồ sơ được dẫn chứng đầy nhất, lối vào toàn bộ bản ghi.")}</p>
+  {featured_html}
 </main>
 
 {footer("")}

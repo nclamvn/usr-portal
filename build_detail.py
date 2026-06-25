@@ -12,6 +12,7 @@ from footer import footer
 from glyphs import glyph_svg
 from nav import nav
 from header import header
+from pagenav import pagenav
 from seo import meta, product_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -185,7 +186,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=F
     "Field chưa kiểm chứng hoặc thiếu hiển thị null — không bịa. Field tranh chấp giữ cả hai giá trị.")}</p>"""
 
 
-def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
+def render_detail(e, labels, ranges=None, company=None, taxlinks=True, prev=None, next=None):
     maker = e["manufacturer"].get("value") or "—"
     model = e["name"].get("value") or "—"
     return f"""<!DOCTYPE html>
@@ -201,6 +202,7 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True):
 </head>
 <body>
 {header("../")}
+{pagenav(prev, next)}
 <main class="dwrap">
   {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks)}
 </main>
@@ -229,11 +231,13 @@ def main():
         shutil.rmtree(OUTDIR)          # clean regen — no stale slugs linger
     OUTDIR.mkdir(parents=True)
     from canon import canonical_slug, canonical_name
-    for e in ents:
+    for i, e in enumerate(ents):
         mfr = (e.get("manufacturer") or {}).get("value")
         cslug = canonical_slug(mfr)                      # alias-merged canonical company
         company = {"slug": cslug, "name": canonical_name(mfr)} if mfr and cslug in company_slugs else None
-        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges, company=company))
+        prev = f'{ents[i-1]["slug"]}.html' if i > 0 else None              # edge prev/next (canonical order)
+        nxt = f'{ents[i+1]["slug"]}.html' if i < len(ents) - 1 else None
+        (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges, company=company, prev=prev, next=nxt))
     print(f"entity/: {len(ents)} detail pages written")
 
 

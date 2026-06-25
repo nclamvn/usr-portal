@@ -75,5 +75,8 @@ def glyph_svg(kind, size="glyph-sm", draw=False):
     if draw:
         inner = re.sub(r'<(line|circle|path)\b', r'<\1 data-draw', inner)   # not <text>
     extra = " glyph-unknown" if k == "unknown" else ""
-    return (f'<svg class="glyph-svg {size}{extra}" viewBox="0 0 100 100" '
+    # fill="none" on the ROOT (presentation attr) — every shape is line-art; CSS rules for
+    # text/filled accents still win over this (CSS > presentation attr). Makes the glyph robust
+    # to CSS-not-loading / <use>+shadow-tree (TIP-UX2.1 SVG-fill rule, no default-black).
+    return (f'<svg class="glyph-svg {size}{extra}" viewBox="0 0 100 100" fill="none" '
             f'aria-hidden="true" data-glyph="{k}">{inner}</svg>')

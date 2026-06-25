@@ -91,7 +91,7 @@ SEARCH_CSS = """
   .hit a{color:inherit;text-decoration:none;font-size:.9rem}
   .hit .sub{color:var(--muted);font-family:var(--font-mono);font-size:.74rem;margin-left:auto}
   .badge{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--hair-strong);color:var(--muted);border-radius:3px;padding:.05rem .35rem;flex:0 0 auto}
-  .empty{color:var(--muted);font-size:.9rem;padding:1.6rem 0;text-align:center}
+  .empty{color:var(--muted);font-size:.9rem;padding:1.6rem 0;text-align:left}
 """
 
 

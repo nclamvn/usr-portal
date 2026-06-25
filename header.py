@@ -23,7 +23,8 @@ def header(prefix="", current=None):
         '<button id="lang" class="gbar-tg" aria-label="Language">'
         '<span data-lang-en>VN</span><span data-lang-vn>EN</span></button>'
         '<button id="theme" class="gbar-tg" aria-label="Theme">'
-        '<span data-lang-en>Dark</span><span data-lang-vn>Tối</span></button>'
+        '<span class="th-l"><span data-lang-en>Light</span><span data-lang-vn>Sáng</span></span>'
+        '<span class="th-d"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></span></button>'
         '</div></div></header>'
     )
 

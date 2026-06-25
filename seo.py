@@ -17,8 +17,20 @@ def _ld(obj):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + '</script>'
 
 
+def favicons(path):
+    """Favicon/PWA links with a RELATIVE prefix derived from page depth, so they resolve under any
+    deploy sub-path (e.g. /usr-portal/) — never a root-absolute '/…' (sub-path invariant)."""
+    p = "../" * path.count("/")          # 'entity/x.html' -> '../' ; 'index.html' -> ''
+    return (f'<link rel="icon" type="image/png" href="{p}favicon-96x96.png" sizes="96x96">'
+            f'<link rel="icon" type="image/svg+xml" href="{p}favicon.svg">'
+            f'<link rel="shortcut icon" href="{p}favicon.ico">'
+            f'<link rel="apple-touch-icon" sizes="180x180" href="{p}apple-touch-icon.png">'
+            f'<link rel="manifest" href="{p}site.webmanifest">'
+            f'<meta name="theme-color" content="#1A1A1C">')
+
+
 def meta(title, desc, path):
-    """canonical + Open Graph. path is the site-relative url (e.g. 'entity/x.html')."""
+    """canonical + Open Graph + favicons. path is the site-relative url (e.g. 'entity/x.html')."""
     url = BASE + "/" + path
     d = (desc or "").replace('"', "'")
     return (f'<link rel="canonical" href="{url}">'
@@ -26,7 +38,8 @@ def meta(title, desc, path):
             f'<meta property="og:description" content="{d}">'
             f'<meta property="og:type" content="website">'
             f'<meta property="og:url" content="{url}">'
-            f'<meta name="description" content="{d}">')
+            f'<meta name="description" content="{d}">'
+            + favicons(path))
 
 
 def product_ld(e, path):

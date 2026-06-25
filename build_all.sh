@@ -95,6 +95,8 @@ python3 verify_footer.py
 python3 teeth_footer.py
 python3 verify_home.py
 python3 teeth_home.py
+python3 verify_svg.py
+python3 teeth_svg.py
 
 echo "[7b/8] reduced-motion + focus (static)"
 grep -q "prefers-reduced-motion" base/design-system.css \
@@ -112,8 +114,15 @@ sleep 1
 set +e
 node audit_headless.js
 AUDIT=$?
+echo "      THEME_PURITY gate (TIP-UX2.1 · engine-parametrized) + teeth"
+node verify_theme.js
+THEME=$?
+node teeth_theme.js
+TTHEME=$?
 kill "$SRV" 2>/dev/null
 set -e
 [ "$AUDIT" -eq 0 ] || { echo "      AUDIT FAILED (exit $AUDIT)"; exit "$AUDIT"; }
+[ "$THEME" -eq 0 ] || { echo "      THEME_PURITY FAILED (exit $THEME)"; exit "$THEME"; }
+[ "$TTHEME" -eq 0 ] || { echo "      TEETH-THEME FAILED (exit $TTHEME)"; exit "$TTHEME"; }
 
 echo "build_all: OK"

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USR — Homepage specimen v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F2ED; --bg-2:#EFEDE6; --ink:#191A1C; --ink-soft:#44454B; --muted:#6C6D74; --faint:#9C9D96;
+  --hair:#E1DED7; --hair-strong:#CDC9C0; --brass:#9B6B1C; --brass-bright:#B5832B;
+  --bp-line:#2C2F35; --bp-grid:rgba(25,26,28,.055); --bp-soft:rgba(44,47,53,.4);
+  --serif:'Source Serif 4',Georgia,serif; --sans:'Be Vietnam Pro',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace; --maxw:1240px;
+}
+[data-theme="dark"]{
+  --bg:#0F1113; --bg-2:#13161A; --ink:#ECEDEF; --ink-soft:#C3C5CA; --muted:#8B9099; --faint:#5C616A;
+  --hair:#222629; --hair-strong:#30343B; --brass:#D2A24C; --brass-bright:#DEB05C;
+  --bp-line:#BCBEC4; --bp-grid:rgba(255,255,255,.045); --bp-soft:rgba(188,190,196,.34);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;transition:background .45s,color .45s}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+@media(max-width:640px){.wrap{padding:0 22px}}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--brass-bright)}
+.topline{height:3px;background:var(--ink)}
+[data-theme="dark"] .topline{background:var(--brass)}
+.nav{border-bottom:1px solid var(--hair);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(140%) blur(10px);z-index:50}
+.nav .wrap{display:flex;align-items:center;height:66px;gap:30px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:-.01em}
+.brand .sh{width:24px;height:28px;border:1.5px solid var(--ink);border-radius:3px 3px 7px 7px;display:grid;place-items:center;font-family:var(--mono);font-size:7px;line-height:.9;text-align:center;font-weight:500}
+.navlinks{display:flex;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.navlinks a{color:inherit;text-decoration:none}.navlinks a.on{color:var(--brass)}.navlinks a:hover{color:var(--ink)}
+.navr{margin-left:auto;display:flex;gap:9px}
+.pill{font-family:var(--mono);font-size:11px;border:1px solid var(--hair-strong);background:none;color:var(--ink-soft);height:32px;padding:0 14px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.pill:hover{border-color:var(--brass-bright);color:var(--ink)}
+@media(max-width:880px){.navlinks{display:none}}
+.hero .wrap{display:grid;grid-template-columns:0.92fr 1.08fr;gap:54px;align-items:center;padding:60px 40px 56px}
+@media(max-width:940px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding:44px 22px}}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.6vw,68px);line-height:1.0;letter-spacing:-.022em;margin:20px 0 0}
+.hero .sub{font-size:16px;color:var(--muted);max-width:46ch;margin-top:20px;line-height:1.62}
+.heatm{display:flex;gap:34px;margin-top:34px;padding-top:26px;border-top:1px solid var(--hair)}
+.heatm .s .v{font-family:var(--serif);font-weight:600;font-size:34px;line-height:1;letter-spacing:-.02em}
+.heatm .s .v .u{font-size:.45em;color:var(--brass);margin-left:2px}
+.heatm .s .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.cta{margin-top:32px;display:inline-flex;align-items:center;gap:13px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-decoration:none;font-weight:500}
+.cta .arw{width:38px;height:38px;border:1.5px solid var(--brass);border-radius:50%;display:grid;place-items:center;color:var(--brass);transition:.2s}
+.cta:hover .arw{background:var(--brass);color:var(--bg)}
+.bpframe{position:relative}
+.bpcap{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.bpcap b{color:var(--brass);font-weight:500}
+svg .l{stroke:var(--bp-line);fill:none;stroke-width:1.2}
+svg .lf{stroke:var(--bp-soft);fill:none;stroke-width:1}
+svg .a{stroke:var(--brass);fill:none;stroke-width:1.3}
+svg .af{fill:var(--brass)}
+svg .grid{stroke:var(--bp-grid);stroke-width:1;fill:none}
+svg text{font-family:var(--mono);fill:var(--muted);font-size:9px;letter-spacing:.08em}
+svg text.acc{fill:var(--brass)}
+svg text.big{fill:var(--ink-soft);font-size:10px}
+.band{border-top:1px solid var(--hair-strong);border-bottom:1px solid var(--hair-strong);margin-top:8px}
+.band .wrap{display:flex;align-items:center;gap:0;padding:0}
+.band .lead{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);padding:26px 32px 26px 0;border-right:1px solid var(--hair);white-space:nowrap}
+.band .figs{display:grid;grid-template-columns:repeat(5,1fr);flex:1}
+.band .f{padding:22px 24px;border-left:1px solid var(--hair)}
+.band .f:first-child{border-left:none;padding-left:32px}
+.band .f .v{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1;letter-spacing:-.02em}
+.band .f .v .u{font-size:.42em;color:var(--brass)}
+.band .f .k{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+@media(max-width:860px){.band .wrap{flex-direction:column;align-items:stretch}.band .lead{border-right:none;border-bottom:1px solid var(--hair);padding:18px 0}.band .figs{grid-template-columns:repeat(2,1fr)}.band .f:nth-child(odd){border-left:none}}
+.news{padding:60px 0 30px}
+.rega{display:flex;align-items:center;gap:16px;margin-bottom:34px}
+.rega .lab{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:-.01em}
+.rega .ln{flex:1;height:1px;background:var(--hair-strong)}
+.rega .more{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-decoration:none}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--hair)}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{padding:26px 30px 26px 0;border-bottom:1px solid var(--hair);border-right:1px solid var(--hair)}
+.card:nth-child(even){padding-left:30px;padding-right:0;border-right:none}
+.card:nth-child(odd){padding-right:30px}
+@media(max-width:760px){.card{border-right:none;padding:24px 0}.card:nth-child(even){padding-left:0}}
+.card .t{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.card h3{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.2;letter-spacing:-.01em;margin:13px 0 0;color:var(--ink)}
+.card .rd{margin-top:16px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:7px}
+.card:hover h3{color:var(--brass)}
+.foot{border-top:1px solid var(--hair);margin-top:40px;padding:30px 0 50px}
+.foot .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<nav class="nav"><div class="wrap">
+  <span class="brand"><span class="sh">USR</span>Uncrewed Systems Review</span>
+  <span class="navlinks"><a href="#">Reference</a><a href="#" class="on">Data</a><a href="#">Compare</a><a href="#">Search</a><a href="#">Knowledge</a><a href="#">Newsroom</a></span>
+  <span class="navr"><button class="pill">VN</button><button class="pill" id="tg"><span id="ti">◐</span> <span id="tl">Sáng</span></button></span>
+</div></nav>
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Field Intelligence</span>
+    <h1>Uncrewed systems, đọc đúng bằng dữ liệu.</h1>
+    <p class="sub">Một bản đăng ký mở về thiết bị bay không người lái, nơi mỗi con số truy được về nguồn và mỗi ô chưa biết được khai thẳng, không lấp.</p>
+    <div class="heatm">
+      <div class="s"><div class="v" id="n1">302</div><div class="k">Verified systems</div></div>
+      <div class="s"><div class="v" id="n2">28</div><div class="k">Countries</div></div>
+      <div class="s"><div class="v" id="n3">28<span class="u">%</span></div><div class="k">Spec coverage</div></div>
+    </div>
+    <a class="cta" href="#">Vào bản đăng ký <span class="arw"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" aria-hidden="true"><path d="M1 6 H15 M10 1 L15 6 L10 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+  </div>
+  <div class="bpframe">
+    <svg viewBox="0 0 660 580" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bản vẽ kỹ thuật hệ thống multirotor">
+      <defs>
+        <pattern id="bpgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+          <path d="M22 0H0V22" class="grid"/>
+        </pattern>
+        <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
+          <path d="M0 1.5 L7.5 5 L0 8.5 Z" fill="var(--bp-line)"/>
+        </marker>
+        <marker id="ar2" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto">
+          <path d="M0 1.2 L6.5 4.5 L0 7.8 Z" fill="var(--brass)"/>
+        </marker>
+      </defs>
+      <rect x="20" y="20" width="620" height="540" fill="url(#bpgrid)"/>
+      <rect x="20" y="20" width="620" height="540" class="lf"/>
+      <path d="M20 56V20H56 M604 20H640V56 M640 524V560H604 M56 560H20V524" class="a" stroke-width="1.4"/>
+      <g class="l">
+        <line x1="290" y1="252" x2="168" y2="170"/><line x1="370" y1="252" x2="492" y2="170"/>
+        <line x1="290" y1="328" x2="168" y2="410"/><line x1="370" y1="328" x2="492" y2="410"/>
+      </g>
+      <rect x="278" y="246" width="104" height="88" rx="13" class="l"/>
+      <path d="M330 262V318 M302 290H358" class="lf"/>
+      <circle cx="330" cy="290" r="13" class="a"/><circle cx="330" cy="290" r="3" class="af"/>
+      <rect x="318" y="232" width="24" height="12" rx="3" class="l"/>
+      <circle cx="330" cy="346" r="9" class="l"/><circle cx="330" cy="346" r="3.5" class="lf"/>
+      <g transform="translate(168 170)">
+        <circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/>
+        <circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/>
+        <path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/>
+      </g>
+      <g transform="translate(492 170)">
+        <circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/>
+        <circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/>
+        <path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/>
+      </g>
+      <g transform="translate(168 410)">
+        <circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/>
+        <circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/>
+        <path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/>
+      </g>
+      <g transform="translate(492 410)">
+        <circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/>
+        <path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/>
+        <circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/>
+        <path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/>
+      </g>
+      <g>
+        <line x1="106" y1="170" x2="106" y2="92" class="lf"/><line x1="554" y1="170" x2="554" y2="92" class="lf"/>
+        <line x1="106" y1="100" x2="554" y2="100" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/>
+        <rect x="305" y="90" width="50" height="20" fill="var(--bg)"/>
+        <text x="330" y="104" text-anchor="middle" class="acc">SPAN</text>
+      </g>
+      <g>
+        <line x1="168" y1="232" x2="90" y2="232" class="lf"/><line x1="168" y1="472" x2="90" y2="472" class="lf"/>
+        <line x1="98" y1="232" x2="98" y2="472" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/>
+        <rect x="84" y="342" width="28" height="20" fill="var(--bg)"/>
+        <text x="98" y="356" text-anchor="middle" class="acc" transform="rotate(-90 98 352)">DEPTH</text>
+      </g>
+      <g>
+        <path d="M330 232 V162" class="a"/><circle cx="330" cy="232" r="2.4" fill="var(--brass)"/>
+        <text x="330" y="154" text-anchor="middle" class="big">GNSS · COMPASS</text>
+        <path d="M330 356 V392" class="a"/><circle cx="330" cy="356" r="2.4" fill="var(--brass)"/>
+        <text x="330" y="406" text-anchor="middle" class="big">PAYLOAD BAY</text>
+        <path d="M382 290 H548" class="a"/><circle cx="382" cy="290" r="2.4" fill="var(--brass)"/>
+        <text x="556" y="293" class="big">FLIGHT CTRL</text>
+        <path d="M534 150 L556 130" class="a"/><circle cx="534" cy="150" r="2.4" fill="var(--brass)"/>
+        <text x="560" y="127" class="big">ROTOR · Ø</text>
+      </g>
+      <line x1="20" y1="512" x2="640" y2="512" class="lf"/>
+      <text x="32" y="536" class="acc">USR · FIELD SCHEMATIC</text>
+      <text x="32" y="550">GENERIC MULTIROTOR · NOT TO SCALE</text>
+      <g transform="translate(600 538)">
+        <circle r="15" class="l"/><path d="M0 -15V15 M-15 0H15" class="lf"/>
+        <path d="M0 -15L4 -7H-4Z" class="af"/><text x="0" y="-19" text-anchor="middle" class="acc">N</text>
+      </g>
+      <text x="540" y="536" text-anchor="end">REV 02</text>
+    </svg>
+    <div class="bpcap"><span>Fig. 01 — cấu hình 4 rotor</span><span><b>Featured field file</b> · DJI Mavic 3E →</span></div>
+  </div>
+</div></section>
+<section class="band"><div class="wrap">
+  <span class="lead">Record status<br>tính sống</span>
+  <div class="figs">
+    <div class="f"><div class="v">302</div><div class="k">systems</div></div>
+    <div class="f"><div class="v">25</div><div class="k">Blue UAS</div></div>
+    <div class="f"><div class="v">26</div><div class="k">NDAA compliant</div></div>
+    <div class="f"><div class="v">6</div><div class="k">disputed fields</div></div>
+    <div class="f"><div class="v">28<span class="u">%</span></div><div class="k">spec coverage</div></div>
+  </div>
+</div></section>
+<section class="news"><div class="wrap">
+  <div class="rega"><span class="eyebrow">01 · Newsroom</span><span class="ln"></span><a class="more" href="#">All articles →</a></div>
+  <div class="grid2">
+    <a class="card" href="#"><div class="t">Data note</div><h3>Bản đăng ký USR đọc thế nào: phạm vi, phương pháp và những ô để trống</h3><div class="rd">Read →</div></a>
+    <a class="card" href="#"><div class="t">Explainer</div><h3>Blue UAS và NDAA Section 848: hai bộ quy chuẩn nguồn gốc trong ngành UAV phòng thủ</h3><div class="rd">Read →</div></a>
+    <a class="card" href="#"><div class="t">Profile</div><h3>DJI: hồ sơ nhà sản xuất</h3><div class="rd">Read →</div></a>
+    <a class="card" href="#"><div class="t">Data report</div><h3>Phân bố nhà sản xuất trong bản đăng ký USR</h3><div class="rd">Read →</div></a>
+  </div>
+</div></section>
+<footer class="foot"><div class="wrap">
+  <span>USR · Uncrewed Systems Review</span>
+  <span>theme thuần · aggregate sống · honest-null · zero-fabrication</span>
+</div></footer>
+<script>
+document.getElementById('tg').addEventListener('click',function(){
+  const d=document.documentElement,dk=d.getAttribute('data-theme')==='dark';
+  d.setAttribute('data-theme',dk?'light':'dark');
+  document.getElementById('ti').textContent=dk?'◐':'◑';document.getElementById('tl').textContent=dk?'Sáng':'Tối';
+});
+</script>
+</body>
+</html>

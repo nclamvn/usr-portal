@@ -5,25 +5,31 @@
 :root {
   --w-wide: 1180px;  /* tables/grids/dashboards — equals header width */
   --w-read: 760px;   /* prose/single-record reading column */
-  /* warm-neutral light — RECONCILED to portal-in-action.html (STEP 0) */
-  --bg: #F3F2EF;
+  /* warm-neutral light — token values from home-v2-specimen (TIP-UX2.1 pure-value) */
+  --bg: #F4F2ED;
+  --bg-2: #EFEDE6;             /* subtle panel — the ONLY non-bg surface (still light in light) */
   --panel: #FFFFFF;
-  --ink: #1A1A1C;
-  --ink-soft: #42434A;
-  --muted: #6A6B72;
-  --faint: #9A9BA1;
-  --hair: #E2E0DB;
-  --hair-strong: #D2CFC8;
-  --card-bg: #15171B;          /* high-contrast In-Action card */
-  --card-ink: #ECEAE4;
-  --card-soft: #A9ABB0;
-  --card-hair: #2A2D33;
-  --card-faint: #6E7177;
+  --ink: #191A1C;
+  --ink-soft: #44454B;
+  --muted: #6C6D74;
+  --faint: #9C9D96;
+  --hair: #E1DED7;
+  --hair-strong: #CDC9C0;
   --brass: #9B6B1C;
   --brass-bright: #B5832B;
-  --bp: #D8A24A;               /* blueprint line — amber (was inverted; fixed STEP 0/TIP-004) */
-  --bp-soft: #C9C7C0;
+  --bp: #D8A24A;               /* frame-glyph line — amber accent (line color, not a container bg) */
+  --bp-line: #2C2F35;          /* hero blueprint line-art — ink, flips by theme */
+  --bp-grid: rgba(25,26,28,.055);
+  --bp-soft: rgba(44,47,53,.4);
   --bp-faint: #3A3D44;
+  /* PURE-VALUE collapse (TIP-UX2.1): the old dark-plate tokens now alias the theme surface, so
+     every former dark box (hero / record-status / stdcard / feat / footer) follows the theme —
+     one value per theme, no inverted patchwork. */
+  --card-bg: var(--bg-2);
+  --card-ink: var(--ink);
+  --card-soft: var(--muted);
+  --card-hair: var(--hair-strong);
+  --card-faint: var(--faint);
   --alert: #A8392C;            /* semantic only: disputed / alert */
   --radius: 4px;
   --reg: 14px;                 /* registration-corner size */
@@ -31,38 +37,40 @@
   --font-body: "Be Vietnam Pro", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   --ease: cubic-bezier(.22,.61,.36,1);
-  /* aliases — reconcile portal-in-action / newsroom-specimen token names to the shared sheet
-     so specimen-derived CSS resolves unchanged (values are identical; only names differed). */
+  /* aliases — specimen token names resolve to the shared sheet */
   --serif: var(--font-head);
   --sans: var(--font-body);
   --mono: var(--font-mono);
   --card: var(--card-bg);
-  --maxw: 1200px;
+  --maxw: 1240px;
   --wm: rgba(26,26,28,.045);
-  --grid: rgba(26,26,28,.030);   /* faint blueprint graph-paper — reconciled from A-01/data specimens */
+  --grid: var(--bp-grid);        /* faint blueprint graph-paper */
 }
 :root[data-theme="dark"] {
-  /* cockpit dark — byte-exact from portal-in-action.html (STEP 0/TIP-004) */
-  --bg: #0E1013;
+  /* cockpit dark — token values from home-v2-specimen (TIP-UX2.1 pure-value) */
+  --bg: #0F1113;
+  --bg-2: #13161A;
   --panel: #15181C;
   --ink: #ECEDEF;
-  --ink-soft: #C4C6CB;
-  --muted: #9096A0;
-  --faint: #6A707A;
-  --hair: #23272E;
-  --hair-strong: #2E333B;
+  --ink-soft: #C3C5CA;
+  --muted: #8B9099;
+  --faint: #5C616A;
+  --hair: #222629;
+  --hair-strong: #30343B;
   --brass: #D2A24C;
   --brass-bright: #DEB05C;
-  --card-bg: #181B20;
-  --card-ink: #ECEDEF;
-  --card-soft: #A9ADB4;
-  --card-faint: #717682;
-  --card-hair: #2C313A;
   --bp: #DEB05C;
-  --bp-soft: #9AA0AA;
+  --bp-line: #BCBEC4;            /* flips: ink-on-light -> light-on-dark */
+  --bp-grid: rgba(255,255,255,.045);
+  --bp-soft: rgba(188,190,196,.34);
   --bp-faint: #3A4049;
+  --card-bg: var(--bg-2);
+  --card-ink: var(--ink);
+  --card-soft: var(--muted);
+  --card-hair: var(--hair-strong);
+  --card-faint: var(--faint);
   --wm: rgba(255,255,255,.035);
-  --grid: rgba(255,255,255,.028);
+  --grid: var(--bp-grid);
 }
 
 * { box-sizing: border-box; }
@@ -277,15 +285,26 @@ small, .small { font-size: .82rem; }
 
 /* GLOBAL HEADER (header.py) — locked, byte-identical on every surface. Fixed height; no per-surface
    override (verify_header enforces). Wordmark left · breadcrumb center · lang/theme right. */
-.gbar { border-bottom: 1px solid var(--hair); background: var(--bg); }
+.gbar { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--hair); background: var(--bg); }
+/* edge prev/next buttons (pagenav.py) — circular, pinned to screen edges at header level; NOT part of .gbar */
+.pgnav { position: fixed; top: 9px; width: 34px; height: 34px; border: 1.5px solid var(--brass); border-radius: 50%; display: grid; place-items: center; color: var(--brass); background: var(--bg); z-index: 101; transition: background .2s, color .2s, border-color .2s; }
+.pgnav:hover { background: var(--brass); color: var(--bg); }
+.pgnav-prev { left: 14px; } .pgnav-next { right: 14px; }
+.pgnav .ar { width: 15px; height: 15px; display: block; } .pgnav-prev .ar { transform: scaleX(-1); }
+.pgnav:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
+@media (max-width: 1280px) { .pgnav { display: none; } }   /* hide where edges would collide with header content */
 .gbar-in { max-width: var(--w-wide); margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
 .gbar-wm { flex: 0 0 auto; display: inline-flex; align-items: center; line-height: 0; }
-.gbar-wm .brandmark { height: 38px; width: auto; display: block; }
+.gbar-wm .brandmark { height: 47.5px; width: auto; display: block; }  /* 125% of 38px */
 :root[data-theme="dark"] .gbar-wm .brandmark { filter: invert(1); }  /* black art -> white on dark */
 .gbar-in .crumb { flex: 1 1 auto; }
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
 .gbar-tg { background: transparent; color: var(--ink-soft); border: 1px solid var(--hair-strong); border-radius: 999px; height: 30px; padding: 0 .7rem; font-family: var(--font-mono); font-size: .72rem; cursor: pointer; }
 .gbar-tg:hover { border-color: var(--brass-bright); color: var(--ink); }
+/* theme toggle label reflects the CURRENT theme (light shows "Light", dark shows "Dark") */
+#theme .th-d { display: none; }
+:root[data-theme="dark"] #theme .th-l { display: none; }
+:root[data-theme="dark"] #theme .th-d { display: inline; }
 
 /* global nav (nav.py) — premium label idiom: mono, uppercase, tracked. Distinct from serif/sans
    body. Brass is one-beat: rest = muted, hover = brass, active page = brass. (design-system owns it) */
@@ -303,7 +322,8 @@ small, .small { font-size: .82rem; }
 .sfoot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 2.4rem; }
 @media (max-width: 760px) { .sfoot-grid { grid-template-columns: 1fr; gap: 2rem; } }
 .sfoot-wm { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--card-ink); }
-.sfoot .brandmark { height: 40px; width: auto; display: block; filter: invert(1); }  /* black art -> white on dark plate */
+.sfoot .brandmark { height: 40px; width: auto; display: block; }  /* black art — dark in light theme (footer is pure-value now) */
+:root[data-theme="dark"] .sfoot .brandmark { filter: invert(1); }  /* -> white on dark theme */
 .sfoot-name { font-family: var(--font-head); font-weight: 600; font-size: 1.2rem; letter-spacing: .01em; }
 .sfoot-tag { color: var(--card-soft); font-size: .92rem; line-height: 1.55; max-width: 42ch; margin: 1rem 0 0; }
 .sfoot-prov { color: var(--card-faint); font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; margin: .7rem 0 0; }

@@ -15,6 +15,7 @@ import json, pathlib, shutil, re, html
 from header import header
 from footer import footer
 from build_reference import esc
+from seo import favicons
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -74,7 +75,7 @@ def figure_svg(bars):
         rects.append(f'<rect class="bar-r" x="{cx-bw/2:.0f}" y="{y}" width="{bw:.0f}" height="{h}"></rect>')
         labs.append(f'<text x="{cx:.0f}" y="186">{esc(lab)}</text>')
         vals.append(f'<text x="{cx:.0f}" y="{y-8}">{val}%</text>')
-    return (f'<svg viewBox="0 0 520 200" role="img" aria-label="Biểu đồ: độ phủ trường nguồn theo nhóm thông số">'
+    return (f'<svg viewBox="0 0 520 200" fill="none" role="img" aria-label="Biểu đồ: độ phủ trường nguồn theo nhóm thông số">'
             f'<line class="axis" x1="{x0}" y1="{base}" x2="{x1}" y2="{base}"></line>'
             f'<g>{"".join(rects)}</g>'
             f'<g class="glab" text-anchor="middle">{"".join(labs)}</g>'
@@ -225,6 +226,7 @@ def render_analysis_page(article, site, glossary):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(a["title"])} — USR Phân tích</title>
 <meta name="description" content="{esc(a["dek"])}">
+{favicons(f'analysis/{a["slug"]}.html')}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <link rel="stylesheet" href="../base/newsroom.css">
