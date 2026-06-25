@@ -229,7 +229,41 @@
     apply();
   }
 
+  /* TIP-HERO-LIVE — homepage featured rotator. Cross-dissolve via display-toggle so only the active
+     slide is in layout at rest (overlap-safe). Pauses on hover; dots jump; reduced-motion shows a
+     static slide and never auto-rotates (consistent with Mode L pulse/scan). */
+  function initLiveHero() {
+    var hero = document.getElementById("lhero"); if (!hero) return;
+    var DUR = 6000;
+    var slides = Array.prototype.slice.call(hero.querySelectorAll(".lhero-slide"));
+    var dots = Array.prototype.slice.call(hero.querySelectorAll(".lhero-dot"));
+    var fill = document.getElementById("lhero-fill");
+    var n = slides.length, cur = 0, timer = null, paused = false;
+    if (n < 2) return;
+    var reduce = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function show(idx) {
+      var prev = cur; cur = ((idx % n) + n) % n; if (prev === cur) return;
+      var inEl = slides[cur], outEl = slides[prev];
+      inEl.classList.add("show"); void inEl.offsetWidth; inEl.classList.add("active");
+      outEl.classList.remove("active");
+      setTimeout(function () { if (!outEl.classList.contains("active")) outEl.classList.remove("show"); }, 840);
+      for (var k = 0; k < dots.length; k++) dots[k].classList.toggle("on", k === cur);
+    }
+    function bar() { if (reduce || !fill) return; fill.classList.remove("run"); void fill.offsetWidth;
+      fill.style.setProperty("--dur", DUR + "ms"); fill.classList.add("run"); }
+    function tick() { if (!paused) { show(cur + 1); bar(); } }
+    function start() { if (reduce) return; bar(); timer = setInterval(tick, DUR); }
+    function restart() { if (reduce) return; clearInterval(timer); bar(); timer = setInterval(tick, DUR); }
+    for (var k = 0; k < dots.length; k++) (function (k) {
+      dots[k].addEventListener("click", function () { show(k); restart(); });
+    })(k);
+    hero.addEventListener("mouseenter", function () { paused = true; if (fill) fill.style.animationPlayState = "paused"; });
+    hero.addEventListener("mouseleave", function () { paused = false; if (fill) fill.style.animationPlayState = "running"; });
+    if (!reduce) start();
+  }
+
   root.USRBase = { arrow: arrow, mountArrows: mountArrows, designerAudit: designerAudit,
                    initTheme: initTheme, initI18n: initI18n, initReveal: initReveal,
-                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup };
+                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup,
+                   initLiveHero: initLiveHero };
 })(window);

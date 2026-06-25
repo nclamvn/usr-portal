@@ -7,6 +7,12 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
+graphic:
+  kind: count
+  value: "300+"
+  label: "tiêu chuẩn ngành · dự kiến 2030"
+  status: "mục tiêu"
+  target: true
 sources:
   - { claim: "Hệ thống tiêu chuẩn kinh tế tầm thấp dự kiến cơ bản hoàn thành tới năm 2027 theo văn bản hướng dẫn", url: "http://english.scio.gov.cn/pressroom/2026-02/03/content_118313806.html", tier: "B" }
   - { claim: "Tới năm 2030 dự kiến có hơn 300 tiêu chuẩn ngành cho lĩnh vực tầm thấp", url: "http://english.scio.gov.cn/pressroom/2026-02/03/content_118313806.html", tier: "B" }

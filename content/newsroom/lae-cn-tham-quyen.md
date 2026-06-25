@@ -7,6 +7,11 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
+graphic:
+  kind: count
+  value: "483"
+  label: "điểm cất hạ cánh"
+  status: "đã vận hành"
 sources:
   - { claim: "Thâm Quyến đã thiết lập 483 điểm cất hạ cánh tầm thấp cùng lưới an toàn toàn thành phố", url: "http://english.scio.gov.cn/chinavoices/2025-07/17/content_117982456.html", tier: "B" }
 ---

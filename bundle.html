@@ -143,7 +143,15 @@ small, .small { font-size: .82rem; }
 
 /* facet toolbar — toggle-group (.tg), search, sort, live-count.
    brass is used ONLY for the active/pressed state; at rest everything is mono + hairline. */
-.facets { border: 1px solid var(--hair); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 1.3rem 0 1.6rem; display: grid; gap: .7rem; }
+/* facets — a disclosure, NOT a permanent empty box: closed = a small "Filters ▾" toggle; the bordered
+   panel appears only when open. (The quick-search box above is the always-visible control.) */
+.facets { border: 0; padding: 0; margin: .1rem 0 1.4rem; display: grid; gap: .7rem; }
+.facets > summary { display: inline-flex; align-items: center; gap: .45rem; width: fit-content; cursor: pointer; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); list-style: none; padding: .25rem 0; }
+.facets > summary::-webkit-details-marker { display: none; }
+.facets > summary::after { content: "▾"; color: var(--brass); font-size: .9em; }
+.facets[open] > summary { color: var(--ink); margin-bottom: .2rem; }
+.facets[open] > summary::after { content: "▴"; }
+.facets[open] { border: 1px solid var(--hair); border-radius: var(--radius); padding: .5rem 1.1rem 1rem; }
 .facet-row { display: flex; flex-wrap: wrap; gap: .4rem; align-items: baseline; }
 .facet-row .lbl { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); flex: 0 0 6.2rem; }
 .facet-tools { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
@@ -162,6 +170,15 @@ small, .small { font-size: .82rem; }
 .reg-search::placeholder { color: var(--faint); }
 .reg-search:focus { outline: none; border-bottom-color: var(--brass); }
 .reg-count { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); white-space: nowrap; }
+/* always-visible quick-search box — the prominent, obviously-interactive input on the index */
+.reg-quick { display: flex; align-items: center; gap: .8rem; border: 1px solid var(--hair-strong); border-radius: 8px; padding: .55rem .9rem; margin: 1.1rem 0 .9rem; background: var(--bg-2); transition: border-color .15s var(--ease); }
+.reg-quick:focus-within { border-color: var(--brass); }
+.reg-quick .qicon { width: 17px; height: 17px; color: var(--muted); flex: 0 0 17px; }
+.reg-quick:focus-within .qicon { color: var(--brass); }
+.reg-quick .reg-search { border: 0; border-bottom: 0; background: transparent; font-size: .95rem; flex: 1 1 auto; min-width: 0; padding: .25rem 0; }
+.reg-quick .reg-search:focus { border-bottom: 0; }
+.reg-quick .reg-count { flex: 0 0 auto; }
+.reg-quick #reg-sort { flex: 0 0 auto; }
 .reg-count b { color: var(--brass); font-weight: 600; }
 .card.hidden, .row-item.hidden { display: none; }
 /* desktop: facets always open, native disclosure summary hidden */
@@ -352,6 +369,283 @@ small, .small { font-size: .82rem; }
 [data-lang-en], [data-lang-vn] { display: none; }
 :root[data-lang="en"] [data-lang-en] { display: revert; }
 :root[data-lang="vn"] [data-lang-vn] { display: revert; }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Mode L — World Monitor (TIP-L1). The map's dark cockpit is SVG paint only
+   (a <rect fill> inside .mon-svg); NO DOM container here carries a dark background,
+   so THEME_PURITY stays clean. The chrome (panel/filters/foot) is theme-token-driven. */
+.mon-wrap { max-width: var(--w-wide); margin: 0 auto; padding: 1.4rem 1.4rem 3rem; }
+.mon-head { border-bottom: 1px solid var(--hair); padding-bottom: 1rem; margin-bottom: 1.1rem; }
+.mon-eyebrow { font-family: var(--font-mono); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
+.mon-title { font-family: var(--font-head); font-weight: 600; font-size: 2rem; margin: .35rem 0 .45rem; color: var(--ink); }
+.mon-lede { font-size: 1rem; line-height: 1.55; color: var(--ink-soft); max-width: 72ch; margin: 0; }
+.mon-controls { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; margin: 0 0 .9rem; align-items: center; }
+.mon-filtrow { display: flex; flex-wrap: wrap; gap: .5rem; }
+.mon-filt { display: inline-flex; align-items: center; gap: .45rem; background: transparent; color: var(--ink); border: 1px solid var(--hair-strong); border-radius: 999px; padding: .3rem .72rem; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; cursor: pointer; transition: border-color .15s var(--ease), opacity .15s var(--ease); }
+.mon-filt[aria-pressed="false"] { opacity: .4; border-style: dashed; }
+.mon-filt:hover { border-color: var(--brass); }
+.mon-filt-ty { text-transform: uppercase; }
+.mon-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.mon-ct { font-family: var(--font-mono); color: var(--muted); font-size: .7rem; }
+.mon-stage { position: relative; border: 1px solid var(--hair-strong); border-radius: 8px; overflow: hidden; line-height: 0; }
+.mon-svg { display: block; width: 100%; height: auto; }
+.mon-halo { transform-box: fill-box; transform-origin: center; animation: monpulse 2.6s ease-in-out infinite; }
+.mon-halo2 { transform-box: fill-box; transform-origin: center; }
+@keyframes monpulse { 0%, 100% { opacity: .12; } 50% { opacity: .46; } }
+/* pulse cadence DERIVED from real status (set in build_monitor._rhythm), not decorative */
+.mon-r-urgent .mon-halo { animation-duration: 1.4s; }
+.mon-r-build .mon-halo  { animation-duration: 3.8s; }
+.mon-r-steady .mon-halo { animation-duration: 2.6s; }
+.mon-pin { cursor: pointer; }
+.mon-pin .mon-core { transition: r .15s var(--ease); }
+.mon-pin:hover .mon-core, .mon-pin.sel .mon-core { r: 5.2; }
+.mon-pin.sel .mon-halo { opacity: .58 !important; animation: none; }
+.mon-pin:focus-visible { outline: none; }
+.mon-pin:focus-visible .mon-core { r: 5.2; stroke: #fff; stroke-width: 1.5; }
+.mon-panel { position: absolute; top: 14px; right: 14px; width: 300px; max-width: calc(100% - 28px); background: var(--bg-2); border: 1px solid var(--hair-strong); border-radius: 8px; padding: 16px 16px 18px; box-shadow: 0 10px 34px rgba(0,0,0,.26); line-height: normal; }
+.mon-panel[hidden] { display: none; }
+.mon-x { position: absolute; top: 7px; right: 11px; background: none; border: none; font-size: 20px; line-height: 1; color: var(--muted); cursor: pointer; }
+.mon-x:hover { color: var(--brass); }
+.mon-p-type { font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+.mon-p-name { font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; line-height: 1.25; margin: .3rem 0 .8rem; color: var(--ink); }
+.mon-p-dl { margin: 0; display: grid; gap: .5rem; }
+.mon-p-dl > div { display: grid; grid-template-columns: 80px 1fr; gap: .5rem; align-items: baseline; }
+.mon-p-dl dt { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.mon-p-dl dd { margin: 0; font-size: .82rem; line-height: 1.4; color: var(--ink); }
+.mon-p-link { display: inline-block; margin-top: 1.1rem; font-family: var(--font-mono); font-size: .74rem; color: var(--brass); text-decoration: none; border-bottom: 1px solid var(--brass); }
+.mon-hint { position: absolute; left: 14px; bottom: 12px; display: inline-block; font-family: var(--font-mono); font-size: .7rem; color: #a9bccb; margin: 0; background: rgba(7,13,20,.55); padding: 3px 9px; border-radius: 4px; }
+.mon-foot { font-size: .78rem; color: var(--muted); line-height: 1.5; max-width: 76ch; margin: 1.2rem 0 0; border-top: 1px solid var(--hair); padding-top: .9rem; }
+
+/* status bar — watching / stream / registry-updated / live UTC clock (all real, none hardcoded) */
+.mon-statusbar { display: flex; flex-wrap: wrap; gap: 1.6rem; align-items: baseline; margin: 0 0 .9rem; padding: .6rem .1rem; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+.mon-stat { display: inline-flex; align-items: baseline; gap: .5rem; }
+.mon-stat-k { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.mon-stat-v { font-family: var(--font-mono); font-size: .96rem; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.mon-stat-clock { margin-left: auto; }
+.mon-stat-clock .mon-stat-v { color: var(--brass); }
+
+/* map + registry-stream layout — left column (map + support panel) drives height; stream matches it */
+.mon-layout { display: grid; grid-template-columns: 1fr 290px; gap: 1.1rem; align-items: stretch; }
+.mon-col-l { display: flex; flex-direction: column; gap: 1.1rem; min-width: 0; }
+@media (max-width: 900px) { .mon-layout { grid-template-columns: 1fr; } }
+
+/* supporting graphic under the map: a signal key (explains the pulse cadence) + live distribution */
+.mon-support { border: 1px solid var(--hair-strong); border-radius: 8px; padding: .85rem 1rem 1rem; display: grid; gap: .85rem; }
+.mon-sup-h { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); display: flex; align-items: baseline; gap: .6rem; }
+.mon-sup-sub { font-size: .58rem; letter-spacing: .04em; text-transform: none; color: var(--muted); }
+.mon-cad { display: grid; gap: .5rem; }
+.mon-cad-row { display: grid; grid-template-columns: 14px 110px 1fr auto; gap: .6rem; align-items: center; }
+.mon-cad-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c); display: inline-block; animation: cadpulse 2.6s ease-in-out infinite; }
+.mon-cad-dot.mon-r-urgent { animation-duration: 1.4s; }
+.mon-cad-dot.mon-r-build  { animation-duration: 3.8s; }
+.mon-cad-dot.mon-r-steady { animation-duration: 2.6s; }
+@keyframes cadpulse { 0%, 100% { opacity: .45; transform: scale(.85); } 50% { opacity: 1; transform: scale(1.18); } }
+.mon-cad-lab { font-family: var(--font-mono); font-size: .72rem; color: var(--ink); }
+.mon-cad-desc { font-family: var(--font-mono); font-size: .62rem; color: var(--muted); }
+.mon-cad-ct { font-family: var(--font-mono); font-size: .82rem; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.mon-sup-bars { display: grid; gap: .4rem; border-top: 1px solid var(--hair); padding-top: .75rem; }
+.mon-bar-h { font-family: var(--font-mono); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; }
+.mon-bar { display: flex; height: 9px; border-radius: 5px; overflow: hidden; background: var(--faint); gap: 2px; }
+.mon-seg { height: 100%; border-radius: 2px; }
+.mon-tyrow { display: flex; flex-wrap: wrap; gap: .4rem .8rem; }
+.mon-tychip { font-family: var(--font-mono); font-size: .64rem; color: var(--ink-soft); display: inline-flex; align-items: baseline; gap: .3rem; }
+.mon-tychip-n { font-weight: 600; color: var(--brass); }
+.mon-readout { position: absolute; transform: translate(-50%, -100%); pointer-events: none; background: var(--bg-2); border: 1px solid var(--hair-strong); border-radius: 5px; padding: 5px 9px; font-family: var(--font-mono); font-size: .68rem; line-height: 1.35; color: var(--ink); box-shadow: 0 6px 18px rgba(0,0,0,.24); max-width: 240px; z-index: 4; }
+.mon-readout[hidden] { display: none; }
+.mon-readout b { font-family: var(--font-head); font-weight: 600; font-size: .76rem; display: block; }
+.mon-readout span { color: var(--brass); }
+
+/* registry stream — the 35 un-mappable but real entities, sourced, nothing hidden */
+/* base (single column / mobile): a self-contained scroll box */
+.mon-stream { border: 1px solid var(--hair-strong); border-radius: 8px; overflow: hidden; }
+.mon-stream-inner { display: flex; flex-direction: column; max-height: 520px; }
+.mon-stream-h { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); padding: .7rem .8rem; border-bottom: 1px solid var(--hair); display: flex; flex-direction: column; gap: 2px; flex: 0 0 auto; }
+.mon-stream-sub { font-size: .58rem; letter-spacing: .04em; text-transform: none; color: var(--muted); }
+.mon-stream-list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1 1 0; min-height: 0; }
+/* two-column: the stream cell stretches to the left column (map + support) height via grid; its inner is
+   absolutely positioned so the 35 rows never inflate the row — they scroll. Pure CSS, exact, no JS timing. */
+@media (min-width: 901px) {
+  .mon-stream { position: relative; }
+  .mon-stream-inner { position: absolute; inset: 0; max-height: none; }
+}
+.mon-strm-row { display: flex; gap: .5rem; padding: .55rem .7rem; border-bottom: 1px solid var(--hair); }
+.mon-strm-bar { flex: 0 0 3px; border-radius: 2px; }
+.mon-strm-main { min-width: 0; flex: 1; }
+.mon-strm-top { display: flex; justify-content: space-between; align-items: center; gap: .4rem; }
+.mon-strm-ty { font-family: var(--font-mono); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
+.mon-strm-tier { font-family: var(--font-mono); font-size: .58rem; color: var(--muted); border: 1px solid var(--hair-strong); border-radius: 3px; padding: 0 4px; }
+.mon-strm-tier[data-t="A"] { color: var(--brass); border-color: var(--brass); }
+.mon-strm-nm { display: block; font-family: var(--font-head); font-size: .82rem; line-height: 1.25; color: var(--ink); margin: .12rem 0; text-decoration: none; }
+a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); }
+.mon-strm-meta { display: flex; gap: .5rem; flex-wrap: wrap; font-family: var(--font-mono); font-size: .6rem; color: var(--muted); }
+.mon-strm-prov { color: var(--ink-soft); }
+@media (max-width: 640px) { .mon-panel { width: auto; left: 14px; right: 14px; } .mon-title { font-size: 1.6rem; } .mon-statusbar { gap: 1rem; } .mon-stat-clock { margin-left: 0; } }
+
+/* homepage teaser — same cockpit SVG, compact, non-interactive, links into the surface */
+.mteaser { margin: 2.6rem 0 0; }
+.mteaser-in { display: grid; grid-template-columns: .85fr 1.45fr; gap: 2rem; align-items: center; border-top: 1px solid var(--hair-strong); padding-top: 1.7rem; }
+.mteaser-eye { font-family: var(--font-mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+.mteaser-h { font-family: var(--font-head); font-weight: 600; font-size: 1.6rem; margin: .35rem 0 .55rem; color: var(--ink); }
+.mteaser-p { font-size: .92rem; line-height: 1.55; color: var(--ink-soft); max-width: 48ch; margin: 0 0 1rem; }
+.mteaser-cta { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--brass); text-decoration: none; }
+.mteaser-cta:hover { text-decoration: underline; }
+.mteaser-map { display: block; border: 1px solid var(--hair-strong); border-radius: 8px; overflow: hidden; line-height: 0; }
+.mteaser-map .mon-svg { width: 100%; height: auto; display: block; }
+@media (max-width: 860px) { .mteaser-in { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .mon-halo, .mon-cad-dot { animation: none !important; } .mon-pin .mon-core { transition: none; } }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   TIP-NEWSROOM — editorial feed frame. Scoped under .nfeed so the generic names
+   (.lead/.sec/.meta/.figure) never collide with other surfaces. Used by news.html
+   (full) and the homepage block (.nfeed-mini). Theme-token-driven → pure-value. */
+.nfeed{max-width:1280px;margin:0 auto;padding:40px 48px 80px;
+  background-image:linear-gradient(rgba(150,140,120,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(150,140,120,0.05) 1px,transparent 1px);
+  background-size:32px 32px;background-position:-1px -1px;}
+.nfeed .mast{display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:6px;gap:1rem;}
+.nfeed .mast-l{display:flex;align-items:baseline;gap:18px;}
+.nfeed .mast-no{font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;color:var(--brass);font-weight:600;}
+.nfeed .mast h1,.nfeed .mast h2{font-family:var(--font-head);font-weight:600;font-size:30px;letter-spacing:-.01em;line-height:1;}
+.nfeed .mast-date{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;text-align:right;}
+.nfeed .subrule{display:flex;justify-content:space-between;gap:1rem;align-items:center;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;border-bottom:1px solid var(--hair-strong);padding:8px 0 10px;margin-bottom:34px;}
+.nfeed .frame{display:grid;grid-template-columns:1fr 1fr 0.78fr;gap:0;align-items:start;}
+.nfeed .col-lead{grid-column:1 / 3;border-right:1px solid var(--hair-strong);padding-right:38px;}
+.nfeed .col-stream{grid-column:3 / 4;padding-left:34px;}
+.nfeed .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600;}
+.nfeed .meta{font-family:var(--font-mono);font-size:11px;letter-spacing:.03em;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px;}
+.nfeed .meta .src{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;}
+.nfeed .meta .mdate{margin-left:auto;}
+.nfeed .tier{display:inline-flex;align-items:center;gap:3px;border:1px solid var(--brass);color:var(--brass);font-weight:600;padding:1px 6px;border-radius:2px;font-size:10px;letter-spacing:.04em;}
+.nfeed .tier.bb{border-color:var(--hair-strong);color:var(--muted);}
+.nfeed .tag-target,.nfeed .tag-actual{border:1px solid var(--hair-strong);color:var(--ink-soft);padding:1px 6px;border-radius:2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;}
+.nfeed .tag-actual{border-color:var(--brass);color:var(--brass);}
+.nfeed .lead{display:grid;grid-template-columns:1fr 250px;gap:34px;align-items:start;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid var(--hair-strong);}
+.nfeed .lead .kicker{margin-bottom:14px;display:block;}
+.nfeed .lead h2{font-family:var(--font-head);font-weight:600;font-size:33px;line-height:1.1;letter-spacing:-.015em;margin-bottom:14px;}
+.nfeed .lead h2 a,.nfeed .sec h3 a,.nfeed .brief h4 a,.nfeed .mrow h4 a{color:inherit;text-decoration:none;}
+.nfeed .lead h2 a:hover,.nfeed .sec h3 a:hover,.nfeed .brief h4 a:hover,.nfeed .mrow h4 a:hover{color:var(--brass);}
+.nfeed .lead .dek{font-family:var(--font-head);font-weight:400;font-size:17px;line-height:1.5;color:var(--ink-soft);margin-bottom:18px;max-width:42ch;}
+.nfeed .figure{border:1px solid var(--hair-strong);background:var(--bg-2);position:relative;}
+.nfeed .figure::before{content:"";position:absolute;top:-1px;left:-1px;width:14px;height:14px;border-top:2px solid var(--brass);border-left:2px solid var(--brass);}
+.nfeed .figure::after{content:"";position:absolute;bottom:-1px;right:-1px;width:14px;height:14px;border-bottom:2px solid var(--brass);border-right:2px solid var(--brass);}
+.nfeed .figure .nf-svg{display:block;width:100%;height:auto;}
+.nfeed .figttl{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:12px 14px 0;}
+.nfeed .figure .cap{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--muted);padding:9px 14px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;gap:8px;align-items:center;}
+.nfeed .figure .cap .src{color:var(--ink-soft);text-transform:uppercase;text-align:right;}
+.nfeed .secondary{display:grid;grid-template-columns:1fr 1fr;gap:0 34px;}
+.nfeed .sec:first-child{border-right:1px solid var(--hair);padding-right:34px;}
+.nfeed .sec .thumb{display:flex;width:100%;height:120px;border:1px solid var(--hair-strong);background:var(--bg-2);margin-bottom:14px;align-items:center;justify-content:center;position:relative;overflow:hidden;text-decoration:none;}
+.nfeed .sec .thumb .nf-svg{height:88px;width:auto;}
+.nfeed .sec .thumb .tlbl{position:absolute;left:10px;bottom:8px;font-family:var(--font-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:var(--bg-2);padding:1px 5px;}
+.nfeed .sec .kicker{font-size:10.5px;margin-bottom:9px;display:block;}
+.nfeed .sec h3{font-family:var(--font-head);font-weight:600;font-size:19px;line-height:1.18;letter-spacing:-.01em;margin-bottom:11px;}
+.nfeed .idx{font-family:var(--font-mono);font-size:11px;color:var(--brass);font-weight:600;letter-spacing:.1em;margin-right:8px;}
+.nfeed .stream-h{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:600;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:2px;display:flex;justify-content:space-between;}
+.nfeed .stream-h .live{color:var(--brass);}
+.nfeed .brief{padding:11px 0 10px;border-bottom:1px solid var(--hair);display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;}
+.nfeed .brief .bthumb{width:38px;height:38px;border:1px solid var(--hair-strong);background:var(--bg-2);display:flex;align-items:center;justify-content:center;flex:0 0 38px;}
+.nfeed .brief .bthumb .nf-svg{width:24px;height:24px;}
+.nfeed .brief-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:5px;}
+.nfeed .brief .k{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);font-weight:600;}
+.nfeed .brief .bt{font-family:var(--font-mono);font-size:9.5px;color:var(--muted);}
+.nfeed .brief h4{font-family:var(--font-head);font-weight:500;font-size:13.5px;line-height:1.24;margin-bottom:6px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.nfeed .brief .meta{font-size:9.5px;gap:7px;}
+.nfeed .brief .meta .mdate{display:none;}
+/* MORE tier — full-width dense list that auto-fills the tail (NYT-style river); list, not figures */
+.nfeed .more{margin-top:36px;}
+.nfeed .more-h{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:600;padding-bottom:12px;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;}
+.nfeed .more-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
+.nfeed .mrow{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;padding:13px 0;border-bottom:1px solid var(--hair);}
+.nfeed .mrow .mg{width:30px;height:30px;border:1px solid var(--hair-strong);background:var(--bg-2);display:flex;align-items:center;justify-content:center;flex:0 0 30px;}
+.nfeed .mrow .mg .nf-svg{width:20px;height:20px;}
+.nfeed .mrow .m-main{min-width:0;}
+.nfeed .mrow .kicker{font-size:9.5px;margin-bottom:5px;display:block;}
+.nfeed .mrow h4{font-family:var(--font-head);font-weight:600;font-size:15px;line-height:1.22;margin-bottom:6px;color:var(--ink);}
+.nfeed .mrow .meta .mdate{margin-left:auto;}
+.nfeed .allcta{margin-top:30px;padding-top:18px;border-top:1px solid var(--hair-strong);display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.nfeed .allcta .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;max-width:52ch;}
+.nfeed .allcta .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--bg);background:var(--ink);padding:11px 20px;border-radius:40px;font-weight:600;text-decoration:none;white-space:nowrap;}
+.nfeed .allcta .btn .arr{color:var(--brass);}
+/* homepage compact variant */
+.nfeed-mini{max-width:none;margin:0;padding:0;background:none;}
+.nfeed-mini .frame{grid-template-columns:1.5fr 1fr;gap:0;align-items:start;}
+.nfeed-mini .col-lead{grid-column:auto;}
+.nfeed-mini .col-side{grid-column:auto;padding-left:34px;}
+.nfeed-mini .lead{grid-template-columns:1fr;gap:0;border-bottom:none;padding-bottom:0;margin-bottom:0;}
+.nfeed-mini .lead .figure{margin-bottom:16px;}
+.nfeed-mini .lead .figure .nf-svg{width:100%;max-width:420px;height:auto;margin:0 auto;}
+.nfeed-mini .lead h2{font-size:23px;}
+.nfeed-mini .lead .dek{font-size:15px;margin-bottom:12px;}
+.nfeed-mini .hl-item{padding:13px 0;border-bottom:1px solid var(--hair);}
+.nfeed-mini .hl-item:first-child{padding-top:0;}
+.nfeed-mini .hl-item h4{font-family:var(--font-head);font-weight:600;font-size:16px;line-height:1.2;margin:5px 0 7px;color:var(--ink);}
+.nfeed-mini .hl-item h4 a{color:inherit;text-decoration:none;}
+.nfeed-mini .hl-item h4 a:hover{color:var(--brass);}
+@media (max-width:920px){
+  .nfeed{padding:32px 22px 60px;}
+  .nfeed .frame{grid-template-columns:1fr;}
+  .nfeed .col-lead{grid-column:auto;border-right:none;padding-right:0;}
+  .nfeed .col-stream{grid-column:auto;padding-left:0;border-top:1px solid var(--hair-strong);margin-top:30px;padding-top:20px;}
+  .nfeed .lead{grid-template-columns:1fr;}
+  .nfeed .secondary{grid-template-columns:1fr;}
+  .nfeed .sec:first-child{border-right:none;padding-right:0;border-bottom:1px solid var(--hair);padding-bottom:18px;margin-bottom:18px;}
+  .nfeed .more-grid{grid-template-columns:1fr;}
+  .nfeed .allcta{flex-direction:column;align-items:flex-start;}
+  .nfeed-mini .frame{grid-template-columns:1fr;}
+  .nfeed-mini .col-side{padding-left:0;border-top:1px solid var(--hair-strong);margin-top:18px;padding-top:6px;}
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   TIP-HERO-LIVE — homepage live featured rotator. Inactive slides are display:none
+   at REST (only the active slide is in layout) → overlap-safe. Theme-token-driven →
+   pure-value light+dark. Reduced-motion: no auto-rotate, static slide-0, hidden progress. */
+.lhero { max-width: var(--w-wide); margin: 0 auto; padding: 2.2rem 1.4rem 1.6rem; min-height: 600px; display: flex; flex-direction: column; }
+.lhero-brand { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 26px; }
+.lhero-bk { display: flex; align-items: center; gap: 14px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--brass); font-weight: 600; }
+.lhero-bk .bar { width: 34px; height: 1.5px; background: var(--brass); }
+.lhero-auto { display: flex; align-items: center; gap: 14px; }
+.lhero-autolbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.lhero-autolbl .pulse { color: var(--brass); }
+.lhero-dots { display: flex; gap: 7px; }
+.lhero-dot { width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--hair-strong); background: transparent; cursor: pointer; padding: 0; transition: background .3s var(--ease), border-color .3s var(--ease); }
+.lhero-dot.on { background: var(--brass); border-color: var(--brass); }
+.lhero-dot:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
+.lhero-stage { position: relative; flex: 1; min-height: 380px; }
+.lhero-slide { position: absolute; inset: 0; display: none; grid-template-columns: 1fr 1.05fr; gap: 50px; align-items: center; opacity: 0; transform: translateY(12px); filter: blur(3px); transition: opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease); }
+.lhero-slide.show { display: grid; }
+.lhero-slide.active { opacity: 1; transform: none; filter: none; }
+.lhero-text { min-width: 0; }
+.lhero .s-kicker { font-family: var(--font-mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin-bottom: 16px; }
+.lhero .s-title { font-family: var(--font-head); font-weight: 600; font-size: clamp(2rem, 1.4rem + 2.2vw, 2.9rem); line-height: 1.08; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; max-width: 16ch; }
+.lhero .s-title a { color: inherit; }
+.lhero .s-title a:hover { color: var(--brass); }
+.lhero .s-dek { font-family: var(--font-head); font-weight: 400; font-size: 17px; line-height: 1.5; color: var(--ink-soft); margin-bottom: 20px; max-width: 40ch; }
+.lhero .s-meta { font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; color: var(--muted); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.lhero .s-meta .src { color: var(--ink-soft); text-transform: uppercase; letter-spacing: .06em; }
+.lhero .s-meta .tier { display: inline-flex; align-items: center; border: 1px solid var(--brass); color: var(--brass); font-weight: 600; padding: 1px 6px; border-radius: 2px; font-size: 10px; letter-spacing: .04em; }
+.lhero .s-meta .tier.bb { border-color: var(--hair-strong); color: var(--muted); }
+.lhero .s-meta .tag-target, .lhero .s-meta .tag-actual { border: 1px solid var(--hair-strong); color: var(--ink-soft); padding: 1px 6px; border-radius: 2px; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.lhero .s-meta .tag-actual { border-color: var(--brass); color: var(--brass); }
+.lhero .s-meta .mdate { margin-left: 0; }
+.s-cta { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin-top: 4px; display: inline-block; }
+.lhero-fig { position: relative; min-height: 340px; }
+.lhero-plate { position: relative; height: 100%; min-height: 340px; border: 1px solid var(--hair-strong); background: var(--bg-2); display: flex; align-items: center; justify-content: center; padding: 30px 30px 44px; }
+.lhero-plate::before { content: ""; position: absolute; top: -1px; left: -1px; width: 18px; height: 18px; border-top: 2px solid var(--brass); border-left: 2px solid var(--brass); }
+.lhero-plate::after { content: ""; position: absolute; bottom: -1px; right: -1px; width: 18px; height: 18px; border-bottom: 2px solid var(--brass); border-right: 2px solid var(--brass); }
+.lhero-plate svg { width: 100%; height: auto; max-height: 280px; display: block; }
+.lhero-plate .plate-lbl { position: absolute; left: 16px; bottom: 12px; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.lhero-progress { height: 1px; background: var(--hair); margin-top: 24px; position: relative; overflow: hidden; }
+.lhero-fill { position: absolute; left: 0; top: 0; height: 100%; width: 0; background: var(--brass); opacity: .8; }
+.lhero-fill.run { animation: lherofill var(--dur, 6000ms) linear forwards; }
+@keyframes lherofill { from { width: 0; } to { width: 100%; } }
+.lhero-bot { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--hair-strong); }
+.lhero-stats { display: flex; gap: 44px; }
+.lhero-stat .n { font-family: var(--font-head); font-weight: 600; font-size: 32px; line-height: 1; color: var(--ink); }
+.lhero-stat .l { font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 7px; }
+.lhero-foot { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+.lhero-foot .arr { display: inline-flex; width: 34px; height: 34px; border: 1.5px solid var(--brass); border-radius: 50%; align-items: center; justify-content: center; color: var(--brass); }
+@media (max-width: 860px) { .lhero-slide { grid-template-columns: 1fr; gap: 24px; } .lhero-fig, .lhero-plate { min-height: 230px; } .lhero-stats { gap: 22px; } .lhero-stat .n { font-size: 26px; } }
+@media (prefers-reduced-motion: reduce) { .lhero-slide { transition: none; } .lhero-progress { display: none; } }
+.lhero-foot .arr svg, .lhero-foot .arr .ar { width: 15px; height: 15px; display: block; }
 
 /* TIP-007 — Newsroom + Analysis pillar stylesheet.
    Idiom lifted from base/newsroom-specimen.html (design-language record), which inherits the
@@ -604,7 +898,7 @@ small, .small { font-size: .82rem; }
   <section class="bsec" id="reference">
     <h2>Tra cứu — toàn bộ 302 hệ thống</h2>
     <p class="sub">Lọc theo phân khúc · lớp tuân thủ · quốc gia; tìm; sắp. Bấm một dòng để mở hồ sơ (nguồn + tier, honest-null, ô tranh chấp).</p>
-    <details class="facets" data-audit="facets"><summary><span data-lang-en>Filter</span><span data-lang-vn>Lọc</span></summary><div class="facet-row"><span class="lbl"><span data-lang-en>Segment</span><span data-lang-vn>Phân khúc</span></span><button class="tg" type="button" data-facet="segment" data-value="military_tactical" aria-pressed="false"><span data-lang-en>Military · tactical</span><span data-lang-vn>Quân sự · chiến thuật</span> <span class="tg-n">91</span></button><button class="tg" type="button" data-facet="segment" data-value="enterprise" aria-pressed="false"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span> <span class="tg-n">34</span></button><button class="tg" type="button" data-facet="segment" data-value="consumer" aria-pressed="false"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span> <span class="tg-n">32</span></button><button class="tg" type="button" data-facet="segment" data-value="agriculture" aria-pressed="false"><span data-lang-en>Agriculture</span><span data-lang-vn>Nông nghiệp</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="defense_government" aria-pressed="false"><span data-lang-en>Defense · government</span><span data-lang-vn>Quốc phòng · chính phủ</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="delivery" aria-pressed="false"><span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="loitering_munition" aria-pressed="false"><span data-lang-en>Loitering munition</span><span data-lang-vn>Đạn tuần kích</span> <span class="tg-n">11</span></button><button class="tg" type="button" data-facet="segment" data-value="surveying" aria-pressed="false"><span data-lang-en>Surveying &amp; mapping</span><span data-lang-vn>Khảo sát · lập bản đồ</span> <span class="tg-n">11</span></button><button class="tg" type="button" data-facet="segment" data-value="passenger_uam" aria-pressed="false"><span data-lang-en>Passenger air taxi</span><span data-lang-vn>Taxi bay</span> <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="segment" data-value="fpv" aria-pressed="false"><span data-lang-en>FPV</span><span data-lang-vn>FPV</span> <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="segment" data-value="public_safety" aria-pressed="false"><span data-lang-en>Public safety</span><span data-lang-vn>An toàn công cộng</span> <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="segment" data-value="counter_uas" aria-pressed="false"><span data-lang-en>Counter-UAS</span><span data-lang-vn>Chống UAV</span> <span class="tg-n">6</span></button><button class="tg" type="button" data-facet="segment" data-value="cinema" aria-pressed="false"><span data-lang-en>Cinema</span><span data-lang-vn>Điện ảnh</span> <span class="tg-n">5</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Class</span><span data-lang-vn>Lớp</span></span><button class="tg" type="button" data-facet="klass" data-value="commercial_covered_public" aria-pressed="false"><span data-lang-en>Commercial · covered</span><span data-lang-vn>Thương mại · covered</span> <span class="tg-n">85</span></button><button class="tg" type="button" data-facet="klass" data-value="commercial_us_public" aria-pressed="false"><span data-lang-en>Commercial · US</span><span data-lang-vn>Thương mại · Mỹ</span> <span class="tg-n">72</span></button><button class="tg" type="button" data-facet="klass" data-value="competitor_military_public" aria-pressed="false"><span data-lang-en>Military</span><span data-lang-vn>Quân sự</span> <span class="tg-n">52</span></button><button class="tg" type="button" data-facet="klass" data-value="military_noncovered_public" aria-pressed="false"><span data-lang-en>Military · allied</span><span data-lang-vn>Quân sự · đồng minh</span> <span class="tg-n">39</span></button><button class="tg" type="button" data-facet="klass" data-value="commercial_noncovered_public" aria-pressed="false"><span data-lang-en>Commercial · allied</span><span data-lang-vn>Thương mại · đồng minh</span> <span class="tg-n">29</span></button><button class="tg" type="button" data-facet="klass" data-value="blue_public" aria-pressed="false"><span data-lang-en>Blue UAS cleared</span><span data-lang-vn>Blue UAS</span> <span class="tg-n">22</span></button><button class="tg" type="button" data-facet="klass" data-value="own_product" aria-pressed="false"><span data-lang-en>RtR product</span><span data-lang-vn>Sản phẩm RtR</span> <span class="tg-n">3</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Country</span><span data-lang-vn>Quốc gia</span></span><button class="tg" type="button" data-facet="country" data-value="United States" aria-pressed="false">United States <span class="tg-n">108</span></button><button class="tg" type="button" data-facet="country" data-value="China" aria-pressed="false">China <span class="tg-n">96</span></button><button class="tg" type="button" data-facet="country" data-value="Israel" aria-pressed="false">Israel <span class="tg-n">20</span></button><button class="tg" type="button" data-facet="country" data-value="Germany" aria-pressed="false">Germany <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="country" data-value="Turkey" aria-pressed="false">Turkey <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="country" data-value="Iran" aria-pressed="false">Iran <span class="tg-n">9</span></button><button class="tg" type="button" data-facet="country" data-value="France" aria-pressed="false">France <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="country" data-value="Russia" aria-pressed="false">Russia <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="country" data-value="Vietnam" aria-pressed="false">Vietnam <span class="tg-n">5</span></button><button class="tg" type="button" data-facet="country" data-value="Switzerland" aria-pressed="false">Switzerland <span class="tg-n">4</span></button><button class="tg" type="button" data-facet="country" data-value="Australia" aria-pressed="false">Australia <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Ireland" aria-pressed="false">Ireland <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Japan" aria-pressed="false">Japan <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Netherlands" aria-pressed="false">Netherlands <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Sweden" aria-pressed="false">Sweden <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="United Kingdom" aria-pressed="false">United Kingdom <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Austria" aria-pressed="false">Austria <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Brazil" aria-pressed="false">Brazil <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Bulgaria" aria-pressed="false">Bulgaria <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Estonia" aria-pressed="false">Estonia <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="India" aria-pressed="false">India <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Indonesia" aria-pressed="false">Indonesia <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Italy" aria-pressed="false">Italy <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Monaco" aria-pressed="false">Monaco <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Poland" aria-pressed="false">Poland <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Singapore" aria-pressed="false">Singapore <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="South Korea" aria-pressed="false">South Korea <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Thailand" aria-pressed="false">Thailand <span class="tg-n">1</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Compliance</span><span data-lang-vn>Tuân thủ</span></span><button class="tg" type="button" data-facet="flag" data-value="blue" aria-pressed="false">Blue UAS</button><button class="tg" type="button" data-facet="flag" data-value="ndaa" aria-pressed="false">NDAA</button></div><div class="facet-tools"><input id="reg-search" class="reg-search" type="search" autocomplete="off" aria-label="Search manufacturer or model" placeholder="maker / model…"><span class="reg-count" aria-live="polite"><span data-lang-en>Showing</span><span data-lang-vn>Hiển thị</span> <b id="reg-count-n">302</b> / 302</span><button class="tg" id="reg-sort" type="button" aria-label="Change sort order"></button></div></details>
+    <div class="reg-quick"><svg class="qicon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input id="reg-search" class="reg-search" type="search" autocomplete="off" aria-label="Search manufacturer or model" placeholder="maker / model…"><span class="reg-count" aria-live="polite"><span data-lang-en>Showing</span><span data-lang-vn>Hiển thị</span> <b id="reg-count-n">302</b> / 302</span><button class="tg" id="reg-sort" type="button" aria-label="Change sort order"></button></div><details class="facets" data-audit="facets"><summary><span data-lang-en>Filters</span><span data-lang-vn>Bộ lọc</span></summary><div class="facet-row"><span class="lbl"><span data-lang-en>Segment</span><span data-lang-vn>Phân khúc</span></span><button class="tg" type="button" data-facet="segment" data-value="military_tactical" aria-pressed="false"><span data-lang-en>Military · tactical</span><span data-lang-vn>Quân sự · chiến thuật</span> <span class="tg-n">91</span></button><button class="tg" type="button" data-facet="segment" data-value="enterprise" aria-pressed="false"><span data-lang-en>Enterprise</span><span data-lang-vn>Doanh nghiệp</span> <span class="tg-n">34</span></button><button class="tg" type="button" data-facet="segment" data-value="consumer" aria-pressed="false"><span data-lang-en>Consumer</span><span data-lang-vn>Tiêu dùng</span> <span class="tg-n">32</span></button><button class="tg" type="button" data-facet="segment" data-value="agriculture" aria-pressed="false"><span data-lang-en>Agriculture</span><span data-lang-vn>Nông nghiệp</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="defense_government" aria-pressed="false"><span data-lang-en>Defense · government</span><span data-lang-vn>Quốc phòng · chính phủ</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="delivery" aria-pressed="false"><span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span> <span class="tg-n">17</span></button><button class="tg" type="button" data-facet="segment" data-value="loitering_munition" aria-pressed="false"><span data-lang-en>Loitering munition</span><span data-lang-vn>Đạn tuần kích</span> <span class="tg-n">11</span></button><button class="tg" type="button" data-facet="segment" data-value="surveying" aria-pressed="false"><span data-lang-en>Surveying &amp; mapping</span><span data-lang-vn>Khảo sát · lập bản đồ</span> <span class="tg-n">11</span></button><button class="tg" type="button" data-facet="segment" data-value="passenger_uam" aria-pressed="false"><span data-lang-en>Passenger air taxi</span><span data-lang-vn>Taxi bay</span> <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="segment" data-value="fpv" aria-pressed="false"><span data-lang-en>FPV</span><span data-lang-vn>FPV</span> <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="segment" data-value="public_safety" aria-pressed="false"><span data-lang-en>Public safety</span><span data-lang-vn>An toàn công cộng</span> <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="segment" data-value="counter_uas" aria-pressed="false"><span data-lang-en>Counter-UAS</span><span data-lang-vn>Chống UAV</span> <span class="tg-n">6</span></button><button class="tg" type="button" data-facet="segment" data-value="cinema" aria-pressed="false"><span data-lang-en>Cinema</span><span data-lang-vn>Điện ảnh</span> <span class="tg-n">5</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Class</span><span data-lang-vn>Lớp</span></span><button class="tg" type="button" data-facet="klass" data-value="commercial_covered_public" aria-pressed="false"><span data-lang-en>Commercial · covered</span><span data-lang-vn>Thương mại · covered</span> <span class="tg-n">85</span></button><button class="tg" type="button" data-facet="klass" data-value="commercial_us_public" aria-pressed="false"><span data-lang-en>Commercial · US</span><span data-lang-vn>Thương mại · Mỹ</span> <span class="tg-n">72</span></button><button class="tg" type="button" data-facet="klass" data-value="competitor_military_public" aria-pressed="false"><span data-lang-en>Military</span><span data-lang-vn>Quân sự</span> <span class="tg-n">52</span></button><button class="tg" type="button" data-facet="klass" data-value="military_noncovered_public" aria-pressed="false"><span data-lang-en>Military · allied</span><span data-lang-vn>Quân sự · đồng minh</span> <span class="tg-n">39</span></button><button class="tg" type="button" data-facet="klass" data-value="commercial_noncovered_public" aria-pressed="false"><span data-lang-en>Commercial · allied</span><span data-lang-vn>Thương mại · đồng minh</span> <span class="tg-n">29</span></button><button class="tg" type="button" data-facet="klass" data-value="blue_public" aria-pressed="false"><span data-lang-en>Blue UAS cleared</span><span data-lang-vn>Blue UAS</span> <span class="tg-n">22</span></button><button class="tg" type="button" data-facet="klass" data-value="own_product" aria-pressed="false"><span data-lang-en>RtR product</span><span data-lang-vn>Sản phẩm RtR</span> <span class="tg-n">3</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Country</span><span data-lang-vn>Quốc gia</span></span><button class="tg" type="button" data-facet="country" data-value="United States" aria-pressed="false">United States <span class="tg-n">108</span></button><button class="tg" type="button" data-facet="country" data-value="China" aria-pressed="false">China <span class="tg-n">96</span></button><button class="tg" type="button" data-facet="country" data-value="Israel" aria-pressed="false">Israel <span class="tg-n">20</span></button><button class="tg" type="button" data-facet="country" data-value="Germany" aria-pressed="false">Germany <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="country" data-value="Turkey" aria-pressed="false">Turkey <span class="tg-n">10</span></button><button class="tg" type="button" data-facet="country" data-value="Iran" aria-pressed="false">Iran <span class="tg-n">9</span></button><button class="tg" type="button" data-facet="country" data-value="France" aria-pressed="false">France <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="country" data-value="Russia" aria-pressed="false">Russia <span class="tg-n">8</span></button><button class="tg" type="button" data-facet="country" data-value="Vietnam" aria-pressed="false">Vietnam <span class="tg-n">5</span></button><button class="tg" type="button" data-facet="country" data-value="Switzerland" aria-pressed="false">Switzerland <span class="tg-n">4</span></button><button class="tg" type="button" data-facet="country" data-value="Australia" aria-pressed="false">Australia <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Ireland" aria-pressed="false">Ireland <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Japan" aria-pressed="false">Japan <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Netherlands" aria-pressed="false">Netherlands <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Sweden" aria-pressed="false">Sweden <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="United Kingdom" aria-pressed="false">United Kingdom <span class="tg-n">2</span></button><button class="tg" type="button" data-facet="country" data-value="Austria" aria-pressed="false">Austria <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Brazil" aria-pressed="false">Brazil <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Bulgaria" aria-pressed="false">Bulgaria <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Estonia" aria-pressed="false">Estonia <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="India" aria-pressed="false">India <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Indonesia" aria-pressed="false">Indonesia <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Italy" aria-pressed="false">Italy <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Monaco" aria-pressed="false">Monaco <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Poland" aria-pressed="false">Poland <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Singapore" aria-pressed="false">Singapore <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="South Korea" aria-pressed="false">South Korea <span class="tg-n">1</span></button><button class="tg" type="button" data-facet="country" data-value="Thailand" aria-pressed="false">Thailand <span class="tg-n">1</span></button></div><div class="facet-row"><span class="lbl"><span data-lang-en>Compliance</span><span data-lang-vn>Tuân thủ</span></span><button class="tg" type="button" data-facet="flag" data-value="blue" aria-pressed="false">Blue UAS</button><button class="tg" type="button" data-facet="flag" data-value="ndaa" aria-pressed="false">NDAA</button></div></details>
     <div class="index-list">
 <a class="row-item reveal" href="#d-uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican" data-audit="row" data-name="a2z drone delivery rdsx pelican" data-segment="delivery" data-klass="commercial_us_public" data-country="United States" data-blue="" data-ndaa=""><span class="ri-glyph"><svg class="glyph-svg glyph-sm" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="vtol"><path class="bp-line" d="M50 20 C47 20 45 26 45 36 L45 62 C45 72 47 78 50 78 C53 78 55 72 55 62 L55 36 C55 26 53 20 50 20Z"/><path class="bp-line" d="M12 46 C28 43 40 42 50 42 C60 42 72 43 88 46 C72 49 60 50 50 50 C40 50 28 49 12 46Z"/><line class="bp-line" x1="30" y1="30" x2="30" y2="70"/><line class="bp-line" x1="70" y1="30" x2="70" y2="70"/><circle class="bp-disc" cx="30" cy="30" r="8"/><circle class="bp-disc" cx="30" cy="70" r="8"/><circle class="bp-disc" cx="70" cy="30" r="8"/><circle class="bp-disc" cx="70" cy="70" r="8"/></svg></span><span class="ri-name"><b>A2Z Drone Delivery</b> <span class="ri-model">RDSX Pelican</span></span><span class="ri-meta mono">United States · <span data-lang-en>Delivery</span><span data-lang-vn>Giao hàng</span> · <span data-lang-en>Commercial · US</span><span data-lang-vn>Thương mại · Mỹ</span></span><span class="ri-pips" title="4/7 spec" aria-label="4/7 spec có số"><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i></span><span class="ri-flags"></span></a>
 <a class="row-item reveal" href="#d-uav-acecore-neo-neo" data-audit="row" data-name="acecore neo" data-segment="" data-klass="commercial_noncovered_public" data-country="Netherlands" data-blue="" data-ndaa=""><span class="ri-glyph"><svg class="glyph-svg glyph-sm" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="octo"><line class="bp-line" x1="50" y1="50" x2="50.0" y2="17.0"/><circle class="bp-disc" cx="50.0" cy="17.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="73.3" y2="26.7"/><circle class="bp-disc" cx="73.3" cy="26.7" r="7"/><line class="bp-line" x1="50" y1="50" x2="83.0" y2="50.0"/><circle class="bp-disc" cx="83.0" cy="50.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="73.3" y2="73.3"/><circle class="bp-disc" cx="73.3" cy="73.3" r="7"/><line class="bp-line" x1="50" y1="50" x2="50.0" y2="83.0"/><circle class="bp-disc" cx="50.0" cy="83.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="26.7" y2="73.3"/><circle class="bp-disc" cx="26.7" cy="73.3" r="7"/><line class="bp-line" x1="50" y1="50" x2="17.0" y2="50.0"/><circle class="bp-disc" cx="17.0" cy="50.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="26.7" y2="26.7"/><circle class="bp-disc" cx="26.7" cy="26.7" r="7"/><circle class="bp-line" cx="50" cy="50" r="6"/></svg></span><span class="ri-name"><b>Acecore</b> <span class="ri-model">Neo</span></span><span class="ri-meta mono">Netherlands · — · <span data-lang-en>Commercial · allied</span><span data-lang-vn>Thương mại · đồng minh</span></span><span class="ri-pips" title="2/7 spec" aria-label="2/7 spec có số"><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></span><span class="ri-flags"></span></a>
@@ -5393,9 +5687,43 @@ small, .small { font-size: .82rem; }
     apply();
   }
 
+  /* TIP-HERO-LIVE — homepage featured rotator. Cross-dissolve via display-toggle so only the active
+     slide is in layout at rest (overlap-safe). Pauses on hover; dots jump; reduced-motion shows a
+     static slide and never auto-rotates (consistent with Mode L pulse/scan). */
+  function initLiveHero() {
+    var hero = document.getElementById("lhero"); if (!hero) return;
+    var DUR = 6000;
+    var slides = Array.prototype.slice.call(hero.querySelectorAll(".lhero-slide"));
+    var dots = Array.prototype.slice.call(hero.querySelectorAll(".lhero-dot"));
+    var fill = document.getElementById("lhero-fill");
+    var n = slides.length, cur = 0, timer = null, paused = false;
+    if (n < 2) return;
+    var reduce = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function show(idx) {
+      var prev = cur; cur = ((idx % n) + n) % n; if (prev === cur) return;
+      var inEl = slides[cur], outEl = slides[prev];
+      inEl.classList.add("show"); void inEl.offsetWidth; inEl.classList.add("active");
+      outEl.classList.remove("active");
+      setTimeout(function () { if (!outEl.classList.contains("active")) outEl.classList.remove("show"); }, 840);
+      for (var k = 0; k < dots.length; k++) dots[k].classList.toggle("on", k === cur);
+    }
+    function bar() { if (reduce || !fill) return; fill.classList.remove("run"); void fill.offsetWidth;
+      fill.style.setProperty("--dur", DUR + "ms"); fill.classList.add("run"); }
+    function tick() { if (!paused) { show(cur + 1); bar(); } }
+    function start() { if (reduce) return; bar(); timer = setInterval(tick, DUR); }
+    function restart() { if (reduce) return; clearInterval(timer); bar(); timer = setInterval(tick, DUR); }
+    for (var k = 0; k < dots.length; k++) (function (k) {
+      dots[k].addEventListener("click", function () { show(k); restart(); });
+    })(k);
+    hero.addEventListener("mouseenter", function () { paused = true; if (fill) fill.style.animationPlayState = "paused"; });
+    hero.addEventListener("mouseleave", function () { paused = false; if (fill) fill.style.animationPlayState = "running"; });
+    if (!reduce) start();
+  }
+
   root.USRBase = { arrow: arrow, mountArrows: mountArrows, designerAudit: designerAudit,
                    initTheme: initTheme, initI18n: initI18n, initReveal: initReveal,
-                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup };
+                   initDraw: initDraw, initRegistry: initRegistry, initCountup: initCountup,
+                   initLiveHero: initLiveHero };
 })(window);
 
 </script>

@@ -13,7 +13,8 @@ from footer import footer
 from nav import nav
 from header import header
 from pagenav import pagenav
-from graphic import lead_graphic
+from graphic import lead_graphic, feed_figure, figure_is_data
+import urllib.parse
 from seo import meta as seo_meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -237,38 +238,210 @@ def articles_for(tag):
     return [fm for fm, _ in load_articles() if tag in (fm.get("entity_tags") or [])]
 
 
+
+REGION = {"lae-cn": ("China", "Trung Quốc"), "lae-trung-quoc": ("China", "Trung Quốc"),
+          "lae-tg": ("World", "Thế giới"), "lae-the-gioi": ("World", "Thế giới"),
+          "lae-vn": ("Vietnam", "Việt Nam")}
+
+
+def _region(slug):
+    for pre, (en, vn) in REGION.items():
+        if slug.startswith(pre):
+            return en, vn
+    return None, None
+
+
+def _src(fm):
+    """First source as a provenance label: host + tier. None if the article carries no source."""
+    srcs = fm.get("sources") or []
+    if not srcs:
+        return None
+    s0 = srcs[0]
+    host = urllib.parse.urlparse(s0.get("url", "")).netloc.replace("www.", "") or "—"
+    return {"host": host, "tier": str(s0.get("tier", "?")), "n": len(srcs)}
+
+
+def _date_short(d):
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", str(d or ""))
+    return f"{m.group(3)}.{m.group(2)}" if m else str(d or "")
+
+
+def _status_tag(fm):
+    g = fm.get("graphic") or {}
+    st = g.get("status")
+    if not st:
+        return ""
+    low = str(st).lower()
+    is_t = bool(g.get("target")) or any(k in low for k in ("mục tiêu", "dự kiến", "kế hoạch"))
+    cls = "tag-target" if is_t else "tag-actual"
+    return f'<span class="{cls}">{esc(st)}</span>'
+
+
+def _kicker(fm):
+    kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
+    ren, rvn = _region(fm["slug"])
+    if ren:
+        return bilingual(f"{kl_en} · {ren}", f"{kl_vn} · {rvn}")
+    return bilingual(kl_en, kl_vn)
+
+
+def _meta(fm):
+    """Source-first meta line: SOURCE · TIER · [target/actual] · DATE — all from the article's own data."""
+    s = _src(fm)
+    out = ""
+    if s:
+        tcls = "tier" if s["tier"].startswith("A") else "tier bb"
+        out += (f'<span class="src">{bilingual("Source", "Nguồn")} {esc(s["host"])}</span>'
+                f'<span class="{tcls}">✓{esc(s["tier"])}</span>')
+    out += _status_tag(fm)
+    out += f'<span class="mdate">{esc(_date_short(fm.get("date")))}</span>'
+    return out
+
+
+def _figcap(fm):
+    """Caption under a figure. Data-figure → real source+tier. Honest-null glyph → 'minh hoạ', no source claim."""
+    g = fm.get("graphic") or {}
+    if figure_is_data(fm):
+        s = _src(fm)
+        cap = esc(g.get("caption", "")) if g.get("kind") == "chart" else ""
+        prov = f'{bilingual("Source","Nguồn")} {esc(s["host"])} · ✓{esc(s["tier"])}' if s else ""
+        return cap, prov
+    kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
+    return "", bilingual(f"Illustration · {kl_en}", f"Minh hoạ · {kl_vn}")
+
+
+def _figttl(fm):
+    g = fm.get("graphic") or {}
+    if g.get("kind") == "chart":
+        return esc(g.get("title", ""))
+    if g.get("kind") == "count":
+        return esc(g.get("label", ""))
+    if g.get("kind") == "compare":
+        return bilingual("Comparison", "So sánh")
+    return bilingual("Classification", "Phân loại")
+
+
+def _weight(fb):
+    fm = fb[0]
+    k = (fm.get("graphic") or {}).get("kind")
+    w = 100 if k == "chart" else 60 if k in ("count", "compare") else 0
+    s = _src(fm)
+    if s and s["tier"].startswith("A"):
+        w += 10
+    return (w, str(fm.get("date", "")))
+
+
+def _lead_html(fm):
+    cap, prov = _figcap(fm)
+    return (
+        '<article class="lead">'
+        '<div class="lead-body">'
+        f'<span class="kicker">{_kicker(fm)}</span>'
+        f'<h2><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h2>'
+        + (f'<p class="dek">{esc(fm.get("dek"))}</p>' if fm.get("dek") else "")
+        + f'<div class="meta">{_meta(fm)}</div>'
+        '</div>'
+        '<aside class="figure">'
+        f'<div class="figttl">{_figttl(fm)}</div>'
+        f'{feed_figure(fm, "lead")}'
+        f'<div class="cap"><span>{cap}</span><span class="src">{prov}</span></div>'
+        '</aside></article>')
+
+
+def _sec_html(fm, idx):
+    cap, prov = _figcap(fm)
+    return (
+        '<article class="sec">'
+        f'<a class="thumb" href="news/{esc(fm["slug"])}.html">{feed_figure(fm, "thumb")}'
+        f'<span class="tlbl">{prov or cap}</span></a>'
+        f'<span class="kicker">{_kicker(fm)}</span>'
+        f'<h3><span class="idx">{idx:02d}</span><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h3>'
+        f'<div class="meta">{_meta(fm)}</div></article>')
+
+
+def _brief_html(fm):
+    return (
+        '<article class="brief">'
+        f'<a class="bthumb" href="news/{esc(fm["slug"])}.html">{feed_figure(fm, "brief")}</a>'
+        '<div class="brief-main">'
+        f'<div class="brief-top"><span class="k">{_kicker(fm)}</span>'
+        f'<span class="bt">{esc(_date_short(fm.get("date")))}</span></div>'
+        f'<h4><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h4>'
+        f'<div class="meta">{_meta(fm)}</div></div></article>')
+
+
+STREAM_N = 6   # the "Latest" rail size — tuned so the rail ≈ lead+secondary height (no column void);
+               # the REST auto-fill the full-width "More" tier (grows with the registry, never hardcoded)
+
+
+def _more_html(fm):
+    """A dense river row — kicker · headline · source+tier · date · small glyph. List, not figure
+    (preserves the lead/secondary > More hierarchy). Carries the same provenance as every other item."""
+    return (
+        '<article class="mrow">'
+        f'<a class="mg" href="news/{esc(fm["slug"])}.html">{feed_figure(fm, "brief")}</a>'
+        '<div class="m-main">'
+        f'<span class="kicker">{_kicker(fm)}</span>'
+        f'<h4><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h4>'
+        f'<div class="meta">{_meta(fm)}</div></div></article>')
+
+
 def render_index(arts):
-    items = ""
-    for fm, _ in arts:
-        kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
-        items += (f'<li><a href="news/{esc(fm["slug"])}.html"><span class="kind">{bilingual(kl_en, kl_vn)}</span>'
-                  f'<span class="t">{esc(fm["title"])}</span>'
-                  f'<span class="dt">{esc(str(fm.get("date", "")))}</span></a></li>')
+    ranked = sorted(arts, key=_weight, reverse=True)
+    lead_fm = ranked[0][0]
+    sec_fms = [fb[0] for fb in ranked[1:3]]
+    chosen = {lead_fm["slug"], *(f["slug"] for f in sec_fms)}
+    rest = [fm for fm, _ in arts if fm["slug"] not in chosen]            # remainder, newest-first
+    stream = rest[:STREAM_N]                                            # the "Latest" rail
+    more = rest[STREAM_N:]                                              # AUTO-FILL the tail: all that is left
+    updated = max((str(fm.get("date", "")) for fm, _ in arts if re.match(r"\d{4}-", str(fm.get("date", "")))),
+                  default="")
+    lead_html = _lead_html(lead_fm)
+    sec_html = "".join(_sec_html(fm, i + 2) for i, fm in enumerate(sec_fms))
+    brief_html = "".join(_brief_html(fm) for fm in stream)
+    more_html = "".join(_more_html(fm) for fm in more)
+    more_block = (f'<section class="more"><div class="more-h">'
+                  f'<span>{bilingual("More from the record", "Thêm trong hồ sơ")}</span>'
+                  f'<span class="live">{len(more)}</span></div>'
+                  f'<div class="more-grid">{more_html}</div></section>') if more else ""
+    n = len(arts)
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Newsroom — USR</title>
-{seo_meta("Newsroom — USR", "Objective, sourced articles over the registry: data notes, explainers, profiles and reports.", "news.html")}
+{seo_meta("Newsroom — USR", "Objective, sourced coverage over the registry — every item carries its source, every figure is generated from data.", "news.html")}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
-<style>{NR_CSS}
-  .nidx{{list-style:none;margin:1.4rem 0 0;padding:0}}
-  .nidx li{{border-bottom:1px solid var(--hair)}}
-  .nidx a{{display:grid;grid-template-columns:7.5rem 1fr auto;gap:1rem;align-items:baseline;padding:.9rem 0;text-decoration:none;color:inherit}}
-  .nidx a:hover .t{{color:var(--brass)}}
-  .nidx .kind{{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}}
-  .nidx .t{{font-family:var(--font-head);font-weight:600;font-size:1.02rem;line-height:1.25}}
-  .nidx .dt{{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}}
-</style>
 </head>
 <body>
 {header("", "newsroom")}
-<main class="nwrap">
-  <header class="nh"><div class="kind">{bilingual("Newsroom", "Bài viết")}</div>
-    <h1>{bilingual("Objective coverage over the registry", "Bài viết khách quan trên bản đăng ký")}</h1>
-    <div class="by">{bilingual("Data notes, explainers, profiles and reports — every figure traces to the registry.", "Ghi chú dữ liệu, giải thích, hồ sơ và báo cáo — mọi con số truy về registry.")}</div></header>
-  <ul class="nidx">{items}</ul>
+<main class="nfeed">
+  <div class="mast">
+    <div class="mast-l"><span class="mast-no">01</span><h1>{bilingual("Newsroom", "Bài viết")}</h1></div>
+    <span class="mast-date">{bilingual("Low-altitude economy record", "Bản ghi kinh tế tầm thấp")}</span>
+  </div>
+  <div class="subrule">
+    <span>{bilingual("Updated", "Cập nhật")} {esc(_date_short(updated))}</span>
+    <span>{bilingual(f"{n} articles · every item is sourced · every figure is generated from data",
+                     f"{n} bài · mỗi mục mang nguồn · mỗi hình sinh từ dữ liệu")}</span>
+  </div>
+  <div class="frame">
+    <div class="col-lead">
+      {lead_html}
+      <div class="secondary">{sec_html}</div>
+    </div>
+    <div class="col-stream">
+      <div class="stream-h"><span>{bilingual("Latest", "Mới nhất")}</span><span class="live">{bilingual("Record stream", "Dòng hồ sơ")}</span></div>
+      {brief_html}
+    </div>
+  </div>
+  {more_block}
+  <div class="allcta">
+    <span class="lbl">{bilingual("Every item traces to a source; figures are drawn from the registry, never borrowed.",
+                                 "Mỗi mục truy về một nguồn; hình vẽ từ registry, không mượn ảnh.")}</span>
+    <a class="btn" href="reference.html">{bilingual("Browse the registry", "Duyệt registry")} <span class="arr">→</span></a>
+  </div>
 </main>
 {footer("")}
 <script src="base/base.js"></script>
@@ -276,6 +449,24 @@ def render_index(arts):
 </body>
 </html>
 """
+
+
+def homepage_news_block(prefix=""):
+    """Compact newsroom frame for the homepage: one lead (with figure) + three side items + link.
+    Same source-first treatment; figures generated from data. Articles auto-pick newest/strongest."""
+    arts = load_articles()
+    if not arts:
+        return ""
+    ranked = sorted(arts, key=_weight, reverse=True)
+    lead_fm = ranked[0][0]
+    side = [fb[0] for fb in ranked[1:5]]   # fill the column beside the lead (avoid empty space)
+    items = "".join(
+        f'<article class="hl-item"><span class="kicker">{_kicker(fm)}</span>'
+        f'<h4><a href="{prefix}news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h4>'
+        f'<div class="meta">{_meta(fm)}</div></article>' for fm in side)
+    return (f'<div class="nfeed nfeed-mini">'
+            f'<div class="frame"><div class="col-lead">{_lead_html(lead_fm)}</div>'
+            f'<div class="col-side">{items}</div></div></div>')
 
 
 def main():

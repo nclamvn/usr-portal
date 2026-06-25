@@ -173,8 +173,13 @@ def render_facets(ents, labels):
         f'<button class="tg" type="button" data-facet="flag" data-value="blue" aria-pressed="false">Blue UAS</button>'
         f'<button class="tg" type="button" data-facet="flag" data-value="ndaa" aria-pressed="false">NDAA</button>'
         f'</div>')
-    tools = (
-        f'<div class="facet-tools">'
+    # Always-visible QUICK SEARCH box (replaces the empty collapsed-details rectangle): a real input the
+    # eye reads as interactive. Same #reg-search id → the existing client filter logic keeps working.
+    quick = (
+        f'<div class="reg-quick">'
+        f'<svg class="qicon" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
+        f'<circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/>'
+        f'<path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>'
         f'<input id="reg-search" class="reg-search" type="search" autocomplete="off" '
         f'aria-label="Search manufacturer or model" placeholder="maker / model…">'
         f'<span class="reg-count" aria-live="polite">{bilingual("Showing", "Hiển thị")} '
@@ -182,12 +187,13 @@ def render_facets(ents, labels):
         f'<button class="tg" id="reg-sort" type="button" aria-label="Change sort order"></button>'
         f'</div>')
     return (
-        f'<details class="facets" data-audit="facets">'
-        f'<summary>{bilingual("Filter", "Lọc")}</summary>'
+        quick
+        + f'<details class="facets" data-audit="facets">'
+        f'<summary>{bilingual("Filters", "Bộ lọc")}</summary>'
         + facet_row("Segment", "Phân khúc", "segment", "segment", seg, labels)
         + facet_row("Class", "Lớp", "klass", "klass", klass, labels)
         + facet_row("Country", "Quốc gia", "country", None, country, labels)
-        + flag_row + tools + '</details>')
+        + flag_row + '</details>')
 
 
 def main():

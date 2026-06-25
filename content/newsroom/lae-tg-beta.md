@@ -7,6 +7,11 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
+graphic:
+  kind: count
+  value: "140.000+"
+  label: "hải lý tích lũy"
+  status: "đã bay"
 sources:
   - { claim: "BETA Technologies là nhà sản xuất máy bay điện ALIA, gồm cả bản cánh cố định và bản eVTOL", url: "https://investors.beta.team/news-events/press-releases/detail/94/beta-technologies-inc-announces-third-quarter-2025-results", tier: "A" }
   - { claim: "BETA báo đội bay ALIA đã bay hơn 140.000 hải lý, gồm nhiều chuyến xuyên nước Mỹ", url: "https://investors.beta.team/news-events/press-releases/detail/94/beta-technologies-inc-announces-third-quarter-2025-results", tier: "A" }

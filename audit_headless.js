@@ -174,14 +174,21 @@ async function main() {
     // (field + lead headline + a field-file card linking to a real detail page).
     await send("Page.navigate", { url: BASE + "/index.html" });
     await sleep(800);
-    const hero = await evalOnPage(send, `(() => ({
-      field: !!document.querySelector('.field'),
-      lead: !!document.querySelector('.lead-h'),
-      ff: !!document.querySelector('.field a.readmore[href^="entity/"]')
-    }))()`);
-    const heroOk = hero.field && hero.lead && hero.ff;
+    // HERO is now the live featured rotator (TIP-HERO-LIVE): the manifesto slide keeps .lead-h; the
+    // article slides carry source+tier figures; a CTA leads into the registry. Only one slide is in
+    // layout at rest (display:none others) — the overlap sweep above already proves that holds.
+    const hero = await evalOnPage(send, `(() => {
+      var slides = document.querySelectorAll('.lhero .lhero-slide');
+      var sourced = Array.prototype.slice.call(slides).filter(s => s.querySelector('.tier') && s.querySelector('.nf-svg, svg')).length;
+      var inLayout = Array.prototype.slice.call(slides).filter(s => s.getBoundingClientRect().height > 0).length;
+      return { lhero: !!document.querySelector('.lhero'), lead: !!document.querySelector('.lhero .lead-h'),
+               slides: slides.length, sourced: sourced, inLayout: inLayout,
+               cta: !!document.querySelector('.lhero-foot[href="reference.html"]') };
+    })()`);
+    const heroOk = hero.lhero && hero.lead && hero.slides >= 3 && hero.sourced >= 2 && hero.cta && hero.inLayout === 1;
     if (!heroOk) failures++;
-    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  field=${hero.field}  lead=${hero.lead}  field-file→detail=${hero.ff}`);
+    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  rotator=${hero.lhero}  manifesto=${hero.lead}  ` +
+      `slides=${hero.slides}  sourced=${hero.sourced}  in-layout-at-rest=${hero.inLayout}  cta=${hero.cta}`);
 
     // FILTERED state on reference.html — functional + perf + honest-null gate.
     await send("Page.navigate", { url: BASE + "/reference.html" });
@@ -364,6 +371,72 @@ async function main() {
       if (!ok) failures++;
       console.log(`  ${ok ? "PASS" : "FAIL"}  /news/${nslug}  [light/en]  overlaps=${r.hits.length}`);
     } else { failures++; console.log("  FAIL  news page: no slug"); }
+
+    // MONITOR (Mode L world map, TIP-L1) — overlap-clean + points plotted + ZERO svg <text>
+    // (the discipline that keeps the audit honest) + a real point opens its provenance panel with
+    // an http(s) source link. Proves the new surface holds every invariant.
+    try {
+      await send("Page.navigate", { url: BASE + "/monitor.html" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const pins = await evalOnPage(send, `document.querySelectorAll('.mon-pin[data-name]').length`);
+        const texts = await evalOnPage(send, `document.querySelectorAll('.mon-svg text').length`);
+        const opened = await evalOnPage(send, `(function(){var g=document.querySelector('.mon-pin[data-url]');if(!g)return false;g.dispatchEvent(new MouseEvent('click',{bubbles:true}));var p=document.getElementById('mon-panel');return !p.hidden && document.getElementById('mp-name').textContent.length>0 && document.getElementById('mp-link').getAttribute('href').indexOf('http')===0;})()`);
+        const ok = r.hits.length === 0 && pins >= 15 && texts === 0 && opened;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /monitor  [${theme}/${lang}]  overlaps=${r.hits.length}  points=${pins}  svg-text=${texts}  panel→source=${opened}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  monitor page: " + e.message); }
+
+    // NEWSROOM FEED (news.html, TIP-NEWSROOM) — editorial frame: overlap-clean + lead/secondary carry
+    // source+tier+figure + ZERO borrowed image (every figure is inline SVG generated from data).
+    try {
+      // measure at DESKTOP width — the column-balance/void only exists in the >=920px two-column layout
+      await send("Emulation.setDeviceMetricsOverride", { width: 1280, height: 1100, deviceScaleFactor: 1, mobile: false });
+      await send("Page.navigate", { url: BASE + "/news.html" });
+      await sleep(900);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const m = await evalOnPage(send, `(function(){
+          var lead=document.querySelector('article.lead');
+          var leadOk = !!lead && !!lead.querySelector('.tier') && !!lead.querySelector('.nf-svg');
+          var secs=[].slice.call(document.querySelectorAll('article.sec'));
+          var secOk = secs.length>=2 && secs.every(function(s){return s.querySelector('.tier')&&s.querySelector('.nf-svg');});
+          var figs=document.querySelectorAll('.nf-svg').length;
+          var extImg=[].slice.call(document.querySelectorAll('img')).filter(function(i){return !/^base\\//.test(i.getAttribute('src')||'');}).length;
+          var mrows=[].slice.call(document.querySelectorAll('.mrow'));
+          var moreSourced = mrows.length>0 && mrows.every(function(r){return r.querySelector('.tier');});
+          // void: with align-items:start each column is its own content height; the two should be
+          // close so neither half leaves a big empty band (the bug TIP-NEWSROOM.1 fixes).
+          var cl=document.querySelector('.col-lead'), cs=document.querySelector('.col-stream');
+          var voidPx = (cl&&cs) ? Math.abs(cl.getBoundingClientRect().height - cs.getBoundingClientRect().height) : 999;
+          return {leadOk:leadOk, secOk:secOk, figs:figs, extImg:extImg, more:mrows.length, moreSourced:moreSourced, voidPx:Math.round(voidPx)};
+        })()`);
+        const ok = r.hits.length === 0 && m.leadOk && m.secOk && m.figs >= 3 && m.extImg === 0 &&
+          m.more > 0 && m.moreSourced && m.voidPx < 170;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /news.html  [${theme}/${lang}]  overlaps=${r.hits.length}  ` +
+          `lead=${m.leadOk}  secondary=${m.secOk}  figures=${m.figs}  more=${m.more}(sourced=${m.moreSourced})  ` +
+          `void=${m.voidPx}px  borrowed-img=${m.extImg}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  newsroom feed: " + e.message); }
+
+    // HOMEPAGE newsroom block (TIP-NEWSROOM.1 STEP 2) — the compact editorial frame replaced the old
+    // card-grid: assert .nfeed-mini present with a sourced lead figure, and ZERO legacy .nr-card.
+    try {
+      await send("Page.navigate", { url: BASE + "/index.html" });
+      await sleep(800);
+      const h = await evalOnPage(send, `(function(){
+        var mini=document.querySelector('.nfeed-mini');
+        return {mini:!!mini, leadFig:!!(mini&&mini.querySelector('.nf-svg')&&mini.querySelector('.tier')),
+                oldCards:document.querySelectorAll('.nr-card').length};
+      })()`);
+      const ok = h.mini && h.leadFig && h.oldCards === 0;
+      if (!ok) failures++;
+      console.log(`  ${ok ? "PASS" : "FAIL"}  /index.html  [home-news]  nfeed-mini=${h.mini}  sourced-lead=${h.leadFig}  legacy-cards=${h.oldCards}`);
+    } catch (e) { failures++; console.log("  FAIL  homepage news block: " + e.message); }
+    await send("Emulation.clearDeviceMetricsOverride");
 
     // TEETH: inject a deliberate overlap on index.html — must be caught.
     await send("Page.navigate", { url: BASE + "/index.html" });

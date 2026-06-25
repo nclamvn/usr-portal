@@ -7,6 +7,13 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
+graphic:
+  kind: chart
+  title: "Quy mô · nghìn tỷ ¥"
+  bars:
+    - { label: "2025", value: 1.5, kind: actual }
+    - { label: "2035", value: 3.5, kind: target }
+  caption: "Cột đặc = ước tính · cột rỗng nét đứt = mục tiêu"
 sources:
   - { claim: "Cơ quan hàng không dân dụng Trung Quốc dự báo quy mô tăng từ 1,5 nghìn tỷ nhân dân tệ năm 2025 lên 3,5 nghìn tỷ nhân dân tệ năm 2035", url: "https://news.cgtn.com/news/2026-05-27/Can-China-grow-its-low-altitude-economy-from-1-5-tln-to-3-5-tln-yuan--1No1thCOPBe/p.html", tier: "B" }
 ---

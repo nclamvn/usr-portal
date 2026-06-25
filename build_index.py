@@ -18,7 +18,9 @@ from glyphs import glyph_svg
 from nav import nav
 from header import header
 from seo import meta as seo_meta
-from build_newsroom import load_articles, TYPE_LABEL
+from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
+from build_monitor import monitor_teaser
+from graphic import feed_figure
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -280,7 +282,7 @@ def featured_systems(ents, groups, labels):
             f'<div class="fsys-top"><span class="fsys-g">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}</span>'
             f'<span class="fsys-kb">{seg}</span></div>'
             f'<b class="fsys-nm"><span class="fsys-mk">{esc(maker)}</span>{esc(model)}</b>'
-            f'<div class="fsys-ft"><span class="fsys-mt">{esc(country)} · {bilingual("Evidence", "Bằng chứng")} {esc(tier)}</span>'
+            f'<div class="fsys-ft"><span class="fsys-mt">{esc(country)} · {bilingual("Evidence", "Bằng chứng")} <b class="fsys-tier">{esc(tier)}</b></span>'
             f'{badge}<span class="fsys-go">{ARROW}</span></div></a>')
     return f'<div class="fsys-grid">{cards}</div>'
 
@@ -318,6 +320,63 @@ def pick_featured(ents, groups, k=3):
     return out
 
 
+def live_hero(site, f, labels):
+    """TIP-HERO-LIVE — a live featured rotator that replaces the static hero. Slide 0 keeps the
+    positioning manifesto (statement + brand blueprint); slides 1..N are the strongest featured
+    articles, each carrying source+tier and a figure GENERATED FROM DATA (feed_figure honest-null,
+    never a borrowed image). Inactive slides are display:none at REST (overlap-safe); the brand row +
+    live stats + footer are the fixed anchors. Auto-rotates (pause on hover, dots, reduced-motion off)."""
+    ranked = sorted(load_articles(), key=_weight, reverse=True)
+    feats = [fm for fm, _ in ranked[:4]]
+    n, countries, coverage = f["entities"], len(f["country_rank"]), f["coverage"]
+    slides = [
+        '<article class="lhero-slide active show" data-i="0">'
+        '<div class="lhero-text">'
+        f'<div class="s-kicker">{bilingual("Field Intelligence", "Trên thực địa")}</div>'
+        f'<h1 class="s-title lead-h">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>'
+        f'<p class="s-dek">{bilingual("How verified data changes a real decision — explained plainly, for the people who have to make the call.", "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích rõ ràng cho người phải ra quyết định.")}</p>'
+        f'<a class="s-cta" href="reference.html">{bilingual("All field files", "Tất cả hồ sơ")} →</a>'
+        '</div>'
+        f'<div class="lhero-fig"><div class="lhero-plate">{blueprint_svg()}'
+        f'<span class="plate-lbl">{bilingual("USR · field schematic", "USR · sơ đồ trường")}</span></div></div>'
+        '</article>']
+    for k, fm in enumerate(feats, 1):
+        dek = f'<p class="s-dek">{esc(fm.get("dek"))}</p>' if fm.get("dek") else ""
+        slides.append(
+            f'<article class="lhero-slide" data-i="{k}">'
+            '<div class="lhero-text">'
+            f'<div class="s-kicker">{_kicker(fm)}</div>'
+            f'<h1 class="s-title"><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h1>'
+            f'{dek}<div class="s-meta">{_meta(fm)}</div>'
+            '</div>'
+            f'<div class="lhero-fig"><div class="lhero-plate">{feed_figure(fm, "lead")}'
+            f'<span class="plate-lbl">{bilingual("USR · generated from data", "USR · sinh từ dữ liệu")}</span></div></div>'
+            '</article>')
+    dots = "".join(f'<button class="lhero-dot{" on" if k == 0 else ""}" data-dot="{k}" '
+                   f'type="button" aria-label="Slide {k+1}"></button>' for k in range(len(slides)))
+    stats = (
+        '<div class="lhero-stats">'
+        f'<div class="lhero-stat"><div class="n" data-countup style="min-width:{len(str(n))}ch">{n}</div>'
+        f'<div class="l">{bilingual("Verified systems", "Hệ thống đã kiểm")}</div></div>'
+        f'<div class="lhero-stat"><div class="n" data-countup style="min-width:{len(str(countries))}ch">{countries}</div>'
+        f'<div class="l">{bilingual("Countries", "Quốc gia")}</div></div>'
+        f'<div class="lhero-stat"><div class="n">{coverage}%</div>'
+        f'<div class="l">{bilingual("Spec coverage", "Độ phủ spec")}</div></div>'
+        '</div>')
+    return (
+        '<section class="lhero" data-audit="hero" id="lhero">'
+        '<div class="lhero-brand">'
+        f'<div class="lhero-bk"><span class="bar"></span>{bilingual("Field Intelligence · Featured", "Trên thực địa · Nổi bật")}</div>'
+        '<div class="lhero-auto">'
+        f'<span class="lhero-autolbl"><span class="pulse">●</span> {bilingual("Auto · hover to pause", "Tự cuộn · rê để dừng")}</span>'
+        f'<div class="lhero-dots">{dots}</div></div></div>'
+        f'<div class="lhero-stage">{"".join(slides)}</div>'
+        '<div class="lhero-progress"><div class="lhero-fill" id="lhero-fill"></div></div>'
+        f'<div class="lhero-bot">{stats}'
+        f'<a class="lhero-foot" href="reference.html">{bilingual("All records", "Toàn bộ hồ sơ")} <span class="arr">{ARROW}</span></a>'
+        '</div></section>')
+
+
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
@@ -342,7 +401,8 @@ def main():
         f'<div class="s"><b class="v">{coverage}%</b>'
         f'<span class="k">{bilingual("Spec coverage", "Độ phủ spec")}</span></div>'
         '</div>')
-    newsroom_block = real_newsroom_block(".")        # REAL factual articles only (no samples/opinion)
+    newsroom_block = homepage_news_block("")         # compact editorial frame (TIP-NEWSROOM.1), not card-grid
+    live_hero_html = live_hero(site, f, labels)       # TIP-HERO-LIVE — live featured rotator
     masthead = render_masthead(f, labels)
     featured_html = featured_systems(ents, groups, labels)   # 02 · Browse — real systems preview
 
@@ -445,19 +505,23 @@ def main():
   @media (max-width:760px){{.nr-grid2{{grid-template-columns:1fr}}}}
   /* 02 · Browse — featured real systems (pure-value cards, hairline grid) */
   .browse-lead{{font-family:var(--font-head);font-size:1.05rem;color:var(--muted);max-width:54ch;margin:14px 0 0}}
-  .fsys-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:0 30px;border-top:1px solid var(--hair-strong);margin-top:22px}}
+  .fsys-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:0 14px;border-top:1px solid var(--hair-strong);margin-top:22px}}
   @media (max-width:860px){{.fsys-grid{{grid-template-columns:repeat(2,1fr)}}}}
   @media (max-width:560px){{.fsys-grid{{grid-template-columns:1fr}}}}
-  .fsys{{display:flex;flex-direction:column;gap:12px;padding:22px 0 22px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;min-height:150px}}
-  .fsys-top{{display:flex;align-items:center;justify-content:space-between;gap:8px}}
-  .fsys-g,.fsys-g svg{{width:34px;height:34px;display:block}}
-  .fsys-kb{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);text-align:right}}
+  .fsys{{display:flex;flex-direction:column;gap:11px;padding:22px 18px 20px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;min-height:150px;transition:background .15s var(--ease)}}
+  .fsys:hover{{background:var(--bg-2)}}
+  /* top row grouped LEFT (glyph + category together) so the card reads as one column, not scattered corners */
+  .fsys-top{{display:flex;align-items:center;gap:9px}}
+  .fsys-g,.fsys-g svg{{width:26px;height:26px;display:block;flex:0 0 26px}}
+  .fsys-g .bp-line{{stroke:var(--muted)}}
+  .fsys-kb{{font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}}
   .fsys-nm{{font-family:var(--font-head);font-weight:600;font-size:18px;line-height:1.18;color:var(--ink)}}
-  .fsys-mk{{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:4px}}
+  .fsys-mk{{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;margin-bottom:3px}}
   .fsys:hover .fsys-nm{{color:var(--brass)}}
   .fsys:hover .fsys-go{{transform:translateX(4px)}}
   .fsys-ft{{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
-  .fsys-mt{{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--faint)}}
+  .fsys-mt{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.02em;color:var(--muted)}}
+  .fsys-tier{{color:var(--ink-soft);font-weight:600}}
   .fsys-b{{font-family:var(--font-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:3px;padding:1px 6px}}
   .fsys-go{{margin-left:auto;color:var(--brass);transition:transform .2s var(--ease)}}
   .fsys-go .ar{{width:15px;height:15px;display:block}}
@@ -473,23 +537,7 @@ def main():
 
 {header("", "home")}
 
-<section class="field hero-pure" data-audit="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-col-l reveal is-in">
-      <span class="eyebrow" data-audit="eyebrow">{bilingual("Field Intelligence", "Trên thực địa")}</span>
-      <h1 class="lead-h" data-audit="lead">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>
-      <p class="lead-p">{bilingual(
-        "How verified data changes a real decision — explained plainly, for the people who have to make the call, not only the engineers who build the aircraft.",
-        "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích bằng lời rõ ràng, cho người phải ra quyết định chứ không chỉ cho kỹ sư làm ra máy bay.")}</p>
-      {heatm}
-      <a class="cta" href="reference.html" data-audit="cta">{bilingual("All field files", "Tất cả hồ sơ")}<span class="arw">{ARROW}</span></a>
-    </div>
-    <div class="hero-col-r bpframe reveal" data-audit="herobp">
-      {hero_blueprint}
-      <div class="bpcap"><span>{bilingual("Fig. 01 — multirotor config", "Hình 01 — cấu hình multirotor")}</span>{hero_caption}</div>
-    </div>
-  </div>
-</section>
+{live_hero_html}
 
 <main class="wrap">
   <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Bài viết")}</b><span class="ln"></span>
@@ -512,6 +560,10 @@ def main():
 </div></section>
 
 <main class="wrap">
+  {monitor_teaser("")}
+</main>
+
+<main class="wrap">
   <div class="regdiv"><b class="lab">{bilingual("02 · Browse", "02 · Tra cứu")}</b><span class="ln"></span>
     <a class="ncta" href="reference.html" data-audit="browse">{bilingual(
       f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a></div>
@@ -529,6 +581,7 @@ def main():
   USRBase.initDraw();
   USRBase.initReveal();
   USRBase.initCountup();
+  USRBase.initLiveHero();
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
