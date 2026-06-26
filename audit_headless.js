@@ -178,17 +178,23 @@ async function main() {
     // article slides carry source+tier figures; a CTA leads into the registry. Only one slide is in
     // layout at rest (display:none others) — the overlap sweep above already proves that holds.
     const hero = await evalOnPage(send, `(() => {
-      var slides = document.querySelectorAll('.lhero .lhero-slide');
-      var sourced = Array.prototype.slice.call(slides).filter(s => s.querySelector('.tier') && s.querySelector('.nf-svg, svg')).length;
-      var inLayout = Array.prototype.slice.call(slides).filter(s => s.getBoundingClientRect().height > 0).length;
+      var slides = Array.prototype.slice.call(document.querySelectorAll('.lhero .lhero-slide'));
+      var manifesto = slides.filter(s => s.getAttribute('data-kind') === 'manifesto');
+      var news = slides.filter(s => s.getAttribute('data-kind') !== 'manifesto');
+      // every NEWS slide must carry a source+tier; the manifesto is the only allowed source-less slide
+      var newsSourced = news.filter(s => s.querySelector('.tier') && s.querySelector('.nf-svg, svg')).length;
+      var inLayout = slides.filter(s => s.getBoundingClientRect().height > 0).length;
       return { lhero: !!document.querySelector('.lhero'), lead: !!document.querySelector('.lhero .lead-h'),
-               slides: slides.length, sourced: sourced, inLayout: inLayout,
-               cta: !!document.querySelector('.lhero-foot[href="reference.html"]') };
+               slides: slides.length, manifesto: manifesto.length, news: news.length, newsSourced: newsSourced,
+               inLayout: inLayout, cta: !!document.querySelector('.lhero-foot[href="reference.html"]') };
     })()`);
-    const heroOk = hero.lhero && hero.lead && hero.slides >= 3 && hero.sourced >= 2 && hero.cta && hero.inLayout === 1;
+    // tight NEWSROOM_SOURCED-on-hero: exactly one manifesto, and EVERY news slide is sourced (a news
+    // slide that drops its source is caught — not masked by a loose >=2 count).
+    const heroOk = hero.lhero && hero.lead && hero.slides >= 3 && hero.manifesto === 1 &&
+      hero.news >= 2 && hero.newsSourced === hero.news && hero.cta && hero.inLayout === 1;
     if (!heroOk) failures++;
-    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  rotator=${hero.lhero}  manifesto=${hero.lead}  ` +
-      `slides=${hero.slides}  sourced=${hero.sourced}  in-layout-at-rest=${hero.inLayout}  cta=${hero.cta}`);
+    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  rotator=${hero.lhero}  manifesto=${hero.manifesto}  ` +
+      `news=${hero.news}  news-sourced=${hero.newsSourced}  in-layout-at-rest=${hero.inLayout}  cta=${hero.cta}`);
 
     // FILTERED state on reference.html — functional + perf + honest-null gate.
     await send("Page.navigate", { url: BASE + "/reference.html" });

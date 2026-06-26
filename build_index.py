@@ -363,7 +363,7 @@ def live_hero(site, f, labels):
     feats = [fm for fm, _ in ranked[:4]]
     n, countries, coverage = f["entities"], len(f["country_rank"]), f["coverage"]
     slides = [
-        '<article class="lhero-slide active show" data-i="0">'
+        '<article class="lhero-slide active show" data-i="0" data-kind="manifesto">'
         '<div class="lhero-text">'
         f'<div class="s-kicker">{bilingual("Field Intelligence", "Trên thực địa")}</div>'
         f'<h1 class="s-title lead-h">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>'
