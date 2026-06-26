@@ -1,0 +1,9 @@
+# Dev / build artifacts — KHÔNG phục-vụ trên domain production (đã nằm trên GitHub).
+# Site là static build sẵn: HTML + base/ + content/ + company/country/entity/... + sitemap.xml.
+*.py
+*.sh
+*.xlsx
+audit_headless.js
+teeth_theme.js
+verify_theme.js
+HANDOVER.md
