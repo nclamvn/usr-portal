@@ -609,7 +609,7 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .lhero-dot { width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--hair-strong); background: transparent; cursor: pointer; padding: 0; transition: background .3s var(--ease), border-color .3s var(--ease); }
 .lhero-dot.on { background: var(--brass); border-color: var(--brass); }
 .lhero-dot:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
-.lhero-stage { position: relative; flex: 1; min-height: 380px; }
+.lhero-stage { position: relative; flex: 1; min-height: 490px; }
 .lhero-slide { position: absolute; inset: 0; display: none; grid-template-columns: 1fr 1.05fr; gap: 50px; align-items: center; opacity: 0; transform: translateY(12px); filter: blur(3px); transition: opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease); }
 .lhero-slide.show { display: grid; }
 .lhero-slide.active { opacity: 1; transform: none; filter: none; }
@@ -646,6 +646,50 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 @media (max-width: 860px) { .lhero-slide { grid-template-columns: 1fr; gap: 24px; } .lhero-fig, .lhero-plate { min-height: 230px; } .lhero-stats { gap: 22px; } .lhero-stat .n { font-size: 26px; } }
 @media (prefers-reduced-motion: reduce) { .lhero-slide { transition: none; } .lhero-progress { display: none; } }
 .lhero-foot .arr svg, .lhero-foot .arr .ar { width: 15px; height: 15px; display: block; }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   TIP-FP1 — Registry surface (Mode D cards). Field-rendered, theme-token-driven. */
+.rsurf{max-width:var(--w-wide);margin:0 auto;padding:1.6rem 1.4rem 3rem}
+.rsurf-h{border-bottom:2px solid var(--ink);padding-bottom:1rem;margin-bottom:1.6rem}
+.rsurf-k{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.rsurf-h h1{font-family:var(--font-head);font-weight:600;font-size:clamp(1.8rem,1.4rem+1.6vw,2.4rem);margin:.3rem 0 .5rem;color:var(--ink)}
+.rsurf-lede{font-size:.95rem;line-height:1.55;color:var(--ink-soft);max-width:72ch;margin:0}
+.rdesk{margin:1.8rem 0 0}
+.rdesk-h{display:flex;align-items:baseline;gap:.7rem;border-bottom:1px solid var(--hair-strong);padding-bottom:.5rem;margin-bottom:1rem}
+.rdesk-h h2{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:600;margin:0}
+.rdesk-n{font-family:var(--font-mono);font-size:.72rem;color:var(--brass)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}
+@media(max-width:860px){.rgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.rgrid{grid-template-columns:1fr}}
+.rcard{display:grid;grid-template-columns:54px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--hair);align-items:start}
+.rcard-fig{width:54px;height:54px;border:1px solid var(--hair-strong);background:var(--bg-2);display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 54px}
+.rcard-fig .nf-svg{width:40px;height:40px}
+.rcard-body{min-width:0}
+.rcard-tags{display:flex;gap:.4rem;margin-bottom:.4rem;flex-wrap:wrap}
+.rtag{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--hair-strong);border-radius:3px;padding:1px 5px}
+.rtag-st{color:var(--brass);border-color:var(--brass)}
+.rcard-t{font-family:var(--font-head);font-weight:600;font-size:1rem;line-height:1.22;margin:0 0 .5rem;color:var(--ink)}
+.rcard-t a{color:inherit;text-decoration:none}
+.rcard-t a:hover{color:var(--brass)}
+.rcard-meta{font-family:var(--font-mono);font-size:10px;letter-spacing:.03em;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rcard-meta .src{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em}
+.rcard-meta .tier{display:inline-flex;border:1px solid var(--brass);color:var(--brass);font-weight:600;padding:0 5px;border-radius:2px;font-size:9px}
+.rcard-meta .tier.bb{border-color:var(--hair-strong);color:var(--muted)}
+.rcard-meta .tag-target,.rcard-meta .tag-actual{border:1px solid var(--hair-strong);color:var(--ink-soft);padding:0 5px;border-radius:2px;font-size:9px;text-transform:uppercase}
+.rcard-meta .tag-actual{border-color:var(--brass);color:var(--brass)}
+.rbrowse{border-top:1px solid var(--hair-strong);padding-top:1.2rem;margin-top:2rem}
+.rbrowse-cta{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--brass);font-weight:600;text-decoration:none}
+
+/* TIP-FP2 — front-page registry desks (T2). Strip reuses .rdesk/.rgrid/.rcard; thin desk = honest line. */
+.fp-desk{margin:1.4rem 0 0}
+.fp-desk .rgrid{margin-top:.2rem}
+.fp-deskline{display:flex;align-items:center;gap:.8rem;padding:.7rem .9rem;margin:.6rem 0 0;border:1px solid var(--hair-strong);border-radius:6px;text-decoration:none;color:inherit;transition:border-color .15s var(--ease)}
+.fp-deskline:hover{border-color:var(--brass)}
+.fp-dl-d{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);font-weight:600}
+.fp-dl-n{font-family:var(--font-mono);font-size:.72rem;color:var(--muted)}
+.fp-dl-tag{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);border:1px solid var(--hair-strong);border-radius:3px;padding:1px 6px}
+.fp-deskline .ico{margin-left:auto;color:var(--brass)}
+.fp-deskline .ico .ar{width:14px;height:14px;display:block}
 
 /* TIP-007 — Newsroom + Analysis pillar stylesheet.
    Idiom lifted from base/newsroom-specimen.html (design-language record), which inherits the

@@ -21,6 +21,7 @@ from seo import meta as seo_meta
 from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
 from build_monitor import monitor_teaser
 from graphic import feed_figure
+from build_registry_cards import qualify as rc_qualify, _card as rc_card, DESK as RC_DESK, DESK_ORDER as RC_DESK_ORDER
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -320,6 +321,38 @@ def pick_featured(ents, groups, k=3):
     return out
 
 
+def frontpage_desks():
+    """TIP-FP2 tier T2 — registry desks. D event-cards grouped by desk, DEDUPED against the E articles
+    via the explicit sidecar map (an entity with an E article is shown as E, its D-card hidden), and
+    DESK_HONEST: a desk with >=N cards renders a strip; a thin desk collapses to an honest 'building'
+    line (never a padded empty block); an empty desk is skipped."""
+    N = 4
+    reg = json.loads((ROOT / "content" / "lae-registry.json").read_bytes())["entities"]
+    artmap = json.loads((ROOT / "content" / "article_entity_map.json").read_bytes())["map"]
+    articled = {v for v in artmap.values() if v}
+    shown = [e for e in reg if rc_qualify(e) == "event" and e["entity"] not in articled]
+    by = {}
+    for e in shown:
+        by.setdefault(RC_DESK.get(e["entity_type"], (None, "—"))[1], []).append(e)
+    out = ""
+    for d in RC_DESK_ORDER:
+        cs = sorted(by.get(d, []), key=lambda e: (e.get("stratum") or "", e["entity"]))
+        if not cs:
+            continue
+        if len(cs) >= N:
+            cards = "".join(rc_card(e) for e in cs[:6])
+            out += (f'<section class="fp-desk" data-mode="strip" data-n="{len(cs)}">'
+                    f'<div class="rdesk-h"><h2>{esc(d)}</h2><span class="rdesk-n">{len(cs)}</span></div>'
+                    f'<div class="rgrid">{cards}</div></section>')
+        else:
+            out += (f'<a class="fp-deskline" data-mode="line" data-n="{len(cs)}" href="registry.html">'
+                    f'<span class="fp-dl-d">{esc(d)}</span>'
+                    f'<span class="fp-dl-n">{len(cs)} {bilingual("record", "hồ sơ")}</span>'
+                    f'<span class="fp-dl-tag">{bilingual("building", "đang xây")}</span>'
+                    f'<span class="ico">{ARROW}</span></a>')
+    return out
+
+
 def live_hero(site, f, labels):
     """TIP-HERO-LIVE — a live featured rotator that replaces the static hero. Slide 0 keeps the
     positioning manifesto (statement + brand blueprint); slides 1..N are the strongest featured
@@ -371,7 +404,6 @@ def live_hero(site, f, labels):
         f'<span class="lhero-autolbl"><span class="pulse">●</span> {bilingual("Auto · hover to pause", "Tự cuộn · rê để dừng")}</span>'
         f'<div class="lhero-dots">{dots}</div></div></div>'
         f'<div class="lhero-stage">{"".join(slides)}</div>'
-        '<div class="lhero-progress"><div class="lhero-fill" id="lhero-fill"></div></div>'
         f'<div class="lhero-bot">{stats}'
         f'<a class="lhero-foot" href="reference.html">{bilingual("All records", "Toàn bộ hồ sơ")} <span class="arr">{ARROW}</span></a>'
         '</div></section>')
@@ -403,6 +435,7 @@ def main():
         '</div>')
     newsroom_block = homepage_news_block("")         # compact editorial frame (TIP-NEWSROOM.1), not card-grid
     live_hero_html = live_hero(site, f, labels)       # TIP-HERO-LIVE — live featured rotator
+    desks_html = frontpage_desks()                     # TIP-FP2 T2 — registry desks (deduped, honest)
     masthead = render_masthead(f, labels)
     featured_html = featured_systems(ents, groups, labels)   # 02 · Browse — real systems preview
 
@@ -547,6 +580,15 @@ def main():
   </div>
 </main>
 
+<main class="wrap">
+  <div class="regdiv"><b class="lab">{bilingual("02 · Registry", "02 · Hồ sơ")}</b><span class="ln"></span>
+    <a class="ncta" href="registry.html" data-audit="fpdesk">{bilingual("All registry records", "Toàn bộ hồ sơ")}<span class="ico">{ARROW}</span></a></div>
+  <p class="browse-lead">{bilingual(
+    "Records straight from the registry, by desk — events the editorial desk has not written up appear here, field-rendered, never duplicated.",
+    "Hồ sơ thẳng từ registry, theo desk — sự kiện ban biên tập chưa viết thì hiện ở đây, render từ field, không trùng bài.")}</p>
+  {desks_html}
+</main>
+
 <!-- light/dark rhythm — record-status as a full-bleed dark plate band (TIP-P01) -->
 <section class="sec plate" data-audit="plate"><div class="wrap">
   <span class="eyebrow">{bilingual("Record", "Hồ sơ")}</span>
@@ -564,7 +606,7 @@ def main():
 </main>
 
 <main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("02 · Browse", "02 · Tra cứu")}</b><span class="ln"></span>
+  <div class="regdiv"><b class="lab">{bilingual("03 · Browse", "03 · Tra cứu")}</b><span class="ln"></span>
     <a class="ncta" href="reference.html" data-audit="browse">{bilingual(
       f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a></div>
   <p class="browse-lead">{bilingual(

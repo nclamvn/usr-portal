@@ -35,6 +35,7 @@ python3 build_newsroom.py
 echo "[5/8] monitor (Mode L map) + index home (TIP-004) + compare (TIP-P1.3) + single-file bundle export (TIP-008)"
 python3 build_monitor.py
 python3 build_index.py
+python3 build_registry_cards.py
 python3 build_compare.py
 CSHA1=$(shasum -a256 out/compare-data.json | cut -d' ' -f1)
 python3 build_compare.py >/dev/null
@@ -90,6 +91,12 @@ python3 verify_newsroom.py
 python3 teeth_p33.py
 python3 verify_newsroom_feed.py
 python3 teeth_newsroom_feed.py
+python3 verify_lae_registry.py
+python3 teeth_lae_registry.py
+python3 verify_registry_cards.py
+python3 teeth_registry_cards.py
+python3 verify_frontpage.py
+python3 teeth_frontpage.py
 echo "[7a/8] i18n completeness"
 python3 check_i18n.py
 python3 verify_header.py

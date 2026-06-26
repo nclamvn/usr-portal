@@ -438,6 +438,27 @@ async function main() {
     } catch (e) { failures++; console.log("  FAIL  homepage news block: " + e.message); }
     await send("Emulation.clearDeviceMetricsOverride");
 
+    // REGISTRY surface (TIP-FP1) — Mode-D field-cards: overlap-clean + cards present + each sourced +
+    // grouped into desks. (Titles-are-fields / 0-prose is proven statically by verify_registry_cards.)
+    try {
+      await send("Page.navigate", { url: BASE + "/registry.html" });
+      await sleep(800);
+      for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
+        const r = await evalOnPage(send, companyExpr(theme, lang));
+        const m = await evalOnPage(send, `(function(){
+          var cards=[].slice.call(document.querySelectorAll('.rcard'));
+          var sourced=cards.filter(function(c){return c.querySelector('.tier');}).length;
+          var desks=document.querySelectorAll('.rdesk').length;
+          var extImg=[].slice.call(document.querySelectorAll('img')).filter(function(i){return !/^base\\//.test(i.getAttribute('src')||'');}).length;
+          return {cards:cards.length, sourced:sourced, desks:desks, extImg:extImg};
+        })()`);
+        const ok = r.hits.length === 0 && m.cards >= 10 && m.sourced === m.cards && m.desks >= 3 && m.extImg === 0;
+        if (!ok) failures++;
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /registry.html  [${theme}/${lang}]  overlaps=${r.hits.length}  ` +
+          `cards=${m.cards}  sourced=${m.sourced}  desks=${m.desks}  borrowed-img=${m.extImg}`);
+      }
+    } catch (e) { failures++; console.log("  FAIL  registry surface: " + e.message); }
+
     // TEETH: inject a deliberate overlap on index.html — must be caught.
     await send("Page.navigate", { url: BASE + "/index.html" });
     await sleep(1000);

@@ -206,7 +206,7 @@ def render(fm, body, site, glossary, prev=None, next=None):
 {pagenav(prev, next)}
 <main class="nwrap">
   <header class="nh"><div class="kind">{bilingual(kl_en, kl_vn)}</div><h1>{esc(fm["title"])}</h1>
-    <div class="by">{esc(fm.get("author", "Ban Dữ liệu USR"))} · {esc(str(fm.get("date", "")))} · {bilingual("data desk", "ban dữ liệu")}</div></header>
+    <div class="by">{_byline(fm)}</div></header>
   {lead_fig}
   <div class="narticle">
     <div class="nbody">{body_html}</div>
@@ -283,6 +283,17 @@ def _kicker(fm):
     if ren:
         return bilingual(f"{kl_en} · {ren}", f"{kl_vn} · {rvn}")
     return bilingual(kl_en, kl_vn)
+
+
+def _byline(fm):
+    """BYLINE (TIP-BYLINE/b): when a real person signs (human_author) the piece is Mode E; otherwise it is
+    OPENLY an unsigned data draft — never a desk name ('Ban Dữ liệu USR') posing as a responsible author.
+    The human_author hook lets a real editor sign a specific piece later, upgrading it to E."""
+    ha = fm.get("human_author")
+    date = esc(str(fm.get("date", "")))
+    if ha:
+        return f'{esc(ha)} · {date} · {bilingual("signed", "đã ký")}'
+    return f'{bilingual("Data draft · not editorially signed", "Bản thảo dữ liệu · chưa biên tập ký")} · {date}'
 
 
 def _meta(fm):
