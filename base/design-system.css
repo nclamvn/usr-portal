@@ -19,7 +19,7 @@
   --brass-bright: #B5832B;
   --bp: #D8A24A;               /* frame-glyph line — amber accent (line color, not a container bg) */
   --bp-line: #2C2F35;          /* hero blueprint line-art — ink, flips by theme */
-  --bp-grid: rgba(25,26,28,.055);
+  --bp-grid: rgba(25,26,28,.028);
   --bp-soft: rgba(44,47,53,.4);
   --bp-faint: #3A3D44;
   /* PURE-VALUE collapse (TIP-UX2.1): the old dark-plate tokens now alias the theme surface, so
@@ -61,7 +61,7 @@
   --brass-bright: #DEB05C;
   --bp: #DEB05C;
   --bp-line: #BCBEC4;            /* flips: ink-on-light -> light-on-dark */
-  --bp-grid: rgba(255,255,255,.045);
+  --bp-grid: rgba(255,255,255,.022);
   --bp-soft: rgba(188,190,196,.34);
   --bp-faint: #3A4049;
   --card-bg: var(--bg-2);
@@ -492,7 +492,7 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
    (.lead/.sec/.meta/.figure) never collide with other surfaces. Used by news.html
    (full) and the homepage block (.nfeed-mini). Theme-token-driven → pure-value. */
 .nfeed{max-width:1280px;margin:0 auto;padding:40px 48px 80px;
-  background-image:linear-gradient(rgba(150,140,120,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(150,140,120,0.05) 1px,transparent 1px);
+  background-image:linear-gradient(rgba(150,140,120,0.028) 1px,transparent 1px),linear-gradient(90deg,rgba(150,140,120,0.028) 1px,transparent 1px);
   background-size:32px 32px;background-position:-1px -1px;}
 .nfeed .mast{display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:6px;gap:1rem;}
 .nfeed .mast-l{display:flex;align-items:baseline;gap:18px;}

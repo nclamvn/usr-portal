@@ -260,6 +260,8 @@ def main():
 {footer("")}
 <script src="base/base.js"></script>
 <script>
+  USRBase.initTheme(document.getElementById("theme"));
+  USRBase.initI18n(document.getElementById("lang"));
   USRBase.mountArrows(); USRBase.initReveal();
   USRBase.initRegistry({{ grid: ".index-list", item: ".row-item" }});
   document.documentElement.dataset.audit = "ready";
