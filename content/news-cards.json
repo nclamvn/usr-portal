@@ -1,0 +1,83 @@
+{
+  "schema": "news-cards/1",
+  "note": "Dòng A — aggregation headline (link + tóm-tắt-gốc + nguồn + tier). KHÔNG chép body/ảnh người ta. Render bởi build_aggregation.py, gác bởi verify_aggregation.py (7 teeth). entity_tags rỗng = chưa gắn graph (an-toàn, không dangling).",
+  "cards": [
+    {
+      "id": "vn-nd288-2025", "type": "link", "rights": "external_article_share", "field": "chính sách & pháp lý", "stratum": "vietnam",
+      "outlet": "Cổng TTĐT Chính phủ", "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=215810",
+      "source_title": "Nghị định 288/2025/NĐ-CP về quản lý tàu bay không người lái và phương tiện bay khác",
+      "summary": "Chính phủ ban hành Nghị định 288/2025/NĐ-CP (hiệu lực 05/11/2025): thẩm quyền cấp phép bay thuộc Bộ Quốc phòng, Cục Tác chiến cấp phép trong vùng trời và FIR Việt Nam.",
+      "tier": "A", "date": "2025-11-05", "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-drone-nongnghiep-dbscl", "type": "link", "rights": "external_article_share", "field": "nông nghiệp", "stratum": "vietnam",
+      "outlet": "Báo Chính phủ", "source_url": "https://baochinhphu.vn/drone-trong-nong-nghiep-loi-ich-lon-thach-thuc-khong-nho-102260414151519975.htm",
+      "source_title": "Drone trong nông nghiệp: Lợi ích lớn, thách thức không nhỏ",
+      "summary": "Theo ước tính, Đồng bằng sông Cửu Long có khoảng 3.000 drone phục vụ canh tác trên 1,5 triệu ha, trở thành thị trường drone nông nghiệp lớn nhất Việt Nam.",
+      "tier": "B", "date": "2026-04-14", "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-viettel-saha-2026", "type": "link", "rights": "external_article_share", "field": "quốc phòng & an ninh", "stratum": "vietnam",
+      "outlet": "Một Thế Giới", "source_url": "https://1thegioi.vn/bao-bi-de-cao-3-loai-drone-trinh-sat-va-cam-tu-cua-viettel-tai-saha-2026-251486.html",
+      "source_title": "Báo Bỉ đề cao 3 loại drone trinh sát và cảm tử của Viettel tại SAHA 2026",
+      "summary": "Tại triển lãm quốc phòng SAHA 2026 (Istanbul), Viettel High Tech giới thiệu ba dòng UAV mới, gồm UAV trinh sát tầm xa VU-MALE bay trên 1.000 km và UAV tấn công tích hợp AI VU-C2.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-viettel-counter-uav", "type": "link", "rights": "external_article_share", "field": "công nghệ & tiêu chuẩn", "stratum": "vietnam",
+      "outlet": "Người Quan Sát", "source_url": "https://nguoiquansat.vn/to-hop-chong-uav-cua-viettel-gay-an-tuong-voi-bao-chi-chau-au-duoc-vi-nhu-khac-tinh-cua-drone-291072.html",
+      "source_title": "Tổ hợp chống UAV của Viettel gây ấn tượng với báo chí châu Âu",
+      "summary": "Tạp chí quốc phòng châu Âu EDR Magazine dành bài riêng cho tổ hợp chống UAV của Viettel tại SAHA 2026, mô tả là hệ thống đối phó trực diện với mối đe doạ thiết bị bay không người lái.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-hcm-drone-capital", "type": "link", "rights": "external_article_share", "field": "hạ tầng & kinh tế tầm thấp", "stratum": "vietnam",
+      "outlet": "VietnamFinance", "source_url": "https://vietnamfinance.vn/tham-vong-drone-capital-co-hoi-lich-su-de-viet-nam-ghi-dau-tren-thi-truong-700-ty-usd-d134020.html",
+      "source_title": "Tham vọng 'Drone Capital': cơ hội để Việt Nam ghi dấu trên thị trường 700 tỷ USD",
+      "summary": "TP.HCM được quy hoạch thành trung tâm kinh tế tầm thấp giai đoạn 2026-2035 với hệ sinh thái gồm 1.000 ha khu công nghiệp, 3 vùng thử nghiệm, 10 nhà máy linh kiện và 100.000 kỹ sư.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-dien-bien-6000", "type": "link", "rights": "external_article_share", "field": "hạ tầng & kinh tế tầm thấp", "stratum": "vietnam",
+      "outlet": "Một Thế Giới", "source_url": "https://motthegioi.vn/dien-bien-thu-nghiem-uav-thuong-mai/",
+      "source_title": "Điện Biên tiên phong thử nghiệm 6.000 chuyến bay UAV thương mại",
+      "summary": "Tỉnh Điện Biên khởi động dự án thử nghiệm với mục tiêu thực hiện 6.000 chuyến bay UAV thương mại, hướng tới biến tầng trời thấp thành tuyến đường mới cho logistics và sản xuất.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-can-gio-vung-tau-uav", "type": "link", "rights": "external_article_share", "field": "logistics & giao hàng", "stratum": "vietnam",
+      "outlet": "VietnamPlus", "source_url": "https://www.vietnamplus.vn/kinh-te-tam-thap-mo-duong-tren-khong-khai-pha-mo-vang-ty-do-post1116792.vnp",
+      "source_title": "Kinh tế tầm thấp: mở 'đường trên không' khai phá mỏ vàng tỷ đô",
+      "summary": "TP.HCM mở tuyến bưu chính UAV vượt biển đầu tiên nối Cần Giờ với Vũng Tàu; drone cũng được thử nghiệm giao hàng cứu trợ và tự động tại một số tỉnh phía Bắc.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-uav-canh-tranh", "type": "link", "rights": "external_article_share", "field": "thị trường & doanh nghiệp", "stratum": "vietnam",
+      "outlet": "VnExpress", "source_url": "https://vnexpress.net/uav-viet-co-tiem-nang-canh-tranh-the-gioi-4991987.html",
+      "source_title": "'UAV Việt có tiềm năng cạnh tranh thế giới'",
+      "summary": "Giới chuyên gia nhận định UAV do doanh nghiệp Việt Nam thiết kế và sản xuất có tiềm năng cạnh tranh quốc tế, trong đó một số dòng đã xuất khẩu.",
+      "tier": "B", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "vn-tiem-nang-10ty", "type": "link", "rights": "external_article_share", "field": "thị trường & doanh nghiệp", "stratum": "vietnam",
+      "outlet": "Thanh Niên", "source_url": "https://thanhnien.vn/tiem-nang-kinh-te-tam-thap-cua-viet-nam-185251213182502034.htm",
+      "source_title": "Tiềm năng kinh tế tầm thấp của Việt Nam",
+      "summary": "Theo ước tính của giới chuyên gia, mảng kinh tế bay tầm thấp ở Việt Nam có thể đạt quy mô khoảng 10 tỷ USD, kỳ vọng đưa nước này thành trung tâm công nghiệp khu vực.",
+      "tier": "B", "date": "2025-12-13", "entity_tags": [], "image": null
+    },
+    {
+      "id": "world-military-drone-market", "type": "link", "rights": "external_article_share", "field": "thị trường & doanh nghiệp", "stratum": "world",
+      "outlet": "MarketsandMarkets", "source_url": "https://www.marketsandmarkets.com/Market-Reports/military-drone-market-221577711.html",
+      "source_title": "Military Drones Market Size, Share, Latest Trends & Growth Analysis 2026-2031",
+      "summary": "Các báo cáo thị trường định giá thị trường drone quân sự toàn cầu khoảng 27-35 tỷ USD năm 2026; sản lượng mua sắm dự báo tăng tới 2031. Số liệu là ước tính của hãng nghiên cứu.",
+      "tier": "C", "date": null, "entity_tags": [], "image": null
+    },
+    {
+      "id": "world-ai-swarm-standard", "type": "link", "rights": "external_article_share", "field": "công nghệ & tiêu chuẩn", "stratum": "world",
+      "outlet": "Coherent Market Insights", "source_url": "https://www.coherentmarketinsights.com/industry-reports/military-drone-market",
+      "source_title": "Military Drone Market Share & Opportunities 2026-2033",
+      "summary": "Xung đột Ukraine đang chuẩn hoá drone tự hành tích hợp AI, đẩy R&D sang năng lực bầy đàn; Bắc Mỹ giữ khoảng 41% thị phần 2026, châu Á - Thái Bình Dương tăng nhanh nhất (ước tính hãng nghiên cứu).",
+      "tier": "C", "date": null, "entity_tags": [], "image": null
+    }
+  ]
+}

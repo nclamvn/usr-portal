@@ -95,6 +95,8 @@ python3 verify_newsroom.py
 python3 teeth_p33.py
 python3 verify_newsroom_feed.py
 python3 teeth_newsroom_feed.py
+python3 verify_aggregation.py
+python3 teeth_aggregation.py
 python3 verify_lae_registry.py
 python3 teeth_lae_registry.py
 python3 verify_registry_cards.py

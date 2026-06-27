@@ -20,6 +20,7 @@ from header import header
 from seo import meta as seo_meta
 from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
 from build_monitor import monitor_teaser
+from build_aggregation import aggregation_block
 from graphic import feed_figure
 import media_lib as ML
 
@@ -455,6 +456,7 @@ def main():
         f'<span class="k">{bilingual("Spec coverage", "Độ phủ spec")}</span></div>'
         '</div>')
     newsroom_block = homepage_news_block("")         # compact editorial frame (TIP-NEWSROOM.1), not card-grid
+    agg_html = aggregation_block("")                   # TIP-NEWS-REALTIME dòng A — "Tin nhanh" link+tóm-tắt-gốc
     live_hero_html = live_hero(site, f, labels)       # TIP-HERO-LIVE — live featured rotator
     desks_html = frontpage_desks()                     # TIP-FP2 T2 — registry desks (deduped, honest)
     masthead = render_masthead(f, labels)
@@ -599,6 +601,7 @@ def main():
   <div class="block">
 {newsroom_block}
   </div>
+  {agg_html}
 </main>
 
 <main class="wrap">
