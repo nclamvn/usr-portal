@@ -65,6 +65,10 @@ python3 build_bundle.py
 echo "[6/8] content integrity (verify_content — 4-questions · entity-tags · tier-A · figures trace registry)"
 python3 verify_content.py
 
+echo "[6a/8] media rights gate (verify_media — enum quyền · owner/license/src/binding thật · 7 teeth)"
+python3 verify_media.py
+python3 teeth_media.py
+
 echo "[6b/8] cross-link graph (crosslink.py) + dangling-link gate (verify_graph) + teeth"
 python3 crosslink.py
 GSHA1=$(shasum -a256 out/graph.json | cut -d' ' -f1)

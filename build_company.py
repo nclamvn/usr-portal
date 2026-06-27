@@ -14,6 +14,9 @@ from build_reference import friendly, bilingual, esc
 from footer import footer
 from nav import nav
 from header import header
+import media_lib as ML
+
+_MEDIA = ML.Media()
 from seo import meta, org_ld
 from build_newsroom import articles_for
 
@@ -112,6 +115,10 @@ def render_company(c, labels, uav_name):
     if arts:
         items = "".join(f'<li><a href="../news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></li>' for fm in arts)
         rel = f'<div class="csec-h">{bilingual("Coverage", "Bài viết liên quan")}</div><ul class="fleet">{items}</ul>'
+    # TIP-MEDIA-UPGRADE — rtr_owned lead photo for this company (binding company:<slug>); empty → keep text-only.
+    _cm = _MEDIA.first("company:" + c["slug"])
+    cmedia = (f'\n  <figure class="cmedia" data-audit="cmedia">{ML.img_html(_cm, "cmedia-img", "../")}'
+              f'<figcaption class="cmedia-cap">{esc(_cm.get("caption") or "")}</figcaption></figure>') if _cm else ""
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -129,7 +136,7 @@ def render_company(c, labels, uav_name):
   <header class="chead">
     <h1>{esc(name)}</h1>
     <div class="meta">{bilingual("Manufacturer", "Nhà sản xuất")} · {esc(hq_txt) if hq_txt else bilingual("HQ unverified", "trụ sở chưa rõ")}</div>
-  </header>
+  </header>{cmedia}
 
   <div class="csec-h">{bilingual("Fleet in registry (derived)", "Đội bay trong registry (suy ra)")}</div>
   <div class="crow"><span class="k">{bilingual("UAV count", "Số UAV")}</span><span class="v">{roll.get("uav_count", 0)}</span><span></span></div>

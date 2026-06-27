@@ -10,6 +10,20 @@ import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from footer import footer
 from glyphs import glyph_svg
+import media_lib as ML
+
+_MEDIA = ML.Media()
+
+
+def _entity_media(slug, rel="../"):
+    """TIP-MEDIA-UPGRADE — lead product photo for an entity (binding entity:<slug>), standalone only.
+    Empty string when no bound asset → the page keeps its line-glyph (honest-null, site-null two-way)."""
+    a = _MEDIA.first(f"entity:{slug}")
+    if not a:
+        return ""
+    cap = esc(a.get("caption") or "")
+    return (f'<figure class="dmedia" data-audit="dmedia">{ML.img_html(a, "dmedia-img", rel)}'
+            f'<figcaption class="dmedia-cap">{cap}</figcaption></figure>')
 from nav import nav
 from header import header
 from pagenav import pagenav
@@ -140,7 +154,7 @@ DETAIL_CSS = """
 """
 
 
-def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=False):
+def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=False, media_html=""):
     """Inner detail content (header + identity + specs + sources + note) — NO page chrome.
     Reused verbatim by the standalone page and the single-file bundle, so honest-null / disputed /
     tier rendering can never drift between the two. `company` (slug+name) adds a manufacturer-profile
@@ -172,7 +186,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=F
     <div class="meta mono">{esc(country)} · {seg} · {pclass}</div>
   </header>
   <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg", draw=draw)}
-    <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>{clink}
+    <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>{clink}{media_html}
   <div class="dsec-h">{bilingual("Identity", "Định danh")}</div>
   <div class="drows">{ident}</div>
   <div class="dsec-h">{bilingual("Specifications", "Thông số")}</div>
@@ -204,7 +218,7 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True, prev=None
 {header("../")}
 {pagenav(prev, next)}
 <main class="dwrap">
-  {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks)}
+  {detail_fragment(e, labels, ranges, draw=True, company=company, taxlinks=taxlinks, media_html=_entity_media(e["slug"]))}
 </main>
 {footer("../")}
 <script src="../base/base.js"></script>

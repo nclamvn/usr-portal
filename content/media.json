@@ -1,0 +1,277 @@
+{
+  "schema": "media/1",
+  "assets": {
+    "hera-branded-demo": {
+      "type": "image",
+      "src": "/images/content/rtr/hera-branded-demo.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/hera/hera-branded-demo.webp",
+      "source_origin": "rtr-website/public/images/products/hera/hera-branded-demo.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA — demo thương hiệu RtR",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hera-cover-hero": {
+      "type": "image",
+      "src": "/images/content/hera/hera-cover-hero.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/hera/cover-hero.jpg",
+      "source_origin": "rtr-website/public/images/products/hera/cover-hero.jpg",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA — ảnh bìa sản phẩm",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hera-field-michigan": {
+      "type": "image",
+      "src": "/images/content/hera/hera-field-michigan.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/hera/hera-field-michigan.webp",
+      "source_origin": "rtr-website/public/images/products/hera/hera-field-michigan.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA triển khai thực địa tại Michigan",
+      "captured_at": "2026-04",
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hera-sar-rescue": {
+      "type": "image",
+      "src": "/images/content/hera/hera-sar-rescue.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/hera/hera-sar-rescue.webp",
+      "source_origin": "rtr-website/public/images/products/hera/hera-sar-rescue.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA trong nhiệm vụ cứu hộ SAR",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hera-studio-black": {
+      "type": "image",
+      "src": "/images/content/rtr/hera-studio-black.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/hera/hera-studio-black.png",
+      "source_origin": "rtr-website/public/images/products/hera/hera-studio-black.png",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA — ảnh studio",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hera-takeoff": {
+      "type": "video",
+      "src": "/images/content/video/hera-takeoff.mp4",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/videos/hera-takeoff.mp4",
+      "source_origin": "rtr-website/public/videos/hera-takeoff.mp4",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": null,
+      "caption": "HERA cất cánh",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hero-detroit": {
+      "type": "image",
+      "src": "/images/content/hero/hero-detroit.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/hero/hera-drone-detroit.webp",
+      "source_origin": "rtr-website/public/images/hero/hera-drone-detroit.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA tại sự kiện trình diễn Detroit",
+      "captured_at": "2026-04",
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "hero-flight-1": {
+      "type": "image",
+      "src": "/images/content/hero/hero-flight-1.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/hero/hera-flight-1.webp",
+      "source_origin": "rtr-website/public/images/hero/hera-flight-1.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "HERA trong chuyến bay",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "hera"
+      ]
+    },
+    "quoc-portrait": {
+      "type": "image",
+      "src": "/images/content/team/quoc-portrait.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/team/quoc-luong.webp",
+      "source_origin": "rtr-website/public/images/team/quoc-luong.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "Lương Quốc — CEO Real-time Robotics",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr"
+      ]
+    },
+    "vega-featured": {
+      "type": "image",
+      "src": "/images/content/vega/vega-featured.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/vega/vega-featured.webp",
+      "source_origin": "rtr-website/public/images/products/vega/vega-featured.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "VEGA — ảnh sản phẩm",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "vega"
+      ]
+    },
+    "vega-payload-drop": {
+      "type": "image",
+      "src": "/images/content/vega/vega-payload-drop.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/vega/vega-payload-drop.webp",
+      "source_origin": "rtr-website/public/images/products/vega/vega-payload-drop.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "VEGA thả payload",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "vega"
+      ]
+    },
+    "vega-tactical-deploy": {
+      "type": "image",
+      "src": "/images/content/vega/vega-tactical-deploy.webp",
+      "rights": "rtr_owned",
+      "owner": "RtR",
+      "source": "RtR Media · public/images/products/vega/vega-tactical-deploy.webp",
+      "source_origin": "rtr-website/public/images/products/vega/vega-tactical-deploy.webp",
+      "credit": null,
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "rtr-warm-v1",
+      "caption": "VEGA triển khai chiến thuật",
+      "captured_at": null,
+      "entity_tags": [
+        "rtr",
+        "vega"
+      ]
+    }
+  },
+  "bindings": {
+    "company:real-time-robotics": [
+      "hera-branded-demo",
+      "hera-studio-black"
+    ],
+    "entity:uav-real-time-robotics-hera-hera": [
+      "hera-cover-hero",
+      "hera-field-michigan",
+      "hera-sar-rescue",
+      "hera-takeoff"
+    ],
+    "entity:uav-real-time-robotics-vega-vega": [
+      "vega-featured",
+      "vega-tactical-deploy",
+      "vega-payload-drop"
+    ],
+    "hero:home": [
+      "hero-detroit",
+      "hero-flight-1"
+    ]
+  }
+}

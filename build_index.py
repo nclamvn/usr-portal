@@ -21,6 +21,9 @@ from seo import meta as seo_meta
 from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
 from build_monitor import monitor_teaser
 from graphic import feed_figure
+import media_lib as ML
+
+_MEDIA = ML.Media()
 from build_registry_cards import qualify as rc_qualify, _card as rc_card, DESK as RC_DESK, DESK_ORDER as RC_DESK_ORDER
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -362,6 +365,15 @@ def live_hero(site, f, labels):
     ranked = sorted(load_articles(), key=_weight, reverse=True)
     feats = [fm for fm, _ in ranked[:4]]
     n, countries, coverage = f["entities"], len(f["country_rank"]), f["coverage"]
+    # TIP-MEDIA-UPGRADE Task 5 — manifesto slide carries a real rtr_owned photo when bound
+    # (hero:home); else falls back to the brand blueprint (honest-null, site-null two-way).
+    _hero = _MEDIA.first("hero:home")
+    if _hero:
+        _m_inner = ML.img_html(_hero, "lhero-photo")
+        _m_lbl = esc(_hero.get("caption") or "Real-time Robotics")
+    else:
+        _m_inner = blueprint_svg()
+        _m_lbl = bilingual("USR · field schematic", "USR · sơ đồ trường")
     slides = [
         '<article class="lhero-slide active show" data-i="0" data-kind="manifesto">'
         '<div class="lhero-text">'
@@ -370,8 +382,8 @@ def live_hero(site, f, labels):
         f'<p class="s-dek">{bilingual("How verified data changes a real decision — explained plainly, for the people who have to make the call.", "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích rõ ràng cho người phải ra quyết định.")}</p>'
         f'<a class="s-cta" href="reference.html">{bilingual("All field files", "Tất cả hồ sơ")} →</a>'
         '</div>'
-        f'<div class="lhero-fig"><div class="lhero-plate">{blueprint_svg()}'
-        f'<span class="plate-lbl">{bilingual("USR · field schematic", "USR · sơ đồ trường")}</span></div></div>'
+        f'<div class="lhero-fig"><div class="lhero-plate">{_m_inner}'
+        f'<span class="plate-lbl">{_m_lbl}</span></div></div>'
         '</article>']
     for k, fm in enumerate(feats, 1):
         dek = f'<p class="s-dek">{esc(fm.get("dek"))}</p>' if fm.get("dek") else ""

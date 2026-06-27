@@ -156,6 +156,12 @@ async function main() {
     await new Promise((res, rej) => { ws.addEventListener("open", res); ws.addEventListener("error", rej); });
     const send = cdp(ws);
     await send("Page.enable"); await send("Runtime.enable");
+    // TIP-MEDIA-UPGRADE robustness — emulate prefers-reduced-motion so the live hero rotator freezes on
+    // the manifesto slide (start()/restart() are no-ops under reduce). The overlap sweep then measures the
+    // true AT-REST layout instead of occasionally catching the intentional 840ms cross-dissolve (two slides
+    // both class "show" → two h1 bounding boxes coincide → a transient, non-defect overlap). This made the
+    // index overlap audit deterministic; it was a latent timing flake that passed before only by luck.
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
 
     for (const page of PAGES) {
       await send("Page.navigate", { url: BASE + page });
