@@ -456,7 +456,7 @@ def main():
         f'<span class="k">{bilingual("Spec coverage", "Độ phủ spec")}</span></div>'
         '</div>')
     newsroom_block = homepage_news_block("")         # compact editorial frame (TIP-NEWSROOM.1), not card-grid
-    agg_html = aggregation_block("")                   # TIP-NEWS-REALTIME dòng A — "Tin nhanh" link+tóm-tắt-gốc
+    agg_html = aggregation_block("", limit=20)          # TIP-NEWS-REALTIME dòng A — top-20 "Tin nhanh" (PLAN-NEWS-100 §4)
     live_hero_html = live_hero(site, f, labels)       # TIP-HERO-LIVE — live featured rotator
     desks_html = frontpage_desks()                     # TIP-FP2 T2 — registry desks (deduped, honest)
     masthead = render_masthead(f, labels)
