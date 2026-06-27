@@ -8,8 +8,10 @@ liveness that is honest end-to-end:
   · MAP IS REAL — coastlines are Natural Earth 110m (public domain), embedded as base/world-land.json
     and projected to inline SVG paths at build time (NO deck.gl/MapLibre: a WebGL map would need external tiles
     and be opaque to THEME_PURITY/verify_svg/overlap; inline SVG keeps every gate able to read the surface).
-  · DEPTH — layered bloom around each point + a radial vignette; the cockpit dark is SVG paint only
-    (THEME_PURITY reads DOM background, never SVG fill), so the screen is dark in both themes, gate-clean.
+  · DEPTH — layered bloom around each point + a radial vignette; the cockpit is THEME-RESPONSIVE — every
+    plate/land/graticule/vignette fill is a CSS var(--mon-*) that flips by theme (pale cockpit in light,
+    dark in dark). Still SVG paint (THEME_PURITY reads DOM background, never SVG fill) so it stays gate-clean,
+    but it no longer inverts against a light page. Signal points keep their stratum hue in both themes.
   · LIVE BECAUSE THE DATA IS — each point pulses at a rhythm DERIVED from its real status (incident urgent,
     sandbox/under-construction slow, operational steady); a live UTC clock ticks; "registry last updated"
     shows the real max fetched_at from the registry (deterministic → idempotent). No decorative motion.
@@ -20,7 +22,8 @@ liveness that is honest end-to-end:
     they scroll in a sourced "registry stream" beside the map. Density without a single fabricated point.
 
 Discipline that keeps the gates green: the map has ZERO <text> (labels are HTML); root <svg fill="none">
-+ explicit fills; points are <circle> (unaudited); the dark interior is SVG paint. Exposes monitor_teaser().
++ theme-token fills (var(--mon-*)); points are <circle> (unaudited); the interior is SVG paint that follows
+the theme. Exposes monitor_teaser().
 """
 import json, pathlib, html as _html
 from header import header
@@ -62,20 +65,20 @@ def _land_paths(w=W, h=H):
         d = "M" + " ".join(f"{x:.1f},{y:.1f}" for x, y in pts) + "Z"
         out.append(d)
     # one <path> with all subpaths (even-odd handles nested) — faint fill + coastline stroke
-    return ('<path d="' + "".join(out) + '" fill="#13202c" fill-opacity="0.92" '
-            'stroke="#2f465a" stroke-width="0.8" stroke-linejoin="round"/>')
+    return ('<path d="' + "".join(out) + '" fill="var(--mon-land)" fill-opacity="0.92" '
+            'stroke="var(--mon-coast)" stroke-width="0.8" stroke-linejoin="round"/>')
 
 
 def _graticule(w=W, h=H):
     s = ""
     for lon in range(-150, 180, 30):
         x = (lon + 180) / 360 * w
-        s += f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{h}" stroke="#15242f" stroke-width="0.7"/>'
+        s += f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{h}" stroke="var(--mon-grid)" stroke-width="0.7"/>'
     lat = -30
     while lat <= 60:
         if LAT_BOT < lat < LAT_TOP:
             y = (LAT_TOP - lat) / (LAT_TOP - LAT_BOT) * h
-            col = "#21384a" if lat == 0 else "#15242f"
+            col = "var(--mon-grid-eq)" if lat == 0 else "var(--mon-grid)"
             s += f'<line x1="0" y1="{y:.1f}" x2="{w}" y2="{y:.1f}" stroke="{col}" stroke-width="0.7"/>'
         lat += 30
     return s
@@ -151,15 +154,15 @@ def world_svg(points, w=W, h=H, scale=1.0, interactive=True, cls="mon-svg"):
     defs = (
         '<defs>'
         '<radialGradient id="mon-vig" cx="50%" cy="44%" r="78%">'
-        '<stop offset="0%" stop-color="#0f1d29"/><stop offset="62%" stop-color="#0a131c"/>'
-        '<stop offset="100%" stop-color="#05090f"/></radialGradient>'
+        '<stop offset="0%" stop-color="var(--mon-ocean)"/><stop offset="62%" stop-color="var(--mon-ocean-2)"/>'
+        '<stop offset="100%" stop-color="var(--mon-ocean-3)"/></radialGradient>'
         '<filter id="mon-glow" x="-120%" y="-120%" width="340%" height="340%">'
         '<feGaussianBlur stdDeviation="5" result="b"/>'
         '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
         '<filter id="mon-soft" x="-120%" y="-120%" width="340%" height="340%">'
         '<feGaussianBlur stdDeviation="2.4"/></filter>'
         '</defs>')
-    vig2 = (f'<rect x="0" y="0" width="{w}" height="{h}" fill="none" stroke="#05090f" '
+    vig2 = (f'<rect x="0" y="0" width="{w}" height="{h}" fill="none" stroke="var(--mon-vignette)" '
             f'stroke-width="36" stroke-opacity="0.55"/>')  # inner edge darkening (vignette frame)
     return (
         f'<svg class="{cls}" viewBox="0 0 {w} {h}" width="{w}" height="{h}" fill="none" '

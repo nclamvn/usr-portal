@@ -187,8 +187,9 @@ async function main() {
       var slides = Array.prototype.slice.call(document.querySelectorAll('.lhero .lhero-slide'));
       var manifesto = slides.filter(s => s.getAttribute('data-kind') === 'manifesto');
       var news = slides.filter(s => s.getAttribute('data-kind') !== 'manifesto');
-      // every NEWS slide must carry a source+tier; the manifesto is the only allowed source-less slide
-      var newsSourced = news.filter(s => s.querySelector('.tier') && s.querySelector('.nf-svg, svg')).length;
+      // every NEWS slide must carry a source+tier AND a visual that is data-from-registry OR a
+      // media.json-tracked photo (rtr_owned/open_licensed, gated by verify_media — never a borrowed image)
+      var newsSourced = news.filter(s => s.querySelector('.tier') && (s.querySelector('.nf-svg, svg') || s.querySelector('.lhero-photo'))).length;
       var inLayout = slides.filter(s => s.getBoundingClientRect().height > 0).length;
       return { lhero: !!document.querySelector('.lhero'), lead: !!document.querySelector('.lhero .lead-h'),
                slides: slides.length, manifesto: manifesto.length, news: news.length, newsSourced: newsSourced,
@@ -412,11 +413,11 @@ async function main() {
         const r = await evalOnPage(send, companyExpr(theme, lang));
         const m = await evalOnPage(send, `(function(){
           var lead=document.querySelector('article.lead');
-          var leadOk = !!lead && !!lead.querySelector('.tier') && !!lead.querySelector('.nf-svg');
+          var leadOk = !!lead && !!lead.querySelector('.tier') && !!(lead.querySelector('.nf-svg') || lead.querySelector('.nf-lead-photo'));
           var secs=[].slice.call(document.querySelectorAll('article.sec'));
           var secOk = secs.length>=2 && secs.every(function(s){return s.querySelector('.tier')&&s.querySelector('.nf-svg');});
           var figs=document.querySelectorAll('.nf-svg').length;
-          var extImg=[].slice.call(document.querySelectorAll('img')).filter(function(i){return !/^base\\//.test(i.getAttribute('src')||'');}).length;
+          var extImg=[].slice.call(document.querySelectorAll('img')).filter(function(i){var s=i.getAttribute('src')||'';return !/^base\\//.test(s) && !/^images\\/content\\//.test(s);}).length;
           var mrows=[].slice.call(document.querySelectorAll('.mrow'));
           var moreSourced = mrows.length>0 && mrows.every(function(r){return r.querySelector('.tier');});
           // void: with align-items:start each column is its own content height; the two should be
@@ -441,7 +442,7 @@ async function main() {
       await sleep(800);
       const h = await evalOnPage(send, `(function(){
         var mini=document.querySelector('.nfeed-mini');
-        return {mini:!!mini, leadFig:!!(mini&&mini.querySelector('.nf-svg')&&mini.querySelector('.tier')),
+        return {mini:!!mini, leadFig:!!(mini&&(mini.querySelector('.nf-svg')||mini.querySelector('.nf-lead-photo'))&&mini.querySelector('.tier')),
                 oldCards:document.querySelectorAll('.nr-card').length};
       })()`);
       const ok = h.mini && h.leadFig && h.oldCards === 0;

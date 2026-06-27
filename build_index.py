@@ -387,6 +387,15 @@ def live_hero(site, f, labels):
         '</article>']
     for k, fm in enumerate(feats, 1):
         dek = f'<p class="s-dek">{esc(fm.get("dek"))}</p>' if fm.get("dek") else ""
+        # TIP-ENRICH — a real bound photo (rtr_owned/open_licensed) when the article carries one;
+        # else the data-figure (feed_figure honest-null). Never a borrowed/unlicensed image.
+        _am = _MEDIA.first(f"article:{fm['slug']}")
+        if _am:
+            _nf_inner = ML.img_html(_am, "lhero-photo")
+            _nf_lbl = esc(_am.get("caption") or "")
+        else:
+            _nf_inner = feed_figure(fm, "lead")
+            _nf_lbl = bilingual("USR · generated from data", "USR · sinh từ dữ liệu")
         slides.append(
             f'<article class="lhero-slide" data-i="{k}">'
             '<div class="lhero-text">'
@@ -394,8 +403,8 @@ def live_hero(site, f, labels):
             f'<h1 class="s-title"><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h1>'
             f'{dek}<div class="s-meta">{_meta(fm)}</div>'
             '</div>'
-            f'<div class="lhero-fig"><div class="lhero-plate">{feed_figure(fm, "lead")}'
-            f'<span class="plate-lbl">{bilingual("USR · generated from data", "USR · sinh từ dữ liệu")}</span></div></div>'
+            f'<div class="lhero-fig"><div class="lhero-plate">{_nf_inner}'
+            f'<span class="plate-lbl">{_nf_lbl}</span></div></div>'
             '</article>')
     dots = "".join(f'<button class="lhero-dot{" on" if k == 0 else ""}" data-dot="{k}" '
                    f'type="button" aria-label="Slide {k+1}"></button>' for k in range(len(slides)))

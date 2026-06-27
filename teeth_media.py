@@ -69,6 +69,11 @@ def main():
         d["assets"][lid].pop("identity_source", None)
         cases.append(("MEDIA_IDENTITY_UNSOURCED", d))
 
+    # 9 · OPEN_UNLICENSED (TIP-ENRICH) — open_licensed mà thiếu khai giấy-phép
+    d = copy.deepcopy(clean); a = d["assets"][_img_asset(d)]
+    a["rights"] = "open_licensed"; a.pop("open_license", None); a["credit"] = "x"
+    cases.append(("MEDIA_OPEN_UNLICENSED", d))
+
     for want, d in cases:
         bit, got = _bite(d, want)
         ok = ok and bit

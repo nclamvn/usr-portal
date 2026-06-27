@@ -14,6 +14,9 @@ from nav import nav
 from header import header
 from pagenav import pagenav
 from graphic import lead_graphic, feed_figure, figure_is_data
+import media_lib as ML
+
+_MEDIA = ML.Media()
 import urllib.parse
 from seo import meta as seo_meta
 
@@ -286,14 +289,19 @@ def _kicker(fm):
 
 
 def _byline(fm):
-    """BYLINE (TIP-BYLINE/b): when a real person signs (human_author) the piece is Mode E; otherwise it is
-    OPENLY an unsigned data draft — never a desk name ('Ban Dữ liệu USR') posing as a responsible author.
-    The human_author hook lets a real editor sign a specific piece later, upgrading it to E."""
+    """BYLINE (TIP-BYLINE/b): when a real person signs (human_author) the piece is Mode E. Otherwise it is
+    openly unsigned — never a desk name posing as a responsible author. Two unsigned cases, kept distinct
+    so a sourced data note doesn't read like an unfinished placeholder:
+      · sample=true  → 'Bản thảo · chưa ký' (a draft/placeholder — not real reporting).
+      · sample=false → 'Ghi-chú dữ-liệu · chưa ký' (a real SOURCED note; credibility is the cited source
+        shown in _meta, not a byline). Still openly unsigned, still no fabricated author."""
     ha = fm.get("human_author")
     date = esc(str(fm.get("date", "")))
     if ha:
         return f'{esc(ha)} · {date} · {bilingual("signed", "đã ký")}'
-    return f'{bilingual("Data draft · not editorially signed", "Bản thảo dữ liệu · chưa biên tập ký")} · {date}'
+    if fm.get("sample"):
+        return f'{bilingual("Data draft · not editorially signed", "Bản thảo dữ liệu · chưa biên tập ký")} · {date}'
+    return f'{bilingual("Data note · unsigned", "Ghi-chú dữ-liệu · chưa ký")} · {date}'
 
 
 def _meta(fm):
@@ -344,6 +352,13 @@ def _weight(fb):
 
 def _lead_html(fm):
     cap, prov = _figcap(fm)
+    # TIP-ENRICH — bound real photo (rtr_owned/open_licensed) for the lead, else the data-figure.
+    _am = _MEDIA.first(f"article:{fm['slug']}")
+    if _am:
+        _fig = ML.img_html(_am, "nf-lead-photo")
+        cap = esc(_am.get("caption") or cap)
+    else:
+        _fig = feed_figure(fm, "lead")
     return (
         '<article class="lead">'
         '<div class="lead-body">'
@@ -354,7 +369,7 @@ def _lead_html(fm):
         '</div>'
         '<aside class="figure">'
         f'<div class="figttl">{_figttl(fm)}</div>'
-        f'{feed_figure(fm, "lead")}'
+        f'{_fig}'
         f'<div class="cap"><span>{cap}</span><span class="src">{prov}</span></div>'
         '</aside></article>')
 

@@ -78,6 +78,8 @@ def main():
     ap.add_argument("--captured", default=None)
     ap.add_argument("--source-label", dest="source_label", default=None)
     ap.add_argument("--credit", default=None)
+    ap.add_argument("--grade", default=GRADE)               # 'none' = trung-tính (open_licensed, không warm-grade RtR)
+    ap.add_argument("--open-license", dest="open_license", default=None)  # vd 'CC BY-SA 4.0' / 'Unsplash License'
     ap.add_argument("--bind", action="append", default=[])
     a = ap.parse_args()
 
@@ -91,13 +93,17 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
 
     if a.type == "image":
-        from PIL import Image
-        im = rtr_warm_v1(Image.open(src))
+        from PIL import Image, ImageOps
+        src_im = Image.open(src)
+        if a.grade == "none":                          # open_licensed: chỉ resize+webp, không grade thương-hiệu
+            im = src_im.convert("RGB"); im = ImageOps.exif_transpose(im); im.thumbnail((1920, 1920), Image.LANCZOS)
+        else:
+            im = rtr_warm_v1(src_im)
         im.save(out, "WEBP", quality=82, method=6)     # strip metadata mặc-định
-        grade = GRADE
+        grade = a.grade
         before = src.stat().st_size
         after = out.stat().st_size
-        print(f"  graded {src.name} → {rel}  ({before//1024}K → {after//1024}K, {GRADE})")
+        print(f"  optimized {src.name} → {rel}  ({before//1024}K → {after//1024}K, grade={grade})")
     else:                                               # video: copy nguyên, KHÔNG grade
         shutil.copyfile(src, out)
         grade = None
@@ -117,6 +123,7 @@ def main():
         "source": a.source_label or f"RtR Media · {origin}",
         "source_origin": f"rtr-website/{origin}",
         "credit": a.credit,
+        "open_license": a.open_license,
         "license": {"token": None, "active": False, "expires": None},
         "grade": grade,
         "caption": a.caption,

@@ -1,6 +1,94 @@
 {
   "schema": "media/1",
   "assets": {
+    "drone-ag-paddy": {
+      "type": "image",
+      "src": "/images/content/open/drone-ag-paddy.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "Wikimedia Commons · File:Agricultural drone spraying on paddy field.jpg",
+      "source_origin": "rtr-website//tmp/open_img/drone-ag.jpg",
+      "credit": "Shreesha Sharma / Wikimedia Commons",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Drone phun trên ruộng lúa (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "drone",
+        "nông nghiệp"
+      ]
+    },
+    "ehang-eh184": {
+      "type": "image",
+      "src": "/images/content/open/ehang-eh184.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "Wikimedia Commons · File:Ehang184.png",
+      "source_origin": "rtr-website//tmp/open_img/ehang184.png",
+      "credit": "Alex Butterfield / Wikimedia Commons",
+      "open_license": "CC BY 2.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "EHang 184 — drone chở khách (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "eVTOL",
+        "EHang"
+      ]
+    },
+    "evtol-passenger": {
+      "type": "image",
+      "src": "/images/content/open/evtol-passenger.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "Wikimedia Commons · File:Passenger Drone.jpg",
+      "source_origin": "rtr-website//tmp/open_img/evtol-passenger.jpg",
+      "credit": "Alex Butterfield / Wikimedia Commons",
+      "open_license": "CC BY 2.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Taxi bay không người lái chở khách (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "eVTOL",
+        "taxi bay"
+      ]
+    },
+    "evtol-volocopter": {
+      "type": "image",
+      "src": "/images/content/open/evtol-volocopter.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "Wikimedia Commons · File:Volocopter, IAA 2017",
+      "source_origin": "rtr-website//tmp/open_img/evtol-volocopter.jpg",
+      "credit": "Matti Blume / Wikimedia Commons",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Taxi bay eVTOL Volocopter (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "eVTOL",
+        "taxi bay"
+      ]
+    },
     "hera-branded-demo": {
       "type": "image",
       "src": "/images/content/rtr/hera-branded-demo.webp",
@@ -193,6 +281,28 @@
       "identity_source": "RtR Company Knowledge Base §1.1 (self-sourced)",
       "identity_tier": "A"
     },
+    "uav-deltaquad": {
+      "type": "image",
+      "src": "/images/content/open/uav-deltaquad.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "Wikimedia Commons · File:DeltaQuad VTOL surveillance UAV",
+      "source_origin": "rtr-website//tmp/open_img/uav-deltaquad.jpg",
+      "credit": "Sander Smeets / Wikimedia Commons",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "UAV cánh cố định/VTOL giám sát (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "UAV",
+        "giám sát"
+      ]
+    },
     "vega-featured": {
       "type": "image",
       "src": "/images/content/vega/vega-featured.webp",
@@ -258,6 +368,21 @@
     }
   },
   "bindings": {
+    "article:lae-cn-du-bao-2035": [
+      "evtol-passenger"
+    ],
+    "article:lae-cn-ehang-pc": [
+      "ehang-eh184"
+    ],
+    "article:lae-tg-beta": [
+      "evtol-volocopter"
+    ],
+    "article:lae-vn-drone-nong-nghiep": [
+      "drone-ag-paddy"
+    ],
+    "article:lae-vn-viettel-uav": [
+      "uav-deltaquad"
+    ],
     "company:real-time-robotics": [
       "hera-branded-demo",
       "hera-studio-black"

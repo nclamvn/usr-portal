@@ -52,6 +52,17 @@
   --maxw: 1240px;
   --wm: rgba(26,26,28,.045);
   --grid: var(--bp-grid);        /* faint blueprint graph-paper */
+  /* Monitor world-map (Mode L) — theme-responsive cockpit. LIGHT = pale cockpit matching cream
+     (no more inverted dark plate); signal points keep their stratum hue. Flips live via CSS var. */
+  --mon-ocean: #EAEDEF;          /* radial center (plate base) */
+  --mon-ocean-2: #E2E7EA;        /* radial mid */
+  --mon-ocean-3: #D8DEE2;        /* radial edge (gentle vignette) */
+  --mon-land: #DADFE2;           /* landmass fill — a touch darker than ocean */
+  --mon-coast: #9DAAB3;          /* coastline stroke — mid grey-blue, reads on pale */
+  --mon-grid: #E0E5E8;           /* graticule lines */
+  --mon-grid-eq: #CDD5DA;        /* equator (a touch stronger) */
+  --mon-vignette: #CFD6DB;       /* edge darkening frame — subtle on light */
+  --mon-hint-bg: rgba(255,255,255,.72);   /* on-map hint pill — soft white on light cockpit */
 }
 :root[data-theme="dark"] {
   /* cockpit dark — token values from home-v2-specimen (TIP-UX2.1 pure-value) */
@@ -71,6 +82,16 @@
   --bp-grid: rgba(255,255,255,.022);
   --bp-soft: rgba(188,190,196,.34);
   --bp-faint: #3A4049;
+  /* Monitor map — DARK = the original cockpit values (unchanged look in dark theme). */
+  --mon-ocean: #0f1d29;
+  --mon-ocean-2: #0a131c;
+  --mon-ocean-3: #05090f;
+  --mon-land: #13202c;
+  --mon-coast: #2f465a;
+  --mon-grid: #15242f;
+  --mon-grid-eq: #21384a;
+  --mon-vignette: #05090f;
+  --mon-hint-bg: rgba(7,13,20,.55);       /* unchanged dark cockpit hint pill */
   --card-bg: var(--bg-2);
   --card-ink: var(--ink);
   --card-soft: var(--muted);
@@ -371,9 +392,10 @@ small, .small { font-size: .82rem; }
 :root[data-lang="vn"] [data-lang-vn] { display: revert; }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   Mode L — World Monitor (TIP-L1). The map's dark cockpit is SVG paint only
-   (a <rect fill> inside .mon-svg); NO DOM container here carries a dark background,
-   so THEME_PURITY stays clean. The chrome (panel/filters/foot) is theme-token-driven. */
+   Mode L — World Monitor (TIP-L1). The map cockpit is theme-responsive: its plate/land/graticule/
+   vignette fills are SVG paint driven by var(--mon-*) tokens (pale in light, dark in dark). It is
+   still SVG paint (THEME_PURITY reads DOM background, never SVG fill) and .mon-stage carries NO dark
+   DOM background, so THEME_PURITY stays clean either theme. Chrome is theme-token-driven too. */
 .mon-wrap { max-width: var(--w-wide); margin: 0 auto; padding: 1.4rem 1.4rem 3rem; }
 .mon-head { border-bottom: 1px solid var(--hair); padding-bottom: 1rem; margin-bottom: 1.1rem; }
 .mon-eyebrow { font-family: var(--font-mono); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
@@ -413,7 +435,7 @@ small, .small { font-size: .82rem; }
 .mon-p-dl dt { font-family: var(--font-mono); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0; }
 .mon-p-dl dd { margin: 0; font-size: .82rem; line-height: 1.4; color: var(--ink); }
 .mon-p-link { display: inline-block; margin-top: 1.1rem; font-family: var(--font-mono); font-size: .74rem; color: var(--brass); text-decoration: none; border-bottom: 1px solid var(--brass); }
-.mon-hint { position: absolute; left: 14px; bottom: 12px; display: inline-block; font-family: var(--font-mono); font-size: .7rem; color: #a9bccb; margin: 0; background: rgba(7,13,20,.55); padding: 3px 9px; border-radius: 4px; }
+.mon-hint { position: absolute; left: 14px; bottom: 12px; display: inline-block; font-family: var(--font-mono); font-size: .7rem; color: var(--ink-soft); margin: 0; background: var(--mon-hint-bg); padding: 3px 9px; border-radius: 4px; }
 .mon-foot { font-size: .78rem; color: var(--muted); line-height: 1.5; max-width: 76ch; margin: 1.2rem 0 0; border-top: 1px solid var(--hair); padding-top: .9rem; }
 
 /* status bar — watching / stream / registry-updated / live UTC clock (all real, none hardcoded) */
@@ -644,6 +666,8 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .dmedia, .cmedia { margin: 1rem 0 .4rem; border: 1px solid var(--hair-strong); background: var(--bg-2); overflow: hidden; }
 .dmedia-img, .cmedia-img { display: block; width: 100%; max-height: 360px; object-fit: cover; }
 .dmedia-cap, .cmedia-cap { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); padding: 8px 12px; }
+/* TIP-ENRICH — newsroom lead photo (homepage block + news feed): bound real photo for a story. */
+.nf-lead-photo { width: 100%; height: auto; max-height: 300px; object-fit: cover; display: block; border: 1px solid var(--hair-strong); }
 /* Addendum A — leadership card (CEO): small portrait + sourced identity. No background → THEME_PURITY-neutral. */
 .lead-card { display: flex; align-items: center; gap: 18px; margin: .5rem 0 .3rem; }
 .lead-portrait { width: 84px; height: 84px; object-fit: cover; border: 1px solid var(--hair-strong); flex: 0 0 auto; }

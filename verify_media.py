@@ -79,6 +79,12 @@ def check(doc):
             if lic.get("active") is not True:
                 raise GateError("MEDIA_RIGHTS_BLOCKED", f"{tag}: wire_licensed có token nhưng active=false — slot off")
 
+        if r == "open_licensed":
+            # CC / public-domain / press-kit / gov — phải khai giấy-phép THẬT + credit, không để trần.
+            if not a.get("open_license") or not (a.get("credit") or a.get("source")):
+                raise GateError("MEDIA_OPEN_UNLICENSED",
+                    f"{tag}: open_licensed phải khai open_license (vd 'CC BY-SA 4.0' / 'Unsplash License') + credit/source thật")
+
         typ = a.get("type")
         if typ in ("image", "video"):
             src = a.get("src", "")

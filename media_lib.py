@@ -17,10 +17,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 MEDIA_JSON = ROOT / "content" / "media.json"
 
-ENUM = {"rtr_owned", "rtr_distributed", "data_figure",
+ENUM = {"rtr_owned", "rtr_distributed", "data_figure", "open_licensed",
         "external_article_share", "third_party_in_article", "wire_licensed"}
-# nhóm BẬT phase này (Contract §2). third_party_in_article = chặn; wire_licensed = chỉ khi license.active.
-RENDER_RIGHTS = {"rtr_owned", "rtr_distributed", "data_figure", "external_article_share"}
+# nhóm BẬT phase này. open_licensed = CC/public-domain/press-kit/gov (khai license+credit, gate canh).
+# third_party_in_article = chặn; wire_licensed = chỉ khi license.active.
+RENDER_RIGHTS = {"rtr_owned", "rtr_distributed", "data_figure", "open_licensed", "external_article_share"}
 
 
 def load(path=None):

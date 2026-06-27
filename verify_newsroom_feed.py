@@ -35,7 +35,9 @@ def check_figure_provenance(html):
         raise GateError("FIGURE_PROVENANCE", "external url() image reference found")
     for m in IMG_TAG.finditer(html):
         tag = m.group(0)
-        if 'src="base/' not in tag:                       # only the local brand asset is allowed
+        # Allowed local assets: the brand logo (base/) and media.json-tracked photos (images/content/),
+        # which carry rights+license+credit and are gated by verify_media. Everything else = borrowed.
+        if 'src="base/' not in tag and 'src="images/content/' not in tag:
             raise GateError("FIGURE_PROVENANCE", f"non-asset <img> found: {tag[:60]}")
     nsvg = html.count('class="nf-svg"')
     if nsvg < 3:
