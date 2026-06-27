@@ -62,6 +62,13 @@ def main():
     d = copy.deepcopy(clean); d["bindings"]["entity:khong-ton-tai-xyz"] = [_img_asset(d)]
     cases.append(("MEDIA_TAG_DANGLING", d))
 
+    # 8 · IDENTITY_UNSOURCED (Addendum A) — leadership-bound người thật mà thiếu nguồn danh-tính
+    d = copy.deepcopy(clean)
+    lid = next((ids[0] for k, ids in d["bindings"].items() if k.startswith("leadership:") and ids), None)
+    if lid:
+        d["assets"][lid].pop("identity_source", None)
+        cases.append(("MEDIA_IDENTITY_UNSOURCED", d))
+
     for want, d in cases:
         bit, got = _bite(d, want)
         ok = ok and bit

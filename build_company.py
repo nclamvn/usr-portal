@@ -119,6 +119,15 @@ def render_company(c, labels, uav_name):
     _cm = _MEDIA.first("company:" + c["slug"])
     cmedia = (f'\n  <figure class="cmedia" data-audit="cmedia">{ML.img_html(_cm, "cmedia-img", "../")}'
               f'<figcaption class="cmedia-cap">{esc(_cm.get("caption") or "")}</figcaption></figure>') if _cm else ""
+    # Addendum A — slot Lãnh đạo cuối trang (binding leadership:<slug>); generic, fallback-safe.
+    # Tên/chức danh là claim người-thật → gate MEDIA_IDENTITY_UNSOURCED buộc kèm nguồn (in ngay trên trang).
+    _ld = _MEDIA.first("leadership:" + c["slug"])
+    leadership = (f'\n\n  <div class="csec-h">{bilingual("Leadership", "Lãnh đạo")}</div>'
+                  f'\n  <figure class="lead-card" data-audit="leadcard">{ML.img_html(_ld, "lead-portrait", "../")}'
+                  f'<figcaption class="lead-meta"><span class="lead-name">{esc(_ld.get("name") or "")}</span>'
+                  f'<span class="lead-title">{esc(_ld.get("title") or "")}</span>'
+                  f'<span class="lead-src">{esc(_ld.get("identity_source") or "")} · tier {esc(_ld.get("identity_tier") or "—")}</span>'
+                  f'</figcaption></figure>') if _ld else ""
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -150,7 +159,7 @@ def render_company(c, labels, uav_name):
 
   <div class="csec-h">{bilingual("Company profile (sourced)", "Hồ sơ công ty (có nguồn)")}</div>
   {sourced}
-  {rel}
+  {rel}{leadership}
 
   <p class="note">{bilingual(
     "Fleet figures are derived live from the UAV registry. Profile attributes carry a source and "

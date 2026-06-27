@@ -46,6 +46,8 @@ def _binding_target_exists(key):
         return (ROOT / "entity" / f"{ident}.html").exists()
     if kind == "person":
         return (ROOT / "person" / f"{ident}.html").exists()
+    if kind == "leadership":                              # Addendum A — leadership block sống trên trang company
+        return (ROOT / "company" / f"{ident}.html").exists()
     if kind == "article":
         return (ROOT / "news" / f"{ident}.html").exists() or (ROOT / "analysis" / f"{ident}.html").exists()
     return False                                          # kind lạ → coi như dangling
@@ -93,6 +95,17 @@ def check(doc):
         for mid in ids:
             if mid not in assets:
                 raise GateError("MEDIA_TAG_DANGLING", f"binding {key!r}: asset-id {mid!r} không có trong assets")
+
+    # Addendum A · MEDIA_IDENTITY_UNSOURCED — asset bound dưới 'leadership:' khai một người THẬT (tên+chức
+    # danh) → phải có nguồn, không để claim danh-tính trần. Biến A.2 từ lời-hứa thành điều-kiện máy-kiểm.
+    for key, ids in bindings.items():
+        if not key.startswith("leadership:"):
+            continue
+        for mid in ids:
+            a = assets.get(mid, {})
+            if not (a.get("name") and a.get("title") and a.get("identity_source")):
+                raise GateError("MEDIA_IDENTITY_UNSOURCED",
+                    f"asset {mid!r} bound dưới {key!r}: claim danh-tính người thật phải có name + title + identity_source — không để trần")
 
 
 def main():

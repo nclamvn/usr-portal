@@ -183,11 +183,15 @@
         "expires": null
       },
       "grade": "rtr-warm-v1",
-      "caption": "Lương Quốc — CEO Real-time Robotics",
+      "caption": "Dr. Quoc Luong — Founder & CEO, Real-time Robotics",
       "captured_at": null,
       "entity_tags": [
         "rtr"
-      ]
+      ],
+      "name": "Dr. Quoc Luong",
+      "title": "Founder & CEO",
+      "identity_source": "RtR Company Knowledge Base §1.1 (self-sourced)",
+      "identity_tier": "A"
     },
     "vega-featured": {
       "type": "image",
@@ -272,6 +276,9 @@
     "hero:home": [
       "hero-detroit",
       "hero-flight-1"
+    ],
+    "leadership:real-time-robotics": [
+      "quoc-portrait"
     ]
   }
 }

@@ -644,6 +644,13 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .dmedia, .cmedia { margin: 1rem 0 .4rem; border: 1px solid var(--hair-strong); background: var(--bg-2); overflow: hidden; }
 .dmedia-img, .cmedia-img { display: block; width: 100%; max-height: 360px; object-fit: cover; }
 .dmedia-cap, .cmedia-cap { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); padding: 8px 12px; }
+/* Addendum A — leadership card (CEO): small portrait + sourced identity. No background → THEME_PURITY-neutral. */
+.lead-card { display: flex; align-items: center; gap: 18px; margin: .5rem 0 .3rem; }
+.lead-portrait { width: 84px; height: 84px; object-fit: cover; border: 1px solid var(--hair-strong); flex: 0 0 auto; }
+.lead-meta { display: flex; flex-direction: column; gap: 2px; }
+.lead-name { font-weight: 600; }
+.lead-title { color: var(--muted); font-size: .86rem; }
+.lead-src { font-family: var(--font-mono); font-size: .68rem; letter-spacing: .03em; color: var(--muted); margin-top: 4px; }
 .lhero-progress { height: 1px; background: var(--hair); margin-top: 24px; position: relative; overflow: hidden; }
 .lhero-fill { position: absolute; left: 0; top: 0; height: 100%; width: 0; background: var(--brass); opacity: .8; }
 .lhero-fill.run { animation: lherofill var(--dur, 6000ms) linear forwards; }
