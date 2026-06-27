@@ -6,7 +6,7 @@ BASE is the production origin — set it to the real deploy URL before going liv
 independent: they check path resolution + value provenance, not the host)."""
 import json
 
-BASE = "https://nclamvn.github.io/usr-portal"   # TODO(owner): confirm production origin
+BASE = "https://usr-portal.vercel.app"   # production origin (Vercel default cho repo usr-portal); đổi sang domain riêng khi DNS sẵn
 SPEC_LD = {"mtow_kg": "MTOW (kg)", "max_payload_kg": "Max payload (kg)", "endurance_min": "Endurance (min)",
            "max_range_km": "Max range (km)", "max_link_km": "Datalink (km)", "max_speed_ms": "Max speed (m/s)",
            "service_ceiling_m": "Service ceiling (m)"}
