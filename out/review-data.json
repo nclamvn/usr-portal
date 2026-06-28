@@ -2556,6 +2556,22 @@
       "total": 37
     },
     {
+      "maker": "Skydio",
+      "name": "Skydio X10",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-x10-x10",
+      "total": 37
+    },
+    {
       "maker": "Quantum Systems",
       "name": "Quantum Systems Trinity F90 Plus",
       "of": 6,
@@ -2665,22 +2681,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-teledyne-flir-siras-siras",
-      "total": 36
-    },
-    {
-      "maker": "Skydio",
-      "name": "Skydio X10",
-      "of": 6,
-      "scored": 2,
-      "scores": {
-        "endurance_min": 34,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": 37,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-skydio-x10-x10",
       "total": 36
     },
     {

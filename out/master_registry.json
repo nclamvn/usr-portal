@@ -30504,19 +30504,26 @@
           "inherited_from": null
         },
         "endurance_min": {
-          "value": 40,
-          "status": "verified",
-          "confidence": "high",
+          "value": null,
+          "status": "disputed",
+          "confidence": "low",
           "sources": [
             {
-              "url": "https://www.skydio.com/x10/technical-specs",
-              "tier": "A",
-              "retrieved": "2026-06-29",
+              "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating",
+              "tier": "C",
+              "retrieved": "2026-06-22",
               "claimed_value": 40,
-              "note": "manufacturer spec (enrich)"
+              "note": "third-party"
+            },
+            {
+              "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/",
+              "tier": "C",
+              "retrieved": "2026-06-22",
+              "claimed_value": 65,
+              "note": "third-party"
             }
           ],
-          "last_verified": "2026-06-29",
+          "last_verified": null,
           "inherited_from": null
         },
         "market_segment": {

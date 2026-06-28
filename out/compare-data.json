@@ -9957,8 +9957,12 @@
       "slug": "uav-skydio-x10-x10",
       "specs": {
         "endurance_min": {
-          "tier": "A",
-          "v": 40
+          "claims": [
+            40,
+            65
+          ],
+          "tier": "C",
+          "v": null
         },
         "max_link_km": {
           "tier": null,

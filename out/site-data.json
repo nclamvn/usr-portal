@@ -4,14 +4,14 @@
     "field_status_counts": {
       "None": 2872,
       "derived": 267,
-      "disputed": 5,
+      "disputed": 6,
       "unverified": 37,
-      "verified": 2859
+      "verified": 2858
     },
     "source_tier_counts": {
-      "A": 1799,
+      "A": 1798,
       "B": 439,
-      "C": 637,
+      "C": 638,
       "derived": 267
     },
     "spec_fill_rate": {
@@ -24,7 +24,7 @@
         "total": 302
       },
       "endurance_min": {
-        "present": 176,
+        "present": 175,
         "total": 302
       },
       "gps_denied_capable": {
@@ -48105,17 +48105,35 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": "high",
-        "source_tier": "A",
-        "sources": [
+        "claims": [
           {
-            "retrieved": "2026-06-29",
-            "tier": "A",
-            "url": "https://www.skydio.com/x10/technical-specs"
+            "claimed_value": 40,
+            "tier": "C",
+            "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating"
+          },
+          {
+            "claimed_value": 65,
+            "tier": "C",
+            "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/"
           }
         ],
-        "status": "verified",
-        "value": 40
+        "confidence": "low",
+        "disputed": true,
+        "source_tier": "C",
+        "sources": [
+          {
+            "retrieved": "2026-06-22",
+            "tier": "C",
+            "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating"
+          },
+          {
+            "retrieved": "2026-06-22",
+            "tier": "C",
+            "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/"
+          }
+        ],
+        "status": "disputed",
+        "value": null
       },
       "entity_type": "uav",
       "family": {
@@ -65283,5 +65301,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "ca845976123bf467691af5ad6e3fb69a235e40081ac65c0bb37e329e2692a982"
+  "source_registry_sha256": "2afe9e9e44f562464221a68101beb26c4cb9d86c467ad4c2cc254beb6dbb650b"
 }

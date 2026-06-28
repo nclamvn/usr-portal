@@ -83,7 +83,7 @@
     {
       "key": "endurance_min",
       "pct": 58,
-      "present": 176,
+      "present": 175,
       "total": 302
     },
     {
@@ -306,7 +306,7 @@
     "company": 140,
     "country": 28,
     "coverage_pct": 29,
-    "disputed": 5,
+    "disputed": 6,
     "segment": 13,
     "uav": 302
   }
