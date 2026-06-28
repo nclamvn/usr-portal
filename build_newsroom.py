@@ -71,6 +71,14 @@ def trace_value(trace, site):
             raise ValueError("unknown source tier: %s" % tier)
         v = stc[tier]
         return f"{v:,}".replace(",", ".") if isinstance(v, int) and v >= 1000 else v
+    # field-status tally — aggregates.field_status_counts.verified → 2.827 (recompute live, VN sep ≥1000)
+    if t.startswith("aggregates.field_status_counts."):
+        st = t.rsplit(".", 1)[1]
+        fsc = site["aggregates"]["field_status_counts"]
+        if st not in fsc:
+            raise ValueError("unknown field status: %s" % st)
+        v = fsc[st]
+        return f"{v:,}".replace(",", ".") if isinstance(v, int) and v >= 1000 else v
     raise ValueError("unknown trace: %s" % trace)
 
 
@@ -91,7 +99,10 @@ FIG_LABEL = {"total_uav": ("systems", "hệ thống"), "total_company": ("compan
              "spec_coverage": ("spec coverage", "độ phủ spec"), "blue_uas": ("Blue UAS", "Blue UAS"),
              "ndaa": ("NDAA compliant", "tuân thủ NDAA"),
              "fill_mtow": ("MTOW filled /302", "có MTOW /302"), "fill_ndaa": ("NDAA filled /302", "có NDAA /302"),
-             "fill_encryption": ("encryption filled /302", "có mã hoá /302"), "tier_a": ("tier-A values", "giá trị tier A")}
+             "fill_encryption": ("encryption filled /302", "có mã hoá /302"), "tier_a": ("tier-A values", "giá trị tier A"),
+             "fs_verified": ("verified fields", "trường đã kiểm"), "fs_derived": ("derived fields", "trường suy ra"),
+             "fs_unverified": ("unverified fields", "trường chưa kiểm"), "fs_disputed": ("disputed fields", "trường tranh chấp"),
+             "dji_models": ("DJI models", "mẫu DJI")}
 
 
 def data_rail(fm, site):
