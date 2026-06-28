@@ -86,7 +86,7 @@ def render_index(cards):
     items = "".join(_index_item(c) for c in cards)
     title = bilingual("All quick headlines", "Tất cả tin nhanh")
     return f"""<!DOCTYPE html>
-<html lang="vi" data-theme="light" data-lang="vi">
+<html lang="vi" data-theme="light" data-lang="vn">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — USR</title>
@@ -96,7 +96,7 @@ def render_index(cards):
 </head>
 <body>
 {header("../")}
-<main class="ncard-wrap">
+<main class="ncard-list">
   <a class="ncard-back" href="../index.html">← {bilingual("Home","Trang chủ")}</a>
   <h1 class="ncard-ttl">{title}</h1>
   <section class="aggwrap" data-audit="agg">
@@ -144,7 +144,7 @@ def render_card_page(c):
             "Quick headline: original title + a USR-written one-line summary + a link. We do not reproduce the source article — read it in full at the source.",
             "Tin nhanh: tiêu-đề gốc + một câu tóm-tắt do USR viết + link. Chúng tôi KHÔNG tái-bản bài gốc — đọc đầy-đủ tại nguồn.")
     return f"""<!DOCTYPE html>
-<html lang="vi" data-theme="light" data-lang="vi">
+<html lang="vi" data-theme="light" data-lang="vn">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — USR Tin nhanh</title>

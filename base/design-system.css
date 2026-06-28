@@ -680,6 +680,7 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .agg-src { color: var(--brass); text-decoration: none; }
 /* TIP-NEWS-REALTIME — trang đọc in-site mỗi card (news-card/<id>.html). Reading column, themed, no off-bg. */
 .ncard-wrap { max-width: var(--w-read); margin: 0 auto; padding: 2rem 1.4rem 4rem; }
+.ncard-list { max-width: var(--w-wide); margin: 0 auto; padding: 2rem 1.4rem 4rem; }
 .ncard-back { font-family: var(--font-mono); font-size: 12px; color: var(--muted); text-decoration: none; }
 .ncard-back:hover { color: var(--brass); }
 .ncard-field { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 1.4rem; }
