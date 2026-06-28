@@ -11,7 +11,7 @@ from seo import BASE, SPEC_LD
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
 TOP = ["index.html", "reference.html", "search.html", "compare.html", "data.html", "knowledge.html", "review.html", "news.html"]
-DIRS = ["entity", "company", "country", "segment", "news", "analysis", "knowledge"]
+DIRS = ["entity", "company", "country", "segment", "news", "analysis", "knowledge", "news-card"]
 LD_NAME_TO_KEY = {v: k for k, v in SPEC_LD.items()}
 
 
