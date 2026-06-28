@@ -1,6 +1,25 @@
 {
   "schema": "media/1",
   "assets": {
+    "airport-runway": {
+      "type": "image",
+      "src": "/images/content/open/airport-runway.webp",
+      "rights": "open_licensed",
+      "owner": "Jeff Hitchcock",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/airport-raw.jpg",
+      "credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "open_license": "CC BY 2.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Đường băng và máy bay tại sân bay",
+      "captured_at": null,
+      "entity_tags": []
+    },
     "drone-ag-paddy": {
       "type": "image",
       "src": "/images/content/open/drone-ag-paddy.webp",
@@ -131,6 +150,25 @@
         "eVTOL",
         "taxi bay"
       ]
+    },
+    "flood-aerial": {
+      "type": "image",
+      "src": "/images/content/open/flood-aerial.webp",
+      "rights": "open_licensed",
+      "owner": "Antoine Lamielle",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/flood-raw.jpg",
+      "credit": "Ảnh: Antoine Lamielle / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Vùng ngập nhìn từ trên không",
+      "captured_at": null,
+      "entity_tags": []
     },
     "hera-branded-demo": {
       "type": "image",
