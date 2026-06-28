@@ -61,6 +61,26 @@
       "entity_tags": [],
       "license_status": "cc"
     },
+    "blm-drone-training": {
+      "type": "image",
+      "src": "/images/content/open/blm-drone-training.webp",
+      "rights": "open_licensed",
+      "owner": "BLM Oregon and Washington",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_blm-drone-training.img",
+      "credit": "Ảnh: BLM Oregon and Washington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "boeing-x45": {
       "type": "image",
       "src": "/images/content/open/boeing-x45.webp",
@@ -207,6 +227,86 @@
       "entity_tags": [
         "drone"
       ],
+      "license_status": "cc"
+    },
+    "drone-over-castle": {
+      "type": "image",
+      "src": "/images/content/open/drone-over-castle.webp",
+      "rights": "open_licensed",
+      "owner": "Alan Hughes",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_drone-over-castle.img",
+      "credit": "Ảnh: Alan Hughes / Wikimedia Commons (CC BY-SA 2.0) · minh-hoạ",
+      "open_license": "CC BY-SA 2.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "drone-pilot-horseshoe": {
+      "type": "image",
+      "src": "/images/content/open/drone-pilot-horseshoe.webp",
+      "rights": "open_licensed",
+      "owner": "Christian",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_drone-pilot-horseshoe.img",
+      "credit": "Ảnh: Christian / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ",
+      "open_license": "CC BY-SA 3.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "drone-r18": {
+      "type": "image",
+      "src": "/images/content/open/drone-r18.webp",
+      "rights": "open_licensed",
+      "owner": "Trydence",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_drone-r18.img",
+      "credit": "Ảnh: Trydence / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "drone-sunset-phuket": {
+      "type": "image",
+      "src": "/images/content/open/drone-sunset-phuket.webp",
+      "rights": "open_licensed",
+      "owner": "Phuket@photographer.net",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_drone-sunset-phuket.img",
+      "credit": "Ảnh: Phuket@photographer.net / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "open_license": "CC BY 2.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
       "license_status": "cc"
     },
     "ehang-eh184": {
@@ -490,6 +590,26 @@
       ],
       "license_status": "owned"
     },
+    "hermes-900-takeoff": {
+      "type": "image",
+      "src": "/images/content/open/hermes-900-takeoff.webp",
+      "rights": "open_licensed",
+      "owner": "Nehemia Gershuni-Aylho",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_hermes-900-takeoff.img",
+      "credit": "Ảnh: Nehemia Gershuni-Aylho / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ",
+      "open_license": "CC BY-SA 3.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "hero-detroit": {
       "type": "image",
       "src": "/images/content/hero/hero-detroit.webp",
@@ -554,6 +674,26 @@
       "entity_tags": [],
       "license_status": "cc"
     },
+    "irri-rice-drone": {
+      "type": "image",
+      "src": "/images/content/open/irri-rice-drone.webp",
+      "rights": "open_licensed",
+      "owner": "Christopher Hedreyda",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_irri-rice-drone.img",
+      "credit": "Ảnh: Christopher Hedreyda / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "joby-s4": {
       "type": "image",
       "src": "/images/content/open/joby-s4.webp",
@@ -594,6 +734,26 @@
       "entity_tags": [],
       "license_status": "cc"
     },
+    "leleka-100": {
+      "type": "image",
+      "src": "/images/content/open/leleka-100.webp",
+      "rights": "open_licensed",
+      "owner": "VoidWanderer",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_leleka-100.img",
+      "credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "mil-ucav-parade": {
       "type": "image",
       "src": "/images/content/open/mil-ucav-parade.webp",
@@ -603,6 +763,26 @@
       "source_origin": "rtr-website//tmp/dl_mil-ucav-parade.img",
       "credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
       "open_license": "CC BY 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "paris-airshow-uav": {
+      "type": "image",
+      "src": "/images/content/open/paris-airshow-uav.webp",
+      "rights": "open_licensed",
+      "owner": "Matti Blume",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_paris-airshow-uav.img",
+      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
       "license": {
         "token": null,
         "active": false,
@@ -658,6 +838,26 @@
       "identity_source": "RtR Company Knowledge Base §1.1 (self-sourced)",
       "identity_tier": "A",
       "license_status": "owned"
+    },
+    "scan-eagle": {
+      "type": "image",
+      "src": "/images/content/open/scan-eagle.webp",
+      "rights": "open_licensed",
+      "owner": "U.S. Navy",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_scan-eagle.img",
+      "credit": "Ảnh: U.S. Navy / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
     },
     "sensocopter": {
       "type": "image",
@@ -720,6 +920,46 @@
         "UAV",
         "giám sát"
       ],
+      "license_status": "cc"
+    },
+    "uav-tethered": {
+      "type": "image",
+      "src": "/images/content/open/uav-tethered.webp",
+      "rights": "open_licensed",
+      "owner": "Stahlmann",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_uav-tethered.img",
+      "credit": "Ảnh: Stahlmann / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "vanilla-uav-takeoff": {
+      "type": "image",
+      "src": "/images/content/open/vanilla-uav-takeoff.webp",
+      "rights": "open_licensed",
+      "owner": "U.S. Government",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/g_vanilla-uav-takeoff.img",
+      "credit": "Ảnh: U.S. Government / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
       "license_status": "cc"
     },
     "vega-featured": {
