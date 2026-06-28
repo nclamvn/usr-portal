@@ -694,6 +694,12 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .ncard-orig { display: inline-block; margin-top: 1.2rem; font-family: var(--font-mono); font-size: 13px; color: var(--brass); text-decoration: none; border: 1px solid var(--hair-strong); padding: 8px 14px; }
 .ncard-orig:hover { border-color: var(--brass); }
 .ncard-note { font-size: .8rem; color: var(--muted); margin-top: 1.6rem; font-style: italic; line-height: 1.5; }
+/* khung ảnh CHUẨN-HOÁ: width 100% cột + max-height cố-định + object-fit cover → không bao giờ tràn khung. */
+.ncard-fig { margin: 1.2rem 0 1.4rem; border: 1px solid var(--hair-strong); overflow: hidden; background: var(--bg-2); }
+.ncard-fig img { width: 100%; height: auto; max-height: 460px; object-fit: cover; display: block; }
+.ncard-fig figcaption { font-family: var(--font-mono); font-size: 11px; letter-spacing: .03em; color: var(--muted); padding: 7px 12px; }
+.ncard-body { font-size: 1rem; line-height: 1.65; color: var(--ink-soft); margin: 0 0 1rem; }
+.ncard-body:first-of-type::first-letter { font-size: 1.05em; }
 /* Addendum A — leadership card (CEO): small portrait + sourced identity. No background → THEME_PURITY-neutral. */
 .lead-card { display: flex; align-items: center; gap: 18px; margin: .5rem 0 .3rem; }
 .lead-portrait { width: 84px; height: 84px; object-fit: cover; border: 1px solid var(--hair-strong); flex: 0 0 auto; }
