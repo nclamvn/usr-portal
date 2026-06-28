@@ -26,13 +26,15 @@ def check(path, site, comp, uav, terms, fails):
     fm, body = parse(path.read_text())
     sid = path.stem
     typ = fm.get("type")
-    # 1) figure drift — every declared figure's live value must appear in the prose
+    # 1) figure drift — every declared figure's live value must appear in the prose, on a NUMBER
+    #    boundary (not as a substring of a larger number: "6" must not pass via "267"). Digit/dot/comma
+    #    on either side of the value disqualifies the match.
     for fig in fm.get("figures") or []:
         try:
             v = trace_value(fig["trace"], site)
         except Exception as e:
             fails.append("CONTENT_FIGURE_DRIFT: %s token %s not traceable (%s)" % (sid, fig.get("token"), e)); continue
-        if str(v) not in body:
+        if not re.search(r"(?<![\d.,])" + re.escape(str(v)) + r"(?![\d.,])", body):
             fails.append("CONTENT_FIGURE_DRIFT: %s token %s = %s not present in body" % (sid, fig.get("token"), v))
     # 2) opinion needs a human author
     if typ not in AI_TYPES and not fm.get("human_author"):
