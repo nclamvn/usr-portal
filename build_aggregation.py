@@ -12,8 +12,32 @@ from build_reference import bilingual, esc
 from header import header
 from footer import footer
 from seo import meta as seo_meta
+from glyphs import glyph_svg
 
 ROOT = Path(__file__).resolve().parent
+
+# field -> drone-frame glyph (blueprint line-art) for cards with no photo. Deterministic, on-brand,
+# zero-fabrication (a generic frame silhouette, not a claim). Keyword match on the Vietnamese field.
+def _field_glyph(field):
+    f = (field or "").lower()
+    if "nông nghiệp" in f: return "hexa"
+    if "logistics" in f or "giao hàng" in f: return "quad"
+    if "quốc phòng" in f or "an ninh" in f: return "fixed"
+    if "cứu hộ" in f or "an toàn" in f: return "octo"
+    if "hạ tầng" in f or "kinh tế" in f: return "vtol"
+    if "sự cố" in f or "rủi ro" in f: return "fixed"
+    if "thị trường" in f or "doanh nghiệp" in f: return "hexa"
+    if "công nghệ" in f or "tiêu chuẩn" in f: return "vtol"
+    return "multirotor"   # chính sách & pháp lý + fallback
+
+
+def _card_figure(c, prefix):
+    """Generated SVG figure for a card with NO photo: blueprint drone glyph + field tag. Theme-safe
+    (bg token + line-art stroke), so every card carries a visual instead of a blank slot."""
+    cid = esc(c.get("id", ""))
+    return (f'<a class="agg-fig" href="{prefix}news-card/{cid}.html" aria-hidden="true" tabindex="-1">'
+            f'{glyph_svg(_field_glyph(c.get("field","")), "agg-glyph")}'
+            f'<span class="agg-figtag">{esc(c.get("field",""))}</span></a>')
 CARDS = ROOT / "content" / "news-cards.json"
 OUTDIR = ROOT / "news-card"
 
@@ -40,14 +64,15 @@ def _card_html(c, prefix=""):
     # media-forward: thumbnail from the card's LOCAL open-licensed image (cc/cc0), credit overlaid.
     # Only images/content/ (gated open-licensed) ever render here — never a pending third-party hotlink.
     img = c.get("image")
-    thumb = ""
     if img and str(img).lstrip("/").startswith("images/content/"):
-        thumb = (f'<a class="agg-thumb" href="{prefix}news-card/{cid}.html">'
+        media = (f'<a class="agg-thumb" href="{prefix}news-card/{cid}.html">'
                  f'<img src="{prefix}{esc(str(img).lstrip("/"))}" alt="" loading="lazy">'
                  f'<span class="agg-cred">{esc(c.get("image_credit",""))}</span></a>')
+    else:
+        media = _card_figure(c, prefix)   # no photo -> generated blueprint SVG figure (never blank)
     return (
         '<article class="agg-card">'
-        f'{thumb}'
+        f'{media}'
         f'<span class="agg-field">{esc(c.get("field",""))}</span>'
         f'<h4 class="agg-ttl"><a href="{prefix}news-card/{cid}.html">{esc(c.get("source_title",""))}</a></h4>'
         f'<p class="agg-sum">{esc(c.get("summary",""))}</p>'

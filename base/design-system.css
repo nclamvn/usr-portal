@@ -686,6 +686,11 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .agg-thumb { position: relative; display: block; margin: -14px -16px 4px; overflow: hidden; border-bottom: 1px solid var(--hair); }
 .agg-thumb img { width: 100%; height: 150px; object-fit: cover; display: block; }
 .agg-cred { position: absolute; left: 8px; right: 8px; bottom: 6px; font-family: var(--font-mono); font-size: 9px; line-height: 1.25; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.85); }
+/* generated SVG figure for cards with no photo (build_aggregation._card_figure): blueprint glyph + field tag.
+   Same frame as the thumbnail; bg is a theme token so THEME_PURITY stays neutral. */
+.agg-fig { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 150px; margin: -14px -16px 4px; background: var(--bg-2); border-bottom: 1px solid var(--hair); text-decoration: none; }
+.agg-fig .agg-glyph { width: 60px; height: 60px; }
+.agg-figtag { font-family: var(--font-mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
 .agg-field { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .agg-ttl { font-family: var(--font-head); font-size: 1rem; line-height: 1.3; margin: 0; }
 .agg-ttl a { color: var(--ink); text-decoration: none; }
