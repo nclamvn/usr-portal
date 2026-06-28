@@ -37,8 +37,17 @@ def _card_html(c, prefix=""):
     cid = esc(c.get("id", ""))
     date = esc(c.get("date") or "")
     datespan = f'<span class="agg-date">{date}</span> · ' if date else ""
+    # media-forward: thumbnail from the card's LOCAL open-licensed image (cc/cc0), credit overlaid.
+    # Only images/content/ (gated open-licensed) ever render here — never a pending third-party hotlink.
+    img = c.get("image")
+    thumb = ""
+    if img and str(img).lstrip("/").startswith("images/content/"):
+        thumb = (f'<a class="agg-thumb" href="{prefix}news-card/{cid}.html">'
+                 f'<img src="{prefix}{esc(str(img).lstrip("/"))}" alt="" loading="lazy">'
+                 f'<span class="agg-cred">{esc(c.get("image_credit",""))}</span></a>')
     return (
         '<article class="agg-card">'
+        f'{thumb}'
         f'<span class="agg-field">{esc(c.get("field",""))}</span>'
         f'<h4 class="agg-ttl"><a href="{prefix}news-card/{cid}.html">{esc(c.get("source_title",""))}</a></h4>'
         f'<p class="agg-sum">{esc(c.get("summary",""))}</p>'
