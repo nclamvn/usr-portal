@@ -47,6 +47,14 @@
     return out;
   }
 
+  // unit for a spec key (from compare-data specs), and a compact "13 kg · 30 km" readout (honest-null safe)
+  function specUnit(key) { for (var i = 0; i < D.specs.length; i++) if (D.specs[i].key === key) return D.specs[i].unit; return ""; }
+  function micro(u) {
+    var keys = ["mtow_kg", "max_range_km"], parts = [];
+    keys.forEach(function (k) { var c = u.specs[k]; if (c && c.v != null) parts.push(c.v + " " + specUnit(k)); });
+    return parts.length ? parts.join(" · ") : "—";
+  }
+
   function renderResults() {
     var query = (q.value || "").trim().toLowerCase();
     var hits, head;
@@ -60,18 +68,34 @@
     }
     results.innerHTML = head + hits.map(function (u) {
       var dis = sel.indexOf(u.slug) >= 0 || sel.length >= MAX;
-      return '<button data-slug="' + esc(u.slug) + '"' + (dis ? " disabled" : "") + '>' +
-        esc(u.name) + ' <span class="mk">' + esc(u.maker) + '</span></button>';
+      return '<button class="sugg" data-slug="' + esc(u.slug) + '"' + (dis ? " disabled" : "") + '>' +
+        '<span class="gl">' + glyph(u.glyph) + '</span>' +
+        '<span class="snm">' + esc(u.name) + '</span>' +
+        '<span class="smk">' + esc(u.maker) + '</span>' +
+        '<span class="sspec">' + esc(micro(u)) + '</span>' +
+        '<span class="sadd">' + (dis ? bi("added", "đã thêm") : bi("+ add", "+ thêm")) + '</span></button>';
     }).join("");
     results.hidden = !hits.length;
   }
   q.addEventListener("focus", renderResults);
 
+  // selected systems as a 4-bay rack: filled bays keep class .chip (audit + remove handler), empties are dashed
   function renderChips() {
-    chips.innerHTML = sel.map(function (s) {
-      var u = bySlug(s); if (!u) return "";
-      return '<span class="chip">' + esc(u.name) + ' <b data-rm="' + esc(s) + '" title="remove">×</b></span>';
-    }).join("");
+    var html = "";
+    for (var i = 0; i < MAX; i++) {
+      var s = sel[i], u = s ? bySlug(s) : null;
+      var bay = '<span class="bnum">' + bi("Bay", "Khoang") + ' ' + (i + 1) + '</span>';
+      if (u) {
+        html += '<div class="chip bay">' + bay +
+          '<span class="gl">' + glyph(u.glyph) + '</span>' +
+          '<span class="bnm">' + esc(u.name) + '</span>' +
+          '<span class="bmk">' + esc(u.maker) + '</span>' +
+          '<b class="brm" data-rm="' + esc(s) + '" title="remove">×</b></div>';
+      } else {
+        html += '<div class="bay empty">' + bay + '<span class="dots">+ + +</span></div>';
+      }
+    }
+    chips.innerHTML = html;
   }
 
   function colHeader(u) {

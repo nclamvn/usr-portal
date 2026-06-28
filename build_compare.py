@@ -58,32 +58,53 @@ def build_data(site):
 
 COMPARE_CSS = """
   .cmpwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
-  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
-  .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none}
-  .ctrl{display:flex;gap:.5rem}
-  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
-  h1{margin:0 0 .2rem} .lead{color:var(--muted);font-size:.85rem;margin-bottom:1.1rem}
-  .pick{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.7rem}
-  .pick input{flex:1;min-width:180px;background:var(--card-bg-soft,transparent);border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.45rem .6rem;font-family:var(--font-body);font-size:.85rem;color:var(--ink)}
-  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem}
-  .chip{font-family:var(--font-mono);font-size:.74rem;border:1px solid var(--brass);color:var(--brass);border-radius:999px;padding:.16rem .6rem;display:inline-flex;gap:.4rem;align-items:center;cursor:default}
-  .chip b{cursor:pointer}
-  .results{border:1px solid var(--hair);border-radius:var(--radius);max-height:230px;overflow:auto;margin-bottom:1rem}
-  .results button{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--hair);padding:.4rem .6rem;font-family:var(--font-body);font-size:.82rem;color:var(--ink);cursor:pointer}
-  .results button:hover{background:color-mix(in srgb,var(--brass) 8%,transparent)}
-  .results button[disabled]{opacity:.4;cursor:not-allowed}
-  .results .mk{color:var(--muted);font-family:var(--font-mono);font-size:.72rem}
-  .results .rhint{padding:.4rem .6rem;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--hair);background:color-mix(in srgb,var(--brass) 4%,transparent)}
-  .empty{color:var(--muted);font-size:.85rem;padding:1.4rem 0;text-align:center;border:1px dashed var(--hair-strong);border-radius:var(--radius)}
-  table.cmp{width:100%;border-collapse:collapse;font-size:.82rem}
-  table.cmp th,table.cmp td{border-bottom:1px solid var(--hair);padding:.55rem .5rem;vertical-align:top;text-align:left}
+  h1{margin:0 0 .2rem} .lead{color:var(--muted);font-size:.85rem;margin-bottom:1.3rem}
+  /* instrument console (picker) */
+  .cmp-console{background:var(--bg-2);border:1px solid var(--hair);border-radius:var(--radius);padding:1.15rem 1.2rem 1.25rem;margin-bottom:1.4rem}
+  .cmp-kick{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:.7rem}
+  .cmp-search{display:flex;align-items:center;gap:.55rem;border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.55rem .75rem;background:var(--bg);transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+  .cmp-search:focus-within{border-color:var(--brass-bright);box-shadow:0 0 0 3px var(--hair)}
+  .cmp-search svg{width:15px;height:15px;flex:0 0 auto;color:var(--muted)}
+  .cmp-search:focus-within svg{color:var(--brass)}
+  .cmp-search input{flex:1;min-width:0;background:transparent;border:0;outline:0;padding:0;font-family:var(--font-body);font-size:.9rem;color:var(--ink)}
+  .cmp-search input::placeholder{color:var(--faint)}
+  .cmp-search input::-webkit-search-cancel-button{-webkit-appearance:none}
+  .cmp-sub{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.05rem 0 .55rem}
+  /* rack of 4 bays */
+  .bays{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+  @media(max-width:640px){.bays{grid-template-columns:repeat(2,1fr)}}
+  .bay{border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.6rem;min-height:84px;display:flex;flex-direction:column;gap:.22rem;background:var(--bg)}
+  .bay.empty{border-style:dashed;align-items:center;justify-content:center;color:var(--faint);background:transparent}
+  .bay .bnum{font-family:var(--font-mono);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+  .bay.empty .dots{letter-spacing:.34em;color:var(--hair-strong);font-size:.85rem;margin-top:.3rem}
+  .bay .gl{width:30px;height:30px}
+  .bay .bnm{font-family:var(--font-head);font-weight:600;font-size:.84rem;line-height:1.12}
+  .bay .bmk{font-family:var(--font-mono);font-size:.6rem;color:var(--brass);text-transform:uppercase;letter-spacing:.04em}
+  .bay .brm{margin-top:auto;align-self:flex-end;font-family:var(--font-mono);font-size:.95rem;color:var(--muted);cursor:pointer;line-height:1}
+  .bay .brm:hover{color:var(--brass)}
+  .bay.chip{cursor:default}
+  /* suggestion cards */
+  .results{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:.55rem;margin-top:.15rem}
+  .results .rhint{grid-column:1/-1;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .sugg{display:flex;flex-direction:column;gap:.2rem;text-align:left;background:var(--bg);border:1px solid var(--hair);border-radius:var(--radius);padding:.55rem .6rem;color:var(--ink);cursor:pointer;transition:border-color .15s var(--ease),background .15s var(--ease)}
+  .sugg:hover{border-color:var(--brass-bright);background:color-mix(in srgb,var(--brass) 7%,transparent)}
+  .sugg[disabled]{opacity:.4;cursor:not-allowed}
+  .sugg .gl{width:28px;height:28px;margin-bottom:.05rem}
+  .sugg .snm{font-family:var(--font-head);font-weight:600;font-size:.82rem;line-height:1.14}
+  .sugg .smk{font-family:var(--font-mono);font-size:.58rem;color:var(--brass);text-transform:uppercase;letter-spacing:.04em}
+  .sugg .sspec{font-family:var(--font-mono);font-size:.62rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .sugg .sadd{margin-top:.1rem;align-self:flex-end;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brass)}
+  .empty{color:var(--muted);font-size:.85rem;padding:1.6rem 0;text-align:center;border:1px dashed var(--hair-strong);border-radius:var(--radius);margin-top:.6rem}
+  table.cmp{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.6rem}
+  table.cmp th,table.cmp td{border-bottom:1px solid var(--hair);padding:.6rem .55rem;vertical-align:top;text-align:left}
   table.cmp thead th{position:sticky;top:0;background:var(--bg)}
   .col-h{display:flex;flex-direction:column;gap:.3rem}
-  .col-h .nm{font-family:var(--font-head);font-weight:600;font-size:.92rem}
-  .col-h a{color:inherit} .col-h .mk a{color:var(--brass);font-family:var(--font-mono);font-size:.72rem}
-  .col-h .tags{display:flex;gap:.3rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.64rem;color:var(--muted)}
+  .col-h .gl{width:34px;height:34px}
+  .col-h .nm{font-family:var(--font-head);font-weight:600;font-size:.95rem}
+  .col-h a{color:inherit} .col-h .mk a{color:var(--brass);font-family:var(--font-mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.05em}
+  .col-h .tags{display:flex;gap:.3rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.62rem;color:var(--muted)}
   .col-h .b{color:var(--brass)}
-  .rk{font-family:var(--font-mono);font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .rk{font-family:var(--font-mono);font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
   .cmpcell .track{display:block;height:2px;background:var(--hair-strong);border-radius:2px;position:relative;margin:.45rem 0 .3rem}
   .cmpcell .track.null{background:transparent;border-top:1px dashed var(--hair-strong);height:0}
   .cmpcell .tick{position:absolute;top:50%;width:7px;height:7px;border-radius:50%;background:var(--brass);transform:translate(-50%,-50%)}
@@ -114,10 +135,16 @@ def render_page(site):
   <h1>{bilingual("Compare", "So sánh")}</h1>
   <div class="lead">{bilingual("Pick 2–4 systems for a side-by-side, source-cited comparison.",
                                 "Chọn 2–4 hệ thống để so sánh song song, có dẫn nguồn.")}</div>
-  <div class="pick"><input id="q" type="search" autocomplete="off"
-       placeholder="{esc('Search by model or manufacturer…')}" aria-label="search"></div>
-  <div class="results" id="results" hidden></div>
-  <div class="chips" id="chips"></div>
+  <section class="cmp-console reg-frame">
+    <div class="cmp-kick">{bilingual("Select systems · 2–4", "Chọn hệ thống · 2–4")}</div>
+    <div class="cmp-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="20" y1="20" x2="16.05" y2="16.05"></line></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="{esc('Search by model or manufacturer…')}" aria-label="search">
+    </div>
+    <div class="cmp-sub">{bilingual("Selected bays", "Khoang đã chọn")}</div>
+    <div class="bays" id="chips"></div>
+    <div class="results" id="results" hidden></div>
+  </section>
   <div id="table"></div>
   <noscript><p class="empty">{bilingual("Compare needs JavaScript. Browse systems on the",
     "So sánh cần JavaScript. Xem hệ thống ở trang")} <a href="reference.html">{bilingual("reference","tra cứu")}</a>.</p></noscript>

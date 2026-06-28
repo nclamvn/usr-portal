@@ -8,32 +8,53 @@
 <link rel="stylesheet" href="base/design-system.css">
 <style>
   .cmpwrap{max-width:var(--w-wide);margin:0 auto;padding:1.4rem 1.4rem 3rem}
-  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.2rem}
-  .back{font-family:var(--font-mono);font-size:.74rem;color:var(--brass);text-decoration:none}
-  .ctrl{display:flex;gap:.5rem}
-  .ctrl button{background:transparent;color:var(--ink);border:1px solid var(--hair);border-radius:var(--radius);padding:.35rem .6rem;font-family:var(--font-body);font-size:.8rem;cursor:pointer}
-  h1{margin:0 0 .2rem} .lead{color:var(--muted);font-size:.85rem;margin-bottom:1.1rem}
-  .pick{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.7rem}
-  .pick input{flex:1;min-width:180px;background:var(--card-bg-soft,transparent);border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.45rem .6rem;font-family:var(--font-body);font-size:.85rem;color:var(--ink)}
-  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem}
-  .chip{font-family:var(--font-mono);font-size:.74rem;border:1px solid var(--brass);color:var(--brass);border-radius:999px;padding:.16rem .6rem;display:inline-flex;gap:.4rem;align-items:center;cursor:default}
-  .chip b{cursor:pointer}
-  .results{border:1px solid var(--hair);border-radius:var(--radius);max-height:230px;overflow:auto;margin-bottom:1rem}
-  .results button{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--hair);padding:.4rem .6rem;font-family:var(--font-body);font-size:.82rem;color:var(--ink);cursor:pointer}
-  .results button:hover{background:color-mix(in srgb,var(--brass) 8%,transparent)}
-  .results button[disabled]{opacity:.4;cursor:not-allowed}
-  .results .mk{color:var(--muted);font-family:var(--font-mono);font-size:.72rem}
-  .results .rhint{padding:.4rem .6rem;font-family:var(--font-mono);font-size:.66rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--hair);background:color-mix(in srgb,var(--brass) 4%,transparent)}
-  .empty{color:var(--muted);font-size:.85rem;padding:1.4rem 0;text-align:center;border:1px dashed var(--hair-strong);border-radius:var(--radius)}
-  table.cmp{width:100%;border-collapse:collapse;font-size:.82rem}
-  table.cmp th,table.cmp td{border-bottom:1px solid var(--hair);padding:.55rem .5rem;vertical-align:top;text-align:left}
+  h1{margin:0 0 .2rem} .lead{color:var(--muted);font-size:.85rem;margin-bottom:1.3rem}
+  /* instrument console (picker) */
+  .cmp-console{background:var(--bg-2);border:1px solid var(--hair);border-radius:var(--radius);padding:1.15rem 1.2rem 1.25rem;margin-bottom:1.4rem}
+  .cmp-kick{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:.7rem}
+  .cmp-search{display:flex;align-items:center;gap:.55rem;border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.55rem .75rem;background:var(--bg);transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+  .cmp-search:focus-within{border-color:var(--brass-bright);box-shadow:0 0 0 3px var(--hair)}
+  .cmp-search svg{width:15px;height:15px;flex:0 0 auto;color:var(--muted)}
+  .cmp-search:focus-within svg{color:var(--brass)}
+  .cmp-search input{flex:1;min-width:0;background:transparent;border:0;outline:0;padding:0;font-family:var(--font-body);font-size:.9rem;color:var(--ink)}
+  .cmp-search input::placeholder{color:var(--faint)}
+  .cmp-search input::-webkit-search-cancel-button{-webkit-appearance:none}
+  .cmp-sub{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.05rem 0 .55rem}
+  /* rack of 4 bays */
+  .bays{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+  @media(max-width:640px){.bays{grid-template-columns:repeat(2,1fr)}}
+  .bay{border:1px solid var(--hair-strong);border-radius:var(--radius);padding:.6rem;min-height:84px;display:flex;flex-direction:column;gap:.22rem;background:var(--bg)}
+  .bay.empty{border-style:dashed;align-items:center;justify-content:center;color:var(--faint);background:transparent}
+  .bay .bnum{font-family:var(--font-mono);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+  .bay.empty .dots{letter-spacing:.34em;color:var(--hair-strong);font-size:.85rem;margin-top:.3rem}
+  .bay .gl{width:30px;height:30px}
+  .bay .bnm{font-family:var(--font-head);font-weight:600;font-size:.84rem;line-height:1.12}
+  .bay .bmk{font-family:var(--font-mono);font-size:.6rem;color:var(--brass);text-transform:uppercase;letter-spacing:.04em}
+  .bay .brm{margin-top:auto;align-self:flex-end;font-family:var(--font-mono);font-size:.95rem;color:var(--muted);cursor:pointer;line-height:1}
+  .bay .brm:hover{color:var(--brass)}
+  .bay.chip{cursor:default}
+  /* suggestion cards */
+  .results{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:.55rem;margin-top:.15rem}
+  .results .rhint{grid-column:1/-1;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .sugg{display:flex;flex-direction:column;gap:.2rem;text-align:left;background:var(--bg);border:1px solid var(--hair);border-radius:var(--radius);padding:.55rem .6rem;color:var(--ink);cursor:pointer;transition:border-color .15s var(--ease),background .15s var(--ease)}
+  .sugg:hover{border-color:var(--brass-bright);background:color-mix(in srgb,var(--brass) 7%,transparent)}
+  .sugg[disabled]{opacity:.4;cursor:not-allowed}
+  .sugg .gl{width:28px;height:28px;margin-bottom:.05rem}
+  .sugg .snm{font-family:var(--font-head);font-weight:600;font-size:.82rem;line-height:1.14}
+  .sugg .smk{font-family:var(--font-mono);font-size:.58rem;color:var(--brass);text-transform:uppercase;letter-spacing:.04em}
+  .sugg .sspec{font-family:var(--font-mono);font-size:.62rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .sugg .sadd{margin-top:.1rem;align-self:flex-end;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brass)}
+  .empty{color:var(--muted);font-size:.85rem;padding:1.6rem 0;text-align:center;border:1px dashed var(--hair-strong);border-radius:var(--radius);margin-top:.6rem}
+  table.cmp{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.6rem}
+  table.cmp th,table.cmp td{border-bottom:1px solid var(--hair);padding:.6rem .55rem;vertical-align:top;text-align:left}
   table.cmp thead th{position:sticky;top:0;background:var(--bg)}
   .col-h{display:flex;flex-direction:column;gap:.3rem}
-  .col-h .nm{font-family:var(--font-head);font-weight:600;font-size:.92rem}
-  .col-h a{color:inherit} .col-h .mk a{color:var(--brass);font-family:var(--font-mono);font-size:.72rem}
-  .col-h .tags{display:flex;gap:.3rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.64rem;color:var(--muted)}
+  .col-h .gl{width:34px;height:34px}
+  .col-h .nm{font-family:var(--font-head);font-weight:600;font-size:.95rem}
+  .col-h a{color:inherit} .col-h .mk a{color:var(--brass);font-family:var(--font-mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.05em}
+  .col-h .tags{display:flex;gap:.3rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.62rem;color:var(--muted)}
   .col-h .b{color:var(--brass)}
-  .rk{font-family:var(--font-mono);font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .rk{font-family:var(--font-mono);font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
   .cmpcell .track{display:block;height:2px;background:var(--hair-strong);border-radius:2px;position:relative;margin:.45rem 0 .3rem}
   .cmpcell .track.null{background:transparent;border-top:1px dashed var(--hair-strong);height:0}
   .cmpcell .tick{position:absolute;top:50%;width:7px;height:7px;border-radius:50%;background:var(--brass);transform:translate(-50%,-50%)}
@@ -50,10 +71,16 @@
 <main class="cmpwrap">
   <h1><span data-lang-en>Compare</span><span data-lang-vn>So sánh</span></h1>
   <div class="lead"><span data-lang-en>Pick 2–4 systems for a side-by-side, source-cited comparison.</span><span data-lang-vn>Chọn 2–4 hệ thống để so sánh song song, có dẫn nguồn.</span></div>
-  <div class="pick"><input id="q" type="search" autocomplete="off"
-       placeholder="Search by model or manufacturer…" aria-label="search"></div>
-  <div class="results" id="results" hidden></div>
-  <div class="chips" id="chips"></div>
+  <section class="cmp-console reg-frame">
+    <div class="cmp-kick"><span data-lang-en>Select systems · 2–4</span><span data-lang-vn>Chọn hệ thống · 2–4</span></div>
+    <div class="cmp-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="20" y1="20" x2="16.05" y2="16.05"></line></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Search by model or manufacturer…" aria-label="search">
+    </div>
+    <div class="cmp-sub"><span data-lang-en>Selected bays</span><span data-lang-vn>Khoang đã chọn</span></div>
+    <div class="bays" id="chips"></div>
+    <div class="results" id="results" hidden></div>
+  </section>
   <div id="table"></div>
   <noscript><p class="empty"><span data-lang-en>Compare needs JavaScript. Browse systems on the</span><span data-lang-vn>So sánh cần JavaScript. Xem hệ thống ở trang</span> <a href="reference.html"><span data-lang-en>reference</span><span data-lang-vn>tra cứu</span></a>.</p></noscript>
   <template data-glyph-kind="quad"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="quad"><line class="bp-line" x1="50" y1="50" x2="71.2" y2="71.2"/><circle class="bp-disc" cx="71.2" cy="71.2" r="13"/><line class="bp-line" x1="50" y1="50" x2="28.8" y2="71.2"/><circle class="bp-disc" cx="28.8" cy="71.2" r="13"/><line class="bp-line" x1="50" y1="50" x2="28.8" y2="28.8"/><circle class="bp-disc" cx="28.8" cy="28.8" r="13"/><line class="bp-line" x1="50" y1="50" x2="71.2" y2="28.8"/><circle class="bp-disc" cx="71.2" cy="28.8" r="13"/><circle class="bp-line" cx="50" cy="50" r="6"/></svg></template><template data-glyph-kind="hexa"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="hexa"><line class="bp-line" x1="50" y1="50" x2="50.0" y2="18.0"/><circle class="bp-disc" cx="50.0" cy="18.0" r="10"/><line class="bp-line" x1="50" y1="50" x2="77.7" y2="34.0"/><circle class="bp-disc" cx="77.7" cy="34.0" r="10"/><line class="bp-line" x1="50" y1="50" x2="77.7" y2="66.0"/><circle class="bp-disc" cx="77.7" cy="66.0" r="10"/><line class="bp-line" x1="50" y1="50" x2="50.0" y2="82.0"/><circle class="bp-disc" cx="50.0" cy="82.0" r="10"/><line class="bp-line" x1="50" y1="50" x2="22.3" y2="66.0"/><circle class="bp-disc" cx="22.3" cy="66.0" r="10"/><line class="bp-line" x1="50" y1="50" x2="22.3" y2="34.0"/><circle class="bp-disc" cx="22.3" cy="34.0" r="10"/><circle class="bp-line" cx="50" cy="50" r="6"/></svg></template><template data-glyph-kind="octo"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="octo"><line class="bp-line" x1="50" y1="50" x2="50.0" y2="17.0"/><circle class="bp-disc" cx="50.0" cy="17.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="73.3" y2="26.7"/><circle class="bp-disc" cx="73.3" cy="26.7" r="7"/><line class="bp-line" x1="50" y1="50" x2="83.0" y2="50.0"/><circle class="bp-disc" cx="83.0" cy="50.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="73.3" y2="73.3"/><circle class="bp-disc" cx="73.3" cy="73.3" r="7"/><line class="bp-line" x1="50" y1="50" x2="50.0" y2="83.0"/><circle class="bp-disc" cx="50.0" cy="83.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="26.7" y2="73.3"/><circle class="bp-disc" cx="26.7" cy="73.3" r="7"/><line class="bp-line" x1="50" y1="50" x2="17.0" y2="50.0"/><circle class="bp-disc" cx="17.0" cy="50.0" r="7"/><line class="bp-line" x1="50" y1="50" x2="26.7" y2="26.7"/><circle class="bp-disc" cx="26.7" cy="26.7" r="7"/><circle class="bp-line" cx="50" cy="50" r="6"/></svg></template><template data-glyph-kind="multirotor"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="multirotor"><circle class="bp-faintl" cx="50" cy="50" r="33"/><circle class="bp-faintl" cx="50" cy="50" r="20"/><circle class="bp-line" cx="50" cy="50" r="7"/></svg></template><template data-glyph-kind="fixed"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="fixed"><path class="bp-line" d="M50 16 C46 16 44 22 44 34 L44 64 C44 76 46 84 50 84 C54 84 56 76 56 64 L56 34 C56 22 54 16 50 16Z"/><path class="bp-line" d="M8 48 C26 44 40 43 50 43 C60 43 74 44 92 48 C74 51 60 52 50 52 C40 52 26 51 8 48Z"/><path class="bp-line" d="M34 78 C42 76 46 76 50 76 C54 76 58 76 66 78 C58 80 54 80 50 80 C46 80 42 80 34 78Z"/><circle class="bp-disc" cx="50" cy="20" r="2.4"/></svg></template><template data-glyph-kind="vtol"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="vtol"><path class="bp-line" d="M50 20 C47 20 45 26 45 36 L45 62 C45 72 47 78 50 78 C53 78 55 72 55 62 L55 36 C55 26 53 20 50 20Z"/><path class="bp-line" d="M12 46 C28 43 40 42 50 42 C60 42 72 43 88 46 C72 49 60 50 50 50 C40 50 28 49 12 46Z"/><line class="bp-line" x1="30" y1="30" x2="30" y2="70"/><line class="bp-line" x1="70" y1="30" x2="70" y2="70"/><circle class="bp-disc" cx="30" cy="30" r="8"/><circle class="bp-disc" cx="30" cy="70" r="8"/><circle class="bp-disc" cx="70" cy="30" r="8"/><circle class="bp-disc" cx="70" cy="70" r="8"/></svg></template><template data-glyph-kind="heli"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="heli"><circle class="bp-faintl" cx="50" cy="44" r="30"/><path class="bp-line" d="M50 28 C45 28 43 34 43 46 L43 66 C43 72 46 74 50 74 C54 74 57 72 57 66 L57 46 C57 34 55 28 50 28Z"/><line class="bp-line" x1="50" y1="72" x2="50" y2="90"/><line class="bp-line" x1="44" y1="90" x2="56" y2="90"/><circle class="bp-line" cx="50" cy="44" r="4"/></svg></template><template data-glyph-kind="ducted"><svg class="glyph-svg gl" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="ducted"><circle class="bp-line" cx="50" cy="50" r="32"/><circle class="bp-line" cx="50" cy="50" r="24" opacity=".55"/><line class="bp-line" x1="18" y1="50" x2="82" y2="50"/><line class="bp-line" x1="50" y1="18" x2="50" y2="82"/><circle class="bp-line" cx="50" cy="50" r="7"/></svg></template><template data-glyph-kind="unknown"><svg class="glyph-svg gl glyph-unknown" viewBox="0 0 100 100" fill="none" aria-hidden="true" data-glyph="unknown"><circle class="bp-faintl" cx="50" cy="50" r="26"/><text x="50" y="58" text-anchor="middle" font-family="IBM Plex Mono" font-size="22">?</text></svg></template>
