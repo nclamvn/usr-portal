@@ -12,7 +12,6 @@ def _bi(en, vn):
 # single home link, so a "USR" nav item would be a confusing second link to the same place.
 ITEMS = [
     ("reference", "reference.html", "Reference", "Tham chiếu"),
-    ("search", "search.html", "Search", "Tìm kiếm"),
     ("compare", "compare.html", "Compare", "So sánh"),
     ("data", "data.html", "Data", "Dữ liệu"),
     ("knowledge", "knowledge.html", "Knowledge", "Thuật ngữ"),

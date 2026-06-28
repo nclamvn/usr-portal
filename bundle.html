@@ -346,6 +346,16 @@ small, .small { font-size: .82rem; }
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
 .gbar-tg { background: transparent; color: var(--ink-soft); border: 1px solid var(--hair-strong); border-radius: 999px; height: 30px; padding: 0 .7rem; font-family: var(--font-mono); font-size: .72rem; cursor: pointer; }
 .gbar-tg:hover { border-color: var(--brass-bright); color: var(--ink); }
+/* global search box (header.py) — replaces the old Search breadcrumb. Pill matched to .gbar-tg height,
+   magnifier glyph + one input; GET form to search.html. Premium-minimal: quiet until focus, brass ring on focus. */
+.gbar-search { flex: 0 0 auto; display: inline-flex; align-items: center; gap: .45rem; height: 30px; padding: 0 .7rem; border: 1px solid var(--hair-strong); border-radius: 999px; background: transparent; transition: border-color .2s var(--ease), box-shadow .2s var(--ease); }
+.gbar-search:focus-within { border-color: var(--brass-bright); box-shadow: 0 0 0 3px var(--hair); }
+.gbar-search svg { width: 13px; height: 13px; flex: 0 0 auto; color: var(--muted); }
+.gbar-search:focus-within svg { color: var(--brass); }
+.gbar-search input { width: 150px; max-width: 20vw; background: transparent; border: 0; outline: 0; padding: 0; color: var(--ink); font-family: var(--font-body); font-size: .82rem; }
+.gbar-search input::placeholder { color: var(--faint); }
+.gbar-search input::-webkit-search-cancel-button { -webkit-appearance: none; }
+@media (max-width: 720px) { .gbar-search input { width: 0; } .gbar-search:focus-within input { width: 132px; } }
 /* theme toggle label reflects the CURRENT theme (light shows "Light", dark shows "Dark") */
 #theme .th-d { display: none; }
 :root[data-theme="dark"] #theme .th-l { display: none; }
