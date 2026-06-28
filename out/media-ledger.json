@@ -347,35 +347,35 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Tdb2016 / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:cn-shenzhen-1200-vertiport",
       "source": "Unmanned Airspace",
       "source_url": "https://www.unmannedairspace.info/uncategorized/china-to-accelerate-low-altitude-economy-of-long-distance-cargo-drones-and-urban-evtols/",
-      "src": "/images/content/open/ddc-delivery.webp",
+      "src": "/images/content/open/drone-flying.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-can-gio-vung-tau-uav",
       "source": "VietnamPlus",
       "source_url": "https://www.vietnamplus.vn/kinh-te-tam-thap-mo-duong-tren-khong-khai-pha-mo-vang-ty-do-post1116792.vnp",
-      "src": "/images/content/open/zipline-delivery.webp",
+      "src": "/images/content/open/drone-flying.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Wikideas1 / Wikimedia Commons (CC0) · minh-hoạ",
+      "credit": "Ảnh: Antoine Lamielle / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-cuuho-daklak",
       "source": "Báo Nhân Dân",
       "source_url": "https://nhandan.vn/nhom-ung-cuu-3-mien-su-dung-drone-ho-tro-khac-phuc-hau-qua-lu-lut-o-dak-lak-post926830.html",
-      "src": "/images/content/open/crop-fertilizer.webp",
+      "src": "/images/content/open/flood-aerial.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -391,13 +391,13 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-dien-bien-6000",
       "source": "Một Thế Giới",
       "source_url": "https://motthegioi.vn/dien-bien-thu-nghiem-uav-thuong-mai/",
-      "src": "/images/content/open/zipline-launch.webp",
+      "src": "/images/content/open/quad-inflight.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -413,13 +413,13 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-hcm-drone-capital",
       "source": "VietnamFinance",
       "source_url": "https://vietnamfinance.vn/tham-vong-drone-capital-co-hoi-lich-su-de-viet-nam-ghi-dau-tren-thi-truong-700-ty-usd-d134020.html",
-      "src": "/images/content/open/evtol-volocopter.webp",
+      "src": "/images/content/open/drone-city.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -435,35 +435,35 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-tiem-nang-10ty",
       "source": "Thanh Niên",
       "source_url": "https://thanhnien.vn/tiem-nang-kinh-te-tam-thap-cua-viet-nam-185251213182502034.htm",
-      "src": "/images/content/open/ag-newtech.webp",
+      "src": "/images/content/open/xag-drone.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-uav-canh-tranh",
       "source": "VnExpress",
       "source_url": "https://vnexpress.net/uav-viet-co-tiem-nang-canh-tranh-the-gioi-4991987.html",
-      "src": "/images/content/open/uav-aero2018.webp",
+      "src": "/images/content/open/uav-deltaquad.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Ollurboys007 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:vn-viettel-counter-uav",
       "source": "Người Quan Sát",
       "source_url": "https://nguoiquansat.vn/to-hop-chong-uav-cua-viettel-gay-an-tuong-voi-bao-chi-chau-au-duoc-vi-nhu-khac-tinh-cua-drone-291072.html",
-      "src": "/images/content/open/kerala-antidrone.webp",
+      "src": "/images/content/open/fpv-military.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -474,7 +474,7 @@
       "ref": "card:vn-viettel-saha-2026",
       "source": "Một Thế Giới",
       "source_url": "https://1thegioi.vn/bao-bi-de-cao-3-loai-drone-trinh-sat-va-cam-tu-cua-viettel-tai-saha-2026-251486.html",
-      "src": "/images/content/open/airbus-uav.webp",
+      "src": "/images/content/open/uav-aero2018.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -490,13 +490,13 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-anduril-arsenal",
       "source": "YRDrone",
       "source_url": "https://yrdrone.com/blog/industry-news/top-us-drone-manufacturers/",
-      "src": "/images/content/open/mil-ucav-parade.webp",
+      "src": "/images/content/open/fpv-military.webp",
       "tier": "C",
       "where": "content/news-cards.json"
     },
@@ -512,13 +512,13 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Paulae / Wikimedia Commons (CC BY 3.0) · minh-hoạ",
+      "credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-counter-uav-rules",
       "source": "DroneLife",
       "source_url": "https://dronelife.com/2026/04/13/aa-counter-drone-agreement-airspace-rules/",
-      "src": "/images/content/open/sensocopter.webp",
+      "src": "/images/content/open/uav-deltaquad.webp",
       "tier": "C",
       "where": "content/news-cards.json"
     },
@@ -534,24 +534,24 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-drone-market-gvr",
       "source": "Grand View Research",
       "source_url": "https://www.grandviewresearch.com/industry-analysis/drone-market-report",
-      "src": "/images/content/open/evtol-test-force.webp",
+      "src": "/images/content/open/drone-city.webp",
       "tier": "C",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-faa-part108",
       "source": "Federal Register (FAA)",
       "source_url": "https://www.federalregister.gov/documents/2026/01/28/2026-01644/normalizing-unmanned-aircraft-systems-beyond-visual-line-of-sight-operations-reopening-of-comment",
-      "src": "/images/content/open/joby-s4.webp",
+      "src": "/images/content/open/evtol-passenger.webp",
       "tier": "A",
       "where": "content/news-cards.json"
     },
@@ -567,35 +567,35 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
+      "credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-oslo-incident",
       "source": "D-Fend Solutions",
       "source_url": "https://d-fendsolutions.com/blog/rogue-drone-activity-briefing-jan-2026/",
-      "src": "/images/content/open/drone-flying.webp",
+      "src": "/images/content/open/airport-runway.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-skydio-bvlos",
       "source": "Skydio",
       "source_url": "https://www.skydio.com/blog/drones-faa-bvlos-waivers-new-rules",
-      "src": "/images/content/open/uav-deltaquad.webp",
+      "src": "/images/content/open/quad-inflight.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
+      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
       "ref": "card:world-skydio-gov",
       "source": "YRDrone",
       "source_url": "https://yrdrone.com/blog/industry-news/top-us-drone-manufacturers/",
-      "src": "/images/content/open/boeing-x45.webp",
+      "src": "/images/content/open/uav-aero2018.webp",
       "tier": "C",
       "where": "content/news-cards.json"
     },

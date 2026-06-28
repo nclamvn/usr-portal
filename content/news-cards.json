@@ -57,7 +57,7 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/airbus-uav.webp",
+      "image": "/images/content/open/uav-aero2018.webp",
       "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "body": [
         "Tại triển lãm quốc phòng SAHA 2026 ở Istanbul, Viettel High Tech giới thiệu ba dòng UAV mới.",
@@ -78,13 +78,13 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/kerala-antidrone.webp",
+      "image": "/images/content/open/fpv-military.webp",
       "body": [
         "Tại triển lãm quốc phòng SAHA 2026, tổ hợp chống UAV của Viettel là một trong số khí tài Việt Nam được báo chí quốc phòng châu Âu chú ý. Theo nguồn dẫn, tạp chí EDR Magazine dành một bài riêng, mô tả hệ thống như giải pháp đối phó trực diện với mối đe doạ từ thiết bị bay không người lái.",
         "Các tổ hợp chống UAV nói chung kết hợp radar và cảm biến quang điện tử để phát hiện mục tiêu bay thấp, cùng biện pháp vô hiệu hoá như gây nhiễu tín hiệu điều khiển và định vị. Đây là hướng phát triển được nhiều nước theo đuổi khi drone cỡ nhỏ ngày càng phổ biến.",
         "Việc một sản phẩm trong nước xuất hiện tại sự kiện quốc tế phản ánh nỗ lực của doanh nghiệp Việt Nam tham gia lĩnh vực khí tài phòng thủ. Chi tiết kỹ thuật và năng lực cụ thể của tổ hợp do nhà sản xuất công bố; bản đầy đủ ở bài gốc tại nguồn."
       ],
-      "image_credit": "Ảnh: Ollurboys007 / Wikimedia Commons (CC BY 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ"
     },
     {
       "id": "vn-hcm-drone-capital",
@@ -99,8 +99,8 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/evtol-volocopter.webp",
-      "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "image": "/images/content/open/drone-city.webp",
+      "image_credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
       "body": [
         "TP.HCM được quy hoạch thành trung tâm kinh tế tầm thấp giai đoạn 2026 đến 2035.",
         "Hệ sinh thái dự kiến gồm khu công nghiệp 1.000 ha, 3 vùng thử nghiệm, 10 nhà máy linh kiện và đào tạo khoảng 100.000 kỹ sư. Đây là tham vọng đưa thành phố vào chuỗi giá trị drone toàn cầu.",
@@ -120,8 +120,8 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/zipline-launch.webp",
-      "image_credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "image": "/images/content/open/quad-inflight.webp",
+      "image_credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "body": [
         "Tỉnh Điện Biên khởi động dự án thử nghiệm UAV thương mại với mục tiêu khoảng 6.000 chuyến bay.",
         "Dự án hướng tới biến tầng trời thấp thành tuyến đường mới cho logistics và sản xuất ở khu vực địa hình khó. Con số 6.000 chuyến là mục tiêu thử nghiệm, chưa phải đã thực hiện.",
@@ -141,12 +141,12 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/zipline-delivery.webp",
+      "image": "/images/content/open/drone-flying.webp",
       "body": [
         "TP.HCM thử nghiệm tuyến bưu chính bằng UAV vượt biển nối Cần Giờ với Vũng Tàu, theo nguồn dẫn là tuyến đầu tiên thuộc loại này. Bên cạnh đó, drone cũng được thử nghiệm cho giao hàng cứu trợ và giao hàng tự động tại một số tỉnh phía Bắc.",
         "Vận chuyển bằng drone trên các chặng vượt nước hoặc địa hình chia cắt là một trong những ứng dụng được kỳ vọng của kinh tế tầm thấp, nơi đường bộ kém thuận tiện. Hiệu quả thực tế phụ thuộc vào quy định không phận, tải trọng và hạ tầng bãi đỗ."
       ],
-      "image_credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ"
     },
     {
       "id": "vn-uav-canh-tranh",
@@ -161,12 +161,12 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/uav-aero2018.webp",
+      "image": "/images/content/open/uav-deltaquad.webp",
       "body": [
         "Theo nhận định của giới chuyên gia được nguồn dẫn lại, một số dòng UAV do doanh nghiệp Việt Nam thiết kế và sản xuất có tiềm năng cạnh tranh trên thị trường quốc tế, trong đó một số sản phẩm đã được xuất khẩu.",
         "Năng lực cạnh tranh của UAV nội địa thường được đánh giá qua khả năng tự chủ thiết kế, chi phí và mức độ nội địa hoá linh kiện. Đây là các yếu tố quyết định khi tham gia thị trường xuất khẩu vốn nhiều rào cản kỹ thuật và pháp lý."
       ],
-      "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "vn-tiem-nang-10ty",
@@ -181,12 +181,12 @@
       "tier": "B",
       "date": "2025-12-13",
       "entity_tags": [],
-      "image": "/images/content/open/ag-newtech.webp",
+      "image": "/images/content/open/xag-drone.webp",
       "body": [
         "Giới chuyên gia ước tính mảng kinh tế bay tầm thấp tại Việt Nam có thể đạt quy mô khoảng 10 tỷ USD, theo con số được Thanh Niên dẫn lại. Kỳ vọng đi kèm là đưa Việt Nam trở thành một trung tâm công nghiệp của khu vực trong lĩnh vực này.",
         "Kinh tế tầm thấp bao gồm drone nông nghiệp, logistics, khảo sát và các dịch vụ bay không người lái khác. Con số quy mô thị trường là ước tính, phụ thuộc vào khung pháp lý, hạ tầng quản lý không phận và tốc độ ứng dụng thực tế."
       ],
-      "image_credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "world-military-drone-market",
@@ -282,12 +282,12 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/ddc-delivery.webp",
+      "image": "/images/content/open/drone-flying.webp",
       "body": [
         "Thâm Quyến đặt kế hoạch xây dựng 1.200 bãi cất hạ cánh thẳng đứng tới năm 2026 trong khuôn khổ sáng kiến 'City of the Sky', theo nguồn dẫn. Nền tảng Meituan được cho là đã vận hành hàng chục tuyến giao hàng bằng drone tại các đô thị lớn.",
         "Hạ tầng bãi đỗ dày đặc là điều kiện để giao hàng bằng drone và eVTOL vận hành ở quy mô đô thị. Con số 1.200 bãi là mục tiêu kế hoạch; tiến độ và mức hoàn thành thực tế do chính quyền địa phương công bố."
       ],
-      "image_credit": "Ảnh: Tdb2016 / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ"
     },
     {
       "id": "cn-ehang-31months",
@@ -343,12 +343,12 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/crop-fertilizer.webp",
+      "image": "/images/content/open/flood-aerial.webp",
       "body": [
         "Một nhóm ứng cứu tình nguyện sử dụng drone để hỗ trợ tìm kiếm và khắc phục hậu quả lũ lụt tại Đắk Lắk, theo Báo Nhân Dân. Trường hợp này cho thấy UAV mở rộng vai trò thành một phương án cứu nạn trong thiên tai.",
         "Việc các nhóm dân sự tự trang bị drone phản ánh chi phí thiết bị bay đã giảm và kỹ năng vận hành phổ biến hơn. Phối hợp với chính quyền và lực lượng chuyên trách vẫn là yếu tố cần thiết để bảo đảm an toàn không phận."
       ],
-      "image_credit": "Ảnh: Wikideas1 / Wikimedia Commons (CC0) · minh-hoạ"
+      "image_credit": "Ảnh: Antoine Lamielle / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "world-berlin-incident",
@@ -383,12 +383,12 @@
       "tier": "B",
       "date": "2026-01-11",
       "entity_tags": [],
-      "image": "/images/content/open/drone-flying.webp",
+      "image": "/images/content/open/airport-runway.webp",
       "body": [
         "Sân bay Gardermoen ở Oslo, Na Uy, đóng một trong hai đường băng khoảng 20 phút ngày 11/1/2026 sau khi phát hiện một drone dân dụng cỡ nhỏ bay gần khu vực, theo nguồn dẫn.",
         "Ngay cả drone tiêu dùng cỡ nhỏ cũng đủ buộc sân bay tạm ngừng một phần hoạt động, do nguy cơ va chạm với máy bay. Chuỗi sự cố tương tự trong năm 2026 làm nổi bật khoảng trống trong giám sát không phận tầm thấp."
       ],
-      "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ"
+      "image_credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ"
     },
     {
       "id": "world-counter-uav-rules",
@@ -403,12 +403,12 @@
       "tier": "C",
       "date": "2026-04-13",
       "entity_tags": [],
-      "image": "/images/content/open/sensocopter.webp",
+      "image": "/images/content/open/uav-deltaquad.webp",
       "body": [
         "Chuỗi sự cố drone xâm nhập không phận sân bay trong năm 2026 đang thúc đẩy nhu cầu về hệ thống chống UAV phi sát thương, theo nguồn dẫn. Các hệ thống này hướng tới phát hiện và vô hiệu hoá drone trái phép mà vẫn giữ vận hành liên tục.",
         "Giải pháp phi sát thương thường dựa vào gây nhiễu tín hiệu hoặc chiếm quyền điều khiển thay vì bắn hạ, nhằm tránh rủi ro cho khu vực đông người. Khung pháp lý cho việc triển khai các hệ thống này vẫn đang được nhiều nước hoàn thiện."
       ],
-      "image_credit": "Ảnh: Paulae / Wikimedia Commons (CC BY 3.0) · minh-hoạ"
+      "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "world-faa-part108",
@@ -423,8 +423,8 @@
       "tier": "A",
       "date": "2026-01-28",
       "entity_tags": [],
-      "image": "/images/content/open/joby-s4.webp",
-      "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "image": "/images/content/open/evtol-passenger.webp",
+      "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "body": [
         "FAA đặt mốc ban hành chính thức quy định Part 108 vào ngày 16/3/2026.",
         "Part 108 chuyển bay ngoài tầm nhìn (BVLOS) từ cơ chế cấp phép từng trường hợp sang khung hiệu năng thường quy, áp dụng cho drone tới 1.320 pound. Đây là bước chuẩn hoá BVLOS ở quy mô lớn tại Mỹ.",
@@ -444,12 +444,12 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/uav-deltaquad.webp",
+      "image": "/images/content/open/quad-inflight.webp",
       "body": [
         "Theo nguồn dẫn, khung Part 108 yêu cầu hệ thống phát hiện và tránh va chạm, Remote ID, theo dõi vị trí liên tục và tích hợp quản lý không lưu UTM. Khung này thay cho cơ chế xin miễn trừ theo từng chuyến của Part 107.",
         "Chuyển từ miễn trừ từng chuyến sang một bộ yêu cầu chung là bước để bay ngoài tầm nhìn trở thành hoạt động thường quy. Doanh nghiệp vận hành drone sẽ cần đáp ứng các tiêu chuẩn thiết bị và quy trình tương ứng."
       ],
-      "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "world-drone-market-gvr",
@@ -464,12 +464,12 @@
       "tier": "C",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/evtol-test-force.webp",
+      "image": "/images/content/open/drone-city.webp",
       "body": [
         "Theo ước tính của hãng nghiên cứu, thị trường drone toàn cầu đạt khoảng 83,8 tỷ USD năm 2025 và 96,4 tỷ USD năm 2026, với dự báo tăng trưởng kép 9,5% lên 182,4 tỷ USD vào năm 2033.",
         "Các con số này là ước tính thị trường, bao gồm cả drone tiêu dùng, doanh nghiệp và quân sự tuỳ phạm vi báo cáo. Người đọc nên xem đây là dự báo tham khảo, có thể khác nhau giữa các hãng nghiên cứu."
       ],
-      "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ"
+      "image_credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ"
     },
     {
       "id": "world-dji-share",
@@ -504,12 +504,12 @@
       "tier": "C",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/boeing-x45.webp",
+      "image": "/images/content/open/uav-aero2018.webp",
       "body": [
         "Theo nguồn dẫn, Skydio là drone sản xuất tại Mỹ được dùng nhiều nhất trong khối chính phủ và quân đội năm 2026, với hơn 3.000 cơ quan sử dụng, đồng thời cam kết 3,5 tỷ USD cho sản xuất drone tại Mỹ.",
         "Nhu cầu drone sản xuất nội địa ở Mỹ gắn với lo ngại về chuỗi cung ứng và các quy định hạn chế thiết bị nước ngoài trong khu vực công. Các con số do nhà sản xuất và nguồn tổng hợp công bố."
       ],
-      "image_credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ"
+      "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
     },
     {
       "id": "world-anduril-arsenal",
@@ -524,12 +524,12 @@
       "tier": "C",
       "date": null,
       "entity_tags": [],
-      "image": "/images/content/open/mil-ucav-parade.webp",
+      "image": "/images/content/open/fpv-military.webp",
       "body": [
         "Theo nguồn dẫn, Anduril xây dựng Arsenal-1, nhà máy trị giá 1 tỷ USD tại Ohio, dự kiến sản xuất hàng chục nghìn hệ thống tự hành mỗi năm từ giữa năm 2026. Danh mục gồm UAV trinh sát Ghost và tổ hợp chống UAV Anvil.",
         "Mô hình nhà máy sản xuất hàng loạt hệ thống tự hành phản ánh xu hướng coi drone là khí tài tiêu hao, sản xuất nhanh và số lượng lớn. Quy mô sản lượng thực tế sẽ phụ thuộc vào tiến độ nhà máy và đơn đặt hàng."
       ],
-      "image_credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ"
+      "image_credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ"
     },
     {
       "id": "vn-xag-giup-nong",
