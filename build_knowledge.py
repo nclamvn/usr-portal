@@ -49,6 +49,19 @@ KN_CSS = """
   .kidx a:hover{color:var(--brass)}
   .kidx .d{display:block;font-size:.82rem;color:var(--muted);margin-top:.2rem;max-width:64ch}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.6rem}
+  /* glossary index — premium card grid (instrument register) */
+  .kgrid{list-style:none;margin:1.3rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(282px,1fr));gap:.9rem}
+  .kwrap>.kgrid{max-width:var(--w-wide)}
+  .kcard{position:relative;display:flex;flex-direction:column;gap:.4rem;border:1px solid var(--hair);border-radius:var(--radius);padding:1rem 1.1rem 1.15rem;background:var(--bg-2);color:inherit;text-decoration:none;transition:border-color .15s var(--ease),transform .15s var(--ease)}
+  .kcard:hover{border-color:var(--brass-bright);transform:translateY(-2px)}
+  .kc-idx{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.16em;color:var(--faint)}
+  .kc-term{font-family:var(--font-head);font-weight:700;font-size:1.22rem;line-height:1.05}
+  .kcard:hover .kc-term{color:var(--brass)}
+  .kc-def{font-size:.84rem;line-height:1.5;color:var(--muted)}
+  .kc-tag{margin-top:.15rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+  .kc-tag b{color:var(--brass);font-weight:600}
+  .kc-arrow{position:absolute;top:1rem;right:1.05rem;font-family:var(--font-mono);color:var(--faint);transition:color .15s var(--ease),transform .15s var(--ease)}
+  .kcard:hover .kc-arrow{color:var(--brass);transform:translateX(3px)}
 """
 
 
@@ -103,11 +116,19 @@ def term_page(term, d, arts, uavs, uav_name):
     return shell(esc(term), head, body)
 
 
-def index_page(terms):
-    items = "".join(
-        f'<li><a href="knowledge/{tslug(t)}.html">{esc(t)}</a>'
-        f'<span class="d"><span data-lang-en>{esc(d["en"])}</span><span data-lang-vn>{esc(d["vn"])}</span></span></li>'
-        for t, d in sorted(terms.items()))
+def index_page(terms, counts):
+    cards = []
+    for i, (t, d) in enumerate(sorted(terms.items()), 1):
+        n = counts.get(t)
+        tag = (f'<span class="kc-tag"><b>{n}</b> {bilingual("systems", "hệ thống")}</span>'
+               if n else "")
+        cards.append(
+            f'<a class="kcard" href="knowledge/{tslug(t)}.html">'
+            f'<span class="kc-idx">{i:02d}</span>'
+            f'<span class="kc-term">{esc(t)}</span>'
+            f'<span class="kc-def"><span data-lang-en>{esc(d["en"])}</span><span data-lang-vn>{esc(d["vn"])}</span></span>'
+            f'{tag}<span class="kc-arrow" aria-hidden="true">&rarr;</span></a>')
+    items = "".join(cards)
     head = (meta("Knowledge — USR", "Reference definitions for UAV terms and standards.", "knowledge.html"))
     # index sits at root: nav prefix "" and ../ -> ./ for assets; reuse shell with root tweaks
     return f"""<!DOCTYPE html>
@@ -124,7 +145,7 @@ def index_page(terms):
 {header("", "knowledge")}
 <main class="kwrap">
   <header class="khead"><span class="eyebrow">{bilingual("Knowledge", "Thuật ngữ")}</span><h1>{bilingual("Glossary", "Thuật ngữ")}</h1></header>
-  <ul class="kidx">{items}</ul>
+  <div class="kgrid">{items}</div>
 </main>
 {footer("")}
 <script src="base/base.js"></script>
@@ -143,9 +164,14 @@ def main():
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)
     OUTDIR.mkdir(parents=True)
+    # live systems-count per term that maps to a real boolean field (Blue UAS / NDAA) — instrument readout
+    counts = {}
+    for term in terms:
+        field = TERM_FIELD.get(term)
+        counts[term] = sum(1 for e in uavs if (e.get(field) or {}).get("value") is True) if field else None
     for term, d in terms.items():
         (OUTDIR / f"{tslug(term)}.html").write_text(term_page(term, d, arts, uavs, uav_name))
-    INDEX.write_text(index_page(terms))
+    INDEX.write_text(index_page(terms, counts))
     print(f"knowledge/: {len(terms)} term pages + index")
 
 

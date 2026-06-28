@@ -29,6 +29,19 @@
   .kidx a:hover{color:var(--brass)}
   .kidx .d{display:block;font-size:.82rem;color:var(--muted);margin-top:.2rem;max-width:64ch}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.6rem}
+  /* glossary index — premium card grid (instrument register) */
+  .kgrid{list-style:none;margin:1.3rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(282px,1fr));gap:.9rem}
+  .kwrap>.kgrid{max-width:var(--w-wide)}
+  .kcard{position:relative;display:flex;flex-direction:column;gap:.4rem;border:1px solid var(--hair);border-radius:var(--radius);padding:1rem 1.1rem 1.15rem;background:var(--bg-2);color:inherit;text-decoration:none;transition:border-color .15s var(--ease),transform .15s var(--ease)}
+  .kcard:hover{border-color:var(--brass-bright);transform:translateY(-2px)}
+  .kc-idx{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.16em;color:var(--faint)}
+  .kc-term{font-family:var(--font-head);font-weight:700;font-size:1.22rem;line-height:1.05}
+  .kcard:hover .kc-term{color:var(--brass)}
+  .kc-def{font-size:.84rem;line-height:1.5;color:var(--muted)}
+  .kc-tag{margin-top:.15rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+  .kc-tag b{color:var(--brass);font-weight:600}
+  .kc-arrow{position:absolute;top:1rem;right:1.05rem;font-family:var(--font-mono);color:var(--faint);transition:color .15s var(--ease),transform .15s var(--ease)}
+  .kcard:hover .kc-arrow{color:var(--brass);transform:translateX(3px)}
 </style>
 </head>
 <body>
