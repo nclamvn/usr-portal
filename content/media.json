@@ -1,6 +1,46 @@
 {
   "schema": "media/1",
   "assets": {
+    "ag-newtech": {
+      "type": "image",
+      "src": "/images/content/open/ag-newtech.webp",
+      "rights": "open_licensed",
+      "owner": "Shreesha Sharma",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_ag-newtech.img",
+      "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "airbus-uav": {
+      "type": "image",
+      "src": "/images/content/open/airbus-uav.webp",
+      "rights": "open_licensed",
+      "owner": "Matti Blume",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_airbus-uav.img",
+      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "airport-runway": {
       "type": "image",
       "src": "/images/content/open/airport-runway.webp",
@@ -17,6 +57,86 @@
       },
       "grade": "none",
       "caption": "Đường băng và máy bay tại sân bay",
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "boeing-x45": {
+      "type": "image",
+      "src": "/images/content/open/boeing-x45.webp",
+      "rights": "open_licensed",
+      "owner": "NASA",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_boeing-x45.img",
+      "credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "crop-fertilizer": {
+      "type": "image",
+      "src": "/images/content/open/crop-fertilizer.webp",
+      "rights": "open_licensed",
+      "owner": "Wikideas1",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_crop-fertilizer.img",
+      "credit": "Ảnh: Wikideas1 / Wikimedia Commons (CC0) · minh-hoạ",
+      "open_license": "CC0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "ddc-delivery": {
+      "type": "image",
+      "src": "/images/content/open/ddc-delivery.webp",
+      "rights": "open_licensed",
+      "owner": "Tdb2016",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_ddc-delivery.img",
+      "credit": "Ảnh: Tdb2016 / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "dji-phantom3": {
+      "type": "image",
+      "src": "/images/content/open/dji-phantom3.webp",
+      "rights": "open_licensed",
+      "owner": "Jacek Halicki",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_dji-phantom3.img",
+      "credit": "Ảnh: Jacek Halicki / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
       "captured_at": null,
       "entity_tags": [],
       "license_status": "cc"
@@ -135,6 +255,26 @@
       ],
       "license_status": "cc"
     },
+    "evtol-test-force": {
+      "type": "image",
+      "src": "/images/content/open/evtol-test-force.webp",
+      "rights": "open_licensed",
+      "owner": "Harlan Huntington",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_evtol-test-force.img",
+      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "evtol-volocopter": {
       "type": "image",
       "src": "/images/content/open/evtol-volocopter.webp",
@@ -174,6 +314,46 @@
       },
       "grade": "none",
       "caption": "Vùng ngập nhìn từ trên không",
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "flytrex-delivery": {
+      "type": "image",
+      "src": "/images/content/open/flytrex-delivery.webp",
+      "rights": "open_licensed",
+      "owner": "HadasBandel",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_flytrex-delivery.img",
+      "credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "fpv-military": {
+      "type": "image",
+      "src": "/images/content/open/fpv-military.webp",
+      "rights": "open_licensed",
+      "owner": "ArmiyaInform",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_fpv-military.img",
+      "credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "open_license": "CC BY 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
       "captured_at": null,
       "entity_tags": [],
       "license_status": "cc"
@@ -354,6 +534,106 @@
       ],
       "license_status": "owned"
     },
+    "hesa-ababil5": {
+      "type": "image",
+      "src": "/images/content/open/hesa-ababil5.webp",
+      "rights": "open_licensed",
+      "owner": "Hamid Vakili",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_hesa-ababil5.img",
+      "credit": "Ảnh: Hamid Vakili / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "open_license": "CC BY 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "joby-s4": {
+      "type": "image",
+      "src": "/images/content/open/joby-s4.webp",
+      "rights": "open_licensed",
+      "owner": "Harlan Huntington",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_joby-s4.img",
+      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "open_license": "Public domain",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "kerala-antidrone": {
+      "type": "image",
+      "src": "/images/content/open/kerala-antidrone.webp",
+      "rights": "open_licensed",
+      "owner": "Ollurboys007",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_kerala-antidrone.img",
+      "credit": "Ảnh: Ollurboys007 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "open_license": "CC BY 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "mil-ucav-parade": {
+      "type": "image",
+      "src": "/images/content/open/mil-ucav-parade.webp",
+      "rights": "open_licensed",
+      "owner": "China News Service",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_mil-ucav-parade.img",
+      "credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "open_license": "CC BY 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "quad-inflight": {
+      "type": "image",
+      "src": "/images/content/open/quad-inflight.webp",
+      "rights": "open_licensed",
+      "owner": "Project Kei",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_quad-inflight.img",
+      "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "quoc-portrait": {
       "type": "image",
       "src": "/images/content/team/quoc-portrait.webp",
@@ -378,6 +658,46 @@
       "identity_source": "RtR Company Knowledge Base §1.1 (self-sourced)",
       "identity_tier": "A",
       "license_status": "owned"
+    },
+    "sensocopter": {
+      "type": "image",
+      "src": "/images/content/open/sensocopter.webp",
+      "rights": "open_licensed",
+      "owner": "Paulae",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_sensocopter.img",
+      "credit": "Ảnh: Paulae / Wikimedia Commons (CC BY 3.0) · minh-hoạ",
+      "open_license": "CC BY 3.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
+    "uav-aero2018": {
+      "type": "image",
+      "src": "/images/content/open/uav-aero2018.webp",
+      "rights": "open_licensed",
+      "owner": "Matti Blume",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_uav-aero2018.img",
+      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
     },
     "uav-deltaquad": {
       "type": "image",
@@ -468,6 +788,26 @@
       ],
       "license_status": "owned"
     },
+    "xag-drone": {
+      "type": "image",
+      "src": "/images/content/open/xag-drone.webp",
+      "rights": "open_licensed",
+      "owner": "MB-one",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_xag-drone.img",
+      "credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
+      "license_status": "cc"
+    },
     "zipline-delivery": {
       "type": "image",
       "src": "/images/content/open/zipline-delivery.webp",
@@ -489,6 +829,26 @@
         "drone",
         "giao hàng"
       ],
+      "license_status": "cc"
+    },
+    "zipline-launch": {
+      "type": "image",
+      "src": "/images/content/open/zipline-launch.webp",
+      "rights": "open_licensed",
+      "owner": "Roksenhorn",
+      "source": "Wikimedia Commons",
+      "source_origin": "rtr-website//tmp/dl_zipline-launch.img",
+      "credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": null,
+      "captured_at": null,
+      "entity_tags": [],
       "license_status": "cc"
     }
   },
