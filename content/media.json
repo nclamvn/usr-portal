@@ -23,6 +23,49 @@
         "nông nghiệp"
       ]
     },
+    "drone-city": {
+      "type": "image",
+      "src": "/images/content/open/drone-city.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "RtR Media · /tmp/open_img/drone-city.jpg",
+      "source_origin": "rtr-website//tmp/open_img/drone-city.jpg",
+      "credit": "Goh Rhy Yan / Unsplash",
+      "open_license": "CC0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Drone bay trên đô thị (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "drone",
+        "đô thị"
+      ]
+    },
+    "drone-flying": {
+      "type": "image",
+      "src": "/images/content/open/drone-flying.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "RtR Media · /tmp/open_img/drone-flying.jpg",
+      "source_origin": "rtr-website//tmp/open_img/drone-flying.jpg",
+      "credit": "Samuel Schwendener / Unsplash",
+      "open_license": "CC0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Drone (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "drone"
+      ]
+    },
     "ehang-eh184": {
       "type": "image",
       "src": "/images/content/open/ehang-eh184.webp",
@@ -364,6 +407,28 @@
       "entity_tags": [
         "rtr",
         "vega"
+      ]
+    },
+    "zipline-delivery": {
+      "type": "image",
+      "src": "/images/content/open/zipline-delivery.webp",
+      "rights": "open_licensed",
+      "owner": null,
+      "source": "RtR Media · /tmp/open_img/zipline.jpg",
+      "source_origin": "rtr-website//tmp/open_img/zipline.jpg",
+      "credit": "Roksenhorn / Wikimedia Commons",
+      "open_license": "CC BY-SA 4.0",
+      "license": {
+        "token": null,
+        "active": false,
+        "expires": null
+      },
+      "grade": "none",
+      "caption": "Drone giao hàng thả gói (ảnh minh hoạ)",
+      "captured_at": null,
+      "entity_tags": [
+        "drone",
+        "giao hàng"
       ]
     }
   },

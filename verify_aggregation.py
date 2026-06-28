@@ -55,6 +55,12 @@ def check(doc, entity_slugs, gloss_terms):
         if c.get("tier") not in VALID_TIER:
             raise GateError("AGG_TIER_MISSING", f"card {cid!r}: tier {c.get('tier')!r} ∉ A/B/C")
         summ = c.get("summary") or ""
+        # AGG_NO_EMDASH — luật nhà: KHÔNG em-dash (U+2014) trong văn CỦA TA (summary/body). Dùng phẩy/chấm/hai-chấm.
+        if "—" in summ:
+            raise GateError("AGG_NO_EMDASH", f"card {cid!r}: summary chứa em-dash (U+2014), dùng phẩy/chấm/hai-chấm thay")
+        for p in (c.get("body") or []):
+            if "—" in p:
+                raise GateError("AGG_NO_EMDASH", f"card {cid!r}: body chứa em-dash (U+2014), dùng phẩy/chấm/hai-chấm thay")
         if len(summ) > 240:
             raise GateError("AGG_SUMMARY_VERBATIM", f"card {cid!r}: summary {len(summ)} ký-tự > 240")
         if _verbatim_clause(summ, c.get("source_title", "")):

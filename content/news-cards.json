@@ -15,7 +15,13 @@
       "tier": "A",
       "date": "2025-11-05",
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/drone-flying.webp",
+      "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
+      "body": [
+        "Nghị định 288/2025/NĐ-CP quy định về quản lý tàu bay không người lái và phương tiện bay khác, có hiệu lực từ ngày 5/11/2025.",
+        "Theo nghị định, thẩm quyền cấp phép bay thuộc Bộ Quốc phòng, với Cục Tác chiến cấp phép trong vùng trời và FIR Việt Nam, không phải cơ quan hàng không dân dụng. Đây là khác biệt cốt lõi về cơ quan quản lý.",
+        "Với doanh nghiệp và người dùng drone, văn bản định hình lại quy trình xin phép và thời gian đưa dịch vụ ra thị trường. Toàn văn ở nguồn."
+      ]
     },
     {
       "id": "vn-drone-nongnghiep-dbscl",
@@ -33,8 +39,8 @@
       "image": "/images/content/open/drone-ag-paddy.webp",
       "image_credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "body": [
-        "Theo ước tính ngành, Đồng bằng sông Cửu Long hiện có khoảng 3.000 thiết bị bay không người lái phục vụ canh tác trên chừng 1,5 triệu ha — quy mô đưa vùng này thành thị trường drone nông nghiệp lớn nhất Việt Nam.",
-        "Drone nông nghiệp chủ yếu làm nhiệm vụ phun và giám sát mùa vụ, là một trong những ứng dụng dân sự dẫn dắt kinh tế tầm thấp ở Việt Nam. Cũng theo ước tính, cả nước có thể đạt khoảng 6.000 thiết bị trong năm 2025 — đây là con số dự báo, chưa phải thống kê đã kiểm đếm.",
+        "Theo ước tính ngành, Đồng bằng sông Cửu Long hiện có khoảng 3.000 thiết bị bay không người lái phục vụ canh tác trên chừng 1,5 triệu ha, quy mô đưa vùng này thành thị trường drone nông nghiệp lớn nhất Việt Nam.",
+        "Drone nông nghiệp chủ yếu làm nhiệm vụ phun và giám sát mùa vụ, là một trong những ứng dụng dân sự dẫn dắt kinh tế tầm thấp ở Việt Nam. Cũng theo ước tính, cả nước có thể đạt khoảng 6.000 thiết bị trong năm 2025, đây là con số dự báo, chưa phải thống kê đã kiểm đếm.",
         "Nguồn đặt lợi ích và thách thức song song ngay từ tiêu đề: bên cạnh hiệu quả canh tác, ngành còn các nút phải giải quanh quy định, chi phí và vận hành. Các con số quy mô ở trên mang tính ước tính, nên đọc như chỉ dấu hơn là số liệu chốt; bản đầy đủ ở nguồn."
       ]
     },
@@ -51,7 +57,13 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/uav-deltaquad.webp",
+      "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "body": [
+        "Tại triển lãm quốc phòng SAHA 2026 ở Istanbul, Viettel High Tech giới thiệu ba dòng UAV mới.",
+        "Trong số đó có UAV trinh sát tầm xa VU-MALE với tầm bay trên 1.000 km và UAV tấn công tích hợp AI VU-C2. Đây là bước Viettel mở rộng danh mục UAV quân sự ra thị trường quốc tế.",
+        "Một số dòng UAV do doanh nghiệp Việt Nam phát triển đã hướng tới xuất khẩu. Chi tiết kỹ thuật ở nguồn."
+      ]
     },
     {
       "id": "vn-viettel-counter-uav",
@@ -81,7 +93,13 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/drone-city.webp",
+      "image_credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
+      "body": [
+        "TP.HCM được quy hoạch thành trung tâm kinh tế tầm thấp giai đoạn 2026 đến 2035.",
+        "Hệ sinh thái dự kiến gồm khu công nghiệp 1.000 ha, 3 vùng thử nghiệm, 10 nhà máy linh kiện và đào tạo khoảng 100.000 kỹ sư. Đây là tham vọng đưa thành phố vào chuỗi giá trị drone toàn cầu.",
+        "Các con số trên là mục tiêu quy hoạch, chưa phải hiện trạng. Bản đầy đủ ở nguồn."
+      ]
     },
     {
       "id": "vn-dien-bien-6000",
@@ -96,7 +114,13 @@
       "tier": "B",
       "date": null,
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/zipline-delivery.webp",
+      "image_credit": "Ảnh: Roksenhorn / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "body": [
+        "Tỉnh Điện Biên khởi động dự án thử nghiệm UAV thương mại với mục tiêu khoảng 6.000 chuyến bay.",
+        "Dự án hướng tới biến tầng trời thấp thành tuyến đường mới cho logistics và sản xuất ở khu vực địa hình khó. Con số 6.000 chuyến là mục tiêu thử nghiệm, chưa phải đã thực hiện.",
+        "Đây là một trong các địa phương sớm thí điểm khung kinh tế tầm thấp. Bản đầy đủ ở nguồn."
+      ]
     },
     {
       "id": "vn-can-gio-vung-tau-uav",
@@ -186,7 +210,13 @@
       "tier": "A",
       "date": "2025-10-17",
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/evtol-passenger.webp",
+      "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "body": [
+        "Trung Quốc xếp kinh tế tầm thấp là ưu tiên chiến lược trong Kế hoạch 5 năm lần thứ 15, công bố tháng 10/2025.",
+        "Cục Hàng không dân dụng Trung Quốc dự báo lĩnh vực này đạt khoảng 3.500 tỷ nhân dân tệ vào năm 2035. Kinh tế tầm thấp gồm drone giao hàng, eVTOL chở khách và các dịch vụ bay tầm thấp khác.",
+        "Con số năm 2035 là dự báo của cơ quan quản lý. Bản đầy đủ ở nguồn."
+      ]
     },
     {
       "id": "cn-drone-standards-2026",
@@ -234,9 +264,9 @@
       "image": "/images/content/open/ehang-eh184.webp",
       "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "body": [
-        "Mẫu eVTOL hai chỗ ngồi EH216-S của EHang được Cục Hàng không dân dụng Trung Quốc (CAAC) cấp chứng nhận loại trong khoảng 31 tháng, kèm chừng 40.000 chuyến bay thử — mốc nhanh hơn nhiều so với khung 5-7 năm thường thấy ở quy trình FAA tại Mỹ.",
+        "Mẫu eVTOL hai chỗ ngồi EH216-S của EHang được Cục Hàng không dân dụng Trung Quốc (CAAC) cấp chứng nhận loại trong khoảng 31 tháng, kèm chừng 40.000 chuyến bay thử, mốc nhanh hơn nhiều so với khung 5-7 năm thường thấy ở quy trình FAA tại Mỹ.",
         "EH216-S là drone chở khách tự hành (không phi công), nằm trong nhóm phương tiện dẫn dắt 'kinh tế tầm thấp' mà Trung Quốc đặt làm ưu tiên chiến lược, hướng tới thị trường taxi bay đô thị.",
-        "So sánh 31 tháng với 5-7 năm là góc nhìn của nguồn về khác biệt quy trình cấp phép giữa hai nước — con số nói về tốc-độ, không phải đánh-giá an-toàn. Bản đầy đủ ở nguồn."
+        "So sánh 31 tháng với 5-7 năm là góc nhìn của nguồn về khác biệt quy trình cấp phép giữa hai nước, con số nói về tốc-độ, không phải đánh-giá an-toàn. Bản đầy đủ ở nguồn."
       ]
     },
     {
@@ -327,7 +357,13 @@
       "tier": "A",
       "date": "2026-01-28",
       "entity_tags": [],
-      "image": null
+      "image": "/images/content/open/drone-flying.webp",
+      "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
+      "body": [
+        "FAA đặt mốc ban hành chính thức quy định Part 108 vào ngày 16/3/2026.",
+        "Part 108 chuyển bay ngoài tầm nhìn (BVLOS) từ cơ chế cấp phép từng trường hợp sang khung hiệu năng thường quy, áp dụng cho drone tới 1.320 pound. Đây là bước chuẩn hoá BVLOS ở quy mô lớn tại Mỹ.",
+        "Khung mới kỳ vọng mở rộng giao hàng, giám sát hạ tầng và các dịch vụ drone tầm xa. Toàn văn ở nguồn."
+      ]
     },
     {
       "id": "world-skydio-bvlos",

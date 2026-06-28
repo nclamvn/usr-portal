@@ -40,6 +40,7 @@ def main():
     bite("AGG_OPINION_NOHUMAN",  lambda c: c.update(summary="Đây là bước tiến tuyệt vời, chắc chắn sẽ thống trị thị trường."))
     bite("AGG_TAG_DANGLING",     lambda c: c.update(entity_tags=["entity:khong-ton-tai-xyz"]))
     bite("AGG_STRATUM_BAD",      lambda c: c.update(stratum="mars"))
+    bite("AGG_NO_EMDASH",        lambda c: c.update(summary="Một câu có em" + "—" + "dash chen vào."))
 
     print("-" * 56)
     print("AGGREGATION TEETH:", "TẤT CẢ RĂNG CẮN ✓" if ok else "CÓ RĂNG KHÔNG CẮN ✗")
