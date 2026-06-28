@@ -28,6 +28,6 @@ Mỗi giá trị có nguồn đi kèm một mức tin cậy. Mức A dành cho k
 
 Khi các nguồn ghi khác nhau về cùng một thuộc tính, hệ thống giữ lại toàn bộ phiên bản kèm xuất xứ thay vì chọn một bên. Địa chỉ trụ sở của DJI là một trường hợp như vậy, khi ba nguồn ghi ba địa chỉ khác nhau và cả ba cùng hiển thị để người đọc thấy rõ điểm chưa thống nhất.
 
-Trên toàn tập, các trường thông số kỹ thuật mới được điền khoảng 29 phần trăm. Trang tổng quan hiển thị tỷ lệ này theo từng trường, cho thấy rõ phần còn trống. Một bản đăng ký trung thực về giới hạn của mình có ích hơn một bảng số trông đầy đủ nhưng che giấu khoảng trống.
+Trên toàn tập, các trường thông số kỹ thuật mới được điền khoảng 30 phần trăm. Trang tổng quan hiển thị tỷ lệ này theo từng trường, cho thấy rõ phần còn trống. Một bản đăng ký trung thực về giới hạn của mình có ích hơn một bảng số trông đầy đủ nhưng che giấu khoảng trống.
 
 Vì những lý do trên, mọi biểu đồ phân bố trong USR nên được đọc kèm bối cảnh mẫu. Câu "Hoa Kỳ chiếm 108 trên 302 hệ thống" mô tả đúng bản đăng ký, song không đồng nghĩa với "Hoa Kỳ chiếm tỷ trọng tương ứng trên thị trường UAV toàn cầu". Khoảng cách giữa hai cách đọc này là điều người dùng cần giữ trong đầu suốt quá trình tra cứu.

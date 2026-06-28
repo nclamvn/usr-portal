@@ -70,8 +70,8 @@
   "coverage": [
     {
       "key": "mtow_kg",
-      "pct": 61,
-      "present": 185,
+      "pct": 62,
+      "present": 186,
       "total": 302
     },
     {
@@ -95,19 +95,19 @@
     {
       "key": "max_link_km",
       "pct": 21,
-      "present": 62,
+      "present": 63,
       "total": 302
     },
     {
       "key": "max_speed_ms",
-      "pct": 50,
-      "present": 152,
+      "pct": 51,
+      "present": 154,
       "total": 302
     },
     {
       "key": "service_ceiling_m",
-      "pct": 28,
-      "present": 85,
+      "pct": 29,
+      "present": 88,
       "total": 302
     },
     {
@@ -305,7 +305,7 @@
   "totals": {
     "company": 140,
     "country": 28,
-    "coverage_pct": 29,
+    "coverage_pct": 30,
     "disputed": 6,
     "segment": 13,
     "uav": 302

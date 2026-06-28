@@ -28688,6 +28688,38 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 14.7,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.parrot.com/en/drones/anafi-usa/technical-specifications",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 14.7,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 5000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.parrot.com/en/drones/anafi-usa/technical-specifications",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 5000,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       },
       "provenance_class": "blue_public"
@@ -29944,6 +29976,22 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://brincdrones.com/lemur-2/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.5,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       },
       "provenance_class": "blue_public"
@@ -30553,6 +30601,38 @@
               "retrieved": "2026-06-29",
               "claimed_value": true,
               "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 12,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.skydio.com/x10/technical-specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 12,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4572,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.skydio.com/x10/technical-specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 4572,
+              "note": "manufacturer spec (enrich lô3)"
             }
           ],
           "last_verified": "2026-06-29",
@@ -36622,6 +36702,38 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 23,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 23,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 7000,
+              "note": "manufacturer spec (enrich lô3)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }

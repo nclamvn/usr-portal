@@ -1708,6 +1708,22 @@
       "total": 49
     },
     {
+      "maker": "Skydio",
+      "name": "Skydio X10",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 48,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-skydio-x10-x10",
+      "total": 48
+    },
+    {
       "maker": "Quantum Systems",
       "name": "Quantum Systems Reliant",
       "of": 6,
@@ -1833,6 +1849,22 @@
         "service_ceiling_m": 51
       },
       "slug": "uav-qods-mohajer-2-mohajer-2",
+      "total": 46
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Matrice 350 RTK",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 39,
+        "max_link_km": 57,
+        "max_payload_kg": 23,
+        "max_range_km": null,
+        "max_speed_ms": 40,
+        "service_ceiling_m": 69
+      },
+      "slug": "uav-dji-matrice-350-rtk-m350",
       "total": 46
     },
     {
@@ -2332,6 +2364,22 @@
       "total": 40
     },
     {
+      "maker": "Parrot",
+      "name": "Parrot ANAFI USA",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 28,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 30,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-parrot-anafi-usa",
+      "total": 40
+    },
+    {
       "maker": "Flock Safety",
       "name": "Flock Safety Aerodome",
       "of": 6,
@@ -2361,22 +2409,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-flightwave-edge-130-edge-130",
-      "total": 40
-    },
-    {
-      "maker": "DJI",
-      "name": "DJI Matrice 350 RTK",
-      "of": 6,
-      "scored": 3,
-      "scores": {
-        "endurance_min": 39,
-        "max_link_km": 57,
-        "max_payload_kg": 23,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-matrice-350-rtk-m350",
       "total": 40
     },
     {
@@ -2553,22 +2585,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-skydio-x10-x10d",
-      "total": 37
-    },
-    {
-      "maker": "Skydio",
-      "name": "Skydio X10",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": 37,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-skydio-x10-x10",
       "total": 37
     },
     {
@@ -3241,22 +3257,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-walkera-vitus-320-vitus-320",
-      "total": 28
-    },
-    {
-      "maker": "Parrot",
-      "name": "Parrot ANAFI USA",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": 28,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-parrot-anafi-usa",
       "total": 28
     },
     {

@@ -2,14 +2,14 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2872,
+      "None": 2865,
       "derived": 267,
       "disputed": 6,
       "unverified": 37,
-      "verified": 2858
+      "verified": 2865
     },
     "source_tier_counts": {
-      "A": 1798,
+      "A": 1805,
       "B": 439,
       "C": 638,
       "derived": 267
@@ -32,7 +32,7 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 62,
+        "present": 63,
         "total": 302
       },
       "max_payload_kg": {
@@ -44,11 +44,11 @@
         "total": 302
       },
       "max_speed_ms": {
-        "present": 152,
+        "present": 154,
         "total": 302
       },
       "mtow_kg": {
-        "present": 185,
+        "present": 186,
         "total": 302
       },
       "ndaa_compliant": {
@@ -56,7 +56,7 @@
         "total": 302
       },
       "service_ceiling_m": {
-        "present": 85,
+        "present": 88,
         "total": 302
       }
     },
@@ -13459,10 +13459,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://brincdrones.com/lemur-2/"
+          }
+        ],
+        "status": "verified",
+        "value": 1.5
       },
       "name": {
         "confidence": "high",
@@ -19651,10 +19658,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-350-rtk/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 23
       },
       "mtow_kg": {
         "confidence": "high",
@@ -19696,10 +19710,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-350-rtk/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 7000
       },
       "slug": "uav-dji-matrice-350-rtk-m350",
       "variant": {
@@ -42179,10 +42200,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.parrot.com/en/drones/anafi-usa/technical-specifications"
+          }
+        ],
+        "status": "verified",
+        "value": 14.7
       },
       "mtow_kg": {
         "confidence": "high",
@@ -42238,10 +42266,17 @@
       },
       "provenance_class": "blue_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.parrot.com/en/drones/anafi-usa/technical-specifications"
+          }
+        ],
+        "status": "verified",
+        "value": 5000
       },
       "slug": "uav-parrot-anafi-usa",
       "variant": {
@@ -48217,10 +48252,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.skydio.com/x10/technical-specs"
+          }
+        ],
+        "status": "verified",
+        "value": 12
       },
       "max_payload_kg": {
         "confidence": null,
@@ -48301,10 +48343,17 @@
       },
       "provenance_class": "commercial_us_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.skydio.com/x10/technical-specs"
+          }
+        ],
+        "status": "verified",
+        "value": 4572
       },
       "slug": "uav-skydio-x10-x10",
       "variant": {
@@ -65301,5 +65350,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "2afe9e9e44f562464221a68101beb26c4cb9d86c467ad4c2cc254beb6dbb650b"
+  "source_registry_sha256": "9bd33cadc2f7f250ba92109675660db9fb8392211cb627dd721585677ccd98a4"
 }

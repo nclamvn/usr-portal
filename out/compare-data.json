@@ -2876,8 +2876,8 @@
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.5
         },
         "service_ceiling_m": {
           "tier": null,
@@ -4188,16 +4188,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 23
         },
         "mtow_kg": {
           "tier": "C",
           "v": 6.47
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 7000
         }
       }
     },
@@ -8743,16 +8743,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 14.7
         },
         "mtow_kg": {
           "tier": "A",
           "v": 0.5
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 5000
         }
       }
     },
@@ -9965,8 +9965,8 @@
           "v": null
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 12
         },
         "max_payload_kg": {
           "tier": null,
@@ -9985,8 +9985,8 @@
           "v": 2.13
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 4572
         }
       }
     },
