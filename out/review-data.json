@@ -1692,6 +1692,22 @@
       "total": 49
     },
     {
+      "maker": "DJI",
+      "name": "DJI Matrice 30T",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 40,
+        "service_ceiling_m": 69
+      },
+      "slug": "uav-dji-matrice-30t-matrice-30t",
+      "total": 49
+    },
+    {
       "maker": "Quantum Systems",
       "name": "Quantum Systems Reliant",
       "of": 6,
@@ -1868,6 +1884,38 @@
       "total": 46
     },
     {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Switchblade 600",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 30,
+        "max_speed_ms": 59,
+        "service_ceiling_m": 59
+      },
+      "slug": "uav-aerovironment-switchblade-600-switchblade-600",
+      "total": 46
+    },
+    {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics Dragonfish",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 51,
+        "max_link_km": 65,
+        "max_payload_kg": 17,
+        "max_range_km": null,
+        "max_speed_ms": 46,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-dragonfish-dragonfish",
+      "total": 45
+    },
+    {
       "maker": "Autel",
       "name": "Autel EVO Nano",
       "of": 6,
@@ -1961,6 +2009,22 @@
         "service_ceiling_m": 66
       },
       "slug": "uav-dji-mavic-3-enterprise-3e",
+      "total": 44
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI FlyCart 30",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 49,
+        "max_range_km": 26,
+        "max_speed_ms": 37,
+        "service_ceiling_m": 66
+      },
+      "slug": "uav-dji-flycart-30-flycart-30",
       "total": 44
     },
     {
@@ -2140,6 +2204,22 @@
       "total": 42
     },
     {
+      "maker": "Autel Robotics",
+      "name": "Autel EVO Max 4T V2",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 35,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 40,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-evo-max-4t-v2",
+      "total": 42
+    },
+    {
       "maker": "AeroVironment",
       "name": "AeroVironment Switchblade 300 Block 20",
       "of": 6,
@@ -2297,6 +2377,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-dji-matrice-350-rtk-m350",
+      "total": 40
+    },
+    {
+      "maker": "DJI",
+      "name": "DJI Inspire 3",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 29,
+        "max_link_km": 49,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 43,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-dji-inspire-3-inspire-3",
       "total": 40
     },
     {
@@ -2460,22 +2556,6 @@
       "total": 37
     },
     {
-      "maker": "Skydio",
-      "name": "Skydio X10",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": 37,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-skydio-x10-x10",
-      "total": 37
-    },
-    {
       "maker": "Quantum Systems",
       "name": "Quantum Systems Trinity F90 Plus",
       "of": 6,
@@ -2585,6 +2665,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-teledyne-flir-siras-siras",
+      "total": 36
+    },
+    {
+      "maker": "Skydio",
+      "name": "Skydio X10",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 37,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-skydio-x10-x10",
       "total": 36
     },
     {
@@ -3033,6 +3129,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-dji-agras-t20p-agras-t20p",
+      "total": 30
+    },
+    {
+      "maker": "BRINC",
+      "name": "BRINC Responder",
+      "of": 6,
+      "scored": 1,
+      "scores": {
+        "endurance_min": 30,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-brinc-responder-responder",
       "total": 30
     },
     {
@@ -4333,54 +4445,6 @@
     },
     {
       "maker": "DJI",
-      "name": "DJI Matrice 30T",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-matrice-30t-matrice-30t",
-      "total": null
-    },
-    {
-      "maker": "DJI",
-      "name": "DJI Inspire 3",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-inspire-3-inspire-3",
-      "total": null
-    },
-    {
-      "maker": "DJI",
-      "name": "DJI FlyCart 30",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-flycart-30-flycart-30",
-      "total": null
-    },
-    {
-      "maker": "DJI",
       "name": "DJI Agras T25",
       "of": 6,
       "scored": 0,
@@ -4425,22 +4489,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-casc-ch-4-rainbow-ch-4-rainbow",
-      "total": null
-    },
-    {
-      "maker": "BRINC",
-      "name": "BRINC Responder",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-brinc-responder-responder",
       "total": null
     },
     {
@@ -4589,22 +4637,6 @@
     },
     {
       "maker": "Autel Robotics",
-      "name": "Autel Robotics Dragonfish",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-autel-robotics-dragonfish-dragonfish",
-      "total": null
-    },
-    {
-      "maker": "Autel Robotics",
       "name": "Autel Robotics Alpha",
       "of": 6,
       "scored": 0,
@@ -4617,22 +4649,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-autel-robotics-alpha-alpha",
-      "total": null
-    },
-    {
-      "maker": "Autel Robotics",
-      "name": "Autel EVO Max 4T V2",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-autel-evo-max-4t-v2",
       "total": null
     },
     {
@@ -4777,22 +4793,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-ageagle-ebee-tac",
-      "total": null
-    },
-    {
-      "maker": "AeroVironment",
-      "name": "AeroVironment Switchblade 600",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-aerovironment-switchblade-600-switchblade-600",
       "total": null
     },
     {

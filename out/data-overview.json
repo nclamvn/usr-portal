@@ -70,44 +70,44 @@
   "coverage": [
     {
       "key": "mtow_kg",
-      "pct": 59,
-      "present": 179,
+      "pct": 61,
+      "present": 185,
       "total": 302
     },
     {
       "key": "max_payload_kg",
-      "pct": 42,
-      "present": 128,
+      "pct": 43,
+      "present": 130,
       "total": 302
     },
     {
       "key": "endurance_min",
-      "pct": 56,
-      "present": 169,
+      "pct": 58,
+      "present": 176,
       "total": 302
     },
     {
       "key": "max_range_km",
-      "pct": 34,
-      "present": 103,
+      "pct": 35,
+      "present": 105,
       "total": 302
     },
     {
       "key": "max_link_km",
-      "pct": 19,
-      "present": 58,
+      "pct": 21,
+      "present": 62,
       "total": 302
     },
     {
       "key": "max_speed_ms",
-      "pct": 48,
-      "present": 146,
+      "pct": 50,
+      "present": 152,
       "total": 302
     },
     {
       "key": "service_ceiling_m",
-      "pct": 27,
-      "present": 82,
+      "pct": 28,
+      "present": 85,
       "total": 302
     },
     {
@@ -124,8 +124,8 @@
     },
     {
       "key": "ndaa_compliant",
-      "pct": 11,
-      "present": 33,
+      "pct": 12,
+      "present": 35,
       "total": 302
     },
     {
@@ -299,14 +299,14 @@
     {
       "key": "ndaa_compliant",
       "total": 302,
-      "yes": 26
+      "yes": 28
     }
   ],
   "totals": {
     "company": 140,
     "country": 28,
-    "coverage_pct": 28,
-    "disputed": 6,
+    "coverage_pct": 29,
+    "disputed": 5,
     "segment": 13,
     "uav": 302
   }

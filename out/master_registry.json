@@ -30504,26 +30504,19 @@
           "inherited_from": null
         },
         "endurance_min": {
-          "value": null,
-          "status": "disputed",
-          "confidence": "low",
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
           "sources": [
             {
-              "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating",
-              "tier": "C",
-              "retrieved": "2026-06-22",
+              "url": "https://www.skydio.com/x10/technical-specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
               "claimed_value": 40,
-              "note": "third-party"
-            },
-            {
-              "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/",
-              "tier": "C",
-              "retrieved": "2026-06-22",
-              "claimed_value": 65,
-              "note": "third-party"
+              "note": "manufacturer spec (enrich)"
             }
           ],
-          "last_verified": null,
+          "last_verified": "2026-06-29",
           "inherited_from": null
         },
         "market_segment": {
@@ -30540,6 +30533,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "ndaa_compliant": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.skydio.com/x10/faqs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": true,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       },
@@ -36695,6 +36704,54 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 23,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 23,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 15,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 42,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 42,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -37350,6 +37407,86 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/switchblade-600",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 40,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/switchblade-600",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 40,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 22.7,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/switchblade-600",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 22.7,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 51,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/switchblade-600",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 51,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 4572,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/switchblade-600",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 4572,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -39671,6 +39808,86 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 126,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/dragonfish-specification",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 126,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/dragonfish-specification",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 9,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/dragonfish-specification",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 30,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/dragonfish-specification",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 30,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shop.autelrobotics.com/pages/dragonfish-specification",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.5,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -39742,6 +39959,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://brincdrones.com/responder/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.5,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 31,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://brincdrones.com/responder/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 31,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "ndaa_compliant": {
+          "value": true,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://brincdrones.com/responder/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": true,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -40103,6 +40368,86 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/flycart-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 40,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 28,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/flycart-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 28,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 20,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/flycart-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 20,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 95,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/flycart-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 95,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/flycart-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6000,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -40175,6 +40520,70 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 4.31,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 4.31,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 26,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 26,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 13,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 13,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 28,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 28,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -40246,6 +40655,86 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 4.07,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 4.07,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 23,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 23,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 15,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 41,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 41,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-30/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 7000,
+              "note": "manufacturer spec (enrich)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }

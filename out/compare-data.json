@@ -843,8 +843,8 @@
       "slug": "uav-aerovironment-switchblade-600-switchblade-600",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 40
         },
         "max_link_km": {
           "tier": null,
@@ -855,20 +855,20 @@
           "v": null
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 40
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 51
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 22.7
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 4572
         }
       }
     },
@@ -1622,12 +1622,12 @@
       "slug": "uav-autel-evo-max-4t-v2",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 42
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 15
         },
         "max_payload_kg": {
           "tier": null,
@@ -1638,8 +1638,8 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 23
         },
         "mtow_kg": {
           "tier": null,
@@ -1745,28 +1745,28 @@
       "slug": "uav-autel-robotics-dragonfish-dragonfish",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 126
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 30
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.5
         },
         "max_range_km": {
           "tier": null,
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 30
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 9
         },
         "service_ceiling_m": {
           "tier": null,
@@ -2933,13 +2933,13 @@
       "glyph": "unknown",
       "maker": "BRINC",
       "name": "BRINC Responder",
-      "ndaa": false,
+      "ndaa": true,
       "segment": "enterprise",
       "slug": "uav-brinc-responder-responder",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 31
         },
         "max_link_km": {
           "tier": null,
@@ -2958,8 +2958,8 @@
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.5
         },
         "service_ceiling_m": {
           "tier": null,
@@ -4016,24 +4016,24 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 40
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 28
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 20
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 95
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6000
         }
       }
     },
@@ -4090,12 +4090,12 @@
       "slug": "uav-dji-inspire-3-inspire-3",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 28
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 13
         },
         "max_payload_kg": {
           "tier": null,
@@ -4106,12 +4106,12 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 26
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 4.31
         },
         "service_ceiling_m": {
           "tier": null,
@@ -4131,12 +4131,12 @@
       "slug": "uav-dji-matrice-30t-matrice-30t",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 41
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 15
         },
         "max_payload_kg": {
           "tier": null,
@@ -4147,16 +4147,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 23
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 4.07
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 7000
         }
       }
     },
@@ -9952,17 +9952,13 @@
       "glyph": "multirotor",
       "maker": "Skydio",
       "name": "Skydio X10",
-      "ndaa": false,
+      "ndaa": true,
       "segment": "enterprise",
       "slug": "uav-skydio-x10-x10",
       "specs": {
         "endurance_min": {
-          "claims": [
-            40,
-            65
-          ],
-          "tier": "C",
-          "v": null
+          "tier": "A",
+          "v": 40
         },
         "max_link_km": {
           "tier": null,

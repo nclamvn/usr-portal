@@ -2,16 +2,16 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2903,
+      "None": 2872,
       "derived": 267,
-      "disputed": 6,
+      "disputed": 5,
       "unverified": 37,
-      "verified": 2827
+      "verified": 2859
     },
     "source_tier_counts": {
-      "A": 1767,
+      "A": 1799,
       "B": 439,
-      "C": 638,
+      "C": 637,
       "derived": 267
     },
     "spec_fill_rate": {
@@ -24,7 +24,7 @@
         "total": 302
       },
       "endurance_min": {
-        "present": 169,
+        "present": 176,
         "total": 302
       },
       "gps_denied_capable": {
@@ -32,31 +32,31 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 58,
+        "present": 62,
         "total": 302
       },
       "max_payload_kg": {
-        "present": 128,
+        "present": 130,
         "total": 302
       },
       "max_range_km": {
-        "present": 103,
+        "present": 105,
         "total": 302
       },
       "max_speed_ms": {
-        "present": 146,
+        "present": 152,
         "total": 302
       },
       "mtow_kg": {
-        "present": 179,
+        "present": 185,
         "total": 302
       },
       "ndaa_compliant": {
-        "present": 33,
+        "present": 35,
         "total": 302
       },
       "service_ceiling_m": {
-        "present": 82,
+        "present": 85,
         "total": 302
       }
     },
@@ -3521,10 +3521,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/switchblade-600"
+          }
+        ],
+        "status": "verified",
+        "value": 40
       },
       "entity_type": "uav",
       "family": {
@@ -3613,22 +3620,43 @@
         "value": null
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/switchblade-600"
+          }
+        ],
+        "status": "verified",
+        "value": 40
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/switchblade-600"
+          }
+        ],
+        "status": "verified",
+        "value": 51
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/switchblade-600"
+          }
+        ],
+        "status": "verified",
+        "value": 22.7
       },
       "name": {
         "confidence": "high",
@@ -3657,10 +3685,17 @@
       },
       "provenance_class": "commercial_us_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/switchblade-600"
+          }
+        ],
+        "status": "verified",
+        "value": 4572
       },
       "slug": "uav-aerovironment-switchblade-600-switchblade-600",
       "variant": {
@@ -7306,10 +7341,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/dragonfish-specification"
+          }
+        ],
+        "status": "verified",
+        "value": 126
       },
       "entity_type": "uav",
       "family": {
@@ -7386,16 +7428,30 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/dragonfish-specification"
+          }
+        ],
+        "status": "verified",
+        "value": 30
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/dragonfish-specification"
+          }
+        ],
+        "status": "verified",
+        "value": 1.5
       },
       "max_range_km": {
         "confidence": null,
@@ -7404,16 +7460,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/dragonfish-specification"
+          }
+        ],
+        "status": "verified",
+        "value": 30
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/dragonfish-specification"
+          }
+        ],
+        "status": "verified",
+        "value": 9
       },
       "name": {
         "confidence": "high",
@@ -9656,10 +9726,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications"
+          }
+        ],
+        "status": "verified",
+        "value": 42
       },
       "entity_type": "uav",
       "family": {
@@ -9736,10 +9813,17 @@
         "value": "public_safety"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications"
+          }
+        ],
+        "status": "verified",
+        "value": 15
       },
       "max_payload_kg": {
         "confidence": null,
@@ -9754,10 +9838,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shop.autelrobotics.com/pages/evo-max-4t-general-specifications"
+          }
+        ],
+        "status": "verified",
+        "value": 23
       },
       "mtow_kg": {
         "confidence": null,
@@ -13448,10 +13539,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://brincdrones.com/responder/"
+          }
+        ],
+        "status": "verified",
+        "value": 31
       },
       "entity_type": "uav",
       "family": {
@@ -13552,10 +13650,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://brincdrones.com/responder/"
+          }
+        ],
+        "status": "verified",
+        "value": 1.5
       },
       "name": {
         "confidence": "high",
@@ -13571,10 +13676,17 @@
         "value": "BRINC Responder"
       },
       "ndaa_compliant": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://brincdrones.com/responder/"
+          }
+        ],
+        "status": "verified",
+        "value": true
       },
       "propulsion": {
         "confidence": null,
@@ -18693,28 +18805,56 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/flycart-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 40
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/flycart-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 28
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/flycart-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 20
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/flycart-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 95
       },
       "name": {
         "confidence": "high",
@@ -18743,10 +18883,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/flycart-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
       },
       "slug": "uav-dji-flycart-30-flycart-30",
       "variant": {
@@ -18975,10 +19122,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/inspire-3/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 28
       },
       "entity_type": "uav",
       "family": {
@@ -19055,10 +19209,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/inspire-3/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 13
       },
       "max_payload_kg": {
         "confidence": null,
@@ -19073,16 +19234,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/inspire-3/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 26
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/inspire-3/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 4.31
       },
       "name": {
         "confidence": "high",
@@ -19145,10 +19320,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 41
       },
       "entity_type": "uav",
       "family": {
@@ -19225,10 +19407,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 15
       },
       "max_payload_kg": {
         "confidence": null,
@@ -19243,16 +19432,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 23
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 4.07
       },
       "name": {
         "confidence": "high",
@@ -19281,10 +19484,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-30/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 7000
       },
       "slug": "uav-dji-matrice-30t-matrice-30t",
       "variant": {
@@ -47895,35 +48105,17 @@
         "value": null
       },
       "endurance_min": {
-        "claims": [
-          {
-            "claimed_value": 40,
-            "tier": "C",
-            "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating"
-          },
-          {
-            "claimed_value": 65,
-            "tier": "C",
-            "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/"
-          }
-        ],
-        "confidence": "low",
-        "disputed": true,
-        "source_tier": "C",
+        "confidence": "high",
+        "source_tier": "A",
         "sources": [
           {
-            "retrieved": "2026-06-22",
-            "tier": "C",
-            "url": "https://www.originofbots.com/robot/skydio-x10-by-skydio-details-specifications-rating"
-          },
-          {
-            "retrieved": "2026-06-22",
-            "tier": "C",
-            "url": "https://www.thefuture3d.com/faq/equipment/skydio-x10-autonomous-features/"
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.skydio.com/x10/technical-specs"
           }
         ],
-        "status": "disputed",
-        "value": null
+        "status": "verified",
+        "value": 40
       },
       "entity_type": "uav",
       "family": {
@@ -48064,10 +48256,17 @@
         "value": "Skydio X10"
       },
       "ndaa_compliant": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.skydio.com/x10/faqs"
+          }
+        ],
+        "status": "verified",
+        "value": true
       },
       "propulsion": {
         "confidence": "high",
@@ -61424,7 +61623,7 @@
         "countries": {
           "United States": 3
         },
-        "ndaa_count": 1,
+        "ndaa_count": 2,
         "segments": {
           "defense_government": 1,
           "enterprise": 1,
@@ -63742,7 +63941,7 @@
         "countries": {
           "United States": 4
         },
-        "ndaa_count": 2,
+        "ndaa_count": 3,
         "segments": {
           "defense_government": 1,
           "enterprise": 2
@@ -65084,5 +65283,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "dd192d1b06bd47c6c0c80f71ae83dd4269c0e61defb2589f9847868c3500c998"
+  "source_registry_sha256": "ca845976123bf467691af5ad6e3fb69a235e40081ac65c0bb37e329e2692a982"
 }
