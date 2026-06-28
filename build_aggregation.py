@@ -61,12 +61,32 @@ def aggregation_block(prefix="", limit=12):
 
 
 def render_card_page(c):
-    """Trang đọc IN-SITE một card: nội-dung CỦA TA + provenance + nút ra bản gốc. KHÔNG tái-bản bài gốc."""
+    """Trang đọc IN-SITE một card. Card 'quick' = tóm-tắt + link. Card 'nâng' (có body) = bài data-note
+    đầy-đủ DO TA VIẾT (lời của ta, ground từ nguồn, KHÔNG chép bài gốc) + ảnh open-licensed (có credit)."""
     cid = c.get("id", "")
     title = esc(c.get("source_title", ""))
     url = esc(c.get("source_url", ""))
     outlet = esc(c.get("outlet", ""))
     date = esc(c.get("date") or "—")
+    # media: chỉ ảnh local open-licensed (đã gated) + credit; KHÔNG ảnh http ngoài (verify_aggregation chặn)
+    img = c.get("image")
+    image_html = ""
+    if img:
+        image_html = (f'<figure class="ncard-fig"><img src="../{esc(img.lstrip("/"))}" alt="{title}" loading="lazy">'
+                      f'<figcaption>{esc(c.get("image_credit",""))}</figcaption></figure>')
+    # body: bài gốc của ta (list đoạn). Không có body → chỉ tóm-tắt (card quick).
+    body = c.get("body") or []
+    if body:
+        body_html = f'<p class="ncard-sum">{esc(c.get("summary",""))}</p>' + "".join(
+            f'<p class="ncard-body">{esc(p)}</p>' for p in body)
+        note = bilingual(
+            "Original write-up by USR from the cited source (our words, not a reproduction). Read the source for the full original.",
+            "Bài do USR viết từ nguồn dẫn (lời của ta, không tái-bản). Đọc bản gốc tại nguồn để xem đầy-đủ.")
+    else:
+        body_html = f'<p class="ncard-sum">{esc(c.get("summary",""))}</p>'
+        note = bilingual(
+            "Quick headline: original title + a USR-written one-line summary + a link. We do not reproduce the source article — read it in full at the source.",
+            "Tin nhanh: tiêu-đề gốc + một câu tóm-tắt do USR viết + link. Chúng tôi KHÔNG tái-bản bài gốc — đọc đầy-đủ tại nguồn.")
     return f"""<!DOCTYPE html>
 <html lang="vi" data-theme="light" data-lang="vi">
 <head>
@@ -82,14 +102,13 @@ def render_card_page(c):
   <a class="ncard-back" href="../index.html">← {bilingual("All quick headlines","Tất cả tin nhanh")}</a>
   <span class="ncard-field">{esc(c.get("field",""))} · {esc(c.get("stratum",""))}</span>
   <h1 class="ncard-ttl">{title}</h1>
-  <p class="ncard-sum">{esc(c.get("summary",""))}</p>
+  {image_html}
+  {body_html}
   <div class="ncard-meta">
     <span>{bilingual("Source","Nguồn")}: <b>{outlet}</b></span> · {_tierlbl(c.get("tier"))} · <span>{date}</span>
   </div>
   <a class="ncard-orig" href="{url}" target="_blank" rel="noopener">{bilingual("Read the original at","Đọc bản gốc tại")} {outlet} ↗</a>
-  <p class="ncard-note">{bilingual(
-    "Quick headline: original title + a USR-written one-line summary + a link. We do not reproduce the source article — read it in full at the source.",
-    "Tin nhanh: tiêu-đề gốc + một câu tóm-tắt do USR viết + link. Chúng tôi KHÔNG tái-bản bài gốc — đọc đầy-đủ tại nguồn.")}</p>
+  <p class="ncard-note">{note}</p>
 </main>
 {footer("../")}
 <script src="../base/base.js"></script>

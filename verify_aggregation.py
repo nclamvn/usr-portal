@@ -59,8 +59,13 @@ def check(doc, entity_slugs, gloss_terms):
             raise GateError("AGG_SUMMARY_VERBATIM", f"card {cid!r}: summary {len(summ)} ký-tự > 240")
         if _verbatim_clause(summ, c.get("source_title", "")):
             raise GateError("AGG_SUMMARY_VERBATIM", f"card {cid!r}: summary chép ≥1 mệnh-đề verbatim từ source_title")
-        if c.get("image") is not None:
-            raise GateError("AGG_THIRDPARTY_IMAGE", f"card {cid!r}: image≠null — ảnh card phải qua media.json (tường-quyền), không nhúng trần")
+        img = c.get("image")
+        if img is not None:
+            # CHỈ ảnh local open-licensed (images/content/, đã gated khi optimize) + có credit. Ảnh http ngoài = chặn.
+            if not str(img).lstrip("/").startswith("images/content/"):
+                raise GateError("AGG_THIRDPARTY_IMAGE", f"card {cid!r}: image {img!r} phải là ảnh local open-licensed (images/content/...), không phải http/bên-ngoài")
+            if not c.get("image_credit"):
+                raise GateError("AGG_THIRDPARTY_IMAGE", f"card {cid!r}: ảnh open-licensed phải có image_credit (CC/PD + tác-giả)")
         if OPINION_RE.search(summ) and not c.get("human_author"):
             raise GateError("AGG_OPINION_NOHUMAN", f"card {cid!r}: summary mang luận-điểm/đặc-tả mà không human_author")
         for t in c.get("entity_tags") or []:
