@@ -69,6 +69,12 @@ python3 verify_content.py
 echo "[6a/8] media rights gate (verify_media — enum quyền · owner/license/src/binding thật · 7 teeth)"
 python3 verify_media.py
 python3 teeth_media.py
+echo "      media staging ledger (TIP-NEWS-VISUAL — license_status sổ-cái · credit completeness)"
+python3 build_media_ledger.py
+LSHA1=$(shasum -a256 out/media-ledger.json | cut -d' ' -f1)
+python3 build_media_ledger.py >/dev/null
+LSHA2=$(shasum -a256 out/media-ledger.json | cut -d' ' -f1)
+[ "$LSHA1" = "$LSHA2" ] && echo "      media-ledger idempotent OK" || { echo "      MEDIA-LEDGER IDEMPOTENT FAIL"; exit 2; }
 
 echo "[6b/8] cross-link graph (crosslink.py) + dangling-link gate (verify_graph) + teeth"
 python3 crosslink.py

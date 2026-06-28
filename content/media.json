@@ -18,7 +18,8 @@
       "grade": "none",
       "caption": "Đường băng và máy bay tại sân bay",
       "captured_at": null,
-      "entity_tags": []
+      "entity_tags": [],
+      "license_status": "cc"
     },
     "drone-ag-paddy": {
       "type": "image",
@@ -40,7 +41,8 @@
       "entity_tags": [
         "drone",
         "nông nghiệp"
-      ]
+      ],
+      "license_status": "cc"
     },
     "drone-city": {
       "type": "image",
@@ -62,7 +64,8 @@
       "entity_tags": [
         "drone",
         "đô thị"
-      ]
+      ],
+      "license_status": "cc"
     },
     "drone-flying": {
       "type": "image",
@@ -83,7 +86,8 @@
       "captured_at": null,
       "entity_tags": [
         "drone"
-      ]
+      ],
+      "license_status": "cc"
     },
     "ehang-eh184": {
       "type": "image",
@@ -105,7 +109,8 @@
       "entity_tags": [
         "eVTOL",
         "EHang"
-      ]
+      ],
+      "license_status": "cc"
     },
     "evtol-passenger": {
       "type": "image",
@@ -127,7 +132,8 @@
       "entity_tags": [
         "eVTOL",
         "taxi bay"
-      ]
+      ],
+      "license_status": "cc"
     },
     "evtol-volocopter": {
       "type": "image",
@@ -149,7 +155,8 @@
       "entity_tags": [
         "eVTOL",
         "taxi bay"
-      ]
+      ],
+      "license_status": "cc"
     },
     "flood-aerial": {
       "type": "image",
@@ -168,7 +175,8 @@
       "grade": "none",
       "caption": "Vùng ngập nhìn từ trên không",
       "captured_at": null,
-      "entity_tags": []
+      "entity_tags": [],
+      "license_status": "cc"
     },
     "hera-branded-demo": {
       "type": "image",
@@ -189,7 +197,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hera-cover-hero": {
       "type": "image",
@@ -210,7 +219,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hera-field-michigan": {
       "type": "image",
@@ -231,7 +241,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hera-sar-rescue": {
       "type": "image",
@@ -252,7 +263,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hera-studio-black": {
       "type": "image",
@@ -273,7 +285,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hera-takeoff": {
       "type": "video",
@@ -294,7 +307,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hero-detroit": {
       "type": "image",
@@ -315,7 +329,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "hero-flight-1": {
       "type": "image",
@@ -336,7 +351,8 @@
       "entity_tags": [
         "rtr",
         "hera"
-      ]
+      ],
+      "license_status": "owned"
     },
     "quoc-portrait": {
       "type": "image",
@@ -360,7 +376,8 @@
       "name": "Dr. Quoc Luong",
       "title": "Founder & CEO",
       "identity_source": "RtR Company Knowledge Base §1.1 (self-sourced)",
-      "identity_tier": "A"
+      "identity_tier": "A",
+      "license_status": "owned"
     },
     "uav-deltaquad": {
       "type": "image",
@@ -382,7 +399,8 @@
       "entity_tags": [
         "UAV",
         "giám sát"
-      ]
+      ],
+      "license_status": "cc"
     },
     "vega-featured": {
       "type": "image",
@@ -403,7 +421,8 @@
       "entity_tags": [
         "rtr",
         "vega"
-      ]
+      ],
+      "license_status": "owned"
     },
     "vega-payload-drop": {
       "type": "image",
@@ -424,7 +443,8 @@
       "entity_tags": [
         "rtr",
         "vega"
-      ]
+      ],
+      "license_status": "owned"
     },
     "vega-tactical-deploy": {
       "type": "image",
@@ -445,7 +465,8 @@
       "entity_tags": [
         "rtr",
         "vega"
-      ]
+      ],
+      "license_status": "owned"
     },
     "zipline-delivery": {
       "type": "image",
@@ -467,7 +488,8 @@
       "entity_tags": [
         "drone",
         "giao hàng"
-      ]
+      ],
+      "license_status": "cc"
     }
   },
   "bindings": {
