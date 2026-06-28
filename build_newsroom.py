@@ -56,6 +56,21 @@ def trace_value(trace, site):
         return c.most_common(1)[0][1] if c else 0
     if t == "count(company with >=1 sourced field)":
         return sum(1 for e in ents if e.get("entity_type") == "company" and any(isinstance(e.get(k), dict) for k in SOURCED))
+    # per-field spec coverage — recompute 'present' count for one field, e.g. aggregates.spec_fill_rate.mtow_kg → 179
+    if t.startswith("aggregates.spec_fill_rate."):
+        field = t.rsplit(".", 1)[1]
+        fr = site["aggregates"]["spec_fill_rate"].get(field)
+        if not isinstance(fr, dict):
+            raise ValueError("unknown spec_fill_rate field: %s" % field)
+        return fr["present"]
+    # source-tier tally — aggregates.source_tier_counts.A → 1767 (VN thousands sep so it matches prose)
+    if t.startswith("aggregates.source_tier_counts."):
+        tier = t.rsplit(".", 1)[1]
+        stc = site["aggregates"]["source_tier_counts"]
+        if tier not in stc:
+            raise ValueError("unknown source tier: %s" % tier)
+        v = stc[tier]
+        return f"{v:,}".replace(",", ".") if isinstance(v, int) and v >= 1000 else v
     raise ValueError("unknown trace: %s" % trace)
 
 
@@ -74,7 +89,9 @@ TYPE_LABEL = {"data-note": ("Data note", "Ghi chú dữ liệu"), "explainer": (
 FIG_LABEL = {"total_uav": ("systems", "hệ thống"), "total_company": ("companies", "doanh nghiệp"),
              "total_country": ("countries", "quốc gia"), "total_segment": ("segments", "nhóm ứng dụng"),
              "spec_coverage": ("spec coverage", "độ phủ spec"), "blue_uas": ("Blue UAS", "Blue UAS"),
-             "ndaa": ("NDAA compliant", "tuân thủ NDAA")}
+             "ndaa": ("NDAA compliant", "tuân thủ NDAA"),
+             "fill_mtow": ("MTOW filled /302", "có MTOW /302"), "fill_ndaa": ("NDAA filled /302", "có NDAA /302"),
+             "fill_encryption": ("encryption filled /302", "có mã hoá /302"), "tier_a": ("tier-A values", "giá trị tier A")}
 
 
 def data_rail(fm, site):
