@@ -2,14 +2,14 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2813,
+      "None": 2808,
       "derived": 267,
       "disputed": 6,
       "unverified": 37,
-      "verified": 2917
+      "verified": 2922
     },
     "source_tier_counts": {
-      "A": 1857,
+      "A": 1862,
       "B": 439,
       "C": 638,
       "derived": 267
@@ -24,7 +24,7 @@
         "total": 302
       },
       "endurance_min": {
-        "present": 180,
+        "present": 181,
         "total": 302
       },
       "gps_denied_capable": {
@@ -32,11 +32,11 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 68,
+        "present": 69,
         "total": 302
       },
       "max_payload_kg": {
-        "present": 141,
+        "present": 142,
         "total": 302
       },
       "max_range_km": {
@@ -44,11 +44,11 @@
         "total": 302
       },
       "max_speed_ms": {
-        "present": 163,
+        "present": 164,
         "total": 302
       },
       "mtow_kg": {
-        "present": 195,
+        "present": 196,
         "total": 302
       },
       "ndaa_compliant": {
@@ -7297,10 +7297,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.autelrobotics.com/productdetail/autel-alpha/"
+          }
+        ],
+        "status": "verified",
+        "value": 40
       },
       "entity_type": "uav",
       "family": {
@@ -7377,16 +7384,30 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.autelrobotics.com/productdetail/autel-alpha/"
+          }
+        ],
+        "status": "verified",
+        "value": 15
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.autelrobotics.com/productdetail/autel-alpha/"
+          }
+        ],
+        "status": "verified",
+        "value": 3
       },
       "max_range_km": {
         "confidence": null,
@@ -7395,16 +7416,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.autelrobotics.com/productdetail/autel-alpha/"
+          }
+        ],
+        "status": "verified",
+        "value": 25
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.autelrobotics.com/productdetail/autel-alpha/"
+          }
+        ],
+        "status": "verified",
+        "value": 6.1
       },
       "name": {
         "confidence": "high",
@@ -65714,5 +65749,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "75fab34e8210a05b9c9aa834a478f497eedc136ec7b08edd77431914bbae1a76"
+  "source_registry_sha256": "46bbe05d48b648bbe44f9de52581d06ba0e5a88ba33a8754a5b85af7ac016f2c"
 }

@@ -2684,6 +2684,22 @@
       "total": 38
     },
     {
+      "maker": "Autel Robotics",
+      "name": "Autel Robotics Alpha",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 34,
+        "max_link_km": 52,
+        "max_payload_kg": 26,
+        "max_range_km": null,
+        "max_speed_ms": 42,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-autel-robotics-alpha-alpha",
+      "total": 38
+    },
+    {
       "maker": "Teal",
       "name": "Teal Golden Eagle",
       "of": 6,
@@ -4697,22 +4713,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-autel-robotics-evo-ii-dual-640t-enterprise",
-      "total": null
-    },
-    {
-      "maker": "Autel Robotics",
-      "name": "Autel Robotics Alpha",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-autel-robotics-alpha-alpha",
       "total": null
     },
     {

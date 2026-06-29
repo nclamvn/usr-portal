@@ -150,8 +150,48 @@ DETAIL_CSS = """
   .sources a{color:inherit}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
   .dglyph{display:flex;align-items:center;gap:18px;margin:1rem 0 .2rem}
+  /* TIP-GRAPHICS — status strip: compliance badges + profile completeness (honest-null as info) */
+  .dstatus{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;margin:14px 0 4px;padding:10px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .cbadges{display:flex;gap:8px;flex-wrap:wrap}
+  .cbadge{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.03em;border:1px solid var(--hair-strong);border-radius:3px;padding:2px 7px;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
+  .cbadge b{font-weight:700} .cbadge i{font-style:normal;color:var(--faint)}
+  .cbadge.yes,.cbadge.yes b,.cbadge.yes i{border-color:var(--brass);color:var(--brass)}
+  .cbadge.unk{border-style:dashed}
+  .pfill{display:inline-flex;align-items:center;gap:9px}
+  .pfill-lab{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .pfill-bar{position:relative;width:120px;height:5px;background:var(--hair);border-radius:3px;overflow:hidden}
+  .pfill-bar i{position:absolute;left:0;top:0;bottom:0;background:var(--brass);border-radius:3px}
+  .pfill-n{font-family:var(--font-mono);font-size:.72rem;font-variant-numeric:tabular-nums;color:var(--ink)}
   .dglyph-lab{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 """
+
+
+def _cell(e, f):
+    c = e.get(f)
+    return c if isinstance(c, dict) else {}
+
+
+def status_strip(e):
+    """TIP-GRAPHICS 2.1 — turn honest-null into information: compliance badges (✓ brass / ✗ / — chưa rõ)
+    + a profile-completeness bar (filled/total). Reads cells directly (no fabrication); '—' = honest-null."""
+    bdg = ""
+    for f, lab in (("ndaa_compliant", "NDAA"), ("blue_uas", "Blue UAS")):
+        v = _cell(e, f).get("value")
+        if v is True:
+            cls, mk, txt = "yes", "✓", bilingual("yes", "có")
+        elif v is False:
+            cls, mk, txt = "no", "✗", bilingual("no", "không")
+        else:
+            cls, mk, txt = "unk", "—", bilingual("unverified", "chưa rõ")
+        bdg += f'<span class="cbadge {cls}"><b>{mk}</b> {lab} <i>{txt}</i></span>'
+    attrs = IDENTITY + SPEC_FIELDS
+    present = sum(1 for f in attrs if _cell(e, f).get("value") is not None)
+    total = len(attrs)
+    pct = round(100 * present / total) if total else 0
+    fill = (f'<div class="pfill"><span class="pfill-lab">{bilingual("Profile filled", "Độ đầy hồ sơ")}</span>'
+            f'<span class="pfill-bar"><i style="width:{pct}%"></i></span>'
+            f'<span class="pfill-n">{present}/{total}</span></div>')
+    return f'<div class="dstatus" data-audit="dstatus"><div class="cbadges">{bdg}</div>{fill}</div>'
 
 
 def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=False, media_html=""):
@@ -187,6 +227,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=F
   </header>
   <div class="dglyph">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-lg", draw=draw)}
     <span class="dglyph-lab">{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>{clink}{media_html}
+  {status_strip(e)}
   <div class="dsec-h">{bilingual("Identity", "Định danh")}</div>
   <div class="drows">{ident}</div>
   <div class="dsec-h">{bilingual("Specifications", "Thông số")}</div>

@@ -40447,6 +40447,86 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 6.1,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.autelrobotics.com/productdetail/autel-alpha/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6.1,
+              "note": "manufacturer spec (enrich lô7)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 3,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.autelrobotics.com/productdetail/autel-alpha/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 3,
+              "note": "manufacturer spec (enrich lô7)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.autelrobotics.com/productdetail/autel-alpha/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 40,
+              "note": "manufacturer spec (enrich lô7)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.autelrobotics.com/productdetail/autel-alpha/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 15,
+              "note": "manufacturer spec (enrich lô7)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.autelrobotics.com/productdetail/autel-alpha/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 25,
+              "note": "manufacturer spec (enrich lô7)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },

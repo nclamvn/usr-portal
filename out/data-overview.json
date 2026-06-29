@@ -71,19 +71,19 @@
     {
       "key": "mtow_kg",
       "pct": 65,
-      "present": 195,
+      "present": 196,
       "total": 302
     },
     {
       "key": "max_payload_kg",
       "pct": 47,
-      "present": 141,
+      "present": 142,
       "total": 302
     },
     {
       "key": "endurance_min",
       "pct": 60,
-      "present": 180,
+      "present": 181,
       "total": 302
     },
     {
@@ -95,13 +95,13 @@
     {
       "key": "max_link_km",
       "pct": 23,
-      "present": 68,
+      "present": 69,
       "total": 302
     },
     {
       "key": "max_speed_ms",
       "pct": 54,
-      "present": 163,
+      "present": 164,
       "total": 302
     },
     {
@@ -295,19 +295,19 @@
       "key": "mtow_kg",
       "max": 25000,
       "min": 0.073,
-      "present": 195
+      "present": 196
     },
     {
       "key": "max_payload_kg",
       "max": 6800,
       "min": 0.2,
-      "present": 141
+      "present": 142
     },
     {
       "key": "endurance_min",
       "max": 3600,
       "min": 4,
-      "present": 180
+      "present": 181
     },
     {
       "key": "max_range_km",
@@ -319,13 +319,13 @@
       "key": "max_link_km",
       "max": 200,
       "min": 0.9,
-      "present": 68
+      "present": 69
     },
     {
       "key": "max_speed_ms",
       "max": 306,
       "min": 4,
-      "present": 163
+      "present": 164
     },
     {
       "key": "service_ceiling_m",
