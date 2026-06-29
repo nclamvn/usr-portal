@@ -13,7 +13,7 @@ figures:
   - { token: "fs_disputed", trace: "aggregates.field_status_counts.disputed" }
 graphic:
   kind: count
-  value: "2.903"
+  value: "2.917"
   label: "trường đã kiểm"
   status: "registry USR"
 sources:
@@ -22,11 +22,11 @@ sources:
 
 # Độ tin cậy theo trạng thái trường trong bản đăng ký USR
 
-Trong bản đăng ký USR, 2.903 trường dữ liệu đã được kiểm chứng trong khi chỉ 6 trường đang ở trạng thái tranh chấp.
+Trong bản đăng ký USR, 2.917 trường dữ liệu đã được kiểm chứng trong khi chỉ 6 trường đang ở trạng thái tranh chấp.
 
 Các con số dưới đây mô tả cấu trúc của tập dữ liệu tuyển chọn, không phải mức độ minh bạch của toàn ngành. Mỗi trạng thái là một nhãn nội bộ về độ chắc của từng ô, nên tỷ lệ giữa chúng phản ánh cách bản đăng ký ghi nhận chứ không phải chất lượng dữ liệu của thị trường UAV.
 
-Phần lớn giá trị đã có nguồn xác định, với 2.903 trường mang trạng thái đã kiểm. Bên cạnh đó là 267 trường suy ra từ phân loại nội bộ và 37 trường chưa kiểm, hai nhóm được tách riêng để người đọc không nhầm với phần đã xác nhận.
+Phần lớn giá trị đã có nguồn xác định, với 2.917 trường mang trạng thái đã kiểm. Bên cạnh đó là 267 trường suy ra từ phân loại nội bộ và 37 trường chưa kiểm, hai nhóm được tách riêng để người đọc không nhầm với phần đã xác nhận.
 
 Phần tranh chấp rất nhỏ nhưng được giữ nguyên thay vì xoá. Khi các nguồn ghi khác nhau về cùng một thuộc tính, hệ thống giữ cả các phiên bản và đánh dấu là tranh chấp, hiện có 6 trường như vậy. Cách phơi bày này cho thấy bản đăng ký chọn minh bạch về điểm chưa thống nhất hơn là ép một con số duy nhất.
 

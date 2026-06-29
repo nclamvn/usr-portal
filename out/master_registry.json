@@ -29288,6 +29288,38 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 28,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://freeflysystems.com/astro",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 28,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 15.9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://freeflysystems.com/astro",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 15.9,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       },
       "provenance_class": "blue_public"
@@ -35361,6 +35393,54 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://wingcopter.com/wingcopter-198",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 25,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 94,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://wingcopter.com/wingcopter-198",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 94,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 4.7,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://wingcopter.com/wingcopter-198",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 4.7,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -38831,6 +38911,54 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 123,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 123,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 15240,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 15240,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1361,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1361,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -39366,6 +39494,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 75,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shield.ai/v-bat/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 75,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 18.1,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shield.ai/v-bat/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 18.1,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 180,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://shield.ai/v-bat/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 180,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -40078,6 +40254,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 90,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 90,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 30,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 8,
+              "note": "manufacturer spec (enrich lô6)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }

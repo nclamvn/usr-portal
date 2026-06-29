@@ -966,12 +966,12 @@
       "slug": "uav-ageagle-ebee-x-ebee-x",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 90
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 8
         },
         "max_payload_kg": {
           "tier": null,
@@ -982,8 +982,8 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 30
         },
         "mtow_kg": {
           "tier": null,
@@ -6021,16 +6021,16 @@
       "slug": "uav-freefly-systems-astro-astro",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 28
         },
         "max_link_km": {
           "tier": null,
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 15.9
         },
         "max_range_km": {
           "tier": null,
@@ -6275,24 +6275,24 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1361
         },
         "max_range_km": {
           "tier": null,
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 123
         },
         "mtow_kg": {
           "tier": null,
           "v": null
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 15240
         }
       }
     },
@@ -9883,20 +9883,20 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 18.1
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 180
         },
         "max_speed_ms": {
           "tier": null,
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 75
         },
         "service_ceiling_m": {
           "tier": null,
@@ -11737,16 +11737,16 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 4.7
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 94
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 25
         },
         "mtow_kg": {
           "tier": "A",

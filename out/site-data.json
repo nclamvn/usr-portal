@@ -2,14 +2,14 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2827,
+      "None": 2813,
       "derived": 267,
       "disputed": 6,
       "unverified": 37,
-      "verified": 2903
+      "verified": 2917
     },
     "source_tier_counts": {
-      "A": 1843,
+      "A": 1857,
       "B": 439,
       "C": 638,
       "derived": 267
@@ -24,7 +24,7 @@
         "total": 302
       },
       "endurance_min": {
-        "present": 178,
+        "present": 180,
         "total": 302
       },
       "gps_denied_capable": {
@@ -32,23 +32,23 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 67,
+        "present": 68,
         "total": 302
       },
       "max_payload_kg": {
-        "present": 137,
+        "present": 141,
         "total": 302
       },
       "max_range_km": {
-        "present": 109,
+        "present": 111,
         "total": 302
       },
       "max_speed_ms": {
-        "present": 160,
+        "present": 163,
         "total": 302
       },
       "mtow_kg": {
-        "present": 194,
+        "present": 195,
         "total": 302
       },
       "ndaa_compliant": {
@@ -56,7 +56,7 @@
         "total": 302
       },
       "service_ceiling_m": {
-        "present": 94,
+        "present": 95,
         "total": 302
       }
     },
@@ -4015,10 +4015,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/"
+          }
+        ],
+        "status": "verified",
+        "value": 90
       },
       "entity_type": "uav",
       "family": {
@@ -4095,10 +4102,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/"
+          }
+        ],
+        "status": "verified",
+        "value": 8
       },
       "max_payload_kg": {
         "confidence": null,
@@ -4113,10 +4127,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "http://eaglenxt.com/products/drones/ebee-series/ebee-x/"
+          }
+        ],
+        "status": "verified",
+        "value": 30
       },
       "mtow_kg": {
         "confidence": null,
@@ -28477,10 +28498,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://freeflysystems.com/astro"
+          }
+        ],
+        "status": "verified",
+        "value": 28
       },
       "entity_type": "uav",
       "family": {
@@ -28563,10 +28591,17 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://freeflysystems.com/astro"
+          }
+        ],
+        "status": "verified",
+        "value": 15.9
       },
       "max_range_km": {
         "confidence": null,
@@ -30203,10 +30238,17 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a"
+          }
+        ],
+        "status": "verified",
+        "value": 1361
       },
       "max_range_km": {
         "confidence": null,
@@ -30215,10 +30257,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a"
+          }
+        ],
+        "status": "verified",
+        "value": 123
       },
       "mtow_kg": {
         "confidence": null,
@@ -30253,10 +30302,17 @@
       },
       "provenance_class": "competitor_military_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.ga-asi.com/remotely-piloted-aircraft/mq-9a"
+          }
+        ],
+        "status": "verified",
+        "value": 15240
       },
       "slug": "uav-general-atomics-mq-9-reaper-mq-9-reaper",
       "variant": {
@@ -48117,16 +48173,30 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shield.ai/v-bat/"
+          }
+        ],
+        "status": "verified",
+        "value": 18.1
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shield.ai/v-bat/"
+          }
+        ],
+        "status": "verified",
+        "value": 180
       },
       "max_speed_ms": {
         "confidence": null,
@@ -48135,10 +48205,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://shield.ai/v-bat/"
+          }
+        ],
+        "status": "verified",
+        "value": 75
       },
       "name": {
         "confidence": "high",
@@ -57311,22 +57388,43 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://wingcopter.com/wingcopter-198"
+          }
+        ],
+        "status": "verified",
+        "value": 4.7
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://wingcopter.com/wingcopter-198"
+          }
+        ],
+        "status": "verified",
+        "value": 94
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://wingcopter.com/wingcopter-198"
+          }
+        ],
+        "status": "verified",
+        "value": 25
       },
       "mtow_kg": {
         "confidence": "high",
@@ -65616,5 +65714,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "87ecbcdf421c7192e173d16649fb4c499da32d9c9dad6de29fe7aa7cb29c8cc8"
+  "source_registry_sha256": "75fab34e8210a05b9c9aa834a478f497eedc136ec7b08edd77431914bbae1a76"
 }

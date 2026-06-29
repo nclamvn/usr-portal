@@ -268,6 +268,22 @@
       "total": 84
     },
     {
+      "maker": "General Atomics",
+      "name": "General Atomics MQ-9 Reaper",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 85,
+        "max_range_km": null,
+        "max_speed_ms": 79,
+        "service_ceiling_m": 89
+      },
+      "slug": "uav-general-atomics-mq-9-reaper-mq-9-reaper",
+      "total": 84
+    },
+    {
       "maker": "Boeing",
       "name": "Boeing MQ-28 Ghost Bat",
       "of": 6,
@@ -1436,22 +1452,6 @@
       "total": 55
     },
     {
-      "maker": "Wingcopter",
-      "name": "Wingcopter 198",
-      "of": 6,
-      "scored": 2,
-      "scores": {
-        "endurance_min": 46,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": 61
-      },
-      "slug": "uav-wingcopter-w198-198",
-      "total": 54
-    },
-    {
       "maker": "Volocopter",
       "name": "Volocopter VoloRegion",
       "of": 6,
@@ -1900,6 +1900,22 @@
       "total": 47
     },
     {
+      "maker": "Shield AI",
+      "name": "Shield AI V-BAT",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 43,
+        "max_range_km": 48,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-shield-ai-v-bat-v-bat",
+      "total": 46
+    },
+    {
       "maker": "Qods",
       "name": "Qods Mohajer-2",
       "of": 6,
@@ -2044,6 +2060,22 @@
       "total": 44
     },
     {
+      "maker": "Wingcopter",
+      "name": "Wingcopter 198",
+      "of": 6,
+      "scored": 5,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": null,
+        "max_payload_kg": 30,
+        "max_range_km": 40,
+        "max_speed_ms": 42,
+        "service_ceiling_m": 61
+      },
+      "slug": "uav-wingcopter-w198-198",
+      "total": 44
+    },
+    {
       "maker": "Quantum Systems",
       "name": "Quantum Systems Trinity Pro",
       "of": 6,
@@ -2137,6 +2169,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
+      "total": 44
+    },
+    {
+      "maker": "AgEagle",
+      "name": "AgEagle eBee X",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 46,
+        "max_link_km": 40,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 46,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-ageagle-ebee-x-ebee-x",
       "total": 44
     },
     {
@@ -2809,6 +2857,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-hylio-ag-130-ag-130",
+      "total": 36
+    },
+    {
+      "maker": "Freefly Systems",
+      "name": "Freefly Astro",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": 29,
+        "max_link_km": null,
+        "max_payload_kg": 42,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-freefly-systems-astro-astro",
       "total": 36
     },
     {
@@ -4061,22 +4125,6 @@
     },
     {
       "maker": "Shield AI",
-      "name": "Shield AI V-BAT",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-shield-ai-v-bat-v-bat",
-      "total": null
-    },
-    {
-      "maker": "Shield AI",
       "name": "Shield AI V-BAT 128",
       "of": 6,
       "scored": 0,
@@ -4361,38 +4409,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-geprc-mark5-mark5",
-      "total": null
-    },
-    {
-      "maker": "General Atomics",
-      "name": "General Atomics MQ-9 Reaper",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-general-atomics-mq-9-reaper-mq-9-reaper",
-      "total": null
-    },
-    {
-      "maker": "Freefly Systems",
-      "name": "Freefly Astro",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-freefly-systems-astro-astro",
       "total": null
     },
     {
@@ -4793,22 +4809,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-anduril-industries-altius-600-altius-600",
-      "total": null
-    },
-    {
-      "maker": "AgEagle",
-      "name": "AgEagle eBee X",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-ageagle-ebee-x-ebee-x",
       "total": null
     },
     {
