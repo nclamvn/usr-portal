@@ -33,6 +33,7 @@ def mutate(path, newtext, want, name, created=False):
 
 
 def main():
+    (ROOT / "airframe" / "__ghost__.html").unlink(missing_ok=True)   # self-heal a prior interrupted run
     site = json.loads((ROOT / "out" / "site-data.json").read_bytes())
     uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
     exp, sample = V.recompute(uavs)
