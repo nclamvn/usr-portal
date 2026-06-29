@@ -1,0 +1,71 @@
+# prd-coverage.yaml — sổ phủ PRD (mỗi mục một dòng; verify_prd_coverage gác)
+# status: done|partial|missing · gate_proof: tên verify/test PASS chứng done (done mà không có proof → exit 2)
+# THIẾU bất kỳ id PRD nào trong file → exit 2. Nguồn chuẩn: PRD Vietnam UAV Intelligence Platform (8 trang).
+schema: prd-coverage/1
+prd_source: "Vietnam_UAV_Intelligence_Platform_PRD.pdf"
+
+# §2 — 10 entity type (Database) phải có, mỗi loại schema riêng + quan hệ hai chiều
+entity_types:
+  - { id: ENT.uav,        req: "UAV entity + structured spec",          status: partial, gate_proof: "verify_site_data" }
+  - { id: ENT.company,    req: "Company entity + profile",              status: partial, gate_proof: "verify_site_data" }
+  - { id: ENT.software,   req: "Software entity DB",                    status: missing, gate_proof: "" }
+  - { id: ENT.camera,     req: "Camera entity DB",                      status: missing, gate_proof: "" }
+  - { id: ENT.sensor,     req: "Sensor entity DB",                      status: missing, gate_proof: "" }
+  - { id: ENT.battery,    req: "Battery (Pin) entity DB",               status: missing, gate_proof: "" }
+  - { id: ENT.motor,      req: "Motor entity DB",                       status: missing, gate_proof: "" }
+  - { id: ENT.payload,    req: "Payload entity DB",                     status: missing, gate_proof: "" }
+  - { id: ENT.accessory,  req: "Accessory (Phụ kiện) entity DB",        status: missing, gate_proof: "" }
+  - { id: ENT.distributor,req: "Distributor (Nhà phân phối) entity DB", status: missing, gate_proof: "" }
+
+# §8 — tiêu chí nghiệm thu (checklist bàn giao chung kỹ thuật + biên tập)
+acceptance:
+  # 8.1 UAV Database
+  - { id: "8.1.1", req: "CRUD hồ sơ UAV không cần code (qua admin UI)",                       status: missing, gate_proof: "" }
+  - { id: "8.1.2", req: "Hồ sơ UAV hiển thị đủ ảnh/video·spec·giá·pin·camera·firmware·lịch-sử", status: partial, gate_proof: "verify_site_data" }
+  - { id: "8.1.3", req: "Tự liệt review·guide·distributor·bài liên-quan, không link tay",       status: partial, gate_proof: "verify_graph" }
+  - { id: "8.1.4", req: "Xoá/đổi-tên UAV không vỡ link (redirect/auto-update)",                 status: missing, gate_proof: "" }
+  - { id: "8.1.5", req: "Spec là structured field (không free-text), lọc+compare được",         status: done,    gate_proof: "verify_site_data" }
+  # 8.2 Company Database
+  - { id: "8.2.1", req: "URL hồ sơ /company/[slug]",                                            status: done,    gate_proof: "verify_seo" }
+  - { id: "8.2.2", req: "UAV-list trên hồ sơ DN lấy tự động từ UAV DB (không nhập trùng)",       status: partial, gate_proof: "verify_graph" }
+  - { id: "8.2.3", req: "Tin liên quan auto xuất hiện theo tag Company",                         status: partial, gate_proof: "verify_newsroom" }
+  - { id: "8.2.4", req: "Upload logo/gallery/video/PDF năng lực",                                status: missing, gate_proof: "" }
+  # 8.3 News CMS
+  - { id: "8.3.1", req: "Gắn nhiều entity (Company/Aircraft/Tech/Country) một màn soạn",         status: missing, gate_proof: "" }
+  - { id: "8.3.2", req: "Sau publish bài auto xuất hiện đúng các trang entity đã gắn",           status: partial, gate_proof: "verify_newsroom" }
+  - { id: "8.3.3", req: "Gỡ tag → gỡ bài khỏi trang entity (≤1 cache refresh)",                  status: missing, gate_proof: "" }
+  # 8.4 Knowledge CMS
+  - { id: "8.4.1", req: "Mỗi Knowledge có URL /knowledge/[slug]",                               status: done,    gate_proof: "verify_seo" }
+  - { id: "8.4.2", req: "Thuật ngữ auto-link về trang Knowledge",                                status: partial, gate_proof: "verify_content" }
+  - { id: "8.4.3", req: "Knowledge đạt SEO on-page (meta·schema·breadcrumb)",                    status: partial, gate_proof: "verify_seo" }
+  # 8.5 Review Engine
+  - { id: "8.5.1", req: "Chung schema 7 tiêu chí: Camera·Pin·Bay·AI·Safety·Repairability·Value", status: partial, gate_proof: "" }
+  - { id: "8.5.2", req: "Tổng điểm hệ thống tự tính, không nhập tay",                            status: missing, gate_proof: "" }
+  - { id: "8.5.3", req: "Điểm đồng bộ giữa Review·hồ-sơ-UAV·Compare",                            status: missing, gate_proof: "" }
+  # 8.6 Compare Engine
+  - { id: "8.6.1", req: "Chọn 2-4 UAV so sánh một lượt",                                         status: done,    gate_proof: "verify_compare" }
+  - { id: "8.6.2", req: "Bảng spec song song, đồng bộ UAV DB (không lệch)",                      status: done,    gate_proof: "verify_compare" }
+  # 8.7 Search Engine
+  - { id: "8.7.1", req: "Tìm toàn loại: News·UAV·Company·Knowledge·Review",                      status: partial, gate_proof: "verify_search" }
+  - { id: "8.7.2", req: "Filter đúng: hãng·pin·payload·camera·giá·trọng-lượng·RTK·Thermal·LiDAR", status: missing, gate_proof: "" }
+  - { id: "8.7.3", req: "Phản hồi <1s với ≥1.000 entity",                                        status: partial, gate_proof: "" }
+  # 8.8 Dashboard
+  - { id: "8.8.1", req: "Số liệu real-time/≤24h: top bài·UAV·DN·từ-khoá·traffic·xu-hướng",       status: missing, gate_proof: "" }
+  - { id: "8.8.2", req: "Export dashboard ra CSV/Excel",                                         status: missing, gate_proof: "" }
+  # 8.9 Media Library
+  - { id: "8.9.1", req: "Chặn publish nếu thiếu Alt text (validation)",                          status: missing, gate_proof: "" }
+  - { id: "8.9.2", req: "Metadata (Caption·Photographer·Source·Copyright) lưu+hiển thị nhất quán", status: partial, gate_proof: "verify_media" }
+  # 8.10 SEO·URL·Taxonomy
+  - { id: "8.10.1", req: "100% Article/Product/Review đúng schema.org JSON-LD",                  status: partial, gate_proof: "verify_seo" }
+  - { id: "8.10.2", req: "0 URL dạng ?id=; toàn slug",                                           status: done,    gate_proof: "verify_seo" }
+  - { id: "8.10.3", req: "XML Sitemap auto cập nhật ≤1h",                                        status: done,    gate_proof: "verify_seo" }
+  - { id: "8.10.4", req: "Mỗi taxonomy (Country·Manufacturer·Sensor·Payload...) có trang riêng",  status: partial, gate_proof: "verify_taxonomy" }
+  # 8.11 Performance
+  - { id: "8.11.1", req: "PageSpeed Desktop≥95·Mobile≥90·LCP<2s·CLS<0.1 trên home·UAV·News",     status: partial, gate_proof: "" }
+  # 8.12 Phân quyền
+  - { id: "8.12.1", req: "Data Editor sửa data nhưng KHÔNG publish/sửa News",                    status: missing, gate_proof: "" }
+  - { id: "8.12.2", req: "Contributor KHÔNG publish thẳng; qua Reviewer/Editor",                 status: missing, gate_proof: "" }
+  - { id: "8.12.3", req: "Audit log mọi sửa/xoá của Data Editor + Editor",                       status: missing, gate_proof: "" }
+
+# §6 vai trò (8) — cần đủ trong RBAC của CMS
+roles_required: [super_admin, managing_editor, editor, contributor, data_editor, reviewer, seo_manager, guest_author]
