@@ -30,9 +30,9 @@ def main():
     rc, out = run()
     results.append(("clean control", rc == 0, rc))
 
-    # (a) FIGURE_DRIFT — the classic 13-vs-28: swap the live country stat
-    m = re.search(r">(\d+)<", txt)  # any; target the countries stat specifically
-    drift = re.sub(r">28<", ">13<", txt, count=1)
+    # (a) FIGURE_DRIFT — the classic 13-vs-28: swap the live country stat (ALL occurrences:
+    # the count now appears in both the masthead and the footer registry strip)
+    drift = txt.replace(">28<", ">13<")
     case("a · figure drift (28->13)", drift, "HP_FIGURE_DRIFT")
 
     # (b) DANGLING — point a card at a ghost slug

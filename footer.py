@@ -4,8 +4,34 @@ bilingual, theme-adaptive. Three parts — Brand / Navigate / Connect — + a pr
 Reuses .sec.plate (dark in both themes), the shield logo, nav.ITEMS, brass one-beat. Social links are
 DRAFT placeholders (#) — no fabricated account URLs; owner fills real ones. verify_footer keeps it
 byte-identical. Editorial rules: no '!', no em-dash, '…' not "…"."""
-import html
+import html, json, pathlib
 from nav import ITEMS  # leaf module — avoids a build_reference<->footer import cycle
+
+_ROOT = pathlib.Path(__file__).resolve().parent
+_BY = {key: (fn, en, vn) for key, fn, en, vn in ITEMS}
+_TOTALS = None
+
+
+def _totals():
+    """Live registry totals for the footer's state-of-the-registry strip (same on every page ->
+    footer stays byte-identical). Computed once from out/site-data.json (zero-fab)."""
+    global _TOTALS
+    if _TOTALS is None:
+        try:
+            s = json.loads((_ROOT / "out" / "site-data.json").read_bytes())
+            uavs = [e for e in s["entities"] if e.get("entity_type", "uav") == "uav"]
+            countries = len({(e.get("manufacturer_country") or {}).get("value") for e in uavs
+                             if (e.get("manufacturer_country") or {}).get("value")})
+            makers = len({(e.get("manufacturer") or {}).get("value") for e in uavs
+                          if (e.get("manufacturer") or {}).get("value")})
+            fill = s["aggregates"]["spec_fill_rate"]
+            pres = sum(d["present"] for d in fill.values())
+            tot = sum(d["total"] for d in fill.values())
+            _TOTALS = {"uav": len(uavs), "makers": makers, "countries": countries,
+                       "cov": round(100 * pres / tot) if tot else 0}
+        except Exception:
+            _TOTALS = {"uav": "—", "makers": "—", "countries": "—", "cov": "—"}
+    return _TOTALS
 
 
 def esc(x):
@@ -32,41 +58,59 @@ def _icon(key, label):
     return (f'<a class="soc-a" href="#" aria-label="{esc(label)}" data-draft="social">{svg}</a>')
 
 
+def _lnk(prefix, key):
+    fn, en, vn = _BY[key]
+    return f'<a href="{prefix}{fn}">{bilingual(en, vn)}</a>'
+
+
+def _fstat(value, en, vn):
+    return (f'<div class="fstat"><b>{esc(value)}</b>'
+            f'<span class="fstat-k">{bilingual(en, vn)}</span></div>')
+
+
 def footer(prefix=""):
-    """prefix: "" for root pages, "../" for subdir pages."""
+    """Single global instrument-panel footer (byte-identical per surface bar the ../ prefix). A top
+    band (brand + live state-of-the-registry strip), hairline-divided link cells, and a provenance bar."""
     home = f"{prefix}index.html"
-    nav_links = "".join(
-        f'<a href="{prefix}{fn}">{bilingual(en, vn)}</a>'
-        for key, fn, en, vn in ITEMS)
+    t = _totals()
     soc = "".join(_icon(k, lbl) for k, lbl in _SOC_META)
+    explore = "".join(_lnk(prefix, k) for k in ("reference", "compare", "data", "monitor"))
+    read = "".join(_lnk(prefix, k) for k in ("newsroom", "review", "knowledge"))
     return (
         '<footer class="sfoot sec plate" data-audit="footer"><div class="wrap">'
-        '<div class="sfoot-grid">'
-        # 1 · Brand
+        # TOP — brand + live registry strip (state of the platform)
+        '<div class="sfoot-top">'
         '<div class="sfoot-brand">'
         f'<a class="sfoot-wm" href="{home}" aria-label="Drone Review, home">'
-        f'<img class="brandmark" src="{prefix}base/brand-shield.png" alt="Drone Review" width="40" height="40">'
-        '<span class="sfoot-name">Drone Review</span></a>'
-        f'<p class="sfoot-tag">{bilingual("Trusted UAV intelligence for Vietnam. Data, knowledge and analysis in one place.", "Tri-thức UAV đáng tin-cậy cho Việt Nam. Dữ-liệu, kiến-thức và phân-tích trong một nơi.")}</p>'
-        f'<p class="sfoot-prov">{bilingual("Every figure traces to a cited source and tier.", "Mọi con số truy về nguồn dẫn và tier.")}</p>'
+        f'<img class="brandmark" src="{prefix}base/brand-shield.png" alt="Drone Review" width="44" height="44">'
+        '<span class="sfoot-id"><span class="sfoot-name">Vietnam UAV Intelligence Platform</span>'
+        f'<span class="sfoot-pub">{bilingual("Published by Uncrewed Systems Review", "Xuất bản bởi Uncrewed Systems Review")}</span></span></a>'
         '</div>'
-        # 2 · Navigate
+        '<div class="sfoot-stats" data-audit="fstats">'
+        + _fstat(t["uav"], "systems", "hệ thống")
+        + _fstat(t["makers"], "manufacturers", "nhà sản xuất")
+        + _fstat(t["countries"], "countries", "quốc gia")
+        + _fstat(f'{t["cov"]}%', "spec coverage", "độ phủ spec")
+        + '<div class="fstat fstat-live"><span class="live-dot"></span>'
+        f'<span class="fstat-k">{bilingual("Live · audited", "Sống · đã kiểm")}</span></div>'
+        '</div></div>'
+        # MID — hairline-divided link cells
+        '<div class="sfoot-cols">'
         '<div class="sfoot-col">'
-        f'<div class="sfoot-h">{bilingual("Navigate", "Điều hướng")}</div>'
-        f'<nav class="sfoot-nav">{nav_links}</nav>'
-        f'<div class="sfoot-soon">{bilingual("Solutions · Community · soon", "Giải pháp · Cộng đồng · sắp có")}</div>'
-        '</div>'
-        # 3 · Connect
+        f'<div class="sfoot-h">{bilingual("Explore", "Tra cứu")}</div>'
+        f'<nav class="sfoot-nav">{explore}</nav></div>'
+        '<div class="sfoot-col">'
+        f'<div class="sfoot-h">{bilingual("Read", "Nội dung")}</div>'
+        f'<nav class="sfoot-nav">{read}</nav>'
+        f'<div class="sfoot-soon">{bilingual("Solutions · Community · soon", "Giải pháp · Cộng đồng · sắp có")}</div></div>'
         '<div class="sfoot-col">'
         f'<div class="sfoot-h">{bilingual("Connect", "Kết nối")}</div>'
         f'<div class="sfoot-soc">{soc}</div>'
-        f'<div class="sfoot-live"><span class="live-dot"></span>'
-        f'<span class="sfoot-livek">{bilingual("Live, audited data", "Dữ-liệu sống, đã kiểm")}</span></div>'
+        f'<p class="sfoot-prov">{bilingual("Every figure traces to a cited source and tier.", "Mọi con số truy về nguồn dẫn và tier.")}</p></div>'
         '</div>'
-        '</div>'
-        # bottom bar
+        # BOTTOM — provenance bar
         '<div class="sfoot-bar">'
-        f'<span>© 2026 Drone Review</span>'
+        '<span>© 2026 Drone Review · Uncrewed Systems Review</span>'
         f'<span>{bilingual("Static, audited pipeline · provenance-forward", "Pipeline tĩnh, đã kiểm · ưu-tiên nguồn dẫn")}</span>'
         '</div>'
         '</div></footer>'
