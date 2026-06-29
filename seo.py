@@ -150,6 +150,16 @@ def collection_ld(name, path, n):
                 "name": name, "url": BASE + "/" + path, "numberOfItems": n})
 
 
+def breadcrumb_ld(trail):
+    """BreadcrumbList — trail = [(name, path), ...] from Home to the leaf. Every path is a site-relative
+    REAL built page; the leaf path is the page's own canonical. position is 1..n. Names are real labels
+    (never fabricated). Anchor only to section-index pages that exist (else a 2-level Home -> leaf trail)."""
+    items = [{"@type": "ListItem", "position": i, "name": name,
+              "item": BASE + "/" + path.lstrip("/")}
+             for i, (name, path) in enumerate(trail, 1)]
+    return _ld({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items})
+
+
 def definedterm_ld(term, definition, path):
     """DefinedTerm JSON-LD for a knowledge entry — term + its real definition (no fabrication)."""
     return _ld({"@context": "https://schema.org", "@type": "DefinedTerm", "name": term,

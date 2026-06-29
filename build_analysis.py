@@ -15,7 +15,7 @@ import json, pathlib, shutil, re, html
 from header import header
 from footer import footer
 from build_reference import esc
-from seo import favicons, article_ld
+from seo import favicons, article_ld, breadcrumb_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -229,6 +229,7 @@ def render_analysis_page(article, site, glossary):
 <link rel="stylesheet" href="../base/design-system.css">
 <link rel="stylesheet" href="../base/newsroom.css">
 {jsonld(a)}
+{breadcrumb_ld([("Uncrewed Systems Review", "index.html"), (a["title"], f'analysis/{a["slug"]}.html')])}
 </head>
 <body>
 <div class="prog" id="prog"></div>

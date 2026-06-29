@@ -28,7 +28,7 @@ def _entity_media(slug, rel="../"):
 from nav import nav
 from header import header
 from pagenav import pagenav
-from seo import meta, product_ld
+from seo import meta, product_ld, breadcrumb_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -264,6 +264,7 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True, prev=None
 <title>{esc(maker)} {esc(model)} — USR</title>
 {meta(f"{esc(maker)} {esc(model)} — USR", f"{esc(maker)} {esc(model)}: specifications traced to cited sources and tiers.", f'uav/{e["slug"]}.html')}
 {product_ld(e, f'uav/{e["slug"]}.html')}
+{breadcrumb_ld([("Uncrewed Systems Review", "index.html"), ("Reference", "reference.html"), (f"{maker} {model}", f'uav/{e["slug"]}.html')])}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{DETAIL_CSS}</style>

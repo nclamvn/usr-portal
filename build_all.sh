@@ -99,6 +99,8 @@ python3 verify_prd_coverage.py
 python3 teeth_prd_coverage.py
 python3 verify_seo.py
 python3 teeth_p22.py
+python3 verify_breadcrumb.py
+python3 teeth_breadcrumb.py
 python3 verify_knowledge.py
 python3 teeth_p31.py
 python3 verify_review.py

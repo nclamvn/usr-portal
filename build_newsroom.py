@@ -18,7 +18,7 @@ import media_lib as ML
 
 _MEDIA = ML.Media()
 import urllib.parse
-from seo import meta as seo_meta, article_ld
+from seo import meta as seo_meta, article_ld, breadcrumb_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT / "content" / "newsroom"
@@ -229,6 +229,7 @@ def render(fm, body, site, glossary, prev=None, next=None):
 <title>{esc(fm["title"])} — USR</title>
 {seo_meta(esc(fm["title"]) + " — USR", esc(fm["title"]), f"news/{slug}.html")}
 {article_ld(fm["title"], fm.get("date"), f"news/{slug}.html", desc=fm.get("title"), author=(fm.get("human_author") or None))}
+{breadcrumb_ld([("Uncrewed Systems Review", "index.html"), ("Newsroom", "news.html"), (fm["title"], f"news/{slug}.html")])}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{NR_CSS}</style>

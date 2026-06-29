@@ -13,8 +13,12 @@ from footer import footer
 from canon import canonical_slug, canonical_name
 from nav import nav
 from header import header
-from seo import meta, collection_ld
+from seo import meta, collection_ld, breadcrumb_ld
 from taxonomy_buckets import WEIGHT_BUCKETS, FLIGHT_BUCKETS, COMPLIANCE, weight_bucket, flight_bucket
+
+AXIS_LABEL = {"country": "Countries", "segment": "Market segments", "airframe": "Airframe types",
+              "propulsion": "Propulsion types", "weight": "Weight class",
+              "flight-time": "Flight-time class", "compliance": "Compliance"}
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -48,6 +52,12 @@ def page(kind, title_html, meta_html, sections, path, plain_title, count):
     body = "".join(
         f'<div class="tsec-h">{h}</div><ul class="tlist">{items}</ul>'
         for h, items in sections)
+    axis = path.split("/")[0]
+    trail = [("Uncrewed Systems Review", "index.html")]
+    if not path.endswith("/index.html"):                       # term page -> anchor to its axis index
+        trail.append((AXIS_LABEL.get(axis, axis), f"{axis}/index.html"))
+    trail.append((plain_title, path))
+    bc = breadcrumb_ld(trail)
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -55,6 +65,7 @@ def page(kind, title_html, meta_html, sections, path, plain_title, count):
 <title>{title_html} — USR</title>
 {meta(f"{plain_title} — USR", f"{plain_title}: {count} systems in the registry.", path)}
 {collection_ld(plain_title, path, count)}
+{bc}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{TAX_CSS}</style>

@@ -37,7 +37,7 @@ acceptance:
   # 8.4 Knowledge CMS
   - { id: "8.4.1", req: "Mỗi Knowledge có URL /knowledge/[slug]",                               status: done,    gate_proof: "verify_seo" }
   - { id: "8.4.2", req: "Thuật ngữ auto-link về trang Knowledge",                                status: partial, gate_proof: "verify_content" }
-  - { id: "8.4.3", req: "Knowledge đạt SEO on-page (meta·schema·breadcrumb)",                    status: partial, gate_proof: "verify_seo" }
+  - { id: "8.4.3", req: "Knowledge đạt SEO on-page (meta·schema·breadcrumb)",                    status: done,    gate_proof: "verify_breadcrumb" }
   # 8.5 Review Engine
   - { id: "8.5.1", req: "Chung schema 7 tiêu chí: Camera·Pin·Bay·AI·Safety·Repairability·Value", status: partial, gate_proof: "" }
   - { id: "8.5.2", req: "Tổng điểm hệ thống tự tính, không nhập tay",                            status: missing, gate_proof: "" }

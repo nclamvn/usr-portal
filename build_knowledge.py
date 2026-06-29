@@ -10,7 +10,7 @@ from build_reference import bilingual, esc
 from footer import footer
 from nav import nav
 from header import header
-from seo import meta, definedterm_ld
+from seo import meta, definedterm_ld, breadcrumb_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -107,7 +107,9 @@ def term_page(term, d, arts, uavs, uav_name):
     if sys_items:
         secs += f'<div class="ksec-h">{bilingual("Systems on this list", "Hệ thống trong danh sách")}</div><ul class="klist">{sys_items}</ul>'
     head = (meta(f"{esc(term)} — USR", d["en"], f"knowledge/{slug}.html")
-            + definedterm_ld(term, d["en"], f"knowledge/{slug}.html"))
+            + definedterm_ld(term, d["en"], f"knowledge/{slug}.html")
+            + breadcrumb_ld([("Uncrewed Systems Review", "index.html"), ("Knowledge", "knowledge.html"),
+                             (term, f"knowledge/{slug}.html")]))
     body = f"""<header class="khead"><span class="eyebrow">{bilingual("Knowledge", "Thuật ngữ")}</span><h1>{esc(term)}</h1></header>
   <p class="def"><span data-lang-en>{esc(d["en"])}</span><span data-lang-vn>{esc(d["vn"])}</span></p>
   {secs}
