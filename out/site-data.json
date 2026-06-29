@@ -2,14 +2,14 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2841,
+      "None": 2827,
       "derived": 267,
       "disputed": 6,
       "unverified": 37,
-      "verified": 2889
+      "verified": 2903
     },
     "source_tier_counts": {
-      "A": 1829,
+      "A": 1843,
       "B": 439,
       "C": 638,
       "derived": 267
@@ -32,15 +32,15 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 66,
+        "present": 67,
         "total": 302
       },
       "max_payload_kg": {
-        "present": 133,
+        "present": 137,
         "total": 302
       },
       "max_range_km": {
-        "present": 105,
+        "present": 109,
         "total": 302
       },
       "max_speed_ms": {
@@ -48,7 +48,7 @@
         "total": 302
       },
       "mtow_kg": {
-        "present": 190,
+        "present": 194,
         "total": 302
       },
       "ndaa_compliant": {
@@ -56,7 +56,7 @@
         "total": 302
       },
       "service_ceiling_m": {
-        "present": 93,
+        "present": 94,
         "total": 302
       }
     },
@@ -1578,16 +1578,30 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/jump-20"
+          }
+        ],
+        "status": "verified",
+        "value": 13.6
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/jump-20"
+          }
+        ],
+        "status": "verified",
+        "value": 185
       },
       "max_speed_ms": {
         "confidence": null,
@@ -1596,10 +1610,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/jump-20"
+          }
+        ],
+        "status": "verified",
+        "value": 97.5
       },
       "name": {
         "confidence": "high",
@@ -1628,10 +1649,17 @@
       },
       "provenance_class": "commercial_us_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/jump-20"
+          }
+        ],
+        "status": "verified",
+        "value": 5182
       },
       "slug": "uav-aerovironment-jump-20-jump-20",
       "variant": {
@@ -1742,16 +1770,30 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/p550"
+          }
+        ],
+        "status": "verified",
+        "value": 60
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/p550"
+          }
+        ],
+        "status": "verified",
+        "value": 6.8
       },
       "max_range_km": {
         "confidence": null,
@@ -1766,10 +1808,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/p550"
+          }
+        ],
+        "status": "verified",
+        "value": 24.9
       },
       "name": {
         "confidence": "high",
@@ -2130,16 +2179,30 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/red-dragon"
+          }
+        ],
+        "status": "verified",
+        "value": 10
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/red-dragon"
+          }
+        ],
+        "status": "verified",
+        "value": 400
       },
       "max_speed_ms": {
         "confidence": null,
@@ -2148,10 +2211,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/lms/red-dragon"
+          }
+        ],
+        "status": "verified",
+        "value": 10
       },
       "name": {
         "confidence": "high",
@@ -2320,10 +2390,17 @@
         "value": null
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/view/raven"
+          }
+        ],
+        "status": "verified",
+        "value": 10
       },
       "max_speed_ms": {
         "confidence": null,
@@ -2731,16 +2808,30 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/puma-le"
+          }
+        ],
+        "status": "verified",
+        "value": 2.5
       },
       "max_range_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/puma-le"
+          }
+        ],
+        "status": "verified",
+        "value": 60
       },
       "max_speed_ms": {
         "confidence": null,
@@ -2749,10 +2840,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/puma-le"
+          }
+        ],
+        "status": "verified",
+        "value": 12.4
       },
       "name": {
         "confidence": "high",
@@ -65518,5 +65616,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "2d01696712445bfbacb3f2d4c4b26453f92b260099c3da220b570873b39e3cb3"
+  "source_registry_sha256": "87ecbcdf421c7192e173d16649fb4c499da32d9c9dad6de29fe7aa7cb29c8cc8"
 }

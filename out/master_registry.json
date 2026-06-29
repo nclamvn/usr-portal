@@ -32812,6 +32812,54 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 12.4,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/puma-le",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 12.4,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 60,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/puma-le",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 60,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 2.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/puma-le",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 2.5,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       },
       "provenance_class": "competitor_military_public"
@@ -32999,6 +33047,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 10,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/view/raven",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 10,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       },
@@ -37423,6 +37487,70 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 97.5,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/jump-20",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 97.5,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 185,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/jump-20",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 185,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 13.6,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/jump-20",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 13.6,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 5182,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/jump-20",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 5182,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -37494,6 +37622,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 24.9,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/p550",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 24.9,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 60,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/p550",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 60,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 6.8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/p550",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6.8,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -37598,6 +37774,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 10,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/red-dragon",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 10,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 10,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/red-dragon",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 10,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_range_km": {
+          "value": 400,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/lms/red-dragon",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 400,
+              "note": "manufacturer spec (enrich lô5)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }

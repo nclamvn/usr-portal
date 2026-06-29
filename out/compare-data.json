@@ -436,24 +436,24 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 13.6
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 185
         },
         "max_speed_ms": {
           "tier": null,
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 97.5
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 5182
         }
       }
     },
@@ -473,12 +473,12 @@
           "v": null
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 60
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6.8
         },
         "max_range_km": {
           "tier": null,
@@ -489,8 +489,8 @@
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 24.9
         },
         "service_ceiling_m": {
           "tier": null,
@@ -559,20 +559,20 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 10
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 400
         },
         "max_speed_ms": {
           "tier": null,
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 10
         },
         "service_ceiling_m": {
           "tier": null,
@@ -604,8 +604,8 @@
           "v": null
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 10
         },
         "max_speed_ms": {
           "tier": null,
@@ -682,20 +682,20 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 2.5
         },
         "max_range_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 60
         },
         "max_speed_ms": {
           "tier": null,
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 12.4
         },
         "service_ceiling_m": {
           "tier": null,

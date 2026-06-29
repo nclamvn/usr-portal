@@ -924,22 +924,6 @@
       "total": 65
     },
     {
-      "maker": "AeroVironment",
-      "name": "AeroVironment Puma LE",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": 65,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-aerovironment-rq-20-puma-le",
-      "total": 65
-    },
-    {
       "maker": "Airbus",
       "name": "Airbus Zephyr",
       "of": 6,
@@ -1276,22 +1260,6 @@
       "total": 57
     },
     {
-      "maker": "AeroVironment",
-      "name": "AeroVironment RQ-11B Raven",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": 57
-      },
-      "slug": "uav-aerovironment-rq-11-raven-rq-11b",
-      "total": 57
-    },
-    {
       "maker": "RV Connex",
       "name": "RV Connex Sky Scout",
       "of": 6,
@@ -1401,6 +1369,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-censys-technologies-sentaero-sentaero",
+      "total": 56
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment P550",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": 78,
+        "max_payload_kg": 34,
+        "max_range_km": null,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-p550-p550",
       "total": 56
     },
     {
@@ -1676,6 +1660,22 @@
       "total": 50
     },
     {
+      "maker": "AeroVironment",
+      "name": "AeroVironment JUMP 20",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 40,
+        "max_range_km": 49,
+        "max_speed_ms": null,
+        "service_ceiling_m": 62
+      },
+      "slug": "uav-aerovironment-jump-20-jump-20",
+      "total": 50
+    },
+    {
       "maker": "Wingtra",
       "name": "Wingtra WingtraOne GEN II",
       "of": 6,
@@ -1833,6 +1833,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-delair-dt26-dt26",
+      "total": 48
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Red Dragon",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 37,
+        "max_range_km": 58,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-red-dragon-red-dragon",
       "total": 48
     },
     {
@@ -2364,6 +2380,22 @@
       "total": 41
     },
     {
+      "maker": "AeroVironment",
+      "name": "AeroVironment Puma LE",
+      "of": 6,
+      "scored": 3,
+      "scores": {
+        "endurance_min": 65,
+        "max_link_km": null,
+        "max_payload_kg": 24,
+        "max_range_km": 35,
+        "max_speed_ms": null,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-aerovironment-rq-20-puma-le",
+      "total": 41
+    },
+    {
       "maker": "senseFly",
       "name": "senseFly eBee X",
       "of": 6,
@@ -2825,6 +2857,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-dji-inspire-2-inspire-2",
+      "total": 36
+    },
+    {
+      "maker": "AeroVironment",
+      "name": "AeroVironment RQ-11B Raven",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": null,
+        "max_range_km": 14,
+        "max_speed_ms": null,
+        "service_ceiling_m": 57
+      },
+      "slug": "uav-aerovironment-rq-11-raven-rq-11b",
       "total": 36
     },
     {
@@ -4809,54 +4857,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-aerovironment-rq-12-wasp-rq-12a",
-      "total": null
-    },
-    {
-      "maker": "AeroVironment",
-      "name": "AeroVironment Red Dragon",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-aerovironment-red-dragon-red-dragon",
-      "total": null
-    },
-    {
-      "maker": "AeroVironment",
-      "name": "AeroVironment P550",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-aerovironment-p550-p550",
-      "total": null
-    },
-    {
-      "maker": "AeroVironment",
-      "name": "AeroVironment JUMP 20",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-aerovironment-jump-20-jump-20",
       "total": null
     },
     {
