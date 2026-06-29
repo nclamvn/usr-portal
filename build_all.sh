@@ -92,6 +92,8 @@ python3 verify_search.py
 python3 teeth_p21.py
 python3 verify_data.py
 python3 teeth_p23.py
+python3 verify_graphics.py
+python3 teeth_graphics.py
 python3 verify_seo.py
 python3 teeth_p22.py
 python3 verify_knowledge.py

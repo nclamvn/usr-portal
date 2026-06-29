@@ -431,6 +431,39 @@ def live_hero(site, f, labels):
         '</div></section>')
 
 
+def signature_svg(site):
+    """TIP-GRAPHICS 2.4 — homepage signature: 'dynamic range' bar per spec = how many orders of magnitude
+    the fleet spans (log10(max/min)). All paint via var(--*) token (THEME_PURITY + GFX_THEME_LEAK).
+    Number-honest: only specs with a real range render; min/max recompute from aggregates.spec_range."""
+    import math
+    sr = site["aggregates"].get("spec_range", {})
+    SPECS = [("mtow_kg", "MTOW", "kg"), ("max_payload_kg", "Payload", "kg"), ("max_range_km", "Range", "km"),
+             ("endurance_min", "Endurance", "min"), ("max_link_km", "Datalink", "km"),
+             ("max_speed_ms", "Speed", "m/s"), ("service_ceiling_m", "Ceiling", "m")]
+    rows = [(lb, u, sr[k]["min"], sr[k]["max"]) for k, lb, u in SPECS if sr.get(k) and sr[k]["max"] > sr[k]["min"] > 0]
+    if not rows:
+        return ""
+    spans = [math.log10(mx / mn) for _, _, mn, mx in rows]
+    mxs = max(spans)
+
+    def fnum(x):
+        return ("%g" % x).replace(".", ",") if (isinstance(x, float) and x != int(x)) else f"{int(x):,}".replace(",", ".")
+    # bars = SVG (token paint, audited by verify_graphics); labels/values = HTML (browser-laid-out, overlap-safe)
+    rowhtml = []
+    for (lb, u, mn, mx), sp in zip(rows, spans):
+        w = round(sp / mxs * 100)
+        rowhtml.append(
+            f'<div class="sig-row"><span class="sig-lb">{lb}</span>'
+            f'<svg class="sig-barsvg" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true">'
+            f'<line class="sig-trk" x1="0" y1="3" x2="100" y2="3"/>'
+            f'<line class="sig-fill" x1="0" y1="3" x2="{w}" y2="3"/></svg>'
+            f'<span class="sig-val">{fnum(mn)} &#8594; {fnum(mx)} {u}</span></div>')
+    return (f'<section class="sigwrap" data-audit="sig"><div class="wrap">'
+            f'<div class="regdiv"><b class="lab">{bilingual("Field intelligence · the operating envelope", "Tình báo hiện trường · biên vận-hành")}</b><span class="ln"></span></div>'
+            f'<div class="sigrows">{"".join(rowhtml)}</div>'
+            f'<p class="sig-cap">{bilingual("Each bar is the span between the smallest and largest recorded value across the registry, log scale: the wider the bar, the more orders of magnitude the fleet covers.", "Mỗi thanh là khoảng từ giá-trị nhỏ nhất tới lớn nhất ghi trong bản đăng ký, thang log: thanh càng dài, dải càng rộng (nhiều bậc độ-lớn).")}</p></div></section>')
+
+
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
@@ -461,6 +494,7 @@ def main():
     desks_html = frontpage_desks()                     # TIP-FP2 T2 — registry desks (deduped, honest)
     masthead = render_masthead(f, labels)
     featured_html = featured_systems(ents, groups, labels)   # 02 · Browse — real systems preview
+    sig_html = signature_svg(site)                            # TIP-GRAPHICS 2.4 — homepage signature viz
 
     doc = f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
@@ -485,6 +519,17 @@ def main():
   /* faint blueprint grid (graph-paper) behind cream sections — premium hi-tech texture */
   body{{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:30px 30px;background-position:center top}}
   .sec.plate{{background-image:none}}
+  /* TIP-GRAPHICS 2.4 — homepage signature viz (all paint via token; THEME_PURITY/GFX_THEME_LEAK clean) */
+  .sigwrap{{padding:30px 0 8px}}
+  .sigrows{{max-width:720px;margin-top:12px}}
+  .sig-row{{display:grid;grid-template-columns:118px 1fr 156px;gap:14px;align-items:center;padding:5px 0}}
+  .sig-lb{{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em}}
+  .sig-barsvg{{width:100%;height:6px;display:block}}
+  .sig-trk{{stroke:var(--hair);stroke-width:6}}
+  .sig-fill{{stroke:var(--bp);stroke-width:6}}
+  .sig-val{{font-family:var(--font-mono);font-size:11px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}}
+  @media (max-width:560px){{.sig-row{{grid-template-columns:1fr auto}}.sig-barsvg{{grid-column:1/-1;order:3;margin-top:4px}}}}
+  .sig-cap{{font-size:12px;color:var(--muted);max-width:62ch;margin:12px 0 0;line-height:1.55}}
   /* HERO — pure-value two-column: text+stats left · ink/brass blueprint right (TIP-UX2.1 specimen) */
   .field.hero-pure{{position:relative;overflow:hidden}}
   .field.hero-pure .wrap.hero-grid{{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;align-items:center;padding:58px 1.4rem 56px}}
@@ -595,6 +640,8 @@ def main():
 {header("", "home")}
 
 {live_hero_html}
+
+{sig_html}
 
 <main class="wrap">
   <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Bài viết")}</b><span class="ln"></span>
