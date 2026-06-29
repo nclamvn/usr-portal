@@ -337,11 +337,13 @@
   "standards": [
     {
       "key": "blue_uas",
+      "present": 32,
       "total": 302,
       "yes": 25
     },
     {
       "key": "ndaa_compliant",
+      "present": 35,
       "total": 302,
       "yes": 28
     }

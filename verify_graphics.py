@@ -45,10 +45,32 @@ def check_signature(html, site, fails):
         fails.append("GFX_THEME_LEAK: màu hardcode trong SVG bar: %s" % leak[:3])
 
 
+def check_donut(html, site, fails):
+    if 'class="cdcard"' not in html:
+        fails.append("GFX_MISSING: data page không có compliance donut"); return
+    uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
+    total = len(uavs)
+    for key in ("blue_uas", "ndaa_compliant"):
+        yes = sum(1 for e in uavs if (e.get(key) or {}).get("value") is True)
+        present = sum(1 for e in uavs if (e.get(key) or {}).get("value") is not None)
+        no, unk = present - yes, total - present
+        for lbl, val in (("compliant", yes), ("not", no), ("unverified", unk)):
+            if not re.search(r"<b>" + str(val) + r"</b>", html):   # legend số = recompute
+                fails.append("GFX_FIGURE_DRIFT: donut %s %s=%d không thấy" % (key, lbl, val))
+    # honest-null: lát 'chưa rõ' phải là legend riêng (KHÔNG gộp vào 'không tuân thủ')
+    if len(re.findall(r'class="cl unk"', html)) < 2:
+        fails.append("GFX_NULL_FAKED: lát 'chưa rõ' bị gộp/thiếu (legend unk < 2)")
+    svgs = "".join(re.findall(r'<svg class="cdonut-svg".*?</svg>', html, re.S))
+    leak = re.findall(r"(?<!&)#[0-9a-fA-F]{3,6}\b|rgb\(|hsl\(", svgs)
+    if leak:
+        fails.append("GFX_THEME_LEAK: màu hardcode trong donut SVG: %s" % leak[:3])
+
+
 def main():
     site = json.loads(SITE.read_bytes())
     fails = []
     check_signature((ROOT / "index.html").read_text(encoding="utf-8"), site, fails)
+    check_donut((ROOT / "data.html").read_text(encoding="utf-8"), site, fails)
     if fails:
         print("\nGRAPHICS GATE FAIL (%d):" % len(fails))
         for x in fails[:20]:

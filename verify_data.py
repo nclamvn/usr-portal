@@ -56,11 +56,14 @@ def main():
     check_dist("maker", ov["maker"], mkr, total)
     check_dist("segment", ov["segment"], seg, total, null_expected=seg_null)
 
-    # standards — yes == COUNT(true); unverified is total - yes (never inferred 'false')
+    # standards — yes == COUNT(true) · present == COUNT(not null) → false = present-yes, unverified = total-present
     for s in ov["standards"]:
         yes = sum(1 for e in uavs if (e.get(s["key"]) or {}).get("value") is True)
+        present = sum(1 for e in uavs if (e.get(s["key"]) or {}).get("value") is not None)
         if s["yes"] != yes:
             fails.append("OVERVIEW_DRIFT: standard %s yes=%d != live %d" % (s["key"], s["yes"], yes))
+        if s.get("present") != present:
+            fails.append("OVERVIEW_DRIFT: standard %s present=%s != live %d" % (s["key"], s.get("present"), present))
         if s["total"] != total:
             fails.append("OVERVIEW_DRIFT: standard %s total=%d != %d" % (s["key"], s["total"], total))
 

@@ -72,7 +72,9 @@ def compute(site):
     standards = []
     for key in ("blue_uas", "ndaa_compliant"):
         yes = sum(1 for e in uavs if (e.get(key) or {}).get("value") is True)
-        standards.append({"key": key, "yes": yes, "total": total})  # unverified = total - yes (no "false")
+        present = sum(1 for e in uavs if (e.get(key) or {}).get("value") is not None)
+        # 3-state honest: yes (compliant) · present-yes (recorded NOT compliant) · total-present (honest-null)
+        standards.append({"key": key, "yes": yes, "present": present, "total": total})
 
     fill = site["aggregates"]["spec_fill_rate"]
     coverage = [{"key": k, "pct": round(100 * fill[k]["present"] / fill[k]["total"]) if fill.get(k) else 0,
@@ -132,13 +134,24 @@ def render(ov):
           "ndaa_compliant": ("NDAA Section 848", "Restriction on covered foreign components.", "Hạn chế linh kiện nước ngoài thuộc diện covered.")}
     for s in ov["standards"]:
         nm, den, dvn = SD[s["key"]]
-        unk = s["total"] - s["yes"]
-        std_html += (f'<div class="stdcard"><div class="nm">{esc(nm)}</div>'
+        yes, present, total = s["yes"], s.get("present", s["yes"]), s["total"]
+        no, unk = present - yes, total - present   # honest 3-state: chưa-rõ KHÔNG gộp vào "không"
+        # donut arcs on pathLength=100 (percent), token paint only (GFX_THEME_LEAK clean)
+        def pc(x): return round(x / total * 100, 2) if total else 0
+        py, pn, pu = pc(yes), pc(no), pc(unk)
+        donut = (f'<svg class="cdonut-svg" viewBox="0 0 100 100" fill="none" aria-hidden="true"><g transform="rotate(-90 50 50)">'
+                 f'<circle class="dk-track" cx="50" cy="50" r="40" pathLength="100"/>'
+                 f'<circle class="dk-yes" cx="50" cy="50" r="40" pathLength="100" stroke-dasharray="{py} {100 - py}" stroke-dashoffset="0"/>'
+                 f'<circle class="dk-no" cx="50" cy="50" r="40" pathLength="100" stroke-dasharray="{pn} {100 - pn}" stroke-dashoffset="-{py}"/>'
+                 f'<circle class="dk-unk" cx="50" cy="50" r="40" pathLength="100" stroke-dasharray="{pu} {100 - pu}" stroke-dashoffset="-{round(py + pn, 2)}"/>'
+                 f'</g></svg>')
+        leg = (f'<div class="cdleg">'
+               f'<span class="cl yes"><i></i>{bilingual("Compliant", "Tuân thủ")} <b>{yes}</b></span>'
+               f'<span class="cl no"><i></i>{bilingual("Not compliant", "Không tuân thủ")} <b>{no}</b></span>'
+               f'<span class="cl unk"><i></i>{bilingual("Unverified", "Chưa rõ")} <b>{unk}</b></span></div>')
+        std_html += (f'<div class="cdcard"><div class="nm">{esc(nm)}</div>'
                      f'<div class="desc">{bilingual(den, dvn)}</div>'
-                     f'<div class="big"><span class="n">{s["yes"]}</span><span class="of">/ {s["total"]} {bilingual("recorded in list", "ghi nhận trong danh sách")}</span></div>'
-                     f'<div class="segbar"><div class="s yes" style="flex:{s["yes"]}"></div><div class="s unk" style="flex:{unk}"></div></div>'
-                     f'<div class="leg"><span><span class="sw yes"></span>{bilingual("In list", "Có trong danh sách")} · {s["yes"]}</span>'
-                     f'<span><span class="sw unk"></span>{bilingual("Unverified", "Chưa kiểm chứng")} · {unk}</span></div></div>')
+                     f'<div class="cdrow">{donut}{leg}</div></div>')
 
     ROWS = 24
     cov_html = ""
@@ -263,6 +276,19 @@ DATA_CSS = """
   .note .b{color:var(--brass)}
   .std{display:grid;grid-template-columns:1fr 1fr;gap:24px}
   @media(max-width:680px){.std{grid-template-columns:1fr}}
+  /* TIP-GRAPHICS 2b — compliance donut (3-state honest: tuân thủ · không · chưa-rõ). Token paint only. */
+  .cdcard{border:1px solid var(--hair-strong);border-radius:12px;padding:22px;background:var(--bg-2)}
+  .cdcard .nm{font-family:var(--font-head);font-weight:600;font-size:18px}
+  .cdcard .desc{font-size:12.5px;color:var(--muted);margin:.3rem 0 1.1rem;line-height:1.4}
+  .cdrow{display:flex;align-items:center;gap:22px}
+  .cdonut-svg{width:104px;height:104px;flex:0 0 auto}
+  .cdonut-svg circle{fill:none;stroke-width:14}
+  .dk-track{stroke:var(--hair)} .dk-yes{stroke:var(--brass)} .dk-no{stroke:var(--ink-soft)} .dk-unk{stroke:var(--faint)}
+  .cdleg{display:flex;flex-direction:column;gap:7px}
+  .cl{font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);display:inline-flex;align-items:center;gap:8px}
+  .cl b{color:var(--ink);font-variant-numeric:tabular-nums;margin-left:auto;padding-left:14px}
+  .cl i{width:11px;height:11px;border-radius:2px;flex:0 0 auto}
+  .cl.yes i{background:var(--brass)} .cl.no i{background:var(--ink-soft)} .cl.unk i{background:var(--faint)}
   .stdcard{border:1px solid var(--hair-strong);border-radius:12px;padding:22px;background:var(--card-bg);color:var(--card-ink)}
   [data-theme="light"] .stdcard{background:var(--bg);color:var(--ink)}
   .stdcard .nm{font-family:var(--serif);font-weight:600;font-size:18px}

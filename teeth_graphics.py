@@ -36,6 +36,21 @@ def main():
     leak = sig.replace('class="sig-fill"', 'class="sig-fill" stroke="#ff0000"', 1)
     run("GFX_THEME_LEAK", html.replace(sig, leak), "GFX_THEME_LEAK")
 
+    # --- donut (data.html) ---
+    dhtml = (ROOT / "data.html").read_text(encoding="utf-8")
+    fd = []; V.check_donut(dhtml, site, fd)
+    print(f"{'DONUT CLEAN':20s} : {'PASS' if not fd else '!! ' + str(fd[:1])}"); ok = ok and not fd
+
+    def rund(name, mutated, want):
+        nonlocal ok
+        f = []; V.check_donut(mutated, site, f)
+        bit = any(x.startswith(want) for x in f); ok = ok and bit
+        print(f"{name:20s} : {'CẮN ✓' if bit else 'KHÔNG CẮN ✗ ' + str(f[:1])}")
+
+    rund("GFX_FIGURE_DRIFT(d)", re.sub(r'<b>\d+</b>', '<b>99999</b>', dhtml, count=1), "GFX_FIGURE_DRIFT")
+    rund("GFX_NULL_FAKED(d)", dhtml.replace('class="cl unk"', 'class="cl gone"'), "GFX_NULL_FAKED")
+    rund("GFX_THEME_LEAK(d)", dhtml.replace('class="dk-yes"', 'class="dk-yes" stroke="#ff0000"', 1), "GFX_THEME_LEAK")
+
     print("-" * 48)
     print("GRAPHICS TEETH:", "TẤT CẢ RĂNG CẮN ✓" if ok else "CÓ RĂNG KHÔNG CẮN ✗")
     sys.exit(0 if ok else 1)
