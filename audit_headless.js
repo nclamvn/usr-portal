@@ -191,7 +191,7 @@ async function main() {
                mainNews: /^news\\//.test(mainHref),
                side: side.length,
                sideNews: side.filter(a => /^news\\//.test(a.getAttribute('href') || '')).length,
-               masthead: /Vietnam UAV/.test((document.querySelector('.masthead h1') || {}).textContent || ''),
+               masthead: /Vietnam UAV/.test((document.querySelector('.hp-mast h1') || {}).textContent || ''),
                ticker: !!document.querySelector('.topbar .ticker') };
     })()`);
     const heroOk = hero.grid && hero.mainNews && hero.side === 3 && hero.sideNews === 3 &&
