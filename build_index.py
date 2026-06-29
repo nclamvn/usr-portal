@@ -17,7 +17,7 @@ from footer import footer
 from glyphs import glyph_svg
 from nav import nav
 from header import header
-from seo import meta as seo_meta
+from seo import meta as seo_meta, website_ld
 from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
 from build_monitor import monitor_teaser
 from build_aggregation import aggregation_block
@@ -468,6 +468,7 @@ def main():
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uncrewed Systems Review</title>
 {seo_meta("Uncrewed Systems Review", "Entity-centric UAV intelligence: 302 systems with cited sources, tiers and honest-null.", "index.html")}
+{website_ld()}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <link rel="stylesheet" href="base/newsroom.css">

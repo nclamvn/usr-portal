@@ -7,6 +7,7 @@ independent: they check path resolution + value provenance, not the host)."""
 import json
 
 BASE = "https://usr-portal.vercel.app"   # production origin (Vercel default cho repo usr-portal); đổi sang domain riêng khi DNS sẵn
+SHARE_IMG = "images/content/hero/hero-detroit.webp"   # default social share image — RtR-OWNED (never a third-party news photo)
 SPEC_LD = {"mtow_kg": "MTOW (kg)", "max_payload_kg": "Max payload (kg)", "endurance_min": "Endurance (min)",
            "max_range_km": "Max range (km)", "max_link_km": "Datalink (km)", "max_speed_ms": "Max speed (m/s)",
            "service_ceiling_m": "Service ceiling (m)"}
@@ -29,17 +30,35 @@ def favicons(path):
             f'<meta name="theme-color" content="#1A1A1C">')
 
 
-def meta(title, desc, path):
-    """canonical + Open Graph + favicons. path is the site-relative url (e.g. 'entity/x.html')."""
+def meta(title, desc, path, image=None):
+    """canonical + Open Graph + Twitter card + favicons. path is the site-relative url. `image` (site-
+    relative) overrides the default RtR-owned share image (per-article cover); never a third-party photo."""
     url = BASE + "/" + path
     d = (desc or "").replace('"', "'")
+    img = BASE + "/" + (image or SHARE_IMG).lstrip("/")
     return (f'<link rel="canonical" href="{url}">'
             f'<meta property="og:title" content="{title}">'
             f'<meta property="og:description" content="{d}">'
             f'<meta property="og:type" content="website">'
             f'<meta property="og:url" content="{url}">'
+            f'<meta property="og:site_name" content="Uncrewed Systems Review">'
+            f'<meta property="og:image" content="{img}">'
+            f'<meta name="twitter:card" content="summary_large_image">'
+            f'<meta name="twitter:title" content="{title}">'
+            f'<meta name="twitter:description" content="{d}">'
+            f'<meta name="twitter:image" content="{img}">'
             f'<meta name="description" content="{d}">'
             + favicons(path))
+
+
+def website_ld():
+    """Site-level structured data for the homepage — Organization + WebSite. Only real identity values
+    (name/url/logo), no registry numbers, so verify_seo (SEO_FABRICATED) passes."""
+    org = {"@context": "https://schema.org", "@type": "Organization", "name": "Uncrewed Systems Review",
+           "url": BASE, "logo": BASE + "/images/content/rtr/hera-studio-black.webp"}
+    web = {"@context": "https://schema.org", "@type": "WebSite", "name": "Uncrewed Systems Review",
+           "url": BASE, "description": "A sourced, comparable registry of uncrewed aerial systems."}
+    return _ld(org) + _ld(web)
 
 
 def product_ld(e, path):
