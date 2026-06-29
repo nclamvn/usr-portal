@@ -10,9 +10,6 @@ import json, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
-SIG_SPECS = ["mtow_kg", "max_payload_kg", "max_range_km", "endurance_min", "max_link_km", "max_speed_ms", "service_ceiling_m"]
-
-
 def fnum(x):
     return ("%g" % x).replace(".", ",") if (isinstance(x, float) and x != int(x)) else f"{int(x):,}".replace(",", ".")
 
@@ -23,26 +20,43 @@ def sig_block(html):
 
 
 def _svg_bits(block):
-    return "".join(re.findall(r'<svg class="sig-barsvg".*?</svg>', block, re.S))
+    return "".join(re.findall(r'<svg class="scat-svg".*?</svg>', block, re.S))
 
 
 def check_signature(html, site, fails):
+    """INFO/02 = capability scatter (MTOW × range, log×log). Every dot recomputes from the registry;
+    only systems with BOTH specs are plotted (honest-null); colour via token class (no hardcoded hex)."""
     sig = sig_block(html)
     if not sig:
-        fails.append("GFX_MISSING: homepage không có .sigwrap signature"); return
-    sr = site["aggregates"].get("spec_range", {})
-    specs = [k for k in SIG_SPECS if sr.get(k) and sr[k]["max"] > sr[k]["min"] > 0]
-    for k in specs:
-        for x in (sr[k]["min"], sr[k]["max"]):
-            f = fnum(x)
-            if not re.search(r"(?<![\d.,])" + re.escape(f) + r"(?![\d.,])", sig):
-                fails.append("GFX_FIGURE_DRIFT: signature %s value %s != recompute/absent" % (k, f))
-    bars = len(re.findall(r'class="sig-fill"', sig))
-    if bars != len(specs):
-        fails.append("GFX_NULL_FAKED: %d bar ≠ %d spec có range (vẽ ô null?)" % (bars, len(specs)))
-    leak = re.findall(r"(?<!&)#[0-9a-fA-F]{3,6}\b|rgb\(|hsl\(", _svg_bits(sig))   # chỉ quét SVG bar; HTML số/mũi tên không tính
+        fails.append("GFX_MISSING: homepage không có .sigwrap scatter"); return
+    uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
+
+    def num(e, k):
+        v = (e.get(k) or {}).get("value")
+        return v if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+
+    pts = [(num(e, "mtow_kg"), num(e, "max_range_km")) for e in uavs]
+    pts = [(m, r) for m, r in pts if m and r and m > 0 and r > 0]
+    n, total = len(pts), len(uavs)
+
+    # FIGURE_DRIFT — one dot per system-with-both (recompute), no more no fewer
+    dots = len(re.findall(r'class="dot ', sig))
+    if dots != n:
+        fails.append("GFX_FIGURE_DRIFT: scatter %d dots != %d systems with both mtow+range" % (dots, n))
+    # FIGURE_DRIFT — the four axis extremes equal the plotted fleet's min/max
+    ms = [m for m, _ in pts]
+    rs = [r for _, r in pts]
+    for x in (min(ms), max(ms), min(rs), max(rs)):
+        f = fnum(x)
+        if not re.search(r"(?<![\d.,])" + re.escape(f) + r"(?![\d.,])", sig):
+            fails.append("GFX_FIGURE_DRIFT: scatter axis extreme %s absent/!=recompute" % f)
+    # NULL_FAKED — honest-null disclosed: caption shows 'n of total' with the real total, n < total
+    if n >= total or str(total) not in sig:
+        fails.append("GFX_NULL_FAKED: scatter must disclose %d of %d (honest-null not exposed)" % (n, total))
+    # THEME_LEAK — scatter SVG must carry no hardcoded colour (dots use token classes)
+    leak = re.findall(r"(?<!&)#[0-9a-fA-F]{3,6}\b|rgb\(|hsl\(", _svg_bits(sig))
     if leak:
-        fails.append("GFX_THEME_LEAK: màu hardcode trong SVG bar: %s" % leak[:3])
+        fails.append("GFX_THEME_LEAK: màu hardcode trong scatter SVG: %s" % leak[:3])
 
 
 def check_donut(html, site, fails):

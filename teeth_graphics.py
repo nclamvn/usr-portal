@@ -24,16 +24,16 @@ def main():
     fc = []; V.check_signature(html, site, fc)
     print(f"{'CLEAN':20s} : {'PASS' if not fc else '!! ' + str(fc[:1])}"); ok = ok and not fc
 
-    # (a) FIGURE_DRIFT — đổi một số trong sig-val
-    drift = re.sub(r'(<span class="sig-val">)[^<]*', r'\g<1>9.999 zz', sig, count=1)
+    # (a) FIGURE_DRIFT — bỏ một chấm (dot count != recompute)
+    drift = re.sub(r'<circle class="dot [^>]*?/>', '', sig, count=1)
     run("GFX_FIGURE_DRIFT", html.replace(sig, drift), "GFX_FIGURE_DRIFT")
 
-    # (b) NULL_FAKED — thêm một sig-fill giả
-    faked = sig.replace('<div class="sigrows">', '<div class="sigrows"><svg><line class="sig-fill"/></svg>', 1)
+    # (b) NULL_FAKED — giấu disclosure honest-null (xoá tổng '302' khỏi caption)
+    faked = sig.replace("302", "")
     run("GFX_NULL_FAKED", html.replace(sig, faked), "GFX_NULL_FAKED")
 
-    # (c) THEME_LEAK — tiêm màu hardcode vào SVG bar
-    leak = sig.replace('class="sig-fill"', 'class="sig-fill" stroke="#ff0000"', 1)
+    # (c) THEME_LEAK — tiêm màu hardcode vào một chấm trong scatter SVG
+    leak = sig.replace('<circle class="dot ', '<circle fill="#ff0000" class="dot ', 1)
     run("GFX_THEME_LEAK", html.replace(sig, leak), "GFX_THEME_LEAK")
 
     # --- donut (data.html) ---

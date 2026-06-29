@@ -109,33 +109,75 @@ def render_masthead(f, labels):
         f'</div></div>')
 
 
-# ---- INFO/02 signature viz (live operating-envelope; kept = verify_graphics requires .sigwrap) ----
-def signature_svg(site):
-    sr = site["aggregates"].get("spec_range", {})
-    SPECS = [("mtow_kg", "MTOW", "kg"), ("max_payload_kg", "Payload", "kg"), ("max_range_km", "Range", "km"),
-             ("endurance_min", "Endurance", "min"), ("max_link_km", "Datalink", "km"),
-             ("max_speed_ms", "Speed", "m/s"), ("service_ceiling_m", "Ceiling", "m")]
-    rows = [(lb, u, sr[k]["min"], sr[k]["max"]) for k, lb, u in SPECS
-            if sr.get(k) and sr[k]["max"] > sr[k]["min"] > 0]
-    if not rows:
-        return ""
-    spans = [math.log10(mx / mn) for _, _, mn, mx in rows]
-    mxs = max(spans)
+def _fnum(x):
+    return ("%g" % x).replace(".", ",") if (isinstance(x, float) and x != int(x)) else f"{int(x):,}".replace(",", ".")
 
-    def fnum(x):
-        return ("%g" % x).replace(".", ",") if (isinstance(x, float) and x != int(x)) else f"{int(x):,}".replace(",", ".")
-    rowhtml = []
-    for (lb, u, mn, mx), sp in zip(rows, spans):
-        w = round(sp / mxs * 100)
-        rowhtml.append(
-            f'<div class="sig-row"><span class="sig-lb">{lb}</span>'
-            f'<svg class="sig-barsvg" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true">'
-            f'<line class="sig-trk" x1="0" y1="3" x2="100" y2="3"/>'
-            f'<line class="sig-fill" x1="0" y1="3" x2="{w}" y2="3"/></svg>'
-            f'<span class="sig-val">{fnum(mn)} &#8594; {fnum(mx)} {u}</span></div>')
-    return (f'<section class="sigwrap" data-audit="sig">'
-            f'<div class="sigrows">{"".join(rowhtml)}</div>'
-            f'<p class="sig-cap">{bilingual("Each bar is the span between the smallest and largest recorded value across the registry, log scale.", "Mỗi thanh là khoảng từ giá-trị nhỏ nhất tới lớn nhất trong bản đăng ký, thang log.")}</p></section>')
+
+# ---- INFO/02 capability scatter (live: every system with both MTOW + range, log×log, by segment) ----
+def scatter_svg(site):
+    """The whole fleet in one frame: one dot per UAV that has BOTH mtow_kg and max_range_km recorded
+    (honest-null: systems missing either are not plotted). Positions recompute log×log from registry;
+    colour = market_segment (top-5 + other). Dots coloured via CSS token classes; root fill=none so
+    verify_svg passes and verify_graphics finds no hardcoded hex. Labels/legend are HTML (overlap-safe)."""
+    uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
+
+    def num(e, k):
+        v = (e.get(k) or {}).get("value")
+        return v if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+
+    pts = []
+    for e in uavs:
+        m, r = num(e, "mtow_kg"), num(e, "max_range_km")
+        if m and r and m > 0 and r > 0:
+            pts.append((m, r, (e.get("market_segment") or {}).get("value")))
+    if not pts:
+        return ""
+    ms = [m for m, _, _ in pts]
+    rs = [r for _, r, _ in pts]
+    xmin, xmax, ymin, ymax = min(ms), max(ms), min(rs), max(rs)
+    lx0, lx1, ly0, ly1 = math.log10(xmin), math.log10(xmax), math.log10(ymin), math.log10(ymax)
+    W, H, PAD = 1000, 440, 10
+    pw, ph = W - 2 * PAD, H - 2 * PAD
+
+    def px(m):
+        return PAD + (math.log10(m) - lx0) / (lx1 - lx0) * pw
+
+    def py(r):
+        return PAD + ph - (math.log10(r) - ly0) / (ly1 - ly0) * ph
+
+    from collections import Counter
+    cnt = Counter(seg for _, _, seg in pts if seg)
+    top = [seg for seg, _ in cnt.most_common(5)]
+    segcls = {seg: f"sc{i + 1}" for i, seg in enumerate(top)}
+
+    grid = []
+    for d in range(math.ceil(lx0), math.floor(lx1) + 1):
+        gx = px(10 ** d)
+        grid.append(f'<line class="scat-grid" x1="{gx:.1f}" y1="{PAD}" x2="{gx:.1f}" y2="{PAD + ph}"/>')
+    for d in range(math.ceil(ly0), math.floor(ly1) + 1):
+        gy = py(10 ** d)
+        grid.append(f'<line class="scat-grid" x1="{PAD}" y1="{gy:.1f}" x2="{PAD + pw}" y2="{gy:.1f}"/>')
+    dots = [f'<circle class="dot {segcls.get(seg, "sc6")}" cx="{px(m):.1f}" cy="{py(r):.1f}" r="4.5"/>'
+            for m, r, seg in pts]
+
+    labels = site["labels"]["segment"]
+    leg = ""
+    for i, seg in enumerate(top):
+        sl = labels.get(seg, {})
+        leg += (f'<span class="scl"><i class="sw sc{i + 1}"></i>'
+                f'{bilingual(sl.get("en", seg), sl.get("vn", seg))}</span>')
+    leg += f'<span class="scl"><i class="sw sc6"></i>{bilingual("other", "khác")}</span>'
+
+    return (
+        '<section class="sigwrap" data-audit="sig"><div class="scat">'
+        f'<div class="scat-yax mono"><span>{_fnum(ymax)}</span>'
+        f'<span class="scat-axt">{bilingual("Range km", "Tầm bay km")}</span><span>{_fnum(ymin)}</span></div>'
+        f'<svg class="scat-svg" viewBox="0 0 {W} {H}" fill="none" aria-hidden="true">'
+        f'{"".join(grid)}{"".join(dots)}</svg></div>'
+        f'<div class="scat-xax mono"><span>{_fnum(xmin)}</span>'
+        f'<span class="scat-axt">MTOW kg</span><span>{_fnum(xmax)}</span></div>'
+        f'<div class="scat-legend">{leg}</div>'
+        f'<p class="sig-cap">{bilingual("One dot per system with both MTOW and range recorded (" + str(len(pts)) + " of " + str(len(uavs)) + "); both axes log scale.", "Mỗi chấm một hệ thống có cả MTOW và tầm bay (" + str(len(pts)) + "/" + str(len(uavs)) + "); cả hai trục thang log.")}</p></section>')
 
 
 # ---- block helpers (each binds REAL slugs + live numbers) ----
@@ -376,15 +418,27 @@ CSS = """
   .trend-card .tmeta{font-size:10.5px;color:var(--muted)}
   /* INFO/02 signature (token paint; verify_graphics) */
   .sigwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
-  .sigrows{max-width:760px}
-  .sig-row{display:grid;grid-template-columns:118px 1fr 168px;gap:14px;align-items:center;padding:5px 0}
-  .sig-lb{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em}
-  .sig-barsvg{width:100%;height:6px;display:block}
-  .sig-trk{stroke:var(--hair);stroke-width:6}
-  .sig-fill{stroke:var(--brass);stroke-width:6}
-  .sig-val{font-family:var(--font-mono);font-size:11px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
-  .sig-cap{font-size:12px;color:var(--muted);max-width:64ch;margin:12px 0 0;line-height:1.55}
-  @media (max-width:560px){.sig-row{grid-template-columns:1fr auto}.sig-barsvg{grid-column:1/-1;order:3;margin-top:4px}}
+  /* capability scatter — dots coloured via token classes; root svg fill=none (verify_svg safe) */
+  .scat{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:stretch;margin-top:4px}
+  .scat-yax{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;
+    font-family:var(--font-mono);font-size:10px;color:var(--muted);text-align:right}
+  .scat-yax .scat-axt{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--ink-soft);
+    letter-spacing:.1em;text-transform:uppercase;font-size:9px;margin:auto -2px}
+  .scat-svg{width:100%;height:auto;display:block;border-left:1px solid var(--hair-strong);border-bottom:1px solid var(--hair-strong)}
+  .scat-grid{stroke:var(--hair);stroke-width:1;opacity:.55}
+  .dot{opacity:.8}
+  .dot.sc1{fill:var(--sc1)} .dot.sc2{fill:var(--sc2)} .dot.sc3{fill:var(--sc3)}
+  .dot.sc4{fill:var(--sc4)} .dot.sc5{fill:var(--sc5)} .dot.sc6{fill:var(--sc6)}
+  .scat-xax{display:flex;justify-content:space-between;align-items:center;margin:7px 0 0 68px;
+    font-family:var(--font-mono);font-size:10px;color:var(--muted)}
+  .scat-xax .scat-axt{color:var(--ink-soft);letter-spacing:.1em;text-transform:uppercase;font-size:9px}
+  .scat-legend{display:flex;flex-wrap:wrap;gap:7px 16px;margin:14px 0 0 68px;
+    font-family:var(--font-mono);font-size:11px;color:var(--ink-soft)}
+  .scat-legend .scl{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:9px;height:9px;border-radius:50%;display:inline-block;flex:0 0 9px}
+  .sw.sc1{background:var(--sc1)} .sw.sc2{background:var(--sc2)} .sw.sc3{background:var(--sc3)}
+  .sw.sc4{background:var(--sc4)} .sw.sc5{background:var(--sc5)} .sw.sc6{background:var(--sc6)}
+  .sig-cap{font-size:12px;color:var(--muted);max-width:64ch;margin:14px 0 0 68px;line-height:1.55}
   /* reports */
   .reports{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
   .report-card{background:var(--bg);padding:20px 18px;min-height:158px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;color:inherit}
@@ -453,7 +507,7 @@ def main():
 {trending(arts)}
 
 {section_label("INFO/02", "Infographics", "Đồ hoạ dữ liệu")}
-{signature_svg(site)}
+{scatter_svg(site)}
 
 {section_label("REPORT/03", "Reports & data", "Báo cáo & dữ liệu")}
 {reports(arts)}
