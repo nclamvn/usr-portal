@@ -10,6 +10,7 @@ import json, pathlib, shutil, re
 from build_reference import chip, friendly, bilingual, esc, SPEC_FIELDS
 from footer import footer
 from glyphs import glyph_svg
+from taxonomy_buckets import weight_bucket, flight_bucket
 import media_lib as ML
 
 _MEDIA = ML.Media()
@@ -110,6 +111,12 @@ def field_row(e, field, labels, ledger, ranges=None, taxlinks=False):
             vlab = " / ".join(esc(_num(c)) for c in cl) + " " + esc(UNIT.get(field, ""))
         else:  # null / unverified — honest-null, no tick
             rail, vlab = '<span class="trk null"></span>', '—'
+        # derived-axis backlink: a real mtow/endurance value links to its weight/flight-time bucket
+        if taxlinks and isinstance(v, (int, float)) and not isinstance(v, bool):
+            if field == "mtow_kg" and weight_bucket(v):
+                vlab = f'<a href="../weight/{weight_bucket(v)}.html">{vlab}</a>'
+            elif field == "endurance_min" and flight_bucket(v):
+                vlab = f'<a href="../flight-time/{flight_bucket(v)}.html">{vlab}</a>'
         return (f'<div class="drow spec">{klabel}'
                 f'<div class="vt"><div class="track">{rail}</div>'
                 f'<span class="v" data-audit="dval">{vlab}{sup}</span></div>{ch}</div>')
@@ -117,9 +124,15 @@ def field_row(e, field, labels, ledger, ranges=None, taxlinks=False):
     # taxonomy cross-link: country / segment value -> its index page (standalone page only;
     # the offline bundle passes taxlinks=False so its fragments carry no dead links).
     val = fo.get("value")
-    if taxlinks and val and field in ("manufacturer_country", "market_segment"):
-        d = "country" if field == "manufacturer_country" else "segment"
-        disp = f'<a href="../{d}/{_tslug(val)}.html">{disp}</a>'
+    if taxlinks and val is not None:
+        cat = {"manufacturer_country": "country", "market_segment": "segment",
+               "airframe_type": "airframe", "propulsion": "propulsion"}.get(field)
+        if cat:
+            disp = f'<a href="../{cat}/{_tslug(val)}.html">{disp}</a>'
+        elif field == "ndaa_compliant" and val is True:
+            disp = f'<a href="../compliance/ndaa.html">{disp}</a>'
+        elif field == "blue_uas" and val is True:
+            disp = f'<a href="../compliance/blue-uas.html">{disp}</a>'
     return (f'<div class="drow">{klabel}'
             f'<span class="v" data-audit="dval">{disp}{sup}</span>{ch}</div>')
 
@@ -208,7 +221,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=F
     ident = "".join(field_row(e, f, labels, ledger, taxlinks=taxlinks) for f in IDENTITY)
     ident += (f'<div class="drow"><span class="k">{bilingual("Class", "Lớp")}</span>'
               f'<span class="v">{pclass}</span><span></span></div>')
-    specs = "".join(field_row(e, f, labels, ledger, ranges) for f in SPEC_FIELDS)
+    specs = "".join(field_row(e, f, labels, ledger, ranges, taxlinks=taxlinks) for f in SPEC_FIELDS)
     foot = "".join(
         f'<li id="s{m["num"]}"><span class="tierbadge">{esc(m["tier"] or "—")}</span>'
         f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a></li>'

@@ -7,12 +7,14 @@ site-data (zero new data). Slugs match field_row's taxonomy links and the graph'
 Design-system-of-record only; bilingual (en/vn).
 """
 import json, pathlib, shutil, re
+from collections import Counter
 from build_reference import friendly, bilingual, esc
 from footer import footer
 from canon import canonical_slug, canonical_name
 from nav import nav
 from header import header
 from seo import meta, collection_ld
+from taxonomy_buckets import WEIGHT_BUCKETS, FLIGHT_BUCKETS, COMPLIANCE, weight_bucket, flight_bucket
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -131,7 +133,113 @@ def main():
         (ROOT / "segment" / f"{tslug(s)}.html").write_text(html)
         nse += 1
 
-    print(f"country/: {nco} pages · segment/: {nse} pages")
+    # ---- new axes (TIP-TAXONOMY): categorical airframe/propulsion · derived weight/flight-time · compliance ----
+    def fresh(d):
+        p = ROOT / d
+        if p.exists():
+            shutil.rmtree(p)
+        p.mkdir(parents=True)
+
+    def entity_items(slugs):
+        return "".join(f'<li><a href="../uav/{esc(x)}.html">{esc(uav_name[x])}</a></li>'
+                       for x in sorted(slugs))
+
+    def write_index(axis_dir, plain_title, title_html, terms, total_cov, extra_meta=""):
+        # index lives at <axis>/index.html; term links are same-dir (slug.html)
+        items = "".join(f'<li><a href="{esc(slug)}.html">{esc(label)}</a> · {n}</li>'
+                        for slug, label, n in terms)
+        meta_line = (f'{len(terms)} ' + bilingual("categories", "nhóm")
+                     + f' · {total_cov} ' + bilingual("systems classified", "hệ thống đã phân loại") + extra_meta)
+        html = page(axis_dir, title_html, meta_line, [(bilingual("Categories", "Nhóm"), items)],
+                    f"{axis_dir}/index.html", plain_title, total_cov)
+        (ROOT / axis_dir / "index.html").write_text(html)
+
+    counts = {}
+
+    # index pages for the existing country/segment axes (uniform with the new axes)
+    write_index("country", "Countries", bilingual("Countries", "Quốc gia"),
+                sorted([(tslug(c), c, len(g["uavs"])) for c, g in countries.items()], key=lambda x: -x[2]),
+                len(uavs))
+    write_index("segment", "Market segments", bilingual("Market segments", "Nhóm ứng dụng"),
+                sorted([(tslug(s), labels["segment"].get(s, {}).get("en", s), len(sl))
+                        for s, sl in segments.items()], key=lambda x: -x[2]),
+                sum(len(sl) for sl in segments.values()))
+
+    # categorical: group by tslug (merges formatting variants); display = most common raw variant
+    for field, axis_dir, ptitle, vtitle in (
+            ("airframe_type", "airframe", "Airframe types", "Loại khung bay"),
+            ("propulsion", "propulsion", "Propulsion types", "Loại động lực")):
+        fresh(axis_dir)
+        groups = {}
+        for e in uavs:
+            v = (e.get(field) or {}).get("value")
+            if not v:
+                continue
+            g = groups.setdefault(tslug(v), {"slugs": [], "labels": Counter()})
+            g["slugs"].append(e["slug"]); g["labels"][v] += 1
+        terms = []
+        for t, g in groups.items():
+            label = g["labels"].most_common(1)[0][0]
+            meta_line = f'{len(g["slugs"])} ' + bilingual("systems", "hệ thống")
+            html = page(axis_dir, esc(label), meta_line,
+                        [(bilingual("Systems", "Hệ thống"), entity_items(g["slugs"]))],
+                        f"{axis_dir}/{t}.html", label, len(g["slugs"]))
+            (ROOT / axis_dir / f"{t}.html").write_text(html)
+            terms.append((t, label, len(g["slugs"])))
+        cov = sum(len(g["slugs"]) for g in groups.values())
+        write_index(axis_dir, ptitle, bilingual(ptitle, vtitle), sorted(terms, key=lambda x: -x[2]), cov)
+        counts[axis_dir] = len(terms)
+
+    # derived buckets: weight (mtow_kg) · flight-time (endurance_min) — membership recomputes from value
+    for field, axis_dir, buckets, fn, ptitle, vtitle in (
+            ("mtow_kg", "weight", WEIGHT_BUCKETS, weight_bucket, "Weight class", "Hạng trọng lượng"),
+            ("endurance_min", "flight-time", FLIGHT_BUCKETS, flight_bucket, "Flight-time class", "Hạng thời gian bay")):
+        fresh(axis_dir)
+        members, present = {}, 0
+        for e in uavs:
+            b = fn((e.get(field) or {}).get("value"))
+            if b is None:
+                continue
+            present += 1
+            members.setdefault(b, []).append(e["slug"])
+        terms = []
+        for slug, en, vn, lo, hi in buckets:          # fixed order; skip empty (no empty tags)
+            if slug not in members:
+                continue
+            ms = members[slug]
+            meta_line = f'{len(ms)} ' + bilingual("systems", "hệ thống")
+            html = page(axis_dir, bilingual(en, vn), meta_line,
+                        [(bilingual("Systems", "Hệ thống"), entity_items(ms))],
+                        f"{axis_dir}/{slug}.html", en, len(ms))
+            (ROOT / axis_dir / f"{slug}.html").write_text(html)
+            terms.append((slug, bilingual(en, vn), len(ms)))
+        unrec = len(uavs) - present
+        extra = " · " + bilingual(f"{unrec} not recorded", f"{unrec} chưa ghi nhận")
+        write_index(axis_dir, ptitle, bilingual(ptitle, vtitle), terms, present, extra)
+        counts[axis_dir] = len(terms)
+
+    # compliance: ndaa / blue-uas — list ONLY true; meta shows true/false/unknown (honest-null, 3-state)
+    fresh("compliance")
+    comp_terms = []
+    for slug, field, en, vn in COMPLIANCE:
+        vals = [(e.get(field) or {}).get("value") for e in uavs]
+        ntrue = sum(1 for v in vals if v is True)
+        nfalse = sum(1 for v in vals if v is False)
+        nnull = sum(1 for v in vals if v is None)
+        true_slugs = [e["slug"] for e in uavs if (e.get(field) or {}).get("value") is True]
+        meta_line = (f'{ntrue} ' + bilingual("compliant", "tuân thủ")
+                     + f' · {nfalse} ' + bilingual("not", "không")
+                     + f' · {nnull} ' + bilingual("not recorded", "chưa ghi nhận") + f' / {len(uavs)}')
+        html = page("compliance", bilingual(en, vn), meta_line,
+                    [(bilingual("Compliant systems", "Hệ thống tuân thủ"), entity_items(true_slugs))],
+                    f"compliance/{slug}.html", en, ntrue)
+        (ROOT / "compliance" / f"{slug}.html").write_text(html)
+        comp_terms.append((slug, bilingual(en, vn), ntrue))
+    write_index("compliance", "Compliance", bilingual("Compliance", "Tuân thủ"),
+                comp_terms, sum(t[2] for t in comp_terms))
+    counts["compliance"] = len(comp_terms)
+
+    print(f"country/: {nco} · segment/: {nse} · " + " · ".join(f"{k}/: {v}" for k, v in counts.items()))
 
 
 if __name__ == "__main__":

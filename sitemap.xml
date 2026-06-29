@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://usr-portal.vercel.app/airframe/ducted-fan.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/fixed-wing.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/helicopter.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/hexacopter.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/index.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/multirotor.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/octocopter.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/quadcopter.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/airframe/vtol-fixedwing.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/analysis/kinh-te-tam-thap-vn-doc-qua-dang-ky-uav.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/analysis/truy-nguyen-loi-the-uav.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/company/a2z-drone-delivery.html</loc></url>
@@ -143,6 +152,9 @@
   <url><loc>https://usr-portal.vercel.app/company/zero-zero-robotics.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/company/zipline.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/compare.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/compliance/blue-uas.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/compliance/index.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/compliance/ndaa.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/australia.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/austria.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/brazil.html</loc></url>
@@ -151,6 +163,7 @@
   <url><loc>https://usr-portal.vercel.app/country/estonia.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/france.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/germany.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/country/index.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/india.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/indonesia.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/iran.html</loc></url>
@@ -172,6 +185,12 @@
   <url><loc>https://usr-portal.vercel.app/country/united-states.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/vietnam.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/data.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/1-2h.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/2-6h.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/30-60.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/index.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/over-6h.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/flight-time/under-30.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/index.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/knowledge.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/knowledge/blue-uas.html</loc></url>
@@ -288,6 +307,16 @@
   <url><loc>https://usr-portal.vercel.app/news/world-joby-vertiport-dubai.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news/world-wing-alphabet-delivery.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news/world-zipline-walmart.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/diesel.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/electric.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/heavy-fuel.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/hybrid-gasoline-electric.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/index.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/internal-combustion.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/turbofan.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/turbojet.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/turboprop.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/propulsion/turboshaft.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/reference.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/review.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/search.html</loc></url>
@@ -299,6 +328,7 @@
   <url><loc>https://usr-portal.vercel.app/segment/delivery.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/enterprise.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/fpv.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/segment/index.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/loitering-munition.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/military-tactical.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/passenger-uam.html</loc></url>
@@ -606,4 +636,11 @@
   <url><loc>https://usr-portal.vercel.app/uav/uav-zero-zero-robotics-hoverair-x1-promax-hoverair-x1-promax.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/uav/uav-zipline-p2-p2.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/uav/uav-zipline-platform-2-platform-2.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/heavy.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/index.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/large.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/medium.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/micro.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/nano.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/weight/small.html</loc></url>
 </urlset>

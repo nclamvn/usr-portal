@@ -85,7 +85,7 @@ GSHA2=$(shasum -a256 out/graph.json | cut -d' ' -f1)
 python3 verify_graph.py
 python3 teeth_p02.py
 python3 verify_taxonomy.py
-python3 teeth_p14.py
+python3 teeth_taxonomy.py
 python3 verify_compare.py
 python3 teeth_p13.py
 python3 verify_search.py

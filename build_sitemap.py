@@ -10,7 +10,7 @@ from seo import BASE
 ROOT = pathlib.Path(__file__).resolve().parent
 OUT = ROOT / "sitemap.xml"
 TOP = ["index.html", "reference.html", "search.html", "compare.html", "data.html", "knowledge.html", "review.html", "news.html"]
-DIRS = ["uav", "company", "country", "segment", "news", "analysis", "knowledge", "news-card"]
+DIRS = ["uav", "company", "country", "segment", "airframe", "propulsion", "weight", "flight-time", "compliance", "news", "analysis", "knowledge", "news-card"]
 
 
 def surfaces():
