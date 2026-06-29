@@ -11,7 +11,7 @@ import json, pathlib, shutil
 from build_reference import esc
 from footer import footer
 from header import header
-from seo import favicons
+from seo import favicons, article_ld
 from build_analysis import (echip, autolink, link_map, SECTION, ARROW, SPEC_BANNER, NAV,
                             related_rail, sources_apparatus, load)
 
@@ -93,6 +93,7 @@ def render_news_page(a, site, glossary):
 <title>{esc(a["title"])} — USR Tin tức</title>
 <meta name="description" content="{esc(a["dek"])}">
 {favicons(f'news/{a["slug"]}.html')}
+{article_ld(a["title"], a.get("date"), f'news/{a["slug"]}.html', desc=a.get("dek"), author=(au.get("name") or None), about=[t.get("label") for t in a.get("entity_tags", []) if isinstance(t, dict)])}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <link rel="stylesheet" href="../base/newsroom.css">

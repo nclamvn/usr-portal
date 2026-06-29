@@ -4,7 +4,7 @@ honest-null fields are omitted (never emitted as empty/0), disputed fields are k
 data entirely (we don't hand a search engine a value two sources disagree on). Plus canonical + OG.
 BASE is the production origin — set it to the real deploy URL before going live (gates are domain-
 independent: they check path resolution + value provenance, not the host)."""
-import json
+import json, re
 
 BASE = "https://usr-portal.vercel.app"   # production origin (Vercel default cho repo usr-portal); đổi sang domain riêng khi DNS sẵn
 SHARE_IMG = "images/content/hero/hero-detroit.webp"   # default social share image — RtR-OWNED (never a third-party news photo)
@@ -59,6 +59,44 @@ def website_ld():
     web = {"@context": "https://schema.org", "@type": "WebSite", "name": "Uncrewed Systems Review",
            "url": BASE, "description": "A sourced, comparable registry of uncrewed aerial systems."}
     return _ld(org) + _ld(web)
+
+
+def _publisher():
+    return {"@type": "Organization", "name": "Uncrewed Systems Review",
+            "logo": {"@type": "ImageObject", "url": BASE + "/images/content/rtr/hera-studio-black.webp"}}
+
+
+def article_ld(title, date, path, desc=None, author=None, image=None, kind="NewsArticle", about=None):
+    """NewsArticle / AnalysisNewsArticle JSON-LD. Only real values are emitted: an UNSIGNED piece omits
+    `author` entirely (the site is the honest publisher — we never fabricate a byline). Mirrors the
+    no-fabricated-author doctrine of build_newsroom._byline."""
+    if not title:
+        return ""
+    obj = {"@context": "https://schema.org", "@type": kind, "headline": title, "inLanguage": "vi",
+           "mainEntityOfPage": BASE + "/" + path, "publisher": _publisher(), "isAccessibleForFree": True}
+    if date and re.match(r"^\d{4}-\d{2}-\d{2}", str(date)):
+        obj["datePublished"] = str(date)   # honest-null: a non-ISO/placeholder date is OMITTED, not faked
+    if desc:
+        obj["description"] = (desc or "").replace('"', "'")
+    if author:                       # only a REAL signed name; unsigned -> omitted, publisher stands
+        obj["author"] = {"@type": "Person", "name": author}
+    if image:
+        obj["image"] = BASE + "/" + image.lstrip("/")
+    if about:
+        obj["about"] = [{"@type": "Thing", "name": a} for a in about if a]
+    return _ld(obj)
+
+
+def review_ld(uav_name, rating, path, best=100):
+    """Review JSON-LD — RtR's spec-derived capability score for one UAV. rating is the live total (0-100);
+    honest-null (unscored) emits NOTHING. Reviewer is the org (USR), never a fabricated person."""
+    if rating is None or not uav_name:
+        return ""
+    return _ld({"@context": "https://schema.org", "@type": "Review",
+                "itemReviewed": {"@type": "Product", "name": uav_name},
+                "reviewRating": {"@type": "Rating", "ratingValue": rating, "bestRating": best, "worstRating": 0},
+                "author": {"@type": "Organization", "name": "Uncrewed Systems Review"},
+                "url": BASE + "/" + path})
 
 
 def product_ld(e, path):

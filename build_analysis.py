@@ -15,7 +15,7 @@ import json, pathlib, shutil, re, html
 from header import header
 from footer import footer
 from build_reference import esc
-from seo import favicons
+from seo import favicons, article_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -191,12 +191,10 @@ def sources_apparatus(article):
 
 
 def jsonld(article):
-    about = [{"@type": "Thing", "name": t["label"]} for t in article.get("entity_tags", [])]
-    obj = {"@context": "https://schema.org", "@type": "AnalysisNewsArticle",
-           "headline": article["title"], "inLanguage": "vi",
-           "author": {"@type": "Person", "name": article.get("author", {}).get("name", "")},
-           "about": about, "isAccessibleForFree": True}
-    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False) + '</script>'
+    return article_ld(article["title"], article.get("date"), f'analysis/{article["slug"]}.html',
+                      desc=article.get("dek"), author=(article.get("author", {}).get("name") or None),
+                      kind="AnalysisNewsArticle",
+                      about=[t.get("label") for t in article.get("entity_tags", [])])
 
 
 SPEC_BANNER = ('<div class="smpl"><div class="in"><div class="wrap">'

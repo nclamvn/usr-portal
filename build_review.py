@@ -12,7 +12,7 @@ from footer import footer
 from build_reference import bilingual, esc
 from nav import nav
 from header import header
-from seo import meta as seo_meta
+from seo import meta as seo_meta, review_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -86,6 +86,7 @@ def cell(score):
 
 def render(rv, labels):
     dim_th = "".join(f'<th>{bilingual(d["en"], d["vn"])}</th>' for d in rv["dims"])
+    review_ld_blocks = "".join(review_ld(u["name"], u["total"], "review.html") for u in rv["uavs"])
     rows = ""
     for i, u in enumerate(rv["uavs"], 1):
         tot = (f'<span class="tot">{u["total"]}</span>' if u["total"] is not None
@@ -101,6 +102,7 @@ def render(rv, labels):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Capability review — USR</title>
 {seo_meta("Capability review — USR", "Spec-derived capability scores across the registry; missing specs are honest-null, never zero.", "review.html")}
+{review_ld_blocks}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
 <style>{REVIEW_CSS}</style>

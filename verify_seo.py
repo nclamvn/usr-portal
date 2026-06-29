@@ -62,6 +62,61 @@ def check_page(path, by_slug, fails):
                 fails.append("SEO_FABRICATED: %s addressLocality not sourced" % slug)
 
 
+ART_TYPES = {"NewsArticle", "AnalysisNewsArticle", "Article", "ReportageNewsArticle"}
+REVIEWDATA = ROOT / "out" / "review-data.json"
+
+
+def check_article(path, fails):
+    """§8.10.1 — every news/ + analysis/ page must carry an Article-type JSON-LD; and that block must
+    be internally honest (headline present, ISO datePublished, real publisher, no empty byline)."""
+    html = path.read_text()
+    slug = path.stem
+    art = None
+    for obj in jsonld_blocks(html):
+        if obj.get("_parse_error"):
+            fails.append("SEO_FABRICATED: %s has invalid JSON-LD" % slug); continue
+        if obj.get("@type") in ART_TYPES:
+            art = obj
+    if art is None:
+        fails.append("SEO_LD_MISSING: %s has no Article JSON-LD (§8.10.1 100%%)" % slug); return
+    if not (art.get("headline") or "").strip():
+        fails.append("SEO_FABRICATED: %s Article headline empty" % slug)
+    dp = art.get("datePublished")
+    if dp and not re.match(r"^\d{4}-\d{2}-\d{2}", str(dp)):
+        fails.append("SEO_FABRICATED: %s datePublished %r not ISO" % (slug, dp))
+    pub = (art.get("publisher") or {}).get("name")
+    if pub != "Uncrewed Systems Review":
+        fails.append("SEO_FABRICATED: %s publisher %r != site" % (slug, pub))
+    au = art.get("author")
+    if au is not None and not (au.get("name") or "").strip():
+        fails.append("SEO_FABRICATED: %s Article author present but empty (fabricated byline)" % slug)
+
+
+def check_reviews(fails, page=None):
+    """§8.10.1 Review — every Review on review.html must carry a REAL spec-derived rating (== the live
+    capability total in review-data.json), reviewed by the org (no fabricated person)."""
+    page = pathlib.Path(page) if page else ROOT / "review.html"
+    if not page.exists() or not REVIEWDATA.exists():
+        return 0
+    by_name = {u["name"]: u["total"] for u in json.loads(REVIEWDATA.read_bytes())["uavs"]}
+    scored = sum(1 for t in by_name.values() if t is not None)
+    blocks = [o for o in jsonld_blocks(page.read_text()) if o.get("@type") == "Review"]
+    if scored and not blocks:
+        fails.append("SEO_LD_MISSING: review.html has %d scored UAV but 0 Review JSON-LD" % scored)
+    for o in blocks:
+        nm = (o.get("itemReviewed") or {}).get("name")
+        rv = (o.get("reviewRating") or {}).get("ratingValue")
+        if nm not in by_name:
+            fails.append("SEO_FABRICATED: review %r not in registry" % nm)
+        elif by_name[nm] is None:
+            fails.append("SEO_FABRICATED: review %r emits rating for honest-null (unscored)" % nm)
+        elif by_name[nm] != rv:
+            fails.append("SEO_FABRICATED: review %r ratingValue=%r != live %r" % (nm, rv, by_name[nm]))
+        if (o.get("author") or {}).get("@type") != "Organization":
+            fails.append("SEO_FABRICATED: review %r author not the org (fabricated reviewer?)" % nm)
+    return len(blocks)
+
+
 def check_sitemap(sm_path, fails):
     locs = re.findall(r"<loc>(.*?)</loc>", pathlib.Path(sm_path).read_text())
     have = set()
@@ -83,6 +138,10 @@ def main():
     args = sys.argv[1:]
     if args and args[0] == "page":
         check_page(args[1], load_site(), fails)
+    elif args and args[0] == "article":
+        check_article(pathlib.Path(args[1]), fails)
+    elif args and args[0] == "reviews":
+        check_reviews(fails, args[1] if len(args) > 1 else None)
     elif args and args[0] == "sitemap":
         check_sitemap(args[1], fails)
     else:
@@ -92,7 +151,13 @@ def main():
         for d in ("entity", "company"):
             for p in (ROOT / d).glob("*.html"):
                 check_page(p, by, fails); pages += 1
-        print("seo: sitemap %d urls · %d entity+company JSON-LD checked" % (n, pages))
+        arts = 0
+        for d in ("news", "analysis"):
+            for p in (ROOT / d).glob("*.html"):
+                check_article(p, fails); arts += 1
+        revs = check_reviews(fails)
+        print("seo: sitemap %d urls · %d entity+company JSON-LD · %d Article pages · %d Review LD checked"
+              % (n, pages, arts, revs))
     if fails:
         print("\nSEO GATE FAIL (%d):" % len(fails))
         for f in fails[:20]:

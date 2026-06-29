@@ -32,6 +32,23 @@ dst = pathlib.Path("/tmp") / f.name; dst.write_text(t2)
 rc, out = run(["page", str(dst)]); dst.unlink()
 results.append(("b · fabricated JSON-LD value", rc == 2 and "SEO_FABRICATED" in out, rc))
 
+# (c) news page stripped of its Article JSON-LD -> SEO_LD_MISSING
+victim = next((f for f in sorted((ROOT / "news").glob("*.html"))
+               if any(t in f.read_text() for t in ('"NewsArticle"', '"AnalysisNewsArticle"'))), None)
+t = victim.read_text()
+t2 = re.sub(r'<script type="application/ld\+json">(?:(?!</script>).)*?NewsArticle(?:(?!</script>).)*?</script>',
+            "", t, count=1, flags=re.S)
+dst = pathlib.Path("/tmp") / ("strip_" + victim.name); dst.write_text(t2)
+rc, out = run(["article", str(dst)]); dst.unlink()
+results.append(("c · Article LD stripped", rc == 2 and "SEO_LD_MISSING" in out, rc))
+
+# (d) review.html with a tampered ratingValue -> SEO_FABRICATED
+rv = (ROOT / "review.html").read_text()
+rv2 = re.sub(r'("ratingValue":\s*)\d+', r'\g<1>999', rv, count=1)
+dst = pathlib.Path("/tmp") / "tamper_review.html"; dst.write_text(rv2)
+rc, out = run(["reviews", str(dst)]); dst.unlink()
+results.append(("d · Review rating tampered", rc == 2 and "SEO_FABRICATED" in out, rc))
+
 rc, out = run([]); results.append(("restore · real passes", rc == 0, rc))
 
 ok = all(p for _, p, _ in results)
