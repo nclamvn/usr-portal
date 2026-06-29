@@ -3,7 +3,7 @@
   "cleanUrls": false,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/entity/:path*", "destination": "/uav/:path*", "permanent": true }
+    { "source": "/entity/:path*", "destination": "/uav/:path*", "statusCode": 301 }
   ],
   "headers": [
     {
