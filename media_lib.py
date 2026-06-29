@@ -53,7 +53,7 @@ def _esc(s):
 
 def img_html(asset, cls="", rel_prefix=""):
     """Render một asset rtr_owned/eligible thành <img> (ảnh) hoặc <video> (clip). rel_prefix cho trang
-    nằm sâu (vd entity/ dùng '../'). Caption thành alt; ảnh lazy. KHÔNG render nếu asset rỗng."""
+    nằm sâu (vd uav/ dùng '../'). Caption thành alt; ảnh lazy. KHÔNG render nếu asset rỗng."""
     if not asset:
         return ""
     src = _esc(rel_prefix + asset["src"].lstrip("/"))

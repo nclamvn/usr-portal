@@ -127,7 +127,7 @@ def data_rail(fm, site):
     chips = ""
     for tag in fm.get("entity_tags") or []:
         typ, _, s = tag.partition(":")
-        d = {"company": "company", "uav": "entity", "knowledge": "knowledge"}.get(typ)
+        d = {"company": "company", "uav": "uav", "knowledge": "knowledge"}.get(typ)
         if d:
             chips += f'<a class="echip" href="../{d}/{esc(s)}.html"><i>{esc(typ)}</i> {esc(s)}</a>'
     if chips:

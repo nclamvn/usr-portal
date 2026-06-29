@@ -21,7 +21,7 @@ def _ld(obj):
 def favicons(path):
     """Favicon/PWA links with a RELATIVE prefix derived from page depth, so they resolve under any
     deploy sub-path (e.g. /usr-portal/) — never a root-absolute '/…' (sub-path invariant)."""
-    p = "../" * path.count("/")          # 'entity/x.html' -> '../' ; 'index.html' -> ''
+    p = "../" * path.count("/")          # 'uav/x.html' -> '../' ; 'index.html' -> ''
     return (f'<link rel="icon" type="image/png" href="{p}favicon-96x96.png" sizes="96x96">'
             f'<link rel="icon" type="image/svg+xml" href="{p}favicon.svg">'
             f'<link rel="shortcut icon" href="{p}favicon.ico">'

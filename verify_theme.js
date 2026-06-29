@@ -16,7 +16,7 @@ const MINW = 240, MINH = 120;       // a "container" — ignore dots/chips/pills
 const SURFACES = [
   "/index.html", "/reference.html", "/data.html", "/compare.html", "/search.html",
   "/knowledge.html", "/review.html", "/news.html", "/monitor.html", "/registry.html",
-  "/entity/uav-dji-mavic-3-pro-mavic-3-pro.html",
+  "/uav/uav-dji-mavic-3-pro-mavic-3-pro.html",
   "/company/dji.html", "/country/united-states.html", "/segment/military-tactical.html",
   "/news/bai-01-data-note-phuong-phap.html",
 ];

@@ -23,7 +23,7 @@ def derive(site):
     uavs = [e for e in ents if e.get("entity_type", "uav") == "uav"]
     exp = {}
     for e in uavs:
-        exp[("uav", e["slug"])] = "entity/%s.html" % e["slug"]
+        exp[("uav", e["slug"])] = "uav/%s.html" % e["slug"]
     for e in ents:
         if e.get("entity_type") == "company":
             exp[("company", e["slug"])] = "company/%s.html" % e["slug"]

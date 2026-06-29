@@ -14,14 +14,14 @@ results = []
 
 # (a) sitemap with a dead <loc> -> SITEMAP_DEAD
 sm = (ROOT / "sitemap.xml").read_text().replace(
-    "</urlset>", f"  <url><loc>{BASE}/entity/__ghost__.html</loc></url>\n</urlset>")
+    "</urlset>", f"  <url><loc>{BASE}/uav/__ghost__.html</loc></url>\n</urlset>")
 fd, p = tempfile.mkstemp(suffix=".xml", dir="/tmp"); open(p, "w").write(sm)
 rc, out = run(["sitemap", p]); os.unlink(p)
 results.append(("a · sitemap dead loc", rc == 2 and "SITEMAP_DEAD" in out, rc))
 
 # (b) fabricated JSON-LD value (bump a Product additionalProperty) -> SEO_FABRICATED
 victim = None
-for f in sorted((ROOT / "entity").glob("*.html")):
+for f in sorted((ROOT / "uav").glob("*.html")):
     t = f.read_text()
     if '"additionalProperty"' in t and '"value":' in t:
         victim = (f, t); break

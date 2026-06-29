@@ -106,7 +106,7 @@ def main():
 
     nco = 0
     for c, g in countries.items():
-        uav_items = "".join(f'<li><a href="../entity/{esc(s)}.html">{esc(uav_name[s])}</a></li>'
+        uav_items = "".join(f'<li><a href="../uav/{esc(s)}.html">{esc(uav_name[s])}</a></li>'
                             for s in sorted(g["uavs"]))
         co_items = "".join(f'<li><a href="../company/{esc(cs)}.html">{esc(cn)}</a></li>'
                            for cs, cn in sorted(g["companies"]))
@@ -121,7 +121,7 @@ def main():
 
     nse = 0
     for s, slugs in segments.items():
-        uav_items = "".join(f'<li><a href="../entity/{esc(x)}.html">{esc(uav_name[x])}</a></li>'
+        uav_items = "".join(f'<li><a href="../uav/{esc(x)}.html">{esc(uav_name[x])}</a></li>'
                             for x in sorted(slugs))
         title = friendly("segment", s, labels)
         plain = labels["segment"].get(s, {}).get("en", s)

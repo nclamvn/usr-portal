@@ -43,7 +43,7 @@ def build_index(site):
         seg_l = labels["segment"].get(seg, {"en": seg or "", "vn": seg or ""})
         terms = " ".join([name, maker, country, seg_l["en"], seg_l["vn"]]).lower()
         entries.append({"id": e["slug"], "type": "uav", "label_en": name, "label_vn": name,
-                        "sub_en": maker, "sub_vn": maker, "url": "entity/%s.html" % e["slug"], "terms": terms})
+                        "sub_en": maker, "sub_vn": maker, "url": "uav/%s.html" % e["slug"], "terms": terms})
 
     for e in companies:
         name = e.get("name") or e["slug"]

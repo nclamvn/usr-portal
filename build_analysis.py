@@ -87,7 +87,7 @@ def echip(tag, base=".."):
     lab, t = esc(tag["label"]), ETYPE.get(tag.get("type"), "")
     inner = f'<i>{esc(t)}</i> {lab}'
     if tag.get("slug"):
-        return f'<a class="echip" href="{base}/entity/{esc(tag["slug"])}.html">{inner}</a>'
+        return f'<a class="echip" href="{base}/uav/{esc(tag["slug"])}.html">{inner}</a>'
     return f'<span class="echip">{inner}</span>'
 
 
@@ -97,7 +97,7 @@ def link_map(article, glossary, base=".."):
     for tg in article.get("entity_tags", []):
         lab = tg["label"]
         if tg.get("slug"):
-            m[lab] = f'<a class="eref" href="{base}/entity/{esc(tg["slug"])}.html">{esc(lab)}</a>'
+            m[lab] = f'<a class="eref" href="{base}/uav/{esc(tg["slug"])}.html">{esc(lab)}</a>'
     import re as _re
     for term in article.get("glossary", []):
         if term in m:

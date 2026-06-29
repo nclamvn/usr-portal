@@ -43,7 +43,7 @@ def _binding_target_exists(key):
     if kind == "company":
         return (ROOT / "company" / f"{ident}.html").exists()
     if kind == "entity":
-        return (ROOT / "entity" / f"{ident}.html").exists()
+        return (ROOT / "uav" / f"{ident}.html").exists()
     if kind == "person":
         return (ROOT / "person" / f"{ident}.html").exists()
     if kind == "leadership":                              # Addendum A — leadership block sống trên trang company

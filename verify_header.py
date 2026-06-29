@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parent
 
 PAGES = (["index.html", "reference.html", "search.html", "compare.html", "data.html",
           "knowledge.html", "review.html", "news.html"]
-         + sorted(str(p.relative_to(ROOT)) for d in ("entity", "company", "country", "segment",
+         + sorted(str(p.relative_to(ROOT)) for d in ("uav", "company", "country", "segment",
                                                       "knowledge", "news", "analysis")
                   for p in (ROOT / d).glob("*.html")))
 

@@ -132,7 +132,7 @@ def render_row(e, labels):
     pips = "".join('<i class="on"></i>' if e[k].get("value") is not None else '<i></i>' for k in PIP_SPECS)
     pip_strip = f'<span class="ri-pips" title="{present}/7 spec" aria-label="{present}/7 spec có số">{pips}</span>'
     return (
-        f'<a class="row-item reveal" href="entity/{esc(e["slug"])}.html" data-audit="row" '
+        f'<a class="row-item reveal" href="uav/{esc(e["slug"])}.html" data-audit="row" '
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
         f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}">'
         f'<span class="ri-glyph">{glyph_svg(e.get("frame_glyph", "unknown"))}</span>'

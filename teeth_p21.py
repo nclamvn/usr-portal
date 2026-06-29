@@ -20,7 +20,7 @@ results = []
 
 # (a) tamper an entry url -> SEARCH_DRIFT
 a = copy.deepcopy(base)
-a["entries"][0]["url"] = "entity/__ghost__.html"
+a["entries"][0]["url"] = "uav/__ghost__.html"
 rc, out = run(a); results.append(("a · drifted url", rc == 2 and "SEARCH_DRIFT" in out, rc))
 
 # (b) drop an entry -> SEARCH_MISSING
@@ -31,7 +31,7 @@ rc, out = run(b); results.append(("b · missing node entry", rc == 2 and "SEARCH
 # (c) add a ghost entry -> SEARCH_ORPHAN
 c = copy.deepcopy(base)
 c["entries"].append({"id": "__ghost__", "type": "uav", "label_en": "x", "label_vn": "x",
-                     "sub_en": "", "sub_vn": "", "url": "entity/__ghost__.html", "terms": "ghost"})
+                     "sub_en": "", "sub_vn": "", "url": "uav/__ghost__.html", "terms": "ghost"})
 rc, out = run(c); results.append(("c · orphan entry", rc == 2 and "SEARCH_ORPHAN" in out, rc))
 
 rc, out = run(base); results.append(("restore · real index passes", rc == 0, rc))

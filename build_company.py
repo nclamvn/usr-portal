@@ -104,7 +104,7 @@ def render_company(c, labels, uav_name):
                          for k, v in roll.get("countries", {}).items())
     segments = " ".join(f'<span class="ck">{friendly("segment", k, labels)} <b>{v}</b></span>'
                         for k, v in roll.get("segments", {}).items())
-    fleet = "".join(f'<li><a href="../entity/{esc(s)}.html">{esc(uav_name.get(s, s))}</a></li>'
+    fleet = "".join(f'<li><a href="../uav/{esc(s)}.html">{esc(uav_name.get(s, s))}</a></li>'
                     for s in roll.get("uav_slugs", []))
     rows = [sourced_row(k, en, vn, c.get(k)) for k, en, vn in SOURCED_BASE]
     rows += [sourced_row(k, en, vn, c[k]) for k, en, vn in SOURCED_EXTRA if k in c]  # extras only when present

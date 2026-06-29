@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TIP-006 — Detail layer. One static, citable page per REAL entity at entity/<slug>.html.
+"""TIP-006 — Detail layer. One static, citable page per REAL entity at uav/<slug>.html.
 
 This is where the rich/detailed primitive belongs (the index is light rows; see build_reference).
 Every number carries a footnote to its real source URL + tier (A/B/C) — the provenance promise made
@@ -31,7 +31,7 @@ from seo import meta, product_ld
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
-OUTDIR = ROOT / "entity"
+OUTDIR = ROOT / "uav"
 
 IDENTITY = ["manufacturer", "manufacturer_country", "family", "variant",
             "airframe_type", "propulsion", "market_segment", "live_status"]
@@ -249,8 +249,8 @@ def render_detail(e, labels, ranges=None, company=None, taxlinks=True, prev=None
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(maker)} {esc(model)} — USR</title>
-{meta(f"{esc(maker)} {esc(model)} — USR", f"{esc(maker)} {esc(model)}: specifications traced to cited sources and tiers.", f'entity/{e["slug"]}.html')}
-{product_ld(e, f'entity/{e["slug"]}.html')}
+{meta(f"{esc(maker)} {esc(model)} — USR", f"{esc(maker)} {esc(model)}: specifications traced to cited sources and tiers.", f'uav/{e["slug"]}.html')}
+{product_ld(e, f'uav/{e["slug"]}.html')}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base/design-system.css">
 <style>{DETAIL_CSS}</style>
@@ -293,7 +293,7 @@ def main():
         prev = f'{ents[i-1]["slug"]}.html' if i > 0 else None              # edge prev/next (canonical order)
         nxt = f'{ents[i+1]["slug"]}.html' if i < len(ents) - 1 else None
         (OUTDIR / f'{e["slug"]}.html').write_text(render_detail(e, labels, ranges, company=company, prev=prev, next=nxt))
-    print(f"entity/: {len(ents)} detail pages written")
+    print(f"uav/: {len(ents)} detail pages written")
 
 
 if __name__ == "__main__":

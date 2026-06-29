@@ -111,7 +111,7 @@
     if (u.blue) tags.push('<span class="b">Blue UAS</span>');
     if (u.ndaa) tags.push('<span class="b">NDAA</span>');
     return '<div class="col-h"><span class="gl">' + glyph(u.glyph) + '</span>' +
-      '<span class="nm"><a href="entity/' + esc(u.slug) + '.html">' + esc(u.name) + '</a></span>' +
+      '<span class="nm"><a href="uav/' + esc(u.slug) + '.html">' + esc(u.name) + '</a></span>' +
       maker + '<span class="tags">' + tags.join(" · ") + '</span></div>';
   }
 

@@ -4,7 +4,7 @@ design-system-of-record). NOT a layered dashboard, NOT a hero laminated onto one
 
 Sequence, all in the approved idiom:
   bar -> hero .field (CTA -> reference.html) -> field-file cards fed by REAL entities
-  (01/02/03, "Read the file" -> entity/<slug>.html) -> record-status masthead (re-idiom,
+  (01/02/03, "Read the file" -> uav/<slug>.html) -> record-status masthead (re-idiom,
   solid-serif .statfig, NOT the dark-card ghost) -> "Browse all N" CTA.
 
 Every figure is LIVE from site-data (CONSTRAINT 8). The blueprint is a geometric signature
@@ -261,7 +261,7 @@ def field_file_card(e, n, labels, groups, big):
           f'<p>{bilingual(desc_en, desc_vn)}</p>'
           f'<div class="foot">'
           f'<span class="meta">{bilingual("Evidence", "Bằng chứng")} · <b>{esc(tier)}</b></span>'
-          f'<a class="readmore" href="entity/{esc(e["slug"])}.html" data-audit="ff-read">'
+          f'<a class="readmore" href="uav/{esc(e["slug"])}.html" data-audit="ff-read">'
           f'{bilingual("Read the file", "Đọc hồ sơ")}<span class="ico">{ARROW}</span></a>'
           f'</div></div></article>')
 
@@ -283,7 +283,7 @@ def featured_systems(ents, groups, labels):
         elif (e.get("ndaa_compliant") or {}).get("value") is True:
             badge = '<span class="fsys-b">NDAA</span>'
         cards += (
-            f'<a class="fsys reveal" href="entity/{esc(e["slug"])}.html" data-audit="fsys">'
+            f'<a class="fsys reveal" href="uav/{esc(e["slug"])}.html" data-audit="fsys">'
             f'<div class="fsys-top"><span class="fsys-g">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}</span>'
             f'<span class="fsys-kb">{seg}</span></div>'
             f'<b class="fsys-nm"><span class="fsys-mk">{esc(maker)}</span>{esc(model)}</b>'
@@ -476,7 +476,7 @@ def main():
     hero_blueprint = HERO_BP                           # specimen ink/brass schematic (TIP-UX2.1)
     feat = pick_featured(ents, groups, 1)[0]                          # one REAL record anchors the hero
     feat_mk, feat_md = maker_model(feat)
-    hero_caption = (f'<a class="readmore hero-cap" href="entity/{esc(feat["slug"])}.html" data-audit="herofile">'
+    hero_caption = (f'<a class="readmore hero-cap" href="uav/{esc(feat["slug"])}.html" data-audit="herofile">'
                     f'<b>{bilingual("Featured field file", "Hồ sơ tiêu biểu")}</b> · {esc(feat_mk)} {esc(feat_md)} →</a>')
     # live hero stats (heatm) — every figure from live_facts; matches verify_home figure-drift gate
     heatm = (

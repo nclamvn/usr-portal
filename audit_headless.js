@@ -216,12 +216,12 @@ async function main() {
       `showing=${fr.shown}/${fr.total}  overlaps=${fr.hits.length}  filter=${fr.ms.toFixed(1)}ms` +
       `  url=${urlOk ? "✓" : "✗"}` + (perfOk ? "  <100ms ✓" : "  >=100ms ✗"));
 
-    // DETAIL page (entity/<slug>.html) — overlap + provenance apparatus + honest-null.
+    // DETAIL page (uav/<slug>.html) — overlap + provenance apparatus + honest-null.
     let slug = "";
     try { const sd = await (await fetch(BASE + "/out/site-data.json")).json();
       slug = (sd.entities.find(e => (e.entity_type || "uav") === "uav") || {}).slug; } catch (e) {}
     if (slug) {
-      await send("Page.navigate", { url: BASE + "/entity/" + slug + ".html" });
+      await send("Page.navigate", { url: BASE + "/uav/" + slug + ".html" });
       await sleep(900);
       for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
         const dr = await evalOnPage(send, detailExpr(theme, lang));
@@ -229,7 +229,7 @@ async function main() {
         const trackOk = dr.specRows > 0 && (dr.ticks + dr.nullRails + dr.rngs) === dr.specRows;
         const ok = dr.hits.length === 0 && dr.sources > 0 && dr.tiers > 0 && dr.nullChips > 0 && trackOk;
         if (!ok) failures++;
-        console.log(`  ${ok ? "PASS" : "FAIL"}  /entity/${slug}  [${theme}/${lang}]  overlaps=${dr.hits.length}  ` +
+        console.log(`  ${ok ? "PASS" : "FAIL"}  /uav/${slug}  [${theme}/${lang}]  overlaps=${dr.hits.length}  ` +
           `sources=${dr.sources}  honest-null=${dr.nullChips}  tracks=${dr.ticks}tick/${dr.nullRails}null/${dr.rngs}rng of ${dr.specRows}`);
       }
     } else { failures++; console.log("  FAIL  detail page: could not resolve a slug"); }

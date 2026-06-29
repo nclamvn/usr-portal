@@ -23,7 +23,7 @@ acceptance:
   - { id: "8.1.1", req: "CRUD hồ sơ UAV không cần code (qua admin UI)",                       status: missing, gate_proof: "" }
   - { id: "8.1.2", req: "Hồ sơ UAV hiển thị đủ ảnh/video·spec·giá·pin·camera·firmware·lịch-sử", status: partial, gate_proof: "verify_site_data" }
   - { id: "8.1.3", req: "Tự liệt review·guide·distributor·bài liên-quan, không link tay",       status: partial, gate_proof: "verify_graph" }
-  - { id: "8.1.4", req: "Xoá/đổi-tên UAV không vỡ link (redirect/auto-update)",                 status: missing, gate_proof: "" }
+  - { id: "8.1.4", req: "Xoá/đổi-tên UAV không vỡ link (redirect/auto-update)",                 status: partial, gate_proof: "verify_redirects" }
   - { id: "8.1.5", req: "Spec là structured field (không free-text), lọc+compare được",         status: done,    gate_proof: "verify_site_data" }
   # 8.2 Company Database
   - { id: "8.2.1", req: "URL hồ sơ /company/[slug]",                                            status: done,    gate_proof: "verify_seo" }

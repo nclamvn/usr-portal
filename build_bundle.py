@@ -26,7 +26,7 @@ OUT = ROOT / "bundle.html"
 
 def inline_links(h):
     """Rewrite multi-file hrefs to in-bundle anchors: entity -> detail overlay, others -> sections."""
-    h = re.sub(r'href="(?:\.\./)?entity/([a-z0-9-]+)\.html"', r'href="#d-\1"', h)
+    h = re.sub(r'href="(?:\.\./)?uav/([a-z0-9-]+)\.html"', r'href="#d-\1"', h)
     h = re.sub(r'href="(?:\./|\.\./)?reference\.html"', 'href="#reference"', h)
     h = re.sub(r'href="(?:\./|\.\./)?index\.html(?:#[a-z-]+)?"', 'href="#top"', h)
     h = re.sub(r'href="(?:\./|\.\./)?news/[a-z0-9-]+\.html"', 'href="#reference"', h)

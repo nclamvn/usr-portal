@@ -22,7 +22,7 @@ ITEMS = [
 
 
 def nav(prefix="", current=None):
-    """prefix: "" for root pages, "../" for subdir pages (entity/company/country/segment).
+    """prefix: "" for root pages, "../" for subdir pages (uav/company/country/segment).
     current: the key of the page you're on (rendered as non-link), or None (all are links)."""
     parts = []
     for key, fname, en, vn in ITEMS:

@@ -93,7 +93,7 @@ def render(rv, labels):
                else f'<span class="tot null">{bilingual("n/a", "—")}</span>')
         cells = "".join(cell(u["scores"][k]) for k in DKEYS)
         rows += (f'<tr><td class="rank">{i}</td>'
-                 f'<td class="nm"><a href="entity/{esc(u["slug"])}.html">{esc(u["name"])}</a>'
+                 f'<td class="nm"><a href="uav/{esc(u["slug"])}.html">{esc(u["name"])}</a>'
                  f'<span class="mk">{esc(u["maker"])}</span></td>'
                  f'{cells}<td>{tot}</td><td class="cmpl">{u["scored"]}/{u["of"]}</td></tr>')
     return f"""<!DOCTYPE html>

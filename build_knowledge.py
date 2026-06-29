@@ -99,7 +99,7 @@ def term_page(term, d, arts, uavs, uav_name):
     sys_items = ""
     if field:
         on = [e for e in uavs if (e.get(field) or {}).get("value") is True]
-        sys_items = "".join(f'<li><a href="../entity/{esc(e["slug"])}.html">{esc(uav_name[e["slug"]])}</a></li>'
+        sys_items = "".join(f'<li><a href="../uav/{esc(e["slug"])}.html">{esc(uav_name[e["slug"]])}</a></li>'
                             for e in sorted(on, key=lambda e: e["slug"]))
     secs = ""
     if ref_items:
