@@ -205,7 +205,7 @@ def ticker(f, arts):
                  f'{f["entities"] - f["ndaa_present"]} {bilingual("not recorded", "chưa ghi nhận")}</span>')
     return ('<div class="topbar"><div class="topbar-in"><span class="tag"><span class="livedot"></span>LIVE</span>'
             f'<div class="ticker-wrap"><div class="ticker">{"".join(items)}</div></div>'
-            f'<span class="mono tb-co">{bilingual("UAV intelligence", "Tình báo UAV")}</span></div></div>')
+            f'<span class="mono tb-co">{bilingual("Vietnam · HCMC", "Việt Nam · TP.HCM")}</span></div></div>')
 
 
 def masthead(f):
@@ -213,12 +213,10 @@ def masthead(f):
         '<div class="hp-mast"><div class="hp-mast-in"><div class="mh-left">'
         f'<div class="mh-sub mono">{bilingual("News · Intelligence · Data · Community", "Tin · Tình báo · Dữ liệu · Cộng đồng")}</div>'
         '<h1>Vietnam UAV<br>Intelligence Platform</h1>'
-        f'<div class="mh-pub mono">{bilingual("Published by Uncrewed Systems Review", "Xuất bản bởi Uncrewed Systems Review")}</div>'
         '</div>'
         '<div class="mh-right">'
-        f'<span class="mh-stat"><b>{f["entities"]}</b><i class="mono">{bilingual("systems", "hệ thống")}</i></span>'
-        f'<span class="mh-stat"><b>{f["countries"]}</b><i class="mono">{bilingual("countries", "quốc gia")}</i></span>'
-        f'<span class="mh-stat"><b>{f["coverage"]}%</b><i class="mono">{bilingual("spec coverage", "độ phủ spec")}</i></span>'
+        '<div class="mh-coords mono">10.7769°N · 106.7009°E</div>'
+        f'<div class="mh-tag mono">{bilingual("UAV data & knowledge platform · Uncrewed Systems Review", "Nền tảng dữ liệu & tri thức UAV · Uncrewed Systems Review")}</div>'
         '</div></div></div>')
 
 
@@ -345,16 +343,16 @@ CSS = """
   body{background:var(--bg)}
   /* topbar + ticker (thin, theme-token; <120px tall so THEME_PURITY-exempt, but kept light) */
   /* topbar = full-width bar (border edge-to-edge like .gbar); inner content aligned to the 1180 column */
-  .topbar{border-bottom:1px solid var(--hair)}
+  .topbar{background:var(--ink)}  /* dark LIVE strip (thin -> THEME_PURITY-exempt; tokens only) */
   .topbar-in{margin:0 auto;display:flex;align-items:center;gap:18px;
-    padding:8px 1.8rem;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
-  .topbar .tag{color:var(--brass);font-weight:600;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+    padding:9px 1.8rem;font-family:var(--font-mono);font-size:11px;color:var(--bg)}
+  .topbar .tag{color:var(--brass-bright);font-weight:600;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
   .livedot{width:6px;height:6px;border-radius:50%;background:var(--brass);animation:hp-blink 1.6s ease-in-out infinite}
   .ticker-wrap{overflow:hidden;flex:1;white-space:nowrap}
   .ticker{display:inline-block;padding-left:100%;animation:hp-scroll 34s linear infinite}
-  .ticker span{margin-right:46px;color:var(--muted)}
-  .ticker span b{color:var(--ink)}
-  .tb-co{white-space:nowrap}
+  .ticker span{margin-right:46px;color:var(--bg);opacity:.72}
+  .ticker span b{color:var(--brass-bright);opacity:1;font-weight:600}
+  .tb-co{white-space:nowrap;color:var(--bg);opacity:.66}
   @keyframes hp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
   @keyframes hp-blink{0%,100%{opacity:1}50%{opacity:.25}}
   /* masthead — VUIP lead, USR publisher; .hp-mast (NOT .masthead — avoids design-system card frame).
@@ -364,11 +362,9 @@ CSS = """
     display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
   .mh-sub{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:8px}
   .hp-mast h1{font-family:var(--font-head);font-weight:600;font-size:clamp(30px,4.4vw,52px);line-height:1.0;letter-spacing:-.02em;margin:0;color:var(--ink)}
-  .mh-pub{font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
-  .mh-right{display:flex;gap:26px}
-  .mh-stat{display:flex;flex-direction:column;gap:4px}
-  .mh-stat b{font-family:var(--font-head);font-weight:600;font-size:30px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
-  .mh-stat i{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-style:normal}
+  .mh-right{display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-end;gap:7px;text-align:right}
+  .mh-coords{font-size:12px;color:var(--ink);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+  .mh-tag{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:34ch;line-height:1.5}
   /* hero 1+3 */
   .hero-grid{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem;display:grid;grid-template-columns:1.7fr 1fr;border-bottom:1px solid var(--hair)}
   .hero-main{padding:30px 30px 30px 0;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
