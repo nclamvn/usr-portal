@@ -72,6 +72,13 @@ def main():
         if cov.get(k, {}).get("pct") != live:
             fails.append("OVERVIEW_DRIFT: coverage %s=%s != live %d" % (k, cov.get(k, {}).get("pct"), live))
 
+    # capability spectrum — min/max must match live aggregates.spec_range (no hardcoded envelope)
+    sr_live = site["aggregates"].get("spec_range", {})
+    for r in ov.get("spec_range", []):
+        live = sr_live.get(r["key"])
+        if not live or r["min"] != live["min"] or r["max"] != live["max"]:
+            fails.append("OVERVIEW_DRIFT: spec_range %s min/max=%s/%s != live %s" % (r["key"], r.get("min"), r.get("max"), live))
+
     # masthead totals
     exp = {"uav": total, "company": len(companies), "country": len(cty), "segment": len(seg),
            "disputed": site["aggregates"]["field_status_counts"].get("disputed", 0)}

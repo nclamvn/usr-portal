@@ -83,8 +83,13 @@ def compute(site):
     totals = {"uav": total, "company": len(companies), "country": len(country), "segment": len(seg),
               "coverage_pct": round(100 * cov_present / cov_total) if cov_total else 0,
               "disputed": site["aggregates"]["field_status_counts"].get("disputed", 0)}
+    # capability spectrum — fleet operating envelope (min..max) per numeric spec, live from aggregates.
+    sr = site["aggregates"].get("spec_range", {})
+    NUM = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km", "max_link_km", "max_speed_ms", "service_ceiling_m"]
+    spec_range = [{"key": k, "min": sr[k]["min"], "max": sr[k]["max"], "present": fill[k]["present"]}
+                  for k in NUM if sr.get(k) and fill.get(k)]
     return {"schema": "data-overview/1", "totals": totals, "country": country_d, "maker": maker_d,
-            "segment": seg_d, "standards": standards, "coverage": coverage}
+            "segment": seg_d, "standards": standards, "coverage": coverage, "spec_range": spec_range}
 
 
 # --- render (static) ---
@@ -144,6 +149,23 @@ def render(ov):
         cov_html += (f'<div class="colstrip"><div class="nm">{bilingual(en, vn)}</div>'
                      f'<div class="bars">{cells}</div><div class="pct">{c["pct"]}%</div></div>')
 
+    # capability spectrum — operating envelope (min..max) per spec, instrument readout
+    UNIT = {"mtow_kg": "kg", "max_payload_kg": "kg", "endurance_min": ("min", "phút"), "max_range_km": "km",
+            "max_link_km": "km", "max_speed_ms": "m/s", "service_ceiling_m": "m"}
+    def _fnum(x):
+        if isinstance(x, float) and x != int(x):
+            return ("%g" % x).replace(".", ",")
+        return f"{int(x):,}".replace(",", ".")
+    cap_html = ""
+    for r in ov.get("spec_range", []):
+        en, vn = SPEC_LABEL[r["key"]]; u = UNIT[r["key"]]
+        ulab = bilingual(u[0], u[1]) if isinstance(u, tuple) else u
+        cap_html += (f'<div class="cap-row"><span class="cap-lb">{bilingual(en, vn)}</span>'
+                     f'<span class="cap-min">{_fnum(r["min"])}</span>'
+                     f'<span class="cap-band"><span class="t lo"></span><span class="t hi"></span></span>'
+                     f'<span class="cap-max">{_fnum(r["max"])} <i>{ulab}</i></span>'
+                     f'<span class="cap-n">{r["present"]} {bilingual("rec.", "bản ghi")}</span></div>')
+
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">
 <head>
@@ -158,7 +180,7 @@ def render(ov):
 {header("", "data")}
 <main class="dwrap">
   <section class="head">
-    <span class="eyebrow">{bilingual("Data Overview", "Tổng quan dữ liệu")}</span>
+    <span class="eyebrow">{bilingual("State of the UAV registry", "Tình hình bản đăng ký UAV")}</span>
     <h1>{bilingual("The whole registry, measured by its own data.", "Toàn cảnh đăng ký, đo bằng chính dữ liệu.")}</h1>
     <p class="sub">{bilingual(
       "Every figure below is computed live from the registry — distribution by country, manufacturer, purpose and industry standard. Unverified fields are shown as honest-null, never filled.",
@@ -185,6 +207,10 @@ def render(ov):
   <div class="cov"><div><div class="big">{t["coverage_pct"]}<span class="u">%</span></div>
     <div class="cap">{bilingual("spec coverage across the set — the empty parts are visible too", "độ phủ spec toàn tập — thấy được cả phần còn trống")}</div></div>
     <div class="spectrum">{cov_html}</div></div>
+
+  <div class="regdiv"><span class="num">06</span><span class="lab">{bilingual("Capability spectrum", "Phổ năng lực")}</span><span class="ln"></span><span class="meta">{bilingual("operating envelope, min to max", "biên vận-hành, nhỏ nhất tới lớn nhất")}</span></div>
+  <div class="caps">{cap_html}</div>
+  <div class="note"><span class="b">▪</span> {bilingual("Each band spans the smallest and largest recorded value across the registry; 'rec.' counts how many systems carry that spec (the rest are honest-null).", "Mỗi dải trải từ giá-trị nhỏ nhất tới lớn nhất ghi trong bản đăng ký; 'bản ghi' là số hệ thống có thông số đó (còn lại honest-null).")}</div>
 
 </main>
 {footer("")}
@@ -251,6 +277,18 @@ DATA_CSS = """
   .leg span{font-family:var(--font-mono);font-size:10px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
   .leg .sw{width:11px;height:11px;border-radius:2px} .leg .sw.yes{background:var(--bp)}
   .leg .sw.unk{background:repeating-linear-gradient(45deg,var(--faint) 0 2px,transparent 2px 4px);border:1px dashed var(--hair-strong)}
+  .caps{max-width:920px}
+  .cap-row{display:grid;grid-template-columns:128px 64px 1fr 110px 86px;gap:12px;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--hair)}
+  .cap-lb{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+  .cap-min{font-family:var(--font-mono);font-size:.74rem;font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
+  .cap-max{font-family:var(--font-mono);font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .cap-max i{font-style:normal;color:var(--muted);font-size:.66rem}
+  .cap-band{position:relative;height:4px;background:var(--hair);border-radius:2px}
+  .cap-band::before{content:"";position:absolute;left:2%;right:2%;top:0;bottom:0;background:var(--bp);opacity:.4;border-radius:2px}
+  .cap-band .t{position:absolute;top:50%;width:7px;height:7px;border-radius:50%;background:var(--brass);transform:translate(-50%,-50%)}
+  .cap-band .t.lo{left:2%} .cap-band .t.hi{left:98%}
+  .cap-n{font-family:var(--font-mono);font-size:.66rem;color:var(--muted);text-align:right}
+  @media(max-width:680px){.cap-row{grid-template-columns:1fr auto;gap:4px 10px}.cap-band{grid-column:1/-1;order:3}.cap-n{display:none}}
   .cov{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
   @media(max-width:760px){.cov{grid-template-columns:1fr;gap:24px}}
   .cov .big{font-family:var(--serif);font-weight:600;font-size:clamp(46px,7vw,72px);line-height:.9;letter-spacing:-.02em}

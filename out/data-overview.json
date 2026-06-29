@@ -290,6 +290,50 @@
       "v": 35
     }
   ],
+  "spec_range": [
+    {
+      "key": "mtow_kg",
+      "max": 25000,
+      "min": 0.073,
+      "present": 195
+    },
+    {
+      "key": "max_payload_kg",
+      "max": 6800,
+      "min": 0.2,
+      "present": 141
+    },
+    {
+      "key": "endurance_min",
+      "max": 3600,
+      "min": 4,
+      "present": 180
+    },
+    {
+      "key": "max_range_km",
+      "max": 13700,
+      "min": 3.2,
+      "present": 111
+    },
+    {
+      "key": "max_link_km",
+      "max": 200,
+      "min": 0.9,
+      "present": 68
+    },
+    {
+      "key": "max_speed_ms",
+      "max": 306,
+      "min": 4,
+      "present": 163
+    },
+    {
+      "key": "service_ceiling_m",
+      "max": 23200,
+      "min": 457,
+      "present": 95
+    }
+  ],
   "standards": [
     {
       "key": "blue_uas",
