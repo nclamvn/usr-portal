@@ -1,72 +1,82 @@
-# X-RAY — USR Portal (rtr-news) · handover, cập-nhật sau **P2 (đóng đủ)**
+# X-RAY — USR Portal (rtr-news) · handover gửi Chủ thầu
 
-> Mục-đích: phiên Chủ thầu/Thợ mới đọc file này là tiếp được liền (P3 Editorial), không dò lại cả chuỗi.
-> Working dir: `/Users/os/RtR/rtr-news/portal`. Tất cả lệnh chạy từ đây. Verify: `./build_all.sh` → "build_all: OK".
+> Cập-nhật sau **P3 (biên-tập) + media-staging + re-skin + sprint chiều-sâu spec + DEPLOY LIVE**.
+> HEAD `0a645ac` · nhánh `main` · tree sạch · **99 commit** · **đã công-khai** tại `usr-portal.vercel.app`.
+> Phát-hành: 29/06/2026. Đọc file này để tiếp việc; mọi số dưới đây tính SỐNG từ engine, không từ trí nhớ.
+> Working dir: `/Users/os/RtR/rtr-news/portal`. Verify: `./build_all.sh` → "build_all: OK".
+
+---
 
 ## 1 · Vai & giao-thức
-- **Chủ thầu** (người) ra design-language/spec (Contract + TIP) + VERIFY engine-checked. **Thợ** (agent ở env có data) wire vào pipeline, trả Completion Report. Có lúc Chủ thầu ủy Thợ author TIP ("proceed per proposal") — gate độc-lập + VERIFY vẫn là hai nhân-chứng.
-- Kỷ-luật: **only-trust-engine** (xác bằng chạy code, không bằng lời; khung-xem-ảnh không trả hình thì xác bằng DOM/đếm, KHÔNG tự-nhận đã thấy pixel) · **conflict → REPORT, không tự-quyết** · một-TIP-một-đợt, gates xanh mới qua đợt sau · **no-pipe khi đọc exit code** · cwd persist giữa Bash call (dùng `cd` tuyệt-đối).
+- **Chủ thầu** ra Contract/TIP có cổng; **Thợ** thực-thi → chạy gate fail-loud → commit → push → báo cáo; Chủ thầu **VERIFY độc-lập** ("chỉ tin engine").
+- Repo PUBLIC `github.com/nclamvn/usr-portal`. Build dir: `portal/`. Một lệnh: `./build_all.sh` (exit≠0 = chặn, idempotent-gated).
+- Luật nhà: zero-fabrication · KHÔNG em-dash · "Real-time Robotics" t thường · secret-scan trước push · commit kết `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`.
 
-## 2 · Bất-biến (non-negotiable, đứng vững P0→P2)
-- **Zero-fabrication**: chỉ render giá-trị thật; unverified/absent → null; KHÔNG bịa số/rotor/bài/từ-khoá. Kéo vào tận **JSON-LD** (search engine chỉ thấy số có nguồn).
-- **Honest-null hai-chiều**: null → "—"/dashed/pip-rỗng/bucket-riêng ở mọi mặt; site-null ⇔ render-null (auditor canh hai chiều). honest-null là showpiece, KHÔNG giấu.
-- **Bất-biến #10 — disputed giữ TẤT CẢ claim**, không lặng-lẽ chọn (vd Switchblade-300 mtow). Áp mọi type + cả company sourced + giữ NGOÀI structured data.
-- **Provenance là sản-phẩm**: mọi số truy URL nguồn + tier A/B/C. company sourced field = `{value,source,tier}` | `{disputed:[…]}` | honest-null; cấm value-trần-không-nguồn.
-- **Aggregate/phân-bố/index tính SỐNG** mỗi build (GLOBAL CONSTRAINT). **Một-nguồn-sự-thật** = `out/site-data.json`; mọi data-file phụ là **chiếu sống** của nó, KHÔNG nguồn thứ-hai (auditor *_DRIFT canh).
-- **E → D một chiều**: biên-tập tham-chiếu dữ-liệu; dữ-liệu KHÔNG BAO GIỜ phái-sinh từ claim bài viết.
-- **Gates + teeth fail-loud · idempotent** (mọi data-file build 2 lần = byte-identical, có gate).
+## 2 · Bất-biến (đứng vững P0→P3, không được phá)
+- **Zero-fabrication**: mọi số hoặc recompute-sống từ registry, hoặc dẫn nguồn + tier.
+- **honest-null hai chiều**: thiếu nguồn → để trống; ô trống ≠ "đã xác nhận không".
+- **disputed-keep-all** (invariant #10): nguồn lệch → giữ TẤT CẢ phiên-bản + xuất-xứ, không ép một số.
+- **figure-trace recompute-live**: số trong bài = giá-trị tính sống; registry đổi → gate bắt drift (`CONTENT_FIGURE_DRIFT`).
+- **một-chiều E→D**: registry nuôi mọi bề-mặt; bài tham-chiếu dữ-liệu, dữ-liệu không suy từ bài.
+- **provenance ảnh = sổ-license** (không phải rào): mọi ảnh hiển-thị có credit + `license_status`.
 
-## 3 · Kiến-trúc dữ-liệu (schema/2 đa-thực-thể, một chiều)
-`wave2b/code/.../master_registry.json` (302 UAV, nguồn registry — seeds NGOÀI repo portal) → `build_site_data.py` →
-**`out/site-data.json`** (`schema:"site-data/2"`, **một-nguồn-sự-thật**):
-- `entities[]` = **302 uav + 140 company** (discriminator `entity_type`). Company **derived-first**: promote từ manufacturer, rollup SỐNG (uav_count/country/segment mix/Blue/NDAA) + sourced-attrs (4/140 có nguồn, còn lại honest-null).
-- `canon.py` = single-source **alias-map** (Anduril←Anduril Industries; IAI←Israel Aerospace Industries; Boeing/Insitu KHÔNG gộp) + **country normalize** EN ({US,USA}→United States; {UK,United Kingdom}→United Kingdom).
-- aggregates UAV-scoped (headline "302" bất-biến). `frame_glyph` derived. `company_slug`/re-point qua canon.
-
-Các data-file phụ (đều chiếu sống, sorted+idempotent, có auditor riêng):
-`out/graph.json` (494 node/882 edge) · `out/search-index.json` (483) · `out/compare-data.json` (302) · `out/data-overview.json` · `sitemap.xml` (494 url).
+## 3 · Kiến-trúc dữ-liệu (schema/2, cell có provenance)
+- **`out/master_registry.json`** (schema 1.1.0, git-tracked, build đọc chỉ-đọc): **302 variant / 291 family**. Mỗi thuộc-tính = cell:
+  `{value, status(verified|derived|disputed|unverified|None), confidence, sources:[{url,tier,retrieved,claimed_value}], last_verified, inherited_from}`.
+- **`out/site-data.json`**: phóng-chiếu sống (entities + aggregates) → 302 uav, 140 company.
+- Tier nguồn: **A** chính-chủ · **B** thứ-cấp đối-chiếu · **C** tổng-hợp · **derived** suy nội-bộ.
+- Kho khác: `content/lae-registry.json` (50 entity LAE) · `news-cards.json` (48) · `newsroom/*.md` (54) · `articles.json` (7) · `glossary.json` (5) · `media.json` (52 asset) + `out/media-ledger.json` (93 ảnh).
 
 ## 4 · Design language
-- `base/portal-in-action.html` = design-system-of-record (app shell). `base/newsroom-specimen.html` = News/Analysis idiom.
-- Token canonical `base/design-system.css`; alias `--serif/--sans/--mono/--card/--wm/--maxw`. `.tg`(facet=`[aria-pressed]`); `.ghost` chỉ dark; cream-figure=`.statfig`; `.crumb` = global nav.
-- **`nav.py`** = breadcrumb dùng chung MỌI trang: **USR · Reference · Search · Compare · Data** (USR→home), depth-aware (`../`). Hết ngõ-cụt.
-- Component-CSS đặt trong từng builder (DETAIL_CSS/COMPANY_CSS/TAX_CSS/COMPARE_CSS/SEARCH_CSS/DATA_CSS). **Class collision cảnh-báo**: `.spec`/`.rail` từng đụng newsroom — đã rename `.smpl`/`.trk`; build_bundle có teeth chặn tái-diễn.
+- Editorial-industrial: cream/dark, serif (Source Serif 4) + mono (IBM Plex) + brass `#9B6B1C` chỉ cho ACTIVE; hairline; reg-frame góc brass.
+- Width token `--w-wide 1180` / `--w-read 760` (không raw px). `data-lang` = `vn`/`en` (KHÔNG `vi`). Theme + i18n toggle khoá ở header byte-identical.
+- Register "instrument/cockpit" (Monitor) đã lan sang **Compare** (bảng điều khiển khoang) + **Knowledge** (lưới card) + **Data** (showcase).
 
-## 5 · Surfaces & pipeline (`build_all.sh` — fail-loud, idempotent-gated)
-**Surfaces** (phục-vụ `python3 -m http.server 8011 --bind 127.0.0.1`):
-`index` · `reference` · `search` · `compare` · `data` · `bundle` (một-file offline) · `entity/`×302 · `company/`×140 · `country/`×28 · `segment/`×13 · `news/`×5 · `analysis/`×1 · `sitemap.xml`.
-**Builder**: build_site_data · build_reference · build_detail · build_company · build_taxonomy · build_news · build_analysis · build_index · build_compare · build_search · build_data · build_sitemap · build_bundle.
-**Auditor độc-lập + teeth** (mỗi cái tự-bơm-restore, fail-loud exit 2):
-verify_site_data (honest-null 2 chiều · #10 · company rollup-two-way/sourced-shape · ALIAS_ORPHAN · frame_glyph no-leak · spec_range live · `teeth_p0`+`teeth_p11`) · verify_graph (DANGLING/STALE · `teeth_p02`) · verify_taxonomy (bijection · `teeth_p14`) · verify_compare (DRIFT · `teeth_p13`) · verify_search (DRIFT/ORPHAN/MISSING · `teeth_p21`) · verify_data (OVERVIEW_DRIFT/SUM + honest-null 2 chiều · `teeth_p23`) · verify_seo (SEO_FABRICATED + sitemap bijection · `teeth_p22`) · verify_content · check_i18n (en==vn) · audit_headless.js (Chrome CDP, overlap=0 mọi surface + perf + teeth).
+## 5 · Surfaces & pipeline (`build_all.sh`, ~40 cổng + teeth)
+- **Top**: index · reference · search (→ hộp tìm trên header) · compare · data · knowledge · review · news · monitor · bundle.
+- **Dir**: entity/302 · company/140 · country/28 · segment/13 · news/59 · analysis/2 · knowledge/5 · **news-card/49** (48 card + index liệt-kê).
+- Builders **20** · verify **21** · teeth **21**. Headless audit (Chrome CDP): overlap=0 + THEME_PURITY mọi trang × theme × lang. Idempotent (sha khớp 2 lần).
 
-## 6 · Phase đã đóng
-- **P0 Móng** (`f315765` P0.1 · `b947ac8` P0.2): schema/1→/2 đa-thực-thể + discriminator (render byte-bất-biến, teeth chứng) · bất-biến #10 · `crosslink.py` graph + dangling-gate.
-- **P1 Khung D** (đóng đủ): P1.1 Company derived-first 140 (`e858988`) · P1.2 sourced loader + alias + country-normalize + **4 golden record** DJI/Autel/AeroVironment/RtR (`61cc787`/`00a3f15`/`abcc3b3`) · P1.4 Taxonomy 28+13 bijection (`63dddf2`) · P1.3 Compare 2–4 (`c591905`).
-- **P2 Lưu-thông** (đóng đủ): P2.1 Search đa-loại 483 (`d1ad2a1`) · P2.3 Data overview /data live (`f3c4f56`) · P2.2 SEO/JSON-LD/sitemap (`57035f2`).
-- **UX polish**: header reference (bỏ raw "None"→honest-null) · global nav breadcrumb (`a331a45`) · Compare gợi-ý-khi-mở (`e6a2209`).
-- *(Lịch-sử P01–P04 visual staging + data-growth 200→302 nằm trong commit cũ; vẫn còn hiệu-lực: glyph map D-1, micro-track log D-2, coverage matrix, rows=light-index/track=DETAIL.)*
+## 6 · Đã đóng từ P2 → nay
+1. **P3 biên-tập**: 13 bài gốc dày (Thợ viết, grounded) — cả hai provenance: recompute-sống (data-report registry) + sourced-fact (explainer/data-note cào nguồn). Sạch Sổ tay (0 em-dash, lead ≤40).
+2. **Tin nhanh (dòng A)**: 48 card aggregation (9/9 lĩnh-vực), trang đọc in-site + trang liệt-kê, gate `verify_aggregation` (8 răng, gồm AGG_NO_EMDASH).
+3. **Media-staging (TIP-NEWS-VISUAL)**: `license_status` (owned|cc|licensed|pending) + `build_media_ledger.py` → `out/media-ledger.json` (cầu sang đội license). **Hybrid**: ảnh `pending` GIỮ hotlink (không copy bản-sao chưa-phép vào repo public), chỉ ledger.
+4. **Ảnh trang chủ**: 28 ảnh CC/CC0/PD distinct, **mỗi card một ảnh riêng + ĐÚNG thực-thể** (sửa lỗi Kerala-Police-gắn-Viettel → relevance-first), card không ảnh → **sinh SVG data-figure**.
+5. **Re-skin**: Compare console reg-frame + rack 4 khoang + lưới card glyph; Knowledge lưới card + readout sống; **Data showcase** "Tình hình bản đăng ký UAV" + Section 06 **Phổ năng-lực** (min→max envelope).
+6. **Sprint chiều-sâu spec (lô 1-6)**: **~90 ô tier-A** trên ~31 UAV (DJI/Autel/AeroVironment/Skydio/Freefly/Wingcopter/Shield AI/General Atomics/AgEagle…). Gap-fill 0 đè + skip disputed.
+7. **Gate hardening**: `verify_data` thêm drift-check `spec_range`; `verify_newsroom` `CONTENT_FIGURE_DRIFT` đổi sang **khớp ranh-giới-số** (hết lọt substring "6" trong "267").
+8. **DEPLOY LIVE**: Vercel `usr-portal.vercel.app`, **auto-deploy khi push `main`**, canonical khớp `seo.py BASE`.
 
-## 7 · Commits (nhánh `main`, tree sạch — **HEAD `57035f2`, tổng 35 commit**)
-P0→P2 (mới→cũ): `57035f2`(P2.2) · `f3c4f56`(P2.3) · `e6a2209`(compare-gợi-ý) · `a331a45`(nav) · `6a5c53c`(reference-header) · `d1ad2a1`(P2.1) · `c591905`(P1.3) · `63dddf2`(P1.4) · `abcc3b3`+`00a3f15`+`61cc787`(P1.2) · `e858988`(P1.1) · `b947ac8`(P0.2) · `f315765`(P0.1). Trước đó: data-growth 200→302 + visual P01–P04 (xem `git log`).
+## 7 · Số liệu hiện-trạng (snapshot, sống)
+- Registry: **302 UAV · 140 hãng · 28 nước · 13 phân-khúc** · độ-phủ spec **31%**.
+- Nguồn: **1.857 tier-A · 439 B · 638 C · 267 derived**. Trạng-thái ô: **2.917 verified · 6 disputed (giữ cả) · 37 unverified · 267 derived**.
+- Phổ năng-lực: MTOW 0,073→25.000 kg · range 3,2→13.700 km · endurance 4→3.600 phút · trần 457→15.240 m.
+- Media-ledger: **93 ảnh — 66 cc · 12 owned · 15 pending** (sổ `to_license` cho đội license).
+- Nội-dung: 54 bài newsroom · 48 card · 50 entity LAE · 7 bài analysis · 5 thuật-ngữ.
 
-## 8 · Deliverables @ `portal/`
-- **Web** (15 loại surface, xem §5) + `sitemap.xml`. **Gửi đội**: `bundle.html` (offline 302) · `uav-300.xlsx`.
-- **Data-file sống** (out/): site-data · graph · search-index · compare-data · data-overview (+ sitemap.xml ở root).
-- **Code**: ~13 `build_*` · ~10 `verify_*`/`teeth_*` · `canon.py`/`nav.py`/`seo.py`/`glyphs.py` · `base/` (css/js: base/compare/search) · `content/` (companies.json + company_aliases.json = golden record; articles.json/glossary.json = editorial sample).
+## 8 · Commits gần nhất (HEAD `0a645ac`, tổng 99)
+`0a645ac` data showcase (Phổ năng-lực) · `2d8ec25`..`cb0126a` registry lô 3-6 · `71e4c1a` fix gate word-boundary ·
+`67e71b8` FIX phục-hồi disputed Skydio X10 · `2bf2d96` registry lô 1-2 · `d432e6c` SVG figure card · `1bf5b80`/`4d4283b`/`83cd47d` media ảnh distinct+relevance · `4bb7083`/`0c2d8cb`/`dd44d4b` newsroom mẻ2 + media stage · `763cebf`/`24d2caa` re-skin Knowledge/Compare.
 
-## 9 · Nội-dung biên-tập & P3 (chế-độ E — phase kế)
-News/Analysis hiện = **vỏ + 1 analysis + 5 news seed** (`sample:true` → banner mẫu; figure THẬT từ registry, văn xuôi mẫu). **P3 Editorial** dựng được *vỏ* (template News/Knowledge/Review + linter Quy-tắc biên-tập + auditor) nhưng **bài thật do người viết** — Chủ nhà/đội là nguồn. **Nút thắt KHÔNG kỹ-thuật**: cần **kế-hoạch content** (bao nhiêu bài, ai viết, chủ-đề) trước khi mở P3. KHÔNG bịa nội-dung để "đủ trang". Xem [[newsroom-pillar]] [[blueprint-usr]].
+## 9 · Deliverables ngoài-repo
+- **`../USR-BaoCao-DuLieu-CauTruc-TieuChuan.pdf`** — báo-cáo team (4 trang: tài-nguyên/cấu-trúc/tiêu-chuẩn + snapshot). Sinh tự-động từ dữ-liệu sống. Nằm ngoài repo → không deploy.
+- Manifests cào: `../registry-spec-enrich-batch{1..6}.json` (audit-trail lô spec). `../news-cards-batch*.seed.json` (seed tin).
 
-## 10 · Push & domain (việc Chủ nhà)
-- **CHƯA push** (no upstream). 35 commit local. Đẩy: cần PAT (Thợ không cầm token):
-  `git push -u https://PAT@github.com/nclamvn/usr-portal.git main`
-- **`seo.py BASE = "https://nclamvn.github.io/usr-portal"`** = đoán (Pages mặc-định; KHÔNG có CNAME). Chủ nhà sở-hữu `rtrobotics.com` → có thể muốn custom domain (vd `usr.rtrobotics.com`). Trước khi public: xác-nhận domain → đổi `BASE` + thêm `CNAME` (1 commit). Gate độc-lập domain nên không chặn build.
+## 10 · Mở — chờ Chủ thầu/Chủ nhà quyết
+- **Skydio X10 endurance** (40 vs 65, disputed): có value 40 tier-A (skydio.com) CÓ THỂ resolve — Thợ KHÔNG tự gộp, chờ quyết.
+- **DJI fetch bị block** (timeout 60s, JS nặng) → pool DJI ~40 mẫu gap đang khoá. Cần: Chủ thầu cào DJI rồi Thợ wire, hoặc tiếp đa-hãng (yield khá).
+- **15 ảnh pending** (báo bên thứ ba, bài `lae-vn-*`/`lae-tg-*`) đang hiển-thị công-khai qua CDN nguồn → đội license mua phép rồi lật `pending→licensed` (`fetch_media.py` dựng đúng ca đó, chưa build vì chưa có license đầu-tiên).
+- **Refinery** (`usr-refinery`, private): 4 commit chờ scope `repo` cho token để push (việc Chủ nhà, Thợ không xử token).
+- Lane kế gợi-ý: lô 7 spec · làm-sắc compare/filter (nốt nhịp showcase) · mẻ nội-dung tiếp.
 
-## 11 · Mở (chờ Chủ thầu/Chủ nhà)
-- Nét/độ-đậm trên cream+dark = **mắt Chủ thầu** (engine chỉ xác cấu-trúc/overlap). · Push + BASE domain (§10). · Kế-hoạch content P3 (§9). · Sourcing batch hãng (General Atomics/Baykar/IAI/CASC/HESA + mẩu RtR còn) → nạp `content/companies.json` commit nhỏ.
+## 11 · Verify lại (bất-kỳ lúc nào)
+```
+cd portal && ./build_all.sh           # exit 0 = mọi cổng + teeth + headless audit xanh
+git rev-parse --short HEAD            # 0a645ac
+curl -s -o /dev/null -w "%{http_code}" https://usr-portal.vercel.app/   # 200
+```
 
-## 12 · Verify lại (bất-kỳ lúc nào)
-`cd portal && ./build_all.sh` → exit 0 + "build_all: OK" (mọi gate + teeth + idempotent + headless overlap=0). Teeth có thật, vd: sửa một cột `out/data-overview.json` → `verify_data.py` exit 2; tamper JSON-LD value → `verify_seo.py` exit 2; khôi-phục bằng chạy lại builder.
-
-## 13 · Bất-biến tuyệt-đối khi sửa tiếp
-KHÔNG bịa (kể cả JSON-LD/từ-khoá) · KHÔNG hardcode aggregate/phân-bố/min-max/coverage/index · KHÔNG đẻ nguồn-dữ-liệu thứ-hai (mọi data-file chiếu site-data) · KHÔNG đổi dataset ở lớp trình-bày · KHÔNG redefine token canonical / token mới · KHÔNG tự gộp cụm country/company mơ-hồ (FLAG → Chủ thầu rule) · giữ static-gen + gates + teeth + idempotent + nav-mọi-trang · conflict với quyết-định cũ (index≠detail · E→D · derived-first · honest-null-visible) → REPORT, không tự-quyết. Xem [[portal-design-ethos]] [[blueprint-usr]].
+## 12 · Bất-biến tuyệt-đối khi sửa tiếp
+Không bịa số · không đè ô disputed (skip status=disputed khi gap-fill) · không copy ảnh chưa-phép vào repo public ·
+mọi figure trong bài phải recompute-khớp (sửa registry → re-sync prose) · giữ header byte-identical + THEME_PURITY ·
+chạy `build_all` xanh + secret-scan trước mỗi push (push = auto-deploy production).
