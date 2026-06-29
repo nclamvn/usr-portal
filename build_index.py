@@ -346,8 +346,8 @@ CSS = """
   /* topbar + ticker (thin, theme-token; <120px tall so THEME_PURITY-exempt, but kept light) */
   /* topbar = full-width bar (border edge-to-edge like .gbar); inner content aligned to the 1180 column */
   .topbar{border-bottom:1px solid var(--hair)}
-  .topbar-in{max-width:var(--w-wide);margin:0 auto;display:flex;align-items:center;gap:18px;
-    padding:8px 1.4rem;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+  .topbar-in{margin:0 auto;display:flex;align-items:center;gap:18px;
+    padding:8px 1.8rem;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
   .topbar .tag{color:var(--brass);font-weight:600;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
   .livedot{width:6px;height:6px;border-radius:50%;background:var(--brass);animation:hp-blink 1.6s ease-in-out infinite}
   .ticker-wrap{overflow:hidden;flex:1;white-space:nowrap}
@@ -358,9 +358,9 @@ CSS = """
   @keyframes hp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
   @keyframes hp-blink{0%,100%{opacity:1}50%{opacity:.25}}
   /* masthead — VUIP lead, USR publisher; .hp-mast (NOT .masthead — avoids design-system card frame).
-     full-width bar, content aligned to the 1180 column like the header. */
+     FULL-WIDTH bar + full-width content (edge 1.8rem), matching the header. */
   .hp-mast{border-bottom:2px solid var(--ink)}
-  .hp-mast-in{max-width:var(--w-wide);margin:0 auto;padding:26px 1.4rem 20px;
+  .hp-mast-in{margin:0 auto;padding:26px 1.8rem 20px;
     display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
   .mh-sub{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:8px}
   .hp-mast h1{font-family:var(--font-head);font-weight:600;font-size:clamp(30px,4.4vw,52px);line-height:1.0;letter-spacing:-.02em;margin:0;color:var(--ink)}
