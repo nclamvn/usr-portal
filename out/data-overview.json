@@ -70,20 +70,20 @@
   "coverage": [
     {
       "key": "mtow_kg",
-      "pct": 62,
-      "present": 186,
+      "pct": 63,
+      "present": 190,
       "total": 302
     },
     {
       "key": "max_payload_kg",
-      "pct": 43,
-      "present": 130,
+      "pct": 44,
+      "present": 133,
       "total": 302
     },
     {
       "key": "endurance_min",
-      "pct": 58,
-      "present": 175,
+      "pct": 59,
+      "present": 178,
       "total": 302
     },
     {
@@ -94,20 +94,20 @@
     },
     {
       "key": "max_link_km",
-      "pct": 21,
-      "present": 63,
+      "pct": 22,
+      "present": 66,
       "total": 302
     },
     {
       "key": "max_speed_ms",
-      "pct": 51,
-      "present": 154,
+      "pct": 53,
+      "present": 160,
       "total": 302
     },
     {
       "key": "service_ceiling_m",
-      "pct": 29,
-      "present": 88,
+      "pct": 31,
+      "present": 93,
       "total": 302
     },
     {

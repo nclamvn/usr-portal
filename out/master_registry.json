@@ -34161,6 +34161,22 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 16,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mini-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 16,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -34256,6 +34272,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.724,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/air-3s/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 0.724,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 21,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/air-3s/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 21,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 20,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/air-3s/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 20,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -34372,6 +34436,70 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.958,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-3-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 0.958,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 21,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-3-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 21,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 43,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-3-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 43,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-3-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6000,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -34600,6 +34728,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 40,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://ag.dji.com/t50/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 40,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -40703,6 +40847,22 @@
           ],
           "last_verified": "2026-06-29",
           "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/inspire-3/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 7000,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -40927,6 +41087,102 @@
           ],
           "last_verified": "2026-06-22",
           "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.219,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.219,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 21,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 21,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 49,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 49,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 25,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6000,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 0.2,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-4-series/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 0.2,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
         }
       }
     },
@@ -40998,6 +41254,86 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 1.063,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.063,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 25,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 51,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 51,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 30,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 30,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/mavic-4-pro/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 6000,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -47125,6 +47461,38 @@
             }
           ],
           "last_verified": "2026-06-23",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 25,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-400/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 25,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/matrice-400/specs",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 7000,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }
@@ -61989,6 +62357,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_payload_kg": {
+          "value": 1.8,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.avinc.com/uas/puma-3-ae",
+              "tier": "A",
+              "retrieved": "2026-06-29",
+              "claimed_value": 1.8,
+              "note": "manufacturer spec (enrich lô4)"
+            }
+          ],
+          "last_verified": "2026-06-29",
           "inherited_from": null
         }
       }

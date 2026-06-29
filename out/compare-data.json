@@ -65,7 +65,7 @@
     },
     "max_payload_kg": {
       "max": 6800,
-      "min": 0.27
+      "min": 0.2
     },
     "max_range_km": {
       "max": 13700,
@@ -518,8 +518,8 @@
           "v": null
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.8
         },
         "max_range_km": {
           "tier": "A",
@@ -3647,8 +3647,8 @@
           "v": 2
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 40
         },
         "max_range_km": {
           "tier": null,
@@ -3807,8 +3807,8 @@
           "v": 45
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 20
         },
         "max_payload_kg": {
           "tier": null,
@@ -3819,12 +3819,12 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 21
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 0.724
         },
         "service_ceiling_m": {
           "tier": null,
@@ -4114,8 +4114,8 @@
           "v": 4.31
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 7000
         }
       }
     },
@@ -4229,16 +4229,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 25
         },
         "mtow_kg": {
           "tier": "A",
           "v": 9.74
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 7000
         }
       }
     },
@@ -4295,32 +4295,32 @@
       "slug": "uav-dji-matrice-4e-matrice-4e",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 49
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 25
         },
         "max_payload_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 0.2
         },
         "max_range_km": {
           "tier": null,
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 21
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.219
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6000
         }
       }
     },
@@ -4541,8 +4541,8 @@
       "slug": "uav-dji-mavic-3-pro-mavic-3-pro",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 43
         },
         "max_link_km": {
           "tier": "A",
@@ -4557,16 +4557,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 21
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 0.958
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6000
         }
       }
     },
@@ -4623,12 +4623,12 @@
       "slug": "uav-dji-mavic-4-pro-mavic-4-pro",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 51
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 30
         },
         "max_payload_kg": {
           "tier": null,
@@ -4639,16 +4639,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 25
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.063
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6000
         }
       }
     },
@@ -4803,8 +4803,8 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 16
         },
         "mtow_kg": {
           "tier": "A",

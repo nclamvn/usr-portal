@@ -2,14 +2,14 @@
   "aggregates": {
     "entity_count": 302,
     "field_status_counts": {
-      "None": 2865,
+      "None": 2841,
       "derived": 267,
       "disputed": 6,
       "unverified": 37,
-      "verified": 2865
+      "verified": 2889
     },
     "source_tier_counts": {
-      "A": 1805,
+      "A": 1829,
       "B": 439,
       "C": 638,
       "derived": 267
@@ -24,7 +24,7 @@
         "total": 302
       },
       "endurance_min": {
-        "present": 175,
+        "present": 178,
         "total": 302
       },
       "gps_denied_capable": {
@@ -32,11 +32,11 @@
         "total": 302
       },
       "max_link_km": {
-        "present": 63,
+        "present": 66,
         "total": 302
       },
       "max_payload_kg": {
-        "present": 130,
+        "present": 133,
         "total": 302
       },
       "max_range_km": {
@@ -44,11 +44,11 @@
         "total": 302
       },
       "max_speed_ms": {
-        "present": 154,
+        "present": 160,
         "total": 302
       },
       "mtow_kg": {
-        "present": 186,
+        "present": 190,
         "total": 302
       },
       "ndaa_compliant": {
@@ -56,7 +56,7 @@
         "total": 302
       },
       "service_ceiling_m": {
-        "present": 88,
+        "present": 93,
         "total": 302
       }
     },
@@ -71,7 +71,7 @@
       },
       "max_payload_kg": {
         "max": 6800,
-        "min": 0.27
+        "min": 0.2
       },
       "max_range_km": {
         "max": 13700,
@@ -1932,10 +1932,17 @@
         "value": null
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.avinc.com/uas/puma-3-ae"
+          }
+        ],
+        "status": "verified",
+        "value": 1.8
       },
       "max_range_km": {
         "confidence": "high",
@@ -17058,10 +17065,17 @@
         "value": 2
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://ag.dji.com/t50/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 40
       },
       "max_range_km": {
         "confidence": null,
@@ -17844,10 +17858,17 @@
         "value": "consumer"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/air-3s/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 20
       },
       "max_payload_kg": {
         "confidence": null,
@@ -17862,16 +17883,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/air-3s/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 21
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/air-3s/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 0.724
       },
       "name": {
         "confidence": "high",
@@ -19293,10 +19328,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/inspire-3/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 7000
       },
       "slug": "uav-dji-inspire-3-inspire-3",
       "variant": {
@@ -19870,10 +19912,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-400/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 25
       },
       "mtow_kg": {
         "confidence": "high",
@@ -19915,10 +19964,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-400/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 7000
       },
       "slug": "uav-dji-matrice-400-matrice-400",
       "variant": {
@@ -20140,10 +20196,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 49
       },
       "entity_type": "uav",
       "family": {
@@ -20220,16 +20283,30 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 25
       },
       "max_payload_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 0.2
       },
       "max_range_km": {
         "confidence": null,
@@ -20238,16 +20315,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 21
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 1.219
       },
       "name": {
         "confidence": "high",
@@ -20276,10 +20367,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/matrice-4-series/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
       },
       "slug": "uav-dji-matrice-4e-matrice-4e",
       "variant": {
@@ -21447,10 +21545,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-3-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 43
       },
       "entity_type": "uav",
       "family": {
@@ -21552,16 +21657,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-3-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 21
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-3-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 0.958
       },
       "name": {
         "confidence": "high",
@@ -21590,10 +21709,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-3-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
       },
       "slug": "uav-dji-mavic-3-pro-mavic-3-pro",
       "variant": {
@@ -21815,10 +21941,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 51
       },
       "entity_type": "uav",
       "family": {
@@ -21895,10 +22028,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 30
       },
       "max_payload_kg": {
         "confidence": null,
@@ -21913,16 +22053,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 25
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 1.063
       },
       "name": {
         "confidence": "high",
@@ -21951,10 +22105,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mavic-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
       },
       "slug": "uav-dji-mavic-4-pro-mavic-4-pro",
       "variant": {
@@ -22719,10 +22880,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-06-29",
+            "tier": "A",
+            "url": "https://www.dji.com/mini-4-pro/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 16
       },
       "mtow_kg": {
         "confidence": "high",
@@ -65350,5 +65518,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "9bd33cadc2f7f250ba92109675660db9fb8392211cb627dd721585677ccd98a4"
+  "source_registry_sha256": "2d01696712445bfbacb3f2d4c4b26453f92b260099c3da220b570873b39e3cb3"
 }
