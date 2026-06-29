@@ -17,10 +17,11 @@ def header(prefix="", current=None):
     """prefix: "" for root pages, "../" for subdir pages. current: nav key of the active page."""
     home = f"{prefix}index.html"
     return (
+        # TWO-TIER header (TIP-UX1.2): top row = wordmark + search + toggles; a hairline rule;
+        # then a second row carrying the nav, sitting BELOW that rule.
         '<header class="gbar"><div class="gbar-in">'
         f'<a class="gbar-wm" href="{home}" aria-label="Drone Review, home">'
         f'<img class="brandmark" src="{prefix}base/brand-shield.png" alt="Drone Review" width="34" height="34"></a>'
-        f'{nav(prefix, current)}'
         f'<form class="gbar-search" role="search" method="get" action="{prefix}search.html">'
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
         'stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle>'
@@ -33,7 +34,9 @@ def header(prefix="", current=None):
         '<button id="theme" class="gbar-tg" aria-label="Theme">'
         '<span class="th-l"><span data-lang-en>Light</span><span data-lang-vn>Sáng</span></span>'
         '<span class="th-d"><span data-lang-en>Dark</span><span data-lang-vn>Tối</span></span></button>'
-        '</div></div></header>'
+        '</div></div>'
+        f'<div class="gbar-nav-row">{nav(prefix, current)}</div>'
+        '</header>'
     )
 
 

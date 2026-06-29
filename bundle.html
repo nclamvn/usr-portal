@@ -342,11 +342,13 @@ small, .small { font-size: .82rem; }
 .pgnav .ar { width: 15px; height: 15px; display: block; } .pgnav-prev .ar { transform: scaleX(-1); }
 .pgnav:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
 @media (max-width: 1280px) { .pgnav { display: none; } }   /* hide where edges would collide with header content */
-.gbar-in { margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.8rem; }  /* full-width header bar (wider than the 1180 body column) */
+.gbar-in { margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.8rem; border-bottom: 1px solid var(--hair); }  /* full-width top row; hairline rule under it */
+.gbar-nav-row { display: flex; align-items: center; min-height: 42px; padding: 0 1.8rem; }  /* second tier: nav sits below the rule */
+.gbar-nav-row .crumb { flex: 1 1 auto; }
 .gbar-wm { flex: 0 0 auto; display: inline-flex; align-items: center; line-height: 0; }
 .gbar-wm .brandmark { height: 47.5px; width: auto; display: block; }  /* 125% of 38px */
 :root[data-theme="dark"] .gbar-wm .brandmark { filter: invert(1); }  /* black art -> white on dark */
-.gbar-in .crumb { flex: 1 1 auto; }
+.gbar-search { margin-left: auto; }  /* nav left this row -> push search + toggles to the right edge */
 .gbar-ctl { flex: 0 0 auto; display: flex; gap: .5rem; }
 .gbar-tg { background: transparent; color: var(--ink-soft); border: 1px solid var(--hair-strong); border-radius: 999px; height: 30px; padding: 0 .7rem; font-family: var(--font-mono); font-size: .72rem; cursor: pointer; }
 .gbar-tg:hover { border-color: var(--brass-bright); color: var(--ink); }
