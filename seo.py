@@ -41,7 +41,7 @@ def meta(title, desc, path, image=None):
             f'<meta property="og:description" content="{d}">'
             f'<meta property="og:type" content="website">'
             f'<meta property="og:url" content="{url}">'
-            f'<meta property="og:site_name" content="Uncrewed Systems Review">'
+            f'<meta property="og:site_name" content="Vietnam UAV Intelligence Platform">'
             f'<meta property="og:image" content="{img}">'
             f'<meta name="twitter:card" content="summary_large_image">'
             f'<meta name="twitter:title" content="{title}">'
@@ -56,8 +56,9 @@ def website_ld():
     (name/url/logo), no registry numbers, so verify_seo (SEO_FABRICATED) passes."""
     org = {"@context": "https://schema.org", "@type": "Organization", "name": "Uncrewed Systems Review",
            "url": BASE, "logo": BASE + "/images/content/rtr/hera-studio-black.webp"}
-    web = {"@context": "https://schema.org", "@type": "WebSite", "name": "Uncrewed Systems Review",
-           "url": BASE, "description": "A sourced, comparable registry of uncrewed aerial systems."}
+    web = {"@context": "https://schema.org", "@type": "WebSite", "name": "Vietnam UAV Intelligence Platform",
+           "url": BASE, "publisher": {"@type": "Organization", "name": "Uncrewed Systems Review"},
+           "description": "A sourced, comparable registry of uncrewed aerial systems."}
     return _ld(org) + _ld(web)
 
 

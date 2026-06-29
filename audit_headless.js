@@ -180,28 +180,25 @@ async function main() {
     // (field + lead headline + a field-file card linking to a real detail page).
     await send("Page.navigate", { url: BASE + "/index.html" });
     await sleep(800);
-    // HERO is now the live featured rotator (TIP-HERO-LIVE): the manifesto slide keeps .lead-h; the
-    // article slides carry source+tier figures; a CTA leads into the registry. Only one slide is in
-    // layout at rest (display:none others) — the overlap sweep above already proves that holds.
+    // HERO is the team-layout 1+3 grid (TIP-HOMEPAGE): one main story (link into /news) + three side
+    // stories, all binding REAL slugs (verify_homepage HP_DANGLING proves they resolve). The masthead
+    // leads "Vietnam UAV Intelligence Platform" (brand-lead) with the live stats trio.
     const hero = await evalOnPage(send, `(() => {
-      var slides = Array.prototype.slice.call(document.querySelectorAll('.lhero .lhero-slide'));
-      var manifesto = slides.filter(s => s.getAttribute('data-kind') === 'manifesto');
-      var news = slides.filter(s => s.getAttribute('data-kind') !== 'manifesto');
-      // every NEWS slide must carry a source+tier AND a visual that is data-from-registry OR a
-      // media.json-tracked photo (rtr_owned/open_licensed, gated by verify_media — never a borrowed image)
-      var newsSourced = news.filter(s => s.querySelector('.tier') && (s.querySelector('.nf-svg, svg') || s.querySelector('.lhero-photo'))).length;
-      var inLayout = slides.filter(s => s.getBoundingClientRect().height > 0).length;
-      return { lhero: !!document.querySelector('.lhero'), lead: !!document.querySelector('.lhero .lead-h'),
-               slides: slides.length, manifesto: manifesto.length, news: news.length, newsSourced: newsSourced,
-               inLayout: inLayout, cta: !!document.querySelector('.lhero-foot[href="reference.html"]') };
+      var main = document.querySelector('.hero-grid .hero-main');
+      var side = Array.prototype.slice.call(document.querySelectorAll('.hero-side .side-story'));
+      var mainHref = main ? (main.getAttribute('href') || '') : '';
+      return { grid: !!document.querySelector('.hero-grid'),
+               mainNews: /^news\\//.test(mainHref),
+               side: side.length,
+               sideNews: side.filter(a => /^news\\//.test(a.getAttribute('href') || '')).length,
+               masthead: /Vietnam UAV/.test((document.querySelector('.masthead h1') || {}).textContent || ''),
+               ticker: !!document.querySelector('.topbar .ticker') };
     })()`);
-    // tight NEWSROOM_SOURCED-on-hero: exactly one manifesto, and EVERY news slide is sourced (a news
-    // slide that drops its source is caught — not masked by a loose >=2 count).
-    const heroOk = hero.lhero && hero.lead && hero.slides >= 3 && hero.manifesto === 1 &&
-      hero.news >= 2 && hero.newsSourced === hero.news && hero.cta && hero.inLayout === 1;
+    const heroOk = hero.grid && hero.mainNews && hero.side === 3 && hero.sideNews === 3 &&
+      hero.masthead && hero.ticker;
     if (!heroOk) failures++;
-    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  rotator=${hero.lhero}  manifesto=${hero.manifesto}  ` +
-      `news=${hero.news}  news-sourced=${hero.newsSourced}  in-layout-at-rest=${hero.inLayout}  cta=${hero.cta}`);
+    console.log(`  ${heroOk ? "PASS" : "FAIL"}  /index.html  [hero]  grid=${hero.grid}  main-news=${hero.mainNews}  ` +
+      `side=${hero.side}/${hero.sideNews}  masthead=${hero.masthead}  ticker=${hero.ticker}`);
 
     // FILTERED state on reference.html — functional + perf + honest-null gate.
     await send("Page.navigate", { url: BASE + "/reference.html" });
@@ -435,19 +432,25 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  newsroom feed: " + e.message); }
 
-    // HOMEPAGE newsroom block (TIP-NEWSROOM.1 STEP 2) — the compact editorial frame replaced the old
-    // card-grid: assert .nfeed-mini present with a sourced lead figure, and ZERO legacy .nr-card.
+    // HOMEPAGE news blocks (TIP-HOMEPAGE) — TREND/01 + HOT/04 bind real /news slugs; the legacy
+    // rotator/card-grid are gone. Assert trending (5) + hotnews rows link news, and 0 legacy nodes.
     try {
       await send("Page.navigate", { url: BASE + "/index.html" });
       await sleep(800);
       const h = await evalOnPage(send, `(function(){
-        var mini=document.querySelector('.nfeed-mini');
-        return {mini:!!mini, leadFig:!!(mini&&(mini.querySelector('.nf-svg')||mini.querySelector('.nf-lead-photo'))&&mini.querySelector('.tier')),
-                oldCards:document.querySelectorAll('.nr-card').length};
+        var trend=Array.prototype.slice.call(document.querySelectorAll('.trending .trend-card'));
+        var hot=Array.prototype.slice.call(document.querySelectorAll('.hotnews .hot-row'));
+        var rep=Array.prototype.slice.call(document.querySelectorAll('.reports .report-card'));
+        var newsHref=function(a){return /^news\\//.test(a.getAttribute('href')||'');};
+        return {trend:trend.length, trendNews:trend.filter(newsHref).length,
+                hot:hot.length, hotNews:hot.filter(newsHref).length, reports:rep.length,
+                legacy:document.querySelectorAll('.lhero, .nfeed-mini, .nr-card').length};
       })()`);
-      const ok = h.mini && h.leadFig && h.oldCards === 0;
+      const ok = h.trend === 5 && h.trendNews === 5 && h.hot >= 1 && h.hotNews === h.hot &&
+        h.reports === 4 && h.legacy === 0;
       if (!ok) failures++;
-      console.log(`  ${ok ? "PASS" : "FAIL"}  /index.html  [home-news]  nfeed-mini=${h.mini}  sourced-lead=${h.leadFig}  legacy-cards=${h.oldCards}`);
+      console.log(`  ${ok ? "PASS" : "FAIL"}  /index.html  [home-news]  trend=${h.trend}/${h.trendNews}  ` +
+        `hot=${h.hot}/${h.hotNews}  reports=${h.reports}  legacy=${h.legacy}`);
     } catch (e) { failures++; console.log("  FAIL  homepage news block: " + e.message); }
     await send("Emulation.clearDeviceMetricsOverride");
 

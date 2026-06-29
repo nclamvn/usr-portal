@@ -1,90 +1,52 @@
 #!/usr/bin/env python3
-"""TIP-004 (rev) — Editorial home in the APPROVED idiom (portal-in-action.html is the
-design-system-of-record). NOT a layered dashboard, NOT a hero laminated onto one.
-
-Sequence, all in the approved idiom:
-  bar -> hero .field (CTA -> reference.html) -> field-file cards fed by REAL entities
-  (01/02/03, "Read the file" -> uav/<slug>.html) -> record-status masthead (re-idiom,
-  solid-serif .statfig, NOT the dark-card ghost) -> "Browse all N" CTA.
-
-Every figure is LIVE from site-data (CONSTRAINT 8). The blueprint is a geometric signature
-illustration — it carries NO entity-specific claim (zero fabrication). Real, sourced data lives
-in the card body and links to the entity's citable detail page. Bilingual, light/dark.
+"""TIP-HOMEPAGE — homepage in the team-approved LAYOUT (mock-homepage-v2.html) rendered with the
+EXISTING design-system (font/token/dark/i18n), NOT the mock's Space Grotesk/amber. Brand-lead =
+"Vietnam UAV Intelligence Platform" (masthead), publisher = Uncrewed Systems Review (K-6 deviation,
+noted in ledger). Ten blocks: topbar+ticker -> masthead -> hero(1+3) -> TOOL/00 compare ->
+TREND/01 -> INFO/02 signature -> REPORT/03 -> HOT/04 -> footer. Every figure LIVE from site-data
+(zero-fab, recompute), every card binds a REAL slug, honest-null shown. verify_homepage gates it.
 """
-import json, pathlib
+import json, math, pathlib
 from build_reference import bilingual, esc, friendly, maker_model
 from footer import footer
-from glyphs import glyph_svg
-from nav import nav
 from header import header
 from seo import meta as seo_meta, website_ld
-from build_newsroom import load_articles, TYPE_LABEL, homepage_news_block, _weight, _kicker, _meta
-from build_monitor import monitor_teaser
-from build_aggregation import aggregation_block
-from graphic import feed_figure
-import media_lib as ML
-
-_MEDIA = ML.Media()
-from build_registry_cards import qualify as rc_qualify, _card as rc_card, DESK as RC_DESK, DESK_ORDER as RC_DESK_ORDER
+from build_newsroom import load_articles, TYPE_LABEL, _weight, _kicker, _meta
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
-ARTS = ROOT / "content" / "articles.json"
 OUT = ROOT / "index.html"
 
 ARROW = ('<svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
          '<path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" '
          'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
-WATERMARK = ('<svg viewBox="0 0 760 400"><g class="wm-stroke">'
-             '<circle cx="170" cy="110" r="92"/><circle cx="590" cy="110" r="92"/>'
-             '<circle cx="170" cy="300" r="92"/><circle cx="590" cy="300" r="92"/>'
-             '<rect x="320" y="160" width="120" height="90" rx="20"/>'
-             '<line x1="248" y1="170" x2="332" y2="196"/><line x1="512" y1="170" x2="428" y2="196"/>'
-             '<line x1="248" y1="240" x2="332" y2="214"/><line x1="512" y1="240" x2="428" y2="214"/>'
-             '<circle cx="380" cy="205" r="30"/><circle cx="380" cy="205" r="13"/>'
-             '<line x1="78" y1="205" x2="682" y2="205"/><line x1="380" y1="10" x2="380" y2="395"/>'
-             '</g></svg>')
-
-
-# TIP-UX2.1 hero blueprint — ported verbatim from home-v2-specimen.html (design-source).
-# GENERIC multirotor schematic (zero entity claim, "NOT TO SCALE"). root fill="none" + class line-art
-# (.l/.lf/.a/.af/.grid) flips ink<->brass by theme; leader labels sit in clear space (no overlap).
-HERO_BP = '''<svg viewBox="0 0 660 580" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bản vẽ kỹ thuật hệ thống multirotor">
-<defs>
-<pattern id="bpgrid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" class="grid"/></pattern>
-<marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0 1.5 L7.5 5 L0 8.5 Z" fill="var(--bp-line)"/></marker>
-<marker id="ar2" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0 1.2 L6.5 4.5 L0 7.8 Z" fill="var(--brass)"/></marker>
-</defs>
-<rect x="20" y="20" width="620" height="540" fill="url(#bpgrid)"/>
-<rect x="20" y="20" width="620" height="540" class="lf"/>
-<path d="M20 56V20H56 M604 20H640V56 M640 524V560H604 M56 560H20V524" class="a" stroke-width="1.4"/>
-<g class="l"><line x1="290" y1="252" x2="168" y2="170"/><line x1="370" y1="252" x2="492" y2="170"/><line x1="290" y1="328" x2="168" y2="410"/><line x1="370" y1="328" x2="492" y2="410"/></g>
-<rect x="278" y="246" width="104" height="88" rx="13" class="l"/>
-<path d="M330 262V318 M302 290H358" class="lf"/>
-<circle cx="330" cy="290" r="13" class="a"/><circle cx="330" cy="290" r="3" class="af"/>
-<rect x="318" y="232" width="24" height="12" rx="3" class="l"/>
-<circle cx="330" cy="346" r="9" class="l"/><circle cx="330" cy="346" r="3.5" class="lf"/>
-<g transform="translate(168 170)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
-<g transform="translate(492 170)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
-<g transform="translate(168 410)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
-<g transform="translate(492 410)"><circle r="58" class="lf" stroke-dasharray="1 6"/><circle r="50" class="l"/><circle r="38" class="lf"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(20)"/><path d="M11 -2 Q30 -8 46 -2 Q30 3 11 2 Z" class="l" transform="rotate(200)"/><circle r="11" class="l"/><circle r="6" class="a"/><circle r="2.3" fill="var(--brass)"/><path d="M0 -50 A50 50 0 0 1 34 -36" class="a" marker-end="url(#ar2)"/></g>
-<g><line x1="106" y1="170" x2="106" y2="92" class="lf"/><line x1="554" y1="170" x2="554" y2="92" class="lf"/><line x1="106" y1="100" x2="554" y2="100" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><rect x="305" y="90" width="50" height="20" fill="var(--bg)"/><text x="330" y="104" text-anchor="middle" class="acc">SPAN</text></g>
-<g><line x1="168" y1="232" x2="90" y2="232" class="lf"/><line x1="168" y1="472" x2="90" y2="472" class="lf"/><line x1="98" y1="232" x2="98" y2="472" class="l" marker-start="url(#ar)" marker-end="url(#ar)"/><rect x="84" y="342" width="28" height="20" fill="var(--bg)"/><text x="98" y="356" text-anchor="middle" class="acc" transform="rotate(-90 98 352)">DEPTH</text></g>
-<g><path d="M330 232 V162" class="a"/><circle cx="330" cy="232" r="2.4" fill="var(--brass)"/><text x="330" y="154" text-anchor="middle" class="big">GNSS · COMPASS</text><path d="M330 356 V392" class="a"/><circle cx="330" cy="356" r="2.4" fill="var(--brass)"/><text x="330" y="406" text-anchor="middle" class="big">PAYLOAD BAY</text><path d="M382 290 H548" class="a"/><circle cx="382" cy="290" r="2.4" fill="var(--brass)"/><text x="556" y="293" class="big">FLIGHT CTRL</text><path d="M534 150 L556 130" class="a"/><circle cx="534" cy="150" r="2.4" fill="var(--brass)"/><text x="560" y="127" class="big">ROTOR · Ø</text></g>
-<line x1="20" y1="512" x2="640" y2="512" class="lf"/>
-<text x="32" y="536" class="acc">USR · FIELD SCHEMATIC</text>
-<text x="32" y="550">GENERIC MULTIROTOR · NOT TO SCALE</text>
-<g transform="translate(600 538)"><circle r="15" class="l"/><path d="M0 -15V15 M-15 0H15" class="lf"/><path d="M0 -15L4 -7H-4Z" class="af"/><text x="0" y="-19" text-anchor="middle" class="acc">N</text></g>
-<text x="540" y="536" text-anchor="end">REV 02</text>
-</svg>'''
-
 
 def live_facts(site):
-    """Real, live figures computed from site-data — never hardcoded (CONSTRAINT 8)."""
-    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
+    """Real, live figures from site-data — never hardcoded (the '13 vs 28' bug dies here)."""
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
     agg = site["aggregates"]
-    def count(pred): return sum(1 for e in ents if pred(e))
+    countries = len({(e.get("manufacturer_country") or {}).get("value") for e in ents
+                     if (e.get("manufacturer_country") or {}).get("value")})
+    makers = len({(e.get("manufacturer") or {}).get("value") for e in ents
+                  if (e.get("manufacturer") or {}).get("value")})
+    segments = len({(e.get("market_segment") or {}).get("value") for e in ents
+                    if (e.get("market_segment") or {}).get("value")})
+    fill = agg["spec_fill_rate"]
+    present = sum(d["present"] for d in fill.values()); total = sum(d["total"] for d in fill.values())
+    coverage = round(100 * present / total) if total else 0
+    ndaa_true = sum(1 for e in ents if (e.get("ndaa_compliant") or {}).get("value") is True)
+    ndaa_present = sum(1 for e in ents if (e.get("ndaa_compliant") or {}).get("value") is not None)
+    country_rank = sorted(
+        {(e.get("manufacturer_country") or {}).get("value"): 0 for e in ents}.keys(),
+        key=lambda c: -sum(1 for e in ents if (e.get("manufacturer_country") or {}).get("value") == c))
+    cc = {}
+    for e in ents:
+        c = (e.get("manufacturer_country") or {}).get("value")
+        if c:
+            cc[c] = cc.get(c, 0) + 1
+    country_top = sorted(cc.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
+    # extra keys for build_bundle's record-status masthead (render_masthead) — superset, no second facts fn
     def tally(getter):
         d = {}
         for e in ents:
@@ -92,58 +54,25 @@ def live_facts(site):
             if v:
                 d[v] = d.get(v, 0) + 1
         return sorted(d.items(), key=lambda kv: (-kv[1], kv[0]))
-    blue = count(lambda e: e["blue_uas"].get("status") == "verified" and e["blue_uas"].get("value") is True)
-    ndaa = count(lambda e: e["ndaa_compliant"].get("status") == "verified" and e["ndaa_compliant"].get("value") is True)
-    disputed = agg["field_status_counts"].get("disputed", 0)
-    seg_rank = tally(lambda e: e["market_segment"].get("value"))
-    country_rank = tally(lambda e: e["manufacturer_country"].get("value"))
-    fill = agg["spec_fill_rate"]
-    present = sum(d["present"] for d in fill.values())
-    total = sum(d["total"] for d in fill.values())
-    coverage = round(100 * present / total) if total else 0
-    return {"entities": len(ents), "blue_verified": blue, "ndaa_verified": ndaa,
-            "disputed_live": disputed, "segments": len(seg_rank),
-            "seg_rank": seg_rank, "country_rank": country_rank, "coverage": coverage}
+    blue_verified = sum(1 for e in ents if (e.get("blue_uas") or {}).get("status") == "verified"
+                        and (e.get("blue_uas") or {}).get("value") is True)
+    ndaa_verified = sum(1 for e in ents if (e.get("ndaa_compliant") or {}).get("status") == "verified"
+                        and (e.get("ndaa_compliant") or {}).get("value") is True)
+    return {"entities": len(ents), "companies": makers, "countries": countries, "segments": segments,
+            "coverage": coverage, "ndaa_true": ndaa_true, "ndaa_present": ndaa_present,
+            "country_top": country_top,
+            "blue_verified": blue_verified, "ndaa_verified": ndaa_verified,
+            "disputed_live": agg["field_status_counts"].get("disputed", 0),
+            "seg_rank": tally(lambda e: (e.get("market_segment") or {}).get("value")),
+            "country_rank": tally(lambda e: (e.get("manufacturer_country") or {}).get("value"))}
 
 
-# ---- record-status masthead (re-idiom: solid-serif .statfig, hairline, brass one-beat) ----
+# ---- record-status masthead (used by build_bundle's offline single-file export) ----
 def stat_cell(value, cap_en, cap_vn):
-    # data-countup: animates 0 -> real value on load (reduced-motion safe; final value baked in DOM).
-    # ch min-width = final length keeps the box stable so the count never reflows into an overlap.
     s = str(value)
     return (f'<div class="stat-cell"><span class="statfig" data-countup '
             f'style="min-width:{len(s)}ch">{esc(s)}</span>'
             f'<span class="cap mono">{bilingual(cap_en, cap_vn)}</span></div>')
-
-
-def stat_ribbon(f, labels):
-    """Live authority ribbon for the hero — every figure from live_facts (zero-fab). countries =
-    distinct manufacturer_country values; coverage = live spec fill-rate. Brass pulse on 'live'."""
-    countries = len(f["country_rank"])
-    def cell(value, en, vn):
-        s = str(value)
-        return (f'<span class="sr-cell"><b class="sr-n" data-countup style="min-width:{len(s)}ch">{esc(s)}</b>'
-                f'<span class="sr-k mono">{bilingual(en, vn)}</span></span>')
-    return ('<div class="statribbon" data-audit="ribbon">'
-            + cell(countries, "countries", "quốc gia")
-            + cell(f'{f["coverage"]}%', "coverage", "độ phủ")
-            + f'<span class="sr-cell sr-live"><span class="live-dot"></span>'
-            f'<span class="sr-k mono">{bilingual("live", "trực tiếp")}</span></span>'
-            + '</div>')
-
-
-def real_newsroom_block(prefix="."):
-    """Home Newsroom — the REAL, published factual articles (content/newsroom), newest-first. Never
-    the sample drafts in articles.json and never an opinion without a human author: the public home
-    shows only published, AI-authorable factual pieces. Each links to its /news/<slug> page."""
-    cards = ""
-    for fm, _ in load_articles():
-        kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
-        cards += (f'<a class="nr-card reveal" href="{prefix}/news/{esc(fm["slug"])}.html">'
-                  f'<span class="nr-kind">{bilingual(kl_en, kl_vn)}</span>'
-                  f'<span class="nr-t">{esc(fm["title"])}</span>'
-                  f'<span class="nr-go">{bilingual("Read", "Đọc")}{ARROW}</span></a>')
-    return f'<div class="nr-grid2">{cards}</div>'
 
 
 def ranked_list(rank, kind, labels, top_n):
@@ -180,267 +109,14 @@ def render_masthead(f, labels):
         f'</div></div>')
 
 
-# ---- field-file cards (the hero of the data: real entities in the blueprint-card idiom) ----
-def blueprint_svg(callouts=False, labels=None):
-    """Geometric signature illustration — the approved technical-drawing idiom (portal-in-action).
-    Anatomy is decorative (zero entity claim). With callouts=True it adds the dimension arrows +
-    leader-line labels (bilingual, generic category terms — not entity data) for the hero centrepiece.
-    The labels describe the SCHEMATIC's anatomy, never a specific aircraft, so zero-fabrication holds."""
-    L = labels or (lambda en, vn: en)
-    base = (
-        '<circle class="bp-disc" cx="230" cy="118" r="70" data-draw></circle>'
-        '<circle class="bp-disc" cx="530" cy="118" r="70" data-draw></circle>'
-        '<circle class="bp-disc" cx="230" cy="300" r="70" data-draw></circle>'
-        '<circle class="bp-disc" cx="530" cy="300" r="70" data-draw></circle>'
-        '<g class="bp-blade">'
-        '<line x1="174" y1="118" x2="286" y2="118"></line><line x1="474" y1="118" x2="586" y2="118"></line>'
-        '<line x1="174" y1="300" x2="286" y2="300"></line><line x1="474" y1="300" x2="586" y2="300"></line></g>'
-        '<path class="bp-arm" d="M300 168 L230 118" data-draw></path>'
-        '<path class="bp-arm" d="M460 168 L530 118" data-draw></path>'
-        '<path class="bp-arm" d="M300 250 L230 300" data-draw></path>'
-        '<path class="bp-arm" d="M460 250 L530 300" data-draw></path>'
-        '<circle class="bp-part" cx="230" cy="118" r="13"></circle><circle class="bp-part" cx="530" cy="118" r="13"></circle>'
-        '<circle class="bp-part" cx="230" cy="300" r="13"></circle><circle class="bp-part" cx="530" cy="300" r="13"></circle>'
-        '<rect class="bp-body" x="315" y="166" width="130" height="86" rx="20" data-draw></rect>'
-        '<line class="bp-mark" x1="372" y1="209" x2="388" y2="209"></line>'
-        '<line class="bp-mark" x1="380" y1="201" x2="380" y2="217"></line>'
-        '<circle class="bp-part" cx="380" cy="150" r="8"></circle>'
-        '<circle class="bp-part" cx="380" cy="284" r="22"></circle>'
-        '<circle class="bp-part" cx="380" cy="284" r="10"></circle>')
-    if not callouts:
-        return f'<div class="bp-stage"><svg viewBox="0 0 760 392" fill="none" aria-hidden="true">{base}</svg></div>'
-    call = (
-        '<g class="bp-fade">'
-        '<line class="bp-lead" x1="380" y1="142" x2="380" y2="54"></line>'
-        f'<text class="bp-callk" x="380" y="44" text-anchor="middle">{L("GNSS / RTK", "GNSS / RTK")}</text>'
-        '<line class="bp-lead" x1="380" y1="306" x2="380" y2="324"></line>'
-        f'<text class="bp-call" x="380" y="338" text-anchor="middle">{L("EO / IR gimbal", "Cảm biến EO / IR")}</text>'
-        '<line class="bp-lead" x1="445" y1="200" x2="600" y2="200"></line>'
-        f'<text class="bp-call" x="610" y="204" text-anchor="start">{L("Encrypted datalink", "Datalink mã hoá")}</text>'
-        '<line class="bp-lead" x1="315" y1="200" x2="160" y2="200"></line>'
-        f'<text class="bp-callk" x="150" y="204" text-anchor="end">{L("Provenance-traced", "Truy nguồn")}</text>'
-        '</g>'
-        '<g class="bp-fade">'
-        '<line class="bp-dim" x1="160" y1="384" x2="600" y2="384"></line>'
-        '<path class="bp-dim" d="M160 384 l9 -4 v8 z"></path><path class="bp-dim" d="M600 384 l-9 -4 v8 z"></path>'
-        f'<text class="bp-dlabel" x="380" y="380" text-anchor="middle">{L("airframe schematic", "sơ đồ khung bay")}</text>'
-        '</g>')
-    return f'<div class="bp-stage bp-stage--hero"><svg viewBox="-40 0 840 400" fill="none" aria-hidden="true">{base}{call}</svg></div>'
-
-
-def evidence_tier(e, groups):
-    """Best citable tier present on the entity (A>B>C), or '—'. From real source tiers only."""
-    abc = [e[fld].get("source_tier") for fld in groups]
-    abc = [t for t in abc if t in ("A", "B", "C")]
-    return min(abc) if abc else "—"
-
-
-def field_file_card(e, n, labels, groups, big):
-    maker, model = maker_model(e)
-    country = e["manufacturer_country"].get("value") or "—"
-    seg_v = e["market_segment"].get("value")
-    seg = friendly("segment", seg_v, labels)
-    sl = labels["segment"].get(seg_v) if seg_v else None
-    seg_en = sl["en"] if sl else "Uncrewed"
-    seg_vn = sl["vn"] if sl else "Không người lái"
-    n_ver = sum(1 for fld in groups if e[fld].get("status") == "verified")
-    tier = evidence_tier(e, groups)
-    desc_en = f"{seg_en} system, {country}. {n_ver} fields verified to source."
-    desc_vn = f"Hệ {seg_vn.lower()}, {country}. {n_ver} field đã kiểm tới nguồn."
-    return (
-        f'<article class="card reveal" data-audit="ffcard">'
-        f'<span class="reg tl"></span><span class="reg tr"></span>'
-        f'<span class="reg bl"></span><span class="reg br"></span>'
-        + (blueprint_svg() if big else "")
-        + f'<div class="card-body">'
-          f'<span class="ghost">{n:02d}</span>'
-          f'<div class="keb">{seg}</div>'
-          f'<div class="ff-cfg">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}'
-          f'<span>{bilingual("config", "cấu hình")} · {esc(e["airframe_type"].get("value") or "—")}</span></div>'
-          f'<h3 data-audit="ff-title">{esc(maker)} <span class="ffmodel">{esc(model)}</span></h3>'
-          f'<p>{bilingual(desc_en, desc_vn)}</p>'
-          f'<div class="foot">'
-          f'<span class="meta">{bilingual("Evidence", "Bằng chứng")} · <b>{esc(tier)}</b></span>'
-          f'<a class="readmore" href="uav/{esc(e["slug"])}.html" data-audit="ff-read">'
-          f'{bilingual("Read the file", "Đọc hồ sơ")}<span class="ico">{ARROW}</span></a>'
-          f'</div></div></article>')
-
-
-def featured_systems(ents, groups, labels):
-    """02 · Browse — a real preview of the registry: the best-documented, diverse systems (one per
-    family) as compact cards linking into their detail file. Concrete devices (not aggregates), so it
-    differs from the record-status masthead and makes the 'browse' promise tangible."""
-    cards = ""
-    for e in pick_featured(ents, groups, 6):
-        maker, model = maker_model(e)
-        seg_v = e["market_segment"].get("value")
-        seg = friendly("segment", seg_v, labels) if seg_v else bilingual("Uncrewed", "Không người lái")
-        country = e["manufacturer_country"].get("value") or "—"
-        tier = evidence_tier(e, groups)
-        badge = ""
-        if (e.get("blue_uas") or {}).get("value") is True:
-            badge = '<span class="fsys-b">Blue UAS</span>'
-        elif (e.get("ndaa_compliant") or {}).get("value") is True:
-            badge = '<span class="fsys-b">NDAA</span>'
-        cards += (
-            f'<a class="fsys reveal" href="uav/{esc(e["slug"])}.html" data-audit="fsys">'
-            f'<div class="fsys-top"><span class="fsys-g">{glyph_svg(e.get("frame_glyph", "unknown"), "glyph-sm")}</span>'
-            f'<span class="fsys-kb">{seg}</span></div>'
-            f'<b class="fsys-nm"><span class="fsys-mk">{esc(maker)}</span>{esc(model)}</b>'
-            f'<div class="fsys-ft"><span class="fsys-mt">{esc(country)} · {bilingual("Evidence", "Bằng chứng")} <b class="fsys-tier">{esc(tier)}</b></span>'
-            f'{badge}<span class="fsys-go">{ARROW}</span></div></a>')
-    return f'<div class="fsys-grid">{cards}</div>'
-
-
-def coverage_matrix(site):
-    """Real per-cell coverage (11 specs × N entities). Filled = field has a value; sparse is shown,
-    not hidden — rigor as evidence. % per row is the live aggregate (== auditor coverage)."""
-    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
-    spec = site["field_groups"]["spec"]
-    total = len(ents)
-    rows = ""
-    for fkey in spec:
-        cells = "".join('<i class="on"></i>' if e[fkey].get("value") is not None else '<i></i>' for e in ents)
-        present = sum(1 for e in ents if e[fkey].get("value") is not None)
-        lab = site["labels"]["field"].get(fkey, {"en": fkey, "vn": fkey})
-        rows += (f'<div class="cov-row"><span class="cl">{bilingual(lab["en"], lab["vn"])}</span>'
-                 f'<span class="cov-cells">{cells}</span>'
-                 f'<span class="cn">{round(100*present/total)}% · {present}/{total}</span></div>')
-    return f'<div class="cov" data-audit="cov">{rows}</div>'
-
-
-def pick_featured(ents, groups, k=3):
-    """Deterministic: best-documented entities (most populated fields), tie-break canonical_id.
-    At most one per family_id so the showcase is diverse (not two sibling variants)."""
-    def score(e): return sum(1 for fld in groups if e[fld].get("value") is not None)
-    ordered = sorted(ents, key=lambda e: (-score(e), e["canonical_id"]))
-    seen, out = set(), []
-    for e in ordered:
-        fam = e.get("family_id")
-        if fam in seen:
-            continue
-        seen.add(fam); out.append(e)
-        if len(out) == k:
-            break
-    return out
-
-
-def frontpage_desks():
-    """TIP-FP2 tier T2 — registry desks. D event-cards grouped by desk, DEDUPED against the E articles
-    via the explicit sidecar map (an entity with an E article is shown as E, its D-card hidden), and
-    DESK_HONEST: a desk with >=N cards renders a strip; a thin desk collapses to an honest 'building'
-    line (never a padded empty block); an empty desk is skipped."""
-    N = 4
-    reg = json.loads((ROOT / "content" / "lae-registry.json").read_bytes())["entities"]
-    artmap = json.loads((ROOT / "content" / "article_entity_map.json").read_bytes())["map"]
-    articled = {v for v in artmap.values() if v}
-    shown = [e for e in reg if rc_qualify(e) == "event" and e["entity"] not in articled]
-    by = {}
-    for e in shown:
-        by.setdefault(RC_DESK.get(e["entity_type"], (None, "—"))[1], []).append(e)
-    out = ""
-    for d in RC_DESK_ORDER:
-        cs = sorted(by.get(d, []), key=lambda e: (e.get("stratum") or "", e["entity"]))
-        if not cs:
-            continue
-        if len(cs) >= N:
-            cards = "".join(rc_card(e) for e in cs[:6])
-            out += (f'<section class="fp-desk" data-mode="strip" data-n="{len(cs)}">'
-                    f'<div class="rdesk-h"><h2>{esc(d)}</h2><span class="rdesk-n">{len(cs)}</span></div>'
-                    f'<div class="rgrid">{cards}</div></section>')
-        else:
-            out += (f'<a class="fp-deskline" data-mode="line" data-n="{len(cs)}" href="registry.html">'
-                    f'<span class="fp-dl-d">{esc(d)}</span>'
-                    f'<span class="fp-dl-n">{len(cs)} {bilingual("record", "hồ sơ")}</span>'
-                    f'<span class="fp-dl-tag">{bilingual("building", "đang xây")}</span>'
-                    f'<span class="ico">{ARROW}</span></a>')
-    return out
-
-
-def live_hero(site, f, labels):
-    """TIP-HERO-LIVE — a live featured rotator that replaces the static hero. Slide 0 keeps the
-    positioning manifesto (statement + brand blueprint); slides 1..N are the strongest featured
-    articles, each carrying source+tier and a figure GENERATED FROM DATA (feed_figure honest-null,
-    never a borrowed image). Inactive slides are display:none at REST (overlap-safe); the brand row +
-    live stats + footer are the fixed anchors. Auto-rotates (pause on hover, dots, reduced-motion off)."""
-    ranked = sorted(load_articles(), key=_weight, reverse=True)
-    feats = [fm for fm, _ in ranked[:4]]
-    n, countries, coverage = f["entities"], len(f["country_rank"]), f["coverage"]
-    # TIP-MEDIA-UPGRADE Task 5 — manifesto slide carries a real rtr_owned photo when bound
-    # (hero:home); else falls back to the brand blueprint (honest-null, site-null two-way).
-    _hero = _MEDIA.first("hero:home")
-    if _hero:
-        _m_inner = ML.img_html(_hero, "lhero-photo")
-        _m_lbl = esc(_hero.get("caption") or "Real-time Robotics")
-    else:
-        _m_inner = blueprint_svg()
-        _m_lbl = bilingual("USR · field schematic", "USR · sơ đồ trường")
-    slides = [
-        '<article class="lhero-slide active show" data-i="0" data-kind="manifesto">'
-        '<div class="lhero-text">'
-        f'<div class="s-kicker">{bilingual("Field Intelligence", "Trên thực địa")}</div>'
-        f'<h1 class="s-title lead-h">{bilingual("Uncrewed systems, seen clearly.", "Hệ thống không người lái, nhìn cho rõ.")}</h1>'
-        f'<p class="s-dek">{bilingual("How verified data changes a real decision — explained plainly, for the people who have to make the call.", "Dữ liệu kiểm chứng thay đổi một quyết định thật ra sao, giải thích rõ ràng cho người phải ra quyết định.")}</p>'
-        f'<a class="s-cta" href="reference.html">{bilingual("All field files", "Tất cả hồ sơ")} →</a>'
-        '</div>'
-        f'<div class="lhero-fig"><div class="lhero-plate">{_m_inner}'
-        f'<span class="plate-lbl">{_m_lbl}</span></div></div>'
-        '</article>']
-    for k, fm in enumerate(feats, 1):
-        dek = f'<p class="s-dek">{esc(fm.get("dek"))}</p>' if fm.get("dek") else ""
-        # TIP-ENRICH — a real bound photo (rtr_owned/open_licensed) when the article carries one;
-        # else the data-figure (feed_figure honest-null). Never a borrowed/unlicensed image.
-        _am = _MEDIA.first(f"article:{fm['slug']}")
-        if _am:
-            _nf_inner = ML.img_html(_am, "lhero-photo")
-            _nf_lbl = esc(_am.get("caption") or "")
-        else:
-            _nf_inner = feed_figure(fm, "lead")
-            _nf_lbl = bilingual("USR · generated from data", "USR · sinh từ dữ liệu")
-        slides.append(
-            f'<article class="lhero-slide" data-i="{k}">'
-            '<div class="lhero-text">'
-            f'<div class="s-kicker">{_kicker(fm)}</div>'
-            f'<h1 class="s-title"><a href="news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></h1>'
-            f'{dek}<div class="s-meta">{_meta(fm)}</div>'
-            '</div>'
-            f'<div class="lhero-fig"><div class="lhero-plate">{_nf_inner}'
-            f'<span class="plate-lbl">{_nf_lbl}</span></div></div>'
-            '</article>')
-    dots = "".join(f'<button class="lhero-dot{" on" if k == 0 else ""}" data-dot="{k}" '
-                   f'type="button" aria-label="Slide {k+1}"></button>' for k in range(len(slides)))
-    stats = (
-        '<div class="lhero-stats">'
-        f'<div class="lhero-stat"><div class="n" data-countup style="min-width:{len(str(n))}ch">{n}</div>'
-        f'<div class="l">{bilingual("Verified systems", "Hệ thống đã kiểm")}</div></div>'
-        f'<div class="lhero-stat"><div class="n" data-countup style="min-width:{len(str(countries))}ch">{countries}</div>'
-        f'<div class="l">{bilingual("Countries", "Quốc gia")}</div></div>'
-        f'<div class="lhero-stat"><div class="n">{coverage}%</div>'
-        f'<div class="l">{bilingual("Spec coverage", "Độ phủ spec")}</div></div>'
-        '</div>')
-    return (
-        '<section class="lhero" data-audit="hero" id="lhero">'
-        '<div class="lhero-brand">'
-        f'<div class="lhero-bk"><span class="bar"></span>{bilingual("Field Intelligence · Featured", "Trên thực địa · Nổi bật")}</div>'
-        '<div class="lhero-auto">'
-        f'<span class="lhero-autolbl"><span class="pulse">●</span> {bilingual("Auto · hover to pause", "Tự cuộn · rê để dừng")}</span>'
-        f'<div class="lhero-dots">{dots}</div></div></div>'
-        f'<div class="lhero-stage">{"".join(slides)}</div>'
-        f'<div class="lhero-bot">{stats}'
-        f'<a class="lhero-foot" href="reference.html">{bilingual("All records", "Toàn bộ hồ sơ")} <span class="arr">{ARROW}</span></a>'
-        '</div></section>')
-
-
+# ---- INFO/02 signature viz (live operating-envelope; kept = verify_graphics requires .sigwrap) ----
 def signature_svg(site):
-    """TIP-GRAPHICS 2.4 — homepage signature: 'dynamic range' bar per spec = how many orders of magnitude
-    the fleet spans (log10(max/min)). All paint via var(--*) token (THEME_PURITY + GFX_THEME_LEAK).
-    Number-honest: only specs with a real range render; min/max recompute from aggregates.spec_range."""
-    import math
     sr = site["aggregates"].get("spec_range", {})
     SPECS = [("mtow_kg", "MTOW", "kg"), ("max_payload_kg", "Payload", "kg"), ("max_range_km", "Range", "km"),
              ("endurance_min", "Endurance", "min"), ("max_link_km", "Datalink", "km"),
              ("max_speed_ms", "Speed", "m/s"), ("service_ceiling_m", "Ceiling", "m")]
-    rows = [(lb, u, sr[k]["min"], sr[k]["max"]) for k, lb, u in SPECS if sr.get(k) and sr[k]["max"] > sr[k]["min"] > 0]
+    rows = [(lb, u, sr[k]["min"], sr[k]["max"]) for k, lb, u in SPECS
+            if sr.get(k) and sr[k]["max"] > sr[k]["min"] > 0]
     if not rows:
         return ""
     spans = [math.log10(mx / mn) for _, _, mn, mx in rows]
@@ -448,7 +124,6 @@ def signature_svg(site):
 
     def fnum(x):
         return ("%g" % x).replace(".", ",") if (isinstance(x, float) and x != int(x)) else f"{int(x):,}".replace(",", ".")
-    # bars = SVG (token paint, audited by verify_graphics); labels/values = HTML (browser-laid-out, overlap-safe)
     rowhtml = []
     for (lb, u, mn, mx), sp in zip(rows, spans):
         w = round(sp / mxs * 100)
@@ -458,252 +133,345 @@ def signature_svg(site):
             f'<line class="sig-trk" x1="0" y1="3" x2="100" y2="3"/>'
             f'<line class="sig-fill" x1="0" y1="3" x2="{w}" y2="3"/></svg>'
             f'<span class="sig-val">{fnum(mn)} &#8594; {fnum(mx)} {u}</span></div>')
-    return (f'<section class="sigwrap" data-audit="sig"><div class="wrap">'
-            f'<div class="regdiv"><b class="lab">{bilingual("Field intelligence · the operating envelope", "Tình báo hiện trường · biên vận-hành")}</b><span class="ln"></span></div>'
+    return (f'<section class="sigwrap" data-audit="sig">'
             f'<div class="sigrows">{"".join(rowhtml)}</div>'
-            f'<p class="sig-cap">{bilingual("Each bar is the span between the smallest and largest recorded value across the registry, log scale: the wider the bar, the more orders of magnitude the fleet covers.", "Mỗi thanh là khoảng từ giá-trị nhỏ nhất tới lớn nhất ghi trong bản đăng ký, thang log: thanh càng dài, dải càng rộng (nhiều bậc độ-lớn).")}</p></div></section>')
+            f'<p class="sig-cap">{bilingual("Each bar is the span between the smallest and largest recorded value across the registry, log scale.", "Mỗi thanh là khoảng từ giá-trị nhỏ nhất tới lớn nhất trong bản đăng ký, thang log.")}</p></section>')
+
+
+# ---- block helpers (each binds REAL slugs + live numbers) ----
+def section_label(code, en, vn):
+    return (f'<div class="section-label"><span class="code">{code}</span>'
+            f'<h2>{bilingual(en, vn)}</h2><span class="rule"></span></div>')
+
+
+def cat_of(fm):
+    en, vn = TYPE_LABEL.get(fm.get("type"), (fm.get("type", ""), fm.get("type", "")))
+    return bilingual(en, vn)
+
+
+def ticker(f, arts):
+    lead = arts[0] if arts else None
+    items = []
+    if lead:
+        items.append(f'<span><b>NEWSROOM</b> — {esc(lead["title"])}</span>')
+    items.append(f'<span><b>DATA</b> — {bilingual("USR registry", "Bản đăng ký USR")}: '
+                 f'{f["entities"]} {bilingual("systems", "hệ thống")} · {f["companies"]} '
+                 f'{bilingual("manufacturers", "nhà sản xuất")} · {f["countries"]} '
+                 f'{bilingual("countries", "quốc gia")}</span>')
+    items.append(f'<span><b>DATA</b> — NDAA: {f["ndaa_true"]}/{f["ndaa_present"]} '
+                 f'{bilingual("with data meet the standard", "có dữ liệu đạt chuẩn")}, '
+                 f'{f["entities"] - f["ndaa_present"]} {bilingual("not recorded", "chưa ghi nhận")}</span>')
+    return ('<div class="topbar"><span class="tag"><span class="livedot"></span>LIVE</span>'
+            f'<div class="ticker-wrap"><div class="ticker">{"".join(items)}</div></div>'
+            f'<span class="mono tb-co">{bilingual("UAV intelligence", "Tình báo UAV")}</span></div>')
+
+
+def masthead(f):
+    return (
+        '<div class="masthead"><div class="mh-left">'
+        f'<div class="mh-sub mono">{bilingual("News · Intelligence · Data · Community", "Tin · Tình báo · Dữ liệu · Cộng đồng")}</div>'
+        '<h1>Vietnam UAV<br>Intelligence Platform</h1>'
+        f'<div class="mh-pub mono">{bilingual("Published by Uncrewed Systems Review", "Xuất bản bởi Uncrewed Systems Review")}</div>'
+        '</div>'
+        '<div class="mh-right">'
+        f'<span class="mh-stat"><b>{f["entities"]}</b><i class="mono">{bilingual("systems", "hệ thống")}</i></span>'
+        f'<span class="mh-stat"><b>{f["countries"]}</b><i class="mono">{bilingual("countries", "quốc gia")}</i></span>'
+        f'<span class="mh-stat"><b>{f["coverage"]}%</b><i class="mono">{bilingual("spec coverage", "độ phủ spec")}</i></span>'
+        '</div></div>')
+
+
+def hero(arts):
+    if not arts:
+        return ""
+    main = arts[0]
+    side = arts[1:4]
+    side_html = ""
+    for fm in side:
+        side_html += (
+            f'<a class="side-story" href="news/{esc(fm["slug"])}.html">'
+            f'<div class="cat mono">{cat_of(fm)}</div>'
+            f'<h3>{esc(fm["title"])}</h3></a>')
+    dek = esc(main.get("dek") or main.get("title"))
+    return (
+        '<section class="hero-grid">'
+        f'<a class="hero-main" href="news/{esc(main["slug"])}.html">'
+        f'<div class="eyebrow"><span class="dot"></span>{cat_of(main)}</div>'
+        f'<h2>{esc(main["title"])}</h2><p class="dek">{dek}</p>'
+        f'<div class="hero-meta mono"><span>{bilingual("sourced", "có nguồn dẫn")}</span>'
+        f'<span>{esc(str(main.get("date", "")))}</span></div></a>'
+        f'<div class="hero-side">{side_html}</div></section>')
+
+
+def _fmt(v):
+    if isinstance(v, float) and v != int(v):
+        return ("%g" % v).replace(".", ",")
+    if isinstance(v, (int, float)):
+        return str(int(v))
+    return esc(str(v))
+
+
+def compare_preview(ents, labels):
+    """3 best-documented UAVs, real specs, honest-null '-- chưa ghi nhận'. best = higher range/endurance."""
+    def score(e):
+        return sum(1 for k in ("max_range_km", "endurance_min", "mtow_kg", "market_segment")
+                   if (e.get(k) or {}).get("value") is not None)
+    picks, seen = [], set()
+    for e in sorted(ents, key=lambda e: (-score(e), e["canonical_id"])):
+        fam = e.get("family_id")
+        if fam in seen:
+            continue
+        seen.add(fam); picks.append(e)
+        if len(picks) == 3:
+            break
+    ROWS = [("max_range_km", "Range", "Tầm bay", "km", True),
+            ("endurance_min", "Endurance", "Thời gian bay", bilingual("min", "phút"), True),
+            ("mtow_kg", "MTOW", "MTOW", "kg", False),
+            ("market_segment", "Segment", "Phân khúc", "", None)]
+    head = "".join(f'<th class="drone-col">{esc(maker_model(e)[1])}</th>' for e in picks)
+    body = ""
+    for key, en, vn, unit, more_better in ROWS:
+        vals = [(e.get(key) or {}).get("value") for e in picks]
+        best_v = None
+        if more_better:
+            nums = [v for v in vals if isinstance(v, (int, float)) and not isinstance(v, bool)]
+            best_v = max(nums) if nums else None
+        cells = ""
+        for v in vals:
+            if v is None:
+                cells += f'<td class="nullv">{bilingual("not recorded", "chưa ghi nhận")}</td>'
+            elif key == "market_segment":
+                cells += f'<td>{friendly("segment", v, labels)}</td>'
+            else:
+                u = unit if isinstance(unit, str) else ""
+                cls = ' class="best"' if (best_v is not None and v == best_v) else ""
+                cells += f'<td{cls}>{_fmt(v)} {u}</td>' if u else f'<td{cls}>{_fmt(v)} {unit}</td>'
+        body += f'<tr><td class="spec-label">{bilingual(en, vn)}</td>{cells}</tr>'
+    return (
+        '<div class="compare-panel">'
+        '<div class="compare-head"><div>'
+        f'<div class="mono ch-k">{bilingual("Quick compare", "So sánh nhanh")}</div>'
+        f'<p>{bilingual("Pick up to 4 systems to compare specs. Empty cells are data not yet recorded, never invented.", "Chọn tối đa 4 hệ thống để so thông số. Ô trống là dữ liệu chưa ghi nhận, không bịa.")}</p>'
+        f'</div><a class="compare-cta" href="compare.html">{bilingual("Full compare", "So sánh đầy đủ")} →</a></div>'
+        f'<table class="compare-table"><tr><th>{bilingual("Spec", "Thông số")}</th>{head}</tr>{body}</table>'
+        f'<div class="compare-foot mono"><span>{bilingual("Data from the USR registry · every cell has source + tier", "Dữ liệu từ bản đăng ký USR · mỗi ô có nguồn + tier")}</span></div>'
+        '</div>')
+
+
+def trending(arts):
+    cards = ""
+    for i, fm in enumerate(arts[:5], 1):
+        acc = " accent" if i == 1 else ""
+        cards += (
+            f'<a class="trend-card{acc}" href="news/{esc(fm["slug"])}.html">'
+            f'<span class="rank">{i:02d}</span>'
+            f'<span class="cat mono">{cat_of(fm)}</span>'
+            f'<h3>{esc(fm["title"])}</h3>'
+            f'<span class="tmeta mono">{esc(str(fm.get("date", "")))}</span></a>')
+    return f'<div class="trending">{cards}</div>'
+
+
+def reports(arts):
+    rep = [fm for fm in arts if fm.get("type") in ("data-report", "data-note", "explainer")][:4]
+    if len(rep) < 4:
+        rep = (rep + [fm for fm in arts if fm not in rep])[:4]
+    cards = ""
+    for fm in rep:
+        en, vn = TYPE_LABEL.get(fm.get("type"), ("Report", "Báo cáo"))
+        cards += (
+            f'<a class="report-card" href="news/{esc(fm["slug"])}.html">'
+            f'<div class="rtag mono">{bilingual(en, vn)}</div>'
+            f'<h3>{esc(fm["title"])}</h3>'
+            f'<div class="rmeta mono"><span>{esc(str(fm.get("date", "")))}</span>'
+            f'<span>{bilingual("Read", "Đọc")} →</span></div></a>')
+    return f'<div class="reports">{cards}</div>'
+
+
+def hotnews(arts):
+    hot = sorted(arts, key=lambda fm: str(fm.get("date", "")), reverse=True)[:5]
+    rows = ""
+    for i, fm in enumerate(hot, 1):
+        rows += (
+            f'<a class="hot-row" href="news/{esc(fm["slug"])}.html">'
+            f'<div class="hrank">{i:02d}</div>'
+            f'<div class="htitle"><span class="hcat mono">{cat_of(fm)}</span>{esc(fm["title"])}</div>'
+            f'<div class="hdate mono">{esc(str(fm.get("date", "")))}</div></a>')
+    return f'<div class="hotnews">{rows}</div>'
+
+
+CSS = """
+  .wrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
+  body{background:var(--bg)}
+  /* topbar + ticker (thin, theme-token; <120px tall so THEME_PURITY-exempt, but kept light) */
+  .topbar{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--hair);
+    padding:8px 1.4rem;font-family:var(--font-mono);font-size:11px;color:var(--muted);max-width:var(--w-wide);margin:0 auto}
+  .topbar .tag{color:var(--brass);font-weight:600;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+  .livedot{width:6px;height:6px;border-radius:50%;background:var(--brass);animation:hp-blink 1.6s ease-in-out infinite}
+  .ticker-wrap{overflow:hidden;flex:1;white-space:nowrap}
+  .ticker{display:inline-block;padding-left:100%;animation:hp-scroll 34s linear infinite}
+  .ticker span{margin-right:46px;color:var(--muted)}
+  .ticker span b{color:var(--ink)}
+  .tb-co{white-space:nowrap}
+  @keyframes hp-scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+  @keyframes hp-blink{0%,100%{opacity:1}50%{opacity:.25}}
+  /* masthead — VUIP lead, USR publisher, current head font */
+  .masthead{max-width:var(--w-wide);margin:0 auto;padding:26px 1.4rem 20px;border-bottom:2px solid var(--ink);
+    display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+  .mh-sub{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:8px}
+  .masthead h1{font-family:var(--font-head);font-weight:600;font-size:clamp(30px,4.4vw,52px);line-height:1.0;letter-spacing:-.02em;margin:0;color:var(--ink)}
+  .mh-pub{font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
+  .mh-right{display:flex;gap:26px}
+  .mh-stat{display:flex;flex-direction:column;gap:4px}
+  .mh-stat b{font-family:var(--font-head);font-weight:600;font-size:30px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+  .mh-stat i{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-style:normal}
+  /* hero 1+3 */
+  .hero-grid{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem;display:grid;grid-template-columns:1.7fr 1fr;border-bottom:1px solid var(--hair)}
+  .hero-main{padding:30px 30px 30px 0;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:13px}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--brass);animation:hp-blink 1.6s ease-in-out infinite}
+  .hero-main h2{font-family:var(--font-head);font-size:clamp(25px,3.3vw,40px);line-height:1.1;margin:0 0 15px;font-weight:600;color:var(--ink)}
+  .hero-main:hover h2{color:var(--brass)}
+  .hero-main p.dek{font-size:16.5px;line-height:1.6;color:var(--ink-soft);margin:0 0 16px;max-width:60ch}
+  .hero-meta{font-size:11px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.06em}
+  .hero-side{padding:30px 0 30px 30px;display:flex;flex-direction:column;gap:20px}
+  .side-story{padding-bottom:18px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
+  .side-story:last-child{border-bottom:none;padding-bottom:0}
+  .side-story .cat{font-size:10px;color:var(--brass);letter-spacing:.08em;font-weight:600;text-transform:uppercase}
+  .side-story h3{font-family:var(--font-head);font-size:16.5px;margin:7px 0 0;line-height:1.3;font-weight:600;color:var(--ink)}
+  .side-story:hover h3{color:var(--brass)}
+  /* section label */
+  .section-label{max-width:var(--w-wide);margin:0 auto;display:flex;align-items:baseline;gap:14px;padding:44px 1.4rem 20px}
+  .section-label .code{font-family:var(--font-mono);font-size:12px;color:var(--brass);font-weight:700}
+  .section-label h2{font-family:var(--font-head);font-size:23px;margin:0;font-weight:600;color:var(--ink)}
+  .section-label .rule{flex:1;border-top:1px solid var(--hair)}
+  /* compare */
+  .compare-panel{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
+  .compare-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--hair);border-bottom:none;padding:16px 18px;background:var(--bg-2)}
+  .ch-k{font-size:11px;color:var(--brass);font-weight:600;letter-spacing:.06em}
+  .compare-head p{font-size:13px;color:var(--muted);margin:5px 0 0;max-width:560px}
+  .compare-cta{font-family:var(--font-mono);font-size:12px;border:1px solid var(--ink);color:var(--ink);padding:9px 16px;white-space:nowrap;text-decoration:none}
+  .compare-cta:hover{background:var(--brass);border-color:var(--brass);color:var(--bg)}
+  .compare-table{width:100%;border-collapse:collapse}
+  .compare-table th,.compare-table td{padding:13px 18px;border:1px solid var(--hair);text-align:left;font-size:13.5px;color:var(--ink)}
+  .compare-table th{font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:.04em;font-weight:600;background:var(--bg-2)}
+  .compare-table th.drone-col{color:var(--ink);font-size:13.5px}
+  .compare-table td.spec-label{font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+  .compare-table td.best{color:var(--brass);font-weight:600}
+  .compare-table td.nullv{color:var(--faint);font-style:italic}
+  .compare-foot{border:1px solid var(--hair);border-top:none;padding:14px 18px;font-size:11px;color:var(--muted)}
+  /* trending (accent = brass, NOT inverted dark -> THEME_PURITY safe) */
+  .trending{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hair)}
+  .trend-card{padding:20px 16px 22px;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
+  .trend-card:last-child{border-right:none}
+  .trend-card:hover{background:var(--bg-2)}
+  .trend-card.accent{background:var(--bg-2);box-shadow:inset 3px 0 0 var(--brass)}
+  .trend-card .rank{font-family:var(--font-head);font-size:28px;font-weight:600;color:var(--hair-strong);display:block;margin-bottom:10px}
+  .trend-card.accent .rank{color:var(--brass)}
+  .trend-card .cat{font-size:10px;color:var(--brass);letter-spacing:.06em;font-weight:600;margin-bottom:8px;display:block;text-transform:uppercase}
+  .trend-card h3{font-family:var(--font-head);font-size:15px;margin:0 0 10px;font-weight:600;line-height:1.3;color:var(--ink)}
+  .trend-card:hover h3{color:var(--brass)}
+  .trend-card .tmeta{font-size:10.5px;color:var(--muted)}
+  /* INFO/02 signature (token paint; verify_graphics) */
+  .sigwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
+  .sigrows{max-width:760px}
+  .sig-row{display:grid;grid-template-columns:118px 1fr 168px;gap:14px;align-items:center;padding:5px 0}
+  .sig-lb{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em}
+  .sig-barsvg{width:100%;height:6px;display:block}
+  .sig-trk{stroke:var(--hair);stroke-width:6}
+  .sig-fill{stroke:var(--brass);stroke-width:6}
+  .sig-val{font-family:var(--font-mono);font-size:11px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+  .sig-cap{font-size:12px;color:var(--muted);max-width:64ch;margin:12px 0 0;line-height:1.55}
+  @media (max-width:560px){.sig-row{grid-template-columns:1fr auto}.sig-barsvg{grid-column:1/-1;order:3;margin-top:4px}}
+  /* reports */
+  .reports{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
+  .report-card{background:var(--bg);padding:20px 18px;min-height:158px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;color:inherit}
+  .report-card:hover{background:var(--bg-2)}
+  .report-card .rtag{color:var(--brass);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+  .report-card h3{font-family:var(--font-head);font-size:15px;font-weight:600;margin:10px 0;line-height:1.34;color:var(--ink)}
+  .report-card:hover h3{color:var(--brass)}
+  .report-card .rmeta{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  /* hotnews */
+  .hotnews{max-width:var(--w-wide);margin:0 auto;border:1px solid var(--hair);border-top:none}
+  .hot-row{display:grid;grid-template-columns:58px 1fr 92px;border-top:1px solid var(--hair);align-items:center;text-decoration:none;color:inherit}
+  .hot-row:hover{background:var(--bg-2)}
+  .hot-row>div{padding:14px 18px}
+  .hot-row .hrank{font-family:var(--font-head);font-size:17px;font-weight:600;color:var(--brass);border-right:1px solid var(--hair)}
+  .hot-row .htitle{border-right:1px solid var(--hair);font-size:14px;color:var(--ink)}
+  .hot-row:hover .htitle{color:var(--brass)}
+  .hot-row .htitle .hcat{display:block;font-size:10px;color:var(--brass);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em}
+  .hot-row .hdate{font-size:11px;color:var(--muted);text-align:right}
+  .block-gap{height:54px}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-main{border-right:none;border-bottom:1px solid var(--hair);padding:24px 0}
+    .hero-side{padding:24px 0}
+    .trending{grid-template-columns:repeat(2,1fr)}
+    .reports{grid-template-columns:repeat(2,1fr)}
+    .mh-right{gap:18px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ticker{animation:none;padding-left:0}
+    .livedot,.eyebrow .dot{animation:none}
+  }
+"""
 
 
 def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
-    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
-    groups = site["field_groups"]["display"] + site["field_groups"]["spec"]
+    ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
     f = live_facts(site)
-    n = f["entities"]
-    countries = len(f["country_rank"])               # distinct manufacturer_country (live)
-    coverage = f["coverage"]                          # live spec fill-rate %
-    hero_blueprint = HERO_BP                           # specimen ink/brass schematic (TIP-UX2.1)
-    feat = pick_featured(ents, groups, 1)[0]                          # one REAL record anchors the hero
-    feat_mk, feat_md = maker_model(feat)
-    hero_caption = (f'<a class="readmore hero-cap" href="uav/{esc(feat["slug"])}.html" data-audit="herofile">'
-                    f'<b>{bilingual("Featured field file", "Hồ sơ tiêu biểu")}</b> · {esc(feat_mk)} {esc(feat_md)} →</a>')
-    # live hero stats (heatm) — every figure from live_facts; matches verify_home figure-drift gate
-    heatm = (
-        '<div class="heatm">'
-        f'<div class="s"><b class="v" data-countup style="min-width:{len(str(n))}ch">{n}</b>'
-        f'<span class="k">{bilingual("Verified systems", "Hệ thống đã kiểm")}</span></div>'
-        f'<div class="s"><b class="v" data-countup style="min-width:{len(str(countries))}ch">{countries}</b>'
-        f'<span class="k">{bilingual("Countries", "Quốc gia")}</span></div>'
-        f'<div class="s"><b class="v">{coverage}%</b>'
-        f'<span class="k">{bilingual("Spec coverage", "Độ phủ spec")}</span></div>'
-        '</div>')
-    newsroom_block = homepage_news_block("")         # compact editorial frame (TIP-NEWSROOM.1), not card-grid
-    agg_html = aggregation_block("", limit=20)          # TIP-NEWS-REALTIME dòng A — top-20 "Tin nhanh" (PLAN-NEWS-100 §4)
-    live_hero_html = live_hero(site, f, labels)       # TIP-HERO-LIVE — live featured rotator
-    desks_html = frontpage_desks()                     # TIP-FP2 T2 — registry desks (deduped, honest)
-    masthead = render_masthead(f, labels)
-    featured_html = featured_systems(ents, groups, labels)   # 02 · Browse — real systems preview
-    sig_html = signature_svg(site)                            # TIP-GRAPHICS 2.4 — homepage signature viz
+    arts = [fm for fm, _ in sorted(load_articles(), key=_weight, reverse=True)]
+    n, countries, coverage = f["entities"], f["countries"], f["coverage"]
 
     doc = f"""<!DOCTYPE html>
-<html lang="en" data-theme="light" data-lang="en">
+<html lang="vi" data-theme="light" data-lang="vn">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Uncrewed Systems Review</title>
-{seo_meta("Uncrewed Systems Review", "Entity-centric UAV intelligence: 302 systems with cited sources, tiers and honest-null.", "index.html")}
+<title>Vietnam UAV Intelligence Platform — Uncrewed Systems Review</title>
+{seo_meta("Vietnam UAV Intelligence Platform", "Entity-centric UAV intelligence: " + str(n) + " systems with cited sources, tiers and honest-null. Published by Uncrewed Systems Review.", "index.html")}
 {website_ld()}
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base/design-system.css">
-<link rel="stylesheet" href="base/newsroom.css">
-<style>
-  /* home layout in the approved idiom (components reuse the shared design system) */
-  .wrap{{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}}
-  .bar{{border-bottom:1px solid var(--hair)}}
-  .bar .wrap{{display:flex;align-items:center;height:64px;gap:20px}}
-  .wm-name{{font-family:var(--font-head);font-weight:600;font-size:18px;letter-spacing:-.01em}}
-  .wm-name small{{display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;margin-top:2px;font-weight:400}}
-  .ctl{{margin-left:auto;display:flex;gap:8px}}
-  :root[data-lang="en"] .tg .s-en{{opacity:1;color:var(--brass)}}
-  :root[data-lang="vn"] .tg .s-vn{{opacity:1;color:var(--brass)}}
-  /* faint blueprint grid (graph-paper) behind cream sections — premium hi-tech texture */
-  body{{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:30px 30px;background-position:center top}}
-  .sec.plate{{background-image:none}}
-  /* TIP-GRAPHICS 2.4 — homepage signature viz (all paint via token; THEME_PURITY/GFX_THEME_LEAK clean) */
-  .sigwrap{{padding:30px 0 8px}}
-  .sigrows{{max-width:720px;margin-top:12px}}
-  .sig-row{{display:grid;grid-template-columns:118px 1fr 156px;gap:14px;align-items:center;padding:5px 0}}
-  .sig-lb{{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em}}
-  .sig-barsvg{{width:100%;height:6px;display:block}}
-  .sig-trk{{stroke:var(--hair);stroke-width:6}}
-  .sig-fill{{stroke:var(--bp);stroke-width:6}}
-  .sig-val{{font-family:var(--font-mono);font-size:11px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}}
-  @media (max-width:560px){{.sig-row{{grid-template-columns:1fr auto}}.sig-barsvg{{grid-column:1/-1;order:3;margin-top:4px}}}}
-  .sig-cap{{font-size:12px;color:var(--muted);max-width:62ch;margin:12px 0 0;line-height:1.55}}
-  /* HERO — pure-value two-column: text+stats left · ink/brass blueprint right (TIP-UX2.1 specimen) */
-  .field.hero-pure{{position:relative;overflow:hidden}}
-  .field.hero-pure .wrap.hero-grid{{display:grid;grid-template-columns:.92fr 1.08fr;gap:54px;align-items:center;padding:58px 1.4rem 56px}}
-  @media (max-width:940px){{.field.hero-pure .wrap.hero-grid{{grid-template-columns:1fr;gap:34px;padding:40px 1.4rem}}}}
-  .hero-col-l{{max-width:52ch}}
-  .eyebrow{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:500;display:inline-flex;align-items:center;gap:10px}}
-  .eyebrow::before{{content:"";width:22px;height:1px;background:var(--brass-bright)}}
-  .lead-h{{font-family:var(--font-head);font-weight:600;font-size:clamp(40px,5.6vw,68px);line-height:1.0;letter-spacing:-.022em;margin:20px 0 0;color:var(--ink)}}
-  .lead-p{{font-size:16px;color:var(--muted);max-width:46ch;margin-top:20px;line-height:1.62}}
-  /* live hero stats — verified count + countries + coverage (zero-fab, count-up) */
-  .heatm{{display:flex;gap:34px;margin-top:34px;padding-top:26px;border-top:1px solid var(--hair);flex-wrap:wrap}}
-  .heatm .s .v{{font-family:var(--font-head);font-weight:600;font-size:34px;line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;display:inline-block}}
-  .heatm .s .k{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px;display:block}}
-  .cta{{margin-top:32px;display:inline-flex;align-items:center;gap:13px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:500}}
-  .cta .arw{{width:38px;height:38px;border:1.5px solid var(--brass);border-radius:50%;display:grid;place-items:center;color:var(--brass);transition:background .2s,color .2s}}
-  .cta:hover .arw{{background:var(--brass);color:var(--bg)}}
-  .cta .ar{{width:15px;height:15px;display:block}}
-  /* right column — ink/brass blueprint on the page (no plate); line-art flips by theme */
-  .bpframe{{position:relative}}
-  .bpframe svg{{width:100%;max-height:480px;display:block}}
-  .bpframe svg .l{{stroke:var(--bp-line);fill:none;stroke-width:1.2}}
-  .bpframe svg .lf{{stroke:var(--bp-soft);fill:none;stroke-width:1}}
-  .bpframe svg .a{{stroke:var(--brass);fill:none;stroke-width:1.3}}
-  .bpframe svg .af{{fill:var(--brass)}}
-  .bpframe svg .grid{{stroke:var(--bp-grid);stroke-width:1;fill:none}}
-  .bpframe svg text{{font-family:var(--font-mono);fill:var(--muted);font-size:9px;letter-spacing:.08em}}
-  .bpframe svg text.acc{{fill:var(--brass)}}
-  .bpframe svg text.big{{fill:var(--ink-soft);font-size:10px}}
-  .bpcap{{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);flex-wrap:wrap}}
-  .bpcap .hero-cap{{color:var(--faint);transition:color .2s}}
-  .bpcap .hero-cap b{{color:var(--brass);font-weight:500}}
-  .bpcap .hero-cap:hover{{color:var(--ink)}}
-  /* field-file card (dark blueprint card) */
-  .card{{position:relative;background:var(--card-bg);color:var(--card-ink);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(0,0,0,.45)}}
-  [data-theme="dark"] .card{{border:1px solid var(--card-hair)}}
-  .card .reg{{position:absolute;width:16px;height:16px;border:1.5px solid var(--bp);opacity:.55;z-index:3}}
-  .card .reg.tl{{top:14px;left:14px;border-right:none;border-bottom:none}}
-  .card .reg.tr{{top:14px;right:14px;border-left:none;border-bottom:none}}
-  .card .reg.bl{{bottom:14px;left:14px;border-right:none;border-top:none}}
-  .card .reg.br{{bottom:14px;right:14px;border-left:none;border-top:none}}
-  .bp-stage{{position:relative;padding:26px 26px 8px;background:radial-gradient(120% 90% at 70% 10%,rgba(216,162,74,.06),transparent 60%)}}
-  .bp-stage svg{{width:100%;height:auto;display:block}}
-  .bp-disc{{fill:none;stroke:var(--bp);stroke-width:1;opacity:.28}}
-  .bp-blade line{{stroke:var(--bp);stroke-width:1;opacity:.22}}
-  .bp-arm{{fill:none;stroke:var(--bp);stroke-width:2.4;stroke-linecap:round}}
-  .bp-body{{fill:rgba(216,162,74,.05);stroke:var(--bp);stroke-width:1.6}}
-  .bp-part{{fill:none;stroke:var(--bp);stroke-width:1.4}}
-  .bp-mark{{stroke:var(--bp-soft);stroke-width:1}}
-  .card-body{{padding:6px 34px 34px;position:relative}}
-  .card .ghost{{font-family:var(--font-head);font-weight:400;font-size:74px;line-height:.8;color:transparent;-webkit-text-stroke:1px var(--card-faint);letter-spacing:-.02em;display:block;margin-bottom:6px}}
-  .card .keb{{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--bp);margin-bottom:12px}}
-  .card h3{{font-family:var(--font-head);font-weight:600;font-size:clamp(22px,2.5vw,28px);line-height:1.14;letter-spacing:-.012em;color:var(--card-ink);margin:0}}
-  .card .ffmodel{{color:var(--bp)}}
-  .card .ff-cfg{{display:flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--card-faint);margin:4px 0 10px}}
-  .card p{{font-size:15.5px;color:var(--card-soft);max-width:52ch;margin-top:14px}}
-  .card .foot{{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;padding-top:18px;border-top:1px solid var(--card-hair)}}
-  .card .meta{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--card-faint);text-transform:uppercase}}
-  .card .meta b{{color:var(--bp);font-weight:500}}
-  .readmore{{display:inline-flex;align-items:center;gap:11px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--card-ink)}}
-  .readmore .ico{{width:28px;height:28px;border-radius:50%;border:1px solid var(--bp);color:var(--bp);display:grid;place-items:center;transition:transform .25s}}
-  .readmore .ar{{width:14px;height:14px;display:block}}
-  .readmore:hover .ico{{transform:translateX(4px)}}
-  /* content sections below the hero */
-  .section-h{{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin:0 0 1.1rem;display:flex;gap:.6rem;align-items:center}}
-  .section-h::after{{content:"";flex:1;height:1px;background:var(--hair)}}
-  .block{{margin:46px 0}}
-  /* home newsroom — real factual article cards */
-  .nr-grid2{{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}}
-  .nr-card{{display:flex;flex-direction:column;gap:.5rem;border:1px solid var(--hair);border-radius:12px;padding:1.2rem 1.3rem;text-decoration:none;color:inherit;transition:border-color .2s var(--ease),transform .2s var(--ease)}}
-  .nr-card:hover{{border-color:var(--brass);transform:translateY(-2px)}}
-  .nr-kind{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}}
-  .nr-t{{font-family:var(--font-head);font-weight:600;font-size:1.08rem;line-height:1.25;color:var(--ink)}}
-  .nr-go{{margin-top:auto;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:8px}}
-  .nr-go .ar{{width:13px;height:13px}}
-  @media (max-width:760px){{.nr-grid2{{grid-template-columns:1fr}}}}
-  /* 02 · Browse — featured real systems (pure-value cards, hairline grid) */
-  .browse-lead{{font-family:var(--font-head);font-size:1.05rem;color:var(--muted);max-width:54ch;margin:14px 0 0}}
-  .fsys-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:0 14px;border-top:1px solid var(--hair-strong);margin-top:22px}}
-  @media (max-width:860px){{.fsys-grid{{grid-template-columns:repeat(2,1fr)}}}}
-  @media (max-width:560px){{.fsys-grid{{grid-template-columns:1fr}}}}
-  .fsys{{display:flex;flex-direction:column;gap:11px;padding:22px 18px 20px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;min-height:150px;transition:background .15s var(--ease)}}
-  .fsys:hover{{background:var(--bg-2)}}
-  /* top row grouped LEFT (glyph + category together) so the card reads as one column, not scattered corners */
-  .fsys-top{{display:flex;align-items:center;gap:9px}}
-  .fsys-g,.fsys-g svg{{width:26px;height:26px;display:block;flex:0 0 26px}}
-  .fsys-g .bp-line{{stroke:var(--muted)}}
-  .fsys-kb{{font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}}
-  .fsys-nm{{font-family:var(--font-head);font-weight:600;font-size:18px;line-height:1.18;color:var(--ink)}}
-  .fsys-mk{{display:block;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;margin-bottom:3px}}
-  .fsys:hover .fsys-nm{{color:var(--brass)}}
-  .fsys:hover .fsys-go{{transform:translateX(4px)}}
-  .fsys-ft{{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
-  .fsys-mt{{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.02em;color:var(--muted)}}
-  .fsys-tier{{color:var(--ink-soft);font-weight:600}}
-  .fsys-b{{font-family:var(--font-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:3px;padding:1px 6px}}
-  .fsys-go{{margin-left:auto;color:var(--brass);transition:transform .2s var(--ease)}}
-  .fsys-go .ar{{width:15px;height:15px;display:block}}
-  @media (max-width:900px){{
-    .field{{padding:48px 0 48px}}
-    .hero-foot{{align-items:flex-start;gap:20px}}
-    .statribbon{{gap:24px}}
-    .wrap{{padding:0 20px}}
-  }}
-</style>
+<style>{CSS}</style>
 </head>
 <body>
 
 {header("", "home")}
+{ticker(f, arts)}
+{masthead(f)}
 
-{live_hero_html}
+{hero(arts)}
 
-{sig_html}
+{section_label("TOOL/00", "Drone compare", "Công cụ so sánh drone")}
+{compare_preview(ents, labels)}
 
-<main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("01 · Newsroom", "01 · Bài viết")}</b><span class="ln"></span>
-    <a class="ncta" href="news.html"><span>{bilingual("All articles", "Tất cả bài")}</span><span class="ico">{ARROW}</span></a></div>
-  <div class="block">
-{newsroom_block}
-  </div>
-  {agg_html}
-</main>
+{section_label("TREND/01", "Notable", "Đáng chú ý")}
+{trending(arts)}
 
-<main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("02 · Registry", "02 · Hồ sơ")}</b><span class="ln"></span>
-    <a class="ncta" href="registry.html" data-audit="fpdesk">{bilingual("All registry records", "Toàn bộ hồ sơ")}<span class="ico">{ARROW}</span></a></div>
-  <p class="browse-lead">{bilingual(
-    "Records straight from the registry, by desk — events the editorial desk has not written up appear here, field-rendered, never duplicated.",
-    "Hồ sơ thẳng từ registry, theo desk — sự kiện ban biên tập chưa viết thì hiện ở đây, render từ field, không trùng bài.")}</p>
-  {desks_html}
-</main>
+{section_label("INFO/02", "Infographics", "Đồ hoạ dữ liệu")}
+{signature_svg(site)}
 
-<!-- light/dark rhythm — record-status as a full-bleed dark plate band (TIP-P01) -->
-<section class="sec plate" data-audit="plate"><div class="wrap">
-  <span class="eyebrow">{bilingual("Record", "Hồ sơ")}</span>
-  <h2 class="h2">{bilingual("Record status", "Tình trạng bản ghi")}</h2>
-  <p class="sub">{bilingual(
-    f"Every figure computed live from {n} entities — nothing hand-typed.",
-    f"Mọi con số tính sống từ {n} thực thể — không gõ tay.")}</p>
-  {masthead}
-  <div class="regdiv"><b class="lab">{bilingual("Spec coverage · per cell", "Độ phủ spec · từng ô")}</b><span class="ln"></span></div>
-  {coverage_matrix(site)}
-</div></section>
+{section_label("REPORT/03", "Reports & data", "Báo cáo & dữ liệu")}
+{reports(arts)}
 
-<main class="wrap">
-  {monitor_teaser("")}
-</main>
+{section_label("HOT/04", "Hot news", "Tin nóng")}
+{hotnews(arts)}
 
-<main class="wrap">
-  <div class="regdiv"><b class="lab">{bilingual("03 · Browse", "03 · Tra cứu")}</b><span class="ln"></span>
-    <a class="ncta" href="reference.html" data-audit="browse">{bilingual(
-      f"Browse & filter all {n} systems", f"Duyệt & lọc toàn bộ {n} hệ thống")}<span class="ico">{ARROW}</span></a></div>
-  <p class="browse-lead">{bilingual(
-    "Six of the best-documented systems, a way into the full record.",
-    "Sáu hồ sơ được dẫn chứng đầy nhất, lối vào toàn bộ bản ghi.")}</p>
-  {featured_html}
-</main>
-
+<div class="block-gap"></div>
 {footer("")}
 <script src="base/base.js"></script>
 <script>
   USRBase.initTheme(document.getElementById("theme"));
   USRBase.initI18n(document.getElementById("lang"));
-  USRBase.initDraw();
   USRBase.initReveal();
-  USRBase.initCountup();
-  USRBase.initLiveHero();
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
 </html>
 """
     OUT.write_text(doc)
-    print(f"index.html | hero=blueprint+ribbon | facts={f['entities']} entities · "
-          f"{len(f['country_rank'])} countries · {f['coverage']}% coverage")
+    print(f"index.html | VUIP layout | {n} systems · {countries} countries · {coverage}% coverage · "
+          f"{len(arts)} articles bound")
 
 
 if __name__ == "__main__":

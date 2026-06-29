@@ -125,6 +125,8 @@ python3 verify_footer.py
 python3 teeth_footer.py
 python3 verify_home.py
 python3 teeth_home.py
+python3 verify_homepage.py
+python3 teeth_homepage.py
 python3 verify_svg.py
 python3 teeth_svg.py
 

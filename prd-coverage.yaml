@@ -3,6 +3,10 @@
 # THIẾU bất kỳ id PRD nào trong file → exit 2. Nguồn chuẩn: PRD Vietnam UAV Intelligence Platform (8 trang).
 schema: prd-coverage/1
 prd_source: "Vietnam_UAV_Intelligence_Platform_PRD.pdf"
+# §4.1 homepage = layout team-duyệt (mock-homepage-v2) render bằng design-system; gate_proof verify_homepage.
+# K-6 DEVIATION (quyết định Chủ nhà): masthead brand-lead = "Vietnam UAV Intelligence Platform",
+#   publisher = Uncrewed Systems Review. og:site_name + WebSite.name = VUIP; Organization JSON-LD giữ USR.
+#   K-6 (USR là danh tính công khai) KHÔNG xoá — đây là brand-lead nền tảng, org pháp nhân vẫn USR.
 
 # §2 — 10 entity type (Database) phải có, mỗi loại schema riêng + quan hệ hai chiều
 entity_types:
