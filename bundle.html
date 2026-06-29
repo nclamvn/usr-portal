@@ -10,7 +10,7 @@
    No CSS framework. No new fonts (Source Serif 4 / Be Vietnam Pro / IBM Plex Mono only). */
 
 :root {
-  --w-wide: 1180px;  /* tables/grids/dashboards — equals header width */
+  --w-wide: 1180px;  /* content column — tables/grids/dashboards/body (header bar is full-width, wider) */
   --w-read: 760px;   /* prose/single-record reading column */
   /* warm-neutral light — token values from home-v2-specimen (TIP-UX2.1 pure-value) */
   --bg: #F4F2ED;
@@ -338,7 +338,7 @@ small, .small { font-size: .82rem; }
 .pgnav .ar { width: 15px; height: 15px; display: block; } .pgnav-prev .ar { transform: scaleX(-1); }
 .pgnav:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; }
 @media (max-width: 1280px) { .pgnav { display: none; } }   /* hide where edges would collide with header content */
-.gbar-in { max-width: var(--w-wide); margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.4rem; }
+.gbar-in { margin: 0 auto; height: 52px; display: flex; align-items: center; gap: 1rem; padding: 0 1.8rem; }  /* full-width header bar (wider than the 1180 body column) */
 .gbar-wm { flex: 0 0 auto; display: inline-flex; align-items: center; line-height: 0; }
 .gbar-wm .brandmark { height: 47.5px; width: auto; display: block; }  /* 125% of 38px */
 :root[data-theme="dark"] .gbar-wm .brandmark { filter: invert(1); }  /* black art -> white on dark */
