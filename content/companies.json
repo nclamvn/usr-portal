@@ -1,46 +1,1089 @@
 {
-  "schema": "companies/1",
-  "_note": "Golden records — sourced company attributes loaded onto derived company entities by slug. Each field is {value,source,tier(A/B/C)} | {disputed:[>=2 claims]} | null/omitted (-> honest-null). Country uses the canonical EN vocabulary (matches uav.country). Base fields always shown; parent_company/stock are company-specific extras shown only when present.",
-  "records": {
-    "dji": {
-      "legal_name":   {"value": "SZ DJI Technology Co., Ltd. (Shenzhen Dajiang Innovations)", "source": "en.wikipedia.org/wiki/DJI", "tier": "B"},
-      "founded_year": {"value": 2006, "source": "linkedin.com/company/dji", "tier": "A"},
-      "hq_country":   {"value": "China", "source": "linkedin.com/company/dji", "tier": "A"},
-      "hq_city":      {"value": "Shenzhen (Nanshan), Guangdong", "source": "linkedin.com/company/dji", "tier": "A"},
-      "hq_address":   {"disputed": [
-          {"value": "DJI Sky City, No. 55 Xianyuan Road, Nanshan, Shenzhen", "source": "en.wikipedia.org/wiki/DJI_Sky_City + pitchbook.com", "tier": "B", "note": "trụ sở toàn cầu hiện tại, hoàn thành 12/2022"},
-          {"value": "14F West Wing, Skyworth Semiconductor Building, Nanshan, Shenzhen 518057", "source": "salestools.io / directories", "tier": "C"},
-          {"value": "No. 53 Xianyuan Road, Xili, Shenzhen 518055", "source": "globaldata.com", "tier": "C"}]},
-      "website":      {"value": "https://www.dji.com", "source": "official domain", "tier": "A"},
-      "founder":      {"value": "Frank Wang (Wang Tao)", "source": "en.wikipedia.org/wiki/DJI", "tier": "B"},
-      "contact_email": null, "contact_phone": null
-    },
-    "autel": {
-      "legal_name":     {"value": "Autel Robotics Co., Ltd.", "source": "en.wikipedia.org/wiki/Autel_Robotics", "tier": "B"},
-      "founded_year":   {"value": 2014, "source": "autelrobotics.com/about-us", "tier": "A"},
-      "hq_country":     {"value": "China", "source": "autelrobotics.com", "tier": "A"},
-      "hq_city":        {"value": "Shenzhen (Nanshan), Guangdong", "source": "autelrobotics.com", "tier": "A"},
-      "hq_address":     {"value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen", "source": "cbinsights.com", "tier": "C"},
-      "website":        {"value": "https://www.autelrobotics.com", "source": "official domain", "tier": "A"},
-      "founder":        null,
-      "parent_company": {"value": "Autel Intelligent Technology (AIT)", "source": "en.wikipedia.org/wiki/Autel_Robotics", "tier": "B"},
-      "contact_email": null, "contact_phone": null
-    },
-    "aerovironment": {
-      "legal_name":   {"value": "AeroVironment, Inc.", "source": "en.wikipedia.org/wiki/AeroVironment", "tier": "B"},
-      "founded_year": {"value": 1971, "source": "linkedin.com/company/aerovironment", "tier": "A"},
-      "hq_country":   {"value": "United States", "source": "linkedin.com/company/aerovironment", "tier": "A"},
-      "hq_city":      {"value": "Arlington, Virginia", "source": "linkedin.com/company/aerovironment", "tier": "A"},
-      "hq_address":   {"value": "241 18th St S, Arlington, Virginia 22202", "source": "linkedin.com/company/aerovironment", "tier": "A"},
-      "website":      {"value": "https://www.avinc.com", "source": "official domain", "tier": "A"},
-      "founder":      {"value": "Paul B. MacCready Jr.", "source": "en.wikipedia.org/wiki/AeroVironment", "tier": "B"},
-      "stock":        {"value": "NASDAQ: AVAV", "source": "finance.yahoo.com", "tier": "B"},
-      "contact_email": null, "contact_phone": null
-    },
-    "real-time-robotics": {
-      "website":      {"value": "https://rtrobotics.com", "source": "official domain (RtR primary)", "tier": "A"},
-      "legal_name": null, "founded_year": null, "hq_country": null, "hq_city": null,
-      "hq_address": null, "founder": null, "contact_email": null, "contact_phone": null
-    }
+ "schema": "companies/1",
+ "_note": "Golden records — sourced company attributes loaded onto derived company entities by slug. Each field is {value,source,tier(A/B/C)} | {disputed:[>=2 claims]} | null/omitted (-> honest-null). Country uses the canonical EN vocabulary (matches uav.country). Base fields always shown; parent_company/stock are company-specific extras shown only when present.",
+ "records": {
+  "dji": {
+   "legal_name": {
+    "value": "SZ DJI Technology Co., Ltd. (Shenzhen Dajiang Innovations)",
+    "source": "en.wikipedia.org/wiki/DJI",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2006,
+    "source": "linkedin.com/company/dji",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "linkedin.com/company/dji",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Shenzhen (Nanshan), Guangdong",
+    "source": "linkedin.com/company/dji",
+    "tier": "A"
+   },
+   "hq_address": {
+    "disputed": [
+     {
+      "value": "DJI Sky City, No. 55 Xianyuan Road, Nanshan, Shenzhen",
+      "source": "en.wikipedia.org/wiki/DJI_Sky_City + pitchbook.com",
+      "tier": "B",
+      "note": "trụ sở toàn cầu hiện tại, hoàn thành 12/2022"
+     },
+     {
+      "value": "14F West Wing, Skyworth Semiconductor Building, Nanshan, Shenzhen 518057",
+      "source": "salestools.io / directories",
+      "tier": "C"
+     },
+     {
+      "value": "No. 53 Xianyuan Road, Xili, Shenzhen 518055",
+      "source": "globaldata.com",
+      "tier": "C"
+     }
+    ]
+   },
+   "website": {
+    "value": "https://www.dji.com",
+    "source": "official domain",
+    "tier": "A"
+   },
+   "founder": {
+    "value": "Frank Wang (Wang Tao)",
+    "source": "en.wikipedia.org/wiki/DJI",
+    "tier": "B"
+   },
+   "contact_email": null,
+   "contact_phone": null
+  },
+  "autel": {
+   "legal_name": {
+    "value": "Autel Robotics Co., Ltd.",
+    "source": "en.wikipedia.org/wiki/Autel_Robotics",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "autelrobotics.com/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "autelrobotics.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Shenzhen (Nanshan), Guangdong",
+    "source": "autelrobotics.com",
+    "tier": "A"
+   },
+   "hq_address": {
+    "value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen",
+    "source": "cbinsights.com",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://www.autelrobotics.com",
+    "source": "official domain",
+    "tier": "A"
+   },
+   "founder": null,
+   "parent_company": {
+    "value": "Autel Intelligent Technology (AIT)",
+    "source": "en.wikipedia.org/wiki/Autel_Robotics",
+    "tier": "B"
+   },
+   "contact_email": null,
+   "contact_phone": null
+  },
+  "aerovironment": {
+   "legal_name": {
+    "value": "AeroVironment, Inc.",
+    "source": "en.wikipedia.org/wiki/AeroVironment",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1971,
+    "source": "linkedin.com/company/aerovironment",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "linkedin.com/company/aerovironment",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Arlington, Virginia",
+    "source": "linkedin.com/company/aerovironment",
+    "tier": "A"
+   },
+   "hq_address": {
+    "value": "241 18th St S, Arlington, Virginia 22202",
+    "source": "linkedin.com/company/aerovironment",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.avinc.com",
+    "source": "official domain",
+    "tier": "A"
+   },
+   "founder": {
+    "value": "Paul B. MacCready Jr.",
+    "source": "en.wikipedia.org/wiki/AeroVironment",
+    "tier": "B"
+   },
+   "stock": {
+    "value": "NASDAQ: AVAV",
+    "source": "finance.yahoo.com",
+    "tier": "B"
+   },
+   "contact_email": null,
+   "contact_phone": null
+  },
+  "real-time-robotics": {
+   "website": {
+    "value": "https://rtrobotics.com",
+    "source": "official domain (RtR primary)",
+    "tier": "A"
+   },
+   "legal_name": {
+    "value": "Real Time Robotics Vietnam Company Ltd",
+    "source": "theinvestor.vn/us-based-drone-maker-aims-to-start-135-mln-project-in-hcmc-in-q3-d10715.html",
+    "tier": "B"
+   },
+   "founded_year": null,
+   "hq_country": {
+    "value": "Vietnam",
+    "source": "theinvestor.vn/us-based-drone-maker-aims-to-start-135-mln-project-in-hcmc-in-q3-d10715.html",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Ho Chi Minh City",
+    "source": "theinvestor.vn/us-based-drone-maker-aims-to-start-135-mln-project-in-hcmc-in-q3-d10715.html",
+    "tier": "B"
+   },
+   "hq_address": null,
+   "founder": null,
+   "contact_email": null,
+   "contact_phone": null
+  },
+  "autel-robotics": {
+   "legal_name": {
+    "value": "Autel Robotics Co., Ltd.",
+    "source": "en.wikipedia.org/wiki/Autel_Robotics",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "autelrobotics.com/about-us",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Shenzhen, Guangdong",
+    "source": "autelrobotics.com/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Autel_Robotics",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.autelrobotics.com",
+    "source": "autelrobotics.com",
+    "tier": "A"
+   }
+  },
+  "general-atomics": {
+   "legal_name": {
+    "value": "General Atomics Aeronautical Systems, Inc.",
+    "source": "ga-asi.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "ga-asi.com/ga-asi-30-years-of-uas-innovation",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Poway, California",
+    "source": "ga-asi.com/ga-asi-30-years-of-uas-innovation",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.ga-asi.com",
+    "source": "ga-asi.com",
+    "tier": "A"
+   }
+  },
+  "northrop-grumman": {
+   "legal_name": {
+    "value": "Northrop Grumman Corporation",
+    "source": "investor.northropgrumman.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Northrop_Grumman",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Falls Church, Virginia",
+    "source": "investor.northropgrumman.com",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.northropgrumman.com",
+    "source": "northropgrumman.com",
+    "tier": "A"
+   }
+  },
+  "skydio": {
+   "legal_name": {
+    "value": "Skydio, Inc.",
+    "source": "en.wikipedia.org/wiki/Skydio",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Skydio",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Mateo, California",
+    "source": "en.wikipedia.org/wiki/Skydio",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Skydio",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.skydio.com",
+    "source": "skydio.com",
+    "tier": "A"
+   }
+  },
+  "boeing-insitu": {
+   "legal_name": {
+    "value": "Insitu Inc.",
+    "source": "insitu.com/about",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "insitu.com/about",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Bingen, Washington",
+    "source": "en.wikipedia.org/wiki/Insitu",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1994,
+    "source": "insitu.com/about",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.insitu.com",
+    "source": "insitu.com",
+    "tier": "A"
+   }
+  },
+  "yuneec": {
+   "legal_name": {
+    "value": "Yuneec International (China) Co., Ltd.",
+    "source": "dnb.com",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/Yuneec_International",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Kunshan, Jiangsu",
+    "source": "dnb.com",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1999,
+    "source": "en.wikipedia.org/wiki/Yuneec_International",
+    "tier": "B"
+   }
+  },
+  "avilus": {
+   "legal_name": {
+    "value": "AVILUS GmbH",
+    "source": "northdata.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "avilus.com/contact",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Ismaning, Bavaria",
+    "source": "northdata.com",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.avilus.com",
+    "source": "avilus.com",
+    "tier": "A"
+   }
+  },
+  "emt-penzberg": {
+   "legal_name": {
+    "value": "EMT Ingenieurgesellschaft Dipl.-Ing. Hartmut Euer mbH",
+    "source": "euro-sd.com",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "rheinmetall.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Penzberg, Bavaria",
+    "source": "emt-penzberg.de",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1978,
+    "source": "euro-sd.com",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.emt-penzberg.de",
+    "source": "emt-penzberg.de",
+    "tier": "A"
+   }
+  },
+  "shield-ai": {
+   "legal_name": {
+    "value": "Shield AI, Inc.",
+    "source": "en.wikipedia.org/wiki/Shield_AI",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Shield_AI",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Diego, California",
+    "source": "en.wikipedia.org/wiki/Shield_AI",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2015,
+    "source": "en.wikipedia.org/wiki/Shield_AI",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.shield.ai",
+    "source": "shield.ai",
+    "tier": "A"
+   }
+  },
+  "thales": {
+   "legal_name": {
+    "value": "Thales S.A.",
+    "source": "en.wikipedia.org/wiki/Thales_Group",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "France",
+    "source": "thalesgroup.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Paris La Défense",
+    "source": "thalesgroup.com/en/news-centre/press-releases/thales-moves-head-office-paris-la-defense",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.thalesgroup.com",
+    "source": "thalesgroup.com",
+    "tier": "A"
+   }
+  },
+  "iai": {
+   "legal_name": {
+    "value": "Israel Aerospace Industries Ltd.",
+    "source": "en.wikipedia.org/wiki/Israel_Aerospace_Industries",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Lod",
+    "source": "en.wikipedia.org/wiki/Israel_Aerospace_Industries",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Israel",
+    "source": "en.wikipedia.org/wiki/Israel_Aerospace_Industries",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1953,
+    "source": "en.wikipedia.org/wiki/Israel_Aerospace_Industries",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.iai.co.il",
+    "source": "iai.co.il",
+    "tier": "A"
+   }
+  },
+  "hesa": {
+   "legal_name": {
+    "value": "Iran Aircraft Manufacturing Industries Corporation",
+    "source": "en.wikipedia.org/wiki/Iran_Aircraft_Manufacturing_Industries_Corporation",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Shahin Shahr, Isfahan",
+    "source": "en.wikipedia.org/wiki/Iran_Aircraft_Manufacturing_Industries_Corporation",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Iran",
+    "source": "en.wikipedia.org/wiki/Iran_Aircraft_Manufacturing_Industries_Corporation",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1976,
+    "source": "en.wikipedia.org/wiki/Iran_Aircraft_Manufacturing_Industries_Corporation",
+    "tier": "B"
+   }
+  },
+  "teledyne-flir": {
+   "legal_name": {
+    "value": "Teledyne FLIR LLC",
+    "source": "en.wikipedia.org/wiki/Teledyne_FLIR",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Wilsonville, Oregon",
+    "source": "flir.com/contact/office-locations",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "flir.com/contact/office-locations",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.flir.com",
+    "source": "flir.com",
+    "tier": "A"
+   }
+  },
+  "tai": {
+   "hq_city": {
+    "value": "Kahramankazan, Ankara",
+    "source": "en.wikipedia.org/wiki/Turkish_Aerospace_Industries",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Turkey",
+    "source": "en.wikipedia.org/wiki/Turkish_Aerospace_Industries",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1973,
+    "source": "en.wikipedia.org/wiki/Turkish_Aerospace_Industries",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.tusas.com",
+    "source": "tusas.com",
+    "tier": "A"
+   }
+  },
+  "caig": {
+   "hq_city": {
+    "value": "Chengdu, Sichuan",
+    "source": "en.wikipedia.org/wiki/Chengdu_Aircraft_Industry_Group",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/Chengdu_Aircraft_Industry_Group",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1958,
+    "source": "en.wikipedia.org/wiki/Chengdu_Aircraft_Industry_Group",
+    "tier": "B"
+   }
+  },
+  "acecore": {
+   "hq_city": {
+    "value": "Uden",
+    "source": "acecoretechnologies.com/contact",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Netherlands",
+    "source": "acecoretechnologies.com/contact",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://acecoretechnologies.com",
+    "source": "acecoretechnologies.com",
+    "tier": "A"
+   }
+  },
+  "boeing": {
+   "legal_name": {
+    "value": "The Boeing Company",
+    "source": "boeing.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Arlington, Virginia",
+    "source": "investors.boeing.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "investors.boeing.com",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1916,
+    "source": "boeing.com",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.boeing.com",
+    "source": "boeing.com",
+    "tier": "A"
+   }
+  },
+  "germandrones": {
+   "legal_name": {
+    "value": "Germandrones GmbH",
+    "source": "germandrones.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Berlin",
+    "source": "germandrones.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "germandrones.com",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.germandrones.com",
+    "source": "germandrones.com",
+    "tier": "A"
+   }
+  },
+  "stm": {
+   "legal_name": {
+    "value": "STM Savunma Teknolojileri Mühendislik ve Ticaret A.Ş.",
+    "source": "en.wikipedia.org/wiki/STM_(Turkish_company)",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Ankara",
+    "source": "stm.com.tr",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Turkey",
+    "source": "stm.com.tr",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1991,
+    "source": "en.wikipedia.org/wiki/STM_(Turkish_company)",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.stm.com.tr",
+    "source": "stm.com.tr",
+    "tier": "A"
+   }
+  },
+  "ukrspecsystems": {
+   "hq_city": {
+    "value": "Kyiv",
+    "source": "ukrspecsystems.com/about",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Ukraine",
+    "source": "ukrspecsystems.com/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "ukrspecsystems.com/about",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://ukrspecsystems.com",
+    "source": "ukrspecsystems.com",
+    "tier": "A"
+   }
+  },
+  "anduril": {
+   "legal_name": {
+    "value": "Anduril Industries, Inc.",
+    "source": "sossecinc.com/company/anduril-industries-inc/",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Costa Mesa, California",
+    "source": "en.wikipedia.org/wiki/Anduril_Industries",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Anduril_Industries",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "en.wikipedia.org/wiki/Anduril_Industries",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.anduril.com",
+    "source": "anduril.com",
+    "tier": "A"
+   }
+  },
+  "baykar": {
+   "hq_city": {
+    "value": "Istanbul",
+    "source": "en.wikipedia.org/wiki/Baykar",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Turkey",
+    "source": "en.wikipedia.org/wiki/Baykar",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1984,
+    "source": "en.wikipedia.org/wiki/Baykar",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://baykartech.com",
+    "source": "baykartech.com",
+    "tier": "A"
+   }
+  },
+  "avic": {
+   "legal_name": {
+    "value": "Aviation Industry Corporation of China, Ltd.",
+    "source": "en.wikipedia.org/wiki/Aviation_Industry_Corporation_of_China",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Beijing",
+    "source": "en.wikipedia.org/wiki/Aviation_Industry_Corporation_of_China",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/Aviation_Industry_Corporation_of_China",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2008,
+    "source": "en.wikipedia.org/wiki/Aviation_Industry_Corporation_of_China",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.avic.com",
+    "source": "en.avic.com",
+    "tier": "A"
+   }
+  },
+  "zala-aero": {
+   "hq_city": {
+    "value": "Izhevsk",
+    "source": "en.wikipedia.org/wiki/ZALA_Aero_Group",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Russia",
+    "source": "en.wikipedia.org/wiki/ZALA_Aero_Group",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2003,
+    "source": "en.wikipedia.org/wiki/ZALA_Aero_Group",
+    "tier": "B"
+   }
+  },
+  "kratos": {
+   "legal_name": {
+    "value": "Kratos Defense & Security Solutions, Inc.",
+    "source": "en.wikipedia.org/wiki/Kratos_Defense_%26_Security_Solutions",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Diego, California",
+    "source": "en.wikipedia.org/wiki/Kratos_Defense_%26_Security_Solutions",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Kratos_Defense_%26_Security_Solutions",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.kratosdefense.com",
+    "source": "kratosdefense.com",
+    "tier": "A"
+   }
+  },
+  "aeronautics": {
+   "legal_name": {
+    "value": "Aeronautics Defense Systems Ltd.",
+    "source": "en.wikipedia.org/wiki/Aeronautics_Defense_Systems",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Yavne",
+    "source": "en.wikipedia.org/wiki/Aeronautics_Defense_Systems",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Israel",
+    "source": "en.wikipedia.org/wiki/Aeronautics_Defense_Systems",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1997,
+    "source": "en.wikipedia.org/wiki/Aeronautics_Defense_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://aeronautics-sys.com",
+    "source": "aeronautics-sys.com",
+    "tier": "A"
+   }
+  },
+  "brinc": {
+   "hq_city": {
+    "value": "Seattle, Washington",
+    "source": "brincdrones.com/about/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "brincdrones.com/about/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "grokipedia.com/page/BRINC_Drones",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://brincdrones.com",
+    "source": "brincdrones.com",
+    "tier": "A"
+   }
+  },
+  "kronshtadt": {
+   "hq_city": {
+    "value": "Saint Petersburg",
+    "source": "tadviser.com/index.php/Company:Kronstadt_(group_of_companies)",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Russia",
+    "source": "en.wikipedia.org/wiki/Kronstadt_Group",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1990,
+    "source": "tadviser.com/index.php/Company:Kronstadt_(group_of_companies)",
+    "tier": "B"
+   }
+  },
+  "survey-copter": {
+   "hq_city": {
+    "value": "Pierrelatte",
+    "source": "survey-copter.com/en/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "France",
+    "source": "survey-copter.com/en/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1996,
+    "source": "survey-copter.com/en/about-us",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.survey-copter.com",
+    "source": "survey-copter.com",
+    "tier": "A"
+   }
+  },
+  "uvision": {
+   "legal_name": {
+    "value": "UVision Air Ltd.",
+    "source": "il.linkedin.com/company/uvisionuav",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Emek Hefer",
+    "source": "en.wikipedia.org/wiki/UVision_Air",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Israel",
+    "source": "en.wikipedia.org/wiki/UVision_Air",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "en.wikipedia.org/wiki/UVision_Air",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://uvisionuav.com",
+    "source": "uvisionuav.com",
+    "tier": "A"
+   }
+  },
+  "casc": {
+   "legal_name": {
+    "value": "China Aerospace Science and Technology Corporation",
+    "source": "english.spacechina.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Beijing",
+    "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1999,
+    "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Technology_Corporation",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://english.spacechina.com",
+    "source": "english.spacechina.com",
+    "tier": "A"
+   }
+  },
+  "elbit-systems": {
+   "legal_name": {
+    "value": "Elbit Systems Ltd.",
+    "source": "sec.gov/Archives/edgar/data/0001027664",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Israel",
+    "source": "il.linkedin.com/company/elbitsystems",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Haifa",
+    "source": "en.wikipedia.org/wiki/Elbit_Systems",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1966,
+    "source": "en.wikipedia.org/wiki/Elbit_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://elbitsystems.com",
+    "source": "il.linkedin.com/company/elbitsystems",
+    "tier": "A"
+   }
+  },
+  "quantum-systems": {
+   "legal_name": {
+    "value": "Quantum-Systems GmbH",
+    "source": "companyhouse.de/en/Quantum-Systems-GmbH-Gilching",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "quantum-systems.com/us/about-us",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Gilching",
+    "source": "companyhouse.de/en/Quantum-Systems-GmbH-Gilching",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2015,
+    "source": "en.wikipedia.org/wiki/Quantum-Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://quantum-systems.com",
+    "source": "quantum-systems.com",
+    "tier": "A"
+   }
+  },
+  "airbus": {
+   "legal_name": {
+    "value": "Airbus Defence and Space GmbH",
+    "source": "northdata.com",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "en.wikipedia.org/wiki/Airbus_Defence_and_Space",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Taufkirchen, Bavaria",
+    "source": "en.wikipedia.org/wiki/Airbus_Defence_and_Space",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Airbus_Defence_and_Space",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.airbus.com",
+    "source": "airbus.com",
+    "tier": "A"
+   }
+  },
+  "xag": {
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/XAG_(company)",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Guangzhou, Guangdong",
+    "source": "en.wikipedia.org/wiki/XAG_(company)",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2007,
+    "source": "en.wikipedia.org/wiki/XAG_(company)",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.xa.com",
+    "source": "xa.com",
+    "tier": "A"
+   }
+  },
+  "ageagle": {
+   "legal_name": {
+    "value": "AgEagle Aerial Systems, Inc.",
+    "source": "annualreports.com/Company/ageagle-aerial-systems-inc",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "ageagle.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Wichita, Kansas",
+    "source": "ageagle.com/ageagle-aerial-systems-announces-details-for-new-manufacturing-facility-in-wichita-kansas",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2010,
+    "source": "pitchbook.com/profiles/company/113012-74",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://ageagle.com",
+    "source": "ageagle.com",
+    "tier": "A"
+   }
+  },
+  "edge-autonomy": {
+   "hq_country": {
+    "value": "United States",
+    "source": "prnewswire.com/news-releases/uav-factory--jennings-aeronautics-rebrand-as-edge-autonomy-301486096.html",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Luis Obispo, California",
+    "source": "prnewswire.com/news-releases/uav-factory--jennings-aeronautics-rebrand-as-edge-autonomy-301486096.html",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://edgeautonomy.io",
+    "source": "edgeautonomy.io",
+    "tier": "A"
+   }
+  },
+  "textron-systems": {
+   "hq_country": {
+    "value": "United States",
+    "source": "textron.com/content/textron-systems-hunt-valley-clubhouse-rd",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Hunt Valley, Maryland",
+    "source": "textron.com/content/textron-systems-hunt-valley-clubhouse-rd",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.textronsystems.com",
+    "source": "textronsystems.com",
+    "tier": "A"
+   }
+  },
+  "autoflight": {
+   "legal_name": {
+    "value": "Shanghai Autoflight Co., Ltd.",
+    "source": "cnevpost.com/2021/10/29/shanghai-based-autoflight-completes-maiden-flight-test-of-manned-vehicle-v1500m",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "cnevpost.com/2021/10/29/shanghai-based-autoflight-completes-maiden-flight-test-of-manned-vehicle-v1500m",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Shanghai",
+    "source": "cnevpost.com/2021/10/29/shanghai-based-autoflight-completes-maiden-flight-test-of-manned-vehicle-v1500m",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "thechinaproject.com/company-profiles/autoflight",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://autoflight.com",
+    "source": "autoflight.com",
+    "tier": "A"
+   }
   }
+ }
 }

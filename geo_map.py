@@ -36,6 +36,27 @@ CENTROID = {
     "Thailand": (15.5, 101.0), "Austria": (47.6, 14.1), "Denmark": (56.0, 9.6),
     "Singapore": (1.35, 103.8), "Estonia": (58.9, 25.7),
 }
+# Tier-3 HQ pins: exact hq_city string -> (lat, lon). Public-domain city coordinates (well-known
+# settlement points). Keyed by the verbatim hq_city VALUE so there is no lossy normalisation: a pin
+# is placed only when the company's recorded city resolves here, else honest-null (no pin). The gate
+# (verify_map MAP_PIN_FAKED) proves every pin traces to a real company.hq_city and none is invented.
+CITY_COORD = {
+    "Ankara": (39.93, 32.86), "Arlington, Virginia": (38.88, -77.10), "Beijing": (39.90, 116.40),
+    "Berlin": (52.52, 13.40), "Bingen, Washington": (45.74, -121.46), "Chengdu, Sichuan": (30.66, 104.07),
+    "Costa Mesa, California": (33.64, -117.92), "Emek Hefer": (32.36, 34.90),
+    "Falls Church, Virginia": (38.88, -77.17), "Gilching": (48.11, 11.30),
+    "Guangzhou, Guangdong": (23.13, 113.26), "Haifa": (32.79, 34.99), "Ho Chi Minh City": (10.82, 106.63),
+    "Hunt Valley, Maryland": (39.49, -76.66), "Ismaning, Bavaria": (48.22, 11.67), "Istanbul": (41.01, 28.98),
+    "Izhevsk": (56.85, 53.20), "Kahramankazan, Ankara": (40.20, 32.68), "Kunshan, Jiangsu": (31.39, 120.98),
+    "Kyiv": (50.45, 30.52), "Lod": (31.95, 34.89), "Paris La Défense": (48.89, 2.24),
+    "Penzberg, Bavaria": (47.75, 11.38), "Pierrelatte": (44.38, 4.69), "Poway, California": (32.96, -117.04),
+    "Saint Petersburg": (59.94, 30.31), "San Diego, California": (32.72, -117.16),
+    "San Luis Obispo, California": (35.28, -120.66), "San Mateo, California": (37.56, -122.32),
+    "Seattle, Washington": (47.61, -122.33), "Shahin Shahr, Isfahan": (32.86, 51.55),
+    "Shanghai": (31.23, 121.47), "Shenzhen (Nanshan), Guangdong": (22.53, 113.93),
+    "Shenzhen, Guangdong": (22.54, 114.06), "Taufkirchen, Bavaria": (48.05, 11.62), "Uden": (51.66, 5.62),
+    "Wichita, Kansas": (37.69, -97.34), "Wilsonville, Oregon": (45.30, -122.77), "Yavne": (31.88, 34.74),
+}
 # canon name -> Natural Earth ADMIN polygon name (only where they differ); micro-states absent on 110m.
 POLY_ALIAS = {"United States": "United States of America"}
 # canon name -> VN label (for the HTML overlay labels; EN side is the canon name)
@@ -188,6 +209,39 @@ def subset_map(counts, mappable, subset_n, *, rel="", fkey="", cap_en="", cap_vn
         f'role="img" preserveAspectRatio="xMidYMid meet" aria-hidden="true">'
         f'<g class="wm-base"><path d="{_coast()}"/></g>'
         f'<g class="wm-dots">{"".join(dots)}</g></svg>{cap}</div>')
+
+
+def hq_map(companies, total_with_hq, *, rel="", cap_en="", cap_vn=""):
+    """Tier-3 manufacturer-HQ map: a diamond PIN at each company's headquarters city. companies is a
+    list of {slug, hq_city, count}. A pin is drawn only when hq_city resolves in CITY_COORD; an
+    unresolved city is honest-null (no pin). Pins are visually distinct from the round country dots
+    (diamond marker). data-pins == drawn pins; verify_map (MAP_PIN_FAKED) proves each pin traces to a
+    real company.hq_city, none invented, and none with a resolvable HQ silently dropped."""
+    pins, placed = [], 0
+    for co in sorted(companies, key=lambda c: -c["count"]):
+        coord = CITY_COORD.get(co["hq_city"])
+        if not coord:
+            continue
+        placed += 1
+        x, y = _proj(coord[1], coord[0])
+        r = max(3.2, 2.4 + math.sqrt(co["count"]) * 1.5)
+        # diamond marker (distinct from country circles); token brass
+        d = f'M {x:.1f} {y-r:.1f} L {x+r:.1f} {y:.1f} L {x:.1f} {y+r:.1f} L {x-r:.1f} {y:.1f} Z'
+        pins.append(
+            f'<a href="{_e(rel)}company/{_e(co["slug"])}.html"><path d="{d}" fill="var(--brass)" '
+            f'fill-opacity="0.85" stroke="var(--brass)" stroke-width="0.8" data-co="{_e(co["slug"])}" '
+            f'data-city="{_e(co["hq_city"])}" data-n="{co["count"]}">'
+            f'<title>{_e(co["hq_city"])} · {co["count"]} systems</title></path></a>')
+    if not pins:
+        return ""
+    cap = (f'<div class="wm-cap"><span data-lang-en>{_e(cap_en)}</span>'
+           f'<span data-lang-vn>{_e(cap_vn)}</span></div>') if cap_en else ""
+    return (
+        f'<div class="hqmap" data-pins="{placed}" data-total="{total_with_hq}" data-audit="hqmap">'
+        f'<svg class="wm-svg" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg" '
+        f'role="img" preserveAspectRatio="xMidYMid meet" aria-hidden="true">'
+        f'<g class="wm-base"><path d="{_coast()}"/></g>'
+        f'<g class="wm-dots hq-pins">{"".join(pins)}</g></svg>{cap}</div>')
 
 
 def country_map(country, n, *, rel=""):

@@ -9,7 +9,7 @@ import json, pathlib
 from build_reference import friendly, bilingual, esc
 from footer import footer
 from canon import canon_country, canonical_slug, canonical_name
-from geo_map import world_map
+from geo_map import world_map, hq_map, CITY_COORD
 from nav import nav
 from header import header
 from seo import meta as seo_meta, collection_ld
@@ -91,9 +91,16 @@ def compute(site):
     NUM = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km", "max_link_km", "max_speed_ms", "service_ceiling_m"]
     spec_range = [{"key": k, "min": sr[k]["min"], "max": sr[k]["max"], "present": fill[k]["present"]}
                   for k in NUM if sr.get(k) and fill.get(k)]
+    def cv(e, k):
+        x = e.get(k)
+        return x.get("value") if isinstance(x, dict) else x
+    hq_makers = [{"slug": e["slug"], "hq_city": cv(e, "hq_city"),
+                  "count": (e.get("rollup") or {}).get("uav_count", 0)}
+                 for e in companies if cv(e, "hq_city")]
     return {"schema": "data-overview/1", "totals": totals, "country": country_d, "maker": maker_d,
             "segment": seg_d, "standards": standards, "coverage": coverage, "spec_range": spec_range,
-            "country_full": dict(country)}   # ALL country counts (untruncated) for the world map
+            "country_full": dict(country),   # ALL country counts (untruncated) for the world map
+            "hq_makers": hq_makers, "hq_total": len(hq_makers)}
 
 
 # --- render (static) ---
@@ -130,6 +137,10 @@ def render(ov):
     c1, c2 = _split(ov["country"], "country")
     m1, m2 = _split(ov["maker"], "company")
     wmap = world_map(ov["country_full"], t["uav"], rel="")
+    hq_placed = sum(1 for m in ov["hq_makers"] if m["hq_city"] in CITY_COORD)
+    hqmap = hq_map(ov["hq_makers"], ov["hq_total"], rel="",
+                   cap_en=f"Manufacturer HQ · {hq_placed} of {t['company']} makers have a recorded, mappable location (the rest honest-null)",
+                   cap_vn=f"Trụ sở nhà sản xuất · {hq_placed}/{t['company']} hãng có vị trí ghi nhận (còn lại honest-null)")
     wmap_cap = '<p class="wm-cap">' + bilingual(
         "Distribution by manufacturer country in the USR registry, not global UAV production or deployment. "
         "A country with no dot has no system tagged to it in the registry, not no UAV. Micro-states "
@@ -217,6 +228,7 @@ def render(ov):
   <div class="cols2"><div class="chart">{c1}</div><div class="chart">{c2}</div></div>
 
   <div class="regdiv"><span class="num">02</span><span class="lab">{bilingual("By manufacturer", "Theo nhà sản xuất")}</span><span class="ln"></span><span class="meta">{t["company"]} {bilingual("makers", "hãng")}</span></div>
+  {hqmap}
   <div class="cols2"><div class="chart">{m1}</div><div class="chart">{m2}</div></div>
   <div class="note"><span class="b">▪</span> {bilingual("Long tail: most manufacturers have 1–2 systems and their attributes are still honest-null (derived-first).", "Đuôi dài: phần lớn hãng chỉ 1–2 hệ thống, thuộc tính còn honest-null (derived-first).")}</div>
 

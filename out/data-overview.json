@@ -170,6 +170,224 @@
       "total": 444
     }
   ],
+  "hq_makers": [
+    {
+      "count": 3,
+      "hq_city": "Uden",
+      "slug": "acecore"
+    },
+    {
+      "count": 3,
+      "hq_city": "Yavne",
+      "slug": "aeronautics"
+    },
+    {
+      "count": 18,
+      "hq_city": "Arlington, Virginia",
+      "slug": "aerovironment"
+    },
+    {
+      "count": 3,
+      "hq_city": "Wichita, Kansas",
+      "slug": "ageagle"
+    },
+    {
+      "count": 4,
+      "hq_city": "Taufkirchen, Bavaria",
+      "slug": "airbus"
+    },
+    {
+      "count": 10,
+      "hq_city": "Costa Mesa, California",
+      "slug": "anduril"
+    },
+    {
+      "count": 1,
+      "hq_city": "Shenzhen (Nanshan), Guangdong",
+      "slug": "autel"
+    },
+    {
+      "count": 13,
+      "hq_city": "Shenzhen, Guangdong",
+      "slug": "autel-robotics"
+    },
+    {
+      "count": 2,
+      "hq_city": "Shanghai",
+      "slug": "autoflight"
+    },
+    {
+      "count": 5,
+      "hq_city": "Beijing",
+      "slug": "avic"
+    },
+    {
+      "count": 3,
+      "hq_city": "Ismaning, Bavaria",
+      "slug": "avilus"
+    },
+    {
+      "count": 8,
+      "hq_city": "Istanbul",
+      "slug": "baykar"
+    },
+    {
+      "count": 3,
+      "hq_city": "Arlington, Virginia",
+      "slug": "boeing"
+    },
+    {
+      "count": 4,
+      "hq_city": "Bingen, Washington",
+      "slug": "boeing-insitu"
+    },
+    {
+      "count": 3,
+      "hq_city": "Seattle, Washington",
+      "slug": "brinc"
+    },
+    {
+      "count": 4,
+      "hq_city": "Chengdu, Sichuan",
+      "slug": "caig"
+    },
+    {
+      "count": 10,
+      "hq_city": "Beijing",
+      "slug": "casc"
+    },
+    {
+      "count": 38,
+      "hq_city": "Shenzhen (Nanshan), Guangdong",
+      "slug": "dji"
+    },
+    {
+      "count": 3,
+      "hq_city": "San Luis Obispo, California",
+      "slug": "edge-autonomy"
+    },
+    {
+      "count": 7,
+      "hq_city": "Haifa",
+      "slug": "elbit-systems"
+    },
+    {
+      "count": 3,
+      "hq_city": "Penzberg, Bavaria",
+      "slug": "emt-penzberg"
+    },
+    {
+      "count": 10,
+      "hq_city": "Poway, California",
+      "slug": "general-atomics"
+    },
+    {
+      "count": 3,
+      "hq_city": "Berlin",
+      "slug": "germandrones"
+    },
+    {
+      "count": 10,
+      "hq_city": "Shahin Shahr, Isfahan",
+      "slug": "hesa"
+    },
+    {
+      "count": 13,
+      "hq_city": "Lod",
+      "slug": "iai"
+    },
+    {
+      "count": 4,
+      "hq_city": "San Diego, California",
+      "slug": "kratos"
+    },
+    {
+      "count": 3,
+      "hq_city": "Saint Petersburg",
+      "slug": "kronshtadt"
+    },
+    {
+      "count": 6,
+      "hq_city": "Falls Church, Virginia",
+      "slug": "northrop-grumman"
+    },
+    {
+      "count": 5,
+      "hq_city": "Gilching",
+      "slug": "quantum-systems"
+    },
+    {
+      "count": 3,
+      "hq_city": "Ho Chi Minh City",
+      "slug": "real-time-robotics"
+    },
+    {
+      "count": 3,
+      "hq_city": "San Diego, California",
+      "slug": "shield-ai"
+    },
+    {
+      "count": 5,
+      "hq_city": "San Mateo, California",
+      "slug": "skydio"
+    },
+    {
+      "count": 3,
+      "hq_city": "Ankara",
+      "slug": "stm"
+    },
+    {
+      "count": 3,
+      "hq_city": "Pierrelatte",
+      "slug": "survey-copter"
+    },
+    {
+      "count": 5,
+      "hq_city": "Kahramankazan, Ankara",
+      "slug": "tai"
+    },
+    {
+      "count": 6,
+      "hq_city": "Wilsonville, Oregon",
+      "slug": "teledyne-flir"
+    },
+    {
+      "count": 3,
+      "hq_city": "Hunt Valley, Maryland",
+      "slug": "textron-systems"
+    },
+    {
+      "count": 3,
+      "hq_city": "Paris La Défense",
+      "slug": "thales"
+    },
+    {
+      "count": 3,
+      "hq_city": "Kyiv",
+      "slug": "ukrspecsystems"
+    },
+    {
+      "count": 3,
+      "hq_city": "Emek Hefer",
+      "slug": "uvision"
+    },
+    {
+      "count": 4,
+      "hq_city": "Guangzhou, Guangdong",
+      "slug": "xag"
+    },
+    {
+      "count": 4,
+      "hq_city": "Kunshan, Jiangsu",
+      "slug": "yuneec"
+    },
+    {
+      "count": 5,
+      "hq_city": "Izhevsk",
+      "slug": "zala-aero"
+    }
+  ],
+  "hq_total": 43,
   "maker": [
     {
       "n": "DJI",
