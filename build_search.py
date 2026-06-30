@@ -111,7 +111,9 @@ def render_page():
 <main class="swrap">
   <h1>{bilingual("Search", "Tìm kiếm")}</h1>
   <input id="q" type="search" autocomplete="off" aria-label="search"
-     placeholder="{esc('Systems, manufacturers, countries, segments…')}">
+     placeholder="{esc('Systems, manufacturers, countries, segments…')}"
+     data-ph-en="{esc('Systems, manufacturers, countries, segments…')}"
+     data-ph-vn="{esc('Hệ thống, hãng, quốc gia, phân khúc…')}">
   <div id="out"></div>
   <noscript><p class="empty">{bilingual("Search needs JavaScript. Browse on the",
     "Tìm kiếm cần JavaScript. Xem ở trang")} <a href="reference.html">{bilingual("reference","tra cứu")}</a>.</p></noscript>

@@ -80,9 +80,19 @@
   function initI18n(btn) {
     var rootHtml = document.documentElement;
     if (!rootHtml.getAttribute("data-lang")) rootHtml.setAttribute("data-lang", "en");
+    // input placeholders are attributes (no data-lang spans), so swap them per language here
+    function syncPh() {
+      var lang = rootHtml.getAttribute("data-lang"), el = document.querySelectorAll("[data-ph-en]");
+      for (var i = 0; i < el.length; i++) {
+        var v = el[i].getAttribute("data-ph-" + lang);
+        if (v != null) el[i].setAttribute("placeholder", v);
+      }
+    }
+    syncPh();
     if (btn) btn.addEventListener("click", function () {
       rootHtml.setAttribute("data-lang",
         rootHtml.getAttribute("data-lang") === "en" ? "vn" : "en");
+      syncPh();
     });
   }
   /* initDraw — measure each [data-draw] path so the stroke-dashoffset draw-in animates the

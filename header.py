@@ -28,7 +28,7 @@ def header(prefix="", current=None):
         'stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle>'
         '<line x1="20" y1="20" x2="16.05" y2="16.05"></line></svg>'
         '<input id="gq" type="search" name="q" autocomplete="off" enterkeyhint="search" '
-        'placeholder="Tìm · Search" aria-label="Search the registry"></form>'
+        'placeholder="Search" data-ph-en="Search" data-ph-vn="Tìm kiếm" aria-label="Search the registry"></form>'
         '<div class="gbar-ctl">'
         '<button id="lang" class="gbar-tg" aria-label="Language">'
         '<span data-lang-en>VN</span><span data-lang-vn>EN</span></button>'

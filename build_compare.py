@@ -137,7 +137,7 @@ def render_page(site):
     <div class="cmp-kick">{bilingual("Select systems · 2–4", "Chọn hệ thống · 2–4")}</div>
     <div class="cmp-search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="20" y1="20" x2="16.05" y2="16.05"></line></svg>
-      <input id="q" type="search" autocomplete="off" placeholder="{esc('Search by model or manufacturer…')}" aria-label="search">
+      <input id="q" type="search" autocomplete="off" placeholder="{esc('Search by model or manufacturer…')}" data-ph-en="{esc('Search by model or manufacturer…')}" data-ph-vn="{esc('Tìm theo mẫu hoặc hãng…')}" aria-label="search">
     </div>
     <div class="cmp-sub">{bilingual("Selected bays", "Khoang đã chọn")}</div>
     <div class="bays" id="chips"></div>
