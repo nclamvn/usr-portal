@@ -91962,12 +91962,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Industry_Corporation",
+        "tier": "B",
+        "value": 1999
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Industry_Corporation",
+        "tier": "B",
+        "value": "Beijing"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Industry_Corporation",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/China_Aerospace_Science_and_Industry_Corporation",
+        "tier": "B",
+        "value": "China Aerospace Science and Industry Corporation"
+      },
       "name": "CASIC",
       "rollup": {
         "blue_uas_count": 0,
@@ -91984,18 +92000,38 @@
         ]
       },
       "slug": "casic",
-      "website": null
+      "website": {
+        "source": "casic.com.cn",
+        "tier": "A",
+        "value": "https://www.casic.com.cn"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "pitchbook.com",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "censystech.com/about/",
+        "tier": "A",
+        "value": "Daytona Beach, Florida"
+      },
+      "hq_country": {
+        "source": "censystech.com/about/",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "censystech.com",
+        "tier": "A",
+        "value": "Censys Technologies Corporation"
+      },
       "name": "Censys Technologies",
       "rollup": {
         "blue_uas_count": 0,
@@ -92012,18 +92048,38 @@
         ]
       },
       "slug": "censys-technologies",
-      "website": null
+      "website": {
+        "source": "censystech.com",
+        "tier": "A",
+        "value": "https://censystech.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "cbinsights.com",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "cleorobotics.com",
+        "tier": "A",
+        "value": "Boston, Massachusetts"
+      },
+      "hq_country": {
+        "source": "cleorobotics.com",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "dnb.com",
+        "tier": "B",
+        "value": "Cleo Robotics Labs Inc."
+      },
       "name": "Cleo Robotics",
       "rollup": {
         "blue_uas_count": 0,
@@ -92040,7 +92096,11 @@
         ]
       },
       "slug": "cleo-robotics",
-      "website": null
+      "website": {
+        "source": "cleorobotics.com",
+        "tier": "A",
+        "value": "https://cleorobotics.com"
+      }
     },
     {
       "contact_email": null,
@@ -92095,9 +92155,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "deltaquad.com/contact",
+        "tier": "A",
+        "value": "Duivendrecht"
+      },
+      "hq_country": {
+        "source": "deltaquad.com/contact",
+        "tier": "A",
+        "value": "Netherlands"
+      },
+      "legal_name": {
+        "source": "nidv.eu/bedrijvengids/deltaquad",
+        "tier": "B",
+        "value": "DeltaQuad B.V."
+      },
       "name": "DeltaQuad",
       "rollup": {
         "blue_uas_count": 0,
@@ -92114,17 +92186,33 @@
         ]
       },
       "slug": "deltaquad",
-      "website": null
+      "website": {
+        "source": "deltaquad.com",
+        "tier": "A",
+        "value": "https://www.deltaquad.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "deviro.ua/about-the-company/",
+        "tier": "C",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "drone-directory.com.ua/profile/deviro/",
+        "tier": "B",
+        "value": "Dnipro"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/DeViRo_Leleka-100",
+        "tier": "B",
+        "value": "Ukraine"
+      },
       "legal_name": null,
       "name": "DeViRo",
       "rollup": {
@@ -92142,7 +92230,11 @@
         ]
       },
       "slug": "deviro",
-      "website": null
+      "website": {
+        "source": "deviro.ua",
+        "tier": "A",
+        "value": "https://deviro.ua"
+      }
     },
     {
       "contact_email": null,
@@ -92261,12 +92353,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "cbinsights.com/company/doosan-mobility-innovation",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "doosanmobility.com/en/about-us/locations",
+        "tier": "A",
+        "value": "Yongin"
+      },
+      "hq_country": {
+        "source": "doosanmobility.com",
+        "tier": "A",
+        "value": "South Korea"
+      },
+      "legal_name": {
+        "source": "doosanmobility.com",
+        "tier": "A",
+        "value": "Doosan Mobility Innovation"
+      },
       "name": "Doosan Mobility Innovation",
       "rollup": {
         "blue_uas_count": 0,
@@ -92283,18 +92391,38 @@
         ]
       },
       "slug": "doosan-mobility-innovation",
-      "website": null
+      "website": {
+        "source": "doosanmobility.com",
+        "tier": "A",
+        "value": "https://www.doosanmobility.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Doroni_Aerospace",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "doroni.io/about-doroni-aerospace",
+        "tier": "A",
+        "value": "Dania Beach, Florida"
+      },
+      "hq_country": {
+        "source": "doroni.io/about-doroni-aerospace",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "doroni.io/about-doroni-aerospace",
+        "tier": "A",
+        "value": "Doroni Aerospace"
+      },
       "name": "Doroni",
       "rollup": {
         "blue_uas_count": 0,
@@ -92309,18 +92437,38 @@
         ]
       },
       "slug": "doroni",
-      "website": null
+      "website": {
+        "source": "doroni.io",
+        "tier": "A",
+        "value": "https://doroni.io"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Defence_Research_and_Development_Organisation",
+        "tier": "B",
+        "value": 1958
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "drdo.gov.in",
+        "tier": "A",
+        "value": "New Delhi"
+      },
+      "hq_country": {
+        "source": "drdo.gov.in",
+        "tier": "A",
+        "value": "India"
+      },
+      "legal_name": {
+        "source": "drdo.gov.in",
+        "tier": "A",
+        "value": "Defence Research and Development Organisation"
+      },
       "name": "DRDO",
       "rollup": {
         "blue_uas_count": 0,
@@ -92337,18 +92485,38 @@
         ]
       },
       "slug": "drdo",
-      "website": null
+      "website": {
+        "source": "drdo.gov.in",
+        "tier": "A",
+        "value": "https://drdo.gov.in"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "therecursive.com",
+        "tier": "B",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "therecursive.com",
+        "tier": "B",
+        "value": "Sofia"
+      },
+      "hq_country": {
+        "source": "therecursive.com",
+        "tier": "B",
+        "value": "Bulgaria"
+      },
+      "legal_name": {
+        "source": "dronamics.com",
+        "tier": "A",
+        "value": "Dronamics Group Limited"
+      },
       "name": "Dronamics",
       "rollup": {
         "blue_uas_count": 0,
@@ -92365,18 +92533,38 @@
         ]
       },
       "slug": "dronamics",
-      "website": null
+      "website": {
+        "source": "dronamics.com",
+        "tier": "A",
+        "value": "https://www.dronamics.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "moneyhouse.ch",
+        "tier": "A",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "business-monitor.ch/en/companies/730915-dufour-aerospace-ag",
+        "tier": "A",
+        "value": "Visp"
+      },
+      "hq_country": {
+        "source": "business-monitor.ch/en/companies/730915-dufour-aerospace-ag",
+        "tier": "A",
+        "value": "Switzerland"
+      },
+      "legal_name": {
+        "source": "moneyhouse.ch",
+        "tier": "A",
+        "value": "Dufour Aerospace AG"
+      },
       "name": "Dufour Aerospace",
       "rollup": {
         "blue_uas_count": 0,
@@ -92393,18 +92581,38 @@
         ]
       },
       "slug": "dufour-aerospace",
-      "website": null
+      "website": {
+        "source": "dufour.aero",
+        "tier": "A",
+        "value": "https://www.dufour.aero"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "linkedin.com/company/easy-aerial",
+        "tier": "C",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "brooklynnavyyard.org/tenants/easy-aerial-inc/",
+        "tier": "B",
+        "value": "Brooklyn, New York"
+      },
+      "hq_country": {
+        "source": "easyaerial.com",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "brooklynnavyyard.org/tenants/easy-aerial-inc/",
+        "tier": "B",
+        "value": "Easy Aerial Inc."
+      },
       "name": "Easy Aerial",
       "rollup": {
         "blue_uas_count": 1,
@@ -92421,7 +92629,11 @@
         ]
       },
       "slug": "easy-aerial",
-      "website": null
+      "website": {
+        "source": "easyaerial.com",
+        "tier": "A",
+        "value": "https://www.easyaerial.com"
+      }
     },
     {
       "contact_email": null,
@@ -92473,8 +92685,16 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "effort-tech.com",
+        "tier": "B",
+        "value": "Hefei, Anhui"
+      },
+      "hq_country": {
+        "source": "effort-tech.com",
+        "tier": "A",
+        "value": "China"
+      },
       "legal_name": null,
       "name": "EFT",
       "rollup": {
@@ -92492,18 +92712,38 @@
         ]
       },
       "slug": "eft",
-      "website": null
+      "website": {
+        "source": "effort-tech.com",
+        "tier": "A",
+        "value": "https://effort-tech.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/EHang",
+        "tier": "B",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/EHang",
+        "tier": "B",
+        "value": "Guangzhou"
+      },
+      "hq_country": {
+        "source": "linkedin.com/company/ehang-inc-/",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "sec.gov",
+        "tier": "A",
+        "value": "EHang Holdings Limited"
+      },
       "name": "EHang",
       "rollup": {
         "blue_uas_count": 0,
@@ -92520,18 +92760,38 @@
         ]
       },
       "slug": "ehang",
-      "website": null
+      "website": {
+        "source": "ehang.com",
+        "tier": "A",
+        "value": "https://www.ehang.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "ir.ehang.com",
+        "tier": "A",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ir.ehang.com",
+        "tier": "A",
+        "value": "Guangzhou"
+      },
+      "hq_country": {
+        "source": "ir.ehang.com",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "ir.ehang.com",
+        "tier": "A",
+        "value": "EHang Holdings Limited"
+      },
       "name": "EHang Holdings",
       "rollup": {
         "blue_uas_count": 0,
@@ -92548,18 +92808,38 @@
         ]
       },
       "slug": "ehang-holdings",
-      "website": null
+      "website": {
+        "source": "ehang.com",
+        "tier": "A",
+        "value": "https://www.ehang.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Elbit_Systems",
+        "tier": "B",
+        "value": 1966
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Elbit_Systems",
+        "tier": "B",
+        "value": "Haifa"
+      },
+      "hq_country": {
+        "source": "elbitsystems.com",
+        "tier": "A",
+        "value": "Israel"
+      },
+      "legal_name": {
+        "source": "elbitsystems.com",
+        "tier": "A",
+        "value": "Elbit Systems Ltd."
+      },
       "name": "Elbit",
       "rollup": {
         "blue_uas_count": 0,
@@ -92576,7 +92856,11 @@
         ]
       },
       "slug": "elbit",
-      "website": null
+      "website": {
+        "source": "elbitsystems.com",
+        "tier": "A",
+        "value": "https://elbitsystems.com"
+      }
     },
     {
       "contact_email": null,
@@ -92637,12 +92921,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Elroy_Air_Chaparral",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "elroyair.com/contact-us",
+        "tier": "B",
+        "value": "South San Francisco, California"
+      },
+      "hq_country": {
+        "source": "elroyair.com",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "secfilingdata.com/?cik=0001808548",
+        "tier": "B",
+        "value": "Elroy Air, Inc."
+      },
       "name": "Elroy Air",
       "rollup": {
         "blue_uas_count": 0,
@@ -92659,7 +92959,11 @@
         ]
       },
       "slug": "elroy-air",
-      "website": null
+      "website": {
+        "source": "elroyair.com",
+        "tier": "A",
+        "value": "https://elroyair.com"
+      }
     },
     {
       "contact_email": null,
@@ -92764,12 +93068,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "aerospaceamerica.aiaa.org",
+        "tier": "B",
+        "value": 2020
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ir.eveairmobility.com/company-information",
+        "tier": "A",
+        "value": "Melbourne, Florida"
+      },
+      "hq_country": {
+        "source": "ir.eveairmobility.com/company-information",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "ir.eveairmobility.com",
+        "tier": "A",
+        "value": "Eve Holding, Inc."
+      },
       "name": "Eve Air Mobility",
       "rollup": {
         "blue_uas_count": 0,
@@ -92786,7 +93106,11 @@
         ]
       },
       "slug": "eve-air-mobility",
-      "website": null
+      "website": {
+        "source": "eveairmobility.com",
+        "tier": "A",
+        "value": "https://www.eveairmobility.com"
+      }
     },
     {
       "contact_email": null,
@@ -92836,9 +93160,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "flightwave.aero/contact",
+        "tier": "A",
+        "value": "Torrance, California"
+      },
+      "hq_country": {
+        "source": "flightwave.aero",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "ir.redcatholdings.com",
+        "tier": "A",
+        "value": "FlightWave Aerospace Systems"
+      },
       "name": "FlightWave",
       "rollup": {
         "blue_uas_count": 0,
@@ -92855,18 +93191,38 @@
         ]
       },
       "slug": "flightwave",
-      "website": null
+      "website": {
+        "source": "flightwave.aero",
+        "tier": "A",
+        "value": "https://flightwave.aero"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "cnbc.com/2025/06/10/flock-safety-cnbc-disruptor-50.html",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "georgia.org",
+        "tier": "B",
+        "value": "Atlanta, Georgia"
+      },
+      "hq_country": {
+        "source": "georgia.org",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "flocksafety.com",
+        "tier": "A",
+        "value": "Flock Safety"
+      },
       "name": "Flock Safety",
       "rollup": {
         "blue_uas_count": 0,
@@ -92883,7 +93239,11 @@
         ]
       },
       "slug": "flock-safety",
-      "website": null
+      "website": {
+        "source": "flocksafety.com",
+        "tier": "A",
+        "value": "https://www.flocksafety.com"
+      }
     },
     {
       "contact_email": null,
@@ -92938,11 +93298,23 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "crunchbase.com/organization/flytrex",
+        "tier": "B",
+        "value": 2013
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "cbinsights.com/company/flytrex",
+        "tier": "B",
+        "value": "Tel Aviv"
+      },
+      "hq_country": {
+        "source": "flytrex.com",
+        "tier": "B",
+        "value": "Israel"
+      },
       "legal_name": null,
       "name": "Flytrex",
       "rollup": {
@@ -92960,7 +93332,11 @@
         ]
       },
       "slug": "flytrex",
-      "website": null
+      "website": {
+        "source": "flytrex.com",
+        "tier": "A",
+        "value": "https://www.flytrex.com"
+      }
     },
     {
       "contact_email": null,
@@ -93063,12 +93439,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "indiafilings.com",
+        "tier": "A",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "garudaaerospace.com",
+        "tier": "A",
+        "value": "Chennai, Tamil Nadu"
+      },
+      "hq_country": {
+        "source": "garudaaerospace.com",
+        "tier": "A",
+        "value": "India"
+      },
+      "legal_name": {
+        "source": "indiafilings.com",
+        "tier": "A",
+        "value": "Garuda Aerospace Private Limited"
+      },
       "name": "Garuda Aerospace",
       "rollup": {
         "blue_uas_count": 0,
@@ -93085,7 +93477,11 @@
         ]
       },
       "slug": "garuda-aerospace",
-      "website": null
+      "website": {
+        "source": "garudaaerospace.com",
+        "tier": "A",
+        "value": "https://www.garudaaerospace.com"
+      }
     },
     {
       "contact_email": null,
@@ -93284,11 +93680,23 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "agtechnavigator.com/Article/2025/09/29/what-went-wrong-at-guardian-agriculture",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "therobotreport.com/drone-startup-guardian-agriculture-shuts-down",
+        "tier": "B",
+        "value": "Woburn, Massachusetts"
+      },
+      "hq_country": {
+        "source": "therobotreport.com/drone-startup-guardian-agriculture-shuts-down",
+        "tier": "B",
+        "value": "United States"
+      },
       "legal_name": null,
       "name": "Guardian Agriculture",
       "rollup": {
@@ -93315,9 +93723,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "globaldefencemart.com/companydetails/profile/harwar-international-aviation-technology-shenzhen-co.-ltd",
+        "tier": "B",
+        "value": "Shenzhen"
+      },
+      "hq_country": {
+        "source": "harwar.com/en/about.html",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "globaldefencemart.com",
+        "tier": "B",
+        "value": "Harwar International Aviation Technology (Shenzhen) Co., Ltd."
+      },
       "name": "Harwar",
       "rollup": {
         "blue_uas_count": 0,
@@ -93334,18 +93754,38 @@
         ]
       },
       "slug": "harwar",
-      "website": null
+      "website": {
+        "source": "harwar.com",
+        "tier": "A",
+        "value": "http://www.harwar.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Helsing_(company)",
+        "tier": "B",
+        "value": 2021
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Helsing_(company)",
+        "tier": "B",
+        "value": "Munich"
+      },
+      "hq_country": {
+        "source": "helsing.ai",
+        "tier": "A",
+        "value": "Germany"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Helsing_(company)",
+        "tier": "B",
+        "value": "Helsing SE"
+      },
       "name": "Helsing",
       "rollup": {
         "blue_uas_count": 0,
@@ -93362,7 +93802,11 @@
         ]
       },
       "slug": "helsing",
-      "website": null
+      "website": {
+        "source": "helsing.ai",
+        "tier": "A",
+        "value": "https://helsing.ai"
+      }
     },
     {
       "contact_email": null,
@@ -93425,9 +93869,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "prnewswire.com/news-releases/heven-aerotech-expands-us-operations-with-new-headquarters-in-sterling-virginia-302588102.html",
+        "tier": "A",
+        "value": "Sterling, Virginia"
+      },
+      "hq_country": {
+        "source": "prnewswire.com/news-releases/heven-aerotech-expands-us-operations-with-new-headquarters-in-sterling-virginia-302588102.html",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "prnewswire.com",
+        "tier": "A",
+        "value": "Heven AeroTech"
+      },
       "name": "Heven AeroTech",
       "rollup": {
         "blue_uas_count": 1,
@@ -93444,17 +93900,33 @@
         ]
       },
       "slug": "heven-aerotech",
-      "website": null
+      "website": {
+        "source": "heven.io",
+        "tier": "B",
+        "value": "https://www.heven.io"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "crunchbase.com/organization/holy-stone-333b",
+        "tier": "C",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "crunchbase.com/organization/holy-stone-333b",
+        "tier": "C",
+        "value": "Shenzhen"
+      },
+      "hq_country": {
+        "source": "crunchbase.com/organization/holy-stone-333b",
+        "tier": "C",
+        "value": "China"
+      },
       "legal_name": null,
       "name": "Holy Stone",
       "rollup": {
@@ -93478,12 +93950,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Hongdu",
+        "tier": "B",
+        "value": 1951
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "hongdu.com.cn",
+        "tier": "A",
+        "value": "Nanchang, Jiangxi"
+      },
+      "hq_country": {
+        "source": "hongdu.com.cn",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "hongdu.com.cn",
+        "tier": "A",
+        "value": "Jiangxi Hongdu Aviation Industry Group Co., Ltd."
+      },
       "name": "Hongdu",
       "rollup": {
         "blue_uas_count": 0,
@@ -93498,18 +93986,38 @@
         ]
       },
       "slug": "hongdu",
-      "website": null
+      "website": {
+        "source": "hongdu.com.cn",
+        "tier": "A",
+        "value": "http://www.hongdu.com.cn"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "hubsan1688.en.made-in-china.com",
+        "tier": "B",
+        "value": 2010
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "hubsan.com",
+        "tier": "A",
+        "value": "Shenzhen"
+      },
+      "hq_country": {
+        "source": "hubsan.com",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "hubsan1688.en.made-in-china.com",
+        "tier": "B",
+        "value": "Shenzhen Hubsan Technology Co., Ltd."
+      },
       "name": "Hubsan",
       "rollup": {
         "blue_uas_count": 0,
@@ -93526,7 +94034,11 @@
         ]
       },
       "slug": "hubsan",
-      "website": null
+      "website": {
+        "source": "hubsan.com",
+        "tier": "A",
+        "value": "https://www.hubsan.com"
+      }
     },
     {
       "contact_email": null,
@@ -93638,12 +94150,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "ideaforgetech.com/aboutus",
+        "tier": "C",
+        "value": 2007
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ideaforgetech.com/contactus",
+        "tier": "A",
+        "value": "Navi Mumbai"
+      },
+      "hq_country": {
+        "source": "ideaforgetech.com/contactus",
+        "tier": "A",
+        "value": "India"
+      },
+      "legal_name": {
+        "source": "ideaforgetech.com",
+        "tier": "A",
+        "value": "ideaForge Technology Limited"
+      },
       "name": "ideaForge",
       "rollup": {
         "blue_uas_count": 0,
@@ -93660,7 +94188,11 @@
         ]
       },
       "slug": "ideaforge",
-      "website": null
+      "website": {
+        "source": "ideaforgetech.com",
+        "tier": "A",
+        "value": "https://ideaforgetech.com"
+      }
     },
     {
       "contact_email": null,
@@ -93765,12 +94297,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "evtol.news/jaunt-air-mobility",
+        "tier": "B",
+        "value": 2019
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "cbinsights.com/company/jaunt-air-mobility",
+        "tier": "B",
+        "value": "Dallas, Texas"
+      },
+      "hq_country": {
+        "source": "jauntairmobility.com/about-us",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "zoominfo.com/c/jaunt-air-mobility-llc/471126218",
+        "tier": "B",
+        "value": "Jaunt Air Mobility LLC"
+      },
       "name": "Jaunt",
       "rollup": {
         "blue_uas_count": 0,
@@ -93787,18 +94335,38 @@
         ]
       },
       "slug": "jaunt",
-      "website": null
+      "website": {
+        "source": "jauntairmobility.com",
+        "tier": "A",
+        "value": "https://jauntairmobility.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Jetson_One",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "dnb.com/business-directory/company-profiles.jetson_ab.ced6bc9da26f492af95984541c740e16.html",
+        "tier": "B",
+        "value": "Stockholm"
+      },
+      "hq_country": {
+        "source": "dnb.com/business-directory/company-profiles.jetson_ab.ced6bc9da26f492af95984541c740e16.html",
+        "tier": "B",
+        "value": "Sweden"
+      },
+      "legal_name": {
+        "source": "jetson.com",
+        "tier": "A",
+        "value": "Jetson AB"
+      },
       "name": "Jetson",
       "rollup": {
         "blue_uas_count": 0,
@@ -93813,18 +94381,38 @@
         ]
       },
       "slug": "jetson",
-      "website": null
+      "website": {
+        "source": "jetson.com",
+        "tier": "A",
+        "value": "https://www.jetson.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Joby_Aviation",
+        "tier": "B",
+        "value": 2009
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "jobyaviation.com",
+        "tier": "A",
+        "value": "Santa Cruz, California"
+      },
+      "hq_country": {
+        "source": "jobyaviation.com",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "sec.gov",
+        "tier": "A",
+        "value": "Joby Aviation, Inc."
+      },
       "name": "Joby Aviation",
       "rollup": {
         "blue_uas_count": 0,
@@ -93841,7 +94429,11 @@
         ]
       },
       "slug": "joby-aviation",
-      "website": null
+      "website": {
+        "source": "jobyaviation.com",
+        "tier": "A",
+        "value": "https://www.jobyaviation.com"
+      }
     },
     {
       "contact_email": null,
@@ -93896,12 +94488,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Korea_Aerospace_Industries",
+        "tier": "B",
+        "value": 1999
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Korea_Aerospace_Industries",
+        "tier": "B",
+        "value": "Sacheon"
+      },
+      "hq_country": {
+        "source": "koreaaero.com",
+        "tier": "A",
+        "value": "South Korea"
+      },
+      "legal_name": {
+        "source": "koreaaero.com",
+        "tier": "A",
+        "value": "Korea Aerospace Industries, Ltd."
+      },
       "name": "KAI",
       "rollup": {
         "blue_uas_count": 0,
@@ -93918,7 +94526,11 @@
         ]
       },
       "slug": "kai",
-      "website": null
+      "website": {
+        "source": "koreaaero.com",
+        "tier": "A",
+        "value": "https://www.koreaaero.com"
+      }
     },
     {
       "contact_email": null,
@@ -94062,12 +94674,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/L3Harris",
+        "tier": "B",
+        "value": 2019
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/L3Harris",
+        "tier": "B",
+        "value": "Melbourne, Florida"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/L3Harris",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/L3Harris",
+        "tier": "B",
+        "value": "L3Harris Technologies, Inc."
+      },
       "name": "L3Harris",
       "rollup": {
         "blue_uas_count": 0,
@@ -94084,7 +94712,11 @@
         ]
       },
       "slug": "l3harris",
-      "website": null
+      "website": {
+        "source": "l3harris.com",
+        "tier": "A",
+        "value": "https://www.l3harris.com"
+      }
     },
     {
       "contact_email": null,
@@ -94139,12 +94771,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "aviationweek.com/aerospace/advanced-air-mobility/startup-spotlight-lift-aircraft",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "liftaircraft.com/story",
+        "tier": "A",
+        "value": "Austin, Texas"
+      },
+      "hq_country": {
+        "source": "liftaircraft.com/story",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "liftaircraft.com",
+        "tier": "B",
+        "value": "LIFT Aircraft Inc."
+      },
       "name": "LIFT Aircraft",
       "rollup": {
         "blue_uas_count": 0,
@@ -94161,18 +94809,38 @@
         ]
       },
       "slug": "lift-aircraft",
-      "website": null
+      "website": {
+        "source": "liftaircraft.com",
+        "tier": "A",
+        "value": "https://www.liftaircraft.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Lilium_GmbH",
+        "tier": "B",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Lilium_GmbH",
+        "tier": "B",
+        "value": "Wessling"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Lilium_GmbH",
+        "tier": "B",
+        "value": "Germany"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Lilium_GmbH",
+        "tier": "B",
+        "value": "Lilium GmbH"
+      },
       "name": "Lilium",
       "rollup": {
         "blue_uas_count": 0,
@@ -94189,7 +94857,11 @@
         ]
       },
       "slug": "lilium",
-      "website": null
+      "website": {
+        "source": "lilium.com",
+        "tier": "A",
+        "value": "https://lilium.com"
+      }
     },
     {
       "contact_email": null,
@@ -94343,12 +95015,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "marss.com/about/who-we-are/",
+        "tier": "A",
+        "value": 2005
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/MARSS_Interceptor",
+        "tier": "B",
+        "value": "Monaco"
+      },
+      "hq_country": {
+        "source": "mc.linkedin.com/company/marssgroup",
+        "tier": "A",
+        "value": "Monaco"
+      },
+      "legal_name": {
+        "source": "marss.com",
+        "tier": "A",
+        "value": "MARSS Group"
+      },
       "name": "MARSS",
       "rollup": {
         "blue_uas_count": 0,
@@ -94365,18 +95053,38 @@
         ]
       },
       "slug": "marss",
-      "website": null
+      "website": {
+        "source": "marss.com",
+        "tier": "A",
+        "value": "https://marss.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "crunchbase.com/organization/matternet",
+        "tier": "B",
+        "value": 2011
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "mttr.net",
+        "tier": "B",
+        "value": "Mountain View, California"
+      },
+      "hq_country": {
+        "source": "mttr.net",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "mttr.net",
+        "tier": "B",
+        "value": "Matternet, Inc."
+      },
       "name": "Matternet",
       "rollup": {
         "blue_uas_count": 0,
@@ -94393,18 +95101,38 @@
         ]
       },
       "slug": "matternet",
-      "website": null
+      "website": {
+        "source": "mttr.net",
+        "tier": "A",
+        "value": "https://mttr.net"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Meituan",
+        "tier": "B",
+        "value": 2010
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Meituan",
+        "tier": "B",
+        "value": "Beijing"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Meituan",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Meituan",
+        "tier": "B",
+        "value": "Meituan"
+      },
       "name": "Meituan",
       "rollup": {
         "blue_uas_count": 0,
@@ -94421,7 +95149,11 @@
         ]
       },
       "slug": "meituan",
-      "website": null
+      "website": {
+        "source": "en.wikipedia.org/wiki/Meituan",
+        "tier": "B",
+        "value": "https://www.meituan.com"
+      }
     },
     {
       "contact_email": null,
@@ -94525,12 +95257,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Neros",
+        "tier": "B",
+        "value": 2023
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "neros.tech",
+        "tier": "A",
+        "value": "El Segundo, California"
+      },
+      "hq_country": {
+        "source": "neros.tech",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Neros",
+        "tier": "B",
+        "value": "Neros Technologies"
+      },
       "name": "Neros",
       "rollup": {
         "blue_uas_count": 0,
@@ -94547,18 +95295,38 @@
         ]
       },
       "slug": "neros",
-      "website": null
+      "website": {
+        "source": "neros.tech",
+        "tier": "A",
+        "value": "https://www.neros.tech"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "tracxn.com/d/companies/newspace-research-and-technologies",
+        "tier": "C",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "in.linkedin.com/company/newspacert",
+        "tier": "B",
+        "value": "Bengaluru"
+      },
+      "hq_country": {
+        "source": "newspace.co.in",
+        "tier": "A",
+        "value": "India"
+      },
+      "legal_name": {
+        "source": "preqin.com",
+        "tier": "B",
+        "value": "NewSpace Research and Technologies Pvt Ltd"
+      },
       "name": "NewSpace Research",
       "rollup": {
         "blue_uas_count": 0,
@@ -94575,18 +95343,38 @@
         ]
       },
       "slug": "newspace-research",
-      "website": null
+      "website": {
+        "source": "newspace.co.in",
+        "tier": "A",
+        "value": "https://newspace.co.in"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "businessnorway.com/companies/nordic-unmanned-asa",
+        "tier": "B",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "nordicunmanned.com/about",
+        "tier": "A",
+        "value": "Sandnes"
+      },
+      "hq_country": {
+        "source": "nordicunmanned.com",
+        "tier": "A",
+        "value": "Norway"
+      },
+      "legal_name": {
+        "source": "businessnorway.com/companies/nordic-unmanned-asa",
+        "tier": "B",
+        "value": "Nordic Unmanned ASA"
+      },
       "name": "Nordic Unmanned",
       "rollup": {
         "blue_uas_count": 0,
@@ -94603,7 +95391,11 @@
         ]
       },
       "slug": "nordic-unmanned",
-      "website": null
+      "website": {
+        "source": "nordicunmanned.com",
+        "tier": "A",
+        "value": "https://www.nordicunmanned.com"
+      }
     },
     {
       "contact_email": null,
@@ -94661,9 +95453,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "war-sanctions.gur.gov.ua/en/uav/companies/2478",
+        "tier": "B",
+        "value": "Rybinsk"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Luch_Korsar",
+        "tier": "B",
+        "value": "Russia"
+      },
+      "legal_name": {
+        "source": "war-sanctions.gur.gov.ua/en/uav/companies/2478",
+        "tier": "B",
+        "value": "JSC Design Bureau Luch"
+      },
       "name": "OKB Luch",
       "rollup": {
         "blue_uas_count": 0,
@@ -94686,12 +95490,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "crunchbase.com/organization/overair",
+        "tier": "B",
+        "value": 2019
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ainonline.com",
+        "tier": "B",
+        "value": "Santa Ana, California"
+      },
+      "hq_country": {
+        "source": "ainonline.com",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "crunchbase.com/organization/overair",
+        "tier": "C",
+        "value": "Overair, Inc."
+      },
       "name": "Overair",
       "rollup": {
         "blue_uas_count": 0,
@@ -94708,7 +95528,11 @@
         ]
       },
       "slug": "overair",
-      "website": null
+      "website": {
+        "source": "overair.com",
+        "tier": "A",
+        "value": "https://www.overair.com"
+      }
     },
     {
       "contact_email": null,
@@ -94763,11 +95587,23 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "percepto.co",
+        "tier": "A",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "timesofisrael.com",
+        "tier": "B",
+        "value": "Modi'in"
+      },
+      "hq_country": {
+        "source": "percepto.co",
+        "tier": "A",
+        "value": "Israel"
+      },
       "legal_name": null,
       "name": "Percepto",
       "rollup": {
@@ -94783,7 +95619,11 @@
         ]
       },
       "slug": "percepto",
-      "website": null
+      "website": {
+        "source": "percepto.co",
+        "tier": "A",
+        "value": "https://percepto.co"
+      }
     },
     {
       "contact_email": null,
@@ -94792,9 +95632,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "madeinalabama.com",
+        "tier": "B",
+        "value": "Huntsville, Alabama"
+      },
+      "hq_country": {
+        "source": "madeinalabama.com",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "pdw.ai",
+        "tier": "C",
+        "value": "Performance Drone Works LLC"
+      },
       "name": "Performance Drone Works",
       "rollup": {
         "blue_uas_count": 1,
@@ -94811,7 +95663,11 @@
         ]
       },
       "slug": "performance-drone-works",
-      "website": null
+      "website": {
+        "source": "pdw.ai",
+        "tier": "A",
+        "value": "https://www.pdw.ai"
+      }
     },
     {
       "contact_email": null,
@@ -94869,8 +95725,16 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "platform-aerospace.squarespace.com/contact-us",
+        "tier": "A",
+        "value": "Lexington Park, Maryland"
+      },
+      "hq_country": {
+        "source": "platformaerospace.com",
+        "tier": "A",
+        "value": "United States"
+      },
       "legal_name": null,
       "name": "Platform Aerospace",
       "rollup": {
@@ -94888,7 +95752,11 @@
         ]
       },
       "slug": "platform-aerospace",
-      "website": null
+      "website": {
+        "source": "platformaerospace.com",
+        "tier": "A",
+        "value": "https://www.platformaerospace.com"
+      }
     },
     {
       "contact_email": null,
@@ -94943,11 +95811,23 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "powervision.me/en/about/about",
+        "tier": "A",
+        "value": 2009
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "powervision.me/en/about/about",
+        "tier": "A",
+        "value": "Beijing"
+      },
+      "hq_country": {
+        "source": "powervision.me",
+        "tier": "A",
+        "value": "China"
+      },
       "legal_name": null,
       "name": "PowerVision",
       "rollup": {
@@ -94965,18 +95845,38 @@
         ]
       },
       "slug": "powervision",
-      "website": null
+      "website": {
+        "source": "powervision.me",
+        "tier": "A",
+        "value": "https://powervision.me"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "prodrone.com/about/",
+        "tier": "A",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "prodrone.com/about/",
+        "tier": "A",
+        "value": "Nagoya"
+      },
+      "hq_country": {
+        "source": "prodrone.com/about/",
+        "tier": "A",
+        "value": "Japan"
+      },
+      "legal_name": {
+        "source": "prodrone.com/about/",
+        "tier": "A",
+        "value": "Prodrone Co., Ltd."
+      },
       "name": "Prodrone",
       "rollup": {
         "blue_uas_count": 0,
@@ -94993,18 +95893,38 @@
         ]
       },
       "slug": "prodrone",
-      "website": null
+      "website": {
+        "source": "prodrone.com",
+        "tier": "A",
+        "value": "https://www.prodrone.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Indonesian_Aerospace",
+        "tier": "B",
+        "value": 1976
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "indonesian-aerospace.com",
+        "tier": "A",
+        "value": "Bandung"
+      },
+      "hq_country": {
+        "source": "indonesian-aerospace.com",
+        "tier": "A",
+        "value": "Indonesia"
+      },
+      "legal_name": {
+        "source": "indonesian-aerospace.com",
+        "tier": "A",
+        "value": "PT Dirgantara Indonesia (Persero)"
+      },
       "name": "PTDI",
       "rollup": {
         "blue_uas_count": 0,
@@ -95021,7 +95941,11 @@
         ]
       },
       "slug": "ptdi",
-      "website": null
+      "website": {
+        "source": "indonesian-aerospace.com",
+        "tier": "A",
+        "value": "https://www.indonesian-aerospace.com"
+      }
     },
     {
       "contact_email": null,
@@ -95172,12 +96096,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "zaubacorp.com",
+        "tier": "A",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "techcrunch.com",
+        "tier": "B",
+        "value": "Noida, Uttar Pradesh"
+      },
+      "hq_country": {
+        "source": "zaubacorp.com",
+        "tier": "A",
+        "value": "India"
+      },
+      "legal_name": {
+        "source": "zaubacorp.com",
+        "tier": "A",
+        "value": "Raphe mPhibr Private Limited"
+      },
       "name": "Raphe mPhibr",
       "rollup": {
         "blue_uas_count": 0,
@@ -95194,18 +96134,38 @@
         ]
       },
       "slug": "raphe-mphibr",
-      "website": null
+      "website": {
+        "source": "raphe.com",
+        "tier": "A",
+        "value": "https://www.raphe.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/RTX_Corporation",
+        "tier": "B",
+        "value": 2020
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "rtx.com/locations",
+        "tier": "A",
+        "value": "Arlington, Virginia"
+      },
+      "hq_country": {
+        "source": "rtx.com/locations",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/RTX_Corporation",
+        "tier": "B",
+        "value": "RTX Corporation"
+      },
       "name": "Raytheon",
       "rollup": {
         "blue_uas_count": 0,
@@ -95222,7 +96182,11 @@
         ]
       },
       "slug": "raytheon",
-      "website": null
+      "website": {
+        "source": "rtx.com",
+        "tier": "A",
+        "value": "https://www.rtx.com"
+      }
     },
     {
       "contact_email": null,
@@ -95277,9 +96241,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ir.redcatholdings.com",
+        "tier": "A",
+        "value": "San Juan, Puerto Rico"
+      },
+      "hq_country": {
+        "source": "sec.gov/Archives/edgar/data/0000748268",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "sec.gov",
+        "tier": "A",
+        "value": "Red Cat Holdings, Inc."
+      },
       "name": "Red Cat",
       "rollup": {
         "blue_uas_count": 0,
@@ -95296,18 +96272,38 @@
         ]
       },
       "slug": "red-cat",
-      "website": null
+      "website": {
+        "source": "redcatholdings.com",
+        "tier": "A",
+        "value": "https://www.redcatholdings.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Rheinmetall",
+        "tier": "B",
+        "value": 1889
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Rheinmetall",
+        "tier": "B",
+        "value": "Dusseldorf"
+      },
+      "hq_country": {
+        "source": "rheinmetall.com",
+        "tier": "A",
+        "value": "Germany"
+      },
+      "legal_name": {
+        "source": "rheinmetall.com",
+        "tier": "A",
+        "value": "Rheinmetall AG"
+      },
       "name": "Rheinmetall",
       "rollup": {
         "blue_uas_count": 0,
@@ -95324,18 +96320,38 @@
         ]
       },
       "slug": "rheinmetall",
-      "website": null
+      "website": {
+        "source": "rheinmetall.com",
+        "tier": "A",
+        "value": "https://www.rheinmetall.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "rvconnex.com/en/who-we-are/our-story",
+        "tier": "A",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "rvconnex.com/en/who-we-are/our-story",
+        "tier": "A",
+        "value": "Pathum Thani"
+      },
+      "hq_country": {
+        "source": "rvconnex.com/en/who-we-are/our-story",
+        "tier": "A",
+        "value": "Thailand"
+      },
+      "legal_name": {
+        "source": "rvconnex.com",
+        "tier": "A",
+        "value": "R V Connex Co., Ltd."
+      },
       "name": "RV Connex",
       "rollup": {
         "blue_uas_count": 0,
@@ -95352,18 +96368,38 @@
         ]
       },
       "slug": "rv-connex",
-      "website": null
+      "website": {
+        "source": "rvconnex.com",
+        "tier": "A",
+        "value": "https://www.rvconnex.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "golden.com/wiki/Sabrewing_Aircraft_Company-EA6ZWDX",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "sabrewingaircraft.com/about-the-company/",
+        "tier": "A",
+        "value": "Camarillo, California"
+      },
+      "hq_country": {
+        "source": "sabrewingaircraft.com/about-the-company/",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "sabrewingaircraft.com",
+        "tier": "A",
+        "value": "Sabrewing Aircraft Company, Inc."
+      },
       "name": "Sabrewing",
       "rollup": {
         "blue_uas_count": 0,
@@ -95380,7 +96416,11 @@
         ]
       },
       "slug": "sabrewing",
-      "website": null
+      "website": {
+        "source": "sabrewingaircraft.com",
+        "tier": "A",
+        "value": "https://www.sabrewingaircraft.com"
+      }
     },
     {
       "contact_email": null,
@@ -95435,12 +96475,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Schiebel",
+        "tier": "B",
+        "value": 1951
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Schiebel",
+        "tier": "B",
+        "value": "Vienna"
+      },
+      "hq_country": {
+        "source": "schiebel.net",
+        "tier": "A",
+        "value": "Austria"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Schiebel",
+        "tier": "B",
+        "value": "Schiebel Elektronische Geräte GmbH"
+      },
       "name": "Schiebel",
       "rollup": {
         "blue_uas_count": 0,
@@ -95457,18 +96513,38 @@
         ]
       },
       "slug": "schiebel",
-      "website": null
+      "website": {
+        "source": "schiebel.net",
+        "tier": "A",
+        "value": "https://schiebel.net"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "startupticker.ch",
+        "tier": "B",
+        "value": 2009
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "moneyhouse.ch",
+        "tier": "B",
+        "value": "Cheseaux-sur-Lausanne"
+      },
+      "hq_country": {
+        "source": "moneyhouse.ch",
+        "tier": "B",
+        "value": "Switzerland"
+      },
+      "legal_name": {
+        "source": "moneyhouse.ch",
+        "tier": "B",
+        "value": "senseFly SA"
+      },
       "name": "senseFly",
       "rollup": {
         "blue_uas_count": 0,
@@ -95542,12 +96618,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Sky-Watch",
+        "tier": "B",
+        "value": 2009
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Sky-Watch",
+        "tier": "B",
+        "value": "Stovring"
+      },
+      "hq_country": {
+        "source": "sky-watch.com/about-sky-watch/",
+        "tier": "A",
+        "value": "Denmark"
+      },
+      "legal_name": {
+        "source": "linkedin.com/company/sky-watch",
+        "tier": "B",
+        "value": "Sky-Watch A/S"
+      },
       "name": "Sky-Watch",
       "rollup": {
         "blue_uas_count": 0,
@@ -95564,7 +96656,11 @@
         ]
       },
       "slug": "sky-watch",
-      "website": null
+      "website": {
+        "source": "sky-watch.com",
+        "tier": "A",
+        "value": "https://sky-watch.com"
+      }
     },
     {
       "contact_email": null,
@@ -95624,11 +96720,23 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "skyeton.com/about",
+        "tier": "A",
+        "value": 2006
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "skyeton.com/about",
+        "tier": "A",
+        "value": "Kyiv"
+      },
+      "hq_country": {
+        "source": "skyeton.com/about",
+        "tier": "A",
+        "value": "Ukraine"
+      },
       "legal_name": null,
       "name": "Skyeton",
       "rollup": {
@@ -95646,18 +96754,38 @@
         ]
       },
       "slug": "skyeton",
-      "website": null
+      "website": {
+        "source": "skyeton.com",
+        "tier": "A",
+        "value": "https://skyeton.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "cbinsights.com/company/skyfront",
+        "tier": "C",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "skyfront.com/contact",
+        "tier": "A",
+        "value": "Redwood City, California"
+      },
+      "hq_country": {
+        "source": "skyfront.com/contact",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "skyfront.com",
+        "tier": "A",
+        "value": "Skyfront"
+      },
       "name": "Skyfront",
       "rollup": {
         "blue_uas_count": 0,
@@ -95674,18 +96802,38 @@
         ]
       },
       "slug": "skyfront",
-      "website": null
+      "website": {
+        "source": "skyfront.com",
+        "tier": "A",
+        "value": "https://skyfront.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "sony.com",
+        "tier": "A",
+        "value": 1946
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "sony.com",
+        "tier": "A",
+        "value": "Tokyo"
+      },
+      "hq_country": {
+        "source": "sony.com",
+        "tier": "A",
+        "value": "Japan"
+      },
+      "legal_name": {
+        "source": "sony.com",
+        "tier": "A",
+        "value": "Sony Group Corporation"
+      },
       "name": "Sony",
       "rollup": {
         "blue_uas_count": 0,
@@ -95702,7 +96850,11 @@
         ]
       },
       "slug": "sony",
-      "website": null
+      "website": {
+        "source": "sony.com",
+        "tier": "A",
+        "value": "https://www.sony.com"
+      }
     },
     {
       "contact_email": null,
@@ -95749,12 +96901,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/ST_Engineering",
+        "tier": "B",
+        "value": 1997
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "stengg.com",
+        "tier": "A",
+        "value": "Singapore"
+      },
+      "hq_country": {
+        "source": "stengg.com",
+        "tier": "A",
+        "value": "Singapore"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/ST_Engineering",
+        "tier": "B",
+        "value": "Singapore Technologies Engineering Ltd"
+      },
       "name": "ST Engineering",
       "rollup": {
         "blue_uas_count": 0,
@@ -95771,18 +96939,38 @@
         ]
       },
       "slug": "st-engineering",
-      "website": null
+      "website": {
+        "source": "stengg.com",
+        "tier": "A",
+        "value": "https://www.stengg.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/STARK",
+        "tier": "B",
+        "value": 2024
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "stark-defence.com/en/imprint",
+        "tier": "A",
+        "value": "Berlin"
+      },
+      "hq_country": {
+        "source": "stark-defence.com/en/imprint",
+        "tier": "A",
+        "value": "Germany"
+      },
+      "legal_name": {
+        "source": "stark-defence.com/en/imprint",
+        "tier": "A",
+        "value": "SKD SE"
+      },
       "name": "STARK Defence",
       "rollup": {
         "blue_uas_count": 0,
@@ -95799,7 +96987,11 @@
         ]
       },
       "slug": "stark-defence",
-      "website": null
+      "website": {
+        "source": "stark-defence.com",
+        "tier": "A",
+        "value": "https://stark-defence.com"
+      }
     },
     {
       "contact_email": null,
@@ -95855,12 +97047,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "britannica.com/topic/Sukhoi",
+        "tier": "B",
+        "value": 1939
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Sukhoi",
+        "tier": "B",
+        "value": "Moscow"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Sukhoi",
+        "tier": "B",
+        "value": "Russia"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Sukhoi",
+        "tier": "B",
+        "value": "JSC Sukhoi Company"
+      },
       "name": "Sukhoi",
       "rollup": {
         "blue_uas_count": 0,
@@ -95883,12 +97091,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "hn-sunward.en.alibaba.com",
+        "tier": "B",
+        "value": 1999
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "made-in-china.com/showroom/sunwardtech",
+        "tier": "B",
+        "value": "Changsha, Hunan"
+      },
+      "hq_country": {
+        "source": "hn-sunward.en.alibaba.com",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "made-in-china.com/showroom/sunwardtech",
+        "tier": "B",
+        "value": "Hunan Sunward Science and Technology Co., Ltd."
+      },
       "name": "Sunward",
       "rollup": {
         "blue_uas_count": 0,
@@ -95911,12 +97135,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "evtolinsights.com/2023/07/u-s-supernal-opens-engineering-hq-in-irvine/",
+        "tier": "B",
+        "value": 2020
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "prnewswire.com/news-releases/supernal-opens-engineering-headquarters-in-irvine-301885300.html",
+        "tier": "A",
+        "value": "Irvine, California"
+      },
+      "hq_country": {
+        "source": "prnewswire.com/news-releases/supernal-opens-engineering-headquarters-in-irvine-301885300.html",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "supernal.aero",
+        "tier": "B",
+        "value": "Supernal, LLC"
+      },
       "name": "Supernal",
       "rollup": {
         "blue_uas_count": 0,
@@ -95931,7 +97171,11 @@
         ]
       },
       "slug": "supernal",
-      "website": null
+      "website": {
+        "source": "supernal.aero",
+        "tier": "A",
+        "value": "https://www.supernal.aero"
+      }
     },
     {
       "contact_email": null,
@@ -95983,12 +97227,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "cbinsights.com/company/swoop-aero",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "wikitia.com/wiki/Swoop_Aero",
+        "tier": "B",
+        "value": "Melbourne"
+      },
+      "hq_country": {
+        "source": "wikitia.com/wiki/Swoop_Aero",
+        "tier": "B",
+        "value": "Australia"
+      },
+      "legal_name": {
+        "source": "wikitia.com/wiki/Swoop_Aero",
+        "tier": "C",
+        "value": "Swoop Aero Pty Ltd"
+      },
       "name": "Swoop Aero",
       "rollup": {
         "blue_uas_count": 0,
@@ -96005,7 +97265,11 @@
         ]
       },
       "slug": "swoop-aero",
-      "website": null
+      "website": {
+        "source": "swoop.aero",
+        "tier": "B",
+        "value": "https://swoop.aero"
+      }
     },
     {
       "contact_email": null,
@@ -96109,12 +97373,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "utahbusiness.com",
+        "tier": "B",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "tealdrones.com",
+        "tier": "A",
+        "value": "Salt Lake City, Utah"
+      },
+      "hq_country": {
+        "source": "tealdrones.com",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "redcatholdings.com",
+        "tier": "A",
+        "value": "Teal Drones, Inc."
+      },
       "name": "Teal",
       "rollup": {
         "blue_uas_count": 1,
@@ -96131,7 +97411,11 @@
         ]
       },
       "slug": "teal",
-      "website": null
+      "website": {
+        "source": "tealdrones.com",
+        "tier": "A",
+        "value": "https://tealdrones.com"
+      }
     },
     {
       "contact_email": null,
@@ -96287,12 +97571,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "tengden.com/about.html",
+        "tier": "A",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "tengden.com/about.html",
+        "tier": "B",
+        "value": "Chengdu"
+      },
+      "hq_country": {
+        "source": "tengden.com",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "tengden.com",
+        "tier": "B",
+        "value": "Sichuan Tengden Sci-tech Innovation Co., Ltd."
+      },
       "name": "Tengden",
       "rollup": {
         "blue_uas_count": 0,
@@ -96309,7 +97609,11 @@
         ]
       },
       "slug": "tengden",
-      "website": null
+      "website": {
+        "source": "tengden.com",
+        "tier": "A",
+        "value": "https://www.tengden.com"
+      }
     },
     {
       "contact_email": null,
@@ -96454,12 +97758,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "threod.com/about/",
+        "tier": "B",
+        "value": 2012
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "facebook.com/ThreodSystems/",
+        "tier": "B",
+        "value": "Viimsi"
+      },
+      "hq_country": {
+        "source": "threod.com/about/",
+        "tier": "A",
+        "value": "Estonia"
+      },
+      "legal_name": {
+        "source": "ee.linkedin.com/company/threod-systems",
+        "tier": "C",
+        "value": "Threod Systems OU"
+      },
       "name": "Threod Systems",
       "rollup": {
         "blue_uas_count": 0,
@@ -96476,18 +97796,38 @@
         ]
       },
       "slug": "threod-systems",
-      "website": null
+      "website": {
+        "source": "threod.com",
+        "tier": "A",
+        "value": "https://www.threod.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "crunchbase.com/organization/topxgun-robotics",
+        "tier": "B",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "digital.agritechnica.com/newfront/exhibitor/topxgun-nanjing-robotics-co-ltd",
+        "tier": "B",
+        "value": "Nanjing, Jiangsu"
+      },
+      "hq_country": {
+        "source": "topxgunag.com/about-us",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "digital.agritechnica.com/newfront/exhibitor/topxgun-nanjing-robotics-co-ltd",
+        "tier": "B",
+        "value": "Topxgun (Nanjing) Robotics Co., Ltd."
+      },
       "name": "Topxgun",
       "rollup": {
         "blue_uas_count": 0,
@@ -96504,7 +97844,11 @@
         ]
       },
       "slug": "topxgun",
-      "website": null
+      "website": {
+        "source": "topxgunag.com",
+        "tier": "A",
+        "value": "https://www.topxgunag.com"
+      }
     },
     {
       "contact_email": null,
@@ -96513,8 +97857,16 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "facebook.com/uadynamicscom/",
+        "tier": "B",
+        "value": "Kyiv"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Punisher_(drone)",
+        "tier": "B",
+        "value": "Ukraine"
+      },
       "legal_name": null,
       "name": "UA Dynamics",
       "rollup": {
@@ -96532,17 +97884,33 @@
         ]
       },
       "slug": "ua-dynamics",
-      "website": null
+      "website": {
+        "source": "uadynamics.com",
+        "tier": "A",
+        "value": "https://uadynamics.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "drone-directory.com.ua/profile/ukrjet/",
+        "tier": "B",
+        "value": 2021
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
+      "hq_city": {
+        "source": "drone-directory.com.ua/profile/ukrjet/",
+        "tier": "B",
+        "value": "Kyiv"
+      },
+      "hq_country": {
+        "source": "drone-directory.com.ua/profile/ukrjet/",
+        "tier": "B",
+        "value": "Ukraine"
+      },
       "legal_name": null,
       "name": "Ukrjet",
       "rollup": {
@@ -96560,7 +97928,11 @@
         ]
       },
       "slug": "ukrjet",
-      "website": null
+      "website": {
+        "source": "ukrjet.ua",
+        "tier": "A",
+        "value": "https://ukrjet.ua"
+      }
     },
     {
       "contact_email": null,
@@ -96612,12 +97984,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "saab.com",
+        "tier": "A",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "umsskeldar.aero",
+        "tier": "A",
+        "value": "Linköping"
+      },
+      "hq_country": {
+        "source": "umsskeldar.aero",
+        "tier": "A",
+        "value": "Sweden"
+      },
+      "legal_name": {
+        "source": "umsskeldar.aero",
+        "tier": "A",
+        "value": "UMS Skeldar AG"
+      },
       "name": "UMS Skeldar",
       "rollup": {
         "blue_uas_count": 0,
@@ -96634,7 +98022,11 @@
         ]
       },
       "slug": "ums-skeldar",
-      "website": null
+      "website": {
+        "source": "umsskeldar.aero",
+        "tier": "A",
+        "value": "https://umsskeldar.aero"
+      }
     },
     {
       "contact_email": null,
@@ -96739,12 +98131,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "linkedin.com/company/vantage-robotics",
+        "tier": "B",
+        "value": 2013
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "vantagerobotics.com/about",
+        "tier": "A",
+        "value": "San Leandro, California"
+      },
+      "hq_country": {
+        "source": "vantagerobotics.com/about",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "zoominfo.com",
+        "tier": "B",
+        "value": "Vantage Robotics LLC"
+      },
       "name": "Vantage Robotics",
       "rollup": {
         "blue_uas_count": 1,
@@ -96761,7 +98169,11 @@
         ]
       },
       "slug": "vantage-robotics",
-      "website": null
+      "website": {
+        "source": "vantagerobotics.com",
+        "tier": "A",
+        "value": "https://vantagerobotics.com"
+      }
     },
     {
       "contact_email": null,
@@ -96819,9 +98231,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "search.ssi.gov.tr/firm/vestel-savunma-sanayi-a-s",
+        "tier": "B",
+        "value": "Ankara"
+      },
+      "hq_country": {
+        "source": "vestelsavunma.com",
+        "tier": "A",
+        "value": "Turkey"
+      },
+      "legal_name": {
+        "source": "search.ssi.gov.tr",
+        "tier": "A",
+        "value": "Vestel Savunma Sanayi A.S."
+      },
       "name": "Vestel Savunma",
       "rollup": {
         "blue_uas_count": 0,
@@ -96838,7 +98262,11 @@
         ]
       },
       "slug": "vestel-savunma",
-      "website": null
+      "website": {
+        "source": "vestelsavunma.com",
+        "tier": "A",
+        "value": "http://www.vestelsavunma.com"
+      }
     },
     {
       "contact_email": null,
@@ -96893,12 +98321,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Volansi",
+        "tier": "B",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Volansi",
+        "tier": "B",
+        "value": "Concord, California"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Volansi",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "crunchbase.com/organization/volans-i",
+        "tier": "B",
+        "value": "Volans-i, Inc."
+      },
       "name": "Volansi",
       "rollup": {
         "blue_uas_count": 0,
@@ -97022,9 +98466,21 @@
       "founded_year": null,
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "wattsinnovations.com/pages/about",
+        "tier": "A",
+        "value": "Hunt Valley, Maryland"
+      },
+      "hq_country": {
+        "source": "wattsinnovations.com/pages/about",
+        "tier": "A",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "wattsinnovations.com/pages/about",
+        "tier": "A",
+        "value": "Watts Innovations LLC"
+      },
       "name": "Watts Innovations",
       "rollup": {
         "blue_uas_count": 0,
@@ -97039,7 +98495,11 @@
         ]
       },
       "slug": "watts-innovations",
-      "website": null
+      "website": {
+        "source": "wattsinnovations.com",
+        "tier": "A",
+        "value": "https://wattsinnovations.com"
+      }
     },
     {
       "contact_email": null,
@@ -97144,12 +98604,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Wingcopter",
+        "tier": "B",
+        "value": 2017
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "wingcopter.com",
+        "tier": "A",
+        "value": "Weiterstadt"
+      },
+      "hq_country": {
+        "source": "wingcopter.com",
+        "tier": "A",
+        "value": "Germany"
+      },
+      "legal_name": {
+        "source": "wingcopter.com",
+        "tier": "B",
+        "value": "Wingcopter GmbH"
+      },
       "name": "Wingcopter",
       "rollup": {
         "blue_uas_count": 0,
@@ -97166,18 +98642,38 @@
         ]
       },
       "slug": "wingcopter",
-      "website": null
+      "website": {
+        "source": "wingcopter.com",
+        "tier": "A",
+        "value": "https://wingcopter.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "startupticker.ch",
+        "tier": "B",
+        "value": 2016
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "wingtra.com",
+        "tier": "A",
+        "value": "Zurich"
+      },
+      "hq_country": {
+        "source": "wingtra.com",
+        "tier": "A",
+        "value": "Switzerland"
+      },
+      "legal_name": {
+        "source": "wingtra.com",
+        "tier": "A",
+        "value": "Wingtra AG"
+      },
       "name": "Wingtra",
       "rollup": {
         "blue_uas_count": 1,
@@ -97194,18 +98690,38 @@
         ]
       },
       "slug": "wingtra",
-      "website": null
+      "website": {
+        "source": "wingtra.com",
+        "tier": "A",
+        "value": "https://wingtra.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Wisk_Aero",
+        "tier": "B",
+        "value": 2019
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "wisk.aero/about",
+        "tier": "B",
+        "value": "Mountain View, California"
+      },
+      "hq_country": {
+        "source": "wisk.aero/about",
+        "tier": "B",
+        "value": "United States"
+      },
+      "legal_name": {
+        "source": "zoominfo.com",
+        "tier": "B",
+        "value": "Wisk Aero LLC"
+      },
       "name": "Wisk Aero",
       "rollup": {
         "blue_uas_count": 0,
@@ -97222,7 +98738,11 @@
         ]
       },
       "slug": "wisk-aero",
-      "website": null
+      "website": {
+        "source": "wisk.aero",
+        "tier": "A",
+        "value": "https://wisk.aero"
+      }
     },
     {
       "contact_email": null,
@@ -97275,12 +98795,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/Aisheng_ASN-209",
+        "tier": "C",
+        "value": 1984
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "en.wikipedia.org/wiki/Aisheng_ASN-209",
+        "tier": "B",
+        "value": "Xi'an, Shaanxi"
+      },
+      "hq_country": {
+        "source": "en.wikipedia.org/wiki/Aisheng_ASN-209",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/Aisheng_ASN-209",
+        "tier": "B",
+        "value": "Xi'an ASN Technology Group Co., Ltd."
+      },
       "name": "Xi'an ASN",
       "rollup": {
         "blue_uas_count": 0,
@@ -97303,12 +98839,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "store.fimi.com/pages/about-fimi",
+        "tier": "B",
+        "value": 2014
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "linkedin.com/company/fimi-technology",
+        "tier": "B",
+        "value": "Shenzhen, Guangdong"
+      },
+      "hq_country": {
+        "source": "linkedin.com/company/fimi-technology",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "fimi.com",
+        "tier": "A",
+        "value": "FIMI Technology Ltd."
+      },
       "name": "Xiaomi (FIMI)",
       "rollup": {
         "blue_uas_count": 0,
@@ -97325,18 +98877,38 @@
         ]
       },
       "slug": "xiaomi-fimi",
-      "website": null
+      "website": {
+        "source": "fimi.com",
+        "tier": "A",
+        "value": "https://www.fimi.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "en.wikipedia.org/wiki/XPeng",
+        "tier": "B",
+        "value": 2013
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "cnevpost.com/2024/07/04/xpeng-aeroht-to-build-plant-mass-production-flying-cars/",
+        "tier": "B",
+        "value": "Guangzhou"
+      },
+      "hq_country": {
+        "source": "cnevpost.com/2024/07/04/xpeng-aeroht-to-build-plant-mass-production-flying-cars/",
+        "tier": "B",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "en.wikipedia.org/wiki/XPeng",
+        "tier": "B",
+        "value": "XPeng AeroHT"
+      },
       "name": "XPeng AeroHT",
       "rollup": {
         "blue_uas_count": 0,
@@ -97351,18 +98923,38 @@
         ]
       },
       "slug": "xpeng-aeroht",
-      "website": null
+      "website": {
+        "source": "aeroht.com",
+        "tier": "B",
+        "value": "https://www.aeroht.com"
+      }
     },
     {
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "global.yamaha-motor.com",
+        "tier": "A",
+        "value": 1955
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "global.yamaha-motor.com",
+        "tier": "A",
+        "value": "Iwata, Shizuoka"
+      },
+      "hq_country": {
+        "source": "global.yamaha-motor.com",
+        "tier": "A",
+        "value": "Japan"
+      },
+      "legal_name": {
+        "source": "global.yamaha-motor.com",
+        "tier": "A",
+        "value": "Yamaha Motor Co., Ltd."
+      },
       "name": "Yamaha",
       "rollup": {
         "blue_uas_count": 0,
@@ -97379,7 +98971,11 @@
         ]
       },
       "slug": "yamaha",
-      "website": null
+      "website": {
+        "source": "global.yamaha-motor.com",
+        "tier": "A",
+        "value": "https://global.yamaha-motor.com"
+      }
     },
     {
       "contact_email": null,
@@ -97572,12 +99168,28 @@
       "contact_email": null,
       "contact_phone": null,
       "entity_type": "company",
-      "founded_year": null,
+      "founded_year": {
+        "source": "unmannedsystemstechnology.com",
+        "tier": "B",
+        "value": 2015
+      },
       "founder": null,
       "hq_address": null,
-      "hq_city": null,
-      "hq_country": null,
-      "legal_name": null,
+      "hq_city": {
+        "source": "ziyanuas.com",
+        "tier": "A",
+        "value": "Zhuhai, Guangdong"
+      },
+      "hq_country": {
+        "source": "ziyanuas.com",
+        "tier": "A",
+        "value": "China"
+      },
+      "legal_name": {
+        "source": "ziyanuas.com",
+        "tier": "B",
+        "value": "Zhuhai Ziyan Unmanned Aerial Vehicle Co., Ltd."
+      },
       "name": "Ziyan",
       "rollup": {
         "blue_uas_count": 0,
@@ -97594,7 +99206,11 @@
         ]
       },
       "slug": "ziyan",
-      "website": null
+      "website": {
+        "source": "ziyanuas.com",
+        "tier": "A",
+        "value": "https://www.ziyanuas.com"
+      }
     }
   ],
   "entity_types": [
