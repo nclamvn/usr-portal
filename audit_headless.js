@@ -270,7 +270,7 @@ async function main() {
       for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
         const r = await evalOnPage(send, companyExpr(theme, lang));
         const cols = await evalOnPage(send, `document.querySelectorAll('table.cmp thead th').length`);
-        const tracks = await evalOnPage(send, `document.querySelectorAll('.cmpcell .track').length`);
+        const tracks = await evalOnPage(send, `document.querySelectorAll('.cmpcell .ri-spark').length`);
         const ok = r.hits.length === 0 && cols >= 3 && tracks > 0;  // 1 label col + 2 uav cols
         if (!ok) failures++;
         console.log(`  ${ok ? "PASS" : "FAIL"}  /compare?uav=2  [${theme}/${lang}]  overlaps=${r.hits.length}  cols=${cols}  tracks=${tracks}`);

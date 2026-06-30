@@ -120,18 +120,18 @@
     if (c.claims && c.claims.length) {  // disputed — keep every claim
       var lo = Math.min.apply(null, c.claims), hi = Math.max.apply(null, c.claims), trk;
       if (r) { var a = logPos(lo, r.min, r.max), b = logPos(hi, r.min, r.max);
-        trk = '<span class="track"><span class="tick" style="left:' + a + '%"></span><span class="tick" style="left:' + b + '%"></span></span>'; }
-      else trk = '<span class="track null"></span>';
+        trk = '<span class="ri-spark"><i style="margin-left:' + a + '%;width:' + Math.max(2, b - a) + '%"></i></span>'; }
+      else trk = '<span class="ri-spark null"></span>';
       return '<div class="cmpcell">' + trk + '<span class="disp">' +
         c.claims.map(function (x) { return esc(x); }).join(" / ") + " " + esc(spec.unit) +
         ' ' + bi("disputed", "tranh chấp") + '</span></div>';
     }
     if (c.v == null) {  // honest-null — dashed rail, no tick, "—"
-      return '<div class="cmpcell"><span class="track null"></span><span class="val null">—</span></div>';
+      return '<div class="cmpcell"><span class="ri-spark null"></span><span class="val null">—</span></div>';
     }
     var pos = r ? logPos(c.v, r.min, r.max) : 50;
     var tier = c.tier ? '<span class="tier">' + esc(c.tier) + '</span>' : "";
-    return '<div class="cmpcell"><span class="track"><span class="tick" style="left:' + pos + '%"></span></span>' +
+    return '<div class="cmpcell"><span class="ri-spark"><i style="width:' + pos + '%"></i></span>' +
       '<span class="val">' + esc(c.v) + " " + esc(spec.unit) + '</span>' + tier + '</div>';
   }
 
