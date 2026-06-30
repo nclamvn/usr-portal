@@ -435,7 +435,7 @@ def _brief_html(fm):
         f'<div class="meta">{_meta(fm)}</div></div></article>')
 
 
-STREAM_N = 6   # the "Latest" rail size — tuned so the rail ≈ lead+secondary height (no column void);
+STREAM_N = 11  # the "Latest" rail size — tuned so the rail ≈ lead+secondary height (no column void);
                # the REST auto-fill the full-width "More" tier (grows with the registry, never hardcoded)
 
 
@@ -454,7 +454,7 @@ def _more_html(fm):
 def render_index(arts):
     ranked = sorted(arts, key=_weight, reverse=True)
     lead_fm = ranked[0][0]
-    sec_fms = [fb[0] for fb in ranked[1:3]]
+    sec_fms = [fb[0] for fb in ranked[1:6]]   # 5 secondary cards under the lead (fills the col-lead void)
     chosen = {lead_fm["slug"], *(f["slug"] for f in sec_fms)}
     rest = [fm for fm, _ in arts if fm["slug"] not in chosen]            # remainder, newest-first
     stream = rest[:STREAM_N]                                            # the "Latest" rail
