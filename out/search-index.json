@@ -181,21 +181,11 @@
       "url": "company/athlon-avia.html"
     },
     {
-      "id": "autel",
-      "label_en": "Autel",
-      "label_vn": "Autel",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
-      "terms": "autel",
-      "type": "company",
-      "url": "company/autel.html"
-    },
-    {
       "id": "autel-robotics",
       "label_en": "Autel Robotics",
       "label_vn": "Autel Robotics",
-      "sub_en": "13 systems",
-      "sub_vn": "13 hệ thống",
+      "sub_en": "14 systems",
+      "sub_vn": "14 hệ thống",
       "terms": "autel robotics",
       "type": "company",
       "url": "company/autel-robotics.html"

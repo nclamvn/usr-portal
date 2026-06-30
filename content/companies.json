@@ -56,46 +56,6 @@
    "contact_email": null,
    "contact_phone": null
   },
-  "autel": {
-   "legal_name": {
-    "value": "Autel Robotics Co., Ltd.",
-    "source": "en.wikipedia.org/wiki/Autel_Robotics",
-    "tier": "B"
-   },
-   "founded_year": {
-    "value": 2014,
-    "source": "autelrobotics.com/about-us",
-    "tier": "A"
-   },
-   "hq_country": {
-    "value": "China",
-    "source": "autelrobotics.com",
-    "tier": "A"
-   },
-   "hq_city": {
-    "value": "Shenzhen (Nanshan), Guangdong",
-    "source": "autelrobotics.com",
-    "tier": "A"
-   },
-   "hq_address": {
-    "value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen",
-    "source": "cbinsights.com",
-    "tier": "C"
-   },
-   "website": {
-    "value": "https://www.autelrobotics.com",
-    "source": "official domain",
-    "tier": "A"
-   },
-   "founder": null,
-   "parent_company": {
-    "value": "Autel Intelligent Technology (AIT)",
-    "source": "en.wikipedia.org/wiki/Autel_Robotics",
-    "tier": "B"
-   },
-   "contact_email": null,
-   "contact_phone": null
-  },
   "aerovironment": {
    "legal_name": {
     "value": "AeroVironment, Inc.",
@@ -192,6 +152,16 @@
     "value": "https://www.autelrobotics.com",
     "source": "autelrobotics.com",
     "tier": "A"
+   },
+   "hq_address": {
+    "value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen",
+    "source": "cbinsights.com",
+    "tier": "C"
+   },
+   "parent_company": {
+    "value": "Autel Intelligent Technology (AIT)",
+    "source": "en.wikipedia.org/wiki/Autel_Robotics",
+    "tier": "B"
    }
   },
   "general-atomics": {

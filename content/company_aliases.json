@@ -1,8 +1,9 @@
 {
-  "schema": "company-aliases/1",
-  "_note": "Explicit, auditable merge of manufacturer strings that are the SAME legal entity. Key = raw registry string, value = canonical company name. Parent/child relationships (e.g. Boeing/Insitu) are NOT merges and are deliberately absent — they await a parent_company relation.",
-  "aliases": {
-    "Anduril Industries": "Anduril",
-    "Israel Aerospace Industries": "IAI"
-  }
+ "schema": "company-aliases/1",
+ "_note": "Explicit, auditable merge of manufacturer strings that are the SAME legal entity. Key = raw registry string, value = canonical company name. Parent/child relationships (e.g. Boeing/Insitu) are NOT merges and are deliberately absent — they await a parent_company relation.",
+ "aliases": {
+  "Anduril Industries": "Anduril",
+  "Israel Aerospace Industries": "IAI",
+  "Autel": "Autel Robotics"
+ }
 }

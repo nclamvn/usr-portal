@@ -1,11 +1,11 @@
 {
   "schema": "graph/1",
   "stats": {
-    "nodes": 692,
+    "nodes": 691,
     "edges": 1314,
     "by_node": {
       "article": 7,
-      "entity:company": 190,
+      "entity:company": 189,
       "entity:uav": 444,
       "tax:country": 33,
       "tax:segment": 13,
@@ -45,7 +45,6 @@
     "entity:company:ascent-aerosystems",
     "entity:company:asylon",
     "entity:company:athlon-avia",
-    "entity:company:autel",
     "entity:company:autel-robotics",
     "entity:company:autoflight",
     "entity:company:avic",
@@ -1596,7 +1595,7 @@
     ],
     [
       "entity:uav:uav-autel-evo-nano-evo-nano",
-      "entity:company:autel",
+      "entity:company:autel-robotics",
       "manufacturer"
     ],
     [

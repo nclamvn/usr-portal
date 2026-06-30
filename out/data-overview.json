@@ -202,12 +202,7 @@
       "slug": "anduril"
     },
     {
-      "count": 1,
-      "hq_city": "Shenzhen (Nanshan), Guangdong",
-      "slug": "autel"
-    },
-    {
-      "count": 13,
+      "count": 14,
       "hq_city": "Shenzhen, Guangdong",
       "slug": "autel-robotics"
     },
@@ -387,7 +382,7 @@
       "slug": "zala-aero"
     }
   ],
-  "hq_total": 43,
+  "hq_total": 42,
   "maker": [
     {
       "n": "DJI",
@@ -402,7 +397,7 @@
     {
       "n": "Autel Robotics",
       "slug": "autel-robotics",
-      "v": 13
+      "v": 14
     },
     {
       "n": "IAI",
@@ -450,10 +445,10 @@
       "v": 6
     },
     {
-      "n": "178 hãng khác",
-      "n_en": "178 makers",
+      "n": "177 hãng khác",
+      "n_en": "177 makers",
       "other": true,
-      "v": 295
+      "v": 294
     }
   ],
   "schema": "data-overview/1",
@@ -602,7 +597,7 @@
     }
   ],
   "totals": {
-    "company": 190,
+    "company": 189,
     "country": 33,
     "coverage_pct": 32,
     "disputed": 6,

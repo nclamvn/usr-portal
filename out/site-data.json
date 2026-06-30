@@ -90960,8 +90960,8 @@
       "contact_phone": null,
       "entity_type": "company",
       "founded_year": {
-        "source": "autelrobotics.com/about-us",
-        "tier": "A",
+        "source": "en.wikipedia.org/wiki/Autel_Robotics",
+        "tier": "B",
         "value": 2014
       },
       "founder": null,
@@ -90970,59 +90970,6 @@
         "tier": "C",
         "value": "9F, Building B1, Xueyuan Rd, Xili, Nanshan, Shenzhen"
       },
-      "hq_city": {
-        "source": "autelrobotics.com",
-        "tier": "A",
-        "value": "Shenzhen (Nanshan), Guangdong"
-      },
-      "hq_country": {
-        "source": "autelrobotics.com",
-        "tier": "A",
-        "value": "China"
-      },
-      "legal_name": {
-        "source": "en.wikipedia.org/wiki/Autel_Robotics",
-        "tier": "B",
-        "value": "Autel Robotics Co., Ltd."
-      },
-      "name": "Autel",
-      "parent_company": {
-        "source": "en.wikipedia.org/wiki/Autel_Robotics",
-        "tier": "B",
-        "value": "Autel Intelligent Technology (AIT)"
-      },
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "China": 1
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "consumer": 1
-        },
-        "uav_count": 1,
-        "uav_slugs": [
-          "uav-autel-evo-nano-evo-nano"
-        ]
-      },
-      "slug": "autel",
-      "website": {
-        "source": "official domain",
-        "tier": "A",
-        "value": "https://www.autelrobotics.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
-        "source": "en.wikipedia.org/wiki/Autel_Robotics",
-        "tier": "B",
-        "value": 2014
-      },
-      "founder": null,
-      "hq_address": null,
       "hq_city": {
         "source": "autelrobotics.com/about-us",
         "tier": "A",
@@ -91039,20 +90986,26 @@
         "value": "Autel Robotics Co., Ltd."
       },
       "name": "Autel Robotics",
+      "parent_company": {
+        "source": "en.wikipedia.org/wiki/Autel_Robotics",
+        "tier": "B",
+        "value": "Autel Intelligent Technology (AIT)"
+      },
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
-          "China": 13
+          "China": 14
         },
         "ndaa_count": 0,
         "segments": {
-          "consumer": 4,
+          "consumer": 5,
           "enterprise": 6,
           "public_safety": 1
         },
-        "uav_count": 13,
+        "uav_count": 14,
         "uav_slugs": [
           "uav-autel-evo-max-4t-v2",
+          "uav-autel-evo-nano-evo-nano",
           "uav-autel-robotics-alpha-alpha",
           "uav-autel-robotics-dragonfish-dragonfish",
           "uav-autel-robotics-evo-ii-dual-640t-enterprise",
