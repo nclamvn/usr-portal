@@ -68,7 +68,7 @@
       "min": 0.2
     },
     "max_range_km": {
-      "max": 13700,
+      "max": 22800,
       "min": 1
     },
     "max_speed_ms": {
@@ -80,7 +80,7 @@
       "min": 0.073
     },
     "service_ceiling_m": {
-      "max": 23200,
+      "max": 25000,
       "min": 200
     }
   },
@@ -543,7 +543,48 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
-      "glyph": "unknown",
+      "glyph": "vtol",
+      "maker": "AeroVironment",
+      "name": "JUMP 20",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-aerovironment-jump-20-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 780
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 13.6
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 185
+        },
+        "max_speed_ms": {
+          "tier": "A",
+          "v": 25.8
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 97.5
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 5182
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "vtol",
       "maker": "AeroVironment",
       "name": "AeroVironment JUMP 20",
       "ndaa": false,
@@ -627,6 +668,47 @@
       "country": "United States",
       "glyph": "fixed",
       "maker": "AeroVironment",
+      "name": "Puma 3 AE",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-aerovironment-puma-3-ae-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 180
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 2.9
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 7.0
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
       "name": "AeroVironment Puma 3 AE",
       "ndaa": false,
       "segment": "military_tactical",
@@ -655,6 +737,47 @@
         "mtow_kg": {
           "tier": "A",
           "v": 6.8
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
+      "name": "Puma LE",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-aerovironment-puma-le-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 390
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 2.5
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 60
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 12.4
         },
         "service_ceiling_m": {
           "tier": null,
@@ -873,6 +996,47 @@
       "country": "United States",
       "glyph": "fixed",
       "maker": "AeroVironment",
+      "name": "Switchblade 300",
+      "ndaa": false,
+      "segment": "loitering_munition",
+      "slug": "uav-aerovironment-switchblade-300-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 20
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 30
+        },
+        "max_speed_ms": {
+          "tier": "A",
+          "v": 44.7
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 3.27
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
       "name": "AeroVironment Switchblade 300 Block 10C",
       "ndaa": false,
       "segment": "loitering_munition",
@@ -958,7 +1122,48 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
-      "glyph": "unknown",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
+      "name": "Switchblade 600",
+      "ndaa": false,
+      "segment": "loitering_munition",
+      "slug": "uav-aerovironment-switchblade-600-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 40
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 90
+        },
+        "max_speed_ms": {
+          "tier": "A",
+          "v": 51.4
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 29.5
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
       "maker": "AeroVironment",
       "name": "AeroVironment Switchblade 600",
       "ndaa": false,
@@ -992,6 +1197,88 @@
         "service_ceiling_m": {
           "tier": "A",
           "v": 4572
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
+      "name": "T-20",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-aerovironment-t-20-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 1440
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 22.7
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 185
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 102.0
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "AeroVironment",
+      "name": "Wasp AE",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-aerovironment-wasp-ae-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 50
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 5
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 20.6
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 1.3
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 3048
         }
       }
     },
@@ -1409,6 +1696,47 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "fixed",
+      "maker": "Anduril",
+      "name": "Altius-600",
+      "ndaa": false,
+      "segment": "loitering_munition",
+      "slug": "uav-anduril-altius-600-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 240
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 450
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "multirotor",
       "maker": "Anduril",
       "name": "Anduril Anvil",
@@ -1532,6 +1860,47 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "heli",
+      "maker": "Anduril",
+      "name": "Ghost-X",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-anduril-ghost-x-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 75
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 9.0
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 25
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 25.0
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "unknown",
       "maker": "Anduril Industries",
       "name": "Anduril Industries Altius 600",
@@ -1620,6 +1989,47 @@
       "ndaa": true,
       "segment": "enterprise",
       "slug": "uav-anduril-industries-ghost-x-ghost-x",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "vtol",
+      "maker": "Anduril",
+      "name": "Roadrunner",
+      "ndaa": false,
+      "segment": "loitering_munition",
+      "slug": "uav-anduril-roadrunner-base",
       "specs": {
         "endurance_min": {
           "tier": null,
@@ -2563,6 +2973,88 @@
       "country": "China",
       "glyph": "fixed",
       "maker": "AVIC",
+      "name": "Guizhou WZ-7 Soaring Dragon",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-avic-guizhou-wz-7-soaring-dragon-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 600
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 7000
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 208.3
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 18000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "AVIC",
+      "name": "Shenyang WZ-9 Divine Eagle",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-avic-shenyang-wz-9-divine-eagle-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 25000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "AVIC",
       "name": "AVIC Wing Loong 10",
       "ndaa": false,
       "segment": null,
@@ -2837,6 +3329,47 @@
         "mtow_kg": {
           "tier": "A",
           "v": 19.5
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United Kingdom",
+      "glyph": "multirotor",
+      "maker": "BAE Systems",
+      "name": "T-600",
+      "ndaa": false,
+      "segment": "delivery",
+      "slug": "uav-bae-systems-t-600-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
         },
         "service_ceiling_m": {
           "tier": null,
@@ -3340,6 +3873,47 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "fixed",
+      "maker": "Boeing Insitu",
+      "name": "Integrator RQ-21 Blackjack",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-boeing-insitu-integrator-rq-21-blackjack-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 960
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 18
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 93
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 47.2
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 61
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5900
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "unknown",
       "maker": "Boeing Insitu",
       "name": "Boeing Insitu RQ-21 Blackjack",
@@ -3444,6 +4018,47 @@
         "max_range_km": {
           "tier": "C",
           "v": 930
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "Australia",
+      "glyph": "fixed",
+      "maker": "Boeing",
+      "name": "MQ-28 Ghost Bat",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-boeing-mq-28-ghost-bat-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
         },
         "max_speed_ms": {
           "tier": null,
@@ -3629,6 +4244,88 @@
       "country": "China",
       "glyph": "fixed",
       "maker": "CAIG",
+      "name": "Wing Loong-10",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-caig-wing-loong-10-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1200
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 400
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 172.2
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 3200
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 15000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CAIG",
+      "name": "Wing Loong I",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-caig-wing-loong-i-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1200
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 200
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 4000
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 77.8
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 1100
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CAIG",
       "name": "CAIG Wing Loong I",
       "ndaa": false,
       "segment": "military_tactical",
@@ -3661,6 +4358,47 @@
         "service_ceiling_m": {
           "tier": "C",
           "v": 5000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CAIG",
+      "name": "Wing Loong II",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-caig-wing-loong-ii-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1920
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 480
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 102.8
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 4200
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 9900
         }
       }
     },
@@ -3752,6 +4490,47 @@
       "country": "China",
       "glyph": "fixed",
       "maker": "CASC",
+      "name": "CH-3 Rainbow",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-casc-ch-3-rainbow-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 720
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 80
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 61.1
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 650
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CASC",
       "name": "CASC CH-4",
       "ndaa": false,
       "segment": "military_tactical",
@@ -3791,7 +4570,48 @@
       "blue": false,
       "company_slug": "",
       "country": "China",
-      "glyph": "unknown",
+      "glyph": "fixed",
+      "maker": "CASC",
+      "name": "CH-4 Rainbow",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-casc-ch-4-rainbow-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1800
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 345
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 50
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 1330
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
       "maker": "CASC",
       "name": "CASC CH-4 Rainbow",
       "ndaa": false,
@@ -3873,7 +4693,48 @@
       "blue": false,
       "company_slug": "",
       "country": "China",
-      "glyph": "unknown",
+      "glyph": "fixed",
+      "maker": "CASC",
+      "name": "CH-5 Rainbow",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-casc-ch-5-rainbow-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 3600
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 1000
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 10000
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 133.3
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 9000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
       "maker": "CASC",
       "name": "CASC CH-5 Rainbow",
       "ndaa": false,
@@ -3948,6 +4809,88 @@
         "service_ceiling_m": {
           "tier": "C",
           "v": 13000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CASC",
+      "name": "CH-7 Rainbow",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-casc-ch-7-rainbow-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 900
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 255.6
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 13000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "CASIC",
+      "name": "WJ-700 Falcon",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-casic-wj-700-falcon-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1200
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 3500
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
         }
       }
     },
@@ -6050,6 +6993,47 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "fixed",
+      "maker": "Edge Autonomy",
+      "name": "Stalker",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-edge-autonomy-stalker-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 120
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 8
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 4600
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "unknown",
       "maker": "Edge Autonomy",
       "name": "Edge Autonomy VXE30 Stalker",
@@ -6832,6 +7816,88 @@
     {
       "blue": false,
       "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "Feihong",
+      "name": "Feihong FH-95",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-feihong-feihong-fh-95-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1440
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 250
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 1000
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "Feihong",
+      "name": "Feihong FH-97A",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-feihong-feihong-fh-97a-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 2400
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 3500
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
       "country": "United States",
       "glyph": "vtol",
       "maker": "FlightWave",
@@ -7327,6 +8393,47 @@
       "country": "United States",
       "glyph": "fixed",
       "maker": "General Atomics",
+      "name": "Gray Eagle 25M",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-general-atomics-gray-eagle-25m-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "General Atomics",
       "name": "General Atomics Gray Eagle",
       "ndaa": false,
       "segment": "military_tactical",
@@ -7359,6 +8466,47 @@
         "service_ceiling_m": {
           "tier": "C",
           "v": 8839
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "General Atomics",
+      "name": "Mojave",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-general-atomics-mojave-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1500
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 1633
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 4600
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 3175
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
         }
       }
     },
@@ -7564,6 +8712,47 @@
         "service_ceiling_m": {
           "tier": "A",
           "v": 15240
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "General Atomics",
+      "name": "MQ-9B SkyGuardian",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-general-atomics-mq-9b-skyguardian-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 2400
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 2155
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
         }
       }
     },
@@ -7817,6 +9006,88 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "fixed",
+      "maker": "Griffon Aerospace",
+      "name": "Outlaw G2",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-griffon-aerospace-outlaw-g2-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 480
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 27
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 102
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 4877
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Griffon Aerospace",
+      "name": "SeaHunter UAV",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-griffon-aerospace-seahunter-uav-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 240
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 67
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 86
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5500
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "multirotor",
       "maker": "Guardian Agriculture",
       "name": "Guardian Agriculture SC1",
@@ -7851,6 +9122,47 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "multirotor",
+      "maker": "Harwar",
+      "name": "Harwar H16-V12",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-harwar-harwar-h16-v12-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 60
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 25
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 14.4
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 18
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5834
         }
       }
     },
@@ -8967,6 +10279,47 @@
       "country": "United States",
       "glyph": "fixed",
       "maker": "Insitu",
+      "name": "ScanEagle",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-insitu-scaneagle-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1200
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 5
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 100
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 41.1
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 26.5
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5950
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Insitu",
       "name": "Insitu ScanEagle",
       "ndaa": false,
       "segment": "military_tactical",
@@ -9655,6 +11008,129 @@
         "service_ceiling_m": {
           "tier": "B",
           "v": 13716
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Kratos",
+      "name": "BQM-167",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-kratos-bqm-167-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 292.5
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 15000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Kratos",
+      "name": "UTAP-22 Mako",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-kratos-utap-22-mako-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 15240
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Kratos",
+      "name": "XQ-58 Valkyrie",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-kratos-xq-58-valkyrie-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 272
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 5600
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 291
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 2722
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 14000
         }
       }
     },
@@ -10689,6 +12165,47 @@
       "country": "United States",
       "glyph": "fixed",
       "maker": "Northrop Grumman",
+      "name": "MQ-4C Triton",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-northrop-grumman-mq-4c-triton-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 1800
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 15200
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 160
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 14630
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 17000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Northrop Grumman",
       "name": "Northrop Grumman MQ-4C Triton",
       "ndaa": false,
       "segment": "military_tactical",
@@ -10762,6 +12279,47 @@
         "service_ceiling_m": {
           "tier": "C",
           "v": 4877
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Northrop Grumman",
+      "name": "RQ-4 Global Hawk",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-northrop-grumman-rq-4-global-hawk-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 2040
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 1360
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 22800
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 175
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 14628
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 18000
         }
       }
     },
@@ -11172,6 +12730,47 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Platform Aerospace",
+      "name": "Vanilla",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-platform-aerospace-vanilla-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 68
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 272
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 4572
         }
       }
     },
@@ -12409,7 +14008,48 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
-      "glyph": "unknown",
+      "glyph": "vtol",
+      "maker": "Shield AI",
+      "name": "V-BAT",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-shield-ai-v-bat-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 720
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 18.1
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 180
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 75
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "vtol",
       "maker": "Shield AI",
       "name": "Shield AI V-BAT",
       "ndaa": false,
@@ -12616,6 +14256,47 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": true,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "multirotor",
+      "maker": "Skydio",
+      "name": "X10D",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-skydio-x10d-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 40
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 12
+        },
+        "max_speed_ms": {
+          "tier": "A",
+          "v": 20
+        },
+        "mtow_kg": {
+          "tier": "A",
+          "v": 2.49
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 4572
         }
       }
     },
@@ -13108,6 +14789,47 @@
         "service_ceiling_m": {
           "tier": "C",
           "v": 18000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "heli",
+      "maker": "Sunward",
+      "name": "Sunward SVU-200",
+      "ndaa": false,
+      "segment": "enterprise",
+      "slug": "uav-sunward-sunward-svu-200-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 156
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 200
+        },
+        "max_range_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 58.1
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
         }
       }
     },
@@ -13853,6 +15575,88 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
+      "glyph": "multirotor",
+      "maker": "Teledyne FLIR",
+      "name": "R80D SkyRaider",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-teledyne-flir-r80d-skyraider-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 60
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 3.5
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 8
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 13.9
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 4500
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "multirotor",
+      "maker": "Teledyne FLIR",
+      "name": "Rogue 1",
+      "ndaa": false,
+      "segment": "loitering_munition",
+      "slug": "uav-teledyne-flir-rogue-1-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 30
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 10
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 31.4
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 4.5
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
       "glyph": "quad",
       "maker": "Teledyne FLIR",
       "name": "Teledyne FLIR SIRAS",
@@ -13928,6 +15732,88 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "multirotor",
+      "maker": "Teledyne FLIR",
+      "name": "SkyRanger R70",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-teledyne-flir-skyranger-r70-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 40
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 3.5
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 8
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 13.9
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "fixed",
+      "maker": "Tengden",
+      "name": "Tengden TB-001 Scorpion",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-tengden-tengden-tb-001-scorpion-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 2100
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 1200
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 6000
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 2800
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 8000
         }
       }
     },
@@ -14017,7 +15903,7 @@
       "blue": false,
       "company_slug": "",
       "country": "United States",
-      "glyph": "unknown",
+      "glyph": "fixed",
       "maker": "Textron Systems",
       "name": "Textron Systems Aerosonde",
       "ndaa": false,
@@ -14051,6 +15937,88 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Textron Systems",
+      "name": "Aerosonde",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-textron-systems-aerosonde-base",
+      "specs": {
+        "endurance_min": {
+          "tier": null,
+          "v": null
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": null,
+          "v": null
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 140
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": null,
+          "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "United States",
+      "glyph": "fixed",
+      "maker": "Textron Systems",
+      "name": "RQ-7 Shadow",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-textron-systems-rq-7-shadow-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 360
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 45
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 109.5
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 55.6
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 170
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 4600
         }
       }
     },
@@ -15657,6 +17625,47 @@
       "blue": false,
       "company_slug": "",
       "country": "China",
+      "glyph": "fixed",
+      "maker": "Xi'an ASN",
+      "name": "ASN-209",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-xi-an-asn-asn-209-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "B",
+          "v": 600
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "B",
+          "v": 50
+        },
+        "max_range_km": {
+          "tier": "B",
+          "v": 200
+        },
+        "max_speed_ms": {
+          "tier": "B",
+          "v": 50
+        },
+        "mtow_kg": {
+          "tier": "B",
+          "v": 320
+        },
+        "service_ceiling_m": {
+          "tier": "B",
+          "v": 5000
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
       "glyph": "quad",
       "maker": "Xiaomi (FIMI)",
       "name": "Xiaomi (FIMI) X8 SE",
@@ -16306,6 +18315,47 @@
         "service_ceiling_m": {
           "tier": null,
           "v": null
+        }
+      }
+    },
+    {
+      "blue": false,
+      "company_slug": "",
+      "country": "China",
+      "glyph": "heli",
+      "maker": "Ziyan",
+      "name": "Ziyan Blowfish A2G",
+      "ndaa": false,
+      "segment": "military_tactical",
+      "slug": "uav-ziyan-ziyan-blowfish-a2g-base",
+      "specs": {
+        "endurance_min": {
+          "tier": "A",
+          "v": 65
+        },
+        "max_link_km": {
+          "tier": null,
+          "v": null
+        },
+        "max_payload_kg": {
+          "tier": "A",
+          "v": 12
+        },
+        "max_range_km": {
+          "tier": "A",
+          "v": 60
+        },
+        "max_speed_ms": {
+          "tier": null,
+          "v": null
+        },
+        "mtow_kg": {
+          "tier": null,
+          "v": null
+        },
+        "service_ceiling_m": {
+          "tier": "A",
+          "v": 5500
         }
       }
     }
