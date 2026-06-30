@@ -155,6 +155,41 @@ def world_map(counts, total, *, rel="", interactive=True, mini=False, highlight=
         + '</div>')
 
 
+def subset_map(counts, mappable, subset_n, *, rel="", fkey="", cap_en="", cap_vn=""):
+    """Tier-2 FILTER map for a /segment, /airframe or /compliance term page: the manufacturer-country
+    distribution OF THAT SUBSET (coastline backdrop + a proportional dot per country in the subset).
+    counts: {canon_country: n} restricted to the subset. mappable: systems-with-a-country (== sum,
+    == placed). subset_n: full group size (for the honest caption). fkey: 'segment:fpv' etc, so
+    verify_map can recompute the subset distribution and prove every dot (MAP_FILTER_DRIFT).
+    Light (coastline only, no 138KB choropleth); returns '' for an empty/uncoverable subset."""
+    placed, dots = 0, []
+    for c, n in sorted(counts.items(), key=lambda kv: -kv[1]):
+        if not n:
+            continue
+        cen = CENTROID.get(c)
+        if not cen:
+            continue   # no centroid -> no fabricated marker (honest)
+        placed += n
+        x, y = _proj(cen[1], cen[0])
+        r = max(3.0, 2.0 + math.sqrt(n) * 1.7) * 0.85
+        op = DOT_OP[_bin(n)]
+        dots.append(
+            f'<a href="{_e(rel)}country/{_slug(c)}.html"><circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" '
+            f'fill="var(--brass)" fill-opacity="{op}" stroke="var(--brass)" stroke-width="0.8" '
+            f'data-c="{_e(c)}" data-n="{n}"><title>{_e(c)} · {n}</title></circle></a>')
+    if not dots:
+        return ""   # nothing to place (subset has no recorded manufacturer country)
+    cap = (f'<div class="wm-cap"><span data-lang-en>{_e(cap_en)}</span>'
+           f'<span data-lang-vn>{_e(cap_vn)}</span></div>') if cap_en else ""
+    return (
+        f'<div class="wmap wmap-mini" data-placed="{placed}" data-total="{mappable}" '
+        f'data-filter="{_e(fkey)}" data-audit="wmap">'
+        f'<svg class="wm-svg" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg" '
+        f'role="img" preserveAspectRatio="xMidYMid meet" aria-hidden="true">'
+        f'<g class="wm-base"><path d="{_coast()}"/></g>'
+        f'<g class="wm-dots">{"".join(dots)}</g></svg>{cap}</div>')
+
+
 def country_map(country, n, *, rel=""):
     """Locator mini-map for a /country/<slug> page: coastline backdrop + a single highlighted dot for
     THIS country, sized by its system count, linking to the full map. Light (coastline only).

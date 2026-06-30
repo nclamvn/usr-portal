@@ -10,8 +10,8 @@ import json, pathlib, shutil, re
 from collections import Counter
 from build_reference import friendly, bilingual, esc
 from footer import footer
-from canon import canonical_slug, canonical_name
-from geo_map import country_map
+from canon import canonical_slug, canonical_name, canon_country
+from geo_map import country_map, subset_map
 from nav import nav
 from header import header
 from seo import meta, collection_ld, breadcrumb_ld
@@ -97,6 +97,16 @@ def main():
     labels = site["labels"]
     uavs = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
     uav_name = {e["slug"]: (e.get("name") or {}).get("value") or e["slug"] for e in uavs}
+    # slug -> canon manufacturer country (None if unrecorded) — feeds the Tier-2 filter maps,
+    # same recompute as the global /data map so verify_map's MAP_FILTER_DRIFT can prove every dot.
+    slug_country = {e["slug"]: canon_country((e.get("manufacturer_country") or {}).get("value")) for e in uavs}
+
+    def filter_map(slugs, fkey, group_en, group_vn):
+        cc = Counter(slug_country[x] for x in slugs if slug_country.get(x))
+        placed = sum(cc.values())
+        return subset_map(dict(cc), placed, len(slugs), rel="../", fkey=fkey,
+                          cap_en=f"Manufacturer country of {placed}/{len(slugs)} {group_en}",
+                          cap_vn=f"Nước sản xuất của {placed}/{len(slugs)} {group_vn}")
 
     # group by country and by segment (live)
     countries, segments = {}, {}
@@ -142,7 +152,9 @@ def main():
         plain = labels["segment"].get(s, {}).get("en", s)
         meta_line = f'{len(slugs)} ' + bilingual("systems", "hệ thống")
         html = page("segment", title, meta_line, [(bilingual("Systems", "Hệ thống"), uav_items)],
-                    f"segment/{tslug(s)}.html", plain, len(slugs))
+                    f"segment/{tslug(s)}.html", plain, len(slugs),
+                    lead=filter_map(slugs, f"segment:{tslug(s)}", "systems in this segment",
+                                    "hệ thống trong nhóm ứng dụng"))
         (ROOT / "segment" / f"{tslug(s)}.html").write_text(html)
         nse += 1
 
@@ -194,9 +206,11 @@ def main():
         for t, g in groups.items():
             label = g["labels"].most_common(1)[0][0]
             meta_line = f'{len(g["slugs"])} ' + bilingual("systems", "hệ thống")
+            lead = (filter_map(g["slugs"], f"airframe:{t}", "systems with this airframe",
+                               "hệ thống cùng loại khung bay") if axis_dir == "airframe" else "")
             html = page(axis_dir, esc(label), meta_line,
                         [(bilingual("Systems", "Hệ thống"), entity_items(g["slugs"]))],
-                        f"{axis_dir}/{t}.html", label, len(g["slugs"]))
+                        f"{axis_dir}/{t}.html", label, len(g["slugs"]), lead=lead)
             (ROOT / axis_dir / f"{t}.html").write_text(html)
             terms.append((t, label, len(g["slugs"])))
         cov = sum(len(g["slugs"]) for g in groups.values())
@@ -245,7 +259,9 @@ def main():
                      + f' · {nnull} ' + bilingual("not recorded", "chưa ghi nhận") + f' / {len(uavs)}')
         html = page("compliance", bilingual(en, vn), meta_line,
                     [(bilingual("Compliant systems", "Hệ thống tuân thủ"), entity_items(true_slugs))],
-                    f"compliance/{slug}.html", en, ntrue)
+                    f"compliance/{slug}.html", en, ntrue,
+                    lead=filter_map(true_slugs, f"compliance:{slug}", "compliant systems",
+                                    "hệ thống tuân thủ"))
         (ROOT / "compliance" / f"{slug}.html").write_text(html)
         comp_terms.append((slug, bilingual(en, vn), ntrue))
     write_index("compliance", "Compliance", bilingual("Compliance", "Tuân thủ"),
