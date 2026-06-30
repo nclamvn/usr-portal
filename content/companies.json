@@ -2533,33 +2533,6 @@
     "tier": "A"
    }
   },
-  "ehang": {
-   "legal_name": {
-    "value": "EHang Holdings Limited",
-    "source": "sec.gov",
-    "tier": "A"
-   },
-   "hq_country": {
-    "value": "China",
-    "source": "linkedin.com/company/ehang-inc-/",
-    "tier": "A"
-   },
-   "hq_city": {
-    "value": "Guangzhou",
-    "source": "en.wikipedia.org/wiki/EHang",
-    "tier": "B"
-   },
-   "founded_year": {
-    "value": 2014,
-    "source": "en.wikipedia.org/wiki/EHang",
-    "tier": "B"
-   },
-   "website": {
-    "value": "https://www.ehang.com",
-    "source": "ehang.com",
-    "tier": "A"
-   }
-  },
   "flock-safety": {
    "legal_name": {
     "value": "Flock Safety",
@@ -3293,33 +3266,6 @@
     "tier": "A"
    }
   },
-  "elbit": {
-   "legal_name": {
-    "value": "Elbit Systems Ltd.",
-    "source": "elbitsystems.com",
-    "tier": "A"
-   },
-   "hq_city": {
-    "value": "Haifa",
-    "source": "en.wikipedia.org/wiki/Elbit_Systems",
-    "tier": "B"
-   },
-   "hq_country": {
-    "value": "Israel",
-    "source": "elbitsystems.com",
-    "tier": "A"
-   },
-   "founded_year": {
-    "value": 1966,
-    "source": "en.wikipedia.org/wiki/Elbit_Systems",
-    "tier": "B"
-   },
-   "website": {
-    "value": "https://elbitsystems.com",
-    "source": "elbitsystems.com",
-    "tier": "A"
-   }
-  },
   "garuda-aerospace": {
    "legal_name": {
     "value": "Garuda Aerospace Private Limited",
@@ -3528,33 +3474,6 @@
    "website": {
     "value": "https://www.stengg.com",
     "source": "stengg.com",
-    "tier": "A"
-   }
-  },
-  "teal": {
-   "legal_name": {
-    "value": "Teal Drones, Inc.",
-    "source": "redcatholdings.com",
-    "tier": "A"
-   },
-   "hq_city": {
-    "value": "Salt Lake City, Utah",
-    "source": "tealdrones.com",
-    "tier": "A"
-   },
-   "hq_country": {
-    "value": "United States",
-    "source": "tealdrones.com",
-    "tier": "A"
-   },
-   "founded_year": {
-    "value": 2014,
-    "source": "utahbusiness.com",
-    "tier": "B"
-   },
-   "website": {
-    "value": "https://tealdrones.com",
-    "source": "tealdrones.com",
     "tier": "A"
    }
   },

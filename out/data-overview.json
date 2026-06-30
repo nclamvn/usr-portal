@@ -417,22 +417,12 @@
       "slug": "eft"
     },
     {
-      "count": 1,
-      "hq_city": "Guangzhou",
-      "slug": "ehang"
-    },
-    {
-      "count": 1,
+      "count": 2,
       "hq_city": "Guangzhou",
       "slug": "ehang-holdings"
     },
     {
-      "count": 1,
-      "hq_city": "Haifa",
-      "slug": "elbit"
-    },
-    {
-      "count": 7,
+      "count": 8,
       "hq_city": "Haifa",
       "slug": "elbit-systems"
     },
@@ -907,12 +897,7 @@
       "slug": "tai"
     },
     {
-      "count": 1,
-      "hq_city": "Salt Lake City, Utah",
-      "slug": "teal"
-    },
-    {
-      "count": 2,
+      "count": 3,
       "hq_city": "Salt Lake City, Utah",
       "slug": "teal-drones"
     },
@@ -1102,7 +1087,7 @@
       "slug": "ziyan"
     }
   ],
-  "hq_total": 186,
+  "hq_total": 183,
   "maker": [
     {
       "n": "DJI",
@@ -1152,7 +1137,7 @@
     {
       "n": "Elbit Systems",
       "slug": "elbit-systems",
-      "v": 7
+      "v": 8
     },
     {
       "n": "Boeing Insitu",
@@ -1165,10 +1150,10 @@
       "v": 6
     },
     {
-      "n": "174 hãng khác",
-      "n_en": "174 makers",
+      "n": "171 hãng khác",
+      "n_en": "171 makers",
       "other": true,
-      "v": 294
+      "v": 293
     }
   ],
   "schema": "data-overview/1",
@@ -1317,7 +1302,7 @@
     }
   ],
   "totals": {
-    "company": 186,
+    "company": 183,
     "country": 33,
     "coverage_pct": 32,
     "disputed": 6,

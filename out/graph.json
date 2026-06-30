@@ -1,11 +1,11 @@
 {
   "schema": "graph/1",
   "stats": {
-    "nodes": 688,
+    "nodes": 685,
     "edges": 1314,
     "by_node": {
       "article": 7,
-      "entity:company": 186,
+      "entity:company": 183,
       "entity:uav": 444,
       "tax:country": 33,
       "tax:segment": 13,
@@ -76,9 +76,7 @@
     "entity:company:easy-aerial",
     "entity:company:edge-autonomy",
     "entity:company:eft",
-    "entity:company:ehang",
     "entity:company:ehang-holdings",
-    "entity:company:elbit",
     "entity:company:elbit-systems",
     "entity:company:elroy-air",
     "entity:company:emt-penzberg",
@@ -174,7 +172,6 @@
     "entity:company:swoop-aero",
     "entity:company:sypaq",
     "entity:company:tai",
-    "entity:company:teal",
     "entity:company:teal-drones",
     "entity:company:tekever",
     "entity:company:teledyne-flir",
@@ -3302,7 +3299,7 @@
     ],
     [
       "entity:uav:uav-ehang-vt-35-vt-35",
-      "entity:company:ehang",
+      "entity:company:ehang-holdings",
       "manufacturer"
     ],
     [
@@ -3317,7 +3314,7 @@
     ],
     [
       "entity:uav:uav-elbit-hermes-90-hermes-90",
-      "entity:company:elbit",
+      "entity:company:elbit-systems",
       "manufacturer"
     ],
     [
@@ -6217,7 +6214,7 @@
     ],
     [
       "entity:uav:uav-teal-golden-eagle-golden-eagle",
-      "entity:company:teal",
+      "entity:company:teal-drones",
       "manufacturer"
     ],
     [

@@ -92723,54 +92723,6 @@
       "contact_phone": null,
       "entity_type": "company",
       "founded_year": {
-        "source": "en.wikipedia.org/wiki/EHang",
-        "tier": "B",
-        "value": 2014
-      },
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "en.wikipedia.org/wiki/EHang",
-        "tier": "B",
-        "value": "Guangzhou"
-      },
-      "hq_country": {
-        "source": "linkedin.com/company/ehang-inc-/",
-        "tier": "A",
-        "value": "China"
-      },
-      "legal_name": {
-        "source": "sec.gov",
-        "tier": "A",
-        "value": "EHang Holdings Limited"
-      },
-      "name": "EHang",
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "China": 1
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "passenger_uam": 1
-        },
-        "uav_count": 1,
-        "uav_slugs": [
-          "uav-ehang-vt-35-vt-35"
-        ]
-      },
-      "slug": "ehang",
-      "website": {
-        "source": "ehang.com",
-        "tier": "A",
-        "value": "https://www.ehang.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
         "source": "ir.ehang.com",
         "tier": "A",
         "value": 2014
@@ -92796,15 +92748,16 @@
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
-          "China": 1
+          "China": 2
         },
         "ndaa_count": 0,
         "segments": {
-          "passenger_uam": 1
+          "passenger_uam": 2
         },
-        "uav_count": 1,
+        "uav_count": 2,
         "uav_slugs": [
-          "uav-ehang-eh216-s-eh216s"
+          "uav-ehang-eh216-s-eh216s",
+          "uav-ehang-vt-35-vt-35"
         ]
       },
       "slug": "ehang-holdings",
@@ -92812,54 +92765,6 @@
         "source": "ehang.com",
         "tier": "A",
         "value": "https://www.ehang.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
-        "source": "en.wikipedia.org/wiki/Elbit_Systems",
-        "tier": "B",
-        "value": 1966
-      },
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "en.wikipedia.org/wiki/Elbit_Systems",
-        "tier": "B",
-        "value": "Haifa"
-      },
-      "hq_country": {
-        "source": "elbitsystems.com",
-        "tier": "A",
-        "value": "Israel"
-      },
-      "legal_name": {
-        "source": "elbitsystems.com",
-        "tier": "A",
-        "value": "Elbit Systems Ltd."
-      },
-      "name": "Elbit",
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "Israel": 1
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "military_tactical": 1
-        },
-        "uav_count": 1,
-        "uav_slugs": [
-          "uav-elbit-hermes-90-hermes-90"
-        ]
-      },
-      "slug": "elbit",
-      "website": {
-        "source": "elbitsystems.com",
-        "tier": "A",
-        "value": "https://elbitsystems.com"
       }
     },
     {
@@ -92892,15 +92797,16 @@
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
-          "Israel": 7
+          "Israel": 8
         },
         "ndaa_count": 0,
         "segments": {
           "loitering_munition": 1,
-          "military_tactical": 6
+          "military_tactical": 7
         },
-        "uav_count": 7,
+        "uav_count": 8,
         "uav_slugs": [
+          "uav-elbit-hermes-90-hermes-90",
           "uav-elbit-hermes-900-kochav",
           "uav-elbit-systems-hermes-450-base",
           "uav-elbit-systems-hermes-450-hermes-450",
@@ -97374,54 +97280,6 @@
       "contact_phone": null,
       "entity_type": "company",
       "founded_year": {
-        "source": "utahbusiness.com",
-        "tier": "B",
-        "value": 2014
-      },
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "tealdrones.com",
-        "tier": "A",
-        "value": "Salt Lake City, Utah"
-      },
-      "hq_country": {
-        "source": "tealdrones.com",
-        "tier": "A",
-        "value": "United States"
-      },
-      "legal_name": {
-        "source": "redcatholdings.com",
-        "tier": "A",
-        "value": "Teal Drones, Inc."
-      },
-      "name": "Teal",
-      "rollup": {
-        "blue_uas_count": 1,
-        "countries": {
-          "United States": 1
-        },
-        "ndaa_count": 1,
-        "segments": {
-          "public_safety": 1
-        },
-        "uav_count": 1,
-        "uav_slugs": [
-          "uav-teal-golden-eagle-golden-eagle"
-        ]
-      },
-      "slug": "teal",
-      "website": {
-        "source": "tealdrones.com",
-        "tier": "A",
-        "value": "https://tealdrones.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
         "source": "tealdrones.com/company/about/",
         "tier": "A",
         "value": 2014
@@ -97445,18 +97303,20 @@
       },
       "name": "Teal Drones",
       "rollup": {
-        "blue_uas_count": 2,
+        "blue_uas_count": 3,
         "countries": {
-          "United States": 2
+          "United States": 3
         },
-        "ndaa_count": 2,
+        "ndaa_count": 3,
         "segments": {
-          "defense_government": 1
+          "defense_government": 1,
+          "public_safety": 1
         },
-        "uav_count": 2,
+        "uav_count": 3,
         "uav_slugs": [
           "uav-teal-drones-golden-eagle-golden-eagle",
-          "uav-teal-drones-teal-2"
+          "uav-teal-drones-teal-2",
+          "uav-teal-golden-eagle-golden-eagle"
         ]
       },
       "slug": "teal-drones",

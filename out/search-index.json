@@ -491,41 +491,21 @@
       "url": "company/eft.html"
     },
     {
-      "id": "ehang",
-      "label_en": "EHang",
-      "label_vn": "EHang",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
-      "terms": "ehang",
-      "type": "company",
-      "url": "company/ehang.html"
-    },
-    {
       "id": "ehang-holdings",
       "label_en": "EHang Holdings",
       "label_vn": "EHang Holdings",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "ehang holdings",
       "type": "company",
       "url": "company/ehang-holdings.html"
     },
     {
-      "id": "elbit",
-      "label_en": "Elbit",
-      "label_vn": "Elbit",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
-      "terms": "elbit",
-      "type": "company",
-      "url": "company/elbit.html"
-    },
-    {
       "id": "elbit-systems",
       "label_en": "Elbit Systems",
       "label_vn": "Elbit Systems",
-      "sub_en": "7 systems",
-      "sub_vn": "7 hệ thống",
+      "sub_en": "8 systems",
+      "sub_vn": "8 hệ thống",
       "terms": "elbit systems",
       "type": "company",
       "url": "company/elbit-systems.html"
@@ -1471,21 +1451,11 @@
       "url": "company/tai.html"
     },
     {
-      "id": "teal",
-      "label_en": "Teal",
-      "label_vn": "Teal",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
-      "terms": "teal",
-      "type": "company",
-      "url": "company/teal.html"
-    },
-    {
       "id": "teal-drones",
       "label_en": "Teal Drones",
       "label_vn": "Teal Drones",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "teal drones",
       "type": "company",
       "url": "company/teal-drones.html"

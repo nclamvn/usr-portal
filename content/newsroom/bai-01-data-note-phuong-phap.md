@@ -18,7 +18,7 @@ sources:
 
 # Bản đăng ký USR đọc thế nào: phạm vi, phương pháp và những ô để trống
 
-Bản đăng ký Uncrewed Systems Review ghi nhận 444 hệ thống bay không người lái cùng 186 doanh nghiệp sản xuất, phân bố trên 33 quốc gia và 13 nhóm ứng dụng. Trước khi diễn giải bất kỳ con số nào trong tập dữ liệu này, người đọc cần nắm ba điều, gồm phạm vi của mẫu, nguyên tắc ghi nhận từng giá trị và cách hệ thống đánh dấu phần thông tin còn thiếu.
+Bản đăng ký Uncrewed Systems Review ghi nhận 444 hệ thống bay không người lái cùng 183 doanh nghiệp sản xuất, phân bố trên 33 quốc gia và 13 nhóm ứng dụng. Trước khi diễn giải bất kỳ con số nào trong tập dữ liệu này, người đọc cần nắm ba điều, gồm phạm vi của mẫu, nguyên tắc ghi nhận từng giá trị và cách hệ thống đánh dấu phần thông tin còn thiếu.
 
 Tập dữ liệu là một bản đăng ký được tuyển chọn, không phải một cuộc điều tra thị trường. Mỗi bản ghi tương ứng với một mẫu thiết bị đã công bố công khai, kèm thông số mà nhóm biên tập kiểm chứng được. Vì mẫu do nhóm chủ động thu thập, các tỷ lệ tính trên tập này phản ánh cấu trúc của chính bản đăng ký chứ không suy ra được thị phần của một quốc gia hay một hãng trên thị trường thực.
 
