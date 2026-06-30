@@ -10,7 +10,7 @@ Two registers, kept strictly apart:
 Design-system-of-record only — no new aesthetic. Bilingual (en/vn) throughout.
 """
 import json, pathlib, shutil
-from build_reference import friendly, bilingual, esc
+from build_reference import friendly, bilingual, esc, render_row, fleet_log_ranges, spec_table_head
 from footer import footer
 from nav import nav
 from header import header
@@ -95,7 +95,7 @@ def sourced_row(key, en, vn, val):
             f'<span class="src">{bilingual("invalid", "không hợp lệ")}</span></div>')
 
 
-def render_company(c, labels, uav_name):
+def render_company(c, labels, uav_by_slug, rng):
     roll = c.get("rollup") or {}
     name = c.get("name") or "—"
     hq = c.get("hq_city")
@@ -104,8 +104,12 @@ def render_company(c, labels, uav_name):
                          for k, v in roll.get("countries", {}).items())
     segments = " ".join(f'<span class="ck">{friendly("segment", k, labels)} <b>{v}</b></span>'
                         for k, v in roll.get("segments", {}).items())
-    fleet = "".join(f'<li><a href="../uav/{esc(s)}.html">{esc(uav_name.get(s, s))}</a></li>'
-                    for s in roll.get("uav_slugs", []))
+    # Models = the same spec-analytics table as reference.html (sparkbars positioned against the WHOLE
+    # 444-fleet range so "this maker's MTOW vs the field" reads straight), honest-null dashed, tier badge.
+    fleet_rows = "\n".join(render_row(uav_by_slug[s], labels, rng, rel="../")
+                           for s in roll.get("uav_slugs", []) if s in uav_by_slug)
+    fleet = (f'{spec_table_head()}\n  <div class="index-list">{fleet_rows}</div>') if fleet_rows else \
+            f'<p class="note">{bilingual("No models in registry.", "Chưa có mẫu trong registry.")}</p>'
     rows = [sourced_row(k, en, vn, c.get(k)) for k, en, vn in SOURCED_BASE]
     rows += [sourced_row(k, en, vn, c[k]) for k, en, vn in SOURCED_EXTRA if k in c]  # extras only when present
     sourced = "".join(rows)
@@ -156,7 +160,7 @@ def render_company(c, labels, uav_name):
   <div class="crow"><span class="k">{bilingual("Segments", "Phân khúc")}</span><span class="v"><span class="mix">{segments or "—"}</span></span><span></span></div>
 
   <div class="csec-h">{bilingual("Models", "Các mẫu")}</div>
-  <ul class="fleet">{fleet}</ul>
+  {fleet}
 
   <div class="csec-h">{bilingual("Company profile (sourced)", "Hồ sơ công ty (có nguồn)")}</div>
   {sourced}
@@ -175,6 +179,8 @@ def render_company(c, labels, uav_name):
 <script>
   USRBase.initTheme(document.getElementById("theme"));
   USRBase.initI18n(document.getElementById("lang"));
+  USRBase.initReveal();
+  USRBase.initRegistry({{ grid: ".index-list", item: ".row-item" }});
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
@@ -186,13 +192,14 @@ def main():
     site = json.loads(SITE.read_bytes())
     labels = site["labels"]
     companies = [e for e in site["entities"] if e.get("entity_type") == "company"]
-    uav_name = {e["slug"]: (e.get("name") or {}).get("value") or e["slug"]
-                for e in site["entities"] if e.get("entity_type", "uav") == "uav"}
+    uav_ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
+    uav_by_slug = {e["slug"]: e for e in uav_ents}
+    rng = fleet_log_ranges(uav_ents)                  # global fleet range → cross-company comparable
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)
     OUTDIR.mkdir(parents=True)
     for c in companies:
-        (OUTDIR / f'{c["slug"]}.html').write_text(render_company(c, labels, uav_name))
+        (OUTDIR / f'{c["slug"]}.html').write_text(render_company(c, labels, uav_by_slug, rng))
     print(f"company/: {len(companies)} company pages written")
 
 

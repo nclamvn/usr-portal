@@ -155,7 +155,25 @@ def spark_cell(e, key, rng):
     return (f'<span class="ri-spark" title="{esc(v)}"><i style="width:{pct}%"></i></span>', esc(v))
 
 
-def render_row(e, labels, rng):
+def spec_table_head():
+    """Sortable column header for the spec-analytics table — reused by reference.html and the
+    company fleet. No links, so no rel prefix needed."""
+    def head_cell(sort, en, vn, cls):
+        return (f'<button class="col-sort {cls}" type="button" data-sort="{sort}">'
+                f'{bilingual(en, vn)}<span class="cs-ar" aria-hidden="true"></span></button>')
+    return (
+        '<div class="idx-head">'
+        '<span class="ih-glyph"></span>'
+        + head_cell("name", "Maker / Model", "Hãng / Mẫu", "ih-id")
+        + head_cell("mtow", "MTOW", "MTOW", "ih-col")
+        + head_cell("range", "Range", "Tầm bay", "ih-col")
+        + head_cell("endur", "Endurance", "Giờ bay", "ih-col")
+        + head_cell("cov", "Cov", "Độ đầy", "ih-col")
+        + head_cell("tier", "Tier", "Nguồn", "ih-col")
+        + '</div>')
+
+
+def render_row(e, labels, rng, rel=""):
     """A light INDEX row linking to its detail page — NOT the rich detail card (that lives in
     build_detail). A spec-analytics table row: maker/model + country/segment/class, three
     log-placed spec sparkbars (MTOW/range/endurance), a record-fullness N/7 column and a
@@ -185,7 +203,7 @@ def render_row(e, labels, rng):
                  else '<span class="ri-tier-null" aria-hidden="true">—</span>')
     tier_col = f'<span class="ri-col ri-tiercol">{tier_html}{flags}</span>'
     return (
-        f'<a class="row-item ri-spec reveal" href="uav/{esc(e["slug"])}.html" data-audit="row" '
+        f'<a class="row-item ri-spec reveal" href="{rel}uav/{esc(e["slug"])}.html" data-audit="row" '
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
         f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}" '
         f'data-mtow="{svals["mtow"]}" data-range="{svals["range"]}" data-endur="{svals["endur"]}" '
@@ -259,20 +277,7 @@ def main():
     facets = render_facets(ents, labels)
     rng = fleet_log_ranges(ents)
     rows = "\n".join(render_row(e, labels, rng) for e in ents)
-    # sortable column header — each button cycles into the client sorter (base.js initRegistry)
-    def head_cell(sort, en, vn, cls):
-        return (f'<button class="col-sort {cls}" type="button" data-sort="{sort}">'
-                f'{bilingual(en, vn)}<span class="cs-ar" aria-hidden="true"></span></button>')
-    idx_head = (
-        '<div class="idx-head">'
-        '<span class="ih-glyph"></span>'
-        + head_cell("name", "Maker / Model", "Hãng / Mẫu", "ih-id")
-        + head_cell("mtow", "MTOW", "MTOW", "ih-col")
-        + head_cell("range", "Range", "Tầm bay", "ih-col")
-        + head_cell("endur", "Endurance", "Giờ bay", "ih-col")
-        + head_cell("cov", "Cov", "Độ đầy", "ih-col")
-        + head_cell("tier", "Tier", "Nguồn", "ih-col")
-        + '</div>')
+    idx_head = spec_table_head()
     fsc = agg["field_status_counts"]
     # friendly, trust-ordered status breakdown — NEVER raw status keys (e.g. "None" -> honest-null)
     SLAB = {"verified": ("verified", "đã kiểm"), "derived": ("derived", "suy ra"),
