@@ -75,7 +75,7 @@ Triết-lý: cổng không có răng là cổng giả.
 - **content:** newsroom (figure-trace + format + sources + disclosure) · newsroom_feed · aggregation (8 răng) · knowledge · review.
 - **chrome khoá:** header + footer (byte-identical mọi trang) · ux1.
 - **trình-bày:** check_i18n (en==vn cân) · THEME_PURITY (luminance polarity light/dark) · svg (fill governance).
-- **bản-đồ (TIP-MAP):** `verify_map` + `teeth_map` (8 răng) — xem §5.
+- **bản-đồ (TIP-MAP):** `verify_map` + `teeth_map` (8 răng) · xem §5.
 - **headless (`audit_headless.js`):** overlap=0 ×4 theme/lang · filtered-state (<100ms + URL) · mobile-390 no-overflow.
 
 ### 4.5 Design system
@@ -106,9 +106,9 @@ Engine `geo_map.py` (equirectangular `_proj`, token-only paint, nhãn HTML bilin
 - HQ: **99/186 hãng có trụ-sở kèm nguồn** (top-102 ~80% hệ-thống) · 99 pin trên `/data`.
 - Nội-dung: 54 bài newsroom · 61 card · 50 entity LAE · 5 thuật-ngữ · 52 media asset.
 
-## 7 · Mở — chờ Chủ thầu/Chủ nhà quyết
+## 7 · Mở · chờ Chủ thầu/Chủ nhà quyết
 - **HQ đuôi dài**: 87/186 hãng còn honest-null HQ (rank 103+, obscure). Mở-rộng tiếp hay dừng ở ~80%.
-- **Skydio X10 endurance** (40 vs 65, disputed): có value 40 tier-A có thể resolve — Thợ KHÔNG tự gộp, chờ quyết.
+- **Skydio X10 endurance** (40 vs 65, disputed): có value 40 tier-A có thể resolve, Thợ KHÔNG tự gộp, chờ quyết.
 - **DJI fetch bị block** (JS nặng) → pool DJI gap khoá; cần Chủ thầu cào rồi Thợ wire.
 - **Refinery** (`usr-refinery`, private): chờ scope token để push (việc Chủ nhà; Thợ không xử token).
 - Lane gợi-ý: lô spec tiếp · làm-sắc compare/filter · mẻ nội-dung tiếp.
