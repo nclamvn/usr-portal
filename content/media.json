@@ -1093,20 +1093,77 @@
     }
   },
   "bindings": {
+    "article:bai-03-ho-so-dji": [
+      "dji-phantom3"
+    ],
+    "article:dbscl-dich-vu-drone-nong-nghiep": [
+      "xag-drone"
+    ],
+    "article:explainer-bvlos-viet-lai-luat-my-eu-vietnam": [
+      "vanilla-uav-takeoff"
+    ],
+    "article:explainer-drone-dong-cua-san-bay-counter-uas": [
+      "kerala-antidrone"
+    ],
+    "article:explainer-trung-quoc-xuat-khau-drone-chien-dau": [
+      "mil-ucav-parade"
+    ],
+    "article:ho-so-uav-dji-mavic-3e": [
+      "quad-inflight"
+    ],
     "article:lae-cn-du-bao-2035": [
       "evtol-passenger"
     ],
     "article:lae-cn-ehang-pc": [
       "ehang-eh184"
     ],
+    "article:lae-cn-ehang-tc": [
+      "evtol-test-force"
+    ],
+    "article:lae-cn-tham-quyen": [
+      "drone-city"
+    ],
+    "article:lae-tg-archer": [
+      "paris-airshow-uav"
+    ],
     "article:lae-tg-beta": [
       "evtol-volocopter"
+    ],
+    "article:lae-tg-joby": [
+      "joby-s4"
+    ],
+    "article:lae-tg-vertical": [
+      "uav-aero2018"
+    ],
+    "article:lae-tg-zipline": [
+      "zipline-delivery"
+    ],
+    "article:lae-vn-drone-cuu-tro": [
+      "flood-aerial"
     ],
     "article:lae-vn-drone-nong-nghiep": [
       "drone-ag-paddy"
     ],
+    "article:lae-vn-gia-binh": [
+      "airport-runway"
+    ],
     "article:lae-vn-viettel-uav": [
       "uav-deltaquad"
+    ],
+    "article:meituan-600000-don-giao-drone": [
+      "ddc-delivery"
+    ],
+    "article:sf-express-drone-cargo-gba": [
+      "drone-r18"
+    ],
+    "article:world-evtol-players-2026": [
+      "airbus-uav"
+    ],
+    "article:world-wing-alphabet-delivery": [
+      "flytrex-delivery"
+    ],
+    "article:world-zipline-walmart": [
+      "zipline-launch"
     ],
     "company:real-time-robotics": [
       "hera-branded-demo",

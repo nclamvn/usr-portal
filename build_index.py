@@ -598,6 +598,24 @@ def main():
     ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]
     f = live_facts(site)
     arts = [fm for fm, _ in sorted(load_articles(), key=_weight, reverse=True)]
+    # de-dup: hero / trending / reports / hotnews each get DISTINCT articles (no story — and so no
+    # bound photo — repeats across blocks). Order: hero (top weight) -> reports (report-types) ->
+    # trending (next) -> hotnews (newest of what's left).
+    _used = set()
+
+    def _take(pool, k, pred=None):
+        out = []
+        for fm in pool:
+            if fm["slug"] in _used or (pred and not pred(fm)):
+                continue
+            _used.add(fm["slug"]); out.append(fm)
+            if len(out) == k:
+                break
+        return out
+    hero_arts = _take(arts, 4)
+    reports_arts = _take(arts, 4, lambda fm: fm.get("type") in ("data-report", "data-note", "explainer"))
+    trending_arts = _take(arts, 5)
+    hotnews_arts = _take(sorted(arts, key=lambda fm: str(fm.get("date", "")), reverse=True), 5)
     n, countries, coverage = f["entities"], f["countries"], f["coverage"]
 
     doc = f"""<!DOCTYPE html>
@@ -617,22 +635,22 @@ def main():
 {masthead(f)}
 {header("", "home")}
 
-{hero(arts)}
+{hero(hero_arts)}
 
 {section_label("TOOL/00", "Drone compare", "Công cụ so sánh drone")}
 {compare_preview(ents, labels)}
 
 {section_label("TREND/01", "Notable", "Đáng chú ý")}
-{trending(arts)}
+{trending(trending_arts)}
 
 {section_label("INFO/02", "Infographics", "Đồ hoạ dữ liệu")}
 {scatter_svg(site)}
 
 {section_label("REPORT/03", "Reports & data", "Báo cáo & dữ liệu")}
-{reports(arts)}
+{reports(reports_arts)}
 
 {section_label("HOT/04", "Hot news", "Tin nóng")}
-{hotnews(arts)}
+{hotnews(hotnews_arts)}
 
 {section_label("NEWS/05", "Latest", "Tin nhanh")}
 <main class="wrap">{aggregation_block("", limit=24)}</main>
