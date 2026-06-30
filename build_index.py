@@ -490,9 +490,9 @@ def main():
 </head>
 <body>
 
-{header("", "home")}
 {ticker(f, arts)}
 {masthead(f)}
+{header("", "home")}
 
 {hero(arts)}
 
