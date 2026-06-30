@@ -145,8 +145,8 @@
     var sortBtn = document.getElementById("reg-sort");
     var toggles = Array.prototype.slice.call(document.querySelectorAll(".tg[data-facet]"));
     var GROUPS = ["segment", "klass", "country", "flag"];   // value-groups + boolean flags
-    var SORTS = ["name", "segment", "country", "mtow", "range", "endur", "cov", "tier"];
-    var NUMERIC = { mtow: 1, range: 1, endur: 1, cov: 1, tier: 1 };   // sorted as numbers, null-last
+    var SORTS = ["name", "segment", "country", "mtow", "range", "endur", "payload", "cov", "tier"];
+    var NUMERIC = { mtow: 1, range: 1, endur: 1, payload: 1, cov: 1, tier: 1 };   // sorted as numbers, null-last
     var SORT_LABELS = {
       name: { en: "Sort: A–Z", vn: "Sắp: A–Z" },
       segment: { en: "Sort: segment", vn: "Sắp: phân khúc" },
@@ -154,6 +154,7 @@
       mtow: { en: "Sort: MTOW", vn: "Sắp: MTOW" },
       range: { en: "Sort: range", vn: "Sắp: tầm bay" },
       endur: { en: "Sort: endurance", vn: "Sắp: giờ bay" },
+      payload: { en: "Sort: payload", vn: "Sắp: tải trọng" },
       cov: { en: "Sort: coverage", vn: "Sắp: độ đầy" },
       tier: { en: "Sort: tier", vn: "Sắp: nguồn" }
     };

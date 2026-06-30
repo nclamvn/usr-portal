@@ -232,7 +232,7 @@ small, .small { font-size: .82rem; }
    spec table: 3 log-placed sparkbars + coverage N/7 + source-tier badge. Honest-null = dashed rail
    (never a zero bar). brass-restraint: spark fill is --bp, brass only on tier A + active sort column.
    Scoped to .ri-spec so the plain .row-item home-preview rows are untouched. */
-:root { --ri-cols: 1.6rem minmax(0,1fr) 72px 72px 72px 48px 64px; }
+:root { --ri-cols: 1.6rem minmax(0,1fr) 64px 64px 64px 64px 46px 60px; }   /* glyph · name · MTOW·Range·Endur·Payload · Cov · Tier */
 .row-item.ri-spec { grid-template-columns: var(--ri-cols); gap: 1.1rem; }
 .ri-spec .ri-id { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .ri-spec .ri-id .ri-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

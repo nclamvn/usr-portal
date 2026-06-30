@@ -116,7 +116,8 @@ PIP_SPECS = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km",
 # (key, data-attr, EN label, VN label). Log-scaled like the scatter axes — a declared transform, not fabrication.
 SPARK_SPECS = [("mtow_kg", "mtow", "MTOW", "MTOW"),
                ("max_range_km", "range", "Range", "Tầm bay"),
-               ("endurance_min", "endur", "Endurance", "Giờ bay")]
+               ("endurance_min", "endur", "Endurance", "Giờ bay"),
+               ("max_payload_kg", "payload", "Payload", "Tải trọng")]
 TIER_RANK = {"A": "3", "B": "2", "C": "1"}
 
 
@@ -168,6 +169,7 @@ def spec_table_head():
         + head_cell("mtow", "MTOW", "MTOW", "ih-col")
         + head_cell("range", "Range", "Tầm bay", "ih-col")
         + head_cell("endur", "Endurance", "Giờ bay", "ih-col")
+        + head_cell("payload", "Payload", "Tải trọng", "ih-col")
         + head_cell("cov", "Cov", "Độ đầy", "ih-col")
         + head_cell("tier", "Tier", "Nguồn", "ih-col")
         + '</div>')
@@ -207,7 +209,7 @@ def render_row(e, labels, rng, rel=""):
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
         f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}" '
         f'data-mtow="{svals["mtow"]}" data-range="{svals["range"]}" data-endur="{svals["endur"]}" '
-        f'data-cov="{present}" data-tier="{TIER_RANK.get(tier, "")}">'
+        f'data-payload="{svals["payload"]}" data-cov="{present}" data-tier="{TIER_RANK.get(tier, "")}">'
         f'<span class="ri-glyph">{glyph_svg(e.get("frame_glyph", "unknown"))}</span>'
         f'<span class="ri-id"><span class="ri-name"><b>{esc(maker)}</b> '
         f'<span class="ri-model">{esc(model)}</span></span>'
