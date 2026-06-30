@@ -138,9 +138,11 @@ def render(ov):
     m1, m2 = _split(ov["maker"], "company")
     wmap = world_map(ov["country_full"], t["uav"], rel="")
     hq_placed = sum(1 for m in ov["hq_makers"] if m["hq_city"] in CITY_COORD)
+    _rest_en = "" if hq_placed >= t["company"] else " (the rest honest-null)"
+    _rest_vn = "" if hq_placed >= t["company"] else " (còn lại honest-null)"
     hqmap = hq_map(ov["hq_makers"], ov["hq_total"], rel="",
-                   cap_en=f"Manufacturer HQ · {hq_placed} of {t['company']} makers have a recorded, mappable location (the rest honest-null)",
-                   cap_vn=f"Trụ sở nhà sản xuất · {hq_placed}/{t['company']} hãng có vị trí ghi nhận (còn lại honest-null)")
+                   cap_en=f"Manufacturer HQ · {hq_placed} of {t['company']} makers have a recorded, mappable location{_rest_en}",
+                   cap_vn=f"Trụ sở nhà sản xuất · {hq_placed}/{t['company']} hãng có vị trí ghi nhận{_rest_vn}")
     wmap_cap = '<p class="wm-cap">' + bilingual(
         "Distribution by manufacturer country in the USR registry, not global UAV production or deployment. "
         "A country with no dot has no system tagged to it in the registry, not no UAV. Micro-states "
