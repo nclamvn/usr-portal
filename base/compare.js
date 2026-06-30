@@ -130,7 +130,7 @@
       return '<div class="cmpcell"><span class="ri-spark null"></span><span class="val null">—</span></div>';
     }
     var pos = r ? logPos(c.v, r.min, r.max) : 50;
-    var tier = c.tier ? '<span class="tier">' + esc(c.tier) + '</span>' : "";
+    var tier = c.tier ? '<span class="ri-tier" data-t="' + esc(c.tier) + '">' + esc(c.tier) + '</span>' : "";
     return '<div class="cmpcell"><span class="ri-spark"><i style="width:' + pos + '%"></i></span>' +
       '<span class="val">' + esc(c.v) + " " + esc(spec.unit) + '</span>' + tier + '</div>';
   }

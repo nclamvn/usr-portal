@@ -102,9 +102,9 @@ function detailExpr(theme, lang) {
     const tiers=document.querySelectorAll('.sources .tierbadge').length;
     const nullChips=document.querySelectorAll('.chip[data-status="absent"], .chip[data-status="unverified"]').length;
     const specRows=document.querySelectorAll('.drow.spec').length;
-    const ticks=document.querySelectorAll('.drow.spec .tick').length;
-    const nullRails=document.querySelectorAll('.drow.spec .trk.null').length;
-    const rngs=document.querySelectorAll('.drow.spec .rng').length;
+    const ticks=document.querySelectorAll('.drow.spec .ri-spark').length;           // every spec row has exactly one sparkbar
+    const nullRails=document.querySelectorAll('.drow.spec .ri-spark.null').length;   // honest-null subset (diagnostic)
+    const rngs=0;
     const hits=USRBase.designerAudit(document);
     return { sources, tiers, nullChips, specRows, ticks, nullRails, rngs, hits };
   })()`;
@@ -222,8 +222,8 @@ async function main() {
       await sleep(900);
       for (const [theme, lang] of [["light", "en"], ["dark", "vn"]]) {
         const dr = await evalOnPage(send, detailExpr(theme, lang));
-        // micro-track two-way: every numeric-spec row is EXACTLY one of tick | null-rail | range
-        const trackOk = dr.specRows > 0 && (dr.ticks + dr.nullRails + dr.rngs) === dr.specRows;
+        // sparkbar contract: every numeric-spec row carries EXACTLY one .ri-spark (filled, band, or null rail)
+        const trackOk = dr.specRows > 0 && dr.ticks === dr.specRows;
         const ok = dr.hits.length === 0 && dr.sources > 0 && dr.tiers > 0 && dr.nullChips > 0 && trackOk;
         if (!ok) failures++;
         console.log(`  ${ok ? "PASS" : "FAIL"}  /uav/${slug}  [${theme}/${lang}]  overlaps=${dr.hits.length}  ` +

@@ -57,7 +57,7 @@ COMPANY_CSS = """
   .crow .v{font-family:var(--font-mono);color:var(--ink);font-variant-numeric:tabular-nums}
   .crow .v.null{color:var(--muted)}
   .crow .src{font-family:var(--font-mono);font-size:.7rem;color:var(--muted)}
-  .crow .tierbadge{display:inline-block;border:1px solid var(--brass);color:var(--brass);border-radius:3px;font-size:.85em;padding:0 .32em;margin-left:.4em}
+  .crow .ri-tier{margin-left:.4em}   /* source-tier badge: shared .ri-tier (A brass, B/C muted) from design-system.css */
   .mix{display:flex;flex-wrap:wrap;gap:.4rem}
   .mix .ck{font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);border:1px solid var(--hair-strong);border-radius:3px;padding:.1rem .42rem}
   .mix .ck b{color:var(--brass);font-weight:500}
@@ -81,7 +81,7 @@ def sourced_row(key, en, vn, val):
         claims = val.get("disputed") or []
         body = "".join(
             f'<span class="disp">{esc(str(c.get("value")))}'
-            f'<span class="tierbadge">{esc(c.get("tier") or "—")}</span> '
+            f'<span class="ri-tier" data-t="{esc(c.get("tier") or "")}">{esc(c.get("tier") or "—")}</span> '
             f'<span class="src">{esc(c.get("source") or "")}</span></span>'
             for c in claims)
         return (f'<div class="crow">{label}<span class="v">{body}</span>'
@@ -89,7 +89,7 @@ def sourced_row(key, en, vn, val):
     if isinstance(val, dict) and "value" in val:
         return (f'<div class="crow">{label}'
                 f'<span class="v">{esc(str(val.get("value")))}'
-                f'<span class="tierbadge">{esc(val.get("tier") or "—")}</span></span>'
+                f'<span class="ri-tier" data-t="{esc(val.get("tier") or "")}">{esc(val.get("tier") or "—")}</span></span>'
                 f'<span class="src">{esc(val.get("source") or "")}</span></div>')
     return (f'<div class="crow">{label}<span class="v null">—</span>'
             f'<span class="src">{bilingual("invalid", "không hợp lệ")}</span></div>')

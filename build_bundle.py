@@ -73,7 +73,7 @@ def main():
     # newsroom reuses a DETAIL-OWNED class name, its rule bleeds onto those elements in the bundle
     # (two regressions on 2026-06-24: `.spec` hatch covered rows; `.rail` border/padding shifted
     # tracks). Detail owns these class names — newsroom must never name them. Fail loud.
-    DETAIL_OWNED = ("spec", "trk", "track", "vt", "drow", "drows", "tick", "rng")
+    DETAIL_OWNED = ("spec", "track", "vt", "drow", "drows")   # trk/tick/rng removed: detail now uses the shared .ri-spark
     nr_nocomments = re.sub(r"/\*.*?\*/", "", newsroom_css, flags=re.S)  # ignore explanatory comments
     leaked = [c for c in DETAIL_OWNED if re.search(rf"\.{c}\b", nr_nocomments)]
     if leaked:

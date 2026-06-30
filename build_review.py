@@ -66,7 +66,7 @@ REVIEW_CSS = """
   table.rv td.nm a{color:inherit;text-decoration:none;font-weight:500}
   table.rv td.nm a:hover{color:var(--brass)} table.rv td.nm .mk{display:block;font-family:var(--font-mono);font-size:.66rem;color:var(--muted)}
   .dim{display:block;height:6px;border-radius:2px;background:var(--hair);position:relative;min-width:40px}
-  .dim .f{position:absolute;left:0;top:0;height:100%;background:var(--brass);border-radius:2px}
+  .dim .f{position:absolute;left:0;top:0;height:100%;background:var(--bp);border-radius:2px}
   .dim.null{background:transparent;border-top:1px dashed var(--hair-strong);height:0;margin:.5rem 0}
   .sc{font-family:var(--font-mono);font-size:.66rem;color:var(--muted);display:block;text-align:right;margin-top:2px}
   .sc.null{color:var(--faint);font-style:italic}

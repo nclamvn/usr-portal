@@ -265,7 +265,7 @@ DATA_CSS = """
   @media(max-width:600px){.brow{grid-template-columns:108px 1fr 44px;gap:10px}}
   .brow .lb{font-size:13.5px;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .brow .track{height:14px;position:relative}
-  .brow .fill{position:absolute;left:0;top:0;height:100%;background:var(--brass);border-radius:2px;min-width:2px}
+  .brow .fill{position:absolute;left:0;top:0;height:100%;background:var(--bp);border-radius:2px;min-width:2px}
   .brow .ct{font-family:var(--font-mono);font-size:12.5px;color:var(--ink);text-align:right}
   .brow.other .lb,.brow.other .ct{color:var(--muted)} .brow.other .fill{background:var(--hair-strong)}
   .brow.null .lb{color:var(--faint);font-style:italic}
@@ -324,7 +324,7 @@ DATA_CSS = """
   @media(max-width:680px){.spectrum{grid-template-columns:repeat(6,1fr);gap:7px}}
   .colstrip{display:flex;flex-direction:column;align-items:center;gap:8px}
   .colstrip .bars{width:100%;display:grid;grid-template-rows:repeat(24,1fr);gap:2px;height:150px}
-  .colstrip .c.on{background:var(--brass);border-radius:1px} .colstrip .c.off{background:var(--hair);border-radius:1px}
+  .colstrip .c.on{background:var(--bp);border-radius:1px} .colstrip .c.off{background:var(--hair);border-radius:1px}
   .colstrip .pct{font-family:var(--font-mono);font-size:10px;color:var(--ink)}
   .colstrip .nm{font-family:var(--font-mono);font-size:8px;color:var(--faint);text-align:center;line-height:1.2;height:22px;display:flex;align-items:center}
   .foot{border-top:1px solid var(--hair);margin-top:3rem;padding-top:1.2rem;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}

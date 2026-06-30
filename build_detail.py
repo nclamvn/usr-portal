@@ -98,19 +98,19 @@ def field_row(e, field, labels, ledger, ranges=None, taxlinks=False):
         v = fo.get("value")
         if isinstance(v, (int, float)) and not isinstance(v, bool) and rng:
             pos = log_pos(v, rng["min"], rng["max"])
-            rail = f'<span class="trk"><i class="tick" style="left:{pos:.0f}%"></i></span>'
+            rail = f'<span class="ri-spark"><i style="width:{pos:.0f}%"></i></span>'
             vlab = f'{esc(_num(v))} {esc(UNIT.get(field, ""))}'
         elif fo.get("status") == "disputed":
             cl = [c.get("claimed_value") for c in (fo.get("claims") or [])
                   if isinstance(c.get("claimed_value"), (int, float)) and not isinstance(c.get("claimed_value"), bool)]
             if cl and rng:
                 a, b = log_pos(min(cl), rng["min"], rng["max"]), log_pos(max(cl), rng["min"], rng["max"])
-                rail = f'<span class="trk"><span class="rng" style="left:{a:.0f}%;width:{max(b-a,1):.0f}%"></span></span>'
+                rail = f'<span class="ri-spark"><i style="margin-left:{a:.0f}%;width:{max(b-a,2):.0f}%"></i></span>'
             else:
-                rail = '<span class="trk null"></span>'
+                rail = '<span class="ri-spark null"></span>'
             vlab = " / ".join(esc(_num(c)) for c in cl) + " " + esc(UNIT.get(field, ""))
-        else:  # null / unverified — honest-null, no tick
-            rail, vlab = '<span class="trk null"></span>', '—'
+        else:  # null / unverified — honest-null, dashed rail, no fill
+            rail, vlab = '<span class="ri-spark null"></span>', '—'
         # derived-axis backlink: a real mtow/endurance value links to its weight/flight-time bucket
         if taxlinks and isinstance(v, (int, float)) and not isinstance(v, bool):
             if field == "mtow_kg" and weight_bucket(v):
@@ -159,7 +159,8 @@ DETAIL_CSS = """
   .sources ol{margin:0;padding-left:1.5rem}
   .sources li{font-family:var(--font-mono);font-size:.72rem;color:var(--ink-soft);margin:.35rem 0;overflow-wrap:anywhere}
   .sources li.nosrc{list-style:none;margin-left:-1.5rem;color:var(--muted)}
-  .sources .tierbadge{display:inline-block;border:1px solid var(--brass);color:var(--brass);border-radius:3px;font-size:.85em;padding:0 .32em;margin-right:.45em;font-weight:600}
+  .sources .tierbadge{display:inline-block;border:1px solid var(--hair-strong);color:var(--muted);border-radius:3px;font-size:.85em;padding:0 .32em;margin-right:.45em;font-weight:600}
+  .sources .tierbadge[data-t="A"]{border-color:var(--brass);color:var(--brass)}
   .sources a{color:inherit}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
   .dglyph{display:flex;align-items:center;gap:18px;margin:1rem 0 .2rem}
@@ -223,7 +224,7 @@ def detail_fragment(e, labels, ranges=None, draw=False, company=None, taxlinks=F
               f'<span class="v">{pclass}</span><span></span></div>')
     specs = "".join(field_row(e, f, labels, ledger, ranges, taxlinks=taxlinks) for f in SPEC_FIELDS)
     foot = "".join(
-        f'<li id="s{m["num"]}"><span class="tierbadge">{esc(m["tier"] or "—")}</span>'
+        f'<li id="s{m["num"]}"><span class="tierbadge" data-t="{esc(m["tier"] or "")}">{esc(m["tier"] or "—")}</span>'
         f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a></li>'
         for url, m in ledger.items())
     if not foot:
