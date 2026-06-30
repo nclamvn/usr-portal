@@ -11,6 +11,7 @@ from collections import Counter
 from build_reference import friendly, bilingual, esc
 from footer import footer
 from canon import canonical_slug, canonical_name
+from geo_map import country_map
 from nav import nav
 from header import header
 from seo import meta, collection_ld, breadcrumb_ld
@@ -48,7 +49,7 @@ TAX_CSS = """
 """
 
 
-def page(kind, title_html, meta_html, sections, path, plain_title, count):
+def page(kind, title_html, meta_html, sections, path, plain_title, count, lead=""):
     body = "".join(
         f'<div class="tsec-h">{h}</div><ul class="tlist">{items}</ul>'
         for h, items in sections)
@@ -73,7 +74,7 @@ def page(kind, title_html, meta_html, sections, path, plain_title, count):
 <body>
 {header("../")}
 <main class="twrap">
-  <header class="thead"><h1>{title_html}</h1><div class="meta">{meta_html}</div></header>
+  <header class="thead"><h1>{title_html}</h1><div class="meta">{meta_html}</div></header>{(chr(10) + "  " + lead) if lead else ""}
   {body}
   <p class="note">{bilingual(
     "A live index over the registry — every entry links to its full record. Counts are computed at build time.",
@@ -128,7 +129,8 @@ def main():
         html = page("country", esc(c), meta_line, [
             (bilingual("Systems", "Hệ thống"), uav_items),
             (bilingual("Manufacturers", "Nhà sản xuất"), co_items)],
-            f"country/{tslug(c)}.html", c, len(g["uavs"]))
+            f"country/{tslug(c)}.html", c, len(g["uavs"]),
+            lead=country_map(c, len(g["uavs"]), rel="../"))
         (ROOT / "country" / f"{tslug(c)}.html").write_text(html)
         nco += 1
 

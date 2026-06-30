@@ -71,6 +71,20 @@ def _polys():
     return _POLY
 
 
+_COAST = None
+
+
+def _coast():
+    """Lightweight coastline backdrop (Natural Earth 110m land, ~55KB) — used by the country locator
+    so a per-country page does not inline the full 138KB choropleth geometry."""
+    global _COAST
+    if _COAST is None:
+        rings = json.loads((ROOT / "base" / "world-land.json").read_bytes())["rings"]
+        _COAST = "".join("M" + " ".join(f"{x:.1f},{y:.1f}" for x, y in (_proj(lo, la) for lo, la in r)) + "Z"
+                         for r in rings)
+    return _COAST
+
+
 def _path(rings):
     out = []
     for ring in rings:
@@ -139,3 +153,24 @@ def world_map(counts, total, *, rel="", interactive=True, mini=False, highlight=
         f'<div class="wm-labels">{"".join(labels)}</div>'
         + ("" if mini else f'<div class="wm-legend">{legend}</div>')
         + '</div>')
+
+
+def country_map(country, n, *, rel=""):
+    """Locator mini-map for a /country/<slug> page: coastline backdrop + a single highlighted dot for
+    THIS country, sized by its system count, linking to the full map. Light (coastline only).
+    data-placed == data-total == n so verify_map's invariant holds uniformly."""
+    cen = CENTROID.get(country)
+    if not cen:
+        return ""   # no centroid -> no fabricated marker (honest); gate sees no wmap block
+    x, y = _proj(cen[1], cen[0])
+    r = max(5.0, 3.0 + math.sqrt(n) * 1.7)
+    dot = (f'<a href="{_e(rel)}data.html"><circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="var(--brass)" '
+           f'fill-opacity="0.9" stroke="var(--brass)" stroke-width="1" data-c="{_e(country)}" data-n="{n}">'
+           f'<title>{_e(country)} · {n}</title></circle>'
+           f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r+5:.1f}" fill="none" stroke="var(--brass)" '
+           f'stroke-width="0.8" stroke-opacity="0.5"/></a>')
+    return (
+        f'<div class="wmap wmap-mini" data-placed="{n}" data-total="{n}" data-audit="wmap">'
+        f'<svg class="wm-svg" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg" '
+        f'role="img" preserveAspectRatio="xMidYMid meet" aria-hidden="true">'
+        f'<g class="wm-base"><path d="{_coast()}"/></g><g class="wm-dots">{dot}</g></svg></div>')

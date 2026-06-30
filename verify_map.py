@@ -38,7 +38,7 @@ def check_map(html, live, total, fails, base_dir=ROOT, rel=""):
         leak = re.findall(r"(?<!&)#[0-9a-fA-F]{3,6}\b|rgb\(|hsl\(", block)
         if leak:
             fails.append(f"MAP_THEME_LEAK: hardcoded colour in map block {leak[:1]}")
-        dots = re.findall(r'<a href="([^"]*?country/[a-z0-9-]+\.html)">\s*<circle[^>]*data-c="([^"]*)"[^>]*data-n="(\d+)"', block)
+        dots = re.findall(r'<a href="([^"]*?\.html)">\s*<circle[^>]*data-c="([^"]*)"[^>]*data-n="(\d+)"', block)
         seen = Counter()
         for href, c, n in dots:
             n = int(n)
@@ -47,7 +47,8 @@ def check_map(html, live, total, fails, base_dir=ROOT, rel=""):
                 fails.append(f"MAP_NULL_FAKED: dot for {c!r} with n={n}")
             if live.get(c) != n:
                 fails.append(f"MAP_FIGURE_DRIFT: {c!r} dot n={n} != live {live.get(c)}")
-            if not (base_dir / href[len(rel):]).exists():
+            target = re.sub(r"^(?:\.\./)+", "", href)   # strip rel prefix, resolve from repo root
+            if not (base_dir / target).exists():
                 fails.append(f"MAP_DANGLING: {c!r} -> {href} does not resolve")
         placed_sum = sum(seen.values())
         # this is the FULL distribution map (placed == total). Mini/highlight maps set data-total to
@@ -66,7 +67,8 @@ def check_map(html, live, total, fails, base_dir=ROOT, rel=""):
 def main():
     live, total = live_counts()
     fails = []
-    for name in ["data.html"]:                       # nhịp A: /data. hero + country added in later nhịp.
+    pages = ["data.html", "index.html"] + sorted(str(p.relative_to(ROOT)) for p in (ROOT / "country").glob("*.html"))
+    for name in pages:
         p = ROOT / name
         if p.exists():
             check_map(p.read_text(), live, total, fails, ROOT)

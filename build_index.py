@@ -14,6 +14,8 @@ from seo import meta as seo_meta, website_ld
 from build_newsroom import load_articles, TYPE_LABEL, _weight, _kicker, _meta
 from graphic import feed_figure
 from build_aggregation import aggregation_block
+from geo_map import world_map
+from canon import canon_country
 import media_lib as ML
 
 _MEDIA = ML.Media()
@@ -228,6 +230,19 @@ def scatter_svg(site):
 
 
 # ---- block helpers (each binds REAL slugs + live numbers) ----
+def world_band(site):
+    """Homepage signature: the live manufacturer-country world map (mini hybrid, no labels/legend),
+    linking to the full /data view. Same recompute + gate as /data."""
+    from collections import Counter
+    uav = [e for e in site["entities"] if e.get("entity_type") == "uav"]
+    counts = Counter(canon_country((e.get("manufacturer_country") or {}).get("value")) for e in uav
+                     if (e.get("manufacturer_country") or {}).get("value"))
+    total = sum(counts.values())
+    return (f'<div class="home-world">{world_map(dict(counts), total, rel="", mini=True)}'
+            f'<a class="home-world-more" href="data.html">'
+            f'{bilingual("Full distribution →", "Toàn cảnh phân bố →")}</a></div>')
+
+
 def section_label(code, en, vn):
     return (f'<div class="section-label"><span class="code">{code}</span>'
             f'<h2>{bilingual(en, vn)}</h2><span class="rule"></span></div>')
@@ -487,6 +502,11 @@ CSS = """
   .cc-k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
   .cc-v{font-variant-numeric:tabular-nums;text-align:right}
   .cc-nv{color:var(--faint);font-style:italic}
+  /* INFO/02 homepage world signature (mini hybrid; full /data view one click away) */
+  .home-world{max-width:var(--w-wide);margin:14px auto 0;position:relative}
+  .home-world-more{display:block;text-align:right;font-family:var(--font-mono);font-size:.72rem;
+    letter-spacing:.04em;color:var(--brass);text-decoration:none;margin:.45rem 1.1rem 0;opacity:.85}
+  .home-world-more:hover{opacity:1}
   /* trending (accent = brass, NOT inverted dark -> THEME_PURITY safe) */
   .trending{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hair)}
   .trend-card{padding:20px 16px 22px;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
@@ -645,6 +665,7 @@ def main():
 
 {section_label("INFO/02", "Infographics", "Đồ hoạ dữ liệu")}
 {scatter_svg(site)}
+{world_band(site)}
 
 {section_label("REPORT/03", "Reports & data", "Báo cáo & dữ liệu")}
 {reports(reports_arts)}
