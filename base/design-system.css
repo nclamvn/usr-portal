@@ -258,6 +258,26 @@ small, .small { font-size: .82rem; }
   .ri-spec .ri-col[data-c], .ri-spec .ri-covcol { display: none; }
 }
 
+/* TIP-MAP world map (geo_map.py) — hybrid: faint per-country choropleth tint + proportional dots.
+   Token-only paint so it flips by theme; SVG carries geometry, HTML carries (bilingual) labels. */
+.wmap { position: relative; }
+.wm-svg { display: block; width: 100%; height: auto; }
+.wm-base path { fill: var(--bg-2); stroke: var(--hair-strong); stroke-width: 0.55; stroke-linejoin: round; }
+.wm-tint path { stroke: none; }
+.wm-dots a { cursor: pointer; }
+.wm-dots circle { transition: fill-opacity .15s var(--ease); }
+.wm-dots a:hover circle { fill-opacity: 1 !important; }
+.wm-labels { position: absolute; inset: 0; pointer-events: none; }
+.wm-lab { position: absolute; transform: translateX(-50%); white-space: nowrap; font-family: var(--font-mono); font-size: 10px; color: var(--ink-soft); letter-spacing: .01em; }
+.wm-lab .wm-n { color: var(--brass); font-weight: 600; margin-left: .15em; }
+.wm-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; align-items: center; margin: .7rem .2rem 0; font-family: var(--font-mono); font-size: .72rem; color: var(--muted); }
+.wm-lg { display: inline-flex; align-items: center; gap: .35rem; }
+.wm-lg i { width: 13px; height: 13px; border-radius: 50%; background: var(--brass); display: inline-block; }
+.wm-lg-none i { background: var(--bg-2); border: 1px solid var(--hair-strong); }
+.wm-cap { font-family: var(--font-mono); font-size: .7rem; color: var(--faint); line-height: 1.65; max-width: 84ch; margin: .7rem .2rem 1.2rem; }
+.wmap-mini .wm-svg { max-height: 220px; }
+@media (max-width: 640px) { .wm-lab { font-size: 8.5px; } }
+
 /* frame glyphs (TIP-P02) — schematic of the AIRFRAME TYPE, not a model render */
 .glyph-svg { display: block; }
 .glyph-sm { width: 30px; height: 30px; flex: 0 0 30px; }

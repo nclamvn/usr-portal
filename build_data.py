@@ -9,6 +9,7 @@ import json, pathlib
 from build_reference import friendly, bilingual, esc
 from footer import footer
 from canon import canon_country, canonical_slug, canonical_name
+from geo_map import world_map
 from nav import nav
 from header import header
 from seo import meta as seo_meta, collection_ld
@@ -91,7 +92,8 @@ def compute(site):
     spec_range = [{"key": k, "min": sr[k]["min"], "max": sr[k]["max"], "present": fill[k]["present"]}
                   for k in NUM if sr.get(k) and fill.get(k)]
     return {"schema": "data-overview/1", "totals": totals, "country": country_d, "maker": maker_d,
-            "segment": seg_d, "standards": standards, "coverage": coverage, "spec_range": spec_range}
+            "segment": seg_d, "standards": standards, "coverage": coverage, "spec_range": spec_range,
+            "country_full": dict(country)}   # ALL country counts (untruncated) for the world map
 
 
 # --- render (static) ---
@@ -127,6 +129,14 @@ def render(ov):
 
     c1, c2 = _split(ov["country"], "country")
     m1, m2 = _split(ov["maker"], "company")
+    wmap = world_map(ov["country_full"], t["uav"], rel="")
+    wmap_cap = '<p class="wm-cap">' + bilingual(
+        "Distribution by manufacturer country in the USR registry, not global UAV production or deployment. "
+        "A country with no dot has no system tagged to it in the registry, not no UAV. Micro-states "
+        "(Monaco, Singapore) show as dots since 110m geometry omits them.",
+        "Phân bố theo quốc gia nhà sản xuất trong bản đăng ký USR, không phải sản lượng UAV toàn cầu hay nơi "
+        "triển khai. Nước không chấm là chưa có hệ thống nào trong bản đăng ký gắn nước này, không phải không "
+        "có UAV. Thành-quốc nhỏ (Monaco, Singapore) hiện bằng chấm vì hình-học 110m bỏ qua.") + '</p>'
     seg_html = _bars(ov["segment"], "segment")
 
     std_html = ""
@@ -202,6 +212,8 @@ def render(ov):
   </section>
 
   <div class="regdiv"><span class="num">01</span><span class="lab">{bilingual("By country", "Theo quốc gia")}</span><span class="ln"></span><span class="meta">{t["country"]} {bilingual("countries", "quốc gia")}</span></div>
+  {wmap}
+  {wmap_cap}
   <div class="cols2"><div class="chart">{c1}</div><div class="chart">{c2}</div></div>
 
   <div class="regdiv"><span class="num">02</span><span class="lab">{bilingual("By manufacturer", "Theo nhà sản xuất")}</span><span class="ln"></span><span class="meta">{t["company"]} {bilingual("makers", "hãng")}</span></div>
