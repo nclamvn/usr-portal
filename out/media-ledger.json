@@ -1,6 +1,6 @@
 {
   "by_status": {
-    "cc": 66,
+    "cc": 79,
     "owned": 12
   },
   "entries": [
@@ -456,6 +456,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Jacek Halicki / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:cn-bac-kinh-siet-drone",
+      "source": "CGTN",
+      "source_url": "https://news.cgtn.com/news/2026-05-01/Positive-signals-behind-Beijing-s-new-drone-regulations-1MMOLT8iJLq/share_amp.html",
+      "src": "/images/content/open/dji-phantom3.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -475,6 +486,28 @@
       "source_url": "https://businessaviation.aero/evtol-news-and-electric-aircraft-news/low-altitude-economy/china-evtol-certification-31-months-vs-7-years",
       "src": "/images/content/open/ehang-eh184.webp",
       "tier": "C",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:cn-ehang-q1-2026",
+      "source": "GlobeNewswire (EHang Holdings)",
+      "source_url": "https://www.globenewswire.com/news-release/2026/06/09/3308569/0/en/EHang-Reports-First-Quarter-2026-Unaudited-Financial-Results.html",
+      "src": "/images/content/open/ehang-eh184.webp",
+      "tier": "A",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Samuel Schwendener / Unsplash · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:cn-kttt-doi-moi",
+      "source": "Xinhua",
+      "source_url": "https://english.news.cn/20260416/1de05bd0adf7418ba5f86cc9cc5dadcc/c.html",
+      "src": "/images/content/open/drone-flying.webp",
+      "tier": "B",
       "where": "content/news-cards.json"
     },
     {
@@ -522,6 +555,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Goh Rhy Yan / Unsplash · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-da-nang-uav-chien-luoc",
+      "source": "Báo Dân Việt",
+      "source_url": "https://danviet.vn/da-nang-thuc-day-phat-trien-kinh-te-tam-thap-xem-uav-la-cong-nghe-chien-luoc-tao-dong-luc-tang-truong-moi-d1434385.html",
+      "src": "/images/content/open/drone-city.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Stahlmann / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -555,6 +599,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Sander Smeets / Wikimedia Commons · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-hcm-uav-giao-hang-rtr",
+      "source": "VietnamPlus (TTXVN)",
+      "source_url": "https://www.vietnamplus.vn/tp-ho-chi-minh-thu-nghiem-ung-dung-uav-vao-hoat-dong-giao-hang-post1086665.vnp",
+      "src": "/images/content/open/uav-deltaquad.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -563,6 +618,17 @@
       "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=215810",
       "src": "/images/content/open/quad-inflight.webp",
       "tier": "A",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Phuket@photographer.net / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-tang-toc-kttt-2026",
+      "source": "Báo Thanh Niên",
+      "source_url": "https://thanhnien.vn/viet-nam-tang-toc-phat-trien-kinh-te-tam-thap-185260627224857195.htm",
+      "src": "/images/content/open/drone-sunset-phuket.webp",
+      "tier": "B",
       "where": "content/news-cards.json"
     },
     {
@@ -632,6 +698,39 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-archer-midnight-faa",
+      "source": "Airways Magazine",
+      "source_url": "https://www.airwaysmag.com/new-post/archer-advances-midnight-evtol-faa-certification",
+      "src": "/images/content/open/evtol-passenger.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Matti Blume / Wikimedia Commons · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-autoflight-evtol-cert",
+      "source": "Cục Hàng không Việt Nam",
+      "source_url": "https://caa.gov.vn/hang-khong-the-gioi/autoflight-gianh-duoc-chung-nhan-quoc-te-dau-tien-cho-may-bay-evtol-20260612151312467.htm",
+      "src": "/images/content/open/evtol-volocopter.webp",
+      "tier": "A",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-baykar-tb3-italy",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/04/italy-set-to-sign-off-on-turkish-tb3-drone-order-within-months-says-baykar-ceo/",
+      "src": "/images/content/open/mil-ucav-parade.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -639,6 +738,17 @@
       "source": "DroneShield",
       "source_url": "https://www.droneshield.com/blog/the-new-airspace-risk-what-security-teams-need-to-know-about-drone-threats-2026",
       "src": "/images/content/open/airport-runway.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-cca-ga-anduril",
+      "source": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/06/air-force-cca-drone-wingman-anduril-general-atomics-selection/",
+      "src": "/images/content/open/boeing-x45.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -687,6 +797,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-joby-new-york",
+      "source": "Aerospace Global News",
+      "source_url": "https://aerospaceglobalnews.com/news/joby-evtol-flights-new-york/",
+      "src": "/images/content/open/joby-s4.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Hamid Vakili / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -728,6 +849,28 @@
       "source_url": "https://yrdrone.com/blog/industry-news/top-us-drone-manufacturers/",
       "src": "/images/content/open/leleka-100.webp",
       "tier": "C",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-ukraine-loc-dau-drone",
+      "source": "CBS News",
+      "source_url": "https://www.cbsnews.com/news/ukraine-russia-war-drone-strike-moscow-oil-refinery-zelenskyy-putin/",
+      "src": "/images/content/open/leleka-100.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-walmart-wing-7-do-thi",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/walmart-wing-expand-drone-delivery-122151542.html",
+      "src": "/images/content/open/flytrex-delivery.webp",
+      "tier": "B",
       "where": "content/news-cards.json"
     },
     {
@@ -865,5 +1008,5 @@
   ],
   "schema": "media-ledger/1",
   "to_license": [],
-  "total": 78
+  "total": 91
 }

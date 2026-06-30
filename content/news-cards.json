@@ -860,6 +860,266 @@
       "date": null,
       "entity_tags": [],
       "image": null
+    },
+    {
+      "id": "vn-tang-toc-kttt-2026",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "chính sách & pháp lý",
+      "stratum": "vietnam",
+      "outlet": "Báo Thanh Niên",
+      "source_url": "https://thanhnien.vn/viet-nam-tang-toc-phat-trien-kinh-te-tam-thap-185260627224857195.htm",
+      "source_title": "Việt Nam tăng tốc phát triển kinh tế tầm thấp",
+      "summary": "Báo Thanh Niên nêu Việt Nam đang đẩy nhanh kinh tế tầm thấp khi thị trường hàng không tầm thấp toàn cầu được dự báo khoảng 700 tỉ USD vào năm 2035, với Điện Biên lập cơ chế thử nghiệm UAV đến tháng 5 năm 2027.",
+      "tier": "B",
+      "date": "2026-06-28",
+      "entity_tags": [],
+      "image": "/images/content/open/drone-sunset-phuket.webp",
+      "image_credit": "Ảnh: Phuket@photographer.net / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "body": [
+        "Theo bài báo, tiềm năng kinh tế tầm thấp của Việt Nam được ước tính khoảng 10 tỉ USD, trải rộng từ nông nghiệp, y tế đến logistics, với các đơn vị như Vietnam Post, FPT và Trường Thịnh Drone tham gia thử nghiệm.",
+        "Phun thuốc bằng UAV được nêu giúp giảm thời gian từ 4 giờ xuống còn khoảng 10 phút mỗi hecta. Các con số mang tính ước tính, nên đọc như chỉ dấu hơn là số liệu chốt. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "vn-da-nang-uav-chien-luoc",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "chính sách & pháp lý",
+      "stratum": "vietnam",
+      "outlet": "Báo Dân Việt",
+      "source_url": "https://danviet.vn/da-nang-thuc-day-phat-trien-kinh-te-tam-thap-xem-uav-la-cong-nghe-chien-luoc-tao-dong-luc-tang-truong-moi-d1434385.html",
+      "source_title": "Đà Nẵng thúc đẩy phát triển kinh tế tầm thấp, xem UAV là công nghệ chiến lược tạo động lực tăng trưởng mới",
+      "summary": "Tại hội thảo ngày 12/6/2026, Đà Nẵng xác định UAV là một trong sáu nhóm công nghệ chiến lược ưu tiên và đặt mục tiêu khoảng 4.200 doanh nghiệp công nghệ số đến năm 2030.",
+      "tier": "B",
+      "date": "2026-06-12",
+      "entity_tags": [],
+      "image": "/images/content/open/drone-city.webp",
+      "image_credit": "Ảnh: Goh Rhy Yan / Unsplash · minh-hoạ",
+      "body": [
+        "Theo bài viết, thành phố đặt mục tiêu doanh thu công nghệ số khoảng 73.400 tỉ đồng vào năm 2030, tăng 12 phần trăm mỗi năm, cùng mục tiêu xuất khẩu 200 triệu USD và hình thành 5 đến 7 cụm công nghệ.",
+        "Đà Nẵng dự kiến lập 3 đến 5 cơ chế thử nghiệm có kiểm soát, hướng tới thành trung tâm UAV và logistics thông minh của miền Trung. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "vn-hcm-uav-giao-hang-rtr",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "giao hàng",
+      "stratum": "vietnam",
+      "outlet": "VietnamPlus (TTXVN)",
+      "source_url": "https://www.vietnamplus.vn/tp-ho-chi-minh-thu-nghiem-ung-dung-uav-vao-hoat-dong-giao-hang-post1086665.vnp",
+      "source_title": "TP Hồ Chí Minh thử nghiệm ứng dụng UAV vào hoạt động giao hàng",
+      "summary": "TP Hồ Chí Minh khởi động thử nghiệm UAV giao hàng chặng ngắn từ ngày 5/1/2026, phối hợp Saolatek, Real-time Robotics Việt Nam và Di Động Việt, với phép bay do Bộ Quốc phòng cấp trong năm 2026.",
+      "tier": "B",
+      "date": "2026-01-05",
+      "entity_tags": [],
+      "image": "/images/content/open/uav-deltaquad.webp",
+      "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons · minh-hoạ",
+      "body": [
+        "Theo bài viết, chương trình thực hiện trong Khu Công nghệ cao TP Hồ Chí Minh dựa trên Nghị quyết 20/2024 của Hội đồng nhân dân thành phố, nhằm đánh giá độ an toàn và hiệu quả của giải pháp công nghệ trong nước.",
+        "Phép bay có hiệu lực từ ngày 1/1 đến 31/12/2026. Thành phố đặt mục tiêu thành trung tâm sản xuất và ứng dụng UAV của khu vực. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-cca-ga-anduril",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "quốc phòng & an ninh",
+      "stratum": "world",
+      "outlet": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/06/air-force-cca-drone-wingman-anduril-general-atomics-selection/",
+      "source_title": "Air Force picks General Atomics, Anduril to build first CCA drone wingmen",
+      "summary": "Không quân Mỹ chọn General Atomics và Anduril sản xuất lứa máy bay phối hợp chiến đấu CCA đầu tiên, gồm hai mẫu FQ-42A và FQ-44A, với đơn giá mục tiêu dưới 30 triệu USD mỗi chiếc.",
+      "tier": "B",
+      "date": "2026-06-17",
+      "entity_tags": [],
+      "image": "/images/content/open/boeing-x45.webp",
+      "image_credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
+      "body": [
+        "Theo bài viết, hai mẫu hướng tới nhiệm vụ giành ưu thế trên không với bán kính chiến đấu khoảng 700 hải lý, đánh dấu bước chuyển sang giai đoạn sản xuất.",
+        "Song song, Anduril, Shield AI và Collins Aerospace tiếp tục cạnh tranh cung cấp phần mềm tự hành, với quyết định cuối dự kiến mùa hè 2027. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-ukraine-loc-dau-drone",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "quốc phòng & an ninh",
+      "stratum": "world",
+      "outlet": "CBS News",
+      "source_url": "https://www.cbsnews.com/news/ukraine-russia-war-drone-strike-moscow-oil-refinery-zelenskyy-putin/",
+      "source_title": "Ukraine drone strike hits Russian oil refinery, Zelenskyy says Moscow will burn if Putin continues war",
+      "summary": "Ukraine tập kích bằng máy bay không người lái vào một nhà máy lọc dầu ở Moscow cách Điện Kremlin khoảng 9 dặm, trong khi Nga tuyên bố bắn hạ 555 thiết bị bay trong đêm.",
+      "tier": "B",
+      "date": "2026-06-18",
+      "entity_tags": [],
+      "image": "/images/content/open/leleka-100.webp",
+      "image_credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "body": [
+        "Theo bài viết, cơ sở bị nhắm tới chiếm hơn một phần ba thị trường nhiên liệu của khu vực thủ đô và là một trong những nhà máy lọc dầu lớn nhất nước Nga.",
+        "Đây là lần tấn công thứ hai vào cơ sở này trong vòng một tuần và gây gián đoạn hoạt động tại bốn sân bay ở Moscow. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-walmart-wing-7-do-thi",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "giao hàng",
+      "stratum": "world",
+      "outlet": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/walmart-wing-expand-drone-delivery-122151542.html",
+      "source_title": "Walmart, Wing Expand Drone Delivery Network to 7 New U.S. Metro Areas",
+      "summary": "Walmart cùng Wing của Alphabet mở rộng giao hàng bằng drone tới bảy khu đô thị mới ở Mỹ, hướng tới mạng lưới 270 địa điểm sau hơn một triệu chuyến giao hàng thương mại đã hoàn tất.",
+      "tier": "B",
+      "date": "2026-06-11",
+      "entity_tags": [],
+      "image": "/images/content/open/flytrex-delivery.webp",
+      "image_credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "body": [
+        "Theo bài viết, bảy khu vực mới gồm Memphis, New Orleans, Philadelphia, Phoenix, San Diego, vùng Vịnh San Francisco và Salt Lake City, bổ sung cho Dallas-Fort Worth, Houston và Atlanta.",
+        "Drone có thể bay tới 60 dặm mỗi giờ, với mục tiêu giao trong khoảng 30 phút. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-archer-midnight-faa",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "chính sách & pháp lý",
+      "stratum": "world",
+      "outlet": "Airways Magazine",
+      "source_url": "https://www.airwaysmag.com/new-post/archer-advances-midnight-evtol-faa-certification",
+      "source_title": "Archer Advances Midnight eVTOL FAA Certification",
+      "summary": "Archer Aviation cho biết đã khép lại Giai đoạn 3 trong quy trình chứng nhận loại bốn giai đoạn của FAA cho mẫu eVTOL Midnight, và tự nhận là hãng eVTOL đầu tiên hoàn tất bước này.",
+      "tier": "B",
+      "date": "2026-05-13",
+      "entity_tags": [],
+      "image": "/images/content/open/evtol-passenger.webp",
+      "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
+      "body": [
+        "Theo bài viết, mẫu Midnight chuyển sang Giai đoạn 4, nơi phải chứng minh tuân thủ các yêu cầu khả năng bay qua thử nghiệm và phân tích chính thức.",
+        "Hãng kỳ vọng vận hành thương mại ban đầu tại Mỹ trong năm 2026 theo chương trình tích hợp eVTOL liên bang, bao trùm tám bang. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-joby-new-york",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "eVTOL & UAM",
+      "stratum": "world",
+      "outlet": "Aerospace Global News",
+      "source_url": "https://aerospaceglobalnews.com/news/joby-evtol-flights-new-york/",
+      "source_title": "Joby Aviation launches first eVTOL point-to-point flights in New York",
+      "summary": "Joby Aviation thực hiện chuyến bay eVTOL điểm tới điểm đầu tiên tại New York, nối sân bay JFK với ba bãi đáp trực thăng ở Manhattan, trong khuôn khổ hợp tác cùng Uber và Delta.",
+      "tier": "B",
+      "date": "2026-04-28",
+      "entity_tags": [],
+      "image": "/images/content/open/joby-s4.webp",
+      "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "body": [
+        "Theo bài viết, chuyến bay dùng mẫu JAS4-1 mang số đăng ký N545JX, theo chương trình tích hợp eVTOL liên bang.",
+        "Hãng đặt mục tiêu kết nối Manhattan với JFK trong khoảng bảy phút khi đưa dịch vụ vào khai thác. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-baykar-tb3-italy",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "thị trường",
+      "stratum": "world",
+      "outlet": "Breaking Defense",
+      "source_url": "https://breakingdefense.com/2026/04/italy-set-to-sign-off-on-turkish-tb3-drone-order-within-months-says-baykar-ceo/",
+      "source_title": "Italy set to sign off on Turkish TB3 drone order within months, says Baykar CEO",
+      "summary": "Theo CEO Baykar, Italy dự kiến chốt đơn mua máy bay không người lái TB3 của Thổ Nhĩ Kỳ trong vài tháng tới, trở thành nước châu Âu đầu tiên ngoài Thổ Nhĩ Kỳ vận hành mẫu này.",
+      "tier": "B",
+      "date": "2026-04-07",
+      "entity_tags": [],
+      "image": "/images/content/open/mil-ucav-parade.webp",
+      "image_credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+      "body": [
+        "Theo bài viết, TB3 là biến thể hải quân của TB2 với cánh gập và khả năng cất hạ cánh đường băng ngắn, thiết kế để hoạt động trên tàu sân bay Cavour.",
+        "Việc mua sắm chính thức được kỳ vọng trong quý ba năm 2026, sản xuất đặt tại cơ sở Ronchi dei Legionari ở miền Bắc Italy. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "world-autoflight-evtol-cert",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "eVTOL & UAM",
+      "stratum": "world",
+      "outlet": "Cục Hàng không Việt Nam",
+      "source_url": "https://caa.gov.vn/hang-khong-the-gioi/autoflight-gianh-duoc-chung-nhan-quoc-te-dau-tien-cho-may-bay-evtol-20260612151312467.htm",
+      "source_title": "AutoFlight giành được chứng nhận quốc tế đầu tiên cho máy bay eVTOL",
+      "summary": "Hãng AutoFlight đạt chứng nhận đủ điều kiện bay cho mẫu eVTOL chở hàng V2000CG từ cơ quan hàng không Indonesia, được nêu là lần đầu một eVTOL được chứng nhận ngoài Trung Quốc.",
+      "tier": "A",
+      "date": "2026-06-12",
+      "entity_tags": [],
+      "image": "/images/content/open/evtol-volocopter.webp",
+      "image_credit": "Ảnh: Matti Blume / Wikimedia Commons · minh-hoạ",
+      "body": [
+        "Theo cổng thông tin Cục Hàng không Việt Nam, V2000CG được mô tả là mẫu eVTOL hạng tấn duy nhất nắm cả ba chứng nhận đủ điều kiện bay lớn của Trung Quốc.",
+        "Chứng nhận từ Indonesia được xem là mở đường cho khả năng vận hành thương mại tại khu vực Đông Nam Á. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "cn-ehang-q1-2026",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "eVTOL & UAM",
+      "stratum": "china",
+      "outlet": "GlobeNewswire (EHang Holdings)",
+      "source_url": "https://www.globenewswire.com/news-release/2026/06/09/3308569/0/en/EHang-Reports-First-Quarter-2026-Unaudited-Financial-Results.html",
+      "source_title": "EHang Reports First Quarter 2026 Unaudited Financial Results",
+      "summary": "EHang công bố kết quả quý I năm 2026 với doanh thu 25,7 triệu nhân dân tệ và bàn giao bốn chiếc EH216, đồng thời phê duyệt chương trình mua lại cổ phiếu 30 triệu USD và giữ dự báo cả năm.",
+      "tier": "A",
+      "date": "2026-06-09",
+      "entity_tags": [],
+      "image": "/images/content/open/ehang-eh184.webp",
+      "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
+      "body": [
+        "Theo thông cáo, các đối tác đã thực hiện hơn 3.000 chuyến bay thử nghiệm an toàn kể từ tháng 3 năm 2025 và thiết lập trên 40 điểm vận hành tại Trung Quốc.",
+        "Công ty duy trì mục tiêu doanh thu khoảng 600 triệu nhân dân tệ cho năm 2026, trong khi khoản lỗ vận hành mở rộng do lượng bàn giao giảm. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "cn-bac-kinh-siet-drone",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "chính sách & pháp lý",
+      "stratum": "china",
+      "outlet": "CGTN",
+      "source_url": "https://news.cgtn.com/news/2026-05-01/Positive-signals-behind-Beijing-s-new-drone-regulations-1MMOLT8iJLq/share_amp.html",
+      "source_title": "China implements new drone regulations: positive signals behind strict controls",
+      "summary": "Từ ngày 1/5/2026, Bắc Kinh áp dụng quy định coi toàn thành phố là vùng trời kiểm soát, yêu cầu phê duyệt trước cho mọi chuyến bay drone ngoài trời và đăng ký định danh thực.",
+      "tier": "B",
+      "date": "2026-05-01",
+      "entity_tags": [],
+      "image": "/images/content/open/dji-phantom3.webp",
+      "image_credit": "Ảnh: Jacek Halicki / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "body": [
+        "Theo bài viết, quy định mới cấm bán và vận chuyển drone vào thủ đô, nhưng vẫn cho phép phê duyệt với mục đích giáo dục, nông nghiệp, nghiên cứu và ứng phó khẩn cấp.",
+        "DJI đã rút sản phẩm khỏi kệ bán lẻ tại Bắc Kinh từ ngày 29 tháng 4. Toàn văn ở nguồn."
+      ]
+    },
+    {
+      "id": "cn-kttt-doi-moi",
+      "type": "link",
+      "rights": "external_article_share",
+      "field": "thị trường",
+      "stratum": "china",
+      "outlet": "Xinhua",
+      "source_url": "https://english.news.cn/20260416/1de05bd0adf7418ba5f86cc9cc5dadcc/c.html",
+      "source_title": "Economic Watch: Innovation pilots China's low-altitude economy surge",
+      "summary": "Theo Xinhua, kinh tế tầm thấp của Trung Quốc đang bứt phá nhờ đổi mới công nghệ, với dự báo quy mô thị trường đạt 3,5 nghìn tỷ nhân dân tệ vào năm 2035.",
+      "tier": "B",
+      "date": "2026-04-16",
+      "entity_tags": [],
+      "image": "/images/content/open/drone-flying.webp",
+      "image_credit": "Ảnh: Samuel Schwendener / Unsplash · minh-hoạ",
+      "body": [
+        "Theo bài viết, Tập đoàn Động cơ Hàng không Trung Quốc đã thử nghiệm động cơ tua-bin cánh quạt chạy hydro công suất megawatt trên một máy bay vận tải không người lái 7,5 tấn trong tháng 4 năm 2026.",
+        "Các ứng dụng trải dài từ giao hàng đô thị, du lịch, logistics vùng núi đến ứng phó khẩn cấp. Toàn văn ở nguồn."
+      ]
     }
   ]
 }
