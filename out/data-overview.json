@@ -317,7 +317,7 @@
       "slug": "boeing"
     },
     {
-      "count": 4,
+      "count": 6,
       "hq_city": "Bingen, Washington",
       "slug": "boeing-insitu"
     },
@@ -387,12 +387,7 @@
       "slug": "fortem-technologies"
     },
     {
-      "count": 2,
-      "hq_city": "Woodinville, Washington",
-      "slug": "freefly"
-    },
-    {
-      "count": 2,
+      "count": 4,
       "hq_city": "Woodinville, Washington",
       "slug": "freefly-systems"
     },
@@ -435,11 +430,6 @@
       "count": 2,
       "hq_city": "Huizhou, Guangdong",
       "slug": "iflight"
-    },
-    {
-      "count": 2,
-      "hq_city": "Bingen, Washington",
-      "slug": "insitu"
     },
     {
       "count": 2,
@@ -522,12 +512,7 @@
       "slug": "pyka"
     },
     {
-      "count": 2,
-      "hq_city": "Tehran",
-      "slug": "qods"
-    },
-    {
-      "count": 2,
+      "count": 4,
       "hq_city": "Tehran",
       "slug": "qods-aviation"
     },
@@ -682,7 +667,7 @@
       "slug": "zipline"
     }
   ],
-  "hq_total": 102,
+  "hq_total": 99,
   "maker": [
     {
       "n": "DJI",
@@ -735,18 +720,18 @@
       "v": 7
     },
     {
+      "n": "Boeing Insitu",
+      "slug": "boeing-insitu",
+      "v": 6
+    },
+    {
       "n": "Northrop Grumman",
       "slug": "northrop-grumman",
       "v": 6
     },
     {
-      "n": "Teledyne FLIR",
-      "slug": "teledyne-flir",
-      "v": 6
-    },
-    {
-      "n": "177 hãng khác",
-      "n_en": "177 makers",
+      "n": "174 hãng khác",
+      "n_en": "174 makers",
       "other": true,
       "v": 294
     }
@@ -897,7 +882,7 @@
     }
   ],
   "totals": {
-    "company": 189,
+    "company": 186,
     "country": 33,
     "coverage_pct": 32,
     "disputed": 6,

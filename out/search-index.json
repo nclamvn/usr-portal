@@ -294,8 +294,8 @@
       "id": "boeing-insitu",
       "label_en": "Boeing Insitu",
       "label_vn": "Boeing Insitu",
-      "sub_en": "4 systems",
-      "sub_vn": "4 hệ thống",
+      "sub_en": "6 systems",
+      "sub_vn": "6 hệ thống",
       "terms": "boeing insitu",
       "type": "company",
       "url": "company/boeing-insitu.html"
@@ -631,21 +631,11 @@
       "url": "company/fortem-technologies.html"
     },
     {
-      "id": "freefly",
-      "label_en": "Freefly",
-      "label_vn": "Freefly",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
-      "terms": "freefly",
-      "type": "company",
-      "url": "company/freefly.html"
-    },
-    {
       "id": "freefly-systems",
       "label_en": "Freefly Systems",
       "label_vn": "Freefly Systems",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "4 systems",
+      "sub_vn": "4 hệ thống",
       "terms": "freefly systems",
       "type": "company",
       "url": "company/freefly-systems.html"
@@ -819,16 +809,6 @@
       "terms": "iflight",
       "type": "company",
       "url": "company/iflight.html"
-    },
-    {
-      "id": "insitu",
-      "label_en": "Insitu",
-      "label_vn": "Insitu",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
-      "terms": "insitu",
-      "type": "company",
-      "url": "company/insitu.html"
     },
     {
       "id": "inspired-flight",
@@ -1201,21 +1181,11 @@
       "url": "company/pyka.html"
     },
     {
-      "id": "qods",
-      "label_en": "Qods",
-      "label_vn": "Qods",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
-      "terms": "qods",
-      "type": "company",
-      "url": "company/qods.html"
-    },
-    {
       "id": "qods-aviation",
       "label_en": "Qods Aviation",
       "label_vn": "Qods Aviation",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "4 systems",
+      "sub_vn": "4 hệ thống",
       "terms": "qods aviation",
       "type": "company",
       "url": "company/qods-aviation.html"

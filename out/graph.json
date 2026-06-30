@@ -1,11 +1,11 @@
 {
   "schema": "graph/1",
   "stats": {
-    "nodes": 691,
+    "nodes": 688,
     "edges": 1314,
     "by_node": {
       "article": 7,
-      "entity:company": 189,
+      "entity:company": 186,
       "entity:uav": 444,
       "tax:country": 33,
       "tax:segment": 13,
@@ -90,7 +90,6 @@
     "entity:company:flyability",
     "entity:company:flytrex",
     "entity:company:fortem-technologies",
-    "entity:company:freefly",
     "entity:company:freefly-systems",
     "entity:company:garuda-aerospace",
     "entity:company:general-atomics",
@@ -109,7 +108,6 @@
     "entity:company:iai",
     "entity:company:ideaforge",
     "entity:company:iflight",
-    "entity:company:insitu",
     "entity:company:inspired-flight",
     "entity:company:jaunt",
     "entity:company:jetson",
@@ -147,7 +145,6 @@
     "entity:company:prodrone",
     "entity:company:ptdi",
     "entity:company:pyka",
-    "entity:company:qods",
     "entity:company:qods-aviation",
     "entity:company:quantum-systems",
     "entity:company:raphe-mphibr",
@@ -3675,7 +3672,7 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-alta-8",
-      "entity:company:freefly",
+      "entity:company:freefly-systems",
       "manufacturer"
     ],
     [
@@ -3690,7 +3687,7 @@
     ],
     [
       "entity:uav:uav-freefly-alta-8-pro-alta-8-pro",
-      "entity:company:freefly",
+      "entity:company:freefly-systems",
       "manufacturer"
     ],
     [
@@ -4425,7 +4422,7 @@
     ],
     [
       "entity:uav:uav-insitu-scaneagle-base",
-      "entity:company:insitu",
+      "entity:company:boeing-insitu",
       "manufacturer"
     ],
     [
@@ -4440,7 +4437,7 @@
     ],
     [
       "entity:uav:uav-insitu-scaneagle-scaneagle",
-      "entity:company:insitu",
+      "entity:company:boeing-insitu",
       "manufacturer"
     ],
     [
@@ -5430,7 +5427,7 @@
     ],
     [
       "entity:uav:uav-qods-mohajer-2-mohajer-2",
-      "entity:company:qods",
+      "entity:company:qods-aviation",
       "manufacturer"
     ],
     [
@@ -5445,7 +5442,7 @@
     ],
     [
       "entity:uav:uav-qods-mohajer-6-mohajer-6",
-      "entity:company:qods",
+      "entity:company:qods-aviation",
       "manufacturer"
     ],
     [

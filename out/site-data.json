@@ -91743,18 +91743,20 @@
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
-          "United States": 4
+          "United States": 6
         },
         "ndaa_count": 0,
         "segments": {
-          "military_tactical": 4
+          "military_tactical": 6
         },
-        "uav_count": 4,
+        "uav_count": 6,
         "uav_slugs": [
           "uav-boeing-insitu-integrator-integrator",
           "uav-boeing-insitu-integrator-rq-21-blackjack-base",
           "uav-boeing-insitu-rq-21-blackjack-rq-21-blackjack",
-          "uav-boeing-insitu-scaneagle-scaneagle"
+          "uav-boeing-insitu-scaneagle-scaneagle",
+          "uav-insitu-scaneagle-base",
+          "uav-insitu-scaneagle-scaneagle"
         ]
       },
       "slug": "boeing-insitu",
@@ -93031,68 +93033,21 @@
         "tier": "B",
         "value": "Freefly Systems"
       },
-      "name": "Freefly",
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "United States": 2
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "cinema": 2
-        },
-        "uav_count": 2,
-        "uav_slugs": [
-          "uav-freefly-alta-8-alta-8",
-          "uav-freefly-alta-8-pro-alta-8-pro"
-        ]
-      },
-      "slug": "freefly",
-      "website": {
-        "source": "freeflysystems.com/alta-x",
-        "tier": "A",
-        "value": "https://freeflysystems.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
-        "source": "en.wikipedia.org/wiki/Freefly_Systems",
-        "tier": "B",
-        "value": 2011
-      },
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "en.wikipedia.org/wiki/Freefly_Systems",
-        "tier": "B",
-        "value": "Woodinville, Washington"
-      },
-      "hq_country": {
-        "source": "freeflysystems.com/alta-x",
-        "tier": "A",
-        "value": "United States"
-      },
-      "legal_name": {
-        "source": "en.wikipedia.org/wiki/Freefly_Systems",
-        "tier": "B",
-        "value": "Freefly Systems"
-      },
       "name": "Freefly Systems",
       "rollup": {
         "blue_uas_count": 2,
         "countries": {
-          "United States": 2
+          "United States": 4
         },
         "ndaa_count": 2,
         "segments": {
-          "cinema": 1,
+          "cinema": 3,
           "defense_government": 1
         },
-        "uav_count": 2,
+        "uav_count": 4,
         "uav_slugs": [
+          "uav-freefly-alta-8-alta-8",
+          "uav-freefly-alta-8-pro-alta-8-pro",
           "uav-freefly-systems-alta-x",
           "uav-freefly-systems-astro-astro"
         ]
@@ -93754,55 +93709,6 @@
         "source": "iflight.com/en-about-m.html",
         "tier": "A",
         "value": "https://www.iflight.com"
-      }
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": {
-        "source": "en.wikipedia.org/wiki/Insitu",
-        "tier": "B",
-        "value": 1994
-      },
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "en.wikipedia.org/wiki/Insitu",
-        "tier": "B",
-        "value": "Bingen, Washington"
-      },
-      "hq_country": {
-        "source": "insitu.com/about",
-        "tier": "A",
-        "value": "United States"
-      },
-      "legal_name": {
-        "source": "insitu.com/about",
-        "tier": "A",
-        "value": "Insitu Inc."
-      },
-      "name": "Insitu",
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "United States": 2
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "military_tactical": 2
-        },
-        "uav_count": 2,
-        "uav_slugs": [
-          "uav-insitu-scaneagle-base",
-          "uav-insitu-scaneagle-scaneagle"
-        ]
-      },
-      "slug": "insitu",
-      "website": {
-        "source": "insitu.com/",
-        "tier": "A",
-        "value": "https://www.insitu.com"
       }
     },
     {
@@ -95188,61 +95094,22 @@
         "tier": "B",
         "value": "Qods Aviation Industries"
       },
-      "name": "Qods",
-      "rollup": {
-        "blue_uas_count": 0,
-        "countries": {
-          "Iran": 2
-        },
-        "ndaa_count": 0,
-        "segments": {
-          "military_tactical": 2
-        },
-        "uav_count": 2,
-        "uav_slugs": [
-          "uav-qods-mohajer-2-mohajer-2",
-          "uav-qods-mohajer-6-mohajer-6"
-        ]
-      },
-      "slug": "qods",
-      "website": null
-    },
-    {
-      "contact_email": null,
-      "contact_phone": null,
-      "entity_type": "company",
-      "founded_year": null,
-      "founder": null,
-      "hq_address": null,
-      "hq_city": {
-        "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-        "tier": "B",
-        "value": "Tehran"
-      },
-      "hq_country": {
-        "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-        "tier": "B",
-        "value": "Iran"
-      },
-      "legal_name": {
-        "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-        "tier": "B",
-        "value": "Qods Aviation Industries"
-      },
       "name": "Qods Aviation",
       "rollup": {
         "blue_uas_count": 0,
         "countries": {
-          "Iran": 2
+          "Iran": 4
         },
         "ndaa_count": 0,
         "segments": {
-          "military_tactical": 1
+          "military_tactical": 3
         },
-        "uav_count": 2,
+        "uav_count": 4,
         "uav_slugs": [
           "uav-qods-aviation-mohajer-6-base",
-          "uav-qods-aviation-mohajer-6-mohajer-6"
+          "uav-qods-aviation-mohajer-6-mohajer-6",
+          "uav-qods-mohajer-2-mohajer-2",
+          "uav-qods-mohajer-6-mohajer-6"
         ]
       },
       "slug": "qods-aviation",

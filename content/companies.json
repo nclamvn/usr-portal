@@ -1170,33 +1170,6 @@
     "tier": "A"
    }
   },
-  "freefly": {
-   "legal_name": {
-    "value": "Freefly Systems",
-    "source": "en.wikipedia.org/wiki/Freefly_Systems",
-    "tier": "B"
-   },
-   "hq_city": {
-    "value": "Woodinville, Washington",
-    "source": "en.wikipedia.org/wiki/Freefly_Systems",
-    "tier": "B"
-   },
-   "hq_country": {
-    "value": "United States",
-    "source": "freeflysystems.com/alta-x",
-    "tier": "A"
-   },
-   "founded_year": {
-    "value": 2011,
-    "source": "en.wikipedia.org/wiki/Freefly_Systems",
-    "tier": "B"
-   },
-   "website": {
-    "value": "https://freeflysystems.com",
-    "source": "freeflysystems.com/alta-x",
-    "tier": "A"
-   }
-  },
   "freefly-systems": {
    "legal_name": {
     "value": "Freefly Systems",
@@ -1319,33 +1292,6 @@
    "website": {
     "value": "https://www.iflight.com",
     "source": "iflight.com/en-about-m.html",
-    "tier": "A"
-   }
-  },
-  "insitu": {
-   "legal_name": {
-    "value": "Insitu Inc.",
-    "source": "insitu.com/about",
-    "tier": "A"
-   },
-   "hq_city": {
-    "value": "Bingen, Washington",
-    "source": "en.wikipedia.org/wiki/Insitu",
-    "tier": "B"
-   },
-   "hq_country": {
-    "value": "United States",
-    "source": "insitu.com/about",
-    "tier": "A"
-   },
-   "founded_year": {
-    "value": 1994,
-    "source": "en.wikipedia.org/wiki/Insitu",
-    "tier": "B"
-   },
-   "website": {
-    "value": "https://www.insitu.com",
-    "source": "insitu.com/",
     "tier": "A"
    }
   },
@@ -1698,23 +1644,6 @@
     "value": "https://www.flypyka.com",
     "source": "flypyka.com",
     "tier": "A"
-   }
-  },
-  "qods": {
-   "legal_name": {
-    "value": "Qods Aviation Industries",
-    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-    "tier": "B"
-   },
-   "hq_city": {
-    "value": "Tehran",
-    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-    "tier": "B"
-   },
-   "hq_country": {
-    "value": "Iran",
-    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
-    "tier": "B"
    }
   },
   "qods-aviation": {
