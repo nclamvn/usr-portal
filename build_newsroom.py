@@ -214,13 +214,17 @@ def render(fm, body, site, glossary, prev=None, next=None):
     # lead — a REAL source photo if present (credit + license; empty license => no badge), otherwise a
     # data-driven ORIGINAL graphic generated per-article by the graphic core (no shared/repeated file).
     img = fm.get("image") or {}
+    _am = _MEDIA.first(f"article:{fm['slug']}")
     if img.get("src"):
         lic = img.get("license", "")
         lic_html = f' <span class="lic">{esc(lic)}</span>' if lic else ""
         lead_fig = (f'<figure class="nfig"><img src="{esc(img["src"])}" alt="{esc(fm.get("title", ""))}" loading="lazy">'
                     f'<figcaption>{esc(img.get("credit", ""))}{lic_html}</figcaption></figure>')
+    elif _am:                                              # cleared media-bound photo (rtr_owned/open_licensed)
+        lead_fig = (f'<figure class="nfig">{ML.img_html(_am, "nf-lead-photo")}'
+                    f'<figcaption>{esc(_am.get("caption") or "")}</figcaption></figure>')
     else:
-        lead_fig = lead_graphic(fm)
+        lead_fig = lead_graphic(fm)                        # else premium generated SVG (zero-fab, no license risk)
     kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light" data-lang="en">

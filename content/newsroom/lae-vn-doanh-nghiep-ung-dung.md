@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://cdn.nhandan.vn/images/22f099ca8bc7ae81aa2a8d3416a84bf88164db7334089fd96cd92fb40ba5a5c474a0a958c60cb901bf12f4e0aafe5d6940e52ae31a9c084c7ad9629348343a21/dsc00997-5486.jpg"
-  credit: "Ảnh: Báo Nhân Dân (nhandan.vn) · drone cứu trợ tại Thái Nguyên"
-  license: ""
 sources:
   - { claim: "Liên minh Kinh tế tầm thấp ra mắt 11/2025, đồng sáng lập FPT, VinaCapital, Mạng lưới UAV Việt Nam", url: "https://mst.gov.vn/ra-mat-lien-minh-kinh-te-tam-thap-tham-gia-thi-truong-700-ty-usd-197251116080757177.htm", tier: "A" }
   - { claim: "Viettel công bố hướng phát triển UAV và hệ sinh thái kinh tế tầm thấp", url: "https://vietnamnet.vn/viettel-phat-trien-uav-cho-he-sinh-thai-kinh-te-tam-thap-2426643.html", tier: "B" }

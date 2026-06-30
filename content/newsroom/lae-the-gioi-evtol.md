@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://dronelife.com/wp-content/uploads/2025/12/WiskAero_Hollister_FirstFlightGen62025_1216_095645-4787_SAG-750x420.jpg"
-  credit: "Photo: dronelife.com (Wisk Aero Generation 6 first flight)"
-  license: ""
 sources:
   - { claim: "Joby Aviation hoàn thành loạt chuyến bay điểm tới điểm trong 2025, hướng tới chứng nhận FAA", url: "https://ir.jobyaviation.com/news-events/press-releases/detail/164/joby-caps-year-of-flight-demonstrating-global-commercial", tier: "A" }
   - { claim: "Joby khởi công nhà ga taxi bay đầu tiên tại sân bay quốc tế Dubai, công trình ba tầng khoảng 3.100 mét vuông", url: "https://www.jobyaviation.com/news/joby-announces-beginning-of-work-on-first-dubai-vertiport", tier: "A" }

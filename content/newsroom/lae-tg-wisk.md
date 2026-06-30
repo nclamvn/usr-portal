@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://dronelife.com/wp-content/uploads/2025/12/WiskAero_Hollister_FirstFlightGen62025_1216_095645-4787_SAG-750x420.jpg"
-  credit: "Photo: dronelife.com · license to confirm before republish"
-  license: "ảnh nguồn: chờ xác nhận license"
 sources:
   - { claim: "Wisk Aero là nhà phát triển eVTOL chở khách tự hành thế hệ 6 thuộc sở hữu Boeing, đã hoàn thành chuyến bay đầu tiên", url: "https://dronelife.com/2025/12/17/wisk-aero-announces-first-flight-of-sixth-gen-aircraft/", tier: "B" }
   - { claim: "Mẫu thế hệ 6 hoàn thành chuyến bay đầu tiên và đang tiến tới chứng nhận FAA", url: "https://dronelife.com/2025/12/17/wisk-aero-announces-first-flight-of-sixth-gen-aircraft/", tier: "B" }

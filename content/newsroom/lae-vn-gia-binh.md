@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://media.vov.vn/sites/default/files/styles/og_image/public/2026-04/say_bay_gia_binh_3.jpg"
-  credit: "Ảnh đăng trên VOV (vov.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Sân bay quốc tế Gia Bình tại Bắc Ninh khởi công ngày 19/8/2025 và đang trong giai đoạn thi công", url: "https://vov.vn/kinh-te/can-canh-hien-trang-dai-cong-truong-du-an-san-bay-gia-binh-o-bac-ninh-post1283489.vov", tier: "B" }
 ---

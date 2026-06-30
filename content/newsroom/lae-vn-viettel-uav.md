@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/7/29/trung-tuong-tao-duc-thang-viettel-phat-trien-uav-cho-he-sinh-thai-kinh-te-tam-thap-863.jpg"
-  credit: "Ảnh đăng trên VietNamNet (vietnamnet.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Viettel nghiên cứu và phát triển UAV cho hệ sinh thái kinh tế tầm thấp, gồm thiết bị không người lái và có người lái tầm thấp", url: "https://vietnamnet.vn/viettel-phat-trien-uav-cho-he-sinh-thai-kinh-te-tam-thap-2426643.html", tier: "B" }
 ---

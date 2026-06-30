@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://i2-vnexpress.vnecdn.net/2025/11/08/maybay3-1762575216-9439-1762575536.jpg"
-  credit: "Ảnh đăng trên VnExpress (vnexpress.net). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Nghị định 288 về quản lý tàu bay không người lái, do Chính phủ ban hành, có hiệu lực từ 5/11/2025, yêu cầu đăng ký phương tiện và giấy phép điều khiển", url: "https://vnexpress.net/nguoi-su-dung-drone-flycam-phai-dang-ky-phuong-tien-4961520.html", tier: "B" }
 ---

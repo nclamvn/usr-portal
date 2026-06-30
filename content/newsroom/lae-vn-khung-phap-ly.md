@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://mic.mediacdn.vn/639352410187198464/2026/6/24/images-178228870999291942585.jpeg"
-  credit: "Ảnh: Cổng Thông tin điện tử Bộ Khoa học và Công nghệ (mst.gov.vn)"
-  license: ""
 sources:
   - { claim: "Quyết định 1131/QĐ-TTg ban hành danh mục công nghệ chiến lược, 12/6/2025", url: "https://mst.gov.vn/ban-hanh-danh-muc-cong-nghe-chien-luoc-va-san-pham-cong-nghe-chien-luoc-197250705120440814.htm", tier: "A" }
   - { claim: "Nghị định 288 quy định đăng ký và định danh tàu bay không người lái, hiệu lực 5/11/2025", url: "https://vnexpress.net/nguoi-su-dung-drone-flycam-phai-dang-ky-phuong-tien-4961520.html", tier: "B" }

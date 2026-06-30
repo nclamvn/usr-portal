@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://mic.mediacdn.vn/zoom/600_315/639352410187198464/2025/7/5/th-1751691690507147150463-0-4-241-390-crop-17516917210681440750606.jpg"
-  credit: "Ảnh đăng trên Cổng TTĐT Bộ KH&CN (mst.gov.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Quyết định 1131/QĐ-TTg do Thủ tướng Chính phủ ban hành ngày 12/6/2025, ban hành danh mục công nghệ chiến lược và sản phẩm công nghệ chiến lược", url: "https://mst.gov.vn/ban-hanh-danh-muc-cong-nghe-chien-luoc-va-san-pham-cong-nghe-chien-luoc-197250705120440814.htm", tier: "A" }
 ---

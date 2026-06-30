@@ -12,6 +12,20 @@ from footer import footer
 from header import header
 from seo import meta as seo_meta, website_ld
 from build_newsroom import load_articles, TYPE_LABEL, _weight, _kicker, _meta
+from graphic import feed_figure
+from build_aggregation import aggregation_block
+import media_lib as ML
+
+_MEDIA = ML.Media()
+
+
+def art_fig(fm, box):
+    """A figure for a homepage news card: a REAL bound photo (rtr_owned/open_licensed via media.json)
+    when one exists, else the premium per-article generated SVG (graphic.feed_figure) — never a borrowed
+    image, never blank. Same rights-gated pattern as build_newsroom._lead_html."""
+    a = _MEDIA.first(f"article:{fm['slug']}")
+    inner = ML.img_html(a, "afig-img") if a else feed_figure(fm, box)
+    return f'<span class="afig afig-{box}">{inner}</span>'
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
@@ -262,12 +276,14 @@ def hero(arts):
     for fm in side:
         side_html += (
             f'<a class="side-story" href="news/{esc(fm["slug"])}.html">'
-            f'<div class="cat mono">{cat_of(fm)}</div>'
-            f'<h3>{esc(fm["title"])}</h3></a>')
+            f'{art_fig(fm, "thumb")}'
+            f'<span class="side-tx"><span class="cat mono">{cat_of(fm)}</span>'
+            f'<span class="side-h">{esc(fm["title"])}</span></span></a>')
     dek = esc(main.get("dek") or main.get("title"))
     return (
         '<section class="hero-grid">'
         f'<a class="hero-main" href="news/{esc(main["slug"])}.html">'
+        f'{art_fig(main, "lead")}'
         f'<div class="eyebrow"><span class="dot"></span>{cat_of(main)}</div>'
         f'<h2>{esc(main["title"])}</h2><p class="dek">{dek}</p>'
         f'<div class="hero-meta mono"><span>{bilingual("sourced", "có nguồn dẫn")}</span>'
@@ -353,6 +369,7 @@ def trending(arts):
         acc = " accent" if i == 1 else ""
         cards += (
             f'<a class="trend-card{acc}" href="news/{esc(fm["slug"])}.html">'
+            f'{art_fig(fm, "thumb")}'
             f'<span class="rank">{i:02d}</span>'
             f'<span class="cat mono">{cat_of(fm)}</span>'
             f'<h3>{esc(fm["title"])}</h3>'
@@ -369,6 +386,7 @@ def reports(arts):
         en, vn = TYPE_LABEL.get(fm.get("type"), ("Report", "Báo cáo"))
         cards += (
             f'<a class="report-card" href="news/{esc(fm["slug"])}.html">'
+            f'{art_fig(fm, "thumb")}'
             f'<div class="rtag mono">{bilingual(en, vn)}</div>'
             f'<h3>{esc(fm["title"])}</h3>'
             f'<div class="rmeta mono"><span>{esc(str(fm.get("date", "")))}</span>'
@@ -383,7 +401,8 @@ def hotnews(arts):
         rows += (
             f'<a class="hot-row" href="news/{esc(fm["slug"])}.html">'
             f'<div class="hrank">{i:02d}</div>'
-            f'<div class="htitle"><span class="hcat mono">{cat_of(fm)}</span>{esc(fm["title"])}</div>'
+            f'<div class="htitle">{art_fig(fm, "brief")}'
+            f'<span class="htx"><span class="hcat mono">{cat_of(fm)}</span>{esc(fm["title"])}</span></div>'
             f'<div class="hdate mono">{esc(str(fm.get("date", "")))}</div></a>')
     return f'<div class="hotnews">{rows}</div>'
 
@@ -424,12 +443,20 @@ CSS = """
   .hero-main:hover h2{color:var(--brass)}
   .hero-main p.dek{font-size:16.5px;line-height:1.6;color:var(--ink-soft);margin:0 0 16px;max-width:60ch}
   .hero-meta{font-size:11px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.06em}
-  .hero-side{padding:30px 0 30px 30px;display:flex;flex-direction:column;gap:20px}
-  .side-story{padding-bottom:18px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
+  .hero-side{padding:30px 0 30px 30px;display:flex;flex-direction:column;gap:18px}
+  /* article figure (real CC photo or premium generated SVG) — fills its frame, theme-safe */
+  .afig{display:block;overflow:hidden;background:var(--bg-2);position:relative}
+  .afig svg,.afig img{width:100%;height:100%;display:block;object-fit:cover}
+  .afig-lead{aspect-ratio:16/8;border:1px solid var(--hair);margin-bottom:16px}
+  .afig-thumb{aspect-ratio:16/10}
+  .side-story{padding-bottom:18px;border-bottom:1px solid var(--hair);text-decoration:none;color:inherit;display:flex;gap:13px;align-items:flex-start}
   .side-story:last-child{border-bottom:none;padding-bottom:0}
+  .side-story .afig{flex:0 0 86px;border:1px solid var(--hair);border-radius:3px}
+  .side-story .afig-thumb{aspect-ratio:1/1}
+  .side-tx{display:flex;flex-direction:column;gap:5px}
   .side-story .cat{font-size:10px;color:var(--brass);letter-spacing:.08em;font-weight:600;text-transform:uppercase}
-  .side-story h3{font-family:var(--font-head);font-size:16.5px;margin:7px 0 0;line-height:1.3;font-weight:600;color:var(--ink)}
-  .side-story:hover h3{color:var(--brass)}
+  .side-h{font-family:var(--font-head);font-size:15px;line-height:1.28;font-weight:600;color:var(--ink)}
+  .side-story:hover .side-h{color:var(--brass)}
   /* section label */
   .section-label{max-width:var(--w-wide);margin:0 auto;display:flex;align-items:baseline;gap:14px;padding:44px 1.4rem 20px}
   .section-label .code{font-family:var(--font-mono);font-size:12px;color:var(--brass);font-weight:700}
@@ -463,6 +490,7 @@ CSS = """
   /* trending (accent = brass, NOT inverted dark -> THEME_PURITY safe) */
   .trending{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hair)}
   .trend-card{padding:20px 16px 22px;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
+  .trend-card .afig{margin-bottom:13px;border:1px solid var(--hair);border-radius:3px}
   .trend-card:last-child{border-right:none}
   .trend-card:hover{background:var(--bg-2)}
   .trend-card.accent{background:var(--bg-2);box-shadow:inset 3px 0 0 var(--brass)}
@@ -506,21 +534,24 @@ CSS = """
   .sig-cap{font-size:12px;color:var(--muted);max-width:64ch;margin:14px 0 0 68px;line-height:1.55}
   /* reports */
   .reports{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
-  .report-card{background:var(--bg);padding:20px 18px;min-height:158px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;color:inherit}
+  .report-card{background:var(--bg);padding:20px 18px;display:flex;flex-direction:column;text-decoration:none;color:inherit}
   .report-card:hover{background:var(--bg-2)}
+  .report-card .afig{margin-bottom:12px;border:1px solid var(--hair);border-radius:3px}
   .report-card .rtag{color:var(--brass);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
   .report-card h3{font-family:var(--font-head);font-size:15px;font-weight:600;margin:10px 0;line-height:1.34;color:var(--ink)}
   .report-card:hover h3{color:var(--brass)}
-  .report-card .rmeta{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between}
+  .report-card .rmeta{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between;margin-top:auto;padding-top:10px}
   /* hotnews */
   .hotnews{max-width:var(--w-wide);margin:0 auto;border:1px solid var(--hair);border-top:none}
   .hot-row{display:grid;grid-template-columns:58px 1fr 92px;border-top:1px solid var(--hair);align-items:center;text-decoration:none;color:inherit}
   .hot-row:hover{background:var(--bg-2)}
   .hot-row>div{padding:14px 18px}
   .hot-row .hrank{font-family:var(--font-head);font-size:17px;font-weight:600;color:var(--brass);border-right:1px solid var(--hair)}
-  .hot-row .htitle{border-right:1px solid var(--hair);font-size:14px;color:var(--ink)}
-  .hot-row:hover .htitle{color:var(--brass)}
-  .hot-row .htitle .hcat{display:block;font-size:10px;color:var(--brass);margin-bottom:3px;text-transform:uppercase;letter-spacing:.06em}
+  .hot-row .htitle{border-right:1px solid var(--hair);font-size:14px;color:var(--ink);display:flex;align-items:center;gap:11px}
+  .hot-row .htitle .afig{flex:0 0 38px;aspect-ratio:1/1;border:1px solid var(--hair);border-radius:3px}
+  .htx{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .hot-row:hover .htx{color:var(--brass)}
+  .hot-row .htitle .hcat{display:block;font-size:10px;color:var(--brass);margin-bottom:0;text-transform:uppercase;letter-spacing:.06em}
   .hot-row .hdate{font-size:11px;color:var(--muted);text-align:right}
   .block-gap{height:54px}
   @media (max-width:900px){
@@ -602,6 +633,9 @@ def main():
 
 {section_label("HOT/04", "Hot news", "Tin nóng")}
 {hotnews(arts)}
+
+{section_label("NEWS/05", "Latest", "Tin nhanh")}
+<main class="wrap">{aggregation_block("", limit=24)}</main>
 
 <div class="block-gap"></div>
 {footer("")}

@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://mic.mediacdn.vn/zoom/600_315/639352410187198464/2025/11/16/kinh-te-tam-thap1-17632550842521096654231-0-0-563-900-crop-17632550918511596138280.jpg"
-  credit: "Ảnh đăng trên Cổng TTĐT Bộ KH&CN (mst.gov.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Liên minh Kinh tế tầm thấp (LAE) ra mắt ngày 10/10/2025, đồng sáng lập gồm FPT, VinaCapital và Mạng lưới UAV Việt Nam", url: "https://mst.gov.vn/ra-mat-lien-minh-kinh-te-tam-thap-tham-gia-thi-truong-700-ty-usd-197251116080757177.htm", tier: "A" }
   - { claim: "Quy mô thị trường kinh tế tầm thấp toàn cầu ước tính khoảng 700 tỷ USD ở mốc năm 2035", url: "https://mst.gov.vn/ra-mat-lien-minh-kinh-te-tam-thap-tham-gia-thi-truong-700-ty-usd-197251116080757177.htm", tier: "A" }

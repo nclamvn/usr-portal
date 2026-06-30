@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://assets.verticalmag.com/wp-content/uploads/2025/05/Screenshot-2025-05-27-at-1.44.10%E2%80%AFPM.jpg"
-  credit: "Photo: verticalmag.com · license to confirm before republish"
-  license: "ảnh nguồn: chờ xác nhận license"
 sources:
   - { claim: "Vertical Aerospace là nhà phát triển Anh của mẫu eVTOL chở khách có cánh VX4", url: "https://verticalmag.com/press-releases/vertical-aerospace-makes-piloted-evtol-flight-in-open-airspace/", tier: "A" }
   - { claim: "Nguyên mẫu VX4 thực hiện chuyến bay có phi công ở chế độ bay bằng cánh trong không phận mở tại sân bay Cotswold", url: "https://verticalmag.com/press-releases/vertical-aerospace-makes-piloted-evtol-flight-in-open-airspace/", tier: "A" }

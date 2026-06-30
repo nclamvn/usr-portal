@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://cdn.nhandan.vn/images/22f099ca8bc7ae81aa2a8d3416a84bf88164db7334089fd96cd92fb40ba5a5c474a0a958c60cb901bf12f4e0aafe5d6940e52ae31a9c084c7ad9629348343a21/dsc00997-5486.jpg"
-  credit: "Ảnh đăng trên Báo Nhân Dân (nhandan.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Viettel triển khai drone cứu trợ tại xã Nga My, tỉnh Thái Nguyên, với 200 lượt vận chuyển tương đương khoảng 5 tấn hàng hóa và 30 lượt dẫn đường", url: "https://nhandan.vn/viettel-trien-khai-drone-cuu-tro-tai-thai-nguyen-trong-mua-lu-lich-su-post914175.html", tier: "B" }
 ---

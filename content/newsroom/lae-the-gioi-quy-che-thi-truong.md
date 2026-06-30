@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://assets.verticalmag.com/wp-content/uploads/2025/05/Screenshot-2025-05-27-at-1.44.10%E2%80%AFPM.jpg"
-  credit: "Photo: verticalmag.com · Vertical Aerospace VX4 piloted flight"
-  license: ""
 sources:
   - { claim: "EASA SORA 2.5 áp dụng cho hồ sơ nhóm vận hành đặc thù tại châu Âu từ 18/11/2025", url: "https://www.seguridadaerea.gob.es/en/noticias/nueva-metodologia-para-la-evaluacion-de-riesgos-de-uas-en-categoria-especifica", tier: "A" }
   - { claim: "FAA công bố dự thảo quy tắc bay ngoài tầm nhìn thẳng (Part 108 BVLOS), chưa hiệu lực", url: "https://www.pillsburylaw.com/en/news-and-insights/faa-proposed-rule-bvlos.html", tier: "B" }

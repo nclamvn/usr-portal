@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://mic.mediacdn.vn/639352410187198464/2026/6/24/images-178228870999291942585.jpeg"
-  credit: "Ảnh đăng trên Cổng TTĐT Bộ KH&CN (mst.gov.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Quyết định 1291/QĐ-UBND tỉnh Điện Biên ngày 23/6/2026 cấp phép thử nghiệm UAV có kiểm soát, mục tiêu khoảng 6.000 chuyến bay", url: "https://mst.gov.vn/dien-bien-thi-diem-6000-chuyen-bay-uav-phat-trien-kinh-te-tam-thap-197260624151426046.htm", tier: "A" }
 ---

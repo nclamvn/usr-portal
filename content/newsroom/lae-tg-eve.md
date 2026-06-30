@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://www.ainonline.com/cdn-cgi/image/width=1200,format=webp,quality=85/https://backend.ainonline.com/sites/default/files/styles/original/public/2025-12/eve_firstflight_2025.png?itok=UCyKnb5W"
-  credit: "Photo: ainonline.com · license to confirm before republish"
-  license: "ảnh nguồn: chờ xác nhận license"
 sources:
   - { claim: "Eve Air Mobility do Embraer hậu thuẫn, phát triển mẫu eVTOL bốn chỗ Eve-100", url: "https://www.ainonline.com/aviation-news/futureflight/2025-12-19/eve-makes-first-flight-evtol-aircraft-prototype", tier: "B" }
   - { claim: "Eve hoàn thành chuyến bay treo đầu tiên của nguyên mẫu kích thước thật tại Gavião Peixoto, bang São Paulo, Brazil", url: "https://www.ainonline.com/aviation-news/futureflight/2025-12-19/eve-makes-first-flight-evtol-aircraft-prototype", tier: "B" }

@@ -7,10 +7,6 @@ sample: false
 date: 2026-06-25
 entity_tags: []
 figures: []
-image:
-  src: "https://images2.thanhnien.vn/zoom/1200_630/528068263637045248/2025/12/13/dung-drone-phun-phan-bon-la-cho-dong-ruong-tai-khu-vuc-huyen-hon-dat-cu-an-gianganh-cong-han-1765624819258389425731-125-0-1405-2048-crop-17656248280141716549348.jpg"
-  credit: "Ảnh đăng trên Báo Thanh Niên (thanhnien.vn). Cần xác-nhận license trước khi tái-bản"
-  license: ""
 sources:
   - { claim: "Drone được ứng dụng trong nông nghiệp tại Việt Nam cho các tác vụ sạ lúa, rải phân và xịt thuốc trừ sâu", url: "https://thanhnien.vn/tiem-nang-kinh-te-tam-thap-cua-viet-nam-185251213182502034.htm", tier: "B" }
 ---
