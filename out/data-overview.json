@@ -3,136 +3,136 @@
     {
       "n": "United States",
       "slug": "united-states",
-      "v": 108
+      "v": 113
     },
     {
       "n": "China",
       "slug": "china",
-      "v": 96
+      "v": 97
     },
     {
       "n": "Israel",
       "slug": "israel",
-      "v": 20
-    },
-    {
-      "n": "Turkey",
-      "slug": "turkey",
-      "v": 10
+      "v": 29
     },
     {
       "n": "Germany",
       "slug": "germany",
-      "v": 10
+      "v": 23
     },
     {
-      "n": "Iran",
-      "slug": "iran",
-      "v": 9
-    },
-    {
-      "n": "France",
-      "slug": "france",
-      "v": 8
+      "n": "Turkey",
+      "slug": "turkey",
+      "v": 17
     },
     {
       "n": "Russia",
       "slug": "russia",
+      "v": 16
+    },
+    {
+      "n": "Iran",
+      "slug": "iran",
+      "v": 14
+    },
+    {
+      "n": "France",
+      "slug": "france",
+      "v": 13
+    },
+    {
+      "n": "Ukraine",
+      "slug": "ukraine",
       "v": 8
     },
     {
-      "n": "Vietnam",
-      "slug": "vietnam",
-      "v": 5
+      "n": "India",
+      "slug": "india",
+      "v": 6
     },
     {
       "n": "Switzerland",
       "slug": "switzerland",
-      "v": 4
+      "v": 6
     },
     {
-      "n": "Netherlands",
-      "slug": "netherlands",
-      "v": 2
+      "n": "United Kingdom",
+      "slug": "united-kingdom",
+      "v": 6
     },
     {
-      "n": "Japan",
-      "slug": "japan",
-      "v": 2
-    },
-    {
-      "n": "16 nước khác",
-      "n_en": "16 countries",
+      "n": "21 nước khác",
+      "n_en": "21 countries",
       "other": true,
-      "v": 20
+      "v": 46
     }
   ],
   "coverage": [
     {
       "key": "mtow_kg",
-      "pct": 65,
-      "present": 196,
-      "total": 302
+      "pct": 64,
+      "present": 252,
+      "total": 394
     },
     {
       "key": "max_payload_kg",
-      "pct": 47,
-      "present": 142,
-      "total": 302
+      "pct": 51,
+      "present": 202,
+      "total": 394
     },
     {
       "key": "endurance_min",
-      "pct": 60,
-      "present": 181,
-      "total": 302
+      "pct": 62,
+      "present": 243,
+      "total": 394
     },
     {
       "key": "max_range_km",
-      "pct": 37,
-      "present": 111,
-      "total": 302
+      "pct": 46,
+      "present": 183,
+      "total": 394
     },
     {
       "key": "max_link_km",
-      "pct": 23,
+      "pct": 18,
       "present": 69,
-      "total": 302
+      "total": 394
     },
     {
       "key": "max_speed_ms",
-      "pct": 54,
-      "present": 164,
-      "total": 302
+      "pct": 53,
+      "present": 210,
+      "total": 394
     },
     {
       "key": "service_ceiling_m",
-      "pct": 31,
-      "present": 95,
-      "total": 302
+      "pct": 35,
+      "present": 136,
+      "total": 394
     },
     {
       "key": "encryption",
       "pct": 1,
       "present": 3,
-      "total": 302
+      "total": 394
     },
     {
       "key": "blue_uas",
-      "pct": 11,
+      "pct": 8,
       "present": 32,
-      "total": 302
+      "total": 394
     },
     {
       "key": "ndaa_compliant",
-      "pct": 12,
+      "pct": 9,
       "present": 35,
-      "total": 302
+      "total": 394
     },
     {
       "key": "gps_denied_capable",
-      "pct": 4,
+      "pct": 3,
       "present": 11,
-      "total": 302
+      "total": 394
     }
   ],
   "maker": [
@@ -147,18 +147,33 @@
       "v": 13
     },
     {
+      "n": "IAI",
+      "slug": "iai",
+      "v": 13
+    },
+    {
       "n": "AeroVironment",
       "slug": "aerovironment",
       "v": 11
     },
     {
-      "n": "IAI",
-      "slug": "iai",
+      "n": "HESA",
+      "slug": "hesa",
       "v": 10
+    },
+    {
+      "n": "Baykar",
+      "slug": "baykar",
+      "v": 8
     },
     {
       "n": "Anduril",
       "slug": "anduril",
+      "v": 7
+    },
+    {
+      "n": "Elbit Systems",
+      "slug": "elbit-systems",
       "v": 7
     },
     {
@@ -172,35 +187,20 @@
       "v": 6
     },
     {
-      "n": "HESA",
-      "slug": "hesa",
-      "v": 6
-    },
-    {
-      "n": "Baykar",
-      "slug": "baykar",
+      "n": "Quantum Systems",
+      "slug": "quantum-systems",
       "v": 5
     },
     {
-      "n": "Elbit Systems",
-      "slug": "elbit-systems",
-      "v": 4
+      "n": "TAI",
+      "slug": "tai",
+      "v": 5
     },
     {
-      "n": "Northrop Grumman",
-      "slug": "northrop-grumman",
-      "v": 4
-    },
-    {
-      "n": "Quantum Systems",
-      "slug": "quantum-systems",
-      "v": 4
-    },
-    {
-      "n": "128 hãng khác",
-      "n_en": "128 makers",
+      "n": "168 hãng khác",
+      "n_en": "168 makers",
       "other": true,
-      "v": 187
+      "v": 264
     }
   ],
   "schema": "data-overview/1",
@@ -209,13 +209,13 @@
       "n": "Quân sự · chiến thuật",
       "n_en": "Military · tactical",
       "slug": "military-tactical",
-      "v": 91
+      "v": 145
     },
     {
       "n": "Doanh nghiệp",
       "n_en": "Enterprise",
       "slug": "enterprise",
-      "v": 34
+      "v": 38
     },
     {
       "n": "Tiêu dùng",
@@ -227,7 +227,25 @@
       "n": "Giao hàng",
       "n_en": "Delivery",
       "slug": "delivery",
-      "v": 17
+      "v": 24
+    },
+    {
+      "n": "Đạn tuần kích",
+      "n_en": "Loitering munition",
+      "slug": "loitering-munition",
+      "v": 21
+    },
+    {
+      "n": "Nông nghiệp",
+      "n_en": "Agriculture",
+      "slug": "agriculture",
+      "v": 19
+    },
+    {
+      "n": "Taxi bay",
+      "n_en": "Passenger air taxi",
+      "slug": "passenger-uam",
+      "v": 18
     },
     {
       "n": "Quốc phòng · chính phủ",
@@ -236,34 +254,16 @@
       "v": 17
     },
     {
-      "n": "Nông nghiệp",
-      "n_en": "Agriculture",
-      "slug": "agriculture",
-      "v": 17
-    },
-    {
-      "n": "Đạn tuần kích",
-      "n_en": "Loitering munition",
-      "slug": "loitering-munition",
-      "v": 11
-    },
-    {
       "n": "Khảo sát · lập bản đồ",
       "n_en": "Surveying & mapping",
       "slug": "surveying",
-      "v": 11
-    },
-    {
-      "n": "Taxi bay",
-      "n_en": "Passenger air taxi",
-      "slug": "passenger-uam",
-      "v": 10
+      "v": 17
     },
     {
       "n": "An toàn công cộng",
       "n_en": "Public safety",
       "slug": "public-safety",
-      "v": 8
+      "v": 9
     },
     {
       "n": "FPV",
@@ -295,25 +295,25 @@
       "key": "mtow_kg",
       "max": 25000,
       "min": 0.073,
-      "present": 196
+      "present": 252
     },
     {
       "key": "max_payload_kg",
       "max": 6800,
       "min": 0.2,
-      "present": 142
+      "present": 202
     },
     {
       "key": "endurance_min",
       "max": 3600,
       "min": 4,
-      "present": 181
+      "present": 243
     },
     {
       "key": "max_range_km",
       "max": 13700,
-      "min": 3.2,
-      "present": 111
+      "min": 1,
+      "present": 183
     },
     {
       "key": "max_link_km",
@@ -325,35 +325,35 @@
       "key": "max_speed_ms",
       "max": 306,
       "min": 4,
-      "present": 164
+      "present": 210
     },
     {
       "key": "service_ceiling_m",
       "max": 23200,
-      "min": 457,
-      "present": 95
+      "min": 200,
+      "present": 136
     }
   ],
   "standards": [
     {
       "key": "blue_uas",
       "present": 32,
-      "total": 302,
+      "total": 394,
       "yes": 25
     },
     {
       "key": "ndaa_compliant",
       "present": 35,
-      "total": 302,
+      "total": 394,
       "yes": 28
     }
   ],
   "totals": {
-    "company": 140,
-    "country": 28,
-    "coverage_pct": 31,
+    "company": 180,
+    "country": 33,
+    "coverage_pct": 32,
     "disputed": 6,
     "segment": 13,
-    "uav": 302
+    "uav": 394
   }
 }

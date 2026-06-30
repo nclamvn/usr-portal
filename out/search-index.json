@@ -14,8 +14,8 @@
       "id": "acecore",
       "label_en": "Acecore",
       "label_vn": "Acecore",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "acecore",
       "type": "company",
       "url": "company/acecore.html"
@@ -31,11 +31,21 @@
       "url": "company/acsl.html"
     },
     {
+      "id": "adani-defence",
+      "label_en": "Adani Defence",
+      "label_vn": "Adani Defence",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "adani defence",
+      "type": "company",
+      "url": "company/adani-defence.html"
+    },
+    {
       "id": "aeronautics",
       "label_en": "Aeronautics",
       "label_vn": "Aeronautics",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "aeronautics",
       "type": "company",
       "url": "company/aeronautics.html"
@@ -74,11 +84,21 @@
       "id": "airbus",
       "label_en": "Airbus",
       "label_vn": "Airbus",
-      "sub_en": "3 systems",
-      "sub_vn": "3 hệ thống",
+      "sub_en": "4 systems",
+      "sub_vn": "4 hệ thống",
       "terms": "airbus",
       "type": "company",
       "url": "company/airbus.html"
+    },
+    {
+      "id": "alpha-unmanned-systems",
+      "label_en": "Alpha Unmanned Systems",
+      "label_vn": "Alpha Unmanned Systems",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "alpha unmanned systems",
+      "type": "company",
+      "url": "company/alpha-unmanned-systems.html"
     },
     {
       "id": "amazon-prime-air",
@@ -89,6 +109,16 @@
       "terms": "amazon prime air",
       "type": "company",
       "url": "company/amazon-prime-air.html"
+    },
+    {
+      "id": "amsl-aero",
+      "label_en": "AMSL Aero",
+      "label_vn": "AMSL Aero",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "amsl aero",
+      "type": "company",
+      "url": "company/amsl-aero.html"
     },
     {
       "id": "anduril",
@@ -141,6 +171,16 @@
       "url": "company/asylon.html"
     },
     {
+      "id": "athlon-avia",
+      "label_en": "Athlon Avia",
+      "label_vn": "Athlon Avia",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "athlon avia",
+      "type": "company",
+      "url": "company/athlon-avia.html"
+    },
+    {
       "id": "autel",
       "label_en": "Autel",
       "label_vn": "Autel",
@@ -164,8 +204,8 @@
       "id": "autoflight",
       "label_en": "AutoFlight",
       "label_vn": "AutoFlight",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "autoflight",
       "type": "company",
       "url": "company/autoflight.html"
@@ -181,11 +221,31 @@
       "url": "company/avic.html"
     },
     {
+      "id": "avilus",
+      "label_en": "AVILUS",
+      "label_vn": "AVILUS",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
+      "terms": "avilus",
+      "type": "company",
+      "url": "company/avilus.html"
+    },
+    {
+      "id": "avy",
+      "label_en": "Avy",
+      "label_vn": "Avy",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "avy",
+      "type": "company",
+      "url": "company/avy.html"
+    },
+    {
       "id": "baykar",
       "label_en": "Baykar",
       "label_vn": "Baykar",
-      "sub_en": "5 systems",
-      "sub_vn": "5 hệ thống",
+      "sub_en": "8 systems",
+      "sub_vn": "8 hệ thống",
       "terms": "baykar",
       "type": "company",
       "url": "company/baykar.html"
@@ -209,6 +269,16 @@
       "terms": "betafpv",
       "type": "company",
       "url": "company/betafpv.html"
+    },
+    {
+      "id": "bluebird-aero-systems",
+      "label_en": "BlueBird Aero Systems",
+      "label_vn": "BlueBird Aero Systems",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "bluebird aero systems",
+      "type": "company",
+      "url": "company/bluebird-aero-systems.html"
     },
     {
       "id": "boeing",
@@ -251,6 +321,16 @@
       "url": "company/caig.html"
     },
     {
+      "id": "carbonix",
+      "label_en": "Carbonix",
+      "label_vn": "Carbonix",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "carbonix",
+      "type": "company",
+      "url": "company/carbonix.html"
+    },
+    {
       "id": "casc",
       "label_en": "CASC",
       "label_vn": "CASC",
@@ -291,6 +371,26 @@
       "url": "company/delair.html"
     },
     {
+      "id": "deltaquad",
+      "label_en": "DeltaQuad",
+      "label_vn": "DeltaQuad",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "deltaquad",
+      "type": "company",
+      "url": "company/deltaquad.html"
+    },
+    {
+      "id": "deviro",
+      "label_en": "DeViRo",
+      "label_vn": "DeViRo",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "deviro",
+      "type": "company",
+      "url": "company/deviro.html"
+    },
+    {
       "id": "dji",
       "label_en": "DJI",
       "label_vn": "DJI",
@@ -299,6 +399,16 @@
       "terms": "dji",
       "type": "company",
       "url": "company/dji.html"
+    },
+    {
+      "id": "doosan-mobility-innovation",
+      "label_en": "Doosan Mobility Innovation",
+      "label_vn": "Doosan Mobility Innovation",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "doosan mobility innovation",
+      "type": "company",
+      "url": "company/doosan-mobility-innovation.html"
     },
     {
       "id": "doroni",
@@ -311,6 +421,16 @@
       "url": "company/doroni.html"
     },
     {
+      "id": "drdo",
+      "label_en": "DRDO",
+      "label_vn": "DRDO",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "drdo",
+      "type": "company",
+      "url": "company/drdo.html"
+    },
+    {
       "id": "dronamics",
       "label_en": "Dronamics",
       "label_vn": "Dronamics",
@@ -319,6 +439,16 @@
       "terms": "dronamics",
       "type": "company",
       "url": "company/dronamics.html"
+    },
+    {
+      "id": "dufour-aerospace",
+      "label_en": "Dufour Aerospace",
+      "label_vn": "Dufour Aerospace",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "dufour aerospace",
+      "type": "company",
+      "url": "company/dufour-aerospace.html"
     },
     {
       "id": "easy-aerial",
@@ -384,8 +514,8 @@
       "id": "elbit-systems",
       "label_en": "Elbit Systems",
       "label_vn": "Elbit Systems",
-      "sub_en": "4 systems",
-      "sub_vn": "4 hệ thống",
+      "sub_en": "7 systems",
+      "sub_vn": "7 hệ thống",
       "terms": "elbit systems",
       "type": "company",
       "url": "company/elbit-systems.html"
@@ -401,11 +531,21 @@
       "url": "company/elroy-air.html"
     },
     {
+      "id": "emt-penzberg",
+      "label_en": "EMT Penzberg",
+      "label_vn": "EMT Penzberg",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
+      "terms": "emt penzberg",
+      "type": "company",
+      "url": "company/emt-penzberg.html"
+    },
+    {
       "id": "enics",
       "label_en": "ENICS",
       "label_vn": "ENICS",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "enics",
       "type": "company",
       "url": "company/enics.html"
@@ -444,8 +584,8 @@
       "id": "flyability",
       "label_en": "Flyability",
       "label_vn": "Flyability",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "flyability",
       "type": "company",
       "url": "company/flyability.html"
@@ -491,6 +631,16 @@
       "url": "company/freefly-systems.html"
     },
     {
+      "id": "garuda-aerospace",
+      "label_en": "Garuda Aerospace",
+      "label_vn": "Garuda Aerospace",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "garuda aerospace",
+      "type": "company",
+      "url": "company/garuda-aerospace.html"
+    },
+    {
       "id": "general-atomics",
       "label_en": "General Atomics",
       "label_vn": "General Atomics",
@@ -511,6 +661,16 @@
       "url": "company/geprc.html"
     },
     {
+      "id": "germandrones",
+      "label_en": "Germandrones",
+      "label_vn": "Germandrones",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
+      "terms": "germandrones",
+      "type": "company",
+      "url": "company/germandrones.html"
+    },
+    {
       "id": "guardian-agriculture",
       "label_en": "Guardian Agriculture",
       "label_vn": "Guardian Agriculture",
@@ -521,11 +681,21 @@
       "url": "company/guardian-agriculture.html"
     },
     {
+      "id": "helsing",
+      "label_en": "Helsing",
+      "label_vn": "Helsing",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "helsing",
+      "type": "company",
+      "url": "company/helsing.html"
+    },
+    {
       "id": "hesa",
       "label_en": "HESA",
       "label_vn": "HESA",
-      "sub_en": "6 systems",
-      "sub_vn": "6 hệ thống",
+      "sub_en": "10 systems",
+      "sub_vn": "10 hệ thống",
       "terms": "hesa",
       "type": "company",
       "url": "company/hesa.html"
@@ -584,8 +754,8 @@
       "id": "iai",
       "label_en": "IAI",
       "label_vn": "IAI",
-      "sub_en": "10 systems",
-      "sub_vn": "10 hệ thống",
+      "sub_en": "13 systems",
+      "sub_vn": "13 hệ thống",
       "terms": "iai",
       "type": "company",
       "url": "company/iai.html"
@@ -631,6 +801,16 @@
       "url": "company/inspired-flight.html"
     },
     {
+      "id": "jaunt",
+      "label_en": "Jaunt",
+      "label_vn": "Jaunt",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "jaunt",
+      "type": "company",
+      "url": "company/jaunt.html"
+    },
+    {
       "id": "jetson",
       "label_en": "Jetson",
       "label_vn": "Jetson",
@@ -661,11 +841,21 @@
       "url": "company/jouav.html"
     },
     {
+      "id": "kai",
+      "label_en": "KAI",
+      "label_vn": "KAI",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "kai",
+      "type": "company",
+      "url": "company/kai.html"
+    },
+    {
       "id": "korean-air",
       "label_en": "Korean Air",
       "label_vn": "Korean Air",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "korean air",
       "type": "company",
       "url": "company/korean-air.html"
@@ -684,8 +874,8 @@
       "id": "kronshtadt",
       "label_en": "Kronshtadt",
       "label_vn": "Kronshtadt",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "kronshtadt",
       "type": "company",
       "url": "company/kronshtadt.html"
@@ -704,11 +894,21 @@
       "id": "leonardo",
       "label_en": "Leonardo",
       "label_vn": "Leonardo",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "leonardo",
       "type": "company",
       "url": "company/leonardo.html"
+    },
+    {
+      "id": "lift-aircraft",
+      "label_en": "LIFT Aircraft",
+      "label_vn": "LIFT Aircraft",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "lift aircraft",
+      "type": "company",
+      "url": "company/lift-aircraft.html"
     },
     {
       "id": "lilium",
@@ -729,6 +929,16 @@
       "terms": "lockheed martin",
       "type": "company",
       "url": "company/lockheed-martin.html"
+    },
+    {
+      "id": "malloy-aeronautics",
+      "label_en": "Malloy Aeronautics",
+      "label_vn": "Malloy Aeronautics",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
+      "terms": "malloy aeronautics",
+      "type": "company",
+      "url": "company/malloy-aeronautics.html"
     },
     {
       "id": "manna-aero",
@@ -801,6 +1011,26 @@
       "url": "company/neros.html"
     },
     {
+      "id": "newspace-research",
+      "label_en": "NewSpace Research",
+      "label_vn": "NewSpace Research",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "newspace research",
+      "type": "company",
+      "url": "company/newspace-research.html"
+    },
+    {
+      "id": "nordic-unmanned",
+      "label_en": "Nordic Unmanned",
+      "label_vn": "Nordic Unmanned",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "nordic unmanned",
+      "type": "company",
+      "url": "company/nordic-unmanned.html"
+    },
+    {
       "id": "northrop-grumman",
       "label_en": "Northrop Grumman",
       "label_vn": "Northrop Grumman",
@@ -809,6 +1039,26 @@
       "terms": "northrop grumman",
       "type": "company",
       "url": "company/northrop-grumman.html"
+    },
+    {
+      "id": "okb-luch",
+      "label_en": "OKB Luch",
+      "label_vn": "OKB Luch",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "okb luch",
+      "type": "company",
+      "url": "company/okb-luch.html"
+    },
+    {
+      "id": "overair",
+      "label_en": "Overair",
+      "label_vn": "Overair",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "overair",
+      "type": "company",
+      "url": "company/overair.html"
     },
     {
       "id": "parrot",
@@ -844,8 +1094,8 @@
       "id": "pivotal",
       "label_en": "Pivotal",
       "label_vn": "Pivotal",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "pivotal",
       "type": "company",
       "url": "company/pivotal.html"
@@ -869,6 +1119,16 @@
       "terms": "powervision",
       "type": "company",
       "url": "company/powervision.html"
+    },
+    {
+      "id": "prodrone",
+      "label_en": "Prodrone",
+      "label_vn": "Prodrone",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "prodrone",
+      "type": "company",
+      "url": "company/prodrone.html"
     },
     {
       "id": "ptdi",
@@ -904,8 +1164,8 @@
       "id": "qods-aviation",
       "label_en": "Qods Aviation",
       "label_vn": "Qods Aviation",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "qods aviation",
       "type": "company",
       "url": "company/qods-aviation.html"
@@ -914,11 +1174,21 @@
       "id": "quantum-systems",
       "label_en": "Quantum Systems",
       "label_vn": "Quantum Systems",
-      "sub_en": "4 systems",
-      "sub_vn": "4 hệ thống",
+      "sub_en": "5 systems",
+      "sub_vn": "5 hệ thống",
       "terms": "quantum systems",
       "type": "company",
       "url": "company/quantum-systems.html"
+    },
+    {
+      "id": "raphe-mphibr",
+      "label_en": "Raphe mPhibr",
+      "label_vn": "Raphe mPhibr",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "raphe mphibr",
+      "type": "company",
+      "url": "company/raphe-mphibr.html"
     },
     {
       "id": "raytheon",
@@ -951,6 +1221,16 @@
       "url": "company/red-cat.html"
     },
     {
+      "id": "rheinmetall",
+      "label_en": "Rheinmetall",
+      "label_vn": "Rheinmetall",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "rheinmetall",
+      "type": "company",
+      "url": "company/rheinmetall.html"
+    },
+    {
       "id": "rv-connex",
       "label_en": "RV Connex",
       "label_vn": "RV Connex",
@@ -974,8 +1254,8 @@
       "id": "safran",
       "label_en": "Safran",
       "label_vn": "Safran",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "safran",
       "type": "company",
       "url": "company/safran.html"
@@ -1011,6 +1291,16 @@
       "url": "company/shield-ai.html"
     },
     {
+      "id": "sky-watch",
+      "label_en": "Sky-Watch",
+      "label_vn": "Sky-Watch",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "sky-watch",
+      "type": "company",
+      "url": "company/sky-watch.html"
+    },
+    {
       "id": "skydio",
       "label_en": "Skydio",
       "label_vn": "Skydio",
@@ -1019,6 +1309,16 @@
       "terms": "skydio",
       "type": "company",
       "url": "company/skydio.html"
+    },
+    {
+      "id": "skyeton",
+      "label_en": "Skyeton",
+      "label_vn": "Skyeton",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "skyeton",
+      "type": "company",
+      "url": "company/skyeton.html"
     },
     {
       "id": "skyfront",
@@ -1044,8 +1344,8 @@
       "id": "special-technology-center",
       "label_en": "Special Technology Center",
       "label_vn": "Special Technology Center",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "special technology center",
       "type": "company",
       "url": "company/special-technology-center.html"
@@ -1061,11 +1361,21 @@
       "url": "company/st-engineering.html"
     },
     {
+      "id": "stark-defence",
+      "label_en": "STARK Defence",
+      "label_vn": "STARK Defence",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "stark defence",
+      "type": "company",
+      "url": "company/stark-defence.html"
+    },
+    {
       "id": "stm",
       "label_en": "STM",
       "label_vn": "STM",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "stm",
       "type": "company",
       "url": "company/stm.html"
@@ -1091,6 +1401,16 @@
       "url": "company/supernal.html"
     },
     {
+      "id": "survey-copter",
+      "label_en": "Survey Copter",
+      "label_vn": "Survey Copter",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
+      "terms": "survey copter",
+      "type": "company",
+      "url": "company/survey-copter.html"
+    },
+    {
       "id": "swoop-aero",
       "label_en": "Swoop Aero",
       "label_vn": "Swoop Aero",
@@ -1101,11 +1421,21 @@
       "url": "company/swoop-aero.html"
     },
     {
+      "id": "sypaq",
+      "label_en": "SYPAQ",
+      "label_vn": "SYPAQ",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
+      "terms": "sypaq",
+      "type": "company",
+      "url": "company/sypaq.html"
+    },
+    {
       "id": "tai",
       "label_en": "TAI",
       "label_vn": "TAI",
-      "sub_en": "3 systems",
-      "sub_vn": "3 hệ thống",
+      "sub_en": "5 systems",
+      "sub_vn": "5 hệ thống",
       "terms": "tai",
       "type": "company",
       "url": "company/tai.html"
@@ -1129,6 +1459,16 @@
       "terms": "teal drones",
       "type": "company",
       "url": "company/teal-drones.html"
+    },
+    {
+      "id": "tekever",
+      "label_en": "Tekever",
+      "label_vn": "Tekever",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
+      "terms": "tekever",
+      "type": "company",
+      "url": "company/tekever.html"
     },
     {
       "id": "teledyne-flir",
@@ -1164,8 +1504,8 @@
       "id": "thales",
       "label_en": "Thales",
       "label_vn": "Thales",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "thales",
       "type": "company",
       "url": "company/thales.html"
@@ -1191,6 +1531,36 @@
       "url": "company/topxgun.html"
     },
     {
+      "id": "ua-dynamics",
+      "label_en": "UA Dynamics",
+      "label_vn": "UA Dynamics",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "ua dynamics",
+      "type": "company",
+      "url": "company/ua-dynamics.html"
+    },
+    {
+      "id": "ukrjet",
+      "label_en": "Ukrjet",
+      "label_vn": "Ukrjet",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "ukrjet",
+      "type": "company",
+      "url": "company/ukrjet.html"
+    },
+    {
+      "id": "ukrspecsystems",
+      "label_en": "UkrSpecSystems",
+      "label_vn": "UkrSpecSystems",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
+      "terms": "ukrspecsystems",
+      "type": "company",
+      "url": "company/ukrspecsystems.html"
+    },
+    {
       "id": "ums-skeldar",
       "label_en": "UMS Skeldar",
       "label_vn": "UMS Skeldar",
@@ -1204,8 +1574,8 @@
       "id": "uvision",
       "label_en": "UVision",
       "label_vn": "UVision",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "3 systems",
+      "sub_vn": "3 hệ thống",
       "terms": "uvision",
       "type": "company",
       "url": "company/uvision.html"
@@ -1214,8 +1584,8 @@
       "id": "uzga",
       "label_en": "UZGA",
       "label_vn": "UZGA",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "uzga",
       "type": "company",
       "url": "company/uzga.html"
@@ -1234,11 +1604,21 @@
       "id": "vertical-aerospace",
       "label_en": "Vertical Aerospace",
       "label_vn": "Vertical Aerospace",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "vertical aerospace",
       "type": "company",
       "url": "company/vertical-aerospace.html"
+    },
+    {
+      "id": "vestel-savunma",
+      "label_en": "Vestel Savunma",
+      "label_vn": "Vestel Savunma",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "vestel savunma",
+      "type": "company",
+      "url": "company/vestel-savunma.html"
     },
     {
       "id": "viettel",
@@ -1249,6 +1629,16 @@
       "terms": "viettel",
       "type": "company",
       "url": "company/viettel.html"
+    },
+    {
+      "id": "volansi",
+      "label_en": "Volansi",
+      "label_vn": "Volansi",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "volansi",
+      "type": "company",
+      "url": "company/volansi.html"
     },
     {
       "id": "volocopter",
@@ -1284,8 +1674,8 @@
       "id": "wb-group",
       "label_en": "WB Group",
       "label_vn": "WB Group",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "wb group",
       "type": "company",
       "url": "company/wb-group.html"
@@ -1361,6 +1751,16 @@
       "url": "company/xpeng-aeroht.html"
     },
     {
+      "id": "yamaha",
+      "label_en": "Yamaha",
+      "label_vn": "Yamaha",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "yamaha",
+      "type": "company",
+      "url": "company/yamaha.html"
+    },
+    {
       "id": "yuneec",
       "label_en": "Yuneec",
       "label_vn": "Yuneec",
@@ -1374,8 +1774,8 @@
       "id": "zala-aero",
       "label_en": "ZALA Aero",
       "label_vn": "ZALA Aero",
-      "sub_en": "3 systems",
-      "sub_vn": "3 hệ thống",
+      "sub_en": "5 systems",
+      "sub_vn": "5 hệ thống",
       "terms": "zala aero",
       "type": "company",
       "url": "company/zala-aero.html"
@@ -1404,8 +1804,8 @@
       "id": "australia",
       "label_en": "Australia",
       "label_vn": "Australia",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "6 systems",
+      "sub_vn": "6 hệ thống",
       "terms": "australia",
       "type": "country",
       "url": "country/australia.html"
@@ -1444,11 +1844,21 @@
       "id": "china",
       "label_en": "China",
       "label_vn": "China",
-      "sub_en": "96 systems",
-      "sub_vn": "96 hệ thống",
+      "sub_en": "97 systems",
+      "sub_vn": "97 hệ thống",
       "terms": "china",
       "type": "country",
       "url": "country/china.html"
+    },
+    {
+      "id": "denmark",
+      "label_en": "Denmark",
+      "label_vn": "Denmark",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "denmark",
+      "type": "country",
+      "url": "country/denmark.html"
     },
     {
       "id": "estonia",
@@ -1464,8 +1874,8 @@
       "id": "france",
       "label_en": "France",
       "label_vn": "France",
-      "sub_en": "8 systems",
-      "sub_vn": "8 hệ thống",
+      "sub_en": "13 systems",
+      "sub_vn": "13 hệ thống",
       "terms": "france",
       "type": "country",
       "url": "country/france.html"
@@ -1474,8 +1884,8 @@
       "id": "germany",
       "label_en": "Germany",
       "label_vn": "Germany",
-      "sub_en": "10 systems",
-      "sub_vn": "10 hệ thống",
+      "sub_en": "23 systems",
+      "sub_vn": "23 hệ thống",
       "terms": "germany",
       "type": "country",
       "url": "country/germany.html"
@@ -1484,8 +1894,8 @@
       "id": "india",
       "label_en": "India",
       "label_vn": "India",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "6 systems",
+      "sub_vn": "6 hệ thống",
       "terms": "india",
       "type": "country",
       "url": "country/india.html"
@@ -1504,8 +1914,8 @@
       "id": "iran",
       "label_en": "Iran",
       "label_vn": "Iran",
-      "sub_en": "9 systems",
-      "sub_vn": "9 hệ thống",
+      "sub_en": "14 systems",
+      "sub_vn": "14 hệ thống",
       "terms": "iran",
       "type": "country",
       "url": "country/iran.html"
@@ -1524,8 +1934,8 @@
       "id": "israel",
       "label_en": "Israel",
       "label_vn": "Israel",
-      "sub_en": "20 systems",
-      "sub_vn": "20 hệ thống",
+      "sub_en": "29 systems",
+      "sub_vn": "29 hệ thống",
       "terms": "israel",
       "type": "country",
       "url": "country/israel.html"
@@ -1534,8 +1944,8 @@
       "id": "italy",
       "label_en": "Italy",
       "label_vn": "Italy",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "italy",
       "type": "country",
       "url": "country/italy.html"
@@ -1544,8 +1954,8 @@
       "id": "japan",
       "label_en": "Japan",
       "label_vn": "Japan",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "4 systems",
+      "sub_vn": "4 hệ thống",
       "terms": "japan",
       "type": "country",
       "url": "country/japan.html"
@@ -1564,28 +1974,48 @@
       "id": "netherlands",
       "label_en": "Netherlands",
       "label_vn": "Netherlands",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "5 systems",
+      "sub_vn": "5 hệ thống",
       "terms": "netherlands",
       "type": "country",
       "url": "country/netherlands.html"
     },
     {
+      "id": "norway",
+      "label_en": "Norway",
+      "label_vn": "Norway",
+      "sub_en": "1 systems",
+      "sub_vn": "1 hệ thống",
+      "terms": "norway",
+      "type": "country",
+      "url": "country/norway.html"
+    },
+    {
       "id": "poland",
       "label_en": "Poland",
       "label_vn": "Poland",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
       "terms": "poland",
       "type": "country",
       "url": "country/poland.html"
     },
     {
+      "id": "portugal",
+      "label_en": "Portugal",
+      "label_vn": "Portugal",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
+      "terms": "portugal",
+      "type": "country",
+      "url": "country/portugal.html"
+    },
+    {
       "id": "russia",
       "label_en": "Russia",
       "label_vn": "Russia",
-      "sub_en": "8 systems",
-      "sub_vn": "8 hệ thống",
+      "sub_en": "16 systems",
+      "sub_vn": "16 hệ thống",
       "terms": "russia",
       "type": "country",
       "url": "country/russia.html"
@@ -1604,11 +2034,21 @@
       "id": "south-korea",
       "label_en": "South Korea",
       "label_vn": "South Korea",
-      "sub_en": "1 systems",
-      "sub_vn": "1 hệ thống",
+      "sub_en": "4 systems",
+      "sub_vn": "4 hệ thống",
       "terms": "south korea",
       "type": "country",
       "url": "country/south-korea.html"
+    },
+    {
+      "id": "spain",
+      "label_en": "Spain",
+      "label_vn": "Spain",
+      "sub_en": "2 systems",
+      "sub_vn": "2 hệ thống",
+      "terms": "spain",
+      "type": "country",
+      "url": "country/spain.html"
     },
     {
       "id": "sweden",
@@ -1624,8 +2064,8 @@
       "id": "switzerland",
       "label_en": "Switzerland",
       "label_vn": "Switzerland",
-      "sub_en": "4 systems",
-      "sub_vn": "4 hệ thống",
+      "sub_en": "6 systems",
+      "sub_vn": "6 hệ thống",
       "terms": "switzerland",
       "type": "country",
       "url": "country/switzerland.html"
@@ -1644,18 +2084,28 @@
       "id": "turkey",
       "label_en": "Turkey",
       "label_vn": "Turkey",
-      "sub_en": "10 systems",
-      "sub_vn": "10 hệ thống",
+      "sub_en": "17 systems",
+      "sub_vn": "17 hệ thống",
       "terms": "turkey",
       "type": "country",
       "url": "country/turkey.html"
     },
     {
+      "id": "ukraine",
+      "label_en": "Ukraine",
+      "label_vn": "Ukraine",
+      "sub_en": "8 systems",
+      "sub_vn": "8 hệ thống",
+      "terms": "ukraine",
+      "type": "country",
+      "url": "country/ukraine.html"
+    },
+    {
       "id": "united-kingdom",
       "label_en": "United Kingdom",
       "label_vn": "United Kingdom",
-      "sub_en": "2 systems",
-      "sub_vn": "2 hệ thống",
+      "sub_en": "6 systems",
+      "sub_vn": "6 hệ thống",
       "terms": "united kingdom",
       "type": "country",
       "url": "country/united-kingdom.html"
@@ -1664,8 +2114,8 @@
       "id": "united-states",
       "label_en": "United States",
       "label_vn": "United States",
-      "sub_en": "108 systems",
-      "sub_vn": "108 hệ thống",
+      "sub_en": "113 systems",
+      "sub_vn": "113 hệ thống",
       "terms": "united states",
       "type": "country",
       "url": "country/united-states.html"
@@ -1684,8 +2134,8 @@
       "id": "agriculture",
       "label_en": "Agriculture",
       "label_vn": "Nông nghiệp",
-      "sub_en": "17 systems",
-      "sub_vn": "17 hệ thống",
+      "sub_en": "19 systems",
+      "sub_vn": "19 hệ thống",
       "terms": "agriculture nông nghiệp",
       "type": "segment",
       "url": "segment/agriculture.html"
@@ -1734,8 +2184,8 @@
       "id": "delivery",
       "label_en": "Delivery",
       "label_vn": "Giao hàng",
-      "sub_en": "17 systems",
-      "sub_vn": "17 hệ thống",
+      "sub_en": "24 systems",
+      "sub_vn": "24 hệ thống",
       "terms": "delivery giao hàng",
       "type": "segment",
       "url": "segment/delivery.html"
@@ -1744,8 +2194,8 @@
       "id": "enterprise",
       "label_en": "Enterprise",
       "label_vn": "Doanh nghiệp",
-      "sub_en": "34 systems",
-      "sub_vn": "34 hệ thống",
+      "sub_en": "38 systems",
+      "sub_vn": "38 hệ thống",
       "terms": "enterprise doanh nghiệp",
       "type": "segment",
       "url": "segment/enterprise.html"
@@ -1764,8 +2214,8 @@
       "id": "loitering-munition",
       "label_en": "Loitering munition",
       "label_vn": "Đạn tuần kích",
-      "sub_en": "11 systems",
-      "sub_vn": "11 hệ thống",
+      "sub_en": "21 systems",
+      "sub_vn": "21 hệ thống",
       "terms": "loitering munition đạn tuần kích",
       "type": "segment",
       "url": "segment/loitering-munition.html"
@@ -1774,8 +2224,8 @@
       "id": "military-tactical",
       "label_en": "Military · tactical",
       "label_vn": "Quân sự · chiến thuật",
-      "sub_en": "91 systems",
-      "sub_vn": "91 hệ thống",
+      "sub_en": "145 systems",
+      "sub_vn": "145 hệ thống",
       "terms": "military · tactical quân sự · chiến thuật",
       "type": "segment",
       "url": "segment/military-tactical.html"
@@ -1784,8 +2234,8 @@
       "id": "passenger-uam",
       "label_en": "Passenger air taxi",
       "label_vn": "Taxi bay",
-      "sub_en": "10 systems",
-      "sub_vn": "10 hệ thống",
+      "sub_en": "18 systems",
+      "sub_vn": "18 hệ thống",
       "terms": "passenger air taxi taxi bay",
       "type": "segment",
       "url": "segment/passenger-uam.html"
@@ -1794,8 +2244,8 @@
       "id": "public-safety",
       "label_en": "Public safety",
       "label_vn": "An toàn công cộng",
-      "sub_en": "8 systems",
-      "sub_vn": "8 hệ thống",
+      "sub_en": "9 systems",
+      "sub_vn": "9 hệ thống",
       "terms": "public safety an toàn công cộng",
       "type": "segment",
       "url": "segment/public-safety.html"
@@ -1804,8 +2254,8 @@
       "id": "surveying",
       "label_en": "Surveying & mapping",
       "label_vn": "Khảo sát · lập bản đồ",
-      "sub_en": "11 systems",
-      "sub_vn": "11 hệ thống",
+      "sub_en": "17 systems",
+      "sub_vn": "17 hệ thống",
       "terms": "surveying & mapping khảo sát · lập bản đồ",
       "type": "segment",
       "url": "segment/surveying.html"
@@ -1831,6 +2281,16 @@
       "url": "uav/uav-acecore-neo-neo.html"
     },
     {
+      "id": "uav-acecore-zoe-base",
+      "label_en": "Zoe",
+      "label_vn": "Zoe",
+      "sub_en": "Acecore",
+      "sub_vn": "Acecore",
+      "terms": "zoe acecore netherlands enterprise doanh nghiệp",
+      "type": "uav",
+      "url": "uav/uav-acecore-zoe-base.html"
+    },
+    {
       "id": "uav-acecore-zoe-zoe",
       "label_en": "Acecore Zoe",
       "label_vn": "Acecore Zoe",
@@ -1851,6 +2311,16 @@
       "url": "uav/uav-acsl-acsl-pf2-acsl-pf2.html"
     },
     {
+      "id": "uav-adani-defence-drishti-10-starliner-base",
+      "label_en": "Drishti 10 Starliner",
+      "label_vn": "Drishti 10 Starliner",
+      "sub_en": "Adani Defence",
+      "sub_vn": "Adani Defence",
+      "terms": "drishti 10 starliner adani defence india military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-adani-defence-drishti-10-starliner-base.html"
+    },
+    {
       "id": "uav-aeronautics-aerostar-aerostar",
       "label_en": "Aeronautics Aerostar",
       "label_vn": "Aeronautics Aerostar",
@@ -1859,6 +2329,16 @@
       "terms": "aeronautics aerostar aeronautics israel military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-aeronautics-aerostar-aerostar.html"
+    },
+    {
+      "id": "uav-aeronautics-orbiter-3-base",
+      "label_en": "Orbiter 3",
+      "label_vn": "Orbiter 3",
+      "sub_en": "Aeronautics",
+      "sub_vn": "Aeronautics",
+      "terms": "orbiter 3 aeronautics israel military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-aeronautics-orbiter-3-base.html"
     },
     {
       "id": "uav-aeronautics-orbiter-4-orbiter-4",
@@ -2021,6 +2501,16 @@
       "url": "uav/uav-ageagle-ebee-x-ebee-x.html"
     },
     {
+      "id": "uav-airbus-cityairbus-nextgen-base",
+      "label_en": "CityAirbus NextGen",
+      "label_vn": "CityAirbus NextGen",
+      "sub_en": "Airbus",
+      "sub_vn": "Airbus",
+      "terms": "cityairbus nextgen airbus france passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-airbus-cityairbus-nextgen-base.html"
+    },
+    {
       "id": "uav-airbus-cityairbus-nextgen-cityairbus-nextgen",
       "label_en": "Airbus CityAirbus NextGen",
       "label_vn": "Airbus CityAirbus NextGen",
@@ -2051,6 +2541,16 @@
       "url": "uav/uav-airbus-zephyr-zephyr.html"
     },
     {
+      "id": "uav-alpha-unmanned-systems-alpha-a900-base",
+      "label_en": "Alpha A900",
+      "label_vn": "Alpha A900",
+      "sub_en": "Alpha Unmanned Systems",
+      "sub_vn": "Alpha Unmanned Systems",
+      "terms": "alpha a900 alpha unmanned systems spain military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-alpha-unmanned-systems-alpha-a900-base.html"
+    },
+    {
       "id": "uav-amazon-prime-air-mk30-mk30",
       "label_en": "Amazon Prime Air MK30",
       "label_vn": "Amazon Prime Air MK30",
@@ -2059,6 +2559,16 @@
       "terms": "amazon prime air mk30 amazon prime air united states delivery giao hàng",
       "type": "uav",
       "url": "uav/uav-amazon-prime-air-mk30-mk30.html"
+    },
+    {
+      "id": "uav-amsl-aero-vertiia-base",
+      "label_en": "Vertiia",
+      "label_vn": "Vertiia",
+      "sub_en": "AMSL Aero",
+      "sub_vn": "AMSL Aero",
+      "terms": "vertiia amsl aero australia passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-amsl-aero-vertiia-base.html"
     },
     {
       "id": "uav-anduril-anvil-anvil",
@@ -2169,6 +2679,16 @@
       "terms": "asylon dronesentry asylon united states enterprise doanh nghiệp",
       "type": "uav",
       "url": "uav/uav-asylon-dronesentry-dronesentry.html"
+    },
+    {
+      "id": "uav-athlon-avia-a1-cm-furia-base",
+      "label_en": "A1-CM Furia",
+      "label_vn": "A1-CM Furia",
+      "sub_en": "Athlon Avia",
+      "sub_vn": "Athlon Avia",
+      "terms": "a1-cm furia athlon avia ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-athlon-avia-a1-cm-furia-base.html"
     },
     {
       "id": "uav-autel-evo-max-4t-v2",
@@ -2311,6 +2831,16 @@
       "url": "uav/uav-autel-robotics-titan-titan.html"
     },
     {
+      "id": "uav-autoflight-prosperity-i-base",
+      "label_en": "Prosperity I",
+      "label_vn": "Prosperity I",
+      "sub_en": "AutoFlight",
+      "sub_vn": "AutoFlight",
+      "terms": "prosperity i autoflight china passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-autoflight-prosperity-i-base.html"
+    },
+    {
       "id": "uav-autoflight-prosperity-i-prosperity-i",
       "label_en": "AutoFlight Prosperity I",
       "label_vn": "AutoFlight Prosperity I",
@@ -2351,6 +2881,46 @@
       "url": "uav/uav-avic-wing-loong-ii-wing-loong-ii.html"
     },
     {
+      "id": "uav-avilus-bussard-base",
+      "label_en": "Bussard",
+      "label_vn": "Bussard",
+      "sub_en": "AVILUS",
+      "sub_vn": "AVILUS",
+      "terms": "bussard avilus germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-avilus-bussard-base.html"
+    },
+    {
+      "id": "uav-avilus-grille-base",
+      "label_en": "Grille",
+      "label_vn": "Grille",
+      "sub_en": "AVILUS",
+      "sub_vn": "AVILUS",
+      "terms": "grille avilus germany delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-avilus-grille-base.html"
+    },
+    {
+      "id": "uav-avilus-wespe-base",
+      "label_en": "Wespe",
+      "label_vn": "Wespe",
+      "sub_en": "AVILUS",
+      "sub_vn": "AVILUS",
+      "terms": "wespe avilus germany delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-avilus-wespe-base.html"
+    },
+    {
+      "id": "uav-avy-aera-base",
+      "label_en": "Aera",
+      "label_vn": "Aera",
+      "sub_en": "Avy",
+      "sub_vn": "Avy",
+      "terms": "aera avy netherlands public safety an toàn công cộng",
+      "type": "uav",
+      "url": "uav/uav-avy-aera-base.html"
+    },
+    {
       "id": "uav-baykar-akinci-akinci",
       "label_en": "Baykar Akinci",
       "label_vn": "Baykar Akinci",
@@ -2359,6 +2929,16 @@
       "terms": "baykar akinci baykar turkey military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-baykar-akinci-akinci.html"
+    },
+    {
+      "id": "uav-baykar-bayraktar-akinci-base",
+      "label_en": "Bayraktar Akinci",
+      "label_vn": "Bayraktar Akinci",
+      "sub_en": "Baykar",
+      "sub_vn": "Baykar",
+      "terms": "bayraktar akinci baykar turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-baykar-bayraktar-akinci-base.html"
     },
     {
       "id": "uav-baykar-bayraktar-akinci-bayraktar-akinci",
@@ -2371,6 +2951,16 @@
       "url": "uav/uav-baykar-bayraktar-akinci-bayraktar-akinci.html"
     },
     {
+      "id": "uav-baykar-bayraktar-kizilelma-base",
+      "label_en": "Bayraktar Kizilelma",
+      "label_vn": "Bayraktar Kizilelma",
+      "sub_en": "Baykar",
+      "sub_vn": "Baykar",
+      "terms": "bayraktar kizilelma baykar turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-baykar-bayraktar-kizilelma-base.html"
+    },
+    {
       "id": "uav-baykar-bayraktar-tb2-bayraktar-tb2",
       "label_en": "Baykar Bayraktar TB2",
       "label_vn": "Baykar Bayraktar TB2",
@@ -2379,6 +2969,16 @@
       "terms": "baykar bayraktar tb2 baykar turkey military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-baykar-bayraktar-tb2-bayraktar-tb2.html"
+    },
+    {
+      "id": "uav-baykar-bayraktar-tb3-base",
+      "label_en": "Bayraktar TB3",
+      "label_vn": "Bayraktar TB3",
+      "sub_en": "Baykar",
+      "sub_vn": "Baykar",
+      "terms": "bayraktar tb3 baykar turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-baykar-bayraktar-tb3-base.html"
     },
     {
       "id": "uav-baykar-bayraktar-tb3-bayraktar-tb3",
@@ -2419,6 +3019,16 @@
       "terms": "betafpv pavo pico betafpv china fpv fpv",
       "type": "uav",
       "url": "uav/uav-betafpv-pavo-pico-pavo-pico.html"
+    },
+    {
+      "id": "uav-bluebird-aero-systems-spylite-base",
+      "label_en": "SpyLite",
+      "label_vn": "SpyLite",
+      "sub_en": "BlueBird Aero Systems",
+      "sub_vn": "BlueBird Aero Systems",
+      "terms": "spylite bluebird aero systems israel military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-bluebird-aero-systems-spylite-base.html"
     },
     {
       "id": "uav-boeing-insitu-integrator-integrator",
@@ -2509,6 +3119,16 @@
       "terms": "caig wing loong i caig china military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-caig-wing-loong-i-wing-loong-i.html"
+    },
+    {
+      "id": "uav-carbonix-volanti-base",
+      "label_en": "Volanti",
+      "label_vn": "Volanti",
+      "sub_en": "Carbonix",
+      "sub_vn": "Carbonix",
+      "terms": "volanti carbonix australia surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-carbonix-volanti-base.html"
     },
     {
       "id": "uav-casc-ch-3-ch-3",
@@ -2609,6 +3229,26 @@
       "terms": "delair ux11 delair france surveying & mapping khảo sát · lập bản đồ",
       "type": "uav",
       "url": "uav/uav-delair-ux11-ux11.html"
+    },
+    {
+      "id": "uav-deltaquad-deltaquad-evo-base",
+      "label_en": "DeltaQuad Evo",
+      "label_vn": "DeltaQuad Evo",
+      "sub_en": "DeltaQuad",
+      "sub_vn": "DeltaQuad",
+      "terms": "deltaquad evo deltaquad netherlands enterprise doanh nghiệp",
+      "type": "uav",
+      "url": "uav/uav-deltaquad-deltaquad-evo-base.html"
+    },
+    {
+      "id": "uav-deviro-leleka-100-base",
+      "label_en": "Leleka-100",
+      "label_vn": "Leleka-100",
+      "sub_en": "DeViRo",
+      "sub_vn": "DeViRo",
+      "terms": "leleka-100 deviro ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-deviro-leleka-100-base.html"
     },
     {
       "id": "uav-dji-agras-t10-agras-t10",
@@ -2991,6 +3631,16 @@
       "url": "uav/uav-dji-phantom-4-rtk-phantom-4-rtk.html"
     },
     {
+      "id": "uav-doosan-mobility-innovation-ds30w-base",
+      "label_en": "DS30W",
+      "label_vn": "DS30W",
+      "sub_en": "Doosan Mobility Innovation",
+      "sub_vn": "Doosan Mobility Innovation",
+      "terms": "ds30w doosan mobility innovation south korea surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-doosan-mobility-innovation-ds30w-base.html"
+    },
+    {
       "id": "uav-doroni-h1-x-h1-x",
       "label_en": "Doroni H1-X",
       "label_vn": "Doroni H1-X",
@@ -3001,6 +3651,16 @@
       "url": "uav/uav-doroni-h1-x-h1-x.html"
     },
     {
+      "id": "uav-drdo-tapas-bh-201-base",
+      "label_en": "TAPAS-BH-201",
+      "label_vn": "TAPAS-BH-201",
+      "sub_en": "DRDO",
+      "sub_vn": "DRDO",
+      "terms": "tapas-bh-201 drdo india military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-drdo-tapas-bh-201-base.html"
+    },
+    {
       "id": "uav-dronamics-black-swan-black-swan",
       "label_en": "Dronamics Black Swan",
       "label_vn": "Dronamics Black Swan",
@@ -3009,6 +3669,16 @@
       "terms": "dronamics black swan dronamics bulgaria delivery giao hàng",
       "type": "uav",
       "url": "uav/uav-dronamics-black-swan-black-swan.html"
+    },
+    {
+      "id": "uav-dufour-aerospace-aero-200-base",
+      "label_en": "Aero-200",
+      "label_vn": "Aero-200",
+      "sub_en": "Dufour Aerospace",
+      "sub_vn": "Dufour Aerospace",
+      "terms": "aero-200 dufour aerospace switzerland delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-dufour-aerospace-aero-200-base.html"
     },
     {
       "id": "uav-easy-aerial-falcon-falcon",
@@ -3091,6 +3761,16 @@
       "url": "uav/uav-elbit-hermes-900-kochav.html"
     },
     {
+      "id": "uav-elbit-systems-hermes-450-base",
+      "label_en": "Hermes 450",
+      "label_vn": "Hermes 450",
+      "sub_en": "Elbit Systems",
+      "sub_vn": "Elbit Systems",
+      "terms": "hermes 450 elbit systems israel military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-elbit-systems-hermes-450-base.html"
+    },
+    {
       "id": "uav-elbit-systems-hermes-450-hermes-450",
       "label_en": "Elbit Systems Hermes 450",
       "label_vn": "Elbit Systems Hermes 450",
@@ -3099,6 +3779,16 @@
       "terms": "elbit systems hermes 450 elbit systems israel military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-elbit-systems-hermes-450-hermes-450.html"
+    },
+    {
+      "id": "uav-elbit-systems-hermes-900-base",
+      "label_en": "Hermes 900",
+      "label_vn": "Hermes 900",
+      "sub_en": "Elbit Systems",
+      "sub_vn": "Elbit Systems",
+      "terms": "hermes 900 elbit systems israel military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-elbit-systems-hermes-900-base.html"
     },
     {
       "id": "uav-elbit-systems-skylark-3-skylark-3",
@@ -3121,6 +3811,16 @@
       "url": "uav/uav-elbit-systems-skylark-skylark.html"
     },
     {
+      "id": "uav-elbit-systems-skystriker-base",
+      "label_en": "SkyStriker",
+      "label_vn": "SkyStriker",
+      "sub_en": "Elbit Systems",
+      "sub_vn": "Elbit Systems",
+      "terms": "skystriker elbit systems israel loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-elbit-systems-skystriker-base.html"
+    },
+    {
       "id": "uav-elroy-air-chaparral-chaparral",
       "label_en": "Elroy Air Chaparral",
       "label_vn": "Elroy Air Chaparral",
@@ -3129,6 +3829,46 @@
       "terms": "elroy air chaparral elroy air united states delivery giao hàng",
       "type": "uav",
       "url": "uav/uav-elroy-air-chaparral-chaparral.html"
+    },
+    {
+      "id": "uav-emt-penzberg-aladin-base",
+      "label_en": "Aladin",
+      "label_vn": "Aladin",
+      "sub_en": "EMT Penzberg",
+      "sub_vn": "EMT Penzberg",
+      "terms": "aladin emt penzberg germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-emt-penzberg-aladin-base.html"
+    },
+    {
+      "id": "uav-emt-penzberg-fancopter-base",
+      "label_en": "Fancopter",
+      "label_vn": "Fancopter",
+      "sub_en": "EMT Penzberg",
+      "sub_vn": "EMT Penzberg",
+      "terms": "fancopter emt penzberg germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-emt-penzberg-fancopter-base.html"
+    },
+    {
+      "id": "uav-emt-penzberg-luna-x-2000-base",
+      "label_en": "Luna X-2000",
+      "label_vn": "Luna X-2000",
+      "sub_en": "EMT Penzberg",
+      "sub_vn": "EMT Penzberg",
+      "terms": "luna x-2000 emt penzberg germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-emt-penzberg-luna-x-2000-base.html"
+    },
+    {
+      "id": "uav-enics-eleron-3-base",
+      "label_en": "Eleron-3",
+      "label_vn": "Eleron-3",
+      "sub_en": "ENICS",
+      "sub_vn": "ENICS",
+      "terms": "eleron-3 enics russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-enics-eleron-3-base.html"
     },
     {
       "id": "uav-enics-eleron-3-eleron-3",
@@ -3169,6 +3909,16 @@
       "terms": "flock safety aerodome flock safety united states public safety an toàn công cộng",
       "type": "uav",
       "url": "uav/uav-flock-safety-aerodome-aerodome.html"
+    },
+    {
+      "id": "uav-flyability-elios-3-base",
+      "label_en": "Elios 3",
+      "label_vn": "Elios 3",
+      "sub_en": "Flyability",
+      "sub_vn": "Flyability",
+      "terms": "elios 3 flyability switzerland enterprise doanh nghiệp",
+      "type": "uav",
+      "url": "uav/uav-flyability-elios-3-base.html"
     },
     {
       "id": "uav-flyability-elios-3-elios-3",
@@ -3249,6 +3999,16 @@
       "terms": "freefly astro freefly systems united states defense · government quốc phòng · chính phủ",
       "type": "uav",
       "url": "uav/uav-freefly-systems-astro-astro.html"
+    },
+    {
+      "id": "uav-garuda-aerospace-agri-kisan-drone-base",
+      "label_en": "Agri Kisan Drone",
+      "label_vn": "Agri Kisan Drone",
+      "sub_en": "Garuda Aerospace",
+      "sub_vn": "Garuda Aerospace",
+      "terms": "agri kisan drone garuda aerospace india agriculture nông nghiệp",
+      "type": "uav",
+      "url": "uav/uav-garuda-aerospace-agri-kisan-drone-base.html"
     },
     {
       "id": "uav-general-atomics-gray-eagle-gray-eagle",
@@ -3341,6 +4101,36 @@
       "url": "uav/uav-geprc-mark5-mark5.html"
     },
     {
+      "id": "uav-germandrones-songbird-100-base",
+      "label_en": "Songbird 100",
+      "label_vn": "Songbird 100",
+      "sub_en": "Germandrones",
+      "sub_vn": "Germandrones",
+      "terms": "songbird 100 germandrones germany surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-germandrones-songbird-100-base.html"
+    },
+    {
+      "id": "uav-germandrones-songbird-150-base",
+      "label_en": "Songbird 150",
+      "label_vn": "Songbird 150",
+      "sub_en": "Germandrones",
+      "sub_vn": "Germandrones",
+      "terms": "songbird 150 germandrones germany surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-germandrones-songbird-150-base.html"
+    },
+    {
+      "id": "uav-germandrones-songbird-60-base",
+      "label_en": "Songbird 60",
+      "label_vn": "Songbird 60",
+      "sub_en": "Germandrones",
+      "sub_vn": "Germandrones",
+      "terms": "songbird 60 germandrones germany surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-germandrones-songbird-60-base.html"
+    },
+    {
       "id": "uav-guardian-agriculture-sc1-sc1",
       "label_en": "Guardian Agriculture SC1",
       "label_vn": "Guardian Agriculture SC1",
@@ -3349,6 +4139,16 @@
       "terms": "guardian agriculture sc1 guardian agriculture united states agriculture nông nghiệp",
       "type": "uav",
       "url": "uav/uav-guardian-agriculture-sc1-sc1.html"
+    },
+    {
+      "id": "uav-helsing-hx-2-base",
+      "label_en": "HX-2",
+      "label_vn": "HX-2",
+      "sub_en": "Helsing",
+      "sub_vn": "Helsing",
+      "terms": "hx-2 helsing germany loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-helsing-hx-2-base.html"
     },
     {
       "id": "uav-hesa-ababil-3-ababil-3",
@@ -3361,6 +4161,16 @@
       "url": "uav/uav-hesa-ababil-3-ababil-3.html"
     },
     {
+      "id": "uav-hesa-fotros-base",
+      "label_en": "Fotros",
+      "label_vn": "Fotros",
+      "sub_en": "HESA",
+      "sub_vn": "HESA",
+      "terms": "fotros hesa iran military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-hesa-fotros-base.html"
+    },
+    {
       "id": "uav-hesa-kaman-22-kaman-22",
       "label_en": "HESA Kaman-22",
       "label_vn": "HESA Kaman-22",
@@ -3369,6 +4179,16 @@
       "terms": "hesa kaman-22 hesa iran military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-hesa-kaman-22-kaman-22.html"
+    },
+    {
+      "id": "uav-hesa-karrar-base",
+      "label_en": "Karrar",
+      "label_vn": "Karrar",
+      "sub_en": "HESA",
+      "sub_vn": "HESA",
+      "terms": "karrar hesa iran military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-hesa-karrar-base.html"
     },
     {
       "id": "uav-hesa-karrar-karrar",
@@ -3381,6 +4201,16 @@
       "url": "uav/uav-hesa-karrar-karrar.html"
     },
     {
+      "id": "uav-hesa-shahed-129-base",
+      "label_en": "Shahed 129",
+      "label_vn": "Shahed 129",
+      "sub_en": "HESA",
+      "sub_vn": "HESA",
+      "terms": "shahed 129 hesa iran military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-hesa-shahed-129-base.html"
+    },
+    {
       "id": "uav-hesa-shahed-129-shahed-129",
       "label_en": "HESA Shahed-129",
       "label_vn": "HESA Shahed-129",
@@ -3389,6 +4219,16 @@
       "terms": "hesa shahed-129 hesa iran military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-hesa-shahed-129-shahed-129.html"
+    },
+    {
+      "id": "uav-hesa-shahed-136-base",
+      "label_en": "Shahed 136",
+      "label_vn": "Shahed 136",
+      "sub_en": "HESA",
+      "sub_vn": "HESA",
+      "terms": "shahed 136 hesa iran loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-hesa-shahed-136-base.html"
     },
     {
       "id": "uav-hesa-shahed-136-geran-2-shahed-136-geran-2",
@@ -3601,6 +4441,26 @@
       "url": "uav/uav-inspired-flight-if800-tomcat.html"
     },
     {
+      "id": "uav-israel-aerospace-industries-harop-base",
+      "label_en": "Harop",
+      "label_vn": "Harop",
+      "sub_en": "Israel Aerospace Industries",
+      "sub_vn": "Israel Aerospace Industries",
+      "terms": "harop israel aerospace industries israel loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-israel-aerospace-industries-harop-base.html"
+    },
+    {
+      "id": "uav-israel-aerospace-industries-harpy-base",
+      "label_en": "Harpy",
+      "label_vn": "Harpy",
+      "sub_en": "Israel Aerospace Industries",
+      "sub_vn": "Israel Aerospace Industries",
+      "terms": "harpy israel aerospace industries israel loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-israel-aerospace-industries-harpy-base.html"
+    },
+    {
       "id": "uav-israel-aerospace-industries-heron-heron",
       "label_en": "Israel Aerospace Industries Heron",
       "label_vn": "Israel Aerospace Industries Heron",
@@ -3609,6 +4469,16 @@
       "terms": "israel aerospace industries heron israel aerospace industries israel military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-israel-aerospace-industries-heron-heron.html"
+    },
+    {
+      "id": "uav-israel-aerospace-industries-heron-tp-base",
+      "label_en": "Heron TP",
+      "label_vn": "Heron TP",
+      "sub_en": "Israel Aerospace Industries",
+      "sub_vn": "Israel Aerospace Industries",
+      "terms": "heron tp israel aerospace industries israel military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-israel-aerospace-industries-heron-tp-base.html"
     },
     {
       "id": "uav-israel-aerospace-industries-heron-tp-heron-tp",
@@ -3629,6 +4499,16 @@
       "terms": "israel aerospace industries searcher mk iii israel aerospace industries israel military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-israel-aerospace-industries-searcher-mk-iii-searcher-mk-iii.html"
+    },
+    {
+      "id": "uav-jaunt-journey-base",
+      "label_en": "Journey",
+      "label_vn": "Journey",
+      "sub_en": "Jaunt",
+      "sub_vn": "Jaunt",
+      "terms": "journey jaunt united states passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-jaunt-journey-base.html"
     },
     {
       "id": "uav-jetson-one-one",
@@ -3671,6 +4551,26 @@
       "url": "uav/uav-jouav-cw-25-cw-25.html"
     },
     {
+      "id": "uav-kai-night-intruder-300-base",
+      "label_en": "Night Intruder 300",
+      "label_vn": "Night Intruder 300",
+      "sub_en": "KAI",
+      "sub_vn": "KAI",
+      "terms": "night intruder 300 kai south korea military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-kai-night-intruder-300-base.html"
+    },
+    {
+      "id": "uav-korean-air-kus-fs-base",
+      "label_en": "KUS-FS",
+      "label_vn": "KUS-FS",
+      "sub_en": "Korean Air",
+      "sub_vn": "Korean Air",
+      "terms": "kus-fs korean air south korea military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-korean-air-kus-fs-base.html"
+    },
+    {
       "id": "uav-korean-air-kus-fs-rq-105k",
       "label_en": "Korean Air KUS-FS",
       "label_vn": "Korean Air KUS-FS",
@@ -3689,6 +4589,26 @@
       "terms": "kratos xq-58 valkyrie kratos united states  ",
       "type": "uav",
       "url": "uav/uav-kratos-xq-58-valkyrie-xq-58-valkyrie.html"
+    },
+    {
+      "id": "uav-kronshtadt-helios-rld-base",
+      "label_en": "Helios-RLD",
+      "label_vn": "Helios-RLD",
+      "sub_en": "Kronshtadt",
+      "sub_vn": "Kronshtadt",
+      "terms": "helios-rld kronshtadt russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-kronshtadt-helios-rld-base.html"
+    },
+    {
+      "id": "uav-kronshtadt-orion-inokhodets-orion-e-base",
+      "label_en": "Orion (Inokhodets) Orion-E",
+      "label_vn": "Orion (Inokhodets) Orion-E",
+      "sub_en": "Kronshtadt",
+      "sub_vn": "Kronshtadt",
+      "terms": "orion (inokhodets) orion-e kronshtadt russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-kronshtadt-orion-inokhodets-orion-e-base.html"
     },
     {
       "id": "uav-kronshtadt-orion-orion",
@@ -3711,6 +4631,16 @@
       "url": "uav/uav-l3harris-fvr-90-fvr-90.html"
     },
     {
+      "id": "uav-leonardo-falco-evo-base",
+      "label_en": "Falco EVO",
+      "label_vn": "Falco EVO",
+      "sub_en": "Leonardo",
+      "sub_vn": "Leonardo",
+      "terms": "falco evo leonardo italy military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-leonardo-falco-evo-base.html"
+    },
+    {
       "id": "uav-leonardo-falco-xplorer-falco-xplorer",
       "label_en": "Leonardo Falco Xplorer",
       "label_vn": "Leonardo Falco Xplorer",
@@ -3719,6 +4649,16 @@
       "terms": "leonardo falco xplorer leonardo italy  ",
       "type": "uav",
       "url": "uav/uav-leonardo-falco-xplorer-falco-xplorer.html"
+    },
+    {
+      "id": "uav-lift-aircraft-hexa-base",
+      "label_en": "HEXA",
+      "label_vn": "HEXA",
+      "sub_en": "LIFT Aircraft",
+      "sub_vn": "LIFT Aircraft",
+      "terms": "hexa lift aircraft united states passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-lift-aircraft-hexa-base.html"
     },
     {
       "id": "uav-lilium-jet-jet",
@@ -3749,6 +4689,26 @@
       "terms": "lockheed martin stalker vxe lockheed martin united states military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-lockheed-martin-stalker-vxe-stalker-vxe.html"
+    },
+    {
+      "id": "uav-malloy-aeronautics-t-150-base",
+      "label_en": "T-150",
+      "label_vn": "T-150",
+      "sub_en": "Malloy Aeronautics",
+      "sub_vn": "Malloy Aeronautics",
+      "terms": "t-150 malloy aeronautics united kingdom delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-malloy-aeronautics-t-150-base.html"
+    },
+    {
+      "id": "uav-malloy-aeronautics-t-400-base",
+      "label_en": "T-400",
+      "label_vn": "T-400",
+      "sub_en": "Malloy Aeronautics",
+      "sub_vn": "Malloy Aeronautics",
+      "terms": "t-400 malloy aeronautics united kingdom delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-malloy-aeronautics-t-400-base.html"
     },
     {
       "id": "uav-manna-aero-air-delivery-air-delivery",
@@ -3851,6 +4811,26 @@
       "url": "uav/uav-neros-archer-archer.html"
     },
     {
+      "id": "uav-newspace-research-sheshnaag-150-base",
+      "label_en": "Sheshnaag-150",
+      "label_vn": "Sheshnaag-150",
+      "sub_en": "NewSpace Research",
+      "sub_vn": "NewSpace Research",
+      "terms": "sheshnaag-150 newspace research india military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-newspace-research-sheshnaag-150-base.html"
+    },
+    {
+      "id": "uav-nordic-unmanned-staaker-bg-200-base",
+      "label_en": "Staaker BG-200",
+      "label_vn": "Staaker BG-200",
+      "sub_en": "Nordic Unmanned",
+      "sub_vn": "Nordic Unmanned",
+      "terms": "staaker bg-200 nordic unmanned norway surveying & mapping khảo sát · lập bản đồ",
+      "type": "uav",
+      "url": "uav/uav-nordic-unmanned-staaker-bg-200-base.html"
+    },
+    {
       "id": "uav-northrop-grumman-mq-4c-triton-mq-4c-triton",
       "label_en": "Northrop Grumman MQ-4C Triton",
       "label_vn": "Northrop Grumman MQ-4C Triton",
@@ -3889,6 +4869,26 @@
       "terms": "northrop grumman x-47b northrop grumman united states military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-northrop-grumman-x-47b-x-47b.html"
+    },
+    {
+      "id": "uav-okb-luch-korsar-base",
+      "label_en": "Korsar",
+      "label_vn": "Korsar",
+      "sub_en": "OKB Luch",
+      "sub_vn": "OKB Luch",
+      "terms": "korsar okb luch russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-okb-luch-korsar-base.html"
+    },
+    {
+      "id": "uav-overair-butterfly-base",
+      "label_en": "Butterfly",
+      "label_vn": "Butterfly",
+      "sub_en": "Overair",
+      "sub_vn": "Overair",
+      "terms": "butterfly overair united states passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-overair-butterfly-base.html"
     },
     {
       "id": "uav-parrot-anafi-ai",
@@ -3931,6 +4931,16 @@
       "url": "uav/uav-performance-drone-works-c100-c100.html"
     },
     {
+      "id": "uav-pivotal-helix-base",
+      "label_en": "Helix",
+      "label_vn": "Helix",
+      "sub_en": "Pivotal",
+      "sub_vn": "Pivotal",
+      "terms": "helix pivotal united states passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-pivotal-helix-base.html"
+    },
+    {
       "id": "uav-pivotal-helix-helix",
       "label_en": "Pivotal Helix",
       "label_vn": "Pivotal Helix",
@@ -3971,6 +4981,16 @@
       "url": "uav/uav-powervision-poweregg-x-poweregg-x.html"
     },
     {
+      "id": "uav-prodrone-pd6b-aw-arm-base",
+      "label_en": "PD6B-AW-ARM",
+      "label_vn": "PD6B-AW-ARM",
+      "sub_en": "Prodrone",
+      "sub_vn": "Prodrone",
+      "terms": "pd6b-aw-arm prodrone japan enterprise doanh nghiệp",
+      "type": "uav",
+      "url": "uav/uav-prodrone-pd6b-aw-arm-base.html"
+    },
+    {
       "id": "uav-ptdi-elang-hitam-elang-hitam",
       "label_en": "PTDI Elang Hitam",
       "label_vn": "PTDI Elang Hitam",
@@ -4001,6 +5021,16 @@
       "url": "uav/uav-pyka-pelican-pelican.html"
     },
     {
+      "id": "uav-qods-aviation-mohajer-6-base",
+      "label_en": "Mohajer-6",
+      "label_vn": "Mohajer-6",
+      "sub_en": "Qods Aviation",
+      "sub_vn": "Qods Aviation",
+      "terms": "mohajer-6 qods aviation iran military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-qods-aviation-mohajer-6-base.html"
+    },
+    {
       "id": "uav-qods-aviation-mohajer-6-mohajer-6",
       "label_en": "Qods Aviation Mohajer-6",
       "label_vn": "Qods Aviation Mohajer-6",
@@ -4029,6 +5059,16 @@
       "terms": "qods mohajer-6 qods iran military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-qods-mohajer-6-mohajer-6.html"
+    },
+    {
+      "id": "uav-quantum-systems-reliant-base",
+      "label_en": "Reliant",
+      "label_vn": "Reliant",
+      "sub_en": "Quantum Systems",
+      "sub_vn": "Quantum Systems",
+      "terms": "reliant quantum systems germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-quantum-systems-reliant-base.html"
     },
     {
       "id": "uav-quantum-systems-reliant-reliant",
@@ -4069,6 +5109,16 @@
       "terms": "quantum systems vector ai quantum systems germany military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-quantum-vector-vector-ai.html"
+    },
+    {
+      "id": "uav-raphe-mphibr-mr10-ic-base",
+      "label_en": "mR10-IC",
+      "label_vn": "mR10-IC",
+      "sub_en": "Raphe mPhibr",
+      "sub_vn": "Raphe mPhibr",
+      "terms": "mr10-ic raphe mphibr india military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-raphe-mphibr-mr10-ic-base.html"
     },
     {
       "id": "uav-raytheon-coyote-block-2-coyote-block-2",
@@ -4121,6 +5171,16 @@
       "url": "uav/uav-red-cat-black-widow-black-widow.html"
     },
     {
+      "id": "uav-rheinmetall-luna-ng-base",
+      "label_en": "LUNA NG",
+      "label_vn": "LUNA NG",
+      "sub_en": "Rheinmetall",
+      "sub_vn": "Rheinmetall",
+      "terms": "luna ng rheinmetall germany military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-rheinmetall-luna-ng-base.html"
+    },
+    {
       "id": "uav-rv-connex-sky-scout-sky-scout",
       "label_en": "RV Connex Sky Scout",
       "label_vn": "RV Connex Sky Scout",
@@ -4139,6 +5199,16 @@
       "terms": "sabrewing rhaegal sabrewing united states delivery giao hàng",
       "type": "uav",
       "url": "uav/uav-sabrewing-rhaegal-rhaegal.html"
+    },
+    {
+      "id": "uav-safran-patroller-base",
+      "label_en": "Patroller",
+      "label_vn": "Patroller",
+      "sub_en": "Safran",
+      "sub_vn": "Safran",
+      "terms": "patroller safran france military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-safran-patroller-base.html"
     },
     {
       "id": "uav-safran-patroller-patroller",
@@ -4191,6 +5261,16 @@
       "url": "uav/uav-shield-ai-v-bat-v-bat.html"
     },
     {
+      "id": "uav-sky-watch-rq-35-heidrun-base",
+      "label_en": "RQ-35 Heidrun",
+      "label_vn": "RQ-35 Heidrun",
+      "sub_en": "Sky-Watch",
+      "sub_vn": "Sky-Watch",
+      "terms": "rq-35 heidrun sky-watch denmark military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-sky-watch-rq-35-heidrun-base.html"
+    },
+    {
       "id": "uav-skydio-skydio-2-plus-skydio-2-plus",
       "label_en": "Skydio Skydio 2 Plus",
       "label_vn": "Skydio Skydio 2 Plus",
@@ -4231,6 +5311,16 @@
       "url": "uav/uav-skydio-x2d-x2d.html"
     },
     {
+      "id": "uav-skyeton-raybird-3-base",
+      "label_en": "Raybird-3",
+      "label_vn": "Raybird-3",
+      "sub_en": "Skyeton",
+      "sub_vn": "Skyeton",
+      "terms": "raybird-3 skyeton ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-skyeton-raybird-3-base.html"
+    },
+    {
       "id": "uav-skyfront-perimeter-8-perimeter-8",
       "label_en": "Skyfront Perimeter 8",
       "label_vn": "Skyfront Perimeter 8",
@@ -4249,6 +5339,16 @@
       "terms": "sony airpeak s1 sony japan cinema điện ảnh",
       "type": "uav",
       "url": "uav/uav-sony-airpeak-s1-s1.html"
+    },
+    {
+      "id": "uav-special-technology-center-orlan-10-base",
+      "label_en": "Orlan-10",
+      "label_vn": "Orlan-10",
+      "sub_en": "Special Technology Center",
+      "sub_vn": "Special Technology Center",
+      "terms": "orlan-10 special technology center russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-special-technology-center-orlan-10-base.html"
     },
     {
       "id": "uav-special-technology-center-orlan-10-orlan-10",
@@ -4271,6 +5371,16 @@
       "url": "uav/uav-st-engineering-skyblade-360-skyblade-360.html"
     },
     {
+      "id": "uav-stark-defence-virtus-owe-v-base",
+      "label_en": "Virtus (OWE-V)",
+      "label_vn": "Virtus (OWE-V)",
+      "sub_en": "STARK Defence",
+      "sub_vn": "STARK Defence",
+      "terms": "virtus (owe-v) stark defence germany loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-stark-defence-virtus-owe-v-base.html"
+    },
+    {
       "id": "uav-stm-alpagu-alpagu",
       "label_en": "STM Alpagu",
       "label_vn": "STM Alpagu",
@@ -4279,6 +5389,16 @@
       "terms": "stm alpagu stm turkey loitering munition đạn tuần kích",
       "type": "uav",
       "url": "uav/uav-stm-alpagu-alpagu.html"
+    },
+    {
+      "id": "uav-stm-kargu-base",
+      "label_en": "Kargu",
+      "label_vn": "Kargu",
+      "sub_en": "STM",
+      "sub_vn": "STM",
+      "terms": "kargu stm turkey loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-stm-kargu-base.html"
     },
     {
       "id": "uav-stm-kargu-kargu",
@@ -4311,6 +5431,36 @@
       "url": "uav/uav-supernal-s-a2-s-a2.html"
     },
     {
+      "id": "uav-survey-copter-aliaca-er-base",
+      "label_en": "Aliaca ER",
+      "label_vn": "Aliaca ER",
+      "sub_en": "Survey Copter",
+      "sub_vn": "Survey Copter",
+      "terms": "aliaca er survey copter france military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-survey-copter-aliaca-er-base.html"
+    },
+    {
+      "id": "uav-survey-copter-aliaca-evo-base",
+      "label_en": "Aliaca Evo",
+      "label_vn": "Aliaca Evo",
+      "sub_en": "Survey Copter",
+      "sub_vn": "Survey Copter",
+      "terms": "aliaca evo survey copter france military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-survey-copter-aliaca-evo-base.html"
+    },
+    {
+      "id": "uav-survey-copter-dvf-2000-er-base",
+      "label_en": "DVF 2000 ER",
+      "label_vn": "DVF 2000 ER",
+      "sub_en": "Survey Copter",
+      "sub_vn": "Survey Copter",
+      "terms": "dvf 2000 er survey copter france military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-survey-copter-dvf-2000-er-base.html"
+    },
+    {
       "id": "uav-swoop-aero-kite-kite",
       "label_en": "Swoop Aero Kite",
       "label_vn": "Swoop Aero Kite",
@@ -4319,6 +5469,26 @@
       "terms": "swoop aero kite swoop aero australia delivery giao hàng",
       "type": "uav",
       "url": "uav/uav-swoop-aero-kite-kite.html"
+    },
+    {
+      "id": "uav-sypaq-corvo-ppds-base",
+      "label_en": "Corvo PPDS",
+      "label_vn": "Corvo PPDS",
+      "sub_en": "SYPAQ",
+      "sub_vn": "SYPAQ",
+      "terms": "corvo ppds sypaq australia delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-sypaq-corvo-ppds-base.html"
+    },
+    {
+      "id": "uav-sypaq-corvo-x-base",
+      "label_en": "Corvo X",
+      "label_vn": "Corvo X",
+      "sub_en": "SYPAQ",
+      "sub_vn": "SYPAQ",
+      "terms": "corvo x sypaq australia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-sypaq-corvo-x-base.html"
     },
     {
       "id": "uav-tai-aksungur-aksungur",
@@ -4331,6 +5501,16 @@
       "url": "uav/uav-tai-aksungur-aksungur.html"
     },
     {
+      "id": "uav-tai-aksungur-base",
+      "label_en": "Aksungur",
+      "label_vn": "Aksungur",
+      "sub_en": "TAI",
+      "sub_vn": "TAI",
+      "terms": "aksungur tai turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-tai-aksungur-base.html"
+    },
+    {
       "id": "uav-tai-anka-3-anka-3",
       "label_en": "TAI Anka-3",
       "label_vn": "TAI Anka-3",
@@ -4339,6 +5519,16 @@
       "terms": "tai anka-3 tai turkey military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-tai-anka-3-anka-3.html"
+    },
+    {
+      "id": "uav-tai-anka-3-base",
+      "label_en": "Anka-3",
+      "label_vn": "Anka-3",
+      "sub_en": "TAI",
+      "sub_vn": "TAI",
+      "terms": "anka-3 tai turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-tai-anka-3-base.html"
     },
     {
       "id": "uav-tai-anka-anka",
@@ -4379,6 +5569,26 @@
       "terms": "teal golden eagle teal united states public safety an toàn công cộng",
       "type": "uav",
       "url": "uav/uav-teal-golden-eagle-golden-eagle.html"
+    },
+    {
+      "id": "uav-tekever-ar3-evo-base",
+      "label_en": "AR3 EVO",
+      "label_vn": "AR3 EVO",
+      "sub_en": "Tekever",
+      "sub_vn": "Tekever",
+      "terms": "ar3 evo tekever portugal military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-tekever-ar3-evo-base.html"
+    },
+    {
+      "id": "uav-tekever-ar5-base",
+      "label_en": "AR5",
+      "label_vn": "AR5",
+      "sub_en": "Tekever",
+      "sub_vn": "Tekever",
+      "terms": "ar5 tekever portugal military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-tekever-ar5-base.html"
     },
     {
       "id": "uav-teledyne-flir-black-hornet-4-black-hornet-4",
@@ -4441,6 +5651,16 @@
       "url": "uav/uav-textron-systems-aerosonde-aerosonde.html"
     },
     {
+      "id": "uav-thales-fulmar-x-base",
+      "label_en": "Fulmar X",
+      "label_vn": "Fulmar X",
+      "sub_en": "Thales",
+      "sub_vn": "Thales",
+      "terms": "fulmar x thales spain military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-thales-fulmar-x-base.html"
+    },
+    {
       "id": "uav-thales-spy-ranger-spy-ranger",
       "label_en": "Thales Spy Ranger",
       "label_vn": "Thales Spy Ranger",
@@ -4449,6 +5669,16 @@
       "terms": "thales spy ranger thales france military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-thales-spy-ranger-spy-ranger.html"
+    },
+    {
+      "id": "uav-thales-watchkeeper-wk450-base",
+      "label_en": "Watchkeeper WK450",
+      "label_vn": "Watchkeeper WK450",
+      "sub_en": "Thales",
+      "sub_vn": "Thales",
+      "terms": "watchkeeper wk450 thales united kingdom military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-thales-watchkeeper-wk450-base.html"
     },
     {
       "id": "uav-threod-systems-eos-c-eos-c",
@@ -4471,6 +5701,56 @@
       "url": "uav/uav-topxgun-fp600-fp600.html"
     },
     {
+      "id": "uav-ua-dynamics-punisher-base",
+      "label_en": "Punisher",
+      "label_vn": "Punisher",
+      "sub_en": "UA Dynamics",
+      "sub_vn": "UA Dynamics",
+      "terms": "punisher ua dynamics ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-ua-dynamics-punisher-base.html"
+    },
+    {
+      "id": "uav-ukrjet-uj-22-airborne-base",
+      "label_en": "UJ-22 Airborne",
+      "label_vn": "UJ-22 Airborne",
+      "sub_en": "Ukrjet",
+      "sub_vn": "Ukrjet",
+      "terms": "uj-22 airborne ukrjet ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-ukrjet-uj-22-airborne-base.html"
+    },
+    {
+      "id": "uav-ukrspecsystems-pd-1-base",
+      "label_en": "PD-1",
+      "label_vn": "PD-1",
+      "sub_en": "UkrSpecSystems",
+      "sub_vn": "UkrSpecSystems",
+      "terms": "pd-1 ukrspecsystems ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-ukrspecsystems-pd-1-base.html"
+    },
+    {
+      "id": "uav-ukrspecsystems-pd-2-base",
+      "label_en": "PD-2",
+      "label_vn": "PD-2",
+      "sub_en": "UkrSpecSystems",
+      "sub_vn": "UkrSpecSystems",
+      "terms": "pd-2 ukrspecsystems ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-ukrspecsystems-pd-2-base.html"
+    },
+    {
+      "id": "uav-ukrspecsystems-shark-base",
+      "label_en": "SHARK",
+      "label_vn": "SHARK",
+      "sub_en": "UkrSpecSystems",
+      "sub_vn": "UkrSpecSystems",
+      "terms": "shark ukrspecsystems ukraine military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-ukrspecsystems-shark-base.html"
+    },
+    {
       "id": "uav-ums-skeldar-v-200-v-200",
       "label_en": "UMS Skeldar V-200",
       "label_vn": "UMS Skeldar V-200",
@@ -4479,6 +5759,16 @@
       "terms": "ums skeldar v-200 ums skeldar sweden military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-ums-skeldar-v-200-v-200.html"
+    },
+    {
+      "id": "uav-uvision-hero-120-base",
+      "label_en": "Hero-120",
+      "label_vn": "Hero-120",
+      "sub_en": "UVision",
+      "sub_vn": "UVision",
+      "terms": "hero-120 uvision israel loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-uvision-hero-120-base.html"
     },
     {
       "id": "uav-uvision-hero-120-hero-120",
@@ -4501,6 +5791,16 @@
       "url": "uav/uav-uvision-hero-30-hero-30.html"
     },
     {
+      "id": "uav-uzga-forpost-r-base",
+      "label_en": "Forpost-R",
+      "label_vn": "Forpost-R",
+      "sub_en": "UZGA",
+      "sub_vn": "UZGA",
+      "terms": "forpost-r uzga russia military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-uzga-forpost-r-base.html"
+    },
+    {
       "id": "uav-uzga-forpost-r-forpost-r",
       "label_en": "UZGA Forpost-R",
       "label_vn": "UZGA Forpost-R",
@@ -4521,6 +5821,16 @@
       "url": "uav/uav-vantage-robotics-vesper-vesper.html"
     },
     {
+      "id": "uav-vertical-aerospace-vx4-base",
+      "label_en": "VX4",
+      "label_vn": "VX4",
+      "sub_en": "Vertical Aerospace",
+      "sub_vn": "Vertical Aerospace",
+      "terms": "vx4 vertical aerospace united kingdom passenger air taxi taxi bay",
+      "type": "uav",
+      "url": "uav/uav-vertical-aerospace-vx4-base.html"
+    },
+    {
       "id": "uav-vertical-aerospace-vx4-vx4",
       "label_en": "Vertical Aerospace VX4",
       "label_vn": "Vertical Aerospace VX4",
@@ -4529,6 +5839,16 @@
       "terms": "vertical aerospace vx4 vertical aerospace united kingdom passenger air taxi taxi bay",
       "type": "uav",
       "url": "uav/uav-vertical-aerospace-vx4-vx4.html"
+    },
+    {
+      "id": "uav-vestel-savunma-karayel-base",
+      "label_en": "Karayel",
+      "label_vn": "Karayel",
+      "sub_en": "Vestel Savunma",
+      "sub_vn": "Vestel Savunma",
+      "terms": "karayel vestel savunma turkey military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-vestel-savunma-karayel-base.html"
     },
     {
       "id": "uav-viettel-vu-male-vu-male",
@@ -4549,6 +5869,16 @@
       "terms": "viettel vu-r70 viettel vietnam military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-viettel-vu-r70-vu-r70.html"
+    },
+    {
+      "id": "uav-volansi-voly-m20-base",
+      "label_en": "VOLY M20",
+      "label_vn": "VOLY M20",
+      "sub_en": "Volansi",
+      "sub_vn": "Volansi",
+      "terms": "voly m20 volansi united states delivery giao hàng",
+      "type": "uav",
+      "url": "uav/uav-volansi-voly-m20-base.html"
     },
     {
       "id": "uav-volocopter-volocity-volocity",
@@ -4599,6 +5929,16 @@
       "terms": "watts innovations prism sky watts innovations united states  ",
       "type": "uav",
       "url": "uav/uav-watts-innovations-prism-sky-prism-sky.html"
+    },
+    {
+      "id": "uav-wb-group-flyeye-base",
+      "label_en": "FlyEye",
+      "label_vn": "FlyEye",
+      "sub_en": "WB Group",
+      "sub_vn": "WB Group",
+      "terms": "flyeye wb group poland military · tactical quân sự · chiến thuật",
+      "type": "uav",
+      "url": "uav/uav-wb-group-flyeye-base.html"
     },
     {
       "id": "uav-wb-group-warmate-warmate",
@@ -4721,6 +6061,16 @@
       "url": "uav/uav-xpeng-aeroht-x2-x2.html"
     },
     {
+      "id": "uav-yamaha-fazer-r-base",
+      "label_en": "FAZER R",
+      "label_vn": "FAZER R",
+      "sub_en": "Yamaha",
+      "sub_vn": "Yamaha",
+      "terms": "fazer r yamaha japan agriculture nông nghiệp",
+      "type": "uav",
+      "url": "uav/uav-yamaha-fazer-r-base.html"
+    },
+    {
       "id": "uav-yuneec-h520e-h520e",
       "label_en": "Yuneec H520E",
       "label_vn": "Yuneec H520E",
@@ -4769,6 +6119,26 @@
       "terms": "zala aero 421-16e zala aero russia military · tactical quân sự · chiến thuật",
       "type": "uav",
       "url": "uav/uav-zala-aero-421-16e-421-16e.html"
+    },
+    {
+      "id": "uav-zala-aero-kub-bla-base",
+      "label_en": "Kub-BLA",
+      "label_vn": "Kub-BLA",
+      "sub_en": "ZALA Aero",
+      "sub_vn": "ZALA Aero",
+      "terms": "kub-bla zala aero russia loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-zala-aero-kub-bla-base.html"
+    },
+    {
+      "id": "uav-zala-aero-lancet-3-base",
+      "label_en": "Lancet-3",
+      "label_vn": "Lancet-3",
+      "sub_en": "ZALA Aero",
+      "sub_vn": "ZALA Aero",
+      "terms": "lancet-3 zala aero russia loitering munition đạn tuần kích",
+      "type": "uav",
+      "url": "uav/uav-zala-aero-lancet-3-base.html"
     },
     {
       "id": "uav-zala-aero-lancet-3-lancet-3",

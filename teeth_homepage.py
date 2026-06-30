@@ -30,10 +30,14 @@ def main():
     rc, out = run()
     results.append(("clean control", rc == 0, rc))
 
-    # (a) FIGURE_DRIFT — the classic 13-vs-28: swap the live country stat (ALL occurrences:
-    # the count now appears in both the masthead and the footer registry strip)
-    drift = txt.replace(">28<", ">13<")
-    case("a · figure drift (28->13)", drift, "HP_FIGURE_DRIFT")
+    # (a) FIGURE_DRIFT — swap the live country stat (count appears in masthead + footer strip;
+    # derive it from site-data so the tooth survives registry growth, no hardcoded number)
+    import json as _json
+    _cc = str(len({(e.get("manufacturer_country") or {}).get("value")
+                   for e in _json.loads((ROOT / "out" / "site-data.json").read_text())["entities"]
+                   if e.get("entity_type") == "uav" and (e.get("manufacturer_country") or {}).get("value")}))
+    drift = txt.replace(">" + _cc + "<", ">13<")
+    case("a · figure drift (countries->13)", drift, "HP_FIGURE_DRIFT")
 
     # (b) DANGLING — point a card at a ghost slug
     dang = re.sub(r'href="news/[a-z0-9-]+\.html"', 'href="news/zzz-ghost-xyz.html"', txt, count=1)

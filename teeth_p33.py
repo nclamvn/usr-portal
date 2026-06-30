@@ -29,9 +29,12 @@ note = (SRC / "bai-01-data-note-phuong-phap.md").read_text()
 report = (SRC / "bai-04-data-report-phan-bo-hang.md").read_text()
 results = []
 
-# (a) figure drift — break the 302 in body
+# (a) figure drift — break the live total_uav figure in body (count, not a hardcoded number)
+import json as _json
+_total = str(sum(1 for e in _json.loads((ROOT / "out" / "site-data.json").read_text())["entities"]
+                 if e.get("entity_type") == "uav"))
 fm, body = split(note)
-rc, out = run(assemble(fm, body.replace("302", "999")))
+rc, out = run(assemble(fm, body.replace(_total, "999")))
 results.append(("a · figure drift", rc == 2 and "CONTENT_FIGURE_DRIFT" in out, rc))
 
 # (b) opinion without human_author

@@ -30,4 +30,4 @@ Hai quy chuẩn không đồng nhất. Blue UAS là một danh sách phê duyệ
 
 Với nhà sản xuất hướng tới khách hàng chính phủ, hai bộ tiêu chí này quyết định khả năng tiếp cận hợp đồng. Chúng cũng mở ra một hướng cạnh tranh dựa trên chuỗi cung ứng truy xuất được, song song với cạnh tranh về giá bán hoặc tính năng kỹ thuật.
 
-Trên 302 hệ thống mà USR theo dõi, 25 thiết bị được ghi nhận có trong danh sách Blue UAS và 28 thiết bị được mô tả tuân thủ NDAA. Phần còn lại chưa được kiểm chứng theo hai quy chuẩn này. Bản đăng ký đánh dấu nhóm chưa kiểm chứng là honest-null, nghĩa là hệ thống không suy diễn rằng chúng không đạt, mà chỉ ghi nhận rằng dữ liệu xác nhận hiện chưa có.
+Trên 394 hệ thống mà USR theo dõi, 25 thiết bị được ghi nhận có trong danh sách Blue UAS và 28 thiết bị được mô tả tuân thủ NDAA. Phần còn lại chưa được kiểm chứng theo hai quy chuẩn này. Bản đăng ký đánh dấu nhóm chưa kiểm chứng là honest-null, nghĩa là hệ thống không suy diễn rằng chúng không đạt, mà chỉ ghi nhận rằng dữ liệu xác nhận hiện chưa có.

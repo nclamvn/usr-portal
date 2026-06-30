@@ -18,7 +18,7 @@ sources:
 
 # Bản đăng ký USR đọc thế nào: phạm vi, phương pháp và những ô để trống
 
-Bản đăng ký Uncrewed Systems Review ghi nhận 302 hệ thống bay không người lái cùng 140 doanh nghiệp sản xuất, phân bố trên 28 quốc gia và 13 nhóm ứng dụng. Trước khi diễn giải bất kỳ con số nào trong tập dữ liệu này, người đọc cần nắm ba điều, gồm phạm vi của mẫu, nguyên tắc ghi nhận từng giá trị và cách hệ thống đánh dấu phần thông tin còn thiếu.
+Bản đăng ký Uncrewed Systems Review ghi nhận 394 hệ thống bay không người lái cùng 180 doanh nghiệp sản xuất, phân bố trên 33 quốc gia và 13 nhóm ứng dụng. Trước khi diễn giải bất kỳ con số nào trong tập dữ liệu này, người đọc cần nắm ba điều, gồm phạm vi của mẫu, nguyên tắc ghi nhận từng giá trị và cách hệ thống đánh dấu phần thông tin còn thiếu.
 
 Tập dữ liệu là một bản đăng ký được tuyển chọn, không phải một cuộc điều tra thị trường. Mỗi bản ghi tương ứng với một mẫu thiết bị đã công bố công khai, kèm thông số mà nhóm biên tập kiểm chứng được. Vì mẫu do nhóm chủ động thu thập, các tỷ lệ tính trên tập này phản ánh cấu trúc của chính bản đăng ký chứ không suy ra được thị phần của một quốc gia hay một hãng trên thị trường thực.
 
@@ -28,6 +28,6 @@ Mỗi giá trị có nguồn đi kèm một mức tin cậy. Mức A dành cho k
 
 Khi các nguồn ghi khác nhau về cùng một thuộc tính, hệ thống giữ lại toàn bộ phiên bản kèm xuất xứ thay vì chọn một bên. Địa chỉ trụ sở của DJI là một trường hợp như vậy, khi ba nguồn ghi ba địa chỉ khác nhau và cả ba cùng hiển thị để người đọc thấy rõ điểm chưa thống nhất.
 
-Trên toàn tập, các trường thông số kỹ thuật mới được điền khoảng 31 phần trăm. Trang tổng quan hiển thị tỷ lệ này theo từng trường, cho thấy rõ phần còn trống. Một bản đăng ký trung thực về giới hạn của mình có ích hơn một bảng số trông đầy đủ nhưng che giấu khoảng trống.
+Trên toàn tập, các trường thông số kỹ thuật mới được điền khoảng 32 phần trăm. Trang tổng quan hiển thị tỷ lệ này theo từng trường, cho thấy rõ phần còn trống. Một bản đăng ký trung thực về giới hạn của mình có ích hơn một bảng số trông đầy đủ nhưng che giấu khoảng trống.
 
-Vì những lý do trên, mọi biểu đồ phân bố trong USR nên được đọc kèm bối cảnh mẫu. Câu "Hoa Kỳ chiếm 108 trên 302 hệ thống" mô tả đúng bản đăng ký, song không đồng nghĩa với "Hoa Kỳ chiếm tỷ trọng tương ứng trên thị trường UAV toàn cầu". Khoảng cách giữa hai cách đọc này là điều người dùng cần giữ trong đầu suốt quá trình tra cứu.
+Vì những lý do trên, mọi biểu đồ phân bố trong USR nên được đọc kèm bối cảnh mẫu. Câu "Hoa Kỳ chiếm 113 trên 394 hệ thống" mô tả đúng bản đăng ký, song không đồng nghĩa với "Hoa Kỳ chiếm tỷ trọng tương ứng trên thị trường UAV toàn cầu". Khoảng cách giữa hai cách đọc này là điều người dùng cần giữ trong đầu suốt quá trình tra cứu.

@@ -28,8 +28,9 @@ def main():
     drift = re.sub(r'<circle class="dot [^>]*?/>', '', sig, count=1)
     run("GFX_FIGURE_DRIFT", html.replace(sig, drift), "GFX_FIGURE_DRIFT")
 
-    # (b) NULL_FAKED — giấu disclosure honest-null (xoá tổng '302' khỏi caption)
-    faked = sig.replace("302", "")
+    # (b) NULL_FAKED — giấu disclosure honest-null (xoá tổng live khỏi caption)
+    total = sum(1 for e in site["entities"] if e.get("entity_type") == "uav")
+    faked = sig.replace(str(total), "")
     run("GFX_NULL_FAKED", html.replace(sig, faked), "GFX_NULL_FAKED")
 
     # (c) THEME_LEAK — tiêm màu hardcode vào một chấm trong scatter SVG
