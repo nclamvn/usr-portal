@@ -319,6 +319,22 @@ def compare_preview(ents, labels):
                 cls = ' class="best"' if (best_v is not None and v == best_v) else ""
                 cells += f'<td{cls}>{_fmt(v)} {u}</td>' if u else f'<td{cls}>{_fmt(v)} {unit}</td>'
         body += f'<tr><td class="spec-label">{bilingual(en, vn)}</td>{cells}</tr>'
+    # mobile-only: stacked card per drone (same picks/ROWS; the table stays in the DOM for HP_NULL_FAKED)
+    cards = ""
+    for e in picks:
+        rh = ""
+        for key, en, vn, unit, _mb in ROWS:
+            v = (e.get(key) or {}).get("value")
+            if v is None:
+                val = f'<span class="cc-nv">{bilingual("not recorded", "chưa ghi nhận")}</span>'
+            elif key == "market_segment":
+                val = friendly("segment", v, labels)
+            else:
+                val = f'{_fmt(v)} {unit}'
+            rh += f'<div class="cc-row"><span class="cc-k">{bilingual(en, vn)}</span><span class="cc-v">{val}</span></div>'
+        mk, md = maker_model(e)
+        cards += (f'<div class="ccard"><div class="cc-nm">{esc(md)}</div>'
+                  f'<div class="cc-mk mono">{esc(mk)}</div>{rh}</div>')
     return (
         '<div class="compare-panel">'
         '<div class="compare-head"><div>'
@@ -326,6 +342,7 @@ def compare_preview(ents, labels):
         f'<p>{bilingual("Pick up to 4 systems to compare specs. Empty cells are data not yet recorded, never invented.", "Chọn tối đa 4 hệ thống để so thông số. Ô trống là dữ liệu chưa ghi nhận, không bịa.")}</p>'
         f'</div><a class="compare-cta" href="compare.html">{bilingual("Full compare", "So sánh đầy đủ")} →</a></div>'
         f'<table class="compare-table"><tr><th>{bilingual("Spec", "Thông số")}</th>{head}</tr>{body}</table>'
+        f'<div class="compare-cards">{cards}</div>'
         f'<div class="compare-foot mono"><span>{bilingual("Data from the USR registry · every cell has source + tier", "Dữ liệu từ bản đăng ký USR · mỗi ô có nguồn + tier")}</span></div>'
         '</div>')
 
@@ -433,6 +450,16 @@ CSS = """
   .compare-table td.best{color:var(--brass);font-weight:600}
   .compare-table td.nullv{color:var(--faint);font-style:italic}
   .compare-foot{border:1px solid var(--hair);border-top:none;padding:14px 18px;font-size:11px;color:var(--muted)}
+  /* mobile compare = stacked card per drone (hidden on desktop; shown at <=640) */
+  .compare-cards{display:none;border:1px solid var(--hair);border-top:none}
+  .ccard{padding:14px 16px;border-top:1px solid var(--hair)}
+  .ccard:first-child{border-top:none}
+  .cc-nm{font-family:var(--font-head);font-weight:600;font-size:16px;color:var(--ink);line-height:1.15}
+  .cc-mk{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass);margin:2px 0 9px}
+  .cc-row{display:flex;justify-content:space-between;gap:14px;padding:4px 0;font-size:13px;color:var(--ink)}
+  .cc-k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+  .cc-v{font-variant-numeric:tabular-nums;text-align:right}
+  .cc-nv{color:var(--faint);font-style:italic}
   /* trending (accent = brass, NOT inverted dark -> THEME_PURITY safe) */
   .trending{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hair)}
   .trend-card{padding:20px 16px 22px;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
@@ -503,6 +530,29 @@ CSS = """
     .trending{grid-template-columns:repeat(2,1fr)}
     .reports{grid-template-columns:repeat(2,1fr)}
     .mh-right{gap:18px}
+  }
+  /* phone tier — the head + every block stacks to one column, no horizontal overflow */
+  @media (max-width:640px){
+    .topbar-in{padding:8px 1.2rem;gap:12px}
+    .tb-co{display:none}
+    .hp-mast-in{padding:18px 1.2rem 16px;flex-direction:column;align-items:flex-start;gap:12px}
+    .mh-right{align-items:flex-start;text-align:left}
+    .mh-tag{max-width:100%}
+    .section-label{padding:28px 1.2rem 14px}
+    .hero-grid{padding:0 1.2rem}
+    .trending,.reports{grid-template-columns:1fr;margin:0 1.2rem}
+    .compare-panel{padding:0 1.2rem}
+    .compare-table{display:none}
+    .compare-cards{display:block}
+    .compare-head{padding:14px}
+    .sigwrap{padding:0 1.2rem}
+    .scat{grid-template-columns:38px 1fr;gap:7px}
+    .scat-xax,.scat-legend,.sig-cap{margin-left:45px}
+    .scat-tip{max-width:74vw;white-space:normal}
+    .hotnews{margin:0 1.2rem}
+    .hot-row{grid-template-columns:42px 1fr}
+    .hot-row .hdate{display:none}
+    .hot-row>div{padding:12px 14px}
   }
   @media (prefers-reduced-motion: reduce){
     .ticker{animation:none;padding-left:0}

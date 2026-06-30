@@ -475,6 +475,32 @@ async function main() {
       }
     } catch (e) { failures++; console.log("  FAIL  registry surface: " + e.message); }
 
+    // MOBILE (390px phone) — the phone-tier gate: NO horizontal overflow (scrollWidth <= innerWidth)
+    // + overlap-clean, on the key surfaces in both themes. Catches the "bố cục mobile vỡ" class of bug.
+    try {
+      await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 780, deviceScaleFactor: 2, mobile: true });
+      const mExpr = (theme) => `(async () => {
+        var h=document.documentElement; h.setAttribute('data-theme', ${JSON.stringify(theme)}); h.setAttribute('data-lang','vn');
+        document.querySelectorAll('.reveal,[data-draw]').forEach(function(e){e.classList.add('is-in');});
+        if (document.fonts && document.fonts.ready) await document.fonts.ready;
+        await new Promise(function(r){requestAnimationFrame(function(){requestAnimationFrame(r);});});
+        return { hits: USRBase.designerAudit(document).length, sw: h.scrollWidth, iw: window.innerWidth };
+      })()`;
+      for (const page of ["/index.html", "/reference.html", "/news.html"]) {
+        await send("Page.navigate", { url: BASE + page });
+        await sleep(900);
+        for (const theme of ["light", "dark"]) {
+          const r = await evalOnPage(send, mExpr(theme));
+          const noOverflow = r.sw <= r.iw + 2;
+          const ok = r.hits === 0 && noOverflow;
+          if (!ok) failures++;
+          console.log(`  ${ok ? "PASS" : "FAIL"}  ${page}  [mobile-390/${theme}]  overlaps=${r.hits}  ` +
+            `scrollW=${r.sw} innerW=${r.iw} ${noOverflow ? "no-overflow ✓" : "OVERFLOW ✗"}`);
+        }
+      }
+      await send("Emulation.clearDeviceMetricsOverride");
+    } catch (e) { failures++; console.log("  FAIL  mobile audit: " + e.message); }
+
     // TEETH: inject a deliberate overlap on index.html — must be caught.
     await send("Page.navigate", { url: BASE + "/index.html" });
     await sleep(1000);
