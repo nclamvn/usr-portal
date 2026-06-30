@@ -5,7 +5,7 @@ that is unverified or absent renders "—" (the registry draft value is NEVER sh
 is already null in site-data). Totals come from site-data.aggregates (CONSTRAINT 8),
 never hardcoded. Bilingual EN/VN, light/dark via the reconciled base.
 """
-import json, html, pathlib
+import json, html, pathlib, math
 from glyphs import glyph_svg
 from footer import footer
 from nav import nav
@@ -112,11 +112,55 @@ def row_dataset(e):
 PIP_SPECS = ["mtow_kg", "max_payload_kg", "endurance_min", "max_range_km",
              "max_link_km", "max_speed_ms", "service_ceiling_m"]
 
+# 3 spec columns rendered as micro-sparkbars (position of this system within the fleet's range).
+# (key, data-attr, EN label, VN label). Log-scaled like the scatter axes — a declared transform, not fabrication.
+SPARK_SPECS = [("mtow_kg", "mtow", "MTOW", "MTOW"),
+               ("max_range_km", "range", "Range", "Tầm bay"),
+               ("endurance_min", "endur", "Endurance", "Giờ bay")]
+TIER_RANK = {"A": "3", "B": "2", "C": "1"}
 
-def render_row(e, labels):
+
+def fleet_log_ranges(ents):
+    """Per spec, the (log min, log max) over REAL non-null positive values. Used to place each
+    sparkbar; null/absent values are NOT counted (they render as honest-null dashed rails)."""
+    rng = {}
+    for key, _, _, _ in SPARK_SPECS:
+        vals = [e[key].get("value") for e in ents]
+        vals = [v for v in vals if isinstance(v, (int, float)) and not isinstance(v, bool) and v > 0]
+        rng[key] = (math.log(min(vals)), math.log(max(vals))) if len(vals) >= 2 else None
+    return rng
+
+
+def row_tier(e):
+    """The strongest source tier across this entity's filled fields (A>B>C). None if nothing sourced.
+    Provenance-forward: a single letter that says how well-sourced the record is."""
+    best = None
+    for k in HEADER_FIELDS + SPEC_FIELDS:
+        fo = e.get(k)
+        t = fo.get("source_tier") if isinstance(fo, dict) else None
+        if t in ("A", "B", "C") and (best is None or t < best):
+            best = t
+    return best
+
+
+def spark_cell(e, key, rng):
+    """(html, raw_value_or_blank). Real value -> solid bar placed by log position in the fleet range
+    (min visible nub so the smallest real value is not mistaken for null). Null -> dashed rail."""
+    v = (e.get(key) or {}).get("value")
+    if v is None or isinstance(v, bool) or not isinstance(v, (int, float)) or v <= 0 or rng.get(key) is None:
+        return ('<span class="ri-spark null" aria-hidden="true"></span>', "")
+    lo, hi = rng[key]
+    pos = 0.0 if hi <= lo else (math.log(v) - lo) / (hi - lo)
+    pct = max(6, min(100, round(pos * 100)))
+    return (f'<span class="ri-spark" title="{esc(v)}"><i style="width:{pct}%"></i></span>', esc(v))
+
+
+def render_row(e, labels, rng):
     """A light INDEX row linking to its detail page — NOT the rich detail card (that lives in
-    build_detail). Keeps maker/model/country/segment/class + compliance chips + a 7-pip
-    record-fullness strip; carries data-* so client-side facet/search/sort works on rows."""
+    build_detail). A spec-analytics table row: maker/model + country/segment/class, three
+    log-placed spec sparkbars (MTOW/range/endurance), a record-fullness N/7 column and a
+    source-tier badge. Sparse specs render as honest-null dashed rails, never zero bars.
+    Carries data-* (incl. numeric sort keys) so client facet/search/sort works on rows."""
     maker, model = maker_model(e)
     country = e["manufacturer_country"].get("value") or "—"
     seg = friendly("segment", e["market_segment"].get("value"), labels)
@@ -127,19 +171,30 @@ def render_row(e, labels):
         flags += '<span class="chip" data-status="verified" data-audit="chip">Blue UAS</span>'
     if d["ndaa"]:
         flags += '<span class="chip" data-status="verified" data-audit="chip">NDAA</span>'
-    # record-fullness pips — filled iff that numeric spec has a value (honest-null at list scale)
     present = sum(1 for k in PIP_SPECS if e[k].get("value") is not None)
-    pips = "".join('<i class="on"></i>' if e[k].get("value") is not None else '<i></i>' for k in PIP_SPECS)
-    pip_strip = f'<span class="ri-pips" title="{present}/7 spec" aria-label="{present}/7 spec có số">{pips}</span>'
+    # three spec sparkbars + their raw values for the data-* sort keys (blank = honest-null, sorts last)
+    sparks, svals = [], {}
+    for key, attr, _, _ in SPARK_SPECS:
+        cell, raw = spark_cell(e, key, rng)
+        sparks.append(f'<span class="ri-col" data-c="{attr}">{cell}</span>')
+        svals[attr] = raw
+    cov_html = (f'<span class="ri-col ri-covcol"><span class="ri-cov" title="{present}/7 spec" '
+                f'aria-label="{present}/7 spec có số">{present}<span class="ri-cov-d">/7</span></span></span>')
+    tier = row_tier(e)
+    tier_html = (f'<span class="ri-tier" data-t="{tier}">{tier}</span>' if tier
+                 else '<span class="ri-tier-null" aria-hidden="true">—</span>')
+    tier_col = f'<span class="ri-col ri-tiercol">{tier_html}{flags}</span>'
     return (
-        f'<a class="row-item reveal" href="uav/{esc(e["slug"])}.html" data-audit="row" '
+        f'<a class="row-item ri-spec reveal" href="uav/{esc(e["slug"])}.html" data-audit="row" '
         f'data-name="{esc(d["name"])}" data-segment="{esc(d["segment"])}" data-klass="{esc(d["klass"])}" '
-        f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}">'
+        f'data-country="{esc(d["country"])}" data-blue="{d["blue"]}" data-ndaa="{d["ndaa"]}" '
+        f'data-mtow="{svals["mtow"]}" data-range="{svals["range"]}" data-endur="{svals["endur"]}" '
+        f'data-cov="{present}" data-tier="{TIER_RANK.get(tier, "")}">'
         f'<span class="ri-glyph">{glyph_svg(e.get("frame_glyph", "unknown"))}</span>'
-        f'<span class="ri-name"><b>{esc(maker)}</b> <span class="ri-model">{esc(model)}</span></span>'
-        f'<span class="ri-meta mono">{esc(country)} · {seg} · {pclass}</span>'
-        f'{pip_strip}'
-        f'<span class="ri-flags">{flags}</span></a>')
+        f'<span class="ri-id"><span class="ri-name"><b>{esc(maker)}</b> '
+        f'<span class="ri-model">{esc(model)}</span></span>'
+        f'<span class="ri-meta mono">{esc(country)} · {seg} · {pclass}</span></span>'
+        f'{"".join(sparks)}{cov_html}{tier_col}</a>')
 
 
 def facet_options(ents, getter):
@@ -202,7 +257,22 @@ def main():
     ents = [e for e in site["entities"] if e.get("entity_type", "uav") == "uav"]  # schema/2: UAV surface only
     agg = site["aggregates"]                       # totals read LIVE — never hardcoded
     facets = render_facets(ents, labels)
-    rows = "\n".join(render_row(e, labels) for e in ents)
+    rng = fleet_log_ranges(ents)
+    rows = "\n".join(render_row(e, labels, rng) for e in ents)
+    # sortable column header — each button cycles into the client sorter (base.js initRegistry)
+    def head_cell(sort, en, vn, cls):
+        return (f'<button class="col-sort {cls}" type="button" data-sort="{sort}">'
+                f'{bilingual(en, vn)}<span class="cs-ar" aria-hidden="true"></span></button>')
+    idx_head = (
+        '<div class="idx-head">'
+        '<span class="ih-glyph"></span>'
+        + head_cell("name", "Maker / Model", "Hãng / Mẫu", "ih-id")
+        + head_cell("mtow", "MTOW", "MTOW", "ih-col")
+        + head_cell("range", "Range", "Tầm bay", "ih-col")
+        + head_cell("endur", "Endurance", "Giờ bay", "ih-col")
+        + head_cell("cov", "Cov", "Độ đầy", "ih-col")
+        + head_cell("tier", "Tier", "Nguồn", "ih-col")
+        + '</div>')
     fsc = agg["field_status_counts"]
     # friendly, trust-ordered status breakdown — NEVER raw status keys (e.g. "None" -> honest-null)
     SLAB = {"verified": ("verified", "đã kiểm"), "derived": ("derived", "suy ra"),
@@ -232,7 +302,8 @@ def main():
   .actions{{font-family:var(--font-mono);font-size:.78rem}}
   .actions a{{color:var(--brass);text-decoration:none}}
   .actions a:hover{{text-decoration:underline}}
-  /* index rows are styled in the shared design system (.index-list / .row-item) */
+  /* spec-analytics row/header (.row-item.ri-spec / .idx-head / .ri-spark / .col-sort) live in the
+     shared design system so the bundled snapshot reuses them too */
 </style>
 </head>
 <body>
@@ -253,6 +324,7 @@ def main():
   </div>
   <div class="regdiv"><b class="lab">{bilingual("Index · " + str(len(ents)), "Mục lục · " + str(len(ents)))}</b><span class="ln"></span></div>
   {facets}
+  {idx_head}
   <div class="index-list">
 {rows}
   </div>

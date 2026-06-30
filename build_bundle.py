@@ -12,7 +12,7 @@ Zero-fabrication: registry data is the REAL 200 (totals computed live at build);
 the marked sample (banner states both plainly).
 """
 import json, pathlib, re
-from build_reference import render_row, render_facets, esc
+from build_reference import render_row, render_facets, esc, fleet_log_ranges
 from build_index import live_facts, render_masthead
 from build_detail import detail_fragment, DETAIL_CSS
 from build_analysis import four_questions, render_body, related_rail, sources_apparatus, SECTION
@@ -82,7 +82,8 @@ def main():
     js = (ROOT / "base" / "base.js").read_text()
 
     facets = inline_links(render_facets(ents, labels))
-    rows = inline_links("\n".join(render_row(e, labels) for e in ents))
+    _rng = fleet_log_ranges(ents)
+    rows = inline_links("\n".join(render_row(e, labels, _rng) for e in ents))
     masthead = render_masthead(f, labels)
     ranges = site["aggregates"].get("spec_range", {})
     frags = "\n".join(

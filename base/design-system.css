@@ -228,6 +228,36 @@ small, .small { font-size: .82rem; }
 .ri-pips i.on { background: var(--bp); }
 @media (max-width: 640px) { .row-item { grid-template-columns: auto 1fr; gap: .15rem 1rem; align-items: center; } .row-item .ri-meta, .row-item .ri-flags, .row-item .ri-pips { grid-column: 2; } }
 
+/* SPEC-ANALYTICS table (reference.html + bundle) — .ri-spec recasts the index row as a sortable
+   spec table: 3 log-placed sparkbars + coverage N/7 + source-tier badge. Honest-null = dashed rail
+   (never a zero bar). brass-restraint: spark fill is --bp, brass only on tier A + active sort column.
+   Scoped to .ri-spec so the plain .row-item home-preview rows are untouched. */
+:root { --ri-cols: 1.6rem minmax(0,1fr) 72px 72px 72px 48px 64px; }
+.row-item.ri-spec { grid-template-columns: var(--ri-cols); gap: 1.1rem; }
+.ri-spec .ri-id { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.ri-spec .ri-id .ri-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ri-spec .ri-col { display: flex; align-items: center; min-width: 0; }
+.ri-spark { display: block; width: 100%; height: 9px; background: var(--hair); border-radius: 1px; overflow: hidden; }
+.ri-spark i { display: block; height: 100%; background: var(--bp); border-radius: 1px; }
+.ri-spark.null { background: transparent; height: 9px; border-radius: 1px; background-image: repeating-linear-gradient(90deg, var(--hair-strong) 0 2px, transparent 2px 6px); }
+.ri-cov { font-family: var(--font-mono); font-size: .74rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.ri-cov-d { color: var(--faint); }
+.ri-tiercol { gap: .4rem; }
+.ri-tier { font-family: var(--font-mono); font-size: .68rem; font-weight: 600; color: var(--muted); border: 1px solid var(--hair-strong); border-radius: 3px; padding: 1px 5px; line-height: 1.4; }
+.ri-tier[data-t="A"] { color: var(--brass); border-color: var(--brass); }
+.ri-tier-null { color: var(--faint); font-family: var(--font-mono); font-size: .72rem; }
+.idx-head { display: grid; grid-template-columns: var(--ri-cols); gap: 1.1rem; align-items: center; position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--hair-strong); padding: .5rem .4rem; margin-top: .4rem; }
+.col-sort { background: none; border: 0; color: var(--muted); cursor: pointer; padding: .15rem 0; font-family: var(--font-mono); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: .25rem; text-align: left; }
+.col-sort:hover { color: var(--ink-soft); }
+.col-sort[aria-sort] { color: var(--brass); font-weight: 600; }
+.col-sort[aria-sort="descending"] .cs-ar::after { content: "▾"; }
+.col-sort[aria-sort="ascending"] .cs-ar::after { content: "▴"; }
+@media (max-width: 640px) {
+  .row-item.ri-spec { grid-template-columns: 1.6rem minmax(0,1fr) auto; gap: .4rem .9rem; }
+  .idx-head { display: none; }
+  .ri-spec .ri-col[data-c], .ri-spec .ri-covcol { display: none; }
+}
+
 /* frame glyphs (TIP-P02) — schematic of the AIRFRAME TYPE, not a model render */
 .glyph-svg { display: block; }
 .glyph-sm { width: 30px; height: 30px; flex: 0 0 30px; }

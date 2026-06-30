@@ -145,13 +145,21 @@
     var sortBtn = document.getElementById("reg-sort");
     var toggles = Array.prototype.slice.call(document.querySelectorAll(".tg[data-facet]"));
     var GROUPS = ["segment", "klass", "country", "flag"];   // value-groups + boolean flags
-    var SORTS = ["name", "segment", "country"];
+    var SORTS = ["name", "segment", "country", "mtow", "range", "endur", "cov", "tier"];
+    var NUMERIC = { mtow: 1, range: 1, endur: 1, cov: 1, tier: 1 };   // sorted as numbers, null-last
     var SORT_LABELS = {
       name: { en: "Sort: A–Z", vn: "Sắp: A–Z" },
       segment: { en: "Sort: segment", vn: "Sắp: phân khúc" },
-      country: { en: "Sort: country", vn: "Sắp: quốc gia" }
+      country: { en: "Sort: country", vn: "Sắp: quốc gia" },
+      mtow: { en: "Sort: MTOW", vn: "Sắp: MTOW" },
+      range: { en: "Sort: range", vn: "Sắp: tầm bay" },
+      endur: { en: "Sort: endurance", vn: "Sắp: giờ bay" },
+      cov: { en: "Sort: coverage", vn: "Sắp: độ đầy" },
+      tier: { en: "Sort: tier", vn: "Sắp: nguồn" }
     };
-    var state = { segment: new Set(), klass: new Set(), country: new Set(), flag: new Set(), q: "", sort: "name" };
+    function defDir(k) { return NUMERIC[k] ? "desc" : "asc"; }   // specs default big-first, text A-Z
+    var colSorts = Array.prototype.slice.call(document.querySelectorAll(".col-sort[data-sort]"));
+    var state = { segment: new Set(), klass: new Set(), country: new Set(), flag: new Set(), q: "", sort: "name", dir: "asc" };
 
     function loadURL() {
       var u = new URLSearchParams(location.search);
@@ -159,7 +167,8 @@
         (u.get(g) || "").split(",").filter(Boolean).forEach(function (v) { state[g].add(v); });
       });
       state.q = u.get("q") || "";
-      if (SORTS.indexOf(u.get("sort")) >= 0) state.sort = u.get("sort");
+      if (SORTS.indexOf(u.get("sort")) >= 0) { state.sort = u.get("sort"); state.dir = defDir(state.sort); }
+      if (u.get("dir") === "asc" || u.get("dir") === "desc") state.dir = u.get("dir");
     }
     function writeURL() {
       var u = new URLSearchParams();
@@ -168,6 +177,7 @@
       });
       if (state.q) u.set("q", state.q);
       if (state.sort !== "name") u.set("sort", state.sort);
+      if (state.sort !== "name" && state.dir !== defDir(state.sort)) u.set("dir", state.dir);
       var qs = u.toString();
       history.replaceState(null, "", qs ? "?" + qs : location.pathname);
     }
@@ -189,18 +199,36 @@
         else { c.classList.add("hidden"); }
       }
       var vis = cards.filter(function (x) { return !x.classList.contains("hidden"); });
-      var k = state.sort;
+      var k = state.sort, sgn = state.dir === "desc" ? -1 : 1;
       vis.sort(function (a, b) {
-        var av = k === "name" ? a.dataset.name : (a.dataset[k] || "￿");
-        var bv = k === "name" ? b.dataset.name : (b.dataset[k] || "￿");
-        return av < bv ? -1 : av > bv ? 1 : 0;
+        if (NUMERIC[k]) {                                   // numeric spec: honest-null ALWAYS sorts last
+          var ar = a.dataset[k], br = b.dataset[k];
+          var ae = (ar === undefined || ar === ""), be = (br === undefined || br === "");
+          if (ae && be) return 0; if (ae) return 1; if (be) return -1;
+          var an = parseFloat(ar), bn = parseFloat(br);
+          return an < bn ? -sgn : an > bn ? sgn : 0;
+        }
+        var av = k === "name" ? (a.dataset.name || "") : (a.dataset[k] || "￿");
+        var bv = k === "name" ? (b.dataset.name || "") : (b.dataset[k] || "￿");
+        return av < bv ? -sgn : av > bv ? sgn : 0;
       });
       vis.forEach(function (x) { grid.appendChild(x); });   // reorder in place
       if (countEl) countEl.textContent = shown;
       writeURL();
       window.__regMs = performance.now() - t0;   // exposed for the perf gate
     }
+    function setSort(k, toggle) {
+      if (toggle && state.sort === k) { state.dir = state.dir === "desc" ? "asc" : "desc"; }
+      else { state.sort = k; state.dir = defDir(k); }
+    }
+    function syncHead() {
+      colSorts.forEach(function (b) {
+        if (b.dataset.sort === state.sort) b.setAttribute("aria-sort", state.dir === "desc" ? "descending" : "ascending");
+        else b.removeAttribute("aria-sort");
+      });
+    }
     function renderSort() {
+      syncHead();
       if (!sortBtn) return;
       var l = SORT_LABELS[state.sort];
       sortBtn.innerHTML = '<span data-lang-en>' + l.en + '</span><span data-lang-vn>' + l.vn + '</span>';
@@ -221,8 +249,11 @@
       search.value = state.q;
       search.addEventListener("input", function () { state.q = search.value.trim(); apply(); });
     }
-    if (sortBtn) sortBtn.addEventListener("click", function () {
-      state.sort = SORTS[(SORTS.indexOf(state.sort) + 1) % SORTS.length];
+    colSorts.forEach(function (b) {
+      b.addEventListener("click", function () { setSort(b.dataset.sort, true); renderSort(); apply(); });
+    });
+    if (sortBtn) sortBtn.addEventListener("click", function () {     // mobile fallback: cycle every key
+      setSort(SORTS[(SORTS.indexOf(state.sort) + 1) % SORTS.length], false);
       renderSort(); apply();
     });
     renderSort();
