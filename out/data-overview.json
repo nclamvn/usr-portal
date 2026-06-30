@@ -172,14 +172,34 @@
   ],
   "hq_makers": [
     {
+      "count": 1,
+      "hq_city": "Torrance, California",
+      "slug": "a2z-drone-delivery"
+    },
+    {
       "count": 3,
       "hq_city": "Uden",
       "slug": "acecore"
     },
     {
+      "count": 1,
+      "hq_city": "Tokyo",
+      "slug": "acsl"
+    },
+    {
+      "count": 1,
+      "hq_city": "Ahmedabad",
+      "slug": "adani-defence"
+    },
+    {
       "count": 3,
       "hq_city": "Yavne",
       "slug": "aeronautics"
+    },
+    {
+      "count": 1,
+      "hq_city": "Bingen, Washington",
+      "slug": "aerovel"
     },
     {
       "count": 18,
@@ -197,9 +217,49 @@
       "slug": "airbus"
     },
     {
+      "count": 1,
+      "hq_city": "San Sebastián de los Reyes, Madrid",
+      "slug": "alpha-unmanned-systems"
+    },
+    {
+      "count": 1,
+      "hq_city": "Bellevue, Washington",
+      "slug": "amazon-prime-air"
+    },
+    {
+      "count": 1,
+      "hq_city": "Sydney",
+      "slug": "amsl-aero"
+    },
+    {
       "count": 10,
       "hq_city": "Costa Mesa, California",
       "slug": "anduril"
+    },
+    {
+      "count": 1,
+      "hq_city": "Hangzhou",
+      "slug": "antwork"
+    },
+    {
+      "count": 1,
+      "hq_city": "San Jose, California",
+      "slug": "archer-aviation"
+    },
+    {
+      "count": 1,
+      "hq_city": "Wilmington, Massachusetts",
+      "slug": "ascent-aerosystems"
+    },
+    {
+      "count": 1,
+      "hq_city": "Norristown, Pennsylvania",
+      "slug": "asylon"
+    },
+    {
+      "count": 1,
+      "hq_city": "Kyiv",
+      "slug": "athlon-avia"
     },
     {
       "count": 14,
@@ -222,9 +282,34 @@
       "slug": "avilus"
     },
     {
+      "count": 1,
+      "hq_city": "Amsterdam",
+      "slug": "avy"
+    },
+    {
+      "count": 1,
+      "hq_city": "London",
+      "slug": "bae-systems"
+    },
+    {
       "count": 8,
       "hq_city": "Istanbul",
       "slug": "baykar"
+    },
+    {
+      "count": 1,
+      "hq_city": "South Burlington, Vermont",
+      "slug": "beta-technologies"
+    },
+    {
+      "count": 1,
+      "hq_city": "Shenzhen",
+      "slug": "betafpv"
+    },
+    {
+      "count": 1,
+      "hq_city": "Kadima-Zoran",
+      "slug": "bluebird-aero-systems"
     },
     {
       "count": 3,
@@ -247,9 +332,19 @@
       "slug": "caig"
     },
     {
+      "count": 1,
+      "hq_city": "Sydney",
+      "slug": "carbonix"
+    },
+    {
       "count": 10,
       "hq_city": "Beijing",
       "slug": "casc"
+    },
+    {
+      "count": 2,
+      "hq_city": "Toulouse",
+      "slug": "delair"
     },
     {
       "count": 38,
@@ -272,9 +367,44 @@
       "slug": "emt-penzberg"
     },
     {
+      "count": 2,
+      "hq_city": "Kazan",
+      "slug": "enics"
+    },
+    {
+      "count": 2,
+      "hq_city": "Beijing",
+      "slug": "feihong"
+    },
+    {
+      "count": 2,
+      "hq_city": "Paudex, Vaud",
+      "slug": "flyability"
+    },
+    {
+      "count": 2,
+      "hq_city": "Lindon, Utah",
+      "slug": "fortem-technologies"
+    },
+    {
+      "count": 2,
+      "hq_city": "Woodinville, Washington",
+      "slug": "freefly"
+    },
+    {
+      "count": 2,
+      "hq_city": "Woodinville, Washington",
+      "slug": "freefly-systems"
+    },
+    {
       "count": 10,
       "hq_city": "Poway, California",
       "slug": "general-atomics"
+    },
+    {
+      "count": 2,
+      "hq_city": "Shenzhen, Guangdong",
+      "slug": "geprc"
     },
     {
       "count": 3,
@@ -282,14 +412,49 @@
       "slug": "germandrones"
     },
     {
+      "count": 2,
+      "hq_city": "Madison, Alabama",
+      "slug": "griffon-aerospace"
+    },
+    {
       "count": 10,
       "hq_city": "Shahin Shahr, Isfahan",
       "slug": "hesa"
     },
     {
+      "count": 2,
+      "hq_city": "Richmond, Texas",
+      "slug": "hylio"
+    },
+    {
       "count": 13,
       "hq_city": "Lod",
       "slug": "iai"
+    },
+    {
+      "count": 2,
+      "hq_city": "Huizhou, Guangdong",
+      "slug": "iflight"
+    },
+    {
+      "count": 2,
+      "hq_city": "Bingen, Washington",
+      "slug": "insitu"
+    },
+    {
+      "count": 2,
+      "hq_city": "San Luis Obispo, California",
+      "slug": "inspired-flight"
+    },
+    {
+      "count": 2,
+      "hq_city": "Chengdu",
+      "slug": "jouav"
+    },
+    {
+      "count": 2,
+      "hq_city": "Seoul",
+      "slug": "korean-air"
     },
     {
       "count": 4,
@@ -302,9 +467,69 @@
       "slug": "kronshtadt"
     },
     {
+      "count": 2,
+      "hq_city": "Rome",
+      "slug": "leonardo"
+    },
+    {
+      "count": 2,
+      "hq_city": "Bethesda, Maryland",
+      "slug": "lockheed-martin"
+    },
+    {
+      "count": 2,
+      "hq_city": "Maidenhead, England",
+      "slug": "malloy-aeronautics"
+    },
+    {
+      "count": 2,
+      "hq_city": "Dublin",
+      "slug": "manna-aero"
+    },
+    {
+      "count": 2,
+      "hq_city": "Siegen",
+      "slug": "microdrones"
+    },
+    {
+      "count": 2,
+      "hq_city": "San Diego, California",
+      "slug": "modalai"
+    },
+    {
       "count": 6,
       "hq_city": "Falls Church, Virginia",
       "slug": "northrop-grumman"
+    },
+    {
+      "count": 2,
+      "hq_city": "Paris",
+      "slug": "parrot"
+    },
+    {
+      "count": 2,
+      "hq_city": "Palo Alto, California",
+      "slug": "pivotal"
+    },
+    {
+      "count": 2,
+      "hq_city": "Shenzhen",
+      "slug": "potensic"
+    },
+    {
+      "count": 2,
+      "hq_city": "Alameda, California",
+      "slug": "pyka"
+    },
+    {
+      "count": 2,
+      "hq_city": "Tehran",
+      "slug": "qods"
+    },
+    {
+      "count": 2,
+      "hq_city": "Tehran",
+      "slug": "qods-aviation"
     },
     {
       "count": 5,
@@ -317,6 +542,11 @@
       "slug": "real-time-robotics"
     },
     {
+      "count": 2,
+      "hq_city": "Paris",
+      "slug": "safran"
+    },
+    {
       "count": 3,
       "hq_city": "San Diego, California",
       "slug": "shield-ai"
@@ -325,6 +555,11 @@
       "count": 5,
       "hq_city": "San Mateo, California",
       "slug": "skydio"
+    },
+    {
+      "count": 2,
+      "hq_city": "Saint Petersburg",
+      "slug": "special-technology-center"
     },
     {
       "count": 3,
@@ -337,14 +572,34 @@
       "slug": "survey-copter"
     },
     {
+      "count": 2,
+      "hq_city": "Port Melbourne, Victoria",
+      "slug": "sypaq"
+    },
+    {
       "count": 5,
       "hq_city": "Kahramankazan, Ankara",
       "slug": "tai"
     },
     {
+      "count": 2,
+      "hq_city": "Salt Lake City, Utah",
+      "slug": "teal-drones"
+    },
+    {
+      "count": 2,
+      "hq_city": "Lisbon",
+      "slug": "tekever"
+    },
+    {
       "count": 6,
       "hq_city": "Wilsonville, Oregon",
       "slug": "teledyne-flir"
+    },
+    {
+      "count": 2,
+      "hq_city": "Providence, Rhode Island",
+      "slug": "textron"
     },
     {
       "count": 3,
@@ -367,6 +622,41 @@
       "slug": "uvision"
     },
     {
+      "count": 2,
+      "hq_city": "Yekaterinburg",
+      "slug": "uzga"
+    },
+    {
+      "count": 2,
+      "hq_city": "Bristol",
+      "slug": "vertical-aerospace"
+    },
+    {
+      "count": 2,
+      "hq_city": "Hanoi",
+      "slug": "viettel"
+    },
+    {
+      "count": 2,
+      "hq_city": "Bruchsal",
+      "slug": "volocopter"
+    },
+    {
+      "count": 2,
+      "hq_city": "Guangzhou",
+      "slug": "walkera"
+    },
+    {
+      "count": 2,
+      "hq_city": "Ożarów Mazowiecki",
+      "slug": "wb-group"
+    },
+    {
+      "count": 2,
+      "hq_city": "Palo Alto, California",
+      "slug": "wing"
+    },
+    {
       "count": 4,
       "hq_city": "Guangzhou, Guangdong",
       "slug": "xag"
@@ -380,9 +670,19 @@
       "count": 5,
       "hq_city": "Izhevsk",
       "slug": "zala-aero"
+    },
+    {
+      "count": 2,
+      "hq_city": "Beijing",
+      "slug": "zero-zero-robotics"
+    },
+    {
+      "count": 2,
+      "hq_city": "South San Francisco, California",
+      "slug": "zipline"
     }
   ],
-  "hq_total": 42,
+  "hq_total": 102,
   "maker": [
     {
       "n": "DJI",

@@ -56,6 +56,25 @@ CITY_COORD = {
     "Shanghai": (31.23, 121.47), "Shenzhen (Nanshan), Guangdong": (22.53, 113.93),
     "Shenzhen, Guangdong": (22.54, 114.06), "Taufkirchen, Bavaria": (48.05, 11.62), "Uden": (51.66, 5.62),
     "Wichita, Kansas": (37.69, -97.34), "Wilsonville, Oregon": (45.30, -122.77), "Yavne": (31.88, 34.74),
+    # top 42-102 makers (rank expansion to ~80% of systems)
+    "Ahmedabad": (23.02, 72.57), "Alameda, California": (37.77, -122.28), "Amsterdam": (52.37, 4.90),
+    "Bellevue, Washington": (47.61, -122.20), "Bethesda, Maryland": (38.98, -77.10), "Bristol": (51.45, -2.59),
+    "Bruchsal": (49.12, 8.60), "Chengdu": (30.66, 104.07), "Dublin": (53.35, -6.26),
+    "Guangzhou": (23.13, 113.26), "Hangzhou": (30.27, 120.15), "Hanoi": (21.03, 105.85),
+    "Huizhou, Guangdong": (23.11, 114.42), "Kadima-Zoran": (32.28, 34.93), "Kazan": (55.79, 49.12),
+    "Lindon, Utah": (40.34, -111.72), "Lisbon": (38.72, -9.14), "London": (51.51, -0.13),
+    "Madison, Alabama": (34.70, -86.75), "Maidenhead, England": (51.52, -0.72),
+    "Norristown, Pennsylvania": (40.12, -75.34), "Ożarów Mazowiecki": (52.21, 20.81),
+    "Palo Alto, California": (37.44, -122.14), "Paris": (48.86, 2.35), "Paudex, Vaud": (46.51, 6.67),
+    "Port Melbourne, Victoria": (-37.84, 144.94), "Providence, Rhode Island": (41.82, -71.41),
+    "Richmond, Texas": (29.58, -95.76), "Rome": (41.90, 12.50), "Salt Lake City, Utah": (40.76, -111.89),
+    "San Jose, California": (37.34, -121.89), "San Sebastián de los Reyes, Madrid": (40.55, -3.63),
+    "Seoul": (37.57, 126.98), "Shenzhen": (22.54, 114.06), "Siegen": (50.88, 8.02),
+    "South Burlington, Vermont": (44.47, -73.17), "South San Francisco, California": (37.65, -122.41),
+    "Sydney": (-33.87, 151.21), "Tehran": (35.69, 51.39), "Tokyo": (35.68, 139.69),
+    "Torrance, California": (33.84, -118.34), "Toulouse": (43.60, 1.44),
+    "Wilmington, Massachusetts": (42.55, -71.17), "Woodinville, Washington": (47.75, -122.16),
+    "Yekaterinburg": (56.84, 60.61),
 }
 # canon name -> Natural Earth ADMIN polygon name (only where they differ); micro-states absent on 110m.
 POLY_ALIAS = {"United States": "United States of America"}

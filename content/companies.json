@@ -1054,6 +1054,1501 @@
     "source": "autoflight.com",
     "tier": "A"
    }
+  },
+  "delair": {
+   "hq_city": {
+    "value": "Toulouse",
+    "source": "en.wikipedia.org/wiki/Delair",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "France",
+    "source": "delair.aero/our-company/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "en.wikipedia.org/wiki/Delair",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://delair.aero",
+    "source": "delair.aero",
+    "tier": "A"
+   }
+  },
+  "enics": {
+   "legal_name": {
+    "value": "JSC ENIKS",
+    "source": "opensanctions.org/entities/NK-hCAm5mj25s6PUAYGfovwmQ/",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Kazan",
+    "source": "war-sanctions.gur.gov.ua/en/uav/companies/1839",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Russia",
+    "source": "enics.aero/en/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1988,
+    "source": "enics.aero/en/",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://enics.aero",
+    "source": "enics.aero/en/",
+    "tier": "A"
+   }
+  },
+  "feihong": {
+   "legal_name": {
+    "value": "Aerospace Times Feihong Technology Co., Ltd.",
+    "source": "en.wikipedia.org/wiki/Feihong_FH-97",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Beijing",
+    "source": "discovery.patsnap.com/company/aerospace-times-feihong-technology/",
+    "tier": "C"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.wikipedia.org/wiki/Feihong_FH-97",
+    "tier": "B"
+   }
+  },
+  "flyability": {
+   "legal_name": {
+    "value": "Flyability SA",
+    "source": "flyability.com/company-page/",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Paudex, Vaud",
+    "source": "flyability.com/company-page/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Switzerland",
+    "source": "flyability.com/company-page/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "flyability.com/company-page/",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.flyability.com",
+    "source": "flyability.com/company-page/",
+    "tier": "A"
+   }
+  },
+  "fortem-technologies": {
+   "hq_city": {
+    "value": "Lindon, Utah",
+    "source": "fortemtech.com/press-releases/2025-06-17-fortem-technologies-opens-new-advanced-manufacturing-headquarters/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "fortemtech.com/about/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2016,
+    "source": "cbinsights.com/company/fortem-technologies",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://fortemtech.com",
+    "source": "fortemtech.com/",
+    "tier": "A"
+   }
+  },
+  "freefly": {
+   "legal_name": {
+    "value": "Freefly Systems",
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Woodinville, Washington",
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "freeflysystems.com/alta-x",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://freeflysystems.com",
+    "source": "freeflysystems.com/alta-x",
+    "tier": "A"
+   }
+  },
+  "freefly-systems": {
+   "legal_name": {
+    "value": "Freefly Systems",
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Woodinville, Washington",
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "freeflysystems.com/alta-x",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "en.wikipedia.org/wiki/Freefly_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://freeflysystems.com",
+    "source": "freeflysystems.com/alta-x",
+    "tier": "A"
+   }
+  },
+  "geprc": {
+   "legal_name": {
+    "value": "Shenzhen Beizao Innovation Technology Co., Ltd.",
+    "source": "geprc.en.alibaba.com/",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Shenzhen, Guangdong",
+    "source": "geprc.en.alibaba.com/company_profile.html",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "geprc.com/about-us/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2012,
+    "source": "accio.com/business/geprc",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://geprc.com",
+    "source": "geprc.com/",
+    "tier": "A"
+   }
+  },
+  "griffon-aerospace": {
+   "hq_city": {
+    "value": "Madison, Alabama",
+    "source": "griffonaerospace.com/contact/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "griffonaerospace.com/contact/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1995,
+    "source": "en.wikipedia.org/wiki/Griffon_Aerospace",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.griffonaerospace.com",
+    "source": "griffonaerospace.com/",
+    "tier": "A"
+   }
+  },
+  "hylio": {
+   "hq_city": {
+    "value": "Richmond, Texas",
+    "source": "hyl.io/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "hyl.io/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2015,
+    "source": "dronelife.com/2025/05/28/hylio-drone-production-texas/",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.hyl.io",
+    "source": "hyl.io/about-us",
+    "tier": "A"
+   }
+  },
+  "iflight": {
+   "legal_name": {
+    "value": "iFlight Innovation Technology Ltd.",
+    "source": "iflight.com/en-about-m.html",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Huizhou, Guangdong",
+    "source": "iflight.com/en-about-m.html",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "iflight.com/en-about-m.html",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "iflight.com/en-about-m.html",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.iflight.com",
+    "source": "iflight.com/en-about-m.html",
+    "tier": "A"
+   }
+  },
+  "insitu": {
+   "legal_name": {
+    "value": "Insitu Inc.",
+    "source": "insitu.com/about",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Bingen, Washington",
+    "source": "en.wikipedia.org/wiki/Insitu",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "insitu.com/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1994,
+    "source": "en.wikipedia.org/wiki/Insitu",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.insitu.com",
+    "source": "insitu.com/",
+    "tier": "A"
+   }
+  },
+  "inspired-flight": {
+   "legal_name": {
+    "value": "Inspired Flight Technologies, Inc.",
+    "source": "inspiredflight.com/about",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "San Luis Obispo, California",
+    "source": "inspiredflight.com/about",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "inspiredflight.com/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "inspiredflight.com/about",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.inspiredflight.com",
+    "source": "inspiredflight.com",
+    "tier": "A"
+   }
+  },
+  "jouav": {
+   "legal_name": {
+    "value": "Chengdu JOUAV Automation Tech Co., Ltd.",
+    "source": "jouav.com/company",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Chengdu",
+    "source": "jouav.com/company",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "jouav.com/company",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2010,
+    "source": "jouav.com/company",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.jouav.com",
+    "source": "jouav.com",
+    "tier": "A"
+   }
+  },
+  "korean-air": {
+   "legal_name": {
+    "value": "Korean Air Lines Co., Ltd.",
+    "source": "en.wikipedia.org/wiki/Korean_Air",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Seoul",
+    "source": "en.wikipedia.org/wiki/Korean_Air",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "South Korea",
+    "source": "en.wikipedia.org/wiki/Korean_Air",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1969,
+    "source": "en.wikipedia.org/wiki/Korean_Air",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.koreanair.com",
+    "source": "koreanair.com",
+    "tier": "A"
+   }
+  },
+  "leonardo": {
+   "legal_name": {
+    "value": "Leonardo S.p.A.",
+    "source": "en.wikipedia.org/wiki/Leonardo_(company)",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Rome",
+    "source": "en.wikipedia.org/wiki/Leonardo_(company)",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Italy",
+    "source": "en.wikipedia.org/wiki/Leonardo_(company)",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1948,
+    "source": "en.wikipedia.org/wiki/Leonardo_(company)",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.leonardo.com",
+    "source": "leonardo.com",
+    "tier": "A"
+   }
+  },
+  "lockheed-martin": {
+   "legal_name": {
+    "value": "Lockheed Martin Corporation",
+    "source": "en.wikipedia.org/wiki/Lockheed_Martin",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Bethesda, Maryland",
+    "source": "en.wikipedia.org/wiki/Lockheed_Martin",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Lockheed_Martin",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1995,
+    "source": "en.wikipedia.org/wiki/Lockheed_Martin",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.lockheedmartin.com",
+    "source": "lockheedmartin.com",
+    "tier": "A"
+   }
+  },
+  "malloy-aeronautics": {
+   "legal_name": {
+    "value": "Malloy Aeronautics Ltd.",
+    "source": "en.wikipedia.org/wiki/Malloy_Aeronautics",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Maidenhead, England",
+    "source": "en.wikipedia.org/wiki/Malloy_Aeronautics",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United Kingdom",
+    "source": "en.wikipedia.org/wiki/Malloy_Aeronautics",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2013,
+    "source": "en.wikipedia.org/wiki/Malloy_Aeronautics",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.malloyaeronautics.com",
+    "source": "malloyaeronautics.com",
+    "tier": "A"
+   }
+  },
+  "manna-aero": {
+   "legal_name": {
+    "value": "Manna Air Delivery",
+    "source": "manna.aero",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Dublin",
+    "source": "builtindublin.ie/company/manna-drone-delivery",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Ireland",
+    "source": "manna.aero",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2019,
+    "source": "tracxn.com/d/companies/manna",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.manna.aero",
+    "source": "manna.aero",
+    "tier": "A"
+   }
+  },
+  "microdrones": {
+   "legal_name": {
+    "value": "Microdrones GmbH",
+    "source": "microdrones.com/en/team/our-story",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Siegen",
+    "source": "microdrones.com/en/team/our-story",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "microdrones.com/en/team/our-story",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2005,
+    "source": "microdrones.com/en/team/our-story",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.microdrones.com",
+    "source": "microdrones.com",
+    "tier": "A"
+   }
+  },
+  "modalai": {
+   "legal_name": {
+    "value": "ModalAI, Inc.",
+    "source": "modalai.com/pages/about-us",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "San Diego, California",
+    "source": "modalai.com/pages/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "modalai.com/pages/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2018,
+    "source": "modalai.com/pages/about-us",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.modalai.com",
+    "source": "modalai.com",
+    "tier": "A"
+   }
+  },
+  "parrot": {
+   "legal_name": {
+    "value": "Parrot SA",
+    "source": "en.wikipedia.org/wiki/Parrot_SA",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Paris",
+    "source": "en.wikipedia.org/wiki/Parrot_SA",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "France",
+    "source": "en.wikipedia.org/wiki/Parrot_SA",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1994,
+    "source": "en.wikipedia.org/wiki/Parrot_SA",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.parrot.com",
+    "source": "parrot.com",
+    "tier": "A"
+   }
+  },
+  "pivotal": {
+   "legal_name": {
+    "value": "Pivotal",
+    "source": "pivotal.aero/about-us",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Palo Alto, California",
+    "source": "cbinsights.com/company/pivotal-9",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "pivotal.aero/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "evtol.news/pivotal-helix-production-model",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.pivotal.aero",
+    "source": "pivotal.aero",
+    "tier": "A"
+   }
+  },
+  "potensic": {
+   "legal_name": {
+    "value": "Shenzhen Potensic Intelligent Co., Ltd.",
+    "source": "ifa-berlin.com/exhibitors/shenzhen-potensic-intelligent-co-ltd",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Shenzhen",
+    "source": "ifa-berlin.com/exhibitors/shenzhen-potensic-intelligent-co-ltd",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "ifa-berlin.com/exhibitors/shenzhen-potensic-intelligent-co-ltd",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "potensic.com/about-us.html",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.potensic.com",
+    "source": "potensic.com",
+    "tier": "A"
+   }
+  },
+  "pyka": {
+   "legal_name": {
+    "value": "Pyka Inc.",
+    "source": "ycombinator.com/companies/pyka",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Alameda, California",
+    "source": "connectcre.com/stories/autonomous-aircraft-maker-establishes-alameda-point-hq/",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "flypyka.com/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "ycombinator.com/companies/pyka",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.flypyka.com",
+    "source": "flypyka.com",
+    "tier": "A"
+   }
+  },
+  "qods": {
+   "legal_name": {
+    "value": "Qods Aviation Industries",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Tehran",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Iran",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   }
+  },
+  "qods-aviation": {
+   "legal_name": {
+    "value": "Qods Aviation Industries",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Tehran",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Iran",
+    "source": "iranwatch.org/iranian-entities/qods-aeronautics-industries",
+    "tier": "B"
+   }
+  },
+  "safran": {
+   "legal_name": {
+    "value": "Safran S.A.",
+    "source": "en.wikipedia.org/wiki/Safran",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Paris",
+    "source": "safran-group.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "France",
+    "source": "safran-group.com",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2005,
+    "source": "en.wikipedia.org/wiki/Safran",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.safran-group.com",
+    "source": "safran-group.com",
+    "tier": "A"
+   }
+  },
+  "special-technology-center": {
+   "legal_name": {
+    "value": "Special Technology Center LLC",
+    "source": "opensanctions.org/entities/NK-oB6r54BXe7UDS3iRHSo354/",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Saint Petersburg",
+    "source": "en.wikipedia.org/wiki/STC_Orlan-10",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Russia",
+    "source": "en.wikipedia.org/wiki/STC_Orlan-10",
+    "tier": "B"
+   }
+  },
+  "sypaq": {
+   "legal_name": {
+    "value": "SYPAQ Systems Pty Ltd",
+    "source": "sypaq.com.au/about/",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Port Melbourne, Victoria",
+    "source": "sypaq.com.au/about/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Australia",
+    "source": "sypaq.com.au/about/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1992,
+    "source": "sypaq.com.au/about/",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.sypaq.com.au",
+    "source": "sypaq.com.au",
+    "tier": "A"
+   }
+  },
+  "teal-drones": {
+   "legal_name": {
+    "value": "Teal Drones, Inc.",
+    "source": "ir.redcatholdings.com/news-events/press-releases",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Salt Lake City, Utah",
+    "source": "tealdrones.com/company/about/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "tealdrones.com",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "tealdrones.com/company/about/",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://tealdrones.com",
+    "source": "tealdrones.com",
+    "tier": "A"
+   }
+  },
+  "tekever": {
+   "legal_name": {
+    "value": "TEKEVER UAS, S.A.",
+    "source": "smartdefence.pt/en/entities/tekever-uas-sa/",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Lisbon",
+    "source": "tekever.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Portugal",
+    "source": "en.wikipedia.org/wiki/Tekever",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2001,
+    "source": "en.wikipedia.org/wiki/Tekever",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.tekever.com",
+    "source": "tekever.com",
+    "tier": "A"
+   }
+  },
+  "textron": {
+   "legal_name": {
+    "value": "Textron Inc.",
+    "source": "en.wikipedia.org/wiki/Textron",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Providence, Rhode Island",
+    "source": "en.wikipedia.org/wiki/Textron",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "textron.com",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1923,
+    "source": "en.wikipedia.org/wiki/Textron",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.textron.com",
+    "source": "textron.com",
+    "tier": "A"
+   }
+  },
+  "uzga": {
+   "legal_name": {
+    "value": "JSC Ural Works of Civil Aviation",
+    "source": "en.wikipedia.org/wiki/Ural_Works_of_Civil_Aviation",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Yekaterinburg",
+    "source": "en.wikipedia.org/wiki/Ural_Works_of_Civil_Aviation",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Russia",
+    "source": "en.wikipedia.org/wiki/Ural_Works_of_Civil_Aviation",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1939,
+    "source": "en.wikipedia.org/wiki/Ural_Works_of_Civil_Aviation",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.uwca.ru",
+    "source": "uwca.ru/en/",
+    "tier": "A"
+   }
+  },
+  "vertical-aerospace": {
+   "legal_name": {
+    "value": "Vertical Aerospace Ltd.",
+    "source": "en.wikipedia.org/wiki/Vertical_Aerospace",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Bristol",
+    "source": "vertical-aerospace.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United Kingdom",
+    "source": "en.wikipedia.org/wiki/Vertical_Aerospace",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2016,
+    "source": "en.wikipedia.org/wiki/Vertical_Aerospace",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://vertical-aerospace.com",
+    "source": "vertical-aerospace.com",
+    "tier": "A"
+   }
+  },
+  "viettel": {
+   "legal_name": {
+    "value": "Viettel High Technology Industries Corporation",
+    "source": "viettelhightech.vn/en/contact",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Hanoi",
+    "source": "viettelhightech.vn/en/contact",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Vietnam",
+    "source": "viettelhightech.vn/en/contact",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "cbinsights.com/company/viettel-high-tech",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://viettelhightech.vn",
+    "source": "viettelhightech.vn",
+    "tier": "A"
+   }
+  },
+  "volocopter": {
+   "legal_name": {
+    "value": "Volocopter GmbH",
+    "source": "en.wikipedia.org/wiki/Volocopter",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Bruchsal",
+    "source": "en.wikipedia.org/wiki/Volocopter",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Germany",
+    "source": "en.wikipedia.org/wiki/Volocopter",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "en.wikipedia.org/wiki/Volocopter",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.volocopter.com",
+    "source": "volocopter.com",
+    "tier": "A"
+   }
+  },
+  "walkera": {
+   "legal_name": {
+    "value": "Guangzhou Walkera Technology Co., Ltd.",
+    "source": "en.walkera.com/index.php?id=aboutus",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Guangzhou",
+    "source": "en.walkera.com/index.php?id=aboutus",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "en.walkera.com/index.php?id=aboutus",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1994,
+    "source": "baike.baidu.com/en/item/Walkera/90854",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://en.walkera.com",
+    "source": "en.walkera.com",
+    "tier": "A"
+   }
+  },
+  "wb-group": {
+   "legal_name": {
+    "value": "WB Electronics S.A.",
+    "source": "linkedin.com/company/wb-electronics",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Ożarów Mazowiecki",
+    "source": "wbgroup.pl/en/contact-data/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Poland",
+    "source": "wbgroup.pl/en/contact-data/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 1997,
+    "source": "en.wikipedia.org/wiki/WB_Group",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.wbgroup.pl",
+    "source": "wbgroup.pl",
+    "tier": "A"
+   }
+  },
+  "wing": {
+   "legal_name": {
+    "value": "Wing Aviation LLC",
+    "source": "downloads.regulations.gov/FAA-2018-0835-0025/attachment_1.pdf",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Palo Alto, California",
+    "source": "downloads.regulations.gov/FAA-2018-0835-0025/attachment_1.pdf",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "dnb.com/business-directory/company-profiles.wing_aviation_llc.html",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2012,
+    "source": "en.wikipedia.org/wiki/Wing_Aviation",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://wing.com",
+    "source": "wing.com",
+    "tier": "A"
+   }
+  },
+  "zero-zero-robotics": {
+   "hq_city": {
+    "value": "Beijing",
+    "source": "zerozerorobotics.com/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "zerozerorobotics.com/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "crunchbase.com/organization/zero-zero-robotics",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.zerozerorobotics.com",
+    "source": "zerozerorobotics.com",
+    "tier": "A"
+   }
+  },
+  "zipline": {
+   "legal_name": {
+    "value": "Zipline International Inc.",
+    "source": "system.privco.com/company/zipline",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "South San Francisco, California",
+    "source": "en.wikipedia.org/wiki/Zipline_(drone_delivery_company)",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Zipline_(drone_delivery_company)",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Zipline_(drone_delivery_company)",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.zipline.com",
+    "source": "zipline.com",
+    "tier": "A"
+   }
+  },
+  "a2z-drone-delivery": {
+   "hq_city": {
+    "value": "Torrance, California",
+    "source": "a2zdronedelivery.com/missionlogblogblog/grand-opening-of-our-new-headquarters-in-torrance-ca",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "a2zdronedelivery.com",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2016,
+    "source": "thedronegirl.com/2023/12/19/torrance-a2z-drone-delivery/",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.a2zdronedelivery.com",
+    "source": "a2zdronedelivery.com",
+    "tier": "A"
+   }
+  },
+  "acsl": {
+   "legal_name": {
+    "value": "ACSL Ltd.",
+    "source": "acsl.co.jp/en/company/",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Tokyo",
+    "source": "acsl.co.jp/en/company/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Japan",
+    "source": "acsl.co.jp/en/company/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2013,
+    "source": "acsl.co.jp/en/company/",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.acsl.co.jp/en/",
+    "source": "acsl.co.jp",
+    "tier": "A"
+   }
+  },
+  "adani-defence": {
+   "hq_city": {
+    "value": "Ahmedabad",
+    "source": "adanidefence.com",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "India",
+    "source": "adanidefence.com",
+    "tier": "A"
+   },
+   "website": {
+    "value": "https://www.adanidefence.com",
+    "source": "adanidefence.com",
+    "tier": "A"
+   }
+  },
+  "aerovel": {
+   "legal_name": {
+    "value": "Aerovel Corporation",
+    "source": "en.wikipedia.org/wiki/Aerovel_Corporation",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Bingen, Washington",
+    "source": "en.wikipedia.org/wiki/Aerovel_Corporation",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Aerovel_Corporation",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2006,
+    "source": "en.wikipedia.org/wiki/Aerovel_Corporation",
+    "tier": "B"
+   }
+  },
+  "alpha-unmanned-systems": {
+   "legal_name": {
+    "value": "Alpha Unmanned Systems SL",
+    "source": "zoominfo.com/c/alpha-unmanned-systems-sl/368834509",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Sebastián de los Reyes, Madrid",
+    "source": "alphaunmannedsystems.com/company/",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Spain",
+    "source": "alphaunmannedsystems.com/company/",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Alpha_Unmanned_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://alphaunmannedsystems.com",
+    "source": "alphaunmannedsystems.com",
+    "tier": "A"
+   }
+  },
+  "amazon-prime-air": {
+   "legal_name": {
+    "value": "Amazon.com, Inc.",
+    "source": "en.wikipedia.org/wiki/Amazon_Prime_Air",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Bellevue, Washington",
+    "source": "campusbuilding.com/b/amazon-prime/",
+    "tier": "C"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Amazon_Prime_Air",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2013,
+    "source": "en.wikipedia.org/wiki/Amazon_Prime_Air",
+    "tier": "B"
+   }
+  },
+  "amsl-aero": {
+   "legal_name": {
+    "value": "AMSL Aero Pty Ltd",
+    "source": "amslaero.com",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "Sydney",
+    "source": "amslaero.com/about",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Australia",
+    "source": "amslaero.com/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "flightglobal.com",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.amslaero.com",
+    "source": "amslaero.com",
+    "tier": "A"
+   }
+  },
+  "antwork": {
+   "hq_city": {
+    "value": "Hangzhou",
+    "source": "cbinsights.com/company/antwork-network-technology",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "cbinsights.com/company/antwork-network-technology",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2015,
+    "source": "crunchbase.com/organization/hangzhou-xunyi-network-technology",
+    "tier": "C"
+   }
+  },
+  "archer-aviation": {
+   "legal_name": {
+    "value": "Archer Aviation Inc.",
+    "source": "en.wikipedia.org/wiki/Archer_Aviation",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "San Jose, California",
+    "source": "en.wikipedia.org/wiki/Archer_Aviation",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Archer_Aviation",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2018,
+    "source": "en.wikipedia.org/wiki/Archer_Aviation",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.archer.com",
+    "source": "archer.com",
+    "tier": "A"
+   }
+  },
+  "ascent-aerosystems": {
+   "hq_city": {
+    "value": "Wilmington, Massachusetts",
+    "source": "verticalavi.org",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "ascentaerosystems.com/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "verticalavi.org",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://ascentaerosystems.com",
+    "source": "ascentaerosystems.com",
+    "tier": "A"
+   }
+  },
+  "asylon": {
+   "hq_city": {
+    "value": "Norristown, Pennsylvania",
+    "source": "asylonrobotics.com/company/about-us",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "asylonrobotics.com/company/about-us",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2015,
+    "source": "pitchbook.com/profiles/company/177436-18",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://asylonrobotics.com",
+    "source": "asylonrobotics.com",
+    "tier": "A"
+   }
+  },
+  "athlon-avia": {
+   "hq_city": {
+    "value": "Kyiv",
+    "source": "athlonavia.com/en/about",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Ukraine",
+    "source": "athlonavia.com/en/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2014,
+    "source": "en.wikipedia.org/wiki/Athlon_Avia_A1-CM_Furia",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://athlonavia.com",
+    "source": "athlonavia.com",
+    "tier": "A"
+   }
+  },
+  "avy": {
+   "legal_name": {
+    "value": "Avy B.V.",
+    "source": "en.wikipedia.org/wiki/Avy_B.V.",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Amsterdam",
+    "source": "en.wikipedia.org/wiki/Avy_B.V.",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Netherlands",
+    "source": "en.wikipedia.org/wiki/Avy_B.V.",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2016,
+    "source": "en.wikipedia.org/wiki/Avy_B.V.",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://avy.eu",
+    "source": "avy.eu",
+    "tier": "A"
+   }
+  },
+  "bae-systems": {
+   "legal_name": {
+    "value": "BAE Systems plc",
+    "source": "find-and-update.company-information.service.gov.uk/company/01470151",
+    "tier": "A"
+   },
+   "hq_city": {
+    "value": "London",
+    "source": "en.wikipedia.org/wiki/BAE_Systems",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United Kingdom",
+    "source": "en.wikipedia.org/wiki/BAE_Systems",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 1999,
+    "source": "en.wikipedia.org/wiki/BAE_Systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.baesystems.com",
+    "source": "baesystems.com",
+    "tier": "A"
+   }
+  },
+  "beta-technologies": {
+   "legal_name": {
+    "value": "BETA Technologies, Inc.",
+    "source": "finance.yahoo.com/quote/BETA/profile",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "South Burlington, Vermont",
+    "source": "en.wikipedia.org/wiki/Beta_Technologies",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "United States",
+    "source": "en.wikipedia.org/wiki/Beta_Technologies",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "en.wikipedia.org/wiki/Beta_Technologies",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://www.beta.team",
+    "source": "beta.team",
+    "tier": "A"
+   }
+  },
+  "betafpv": {
+   "hq_city": {
+    "value": "Shenzhen",
+    "source": "betafpv.com/pages/about-betafpv",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "China",
+    "source": "betafpv.com/pages/about-betafpv",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2017,
+    "source": "grokipedia.com/page/BetaFPV",
+    "tier": "C"
+   },
+   "website": {
+    "value": "https://betafpv.com",
+    "source": "betafpv.com",
+    "tier": "A"
+   }
+  },
+  "bluebird-aero-systems": {
+   "legal_name": {
+    "value": "BlueBird Aero Systems Ltd.",
+    "source": "il.linkedin.com/company/bluebird-aero-systems-ltd-",
+    "tier": "B"
+   },
+   "hq_city": {
+    "value": "Kadima-Zoran",
+    "source": "tracxn.com/d/companies/bluebird-aero-systems",
+    "tier": "B"
+   },
+   "hq_country": {
+    "value": "Israel",
+    "source": "bluebird-uav.com",
+    "tier": "B"
+   },
+   "founded_year": {
+    "value": 2002,
+    "source": "tracxn.com/d/companies/bluebird-aero-systems",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://bluebird-uav.com",
+    "source": "bluebird-uav.com",
+    "tier": "A"
+   }
+  },
+  "carbonix": {
+   "hq_city": {
+    "value": "Sydney",
+    "source": "carbonix.com.au/about",
+    "tier": "A"
+   },
+   "hq_country": {
+    "value": "Australia",
+    "source": "carbonix.com.au/about",
+    "tier": "A"
+   },
+   "founded_year": {
+    "value": 2011,
+    "source": "carbonix.com.au/about",
+    "tier": "B"
+   },
+   "website": {
+    "value": "https://carbonix.com.au",
+    "source": "carbonix.com.au",
+    "tier": "A"
+   }
   }
  }
 }
