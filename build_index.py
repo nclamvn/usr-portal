@@ -21,6 +21,30 @@ ARROW = ('<svg class="ar" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
          '<path d="M4.5 12H16.5M11 6.5L16.5 12L11 17.5" stroke="currentColor" '
          'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
+# scatter hover tooltip — plain string (kept OUT of the doc f-string so its { } braces are literal JS)
+SCAT_TIP_JS = """  (function(){
+    var svg=document.querySelector(".scat-svg"), tip=document.getElementById("scat-tip");
+    if(!svg||!tip) return;
+    var box=svg.closest(".sigwrap");
+    svg.addEventListener("mousemove", function(e){
+      var d=e.target.closest(".dot");
+      if(!d){ tip.hidden=true; return; }
+      var en=document.documentElement.getAttribute("data-lang")==="en";
+      var seg=d.getAttribute(en?"data-se":"data-sv");
+      tip.innerHTML="<b></b><span class='tm'></span><span class='ts'></span><span class='tg'></span>";
+      tip.querySelector("b").textContent=d.getAttribute("data-nm");
+      tip.querySelector(".tm").textContent=d.getAttribute("data-mk");
+      tip.querySelector(".ts").textContent="MTOW "+d.getAttribute("data-mt")+" kg \\u00b7 "+d.getAttribute("data-rg")+" km";
+      var tg=tip.querySelector(".tg");
+      if(seg&&seg!=="\\u2014"){ tg.textContent=seg; } else { tg.remove(); }
+      var r=box.getBoundingClientRect();
+      tip.style.left=(e.clientX-r.left)+"px";
+      tip.style.top=(e.clientY-r.top)+"px";
+      tip.hidden=false;
+    });
+    svg.addEventListener("mouseleave", function(){ tip.hidden=true; });
+  })();"""
+
 
 def live_facts(site):
     """Real, live figures from site-data — never hardcoded (the '13 vs 28' bug dies here)."""
@@ -129,11 +153,13 @@ def scatter_svg(site):
     for e in uavs:
         m, r = num(e, "mtow_kg"), num(e, "max_range_km")
         if m and r and m > 0 and r > 0:
-            pts.append((m, r, (e.get("market_segment") or {}).get("value")))
+            pts.append((m, r, (e.get("market_segment") or {}).get("value"),
+                        (e.get("name") or {}).get("value") or e["slug"],
+                        (e.get("manufacturer") or {}).get("value") or "—"))
     if not pts:
         return ""
-    ms = [m for m, _, _ in pts]
-    rs = [r for _, r, _ in pts]
+    ms = [p[0] for p in pts]
+    rs = [p[1] for p in pts]
     xmin, xmax, ymin, ymax = min(ms), max(ms), min(rs), max(rs)
     lx0, lx1, ly0, ly1 = math.log10(xmin), math.log10(xmax), math.log10(ymin), math.log10(ymax)
     W, H, PAD = 1000, 440, 10
@@ -146,9 +172,10 @@ def scatter_svg(site):
         return PAD + ph - (math.log10(r) - ly0) / (ly1 - ly0) * ph
 
     from collections import Counter
-    cnt = Counter(seg for _, _, seg in pts if seg)
+    cnt = Counter(p[2] for p in pts if p[2])
     top = [seg for seg, _ in cnt.most_common(5)]
     segcls = {seg: f"sc{i + 1}" for i, seg in enumerate(top)}
+    seglab = site["labels"]["segment"]
 
     grid = []
     for d in range(math.ceil(lx0), math.floor(lx1) + 1):
@@ -157,8 +184,13 @@ def scatter_svg(site):
     for d in range(math.ceil(ly0), math.floor(ly1) + 1):
         gy = py(10 ** d)
         grid.append(f'<line class="scat-grid" x1="{PAD}" y1="{gy:.1f}" x2="{PAD + pw}" y2="{gy:.1f}"/>')
-    dots = [f'<circle class="dot {segcls.get(seg, "sc6")}" cx="{px(m):.1f}" cy="{py(r):.1f}" r="4.5"/>'
-            for m, r, seg in pts]
+    dots = []
+    for m, r, seg, nm, mk in pts:
+        sl = seglab.get(seg, {}) if seg else {}
+        dots.append(
+            f'<circle class="dot {segcls.get(seg, "sc6")}" cx="{px(m):.1f}" cy="{py(r):.1f}" r="4.5" '
+            f'data-nm="{esc(nm)}" data-mk="{esc(mk)}" data-mt="{_fnum(m)}" data-rg="{_fnum(r)}" '
+            f'data-se="{esc(sl.get("en", seg) or "—")}" data-sv="{esc(sl.get("vn", seg) or "—")}"/>')
 
     labels = site["labels"]["segment"]
     leg = ""
@@ -174,6 +206,7 @@ def scatter_svg(site):
         f'<span class="scat-axt">{bilingual("Range km", "Tầm bay km")}</span><span>{_fnum(ymin)}</span></div>'
         f'<svg class="scat-svg" viewBox="0 0 {W} {H}" fill="none" aria-hidden="true">'
         f'{"".join(grid)}{"".join(dots)}</svg></div>'
+        '<div class="scat-tip" id="scat-tip" hidden></div>'
         f'<div class="scat-xax mono"><span>{_fnum(xmin)}</span>'
         f'<span class="scat-axt">MTOW kg</span><span>{_fnum(xmax)}</span></div>'
         f'<div class="scat-legend">{leg}</div>'
@@ -413,7 +446,7 @@ CSS = """
   .trend-card:hover h3{color:var(--brass)}
   .trend-card .tmeta{font-size:10.5px;color:var(--muted)}
   /* INFO/02 signature (token paint; verify_graphics) */
-  .sigwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem}
+  .sigwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem;position:relative}
   /* capability scatter — dots coloured via token classes; root svg fill=none (verify_svg safe) */
   .scat{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:stretch;margin-top:4px}
   .scat-yax{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;
@@ -422,7 +455,16 @@ CSS = """
     letter-spacing:.1em;text-transform:uppercase;font-size:9px;margin:auto -2px}
   .scat-svg{width:100%;height:auto;display:block;border-left:1px solid var(--hair-strong);border-bottom:1px solid var(--hair-strong)}
   .scat-grid{stroke:var(--hair);stroke-width:1;opacity:.55}
-  .dot{opacity:.8}
+  .dot{opacity:.8;cursor:pointer;transition:opacity .12s}
+  .scat-svg .dot:hover{opacity:1;stroke:var(--ink);stroke-width:1.5}
+  .scat-tip{position:absolute;z-index:6;pointer-events:none;transform:translate(-50%,calc(-100% - 12px));
+    background:var(--panel);border:1px solid var(--hair-strong);border-radius:var(--radius);
+    padding:8px 11px;display:flex;flex-direction:column;gap:2px;white-space:nowrap;box-shadow:0 6px 20px -8px var(--hair-strong)}
+  .scat-tip[hidden]{display:none}
+  .scat-tip b{font-family:var(--font-head);font-weight:600;font-size:13px;color:var(--ink);line-height:1.15}
+  .scat-tip .tm{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .scat-tip .ts{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);margin-top:3px;font-variant-numeric:tabular-nums}
+  .scat-tip .tg{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--brass)}
   .dot.sc1{fill:var(--sc1)} .dot.sc2{fill:var(--sc2)} .dot.sc3{fill:var(--sc3)}
   .dot.sc4{fill:var(--sc4)} .dot.sc5{fill:var(--sc5)} .dot.sc6{fill:var(--sc6)}
   .scat-xax{display:flex;justify-content:space-between;align-items:center;margin:7px 0 0 68px;
@@ -518,6 +560,7 @@ def main():
   USRBase.initTheme(document.getElementById("theme"));
   USRBase.initI18n(document.getElementById("lang"));
   USRBase.initReveal();
+{SCAT_TIP_JS}
   document.documentElement.dataset.audit = "ready";
 </script>
 </body>
