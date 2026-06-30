@@ -221,8 +221,10 @@ def render(fm, body, site, glossary, prev=None, next=None):
         lead_fig = (f'<figure class="nfig"><img src="{esc(img["src"])}" alt="{esc(fm.get("title", ""))}" loading="lazy">'
                     f'<figcaption>{esc(img.get("credit", ""))}{lic_html}</figcaption></figure>')
     elif _am:                                              # cleared media-bound photo (rtr_owned/open_licensed)
+        # caption falls back to the asset credit, which carries the CC attribution AND the "minh-hoa"
+        # illustrative marker, so an illustrative photo never reads as the exact subject of the piece.
         lead_fig = (f'<figure class="nfig">{ML.img_html(_am, "nf-lead-photo")}'
-                    f'<figcaption>{esc(_am.get("caption") or "")}</figcaption></figure>')
+                    f'<figcaption>{esc(_am.get("caption") or _am.get("credit") or "")}</figcaption></figure>')
     else:
         lead_fig = lead_graphic(fm)                        # else premium generated SVG (zero-fab, no license risk)
     kl_en, kl_vn = TYPE_LABEL.get(fm["type"], (fm["type"], fm["type"]))
@@ -390,7 +392,10 @@ def _lead_html(fm):
     _am = _MEDIA.first(f"article:{fm['slug']}")
     if _am:
         _fig = ML.img_html(_am, "nf-lead-photo")
-        cap = esc(_am.get("caption") or cap)
+        # bound photo: show its own credit (CC attribution + "minh-hoa" marker); drop the stale
+        # data-figure provenance, which describes the generated chart, not this photo.
+        cap = esc(_am.get("caption") or _am.get("credit") or "")
+        prov = ""
     else:
         _fig = feed_figure(fm, "lead")
     return (
