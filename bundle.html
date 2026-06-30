@@ -375,9 +375,12 @@ small, .small { font-size: .82rem; }
 
 /* global nav (nav.py) — premium label idiom: mono, uppercase, tracked. Distinct from serif/sans
    body. Brass is one-beat: rest = muted, hover = brass, active page = brass. (design-system owns it) */
-.crumb { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; display: flex; gap: .85rem; align-items: center; flex-wrap: wrap; }
-.crumb a { color: var(--ink-soft); text-decoration: none; transition: color .2s var(--ease); }
-.crumb a:hover { color: var(--brass); }
+.crumb { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; display: flex; gap: .85rem; align-items: center; flex-wrap: wrap; }
+.crumb a { position: relative; color: var(--ink-soft); text-decoration: none; padding-bottom: 3px; transition: color .2s var(--ease); }
+/* premium hover: a brass rule wipes in from the left (scaleX), text firms to full ink */
+.crumb a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--brass); border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform .25s var(--ease); }
+.crumb a:hover { color: var(--ink); }
+.crumb a:hover::after { transform: scaleX(1); }
 .crumb .cur { color: var(--brass); }            /* active page — the single brass beat */
 .crumb .sep { color: var(--hair-strong); margin: 0 -.2rem; }
 
