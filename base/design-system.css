@@ -232,8 +232,8 @@ small, .small { font-size: .82rem; }
    spec table: 3 log-placed sparkbars + coverage N/7 + source-tier badge. Honest-null = dashed rail
    (never a zero bar). brass-restraint: spark fill is --bp, brass only on tier A + active sort column.
    Scoped to .ri-spec so the plain .row-item home-preview rows are untouched. */
-:root { --ri-cols: 1.6rem minmax(0,1fr) 64px 64px 64px 64px 46px 60px; }   /* glyph · name · MTOW·Range·Endur·Payload · Cov · Tier */
-.row-item.ri-spec { grid-template-columns: var(--ri-cols); gap: 1.1rem; }
+:root { --ri-cols: 1.6rem minmax(0,1fr) 56px 56px 56px 56px 56px 46px 60px; }   /* glyph · name · MTOW·Range·Endur·Payload·Ceiling · Cov · Tier */
+.row-item.ri-spec { grid-template-columns: var(--ri-cols); gap: .85rem; }
 .ri-spec .ri-id { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
 .ri-spec .ri-id .ri-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ri-spec .ri-col { display: flex; align-items: center; min-width: 0; }
@@ -246,7 +246,7 @@ small, .small { font-size: .82rem; }
 .ri-tier { font-family: var(--font-mono); font-size: .68rem; font-weight: 600; color: var(--muted); border: 1px solid var(--hair-strong); border-radius: 3px; padding: 1px 5px; line-height: 1.4; }
 .ri-tier[data-t="A"] { color: var(--brass); border-color: var(--brass); }
 .ri-tier-null { color: var(--faint); font-family: var(--font-mono); font-size: .72rem; }
-.idx-head { display: grid; grid-template-columns: var(--ri-cols); gap: 1.1rem; align-items: center; position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--hair-strong); padding: .5rem .4rem; margin-top: .4rem; }
+.idx-head { display: grid; grid-template-columns: var(--ri-cols); gap: .85rem; align-items: center; position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--hair-strong); padding: .5rem .4rem; margin-top: .4rem; }
 .col-sort { background: none; border: 0; color: var(--muted); cursor: pointer; padding: .15rem 0; font-family: var(--font-mono); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: .25rem; text-align: left; }
 .col-sort:hover { color: var(--ink-soft); }
 .col-sort[aria-sort] { color: var(--brass); font-weight: 600; }
