@@ -20,6 +20,18 @@ _MEDIA = ML.Media()
 from seo import meta, org_ld, breadcrumb_ld
 from build_newsroom import articles_for
 
+# TIP-NEWS-CONNECT nhịp A: aggregation cards (dòng A) that tag an entity surface on its page (two-way).
+_NEWS = json.loads((pathlib.Path(__file__).resolve().parent / "content" / "news-cards.json")
+                   .read_text(encoding="utf-8")).get("cards", [])
+_NEWS_BY_TAG = {}
+for _c in _NEWS:
+    for _t in _c.get("entity_tags") or []:
+        _NEWS_BY_TAG.setdefault(_t, []).append(_c)
+
+
+def cards_for(tag):
+    return sorted(_NEWS_BY_TAG.get(tag, []), key=lambda c: c.get("date") or "", reverse=True)
+
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT / "out" / "site-data.json"
 OUTDIR = ROOT / "company"
@@ -65,6 +77,7 @@ COMPANY_CSS = """
   @media(max-width:640px){.fleet{columns:1}}
   .fleet li{font-size:.82rem;padding:.18rem 0;break-inside:avoid}
   .fleet a{color:inherit}
+  .news-list .csrc{font-family:var(--font-mono);font-size:.66rem;color:var(--muted);margin-left:.4rem;white-space:nowrap}
   .note{font-size:.72rem;color:var(--muted);margin-top:1.4rem}
   .disp{display:block;font-size:.78rem;margin:.1rem 0;padding-left:.6rem;border-left:2px solid var(--hair-strong)}
 """
@@ -119,6 +132,16 @@ def render_company(c, labels, uav_by_slug, rng):
     if arts:
         items = "".join(f'<li><a href="../news/{esc(fm["slug"])}.html">{esc(fm["title"])}</a></li>' for fm in arts)
         rel = f'<div class="csec-h">{bilingual("Coverage", "Bài viết liên quan")}</div><ul class="fleet">{items}</ul>'
+    # E->D cross-link: aggregation news cards (dòng A) that tag this company surface here automatically
+    news = ""
+    ncards = cards_for("company:" + c["slug"])
+    if ncards:
+        nitems = "".join(
+            f'<li><a href="../news-card/{esc(k["id"])}.html">{esc(k.get("source_title", ""))}</a>'
+            f'<span class="csrc">{esc(k.get("outlet", ""))} · {esc(k.get("date", ""))}</span></li>'
+            for k in ncards)
+        news = (f'<div class="csec-h">{bilingual("In the news", "Điểm tin liên quan")}</div>'
+                f'<ul class="fleet news-list" data-audit="entnews">{nitems}</ul>')
     # TIP-MEDIA-UPGRADE — rtr_owned lead photo for this company (binding company:<slug>); empty → keep text-only.
     _cm = _MEDIA.first("company:" + c["slug"])
     cmedia = (f'\n  <figure class="cmedia" data-audit="cmedia">{ML.img_html(_cm, "cmedia-img", "../")}'
@@ -164,7 +187,7 @@ def render_company(c, labels, uav_by_slug, rng):
 
   <div class="csec-h">{bilingual("Company profile (sourced)", "Hồ sơ công ty (có nguồn)")}</div>
   {sourced}
-  {rel}{leadership}
+  {rel}{news}{leadership}
 
   <p class="note">{bilingual(
     "Fleet figures are derived live from the UAV registry. Profile attributes carry a source and "

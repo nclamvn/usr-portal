@@ -56,7 +56,9 @@
    "summary": "Tại triển lãm quốc phòng SAHA 2026 (Istanbul), Viettel High Tech giới thiệu ba dòng UAV mới, gồm UAV trinh sát tầm xa VU-MALE bay trên 1.000 km và UAV tấn công tích hợp AI VU-C2.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:viettel"
+   ],
    "image": "/images/content/open/paris-airshow-uav.webp",
    "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
    "body": [
@@ -77,7 +79,9 @@
    "summary": "Tạp chí quốc phòng châu Âu EDR Magazine dành bài riêng cho tổ hợp chống UAV của Viettel tại SAHA 2026, mô tả là hệ thống đối phó trực diện với mối đe doạ thiết bị bay không người lái.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:viettel"
+   ],
    "image": "/images/content/open/fpv-military.webp",
    "body": [
     "Tại triển lãm quốc phòng SAHA 2026, tổ hợp chống UAV của Viettel là một trong số khí tài Việt Nam được báo chí quốc phòng châu Âu chú ý. Theo nguồn dẫn, tạp chí EDR Magazine dành một bài riêng, mô tả hệ thống như giải pháp đối phó trực diện với mối đe doạ từ thiết bị bay không người lái.",
@@ -301,7 +305,9 @@
    "summary": "Mẫu eVTOL EH216-S của EHang được Cục Hàng không dân dụng Trung Quốc cấp chứng nhận trong 31 tháng với 40.000 chuyến bay thử, so với mốc 5-7 năm của quy trình FAA tại Mỹ.",
    "tier": "C",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:ehang-holdings"
+   ],
    "image": "/images/content/open/ehang-eh184.webp",
    "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
    "body": [
@@ -483,7 +489,9 @@
    "summary": "DJI giữ hơn 70% thị phần drone tiêu dùng toàn cầu và khoảng 80% thị trường tiêu dùng Mỹ; các nhà sản xuất Mỹ chiếm chừng 13% thị phần toàn cầu, tập trung ở mảng quốc phòng và doanh nghiệp.",
    "tier": "C",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:dji"
+   ],
    "image": "/images/content/open/dji-phantom3.webp",
    "body": [
     "Theo nguồn dẫn, DJI giữ hơn 70% thị phần drone tiêu dùng toàn cầu và khoảng 80% thị trường tiêu dùng Mỹ. Các nhà sản xuất Mỹ chiếm khoảng 13% thị phần toàn cầu, tập trung ở mảng quốc phòng và doanh nghiệp.",
@@ -503,7 +511,9 @@
    "summary": "Skydio là drone do Mỹ sản xuất được dùng nhiều nhất trong chính phủ và quân đội năm 2026 với hơn 3.000 cơ quan, đồng thời cam kết 3,5 tỷ USD cho sản xuất drone tại Mỹ.",
    "tier": "C",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:skydio"
+   ],
    "image": "/images/content/open/leleka-100.webp",
    "body": [
     "Theo nguồn dẫn, Skydio là drone sản xuất tại Mỹ được dùng nhiều nhất trong khối chính phủ và quân đội năm 2026, với hơn 3.000 cơ quan sử dụng, đồng thời cam kết 3,5 tỷ USD cho sản xuất drone tại Mỹ.",
@@ -523,7 +533,9 @@
    "summary": "Anduril xây Arsenal-1, nhà máy 1 tỷ USD ở Ohio, dự kiến sản xuất hàng chục nghìn hệ thống tự hành mỗi năm từ giữa 2026; danh mục gồm UAV trinh sát Ghost và tổ hợp chống UAV Anvil.",
    "tier": "C",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:anduril"
+   ],
    "image": "/images/content/open/hermes-900-takeoff.webp",
    "body": [
     "Theo nguồn dẫn, Anduril xây dựng Arsenal-1, nhà máy trị giá 1 tỷ USD tại Ohio, dự kiến sản xuất hàng chục nghìn hệ thống tự hành mỗi năm từ giữa năm 2026. Danh mục gồm UAV trinh sát Ghost và tổ hợp chống UAV Anvil.",
@@ -543,7 +555,10 @@
    "summary": "Trên thị trường drone nông nghiệp Việt Nam, dòng DJI Agras (T25P, T70P, T100) chiếm hơn 80% thị phần, trong khi XAG tập trung các mẫu công suất lớn, mạnh về tích hợp AI và cảm biến.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:dji",
+    "company:xag"
+   ],
    "image": null
   },
   {
@@ -588,7 +603,9 @@
    "summary": "Theo DJI, tới cuối 2025 đã có hơn 600.000 drone nông nghiệp của hãng được hơn 600.000 người vận hành sử dụng trên toàn cầu, xử lý hơn 300 loại cây trồng tại trên 100 quốc gia và vùng lãnh thổ.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:dji"
+   ],
    "image": null
   },
   {
@@ -603,7 +620,10 @@
    "summary": "Trung Quốc là nước xuất khẩu drone chiến đấu hàng đầu với CH-4 (CASC) và Wing Loong (AVIC) bán cho nhiều nước Trung Đông; mẫu tác chiến biển WL-X được giới thiệu năm 2026 cho nhiệm vụ giám sát và tấn công.",
    "tier": "B",
    "date": "2026-02-12",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:casc",
+    "company:avic"
+   ],
    "image": null
   },
   {
@@ -633,7 +653,9 @@
    "summary": "Theo EHang, mẫu eVTOL EH216-S (được CAAC chứng nhận năm 2023) đã giao 216 chiếc năm 2024 và vượt 400 chiếc năm 2025 với hơn 40.000 chuyến bay tại 17 quốc gia; hãng mở vertiport tự động tại Thâm Quyến.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:ehang-holdings"
+   ],
    "image": null
   },
   {
@@ -663,7 +685,9 @@
    "summary": "Viettel Post khai trương Công viên Logistics tại khu kinh tế cửa khẩu Đồng Đăng (Lạng Sơn), ứng dụng robot và drone tự giao hàng, khu xử lý thương mại điện tử giám sát khoảng 600.000 bưu kiện mỗi ngày.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:viettel"
+   ],
    "image": null
   },
   {
@@ -678,7 +702,9 @@
    "summary": "Tại Đà Nẵng, Viettel Post đưa một đội thiết bị bay không người lái vào hỗ trợ cứu trợ vùng ngập, dùng drone để tiếp tế và trợ giúp người dân ở khu vực bị nước lũ chia cắt.",
    "tier": "B",
    "date": null,
-   "entity_tags": [],
+   "entity_tags": [
+    "company:viettel"
+   ],
    "image": null
   },
   {
@@ -723,7 +749,9 @@
    "summary": "Zipline vượt 2 triệu lượt giao hàng thương mại tính tới tháng 1/2026 và gọi thêm hơn 600 triệu USD (định giá 7,6 tỷ USD), dùng để mở rộng dịch vụ giao hàng bằng drone sang Houston, Phoenix và ít nhất 4 bang của Mỹ.",
    "tier": "B",
    "date": "2026-01-21",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:zipline"
+   ],
    "image": null
   },
   {
@@ -738,7 +766,9 @@
    "summary": "Trong năm 2026, Wing mở rộng hợp tác với Walmart, dự kiến thêm 150 cửa hàng vào mạng lưới giao hàng bằng drone, nâng tổng số lên hơn 270 điểm tại Mỹ.",
    "tier": "C",
    "date": "2026-04-13",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:wing"
+   ],
    "image": null
   },
   {
@@ -913,7 +943,9 @@
    "summary": "TP Hồ Chí Minh khởi động thử nghiệm UAV giao hàng chặng ngắn từ ngày 5/1/2026, phối hợp Saolatek, Real-time Robotics Việt Nam và Di Động Việt, với phép bay do Bộ Quốc phòng cấp trong năm 2026.",
    "tier": "B",
    "date": "2026-01-05",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:real-time-robotics"
+   ],
    "image": "/images/content/open/uav-deltaquad.webp",
    "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons · minh-hoạ",
    "body": [
@@ -933,7 +965,10 @@
    "summary": "Không quân Mỹ chọn General Atomics và Anduril sản xuất lứa máy bay phối hợp chiến đấu CCA đầu tiên, gồm hai mẫu FQ-42A và FQ-44A, với đơn giá mục tiêu dưới 30 triệu USD mỗi chiếc.",
    "tier": "B",
    "date": "2026-06-17",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:anduril",
+    "company:general-atomics"
+   ],
    "image": "/images/content/open/boeing-x45.webp",
    "image_credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
    "body": [
@@ -973,7 +1008,9 @@
    "summary": "Walmart cùng Wing của Alphabet mở rộng giao hàng bằng drone tới bảy khu đô thị mới ở Mỹ, hướng tới mạng lưới 270 địa điểm sau hơn một triệu chuyến giao hàng thương mại đã hoàn tất.",
    "tier": "B",
    "date": "2026-06-11",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:wing"
+   ],
    "image": "/images/content/open/flytrex-delivery.webp",
    "image_credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
    "body": [
@@ -993,7 +1030,9 @@
    "summary": "Archer Aviation cho biết đã khép lại Giai đoạn 3 trong quy trình chứng nhận loại bốn giai đoạn của FAA cho mẫu eVTOL Midnight, và tự nhận là hãng eVTOL đầu tiên hoàn tất bước này.",
    "tier": "B",
    "date": "2026-05-13",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:archer-aviation"
+   ],
    "image": "/images/content/open/evtol-passenger.webp",
    "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
    "body": [
@@ -1013,7 +1052,9 @@
    "summary": "Joby Aviation thực hiện chuyến bay eVTOL điểm tới điểm đầu tiên tại New York, nối sân bay JFK với ba bãi đáp trực thăng ở Manhattan, trong khuôn khổ hợp tác cùng Uber và Delta.",
    "tier": "B",
    "date": "2026-04-28",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:joby-aviation"
+   ],
    "image": "/images/content/open/joby-s4.webp",
    "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
    "body": [
@@ -1033,7 +1074,9 @@
    "summary": "Theo CEO Baykar, Italy dự kiến chốt đơn mua máy bay không người lái TB3 của Thổ Nhĩ Kỳ trong vài tháng tới, trở thành nước châu Âu đầu tiên ngoài Thổ Nhĩ Kỳ vận hành mẫu này.",
    "tier": "B",
    "date": "2026-04-07",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:baykar"
+   ],
    "image": "/images/content/open/mil-ucav-parade.webp",
    "image_credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
    "body": [
@@ -1053,7 +1096,9 @@
    "summary": "Hãng AutoFlight đạt chứng nhận đủ điều kiện bay cho mẫu eVTOL chở hàng V2000CG từ cơ quan hàng không Indonesia, được nêu là lần đầu một eVTOL được chứng nhận ngoài Trung Quốc.",
    "tier": "A",
    "date": "2026-06-12",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:autoflight"
+   ],
    "image": "/images/content/open/evtol-volocopter.webp",
    "image_credit": "Ảnh: Matti Blume / Wikimedia Commons · minh-hoạ",
    "body": [
@@ -1073,7 +1118,9 @@
    "summary": "EHang công bố kết quả quý I năm 2026 với doanh thu 25,7 triệu nhân dân tệ và bàn giao bốn chiếc EH216, đồng thời phê duyệt chương trình mua lại cổ phiếu 30 triệu USD và giữ dự báo cả năm.",
    "tier": "A",
    "date": "2026-06-09",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:ehang-holdings"
+   ],
    "image": "/images/content/open/ehang-eh184.webp",
    "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
    "body": [
@@ -1193,7 +1240,9 @@
    "summary": "Joby Aviation và Toyota khởi động giai đoạn đầu của liên minh sản xuất chiến lược, tập trung nâng năng suất, chất lượng và chi phí cho dây chuyền eVTOL của Joby khi tiến tới sản xuất thương mại.",
    "tier": "A",
    "date": "2026-06-30",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:joby-aviation"
+   ],
    "image": null,
    "body": [
     "Joby Aviation và Tập đoàn Toyota công bố khởi động giai đoạn đầu của một liên minh sản xuất chiến lược nhằm chuẩn bị cho sản xuất thương mại mẫu eVTOL của Joby.",
@@ -1233,7 +1282,9 @@
    "summary": "Thủy quân Lục chiến Mỹ sẽ trao hợp đồng chỉ định thầu cho Anduril, dùng hệ Pulsar-Lite chống UAV nhỏ trên xe chiến đấu đổ bộ ACV, do nền tảng này thiếu khả năng phát hiện và đối phó UAS.",
    "tier": "B",
    "date": "2026-06-04",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:anduril"
+   ],
    "image": null,
    "body": [
     "Thủy quân Lục chiến Mỹ thông báo sẽ trao một hợp đồng chỉ định thầu cho Anduril về công nghệ chống UAS cỡ nhỏ trang bị cho xe chiến đấu đổ bộ ACV, sử dụng hệ thống Pulsar-Lite.",
@@ -1273,7 +1324,9 @@
    "summary": "Nền tảng ẩm thực Wonder hợp tác Zipline giao món tự động bằng drone tại Dallas từ tháng 1/2027, mở rộng phần lớn điểm bán tại Texas cuối 2027; nhà hàng không cần đóng gói hay cải tạo đặc biệt.",
    "tier": "B",
    "date": "2026-06-30",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:zipline"
+   ],
    "image": null,
    "body": [
     "Wonder bắt tay Zipline để bắt đầu giao bữa ăn tự động bằng đường không tại Dallas từ tháng 1/2027, với phần lớn điểm bán ở Texas dự kiến có dịch vụ vào cuối 2027.",
@@ -1293,7 +1346,9 @@
    "summary": "Shield AI và Destinus thử nghiệm khả năng tự động phối hợp và lập kế hoạch nhiệm vụ giữa các drone khác loại, chuẩn bị thử tại Ukraine; phần mềm Hivemind gắn trên drone cánh cố định Hornet.",
    "tier": "B",
    "date": "2026-06-15",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:shield-ai"
+   ],
    "image": null,
    "body": [
     "Shield AI và công ty quốc phòng Hà Lan Destinus đã bay thử khả năng phối hợp tự động và lập kế hoạch nhiệm vụ giữa các drone khác loại, chuẩn bị cho thử nghiệm tại Ukraine.",
@@ -1353,7 +1408,10 @@
    "summary": "Cơ quan giao thông và an toàn Hồng Kông bắt đầu bay thử eVTOL để khai thác cơ hội trong kinh tế tầm thấp của Trung Quốc; AutoFlight và EHang cùng tham gia đợt thử nghiệm.",
    "tier": "B",
    "date": "2026-06-25",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:ehang-holdings",
+    "company:autoflight"
+   ],
    "image": null,
    "body": [
     "Các cơ quan giao thông và an toàn của Hồng Kông đang tiến hành bay thử eVTOL, như một phần việc khai thác cơ hội trong nền kinh tế tầm thấp của Trung Quốc.",
@@ -1373,7 +1431,9 @@
    "summary": "EH216-S của EHang bay điểm nối điểm ở độ cao lớn trên hồ Nhĩ Hải, Đại Lý, Vân Nam ngày 11/6/2026, nối Hỷ Châu và Song Lang trong dưới 10 phút, so với khoảng một giờ đi đường bộ.",
    "tier": "C",
    "date": "2026-06-12",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:ehang-holdings"
+   ],
    "image": null,
    "body": [
     "Mẫu EH216-S của EHang hoàn tất một chuyến bay điểm nối điểm ở độ cao lớn trên hồ Nhĩ Hải tại Đại Lý, Vân Nam ngày 11/6/2026, nối Hỷ Châu và Song Lang trong chưa tới 10 phút, so với khoảng một giờ đi đường bộ.",
@@ -1393,7 +1453,9 @@
    "summary": "Nguyên mẫu xe bay X2 thế hệ 5 của XPeng được trưng bày tại KLIMS 2026 ở Kuala Lumpur; xe hai chỗ, buồng lái sợi carbon, tám động cơ điện, bay khoảng 35 phút, tốc độ tối đa 130 km/h.",
    "tier": "C",
    "date": "2026-06-19",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:xpeng-aeroht"
+   ],
    "image": null,
    "body": [
     "Nguyên mẫu xe bay X2 thế hệ thứ năm của XPeng được trưng bày tại Triển lãm Di chuyển Quốc tế Kuala Lumpur (KLIMS) 2026.",
@@ -1453,7 +1515,9 @@
    "summary": "TP.HCM đặt mục tiêu thành trung tâm kinh tế tầm thấp đầu tiên của Việt Nam vào 2030; thử nghiệm giao hàng drone tự động ngày 5/1/2026 có Saolatek và Real-Time Robotics Vietnam tham gia, đường bay 200 tới trên 400 mét.",
    "tier": "B",
    "date": "2026-05-25",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:real-time-robotics"
+   ],
    "image": null,
    "body": [
     "TP.HCM đặt mục tiêu trở thành trung tâm phát triển kinh tế tầm thấp đầu tiên của Việt Nam vào năm 2030, với giai đoạn 2026 đến 2027 hoàn thiện cơ chế thử nghiệm có kiểm soát và giai đoạn 2028 đến 2030 mở rộng thương mại hóa.",
@@ -1473,7 +1537,9 @@
    "summary": "Dubai lập vertiport thương mại đầu tiên trên thế giới, cơ sở bốn tầng 3.100 m2 gần sân bay quốc tế Dubai, phục vụ khoảng 170.000 hành khách mỗi năm; Skyports vận hành, Joby cung cấp máy bay.",
    "tier": "A",
    "date": "2026-04-17",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:joby-aviation"
+   ],
    "image": null,
    "body": [
     "Dubai đã lập cơ sở được mô tả là vertiport thương mại đầu tiên trên thế giới, một công trình bốn tầng rộng 3.100 mét vuông gần Sân bay Quốc tế Dubai, có thể phục vụ khoảng 170.000 hành khách mỗi năm.",
@@ -1513,7 +1579,12 @@
    "summary": "Bộ Giao thông và FAA Mỹ công bố Chương trình Thí điểm Tích hợp eVTOL (eIPP) ngày 9/3/2026, chọn tám dự án trên 26 bang; sáu loại máy bay tham gia gồm Archer Midnight, Joby S4, Beta Alia và Wisk thế hệ 6.",
    "tier": "B",
    "date": "2026-03-16",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:joby-aviation",
+    "company:archer-aviation",
+    "company:wisk-aero",
+    "company:beta-technologies"
+   ],
    "image": null,
    "body": [
     "Bộ Giao thông Mỹ và FAA công bố Chương trình Thí điểm Tích hợp eVTOL (eIPP) ngày 9/3/2026, lập theo một sắc lệnh tháng 6/2025 về đổi mới hàng không, chọn tám dự án trên 26 bang từ hơn 30 đề xuất.",
@@ -1533,7 +1604,9 @@
    "summary": "Ngày 5/6/2026, phi công thử nghiệm bay nguyên mẫu Valo cỡ thật của Vertical Aerospace tại Anh; máy bay tám rotor điện, chở phi công cùng tối đa bốn khách, nhắm chứng nhận thương mại 2028, khoảng 1.500 đơn đặt trước.",
    "tier": "A",
    "date": "2026-06-21",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:vertical-aerospace"
+   ],
    "image": null,
    "body": [
     "Ngày 5/6/2026, phi công thử nghiệm Paul Stone đã bay nguyên mẫu Valo cỡ thật mới nhất của Vertical Aerospace từ Trung tâm Bay thử tại Anh, với cả hai nguyên mẫu nay cùng hoạt động thử nghiệm song song.",
@@ -1593,7 +1666,10 @@
    "summary": "Leonardo và Baykar hoàn tất thử nghiệm bay đầu tiên chương trình phối hợp có người lái và không người lái K-SWARM tại Corlu, Thổ Nhĩ Kỳ; tiêm kích M-346 điều khiển UAV chiến đấu Bayraktar KIZILELMA khi bay.",
    "tier": "A",
    "date": "2026-06-23",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:baykar",
+    "company:leonardo"
+   ],
    "image": null,
    "body": [
     "Leonardo và Baykar hoàn tất các chuyến bay thử nghiệm trực tiếp đầu tiên của chương trình phối hợp có người lái và không người lái K-SWARM tại trung tâm thử nghiệm của Baykar ở Corlu, Thổ Nhĩ Kỳ, công bố ngày 22/6/2026.",
@@ -1613,7 +1689,9 @@
    "summary": "Teledyne FLIR Defense ra mắt Black Recon, hệ micro-drone tự phóng cho trinh sát liên tục từ xe quân sự; mỗi UAV nặng dưới 450 gram, bay 50 tới 60 phút, hoạt động được trong môi trường mất GPS.",
    "tier": "A",
    "date": "2026-06-15",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:teledyne-flir"
+   ],
    "image": null,
    "body": [
     "Teledyne FLIR Defense ra mắt Black Recon, hệ thống micro-drone tự phóng cung cấp trinh sát không dây liên tục từ xe quân sự và cơ sở cố định, công bố ngày 15/6/2026.",
@@ -1653,7 +1731,9 @@
    "summary": "Lục quân Mỹ trao AeroVironment hợp đồng 117,3 triệu USD ngày 3/6/2026 mua 82 hệ UAV P550 cho trinh sát cấp tiểu đoàn; mỗi hệ bay tới năm giờ, cất hạ cánh thẳng đứng, đơn giá khoảng 1,43 triệu USD.",
    "tier": "B",
    "date": "2026-06-04",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:aerovironment"
+   ],
    "image": null,
    "body": [
     "Lục quân Mỹ trao AeroVironment hợp đồng 117,3 triệu USD ngày 3/6/2026 để mua 82 hệ thống bay không người lái P550 cho hoạt động tình báo và giám sát cấp tiểu đoàn.",
@@ -1713,7 +1793,9 @@
    "summary": "AutoFlight ra mắt Matrix, được mô tả là eVTOL 5 tấn đầu tiên thế giới, hoàn tất chuyến bay chuyển tiếp đầy đủ tại Côn Sơn, Trung Quốc ngày 5/2/2026; sải cánh 20 mét, tải tới 1.500 kg ở cấu hình hàng hóa.",
    "tier": "B",
    "date": "2026-02-06",
-   "entity_tags": [],
+   "entity_tags": [
+    "company:autoflight"
+   ],
    "image": null,
    "body": [
     "AutoFlight ra mắt Matrix, được mô tả là máy bay eVTOL 5 tấn đầu tiên thế giới, hoàn tất một chuyến bay chuyển tiếp đầy đủ từ cất cánh thẳng đứng qua bay hành trình tới hạ cánh thẳng đứng tại cơ sở ở Côn Sơn, Trung Quốc ngày 5/2/2026.",

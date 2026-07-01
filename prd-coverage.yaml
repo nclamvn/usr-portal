@@ -36,8 +36,8 @@ acceptance:
   - { id: "8.2.4", req: "Upload logo/gallery/video/PDF năng lực",                                status: missing, gate_proof: "" }
   # 8.3 News CMS
   - { id: "8.3.1", req: "Gắn nhiều entity (Company/Aircraft/Tech/Country) một màn soạn",         status: missing, gate_proof: "" }
-  - { id: "8.3.2", req: "Sau publish bài auto xuất hiện đúng các trang entity đã gắn",           status: partial, gate_proof: "verify_newsroom" }
-  - { id: "8.3.3", req: "Gỡ tag → gỡ bài khỏi trang entity (≤1 cache refresh)",                  status: missing, gate_proof: "" }
+  - { id: "8.3.2", req: "Sau publish bài auto xuất hiện đúng các trang entity đã gắn",           status: done,    gate_proof: "verify_news_connect" }
+  - { id: "8.3.3", req: "Gỡ tag → gỡ bài khỏi trang entity (≤1 cache refresh)",                  status: done,    gate_proof: "verify_news_connect" }
   # 8.4 Knowledge CMS
   - { id: "8.4.1", req: "Mỗi Knowledge có URL /knowledge/[slug]",                               status: done,    gate_proof: "verify_seo" }
   - { id: "8.4.2", req: "Thuật ngữ auto-link về trang Knowledge",                                status: partial, gate_proof: "verify_content" }
