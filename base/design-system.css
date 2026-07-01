@@ -783,6 +783,7 @@ a.mon-strm-nm:hover, .mon-strm-main a:hover .mon-strm-nm { color: var(--brass); 
 .agg-sum { font-size: .84rem; line-height: 1.45; color: var(--ink-soft); margin: 0; }
 .agg-meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); margin-top: auto; padding-top: 4px; }
 .agg-src { color: var(--brass); text-decoration: none; }
+.agg-date { white-space: nowrap; }  /* ISO date must never break at its hyphens */
 /* TIP-NEWS-REALTIME — trang đọc in-site mỗi card (news-card/<id>.html). Reading column, themed, no off-bg. */
 .ncard-wrap { max-width: var(--w-read); margin: 0 auto; padding: 2rem 1.4rem 4rem; }
 .ncard-list { max-width: var(--w-wide); margin: 0 auto; padding: 2rem 1.4rem 4rem; }

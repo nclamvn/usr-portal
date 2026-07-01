@@ -522,7 +522,7 @@ CSS = """
   .trend-card .cat{font-size:10px;color:var(--brass);letter-spacing:.06em;font-weight:600;margin-bottom:8px;display:block;text-transform:uppercase}
   .trend-card h3{font-family:var(--font-head);font-size:15px;margin:0 0 10px;font-weight:600;line-height:1.3;color:var(--ink)}
   .trend-card:hover h3{color:var(--brass)}
-  .trend-card .tmeta{font-size:10.5px;color:var(--muted)}
+  .trend-card .tmeta{font-size:10.5px;color:var(--muted);white-space:nowrap}
   /* INFO/02 signature (token paint; verify_graphics) */
   .sigwrap{max-width:var(--w-wide);margin:0 auto;padding:0 1.4rem;position:relative}
   /* capability scatter — dots coloured via token classes; root svg fill=none (verify_svg safe) */
@@ -566,7 +566,7 @@ CSS = """
   .report-card .rmeta{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between;margin-top:auto;padding-top:10px}
   /* hotnews */
   .hotnews{max-width:var(--w-wide);margin:0 auto;border:1px solid var(--hair);border-top:none}
-  .hot-row{display:grid;grid-template-columns:58px 1fr 92px;border-top:1px solid var(--hair);align-items:center;text-decoration:none;color:inherit}
+  .hot-row{display:grid;grid-template-columns:58px 1fr 108px;border-top:1px solid var(--hair);align-items:center;text-decoration:none;color:inherit}
   .hot-row:hover{background:var(--bg-2)}
   .hot-row>div{padding:14px 18px}
   .hot-row .hrank{font-family:var(--font-head);font-size:17px;font-weight:600;color:var(--brass);border-right:1px solid var(--hair)}
@@ -575,7 +575,7 @@ CSS = """
   .htx{display:flex;flex-direction:column;gap:2px;min-width:0}
   .hot-row:hover .htx{color:var(--brass)}
   .hot-row .htitle .hcat{display:block;font-size:10px;color:var(--brass);margin-bottom:0;text-transform:uppercase;letter-spacing:.06em}
-  .hot-row .hdate{font-size:11px;color:var(--muted);text-align:right}
+  .hot-row .hdate{font-size:11px;color:var(--muted);text-align:right;white-space:nowrap}
   .block-gap{height:54px}
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr}
