@@ -6181,12 +6181,12 @@
       "slug": "uav-dji-mavic-3-enterprise-3m",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 45
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 15
         },
         "max_payload_kg": {
           "tier": null,
@@ -6197,16 +6197,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 21
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 1.05
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 6000
         }
       }
     },
@@ -6632,12 +6632,12 @@
       "slug": "uav-dji-neo-neo",
       "specs": {
         "endurance_min": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 18
         },
         "max_link_km": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 10
         },
         "max_payload_kg": {
           "tier": null,
@@ -6648,16 +6648,16 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 16
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 0.135
         },
         "service_ceiling_m": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 2000
         }
       }
     },
@@ -8296,8 +8296,8 @@
           "v": null
         },
         "mtow_kg": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 34.86
         },
         "service_ceiling_m": {
           "tier": null,
@@ -17608,8 +17608,8 @@
           "v": null
         },
         "max_speed_ms": {
-          "tier": null,
-          "v": null
+          "tier": "A",
+          "v": 12
         },
         "mtow_kg": {
           "tier": null,

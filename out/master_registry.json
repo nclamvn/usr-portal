@@ -59280,19 +59280,35 @@
           "inherited_from": null
         },
         "mtow_kg": {
-          "value": null,
-          "status": "unverified",
-          "confidence": "none",
-          "sources": [],
-          "last_verified": null,
+          "value": 1.05,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 1.05,
+              "note": "1050 g takeoff weight"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         },
         "endurance_min": {
-          "value": null,
-          "status": "unverified",
-          "confidence": "none",
-          "sources": [],
-          "last_verified": null,
+          "value": 45,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 45,
+              "note": "45 min max flight time"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         },
         "thermal": {
@@ -59347,6 +59363,54 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 21,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 21,
+              "note": "21 m/s max horizontal, Sport mode"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 15,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 15,
+              "note": "15 km FCC transmission"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 6000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 6000,
+              "note": "6000 m ASL max service ceiling"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         }
       },
@@ -60984,6 +61048,86 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 0.135,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/neo/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 0.135,
+              "note": "135 g takeoff weight"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "endurance_min": {
+          "value": 18,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/neo/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 18,
+              "note": "18 min max flight time"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 16,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/neo/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 16,
+              "note": "16 m/s max horizontal, Manual mode"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "max_link_km": {
+          "value": 10,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/neo/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 10,
+              "note": "10 km FCC (6 km CE/SRRC/MIC)"
+            }
+          ],
+          "last_verified": "2026-07-01",
+          "inherited_from": null
+        },
+        "service_ceiling_m": {
+          "value": 2000,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.dji.com/neo/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 2000,
+              "note": "2000 m max service ceiling"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         }
       }
@@ -65701,6 +65845,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "mtow_kg": {
+          "value": 34.86,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://freeflysystems.com/alta-x/specs",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 34.86,
+              "note": "34.86 kg / 76.85 lb max gross takeoff weight"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         }
       },
@@ -95367,6 +95527,22 @@
             }
           ],
           "last_verified": "2026-06-22",
+          "inherited_from": null
+        },
+        "max_speed_ms": {
+          "value": 12,
+          "status": "verified",
+          "confidence": "high",
+          "sources": [
+            {
+              "url": "https://www.xa.com/en/v50",
+              "tier": "A",
+              "retrieved": "2026-07-01",
+              "claimed_value": 12,
+              "note": "12 m/s RevoCast operating speed"
+            }
+          ],
+          "last_verified": "2026-07-01",
           "inherited_from": null
         }
       }

@@ -2,15 +2,15 @@
   "aggregates": {
     "entity_count": 444,
     "field_status_counts": {
-      "None": 3965,
+      "None": 3955,
       "derived": 267,
       "disputed": 6,
       "sourced": 1700,
-      "unverified": 37,
-      "verified": 2905
+      "unverified": 35,
+      "verified": 2917
     },
     "source_tier_counts": {
-      "A": 2345,
+      "A": 2357,
       "B": 1549,
       "C": 586,
       "derived": 267
@@ -25,7 +25,7 @@
         "total": 444
       },
       "endurance_min": {
-        "present": 282,
+        "present": 284,
         "total": 444
       },
       "gps_denied_capable": {
@@ -33,7 +33,7 @@
         "total": 444
       },
       "max_link_km": {
-        "present": 69,
+        "present": 71,
         "total": 444
       },
       "max_payload_kg": {
@@ -45,11 +45,11 @@
         "total": 444
       },
       "max_speed_ms": {
-        "present": 236,
+        "present": 239,
         "total": 444
       },
       "mtow_kg": {
-        "present": 284,
+        "present": 287,
         "total": 444
       },
       "ndaa_compliant": {
@@ -57,7 +57,7 @@
         "total": 444
       },
       "service_ceiling_m": {
-        "present": 164,
+        "present": 166,
         "total": 444
       }
     },
@@ -29760,10 +29760,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": "none",
-        "source_tier": null,
-        "status": "unverified",
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/mavic-3-enterprise/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 45
       },
       "entity_type": "uav",
       "family": {
@@ -29847,10 +29854,17 @@
         "value": "enterprise"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/mavic-3-enterprise/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 15
       },
       "max_payload_kg": {
         "confidence": null,
@@ -29865,16 +29879,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/mavic-3-enterprise/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 21
       },
       "mtow_kg": {
-        "confidence": "none",
-        "source_tier": null,
-        "status": "unverified",
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/mavic-3-enterprise/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 1.05
       },
       "name": {
         "confidence": "high",
@@ -29917,10 +29945,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://enterprise.dji.com/mavic-3-enterprise/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 6000
       },
       "slug": "uav-dji-mavic-3-enterprise-3m",
       "variant": {
@@ -32057,10 +32092,17 @@
         "value": null
       },
       "endurance_min": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.dji.com/neo/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 18
       },
       "entity_type": "uav",
       "family": {
@@ -32137,10 +32179,17 @@
         "value": "consumer"
       },
       "max_link_km": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.dji.com/neo/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 10
       },
       "max_payload_kg": {
         "confidence": null,
@@ -32155,16 +32204,30 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.dji.com/neo/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 16
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.dji.com/neo/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 0.135
       },
       "name": {
         "confidence": "high",
@@ -32193,10 +32256,17 @@
       },
       "provenance_class": "commercial_covered_public",
       "service_ceiling_m": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.dji.com/neo/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 2000
       },
       "slug": "uav-dji-neo-neo",
       "variant": {
@@ -39808,10 +39878,17 @@
         "value": null
       },
       "mtow_kg": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://freeflysystems.com/alta-x/specs"
+          }
+        ],
+        "status": "verified",
+        "value": 34.86
       },
       "name": {
         "confidence": "high",
@@ -86625,10 +86702,17 @@
         "value": null
       },
       "max_speed_ms": {
-        "confidence": null,
-        "source_tier": null,
-        "status": null,
-        "value": null
+        "confidence": "high",
+        "source_tier": "A",
+        "sources": [
+          {
+            "retrieved": "2026-07-01",
+            "tier": "A",
+            "url": "https://www.xa.com/en/v50"
+          }
+        ],
+        "status": "verified",
+        "value": 12
       },
       "mtow_kg": {
         "confidence": null,
@@ -99314,5 +99398,5 @@
   },
   "schema": "site-data/2",
   "schema_version": 2,
-  "source_registry_sha256": "270b5f5491655baae2eebf8387fa5e4308f872167a0093228b0eae567c3dc249"
+  "source_registry_sha256": "b5ffb3549851f4ae3062ac31c94d0c857a2d563bae47e0f17ce48b1cbf7e1465"
 }

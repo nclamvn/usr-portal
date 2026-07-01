@@ -3261,6 +3261,22 @@
     },
     {
       "maker": "DJI",
+      "name": "DJI Mavic 3M",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 36,
+        "max_link_km": 52,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 38,
+        "service_ceiling_m": 70
+      },
+      "slug": "uav-dji-mavic-3-enterprise-3m",
+      "total": 49
+    },
+    {
+      "maker": "DJI",
       "name": "DJI Inspire 3",
       "of": 6,
       "scored": 4,
@@ -3817,22 +3833,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-yamaha-fazer-r-base",
-      "total": 44
-    },
-    {
-      "maker": "XAG",
-      "name": "XAG V50",
-      "of": 6,
-      "scored": 1,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": 44,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-xag-v50-v50",
       "total": 44
     },
     {
@@ -4797,6 +4797,22 @@
     },
     {
       "maker": "DJI",
+      "name": "DJI Neo",
+      "of": 6,
+      "scored": 4,
+      "scores": {
+        "endurance_min": 22,
+        "max_link_km": 45,
+        "max_payload_kg": null,
+        "max_range_km": null,
+        "max_speed_ms": 32,
+        "service_ceiling_m": 48
+      },
+      "slug": "uav-dji-neo-neo",
+      "total": 37
+    },
+    {
+      "maker": "DJI",
       "name": "DJI Mini 3 Pro",
       "of": 6,
       "scored": 3,
@@ -5129,6 +5145,22 @@
         "service_ceiling_m": null
       },
       "slug": "uav-yuneec-mantis-q-mantis-q",
+      "total": 34
+    },
+    {
+      "maker": "XAG",
+      "name": "XAG V50",
+      "of": 6,
+      "scored": 2,
+      "scores": {
+        "endurance_min": null,
+        "max_link_km": null,
+        "max_payload_kg": 44,
+        "max_range_km": null,
+        "max_speed_ms": 25,
+        "service_ceiling_m": null
+      },
+      "slug": "uav-xag-v50-v50",
       "total": 34
     },
     {
@@ -6665,38 +6697,6 @@
         "service_ceiling_m": null
       },
       "slug": "uav-easy-aerial-falcon-falcon",
-      "total": null
-    },
-    {
-      "maker": "DJI",
-      "name": "DJI Neo",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-neo-neo",
-      "total": null
-    },
-    {
-      "maker": "DJI",
-      "name": "DJI Mavic 3M",
-      "of": 6,
-      "scored": 0,
-      "scores": {
-        "endurance_min": null,
-        "max_link_km": null,
-        "max_payload_kg": null,
-        "max_range_km": null,
-        "max_speed_ms": null,
-        "service_ceiling_m": null
-      },
-      "slug": "uav-dji-mavic-3-enterprise-3m",
       "total": null
     },
     {
