@@ -256,21 +256,28 @@
   <url><loc>https://usr-portal.vercel.app/news-card/cn-china-low-altitude.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-china-maritime-combat.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-china-sets-sights.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/cn-citic-tower-incident-2026.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/cn-civil-aviation-law-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-country-low-altitude.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-dji-agriculture-reveals.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-drone-standards-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-ehang-31months.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/cn-ehang-erhai-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-ehang-launches-automated.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-ehang-q1-2026.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/cn-hongkong-evtol-trials-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-kttt-doi-moi.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-shenzhen-1200-vertiport.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-updated-overview-low.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/cn-xpeng-x2-klims-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/index.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-can-gio-vung-tau-uav.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-cuuho-daklak.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-cuuho-lu-2024.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-da-nang-uav-chien-luoc.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-dien-bien-6000.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/vn-dien-bien-sandbox-2026.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/vn-drone-ma-dinh-danh-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-drone-nongnghiep-dbscl.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-ha-noi-siet.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-hcm-drone-capital.html</loc></url>
@@ -278,6 +285,7 @@
   <url><loc>https://usr-portal.vercel.app/news-card/vn-nd288-2025.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-nong-dan-dong.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-phun-thuoc-bao.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/vn-quang-tri-drone-lua-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-tang-toc-kttt-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-tiem-nang-10ty.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/vn-tren-canh-dong.html</loc></url>
@@ -299,17 +307,23 @@
   <url><loc>https://usr-portal.vercel.app/news-card/world-delivery-expanding-quietly.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-dji-share.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-drone-market-gvr.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-easa-100g-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-faa-part108.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-fact-checking-europe.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-joby-new-york.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-joby-toyota-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-military-drone-market.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-oslo-incident.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-shieldai-destinus-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-shut-copenhagen-airport.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-skydio-bvlos.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-skydio-gov.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-skyvalor-cuas-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-u-space-light.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-ukraine-loc-dau-drone.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-usmc-anduril-pulsar-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-walmart-wing-7-do-thi.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/news-card/world-wonder-zipline-2026.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/world-zipline-charts-delivery.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news/bai-01-data-note-phuong-phap.html</loc></url>
