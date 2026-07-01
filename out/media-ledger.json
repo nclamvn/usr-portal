@@ -1,7 +1,7 @@
 {
   "by_status": {
-    "cc": 84,
-    "owned": 12
+    "cc": 81,
+    "owned": 13
   },
   "entries": [
     {
@@ -643,17 +643,6 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Sander Smeets / Wikimedia Commons · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:vn-hcm-uav-giao-hang-rtr",
-      "source": "VietnamPlus (TTXVN)",
-      "source_url": "https://www.vietnamplus.vn/tp-ho-chi-minh-thu-nghiem-ung-dung-uav-vao-hoat-dong-giao-hang-post1086665.vnp",
-      "src": "/images/content/open/uav-deltaquad.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
       "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -738,28 +727,6 @@
       "source": "VnExpress",
       "source_url": "https://vnexpress.net/uav-viet-co-tiem-nang-canh-tranh-the-gioi-4991987.html",
       "src": "/images/content/open/uav-deltaquad.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:vn-viettel-counter-uav",
-      "source": "Người Quan Sát",
-      "source_url": "https://nguoiquansat.vn/to-hop-chong-uav-cua-viettel-gay-an-tuong-voi-bao-chi-chau-au-duoc-vi-nhu-khac-tinh-cua-drone-291072.html",
-      "src": "/images/content/open/fpv-military.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:vn-viettel-saha-2026",
-      "source": "Một Thế Giới",
-      "source_url": "https://1thegioi.vn/bao-bi-de-cao-3-loai-drone-trinh-sat-va-cam-tu-cua-viettel-tai-saha-2026-251486.html",
-      "src": "/images/content/open/paris-airshow-uav.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -1059,9 +1026,20 @@
       "src": "/images/content/vega/vega-tactical-deploy.webp",
       "tier": null,
       "where": "media.json"
+    },
+    {
+      "credit": "Ảnh: Real-time Robotics — HERA · minh-hoạ",
+      "license_status": "owned",
+      "owned": true,
+      "ref": "card:vn-hcm-uav-giao-hang-rtr",
+      "source": "VietnamPlus (TTXVN)",
+      "source_url": "https://www.vietnamplus.vn/tp-ho-chi-minh-thu-nghiem-ung-dung-uav-vao-hoat-dong-giao-hang-post1086665.vnp",
+      "src": "/images/content/hero/hero-flight-1.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
     }
   ],
   "schema": "media-ledger/1",
   "to_license": [],
-  "total": 96
+  "total": 94
 }

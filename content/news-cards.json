@@ -59,8 +59,7 @@
    "entity_tags": [
     "company:viettel"
    ],
-   "image": "/images/content/open/paris-airshow-uav.webp",
-   "image_credit": "Ảnh: Matti Blume / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+   "image": null,
    "body": [
     "Tại triển lãm quốc phòng SAHA 2026 ở Istanbul, Viettel High Tech giới thiệu ba dòng UAV mới.",
     "Trong số đó có UAV trinh sát tầm xa VU-MALE với tầm bay trên 1.000 km và UAV tấn công tích hợp AI VU-C2. Đây là bước Viettel mở rộng danh mục UAV quân sự ra thị trường quốc tế.",
@@ -82,13 +81,12 @@
    "entity_tags": [
     "company:viettel"
    ],
-   "image": "/images/content/open/fpv-military.webp",
+   "image": null,
    "body": [
     "Tại triển lãm quốc phòng SAHA 2026, tổ hợp chống UAV của Viettel là một trong số khí tài Việt Nam được báo chí quốc phòng châu Âu chú ý. Theo nguồn dẫn, tạp chí EDR Magazine dành một bài riêng, mô tả hệ thống như giải pháp đối phó trực diện với mối đe doạ từ thiết bị bay không người lái.",
     "Các tổ hợp chống UAV nói chung kết hợp radar và cảm biến quang điện tử để phát hiện mục tiêu bay thấp, cùng biện pháp vô hiệu hoá như gây nhiễu tín hiệu điều khiển và định vị. Đây là hướng phát triển được nhiều nước theo đuổi khi drone cỡ nhỏ ngày càng phổ biến.",
     "Việc một sản phẩm trong nước xuất hiện tại sự kiện quốc tế phản ánh nỗ lực của doanh nghiệp Việt Nam tham gia lĩnh vực khí tài phòng thủ. Chi tiết kỹ thuật và năng lực cụ thể của tổ hợp do nhà sản xuất công bố; bản đầy đủ ở bài gốc tại nguồn."
-   ],
-   "image_credit": "Ảnh: ArmiyaInform / Wikimedia Commons (CC BY 4.0) · minh-hoạ"
+   ]
   },
   {
    "id": "vn-hcm-drone-capital",
@@ -949,8 +947,8 @@
    "entity_tags": [
     "company:real-time-robotics"
    ],
-   "image": "/images/content/open/uav-deltaquad.webp",
-   "image_credit": "Ảnh: Sander Smeets / Wikimedia Commons · minh-hoạ",
+   "image": "/images/content/hero/hero-flight-1.webp",
+   "image_credit": "Ảnh: Real-time Robotics — HERA · minh-hoạ",
    "body": [
     "Theo bài viết, chương trình thực hiện trong Khu Công nghệ cao TP Hồ Chí Minh dựa trên Nghị quyết 20/2024 của Hội đồng nhân dân thành phố, nhằm đánh giá độ an toàn và hiệu quả của giải pháp công nghệ trong nước.",
     "Phép bay có hiệu lực từ ngày 1/1 đến 31/12/2026. Thành phố đặt mục tiêu thành trung tâm sản xuất và ứng dụng UAV của khu vực. Toàn văn ở nguồn."
