@@ -1,11 +1,11 @@
 # X-RAY · USR Portal (Uncrewed Systems Review) · handover gửi Chủ thầu
 
 > Handover + báo-cáo dataset/kiến-trúc, đo SỐNG từ engine (không từ trí nhớ).
-> HEAD `75a55f0b` · nhánh `main` · **148 commit** · repo PUBLIC `github.com/nclamvn/usr-portal` · prod `usr-portal.vercel.app` (auto-deploy khi push `main`).
+> HEAD `a29a4886` · nhánh `main` · **162 commit** · repo PUBLIC `github.com/nclamvn/usr-portal` · prod `usr-portal.vercel.app` (auto-deploy khi push `main`).
 > Working dir: `/Users/os/RtR/rtr-news/portal`. Một lệnh verify: `./build_all.sh` → "build_all: OK".
 >
-> **Snapshot:** static-gen, zero-runtime · **444 UAV / 433 family / 186 hãng (derived, alias-merged) / 33 nước** ·
-> 860 trang HTML · 20 builder + 27 verifier + 26 teeth · ~11K LOC Python + 864 dòng design-system.css.
+> **Snapshot:** static-gen, zero-runtime · **444 UAV / 433 family / 183 hãng (derived, alias-merged) / 33 nước** ·
+> 860 trang HTML · 20 builder + 28 verifier + 27 teeth · ~11K LOC Python + 864 dòng design-system.css.
 
 ---
 
@@ -27,7 +27,7 @@
   (đơn-vị đếm = variant). Mỗi thuộc-tính là một **cell**:
   `{value, status, confidence, sources:[{url, tier(A/B/C), retrieved, claimed_value}], last_verified, inherited_from}`.
   Family mang thuộc-tính chung (maker/country/airframe/propulsion); variant override + spec.
-- **`out/site-data.json`** (schema 2): phóng-chiếu SỐNG = **444 uav + 186 company** (company derive từ manufacturer,
+- **`out/site-data.json`** (schema 2): phóng-chiếu SỐNG = **444 uav + 183 company** (company derive từ manufacturer,
   alias-merged, không sourcing mới) + aggregates. Sha256 chốt idempotent.
 - **field_status (~8.9K cell):** verified 2.905 · sourced 1.700 · derived 267 · unverified 37 · disputed 6 · honest-null (None) 3.965.
 - **source_tier:** A 2.345 · B 1.549 · C 586 · derived 267 (sàn tin-cậy nghiêng A).
@@ -38,8 +38,8 @@
   airframe (fixed-wing 177 · multirotor 82 · vtol_fixedwing 65 · quadcopter 47 …) · Blue UAS 26 · NDAA 28.
 - **HQ trụ-sở (TIP-MAP nhịp D):** **99 / 186 hãng có `hq_city` kèm nguồn + tier** (top-102 maker = ~80% hệ-thống);
   87 còn lại honest-null. Toạ-độ qua gazetteer Public-Domain `CITY_COORD` (key = chuỗi `hq_city` đúng nguyên-văn).
-- **Kho `content/` (sự-thật viết tay):** newsroom 54 bài `.md` (data-note/company-profile/explainer/data-report) ·
-  news-cards 61 thẻ (dòng A: link ngoài + tóm-tắt USR, copyright-safe) · media 52 asset CC/owned (rights-gated) ·
+- **Kho `content/` (sự-thật viết tay):** newsroom 56 bài `.md` (data-note/company-profile/explainer/data-report) ·
+  news-cards 91 thẻ (dòng A: link ngoài + tóm-tắt USR, copyright-safe; `entity_tags` nối hồ-sơ hãng, `image` CC/owned + credit) · media 52 asset CC/owned (rights-gated) ·
   glossary 5 · LAE registry riêng (`content/lae-registry.json`, 50 entity, chiến-dịch refinery, tách khỏi registry UAV) ·
   `company_aliases.json` (6 merge tường-minh) · `companies.json` (99 golden record sourced).
 
@@ -61,18 +61,18 @@ site-data + verify → reference/detail/company/taxonomy → newsroom/analysis/k
 monitor/home/registry-cards/compare/search/data/review/aggregation/sitemap/bundle → **toàn-bộ cổng gate**.
 
 ### 4.3 Bề-mặt (860 .html)
-`uav/444 · company/186 · country/34 · segment/14 · airframe/9 · compliance/3 · news/59 · news-card/62 ·
+`uav/444 · company/183 · country/34 · segment/14 · airframe/9 · compliance/3 · news/61 · news-card/92 ·
 knowledge/5 · weight/7 · flight-time/6 · analysis/2` + top-level
 (`index · reference · compare · data · review · search · knowledge · news · monitor · registry · bundle`).
 
 ### 4.4 Hệ-thống gate (răng = chứng-cứ tự-bites)
-**27 verifier + 26 teeth.** Mỗi verifier có teeth song-hành: tiêm lỗi → buộc exit 2 → restore → real-data pass.
+**28 verifier + 27 teeth.** Mỗi verifier có teeth song-hành: tiêm lỗi → buộc exit 2 → restore → real-data pass.
 Triết-lý: cổng không có răng là cổng giả.
 - **data-integrity:** site_data (honest-null hai chiều · aggregates-live), home, data (+ drift `spec_range`).
 - **provenance:** media rights (enum quyền · owner/license thật), media ledger.
 - **graph/SEO/nav:** graph (0 dangling) · taxonomy · breadcrumb · redirects · seo (sitemap + JSON-LD) · search · prd_coverage.
 - **zero-fab viz:** graphics (số trong SVG recompute · 0 hex) · frontpage.
-- **content:** newsroom (figure-trace + format + sources + disclosure) · newsroom_feed · aggregation (8 răng) · knowledge · review.
+- **content:** newsroom (figure-trace + format + sources + disclosure) · newsroom_feed · aggregation (8 răng) · news_connect (entity_tags hai-chiều + teeth) · knowledge · review.
 - **chrome khoá:** header + footer (byte-identical mọi trang) · ux1.
 - **trình-bày:** check_i18n (en==vn cân) · THEME_PURITY (luminance polarity light/dark) · svg (fill governance).
 - **bản-đồ (TIP-MAP):** `verify_map` + `teeth_map` (8 răng) · xem §5.
@@ -100,11 +100,23 @@ Engine `geo_map.py` (equirectangular `_proj`, token-only paint, nhãn HTML bilin
 - **Dedup alias entity** (cùng cơ-chế `company_aliases.json`): đã gộp **autel · freefly · qods · insitu**
   (Textron giữ riêng = parent/subsidiary thật). 6 alias tổng.
 
+## 5.1 · TIP-NEWS-CONNECT (nối feed vào entity · ảnh đúng · bài sâu VN-KTTT, ba nhịp tuần-tự)
+Lane tĩnh (không Directus), gác bởi `verify_news_connect` + `teeth_news_connect`. Ba nhịp, mỗi nhịp một cổng, VERIFY từng bước.
+- **A · entity_tags:** 37/91 thẻ gắn `entity_tags` → 45 link tới 24 hãng có thật; thẻ không khớp giữ `[]` (honest-null).
+  Two-way sinh từ `build_company` (`<ul class="fleet news-list">`); cổng `NEWS_TAG_DANGLING` + `NEWS_TAG_ASYMMETRY`. Commit `dd9edfe8`.
+- **B · ảnh open-licensed:** audit 91 thẻ, **gỡ 10 ảnh sai maker/nước** về `image:null` (SVG blueprint hiện thay; 7 thẻ đã lan ảnh sai
+  sang trang hãng qua tag nhịp A), **thêm 13 ảnh đúng** từ kho verified + 1 ảnh RtR-owned (HERA) cho thẻ RtR; top-24 trang chủ 0 lặp,
+  tái-dùng ≤3x. `verify_media` canh license/credit/src. Commit `237d4959` + `1f703e43`.
+- **C · bài sâu VN-KTTT:** 2 explainer original (web-verified trước khi viết): hành-lang bay thấp ba lớp
+  (ND288 + TT78/2026/TT-BCA mã-định-danh từ 20/7 + QĐ 1291/QĐ-UBND Điện Biên tới 31/5/2027) · TP.HCM làm trục hệ-sinh-thái
+  (RtR giao-hàng + Cần Giờ–Vũng Tàu + agtech Đồng Tháp/Quảng Trị). figure-trace số registry (444/183/33 · rtr=3/viettel=2);
+  bài tự hiện trên trang hãng qua E→D. Commit `a29a4886`.
+
 ## 6 · Số liệu hiện-trạng (snapshot, sống)
-- Registry: **444 UAV · 186 hãng · 33 nước · 13 phân-khúc** · độ-phủ spec ~32%.
+- Registry: **444 UAV · 183 hãng · 33 nước · 13 phân-khúc** · độ-phủ spec ~32%.
 - Nguồn: **2.345 A · 1.549 B · 586 C · 267 derived**. Ô: **2.905 verified · 1.700 sourced · 6 disputed (giữ cả) · 37 unverified · 3.965 honest-null**.
-- HQ: **99/186 hãng có trụ-sở kèm nguồn** (top-102 ~80% hệ-thống) · 99 pin trên `/data`.
-- Nội-dung: 54 bài newsroom · 61 card · 50 entity LAE · 5 thuật-ngữ · 52 media asset.
+- HQ: **99/183 hãng có trụ-sở kèm nguồn** (top-102 ~80% hệ-thống) · 99 pin trên `/data`.
+- Nội-dung: 56 bài newsroom · 91 card (37 tagged → 45 entity link) · 50 entity LAE · 5 thuật-ngữ · 52 media asset.
 
 ## 7 · Mở · chờ Chủ thầu/Chủ nhà quyết
 - **HQ đuôi dài**: 87/186 hãng còn honest-null HQ (rank 103+, obscure). Mở-rộng tiếp hay dừng ở ~80%.
@@ -116,7 +128,7 @@ Engine `geo_map.py` (equirectangular `_proj`, token-only paint, nhãn HTML bilin
 ## 8 · Verify lại (bất-kỳ lúc nào)
 ```
 cd portal && ./build_all.sh                                              # exit 0 = mọi cổng + teeth + headless xanh
-git rev-parse --short HEAD                                               # 75a55f0b
+git rev-parse --short HEAD                                               # a29a4886
 curl -s -o /dev/null -w "%{http_code}" https://usr-portal.vercel.app/    # 200
 ```
 Bất-biến khi sửa tiếp: không bịa số · không đè ô disputed · không copy ảnh chưa-phép vào repo public ·
