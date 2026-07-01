@@ -450,12 +450,11 @@
    "tier": "B",
    "date": null,
    "entity_tags": [],
-   "image": "/images/content/open/scan-eagle.webp",
+   "image": null,
    "body": [
     "Theo nguồn dẫn, khung Part 108 yêu cầu hệ thống phát hiện và tránh va chạm, Remote ID, theo dõi vị trí liên tục và tích hợp quản lý không lưu UTM. Khung này thay cho cơ chế xin miễn trừ theo từng chuyến của Part 107.",
     "Chuyển từ miễn trừ từng chuyến sang một bộ yêu cầu chung là bước để bay ngoài tầm nhìn trở thành hoạt động thường quy. Doanh nghiệp vận hành drone sẽ cần đáp ứng các tiêu chuẩn thiết bị và quy trình tương ứng."
-   ],
-   "image_credit": "Ảnh: U.S. Navy / Wikimedia Commons (Public domain) · minh-hoạ"
+   ]
   },
   {
    "id": "world-drone-market-gvr",
@@ -514,12 +513,11 @@
    "entity_tags": [
     "company:skydio"
    ],
-   "image": "/images/content/open/leleka-100.webp",
+   "image": null,
    "body": [
     "Theo nguồn dẫn, Skydio là drone sản xuất tại Mỹ được dùng nhiều nhất trong khối chính phủ và quân đội năm 2026, với hơn 3.000 cơ quan sử dụng, đồng thời cam kết 3,5 tỷ USD cho sản xuất drone tại Mỹ.",
     "Nhu cầu drone sản xuất nội địa ở Mỹ gắn với lo ngại về chuỗi cung ứng và các quy định hạn chế thiết bị nước ngoài trong khu vực công. Các con số do nhà sản xuất và nguồn tổng hợp công bố."
-   ],
-   "image_credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
+   ]
   },
   {
    "id": "world-anduril-arsenal",
@@ -536,12 +534,11 @@
    "entity_tags": [
     "company:anduril"
    ],
-   "image": "/images/content/open/hermes-900-takeoff.webp",
+   "image": null,
    "body": [
     "Theo nguồn dẫn, Anduril xây dựng Arsenal-1, nhà máy trị giá 1 tỷ USD tại Ohio, dự kiến sản xuất hàng chục nghìn hệ thống tự hành mỗi năm từ giữa năm 2026. Danh mục gồm UAV trinh sát Ghost và tổ hợp chống UAV Anvil.",
     "Mô hình nhà máy sản xuất hàng loạt hệ thống tự hành phản ánh xu hướng coi drone là khí tài tiêu hao, sản xuất nhanh và số lượng lớn. Quy mô sản lượng thực tế sẽ phụ thuộc vào tiến độ nhà máy và đơn đặt hàng."
-   ],
-   "image_credit": "Ảnh: Nehemia Gershuni-Aylho / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ"
+   ]
   },
   {
    "id": "vn-xag-giup-nong",
@@ -559,7 +556,8 @@
     "company:dji",
     "company:xag"
    ],
-   "image": null
+   "image": "/images/content/open/xag-drone.webp",
+   "image_credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
   },
   {
    "id": "vn-phun-thuoc-bao",
@@ -574,7 +572,8 @@
    "tier": "B",
    "date": null,
    "entity_tags": [],
-   "image": null
+   "image": "/images/content/open/xag-drone.webp",
+   "image_credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
   },
   {
    "id": "cn-agricultural-intelligent-plant",
@@ -606,7 +605,8 @@
    "entity_tags": [
     "company:dji"
    ],
-   "image": null
+   "image": "/images/content/open/dji-phantom3.webp",
+   "image_credit": "Ảnh: Jacek Halicki / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
   },
   {
    "id": "cn-china-maritime-combat",
@@ -656,7 +656,8 @@
    "entity_tags": [
     "company:ehang-holdings"
    ],
-   "image": null
+   "image": "/images/content/open/ehang-eh184.webp",
+   "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ"
   },
   {
    "id": "cn-country-low-altitude",
@@ -874,7 +875,8 @@
    "tier": "B",
    "date": null,
    "entity_tags": [],
-   "image": null
+   "image": "/images/content/open/ag-newtech.webp",
+   "image_credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
   },
   {
    "id": "vn-tren-canh-dong",
@@ -889,7 +891,8 @@
    "tier": "B",
    "date": null,
    "entity_tags": [],
-   "image": null
+   "image": "/images/content/open/drone-ag-paddy.webp",
+   "image_credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ"
   },
   {
    "id": "vn-tang-toc-kttt-2026",
@@ -969,8 +972,7 @@
     "company:anduril",
     "company:general-atomics"
    ],
-   "image": "/images/content/open/boeing-x45.webp",
-   "image_credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
+   "image": null,
    "body": [
     "Theo bài viết, hai mẫu hướng tới nhiệm vụ giành ưu thế trên không với bán kính chiến đấu khoảng 700 hải lý, đánh dấu bước chuyển sang giai đoạn sản xuất.",
     "Song song, Anduril, Shield AI và Collins Aerospace tiếp tục cạnh tranh cung cấp phần mềm tự hành, với quyết định cuối dự kiến mùa hè 2027. Toàn văn ở nguồn."
@@ -1011,8 +1013,7 @@
    "entity_tags": [
     "company:wing"
    ],
-   "image": "/images/content/open/flytrex-delivery.webp",
-   "image_credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+   "image": null,
    "body": [
     "Theo bài viết, bảy khu vực mới gồm Memphis, New Orleans, Philadelphia, Phoenix, San Diego, vùng Vịnh San Francisco và Salt Lake City, bổ sung cho Dallas-Fort Worth, Houston và Atlanta.",
     "Drone có thể bay tới 60 dặm mỗi giờ, với mục tiêu giao trong khoảng 30 phút. Toàn văn ở nguồn."
@@ -1033,8 +1034,7 @@
    "entity_tags": [
     "company:archer-aviation"
    ],
-   "image": "/images/content/open/evtol-passenger.webp",
-   "image_credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
+   "image": null,
    "body": [
     "Theo bài viết, mẫu Midnight chuyển sang Giai đoạn 4, nơi phải chứng minh tuân thủ các yêu cầu khả năng bay qua thử nghiệm và phân tích chính thức.",
     "Hãng kỳ vọng vận hành thương mại ban đầu tại Mỹ trong năm 2026 theo chương trình tích hợp eVTOL liên bang, bao trùm tám bang. Toàn văn ở nguồn."
@@ -1077,8 +1077,7 @@
    "entity_tags": [
     "company:baykar"
    ],
-   "image": "/images/content/open/mil-ucav-parade.webp",
-   "image_credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
+   "image": null,
    "body": [
     "Theo bài viết, TB3 là biến thể hải quân của TB2 với cánh gập và khả năng cất hạ cánh đường băng ngắn, thiết kế để hoạt động trên tàu sân bay Cavour.",
     "Việc mua sắm chính thức được kỳ vọng trong quý ba năm 2026, sản xuất đặt tại cơ sở Ronchi dei Legionari ở miền Bắc Italy. Toàn văn ở nguồn."
@@ -1099,8 +1098,7 @@
    "entity_tags": [
     "company:autoflight"
    ],
-   "image": "/images/content/open/evtol-volocopter.webp",
-   "image_credit": "Ảnh: Matti Blume / Wikimedia Commons · minh-hoạ",
+   "image": null,
    "body": [
     "Theo cổng thông tin Cục Hàng không Việt Nam, V2000CG được mô tả là mẫu eVTOL hạng tấn duy nhất nắm cả ba chứng nhận đủ điều kiện bay lớn của Trung Quốc.",
     "Chứng nhận từ Indonesia được xem là mở đường cho khả năng vận hành thương mại tại khu vực Đông Nam Á. Toàn văn ở nguồn."
@@ -1181,7 +1179,8 @@
    "tier": "A",
    "date": "2026-06-24",
    "entity_tags": [],
-   "image": null,
+   "image": "/images/content/open/drone-pilot-horseshoe.webp",
+   "image_credit": "Ảnh: Christian / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ",
    "body": [
     "Ủy ban nhân dân tỉnh Điện Biên ban hành Quyết định 1291/QĐ-UBND ngày 23/6/2026, phê duyệt vùng thử nghiệm có kiểm soát cho phát triển kinh tế tầm thấp dựa trên UAV. Đây là mô hình thí điểm cấp địa phương đầu tiên thuộc loại này ở Việt Nam.",
     "Chương trình đặt mục tiêu khoảng 6.000 chuyến bay UAV tới ngày 31/5/2027, tỷ lệ an toàn hướng tới trên 99%, trải trên bốn lĩnh vực: nông nghiệp, logistics, y tế và lập bản đồ số.",
@@ -1201,7 +1200,8 @@
    "tier": "B",
    "date": "2026-06-26",
    "entity_tags": [],
-   "image": null,
+   "image": "/images/content/open/drone-flying.webp",
+   "image_credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
    "body": [
     "Theo Thông tư 78/2026/TT-BCA, từ ngày 20/7/2026 tất cả drone và flycam trên toàn quốc phải được đăng ký và cấp một mã định danh duy nhất qua hệ thống quản lý phương tiện bay thống nhất.",
     "Mỗi thiết bị đã đăng ký phải mang thẻ điện tử hoặc thiết bị tích hợp hiển thị số đăng ký để nhận dạng và kiểm soát. Công an cấp tỉnh thực hiện đăng ký cho tổ chức, cá nhân Việt Nam và có thể phân cấp đăng ký thiết bị dưới 2kg cho đơn vị cấp dưới.",
@@ -1221,7 +1221,8 @@
    "tier": "B",
    "date": "2026-06-23",
    "entity_tags": [],
-   "image": null,
+   "image": "/images/content/open/drone-ag-paddy.webp",
+   "image_credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
    "body": [
     "Tại xã Diên Sanh, tỉnh Quảng Trị, nông dân đang áp dụng drone cho gieo sạ, bón phân và phun thuốc trong vụ lúa hè thu 2026. Hội Nông dân địa phương hỗ trợ hội viên tiếp cận nguồn vay để mua hai thiết bị bay.",
     "Theo ghi nhận, drone giúp gieo sạ nhanh và đều, tiết kiệm lượng giống và giảm chi phí nhân công. Việc phun bằng drone cũng giúp nông dân tránh tiếp xúc trực tiếp với hóa chất nông nghiệp.",
@@ -1243,7 +1244,8 @@
    "entity_tags": [
     "company:joby-aviation"
    ],
-   "image": null,
+   "image": "/images/content/open/joby-s4.webp",
+   "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
    "body": [
     "Joby Aviation và Tập đoàn Toyota công bố khởi động giai đoạn đầu của một liên minh sản xuất chiến lược nhằm chuẩn bị cho sản xuất thương mại mẫu eVTOL của Joby.",
     "Giai đoạn đầu tập trung cải thiện năng suất, chất lượng và chi phí trên toàn bộ quy trình sản xuất eVTOL khi Joby mở rộng quy mô để đáp ứng yêu cầu chứng nhận và nhu cầu dự kiến.",
@@ -1305,7 +1307,8 @@
    "tier": "B",
    "date": "2026-06-23",
    "entity_tags": [],
-   "image": null,
+   "image": "/images/content/open/quad-inflight.webp",
+   "image_credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
    "body": [
     "Đề xuất NPA 2026-103 của Cơ quan An toàn Hàng không châu Âu (EASA) sẽ hạ ngưỡng trọng lượng bắt buộc đăng ký và đào tạo từ 250 gram xuống 100 gram, tác động tới các dòng tiêu dùng như DJI Mini và DJI Neo.",
     "Remote ID trực tiếp sẽ trở thành bắt buộc với mọi drone trên 100 gram, và thiết bị phải từ chối khởi động cho tới khi nhập số đăng ký người vận hành hợp lệ.",
@@ -1540,7 +1543,8 @@
    "entity_tags": [
     "company:joby-aviation"
    ],
-   "image": null,
+   "image": "/images/content/open/joby-s4.webp",
+   "image_credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
    "body": [
     "Dubai đã lập cơ sở được mô tả là vertiport thương mại đầu tiên trên thế giới, một công trình bốn tầng rộng 3.100 mét vuông gần Sân bay Quốc tế Dubai, có thể phục vụ khoảng 170.000 hành khách mỗi năm.",
     "Skyports Infrastructure thiết kế và sẽ vận hành cơ sở, Joby Aviation sản xuất máy bay và quản lý khai thác, còn Cơ quan Đường bộ và Giao thông Dubai (RTA) giám sát quản trị.",
@@ -1754,7 +1758,8 @@
    "tier": "B",
    "date": "2026-06-30",
    "entity_tags": [],
-   "image": null,
+   "image": "/images/content/open/airport-runway.webp",
+   "image_credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
    "body": [
     "Một phi công của JetBlue Airways báo cáo va chạm với một drone khi tiếp cận hạ cánh xuống Sân bay Quốc tế John F. Kennedy sáng thứ Hai khoảng 7 giờ 15, va chạm xảy ra ở độ cao khoảng 3.000 feet.",
     "Phi công báo với kiểm soát không lưu rằng máy bay va vào drone khi đang vòng, và cho biết không cần hỗ trợ để hạ cánh. Kiểm tra sau chuyến bay không phát hiện hư hại.",

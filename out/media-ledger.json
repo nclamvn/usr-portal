@@ -1,6 +1,6 @@
 {
   "by_status": {
-    "cc": 79,
+    "cc": 84,
     "owned": 12
   },
   "entries": [
@@ -467,6 +467,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Jacek Halicki / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:cn-dji-agriculture-reveals",
+      "source": "PR Newswire (DJI Agriculture)",
+      "source_url": "https://www.prnewswire.com/news-releases/dji-agriculture-reveals-global-adoption-of-agricultural-drones-cuts-51mt-in-carbon-emissions-and-saves-410mts-of-water-for-farmers-globally-302757286.html",
+      "src": "/images/content/open/dji-phantom3.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Goh Rhy Yan / Unsplash (CC0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -486,6 +497,17 @@
       "source_url": "https://businessaviation.aero/evtol-news-and-electric-aircraft-news/low-altitude-economy/china-evtol-certification-31-months-vs-7-years",
       "src": "/images/content/open/ehang-eh184.webp",
       "tier": "C",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Alex Butterfield / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:cn-ehang-launches-automated",
+      "source": "EHang (IR)",
+      "source_url": "https://ir.ehang.com/news-releases/news-release-details/ehang-launches-uam-exhibition-experience-center-shenzhens-luohu/",
+      "src": "/images/content/open/ehang-eh184.webp",
+      "tier": "B",
       "where": "content/news-cards.json"
     },
     {
@@ -577,6 +599,28 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Christian / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-dien-bien-sandbox-2026",
+      "source": "Báo Nhân Dân",
+      "source_url": "https://nhandan.vn/thi-diem-phat-trien-kinh-te-tam-thap-dien-bien-se-thuc-hien-khoang-6000-chuyen-bay-uav-post971106.html",
+      "src": "/images/content/open/drone-pilot-horseshoe.webp",
+      "tier": "A",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Samuel Schwendener / Unsplash (CC0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-drone-ma-dinh-danh-2026",
+      "source": "An ninh Thủ đô",
+      "source_url": "https://anninhthudo.vn/tu-207-drone-flycam-tren-toan-quoc-phai-gan-ma-dinh-danh-tuong-tu-bien-so-xe-post657511.antd",
+      "src": "/images/content/open/drone-flying.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -621,6 +665,39 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-nong-dan-dong",
+      "source": "Dân Việt",
+      "source_url": "https://danviet.vn/nong-dan-dong-thap-cat-canh-cung-cong-nghe-may-bay-khong-nguoi-lai-thu-nhap-tot-10-trieu-dong-nguoi-thang-d1405853.html",
+      "src": "/images/content/open/ag-newtech.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-phun-thuoc-bao",
+      "source": "Cổng KH&CN (VISTA)",
+      "source_url": "https://www.vista.gov.vn/vi/news/cac-linh-vuc-khoa-hoc-va-cong-nghe/phun-thuoc-bao-ve-thuc-vat-bang-drone-nang-cao-hieu-qua-san-xuat-nong-nghiep-9802.html",
+      "src": "/images/content/open/xag-drone.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-quang-tri-drone-lua-2026",
+      "source": "Dân Việt",
+      "source_url": "https://danviet.vn/nong-dan-quang-tri-thich-thu-voi-drone-hoat-dong-tren-khong-gieo-sa-bon-phan-cho-lua-chuan-khong-can-chinh-d1437501.html",
+      "src": "/images/content/open/drone-ag-paddy.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Phuket@photographer.net / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -639,6 +716,17 @@
       "source": "Thanh Niên",
       "source_url": "https://thanhnien.vn/tiem-nang-kinh-te-tam-thap-cua-viet-nam-185251213182502034.htm",
       "src": "/images/content/open/xag-drone.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Shreesha Sharma / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-tren-canh-dong",
+      "source": "Dân Việt",
+      "source_url": "https://danviet.vn/tren-canh-dong-an-giang-may-bay-khong-nguoi-lai-bay-vu-vu-phun-thuoc-nong-dan-chi-viec-dung-xem-d1351398.html",
+      "src": "/images/content/open/drone-ag-paddy.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -676,6 +764,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: MB-one / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:vn-xag-giup-nong",
+      "source": "Nông nghiệp & Môi trường",
+      "source_url": "https://nongnghiepmoitruong.vn/drone-xag-giup-nong-dan-tre-viet-nam-phat-trien-nong-nghiep-ben-vung-d755606.html",
+      "src": "/images/content/open/xag-drone.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Trydence / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -687,50 +786,6 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: Nehemia Gershuni-Aylho / Wikimedia Commons (CC BY-SA 3.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-anduril-arsenal",
-      "source": "YRDrone",
-      "source_url": "https://yrdrone.com/blog/industry-news/top-us-drone-manufacturers/",
-      "src": "/images/content/open/hermes-900-takeoff.webp",
-      "tier": "C",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: Alex Butterfield / Wikimedia Commons · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-archer-midnight-faa",
-      "source": "Airways Magazine",
-      "source_url": "https://www.airwaysmag.com/new-post/archer-advances-midnight-evtol-faa-certification",
-      "src": "/images/content/open/evtol-passenger.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: Matti Blume / Wikimedia Commons · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-autoflight-evtol-cert",
-      "source": "Cục Hàng không Việt Nam",
-      "source_url": "https://caa.gov.vn/hang-khong-the-gioi/autoflight-gianh-duoc-chung-nhan-quoc-te-dau-tien-cho-may-bay-evtol-20260612151312467.htm",
-      "src": "/images/content/open/evtol-volocopter.webp",
-      "tier": "A",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: 中国新闻社 / Wikimedia Commons (CC BY 4.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-baykar-tb3-italy",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/04/italy-set-to-sign-off-on-turkish-tb3-drone-order-within-months-says-baykar-ceo/",
-      "src": "/images/content/open/mil-ucav-parade.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
       "credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -738,17 +793,6 @@
       "source": "DroneShield",
       "source_url": "https://www.droneshield.com/blog/the-new-airspace-risk-what-security-teams-need-to-know-about-drone-threats-2026",
       "src": "/images/content/open/airport-runway.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: NASA / Wikimedia Commons (Public domain) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-cca-ga-anduril",
-      "source": "Breaking Defense",
-      "source_url": "https://breakingdefense.com/2026/06/air-force-cca-drone-wingman-anduril-general-atomics-selection/",
-      "src": "/images/content/open/boeing-x45.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -786,6 +830,28 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-dubai-vertiport-2026",
+      "source": "AeroTime",
+      "source_url": "https://www.aerotime.aero/articles/dubai-airport-worlds-first-commercial-air-taxi-vertiport-joby-skyports",
+      "src": "/images/content/open/joby-s4.webp",
+      "tier": "A",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Project Kei / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-easa-100g-2026",
+      "source": "DroneXL",
+      "source_url": "https://dronexl.co/2026/06/23/easa-npa-2026-103-drone-registration-100-grams/",
+      "src": "/images/content/open/quad-inflight.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: U.S. Government / Wikimedia Commons (Public domain) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -797,6 +863,17 @@
       "where": "content/news-cards.json"
     },
     {
+      "credit": "Ảnh: Jeff Hitchcock / Wikimedia Commons (CC BY 2.0) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-jetblue-drone-jfk-2026",
+      "source": "ABC7 San Francisco",
+      "source_url": "https://abc7news.com/story/jetblue-pilot-reports-hitting-drone-flight-approached-landing-jfk-airport/19414185/",
+      "src": "/images/content/open/airport-runway.webp",
+      "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
       "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -805,6 +882,17 @@
       "source_url": "https://aerospaceglobalnews.com/news/joby-evtol-flights-new-york/",
       "src": "/images/content/open/joby-s4.webp",
       "tier": "B",
+      "where": "content/news-cards.json"
+    },
+    {
+      "credit": "Ảnh: Harlan Huntington / Wikimedia Commons (Public domain) · minh-hoạ",
+      "license_status": "cc",
+      "owned": false,
+      "ref": "card:world-joby-toyota-2026",
+      "source": "Joby Aviation",
+      "source_url": "https://www.jobyaviation.com/news/joby-aviation-and-toyota-motor-corporation-launch-initial-phase-of-a-strategic-manufacturing-alliance-to-realize-air-mobility-for-all",
+      "src": "/images/content/open/joby-s4.webp",
+      "tier": "A",
       "where": "content/news-cards.json"
     },
     {
@@ -830,28 +918,6 @@
       "where": "content/news-cards.json"
     },
     {
-      "credit": "Ảnh: U.S. Navy / Wikimedia Commons (Public domain) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-skydio-bvlos",
-      "source": "Skydio",
-      "source_url": "https://www.skydio.com/blog/drones-faa-bvlos-waivers-new-rules",
-      "src": "/images/content/open/scan-eagle.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-skydio-gov",
-      "source": "YRDrone",
-      "source_url": "https://yrdrone.com/blog/industry-news/top-us-drone-manufacturers/",
-      "src": "/images/content/open/leleka-100.webp",
-      "tier": "C",
-      "where": "content/news-cards.json"
-    },
-    {
       "credit": "Ảnh: VoidWanderer / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
       "license_status": "cc",
       "owned": false,
@@ -859,17 +925,6 @@
       "source": "CBS News",
       "source_url": "https://www.cbsnews.com/news/ukraine-russia-war-drone-strike-moscow-oil-refinery-zelenskyy-putin/",
       "src": "/images/content/open/leleka-100.webp",
-      "tier": "B",
-      "where": "content/news-cards.json"
-    },
-    {
-      "credit": "Ảnh: HadasBandel / Wikimedia Commons (CC BY-SA 4.0) · minh-hoạ",
-      "license_status": "cc",
-      "owned": false,
-      "ref": "card:world-walmart-wing-7-do-thi",
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/sectors/technology/articles/walmart-wing-expand-drone-delivery-122151542.html",
-      "src": "/images/content/open/flytrex-delivery.webp",
       "tier": "B",
       "where": "content/news-cards.json"
     },
@@ -1008,5 +1063,5 @@
   ],
   "schema": "media-ledger/1",
   "to_license": [],
-  "total": 91
+  "total": 96
 }
