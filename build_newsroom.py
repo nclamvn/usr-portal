@@ -102,7 +102,9 @@ FIG_LABEL = {"total_uav": ("systems", "hệ thống"), "total_company": ("compan
              "fill_encryption": ("encryption filled /302", "có mã hoá /302"), "tier_a": ("tier-A values", "giá trị tier A"),
              "fs_verified": ("verified fields", "trường đã kiểm"), "fs_derived": ("derived fields", "trường suy ra"),
              "fs_unverified": ("unverified fields", "trường chưa kiểm"), "fs_disputed": ("disputed fields", "trường tranh chấp"),
-             "dji_models": ("DJI models", "mẫu DJI")}
+             "dji_models": ("DJI models", "mẫu DJI"),
+             "rtr_systems": ("RtR systems", "hệ thống RtR"),
+             "viettel_systems": ("Viettel systems", "hệ thống Viettel")}
 
 
 def data_rail(fm, site):
