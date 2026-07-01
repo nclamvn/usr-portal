@@ -73,7 +73,6 @@ def footer(prefix=""):
     band (brand + live state-of-the-registry strip), hairline-divided link cells, and a provenance bar."""
     home = f"{prefix}index.html"
     t = _totals()
-    soc = "".join(_icon(k, lbl) for k, lbl in _SOC_META)
     explore = "".join(_lnk(prefix, k) for k in ("reference", "compare", "data", "monitor"))
     read = "".join(_lnk(prefix, k) for k in ("newsroom", "review", "knowledge"))
     return (
@@ -105,7 +104,9 @@ def footer(prefix=""):
         f'<div class="sfoot-soon">{bilingual("Solutions · Community · soon", "Giải pháp · Cộng đồng · sắp có")}</div></div>'
         '<div class="sfoot-col">'
         f'<div class="sfoot-h">{bilingual("Connect", "Kết nối")}</div>'
-        f'<div class="sfoot-soc">{soc}</div>'
+        # Social channels are hidden until real accounts exist (no dead "#" links); _icon/_SOC stay
+        # staged below so re-enabling is one line when the owner confirms handles.
+        f'<div class="sfoot-soon">{bilingual("Channels · soon", "Kênh · sắp có")}</div>'
         f'<p class="sfoot-prov">{bilingual("Every figure traces to a cited source and tier.", "Mọi con số truy về nguồn dẫn và tier.")}</p></div>'
         '</div>'
         # BOTTOM — provenance bar + trust/legal links

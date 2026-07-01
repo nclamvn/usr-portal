@@ -23,6 +23,8 @@ LEGAL_CSS = """
   .lg-eff{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);margin:.6rem 0 0}
   .legal p{font-size:1rem;line-height:1.72;color:var(--ink);margin:0 0 1.15rem;max-width:64ch}
   .legal .lg-lead{color:var(--ink);font-weight:600}
+  .legal p a{color:var(--brass);text-decoration:none;border-bottom:1px solid var(--hair-strong)}
+  .legal p a:hover{border-bottom-color:var(--brass)}
   .legal h2{font-family:var(--font-head);font-size:1.28rem;margin:2.2rem 0 1rem;padding-top:1.4rem;border-top:1px solid var(--hair)}
   .lg-foot{font-size:.74rem;color:var(--muted);margin-top:2rem;border-top:1px solid var(--hair);padding-top:1.1rem}
 """
@@ -40,6 +42,26 @@ def _h(en, vn):
     return f"<h2>{bilingual(en, vn)}</h2>"
 
 
+def _seg(*parts):
+    """A run of bilingual text with inline cross-links. Each part is (en, vn) text, or
+    (en, vn, href) a link. Every piece is a paired en/vn span so check_i18n stays balanced."""
+    out = []
+    for p in parts:
+        if len(p) == 3:
+            out.append(f'<a href="{p[2]}">{bilingual(p[0], p[1])}</a>')
+        else:
+            out.append(bilingual(p[0], p[1]))
+    return "".join(out)
+
+
+def _pseg(*parts):
+    return f"<p>{_seg(*parts)}</p>"
+
+
+def _leadseg(le, lv, *parts):
+    return f'<p><b class="lg-lead">{bilingual(le, lv)}</b> {_seg(*parts)}</p>'
+
+
 # ---- content (each block renders paired en/vn spans -> check_i18n stays balanced) ----
 def about():
     return [
@@ -49,12 +71,16 @@ def about():
            "Mục tiêu của USR là làm cho một lĩnh vực đang thay đổi nhanh trở nên dễ đọc: người vận hành, cơ quan quản lý, nhà đầu tư và người quan tâm có thể tra một hệ thống, so sánh vài mẫu, hoặc theo dõi một chính sách mà không phải tự đi ghép từ hàng chục nguồn rời rạc."),
         _p("The registry currently covers hundreds of systems from many countries, linked company profiles, a sourced news stream and a base of reference terms. All of it is presented bilingually in Vietnamese and English, with an emphasis on the Vietnamese market and policy within a regional and global context.",
            "Bản đăng ký hiện bao gồm hàng trăm hệ thống từ nhiều quốc gia, hồ sơ doanh nghiệp liên kết, một dòng tin tức có dẫn nguồn và một kho thuật ngữ nền. Tất cả được trình bày song ngữ Việt và Anh, với trọng tâm đặt vào thị trường và chính sách Việt Nam trong bối cảnh khu vực và toàn cầu."),
-        _p("What sets USR apart from an ordinary aggregator is data discipline. Every attribute is stored with its source and a confidence tier; anything unverified is left visibly blank rather than guessed; conflicting figures are kept on both sides rather than quietly resolved to one. How we work is described in full on the Methodology and sources page.",
-           "Điều làm USR khác với một bảng tổng hợp thông thường nằm ở kỷ luật dữ liệu. Mỗi thuộc tính được lưu kèm nguồn và mức tin cậy; phần chưa kiểm chứng được để trống một cách công khai thay vì suy đoán; số liệu mâu thuẫn được giữ nguyên cả hai phía thay vì âm thầm chọn một. Cách chúng tôi làm việc được mô tả đầy đủ trong trang Phương pháp và nguồn."),
+        _pseg(("What sets USR apart from an ordinary aggregator is data discipline. Every attribute is stored with its source and a confidence tier; anything unverified is left visibly blank rather than guessed; conflicting figures are kept on both sides rather than quietly resolved to one. How we work is described in full on the ",
+               "Điều làm USR khác với một bảng tổng hợp thông thường nằm ở kỷ luật dữ liệu. Mỗi thuộc tính được lưu kèm nguồn và mức tin cậy; phần chưa kiểm chứng được để trống một cách công khai thay vì suy đoán; số liệu mâu thuẫn được giữ nguyên cả hai phía thay vì âm thầm chọn một. Cách chúng tôi làm việc được mô tả đầy đủ trong "),
+              ("Methodology and sources page", "trang Phương pháp và nguồn", "methodology.html"),
+              (".", ".")),
         _p("USR keeps editorial independence. The registry applies the same sourcing standard to every manufacturer, with no favour to any party, including those connected to the publisher. USR is not a product marketing channel and does not accept sponsored content disguised as data.",
            "USR giữ độc lập biên tập. Bản đăng ký áp cùng một chuẩn dẫn nguồn cho mọi nhà sản xuất, không dành ưu ái cho bất kỳ bên nào, kể cả các bên có liên quan tới đơn vị xuất bản. USR không phải kênh tiếp thị sản phẩm và không nhận nội dung tài trợ trá hình thành dữ liệu."),
-        _p(f"USR is published and operated by {PH_EN}. Questions, corrections or source suggestions are welcome through the Contact page.",
-           f"USR được xuất bản và vận hành bởi {PH_VN}. Mọi câu hỏi, đính chính hoặc đề xuất nguồn xin gửi qua trang Liên hệ."),
+        _pseg((f"USR is published and operated by {PH_EN}. Questions, corrections or source suggestions are welcome through the ",
+               f"USR được xuất bản và vận hành bởi {PH_VN}. Mọi câu hỏi, đính chính hoặc đề xuất nguồn xin gửi qua "),
+              ("Contact page", "trang Liên hệ", "contact.html"),
+              (".", ".")),
     ]
 
 
@@ -86,9 +112,12 @@ def methodology():
         _lead("Scope and limits.", "Phạm vi và giới hạn.",
               "The registry is a curated set, not a full census of the industry. It does not include every system in existence, and coverage varies by specification. We state this limit openly rather than implying a completeness that does not exist.",
               "Bản đăng ký là một tập tuyển chọn, không phải một cuộc tổng điều tra toàn ngành. Nó không bao gồm mọi hệ thống đang tồn tại, và độ phủ theo từng thông số là khác nhau. Chúng tôi công khai giới hạn này thay vì ngụ ý một sự hoàn chỉnh không có thật."),
-        _lead("Corrections and source contributions.", "Đính chính và đóng góp nguồn.",
-              "Good data improves under scrutiny. If you find an error or have a better source, please send it to us through the Contact page; we review and update it with the source recorded.",
-              "Dữ liệu tốt lên nhờ được soi. Nếu bạn thấy một sai sót hoặc có một nguồn tốt hơn, xin gửi cho chúng tôi qua trang Liên hệ; chúng tôi rà soát và cập nhật kèm ghi nhận nguồn."),
+        _leadseg("Corrections and source contributions.", "Đính chính và đóng góp nguồn.",
+                 ("Good data improves under scrutiny. If you find an error or have a better source, please send it to us through the ",
+                  "Dữ liệu tốt lên nhờ được soi. Nếu bạn thấy một sai sót hoặc có một nguồn tốt hơn, xin gửi cho chúng tôi qua "),
+                 ("Contact page", "trang Liên hệ", "contact.html"),
+                 ("; we review and update it with the source recorded.",
+                  "; chúng tôi rà soát và cập nhật kèm ghi nhận nguồn.")),
     ]
 
 
