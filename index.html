@@ -87,11 +87,14 @@
   .cc-k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
   .cc-v{font-variant-numeric:tabular-nums;text-align:right}
   .cc-nv{color:var(--faint);font-style:italic}
-  /* INFO/02 homepage world signature (mini hybrid; full /data view one click away) */
-  .home-world{max-width:var(--w-wide);margin:14px auto 0;position:relative}
-  .home-world-more{display:block;text-align:right;font-family:var(--font-mono);font-size:.72rem;
-    letter-spacing:.04em;color:var(--brass);text-decoration:none;margin:.45rem 1.1rem 0;opacity:.85}
+  /* INFO/02 homepage world signature — FULL-BLEED band (body has no padding, so width:100% = viewport) */
+  .home-world{margin:32px 0 0;position:relative;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .home-world .wm-svg{max-height:none;width:100%}
+  .home-world-more{display:block;text-align:right;font-family:var(--font-mono);font-size:.74rem;
+    letter-spacing:.04em;color:var(--brass);text-decoration:none;max-width:var(--w-wide);
+    margin:0 auto;padding:.7rem 1.4rem;opacity:.85}
   .home-world-more:hover{opacity:1}
+  @media(max-width:760px){ .home-world{margin-top:24px} }
   /* trending (accent = brass, NOT inverted dark -> THEME_PURITY safe) */
   .trending{max-width:var(--w-wide);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hair)}
   .trend-card{padding:20px 16px 22px;border-right:1px solid var(--hair);text-decoration:none;color:inherit;display:block}
