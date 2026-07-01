@@ -9,7 +9,8 @@ from seo import BASE
 
 ROOT = pathlib.Path(__file__).resolve().parent
 OUT = ROOT / "sitemap.xml"
-TOP = ["index.html", "reference.html", "search.html", "compare.html", "data.html", "knowledge.html", "review.html", "news.html"]
+TOP = ["index.html", "reference.html", "search.html", "compare.html", "data.html", "knowledge.html", "review.html", "news.html",
+       "about.html", "methodology.html", "contact.html", "terms.html", "privacy.html"]
 DIRS = ["uav", "company", "country", "segment", "airframe", "propulsion", "weight", "flight-time", "compliance", "news", "analysis", "knowledge", "news-card"]
 
 

@@ -19,6 +19,7 @@ const SURFACES = [
   "/uav/uav-dji-mavic-3-pro-mavic-3-pro.html",
   "/company/dji.html", "/country/united-states.html", "/segment/military-tactical.html",
   "/news/bai-01-data-note-phuong-phap.html",
+  "/about.html", "/methodology.html", "/contact.html", "/terms.html", "/privacy.html",
 ];
 const COMBOS = ["light", "dark"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

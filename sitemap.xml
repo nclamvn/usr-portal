@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://usr-portal.vercel.app/about.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/airframe/ducted-fan.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/airframe/fixed-wing.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/airframe/helicopter.html</loc></url>
@@ -198,6 +199,7 @@
   <url><loc>https://usr-portal.vercel.app/compliance/blue-uas.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/compliance/index.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/compliance/ndaa.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/contact.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/australia.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/austria.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/country/brazil.html</loc></url>
@@ -246,6 +248,7 @@
   <url><loc>https://usr-portal.vercel.app/knowledge/gnss.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/knowledge/ndaa.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/knowledge/rtk.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/methodology.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-15th-plan.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-agricultural-intelligent-plant.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news-card/cn-bac-kinh-siet-drone.html</loc></url>
@@ -368,6 +371,7 @@
   <url><loc>https://usr-portal.vercel.app/news/world-joby-vertiport-dubai.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news/world-wing-alphabet-delivery.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/news/world-zipline-walmart.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/privacy.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/propulsion/combustion.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/propulsion/diesel.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/propulsion/electric.html</loc></url>
@@ -398,6 +402,7 @@
   <url><loc>https://usr-portal.vercel.app/segment/passenger-uam.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/public-safety.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/segment/surveying.html</loc></url>
+  <url><loc>https://usr-portal.vercel.app/terms.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/uav/uav-a2z-drone-delivery-rdsx-pelican-rdsx-pelican.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/uav/uav-acecore-neo-neo.html</loc></url>
   <url><loc>https://usr-portal.vercel.app/uav/uav-acecore-zoe-base.html</loc></url>

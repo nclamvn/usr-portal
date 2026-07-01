@@ -108,9 +108,16 @@ def footer(prefix=""):
         f'<div class="sfoot-soc">{soc}</div>'
         f'<p class="sfoot-prov">{bilingual("Every figure traces to a cited source and tier.", "Mọi con số truy về nguồn dẫn và tier.")}</p></div>'
         '</div>'
-        # BOTTOM — provenance bar
+        # BOTTOM — provenance bar + trust/legal links
         '<div class="sfoot-bar">'
         '<span>© 2026 Drone Review · Uncrewed Systems Review</span>'
+        '<nav class="sfoot-legal">'
+        f'<a href="{prefix}about.html">{bilingual("About", "Về USR")}</a>'
+        f'<a href="{prefix}methodology.html">{bilingual("Methodology", "Phương pháp")}</a>'
+        f'<a href="{prefix}contact.html">{bilingual("Contact", "Liên hệ")}</a>'
+        f'<a href="{prefix}terms.html">{bilingual("Terms", "Điều khoản")}</a>'
+        f'<a href="{prefix}privacy.html">{bilingual("Privacy", "Quyền riêng tư")}</a>'
+        '</nav>'
         f'<span>{bilingual("Static, audited pipeline · provenance-forward", "Pipeline tĩnh, đã kiểm · ưu-tiên nguồn dẫn")}</span>'
         '</div>'
         '</div></footer>'

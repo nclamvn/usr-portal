@@ -57,6 +57,7 @@ python3 build_review.py >/dev/null
 RSHA2=$(shasum -a256 out/review-data.json | cut -d' ' -f1)
 [ "$RSHA1" = "$RSHA2" ] && echo "      review-data idempotent OK" || { echo "      REVIEW IDEMPOTENT FAIL"; exit 2; }
 python3 build_aggregation.py
+python3 build_pages.py
 python3 build_sitemap.py
 MSHA1=$(shasum -a256 sitemap.xml | cut -d' ' -f1)
 python3 build_sitemap.py >/dev/null

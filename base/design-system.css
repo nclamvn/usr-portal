@@ -463,6 +463,9 @@ small, .small { font-size: .82rem; }
 .sfoot-soc .soc-i { width: 17px; height: 17px; display: block; }
 .sfoot-prov { color: var(--card-faint); font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; line-height: 1.5; margin: 1.1rem 0 0; }
 .sfoot-bar { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--card-hair); font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--card-faint); }
+.sfoot-legal { display: flex; flex-wrap: wrap; gap: .35rem .9rem; }
+.sfoot-legal a { color: var(--card-faint); text-decoration: none; }
+.sfoot-legal a:hover { color: var(--brass-bright); }
 @media (max-width: 860px) {
   .sfoot-top { flex-direction: column; align-items: flex-start; gap: 1.4rem; }
   .sfoot-stats { flex-wrap: wrap; gap: 10px 0; }
